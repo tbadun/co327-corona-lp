@@ -1,0 +1,4 @@
+﻿factory1, respirator1, 7.99, ppe1, 3.99, plastic1, 100, plastic2, 120, plastic3, 300, metal1, 140, metal2, 210
+factory2, respirator1, 7.59, ppe1, 3.59, ppe2, 4.99, plastic1, 190, plastic2, 220, metal1, 140, metal2, 220
+factory3, respirator2, 9.59, ppe2, 4.59, ppe3, 5.99, plastic1, 190, plastic3, 520, metal1, 240, metal2, 120
+factory4, ppe3, 12.95, plastic2, 300, metal2, 300
