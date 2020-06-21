@@ -1,0 +1,34 @@
+{
+    "factory1": {
+        "metal1": " 140",
+        "metal2": " 210",
+        "plastic1": " 100",
+        "plastic2": " 120",
+        "plastic3": " 300",
+        "ppe1": " 3.99",
+        "respirator1": " 7.99"
+    },
+    "factory2": {
+        "metal1": " 140",
+        "metal2": " 220",
+        "plastic1": " 190",
+        "plastic2": " 220",
+        "ppe1": " 3.59",
+        "ppe2": " 4.99",
+        "respirator1": " 7.59"
+    },
+    "factory3": {
+        "metal1": " 240",
+        "metal2": " 120",
+        "plastic1": " 190",
+        "plastic3": " 520",
+        "ppe2": " 4.59",
+        "ppe3": " 5.99",
+        "respirator2": " 9.59"
+    },
+    "factory4": {
+        "metal2": " 300",
+        "plastic2": " 300",
+        "ppe3": " 12.95"
+    }
+}
