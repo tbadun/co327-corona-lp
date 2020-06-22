@@ -1,5 +1,3 @@
-# # %%
-
 # REQUIRED PACKAGES
 # UNCOMMENT ON FIRST RUN OF FILE
 # !pip install openpyxl
@@ -37,6 +35,7 @@ def read_cost_values(csv_name: str):
         df_list.append(subsection)
     df = pd.concat(df_list).dropna()
     df.a = df.a.apply(lambda x: str(x).strip())
+    df.b = df.b.apply(lambda x: float(str(x).strip()))
     df = df.reset_index().groupby([0,"a"]).max().unstack()
     df.columns = df.columns.droplevel()
     df.index.name = None
@@ -52,7 +51,7 @@ def read_list(csv_name: str):
         for row in read:
             combined = combined + row
     # print (combined)
-    return combined
+    return sorted([x.strip() for x in combined])
 
 # reads csv and returns pandas df (for now) 
 # use for: hospitals
@@ -72,7 +71,7 @@ def read_demand(csv_name: str):
 def read_shipping(csv_name:str):
     with open(csv_name,encoding="utf-8-sig") as csvfile:
         data = list(csv.reader(csvfile))
-    return pd.DataFrame(data,columns=["from","to","capcity","cost_per_unit"])
+    return pd.DataFrame(data,columns=["from","to","capacity","cost_per_unit"])
 
 # # %%
 # # EXAMPLES:
@@ -100,4 +99,21 @@ def read_shipping(csv_name:str):
 #         if isinstance(df,list):
 #             df = pd.DataFrame([df])
 #         df.to_excel(w,sheet_name=f)
+
+# # %%
+# # PRINT OUT RESULTS
+# results = [factories,respirators,ppe,resources,hospitals,shipping]
+
+# for result in results:
+#     if isinstance(result,list):
+#         print(sorted(result))
+#     elif isinstance(result,dict):
+#         print(json.dumps(result,indent=4,sort_keys=True))
+#     print()
+
+# # %%
+# hospitals
+
+# # %%
+# shipping
 
