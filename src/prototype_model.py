@@ -1,5 +1,11 @@
 """
-@author: stevencao
+Defines a function solve which solves a medical supplies production problem
+
+medical_supplies: a list of medical supply names
+objective: a dictionary with where keys are medical_supplies names, and values are unit of production of each medical supply
+materials: a list of material names
+supply: a dictionary where keys are material names, and values are amount of each materials in all factories
+recipes: a dictionary where keys are (medical supply, material) pairs, and values are amount of certain material needed to produce the medical supply
 """
 
 
