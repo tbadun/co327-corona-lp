@@ -105,11 +105,6 @@ Subject To
 
 
 
- upper[capacities_factory1->hospital1_1]: s_factory1->hospital1_1 <= 25
- upper[capacities_factory1->factory4_4]: s_factory1->factory4_4 <= 84
- upper[capacities_DUMMY_RESERVE->factory1_2]: s_DUMMY_RESERVE->factory1_2
-   <= 1e+09
-
 
 
  eq[onhand_metal1_factory1_1]: M_metal1_factory1_1 = 140
@@ -136,7 +131,7 @@ Subject To
    - z_respirator1_DUMMY_RESERVE->hospital1_1 - M_respirator1_hospital1_1
    + M_respirator1_hospital1_2 = 0
 
-   
+
  
  eq[shipped_factory1->hospital1_1]: z_metal1_factory1->hospital1_1
    + z_metal2_factory1->hospital1_1 + z_plastic1_factory1->hospital1_1
@@ -167,3 +162,11 @@ Subject To
    + z_ppe1_factory1->factory4_6 + z_ppe2_factory1->factory4_6
    + z_ppe3_factory1->factory4_6 + z_respirator1_factory1->factory4_6
    + z_respirator2_factory1->factory4_6 - s_factory1->factory4_6 = 0
+
+
+
+
+ upper[capacities_factory1->hospital1_1]: s_factory1->hospital1_1 <= 25
+ upper[capacities_factory1->factory4_4]: s_factory1->factory4_4 <= 84
+ upper[capacities_DUMMY_RESERVE->factory1_2]: s_DUMMY_RESERVE->factory1_2
+   <= 1e+09

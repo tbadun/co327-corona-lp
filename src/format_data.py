@@ -51,8 +51,9 @@ def gen_decision_variables(factories,materials,hospitals,shipping):
     mat_onhand = ["M_{}_{}_{}".format(mat,place,day) for mat in materials for place in places for day in range(1,days)]
     total_shipped = ["s_{}->{}_{}".format(start,end,day) for day in range(1,days) for start,end,cap,cost in shipping]
     shipped = ["z_{}_{}->{}_{}".format(m,start,end,day) for day in range(1,days) for start,end,cap,cost in shipping for m in materials]
+    dummy0 = ["z_{}_{}->{}_0".format(m,start,end) for start,end,cap,cost in shipping for m in materials if start == "DUMMY_RESERVE"]
 
-    return resp_made + ppe_made + shipped + total_shipped + mat_onhand
+    return resp_made + ppe_made + shipped + total_shipped + mat_onhand + dummy0
 
 
 
@@ -69,7 +70,7 @@ def gen_obj_fxn(decision_vars,shipping):
 # establish the upper bounds for manufacturing resources
 def manufacturing_upper_bounds(factories,resources):
     days = get_n_days()
-    return {"manufacturing_{}_{}_{}".format(material,factory,day):0 for material in resources for factory in factories.keys() for day in range(1,days)}
+    return {"manufacturing_{}_{}_{}".format(material,factory,day): 0 for material in resources for factory in factories.keys() if factory != "DUMMY_RESERVE" for day in range(1,days)}
 
 # establish upper bounds for hospital demand
 def demand_upper_bounds(hospitals,ppe,respirators):
@@ -155,10 +156,11 @@ def demand_recipes(hospitals,ppe):
     # hospital total in/outflow
     shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == start}
     shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == end}
+    dummy_day0 = {("z_{}_{}->{}_0".format(material,start,end),"demand_{}_{}_1".format("ppe" if material in ppe.keys() else "respirators",place)): -1 for start,end,cap,cost in shipping if start == "DUMMY_RESERVE" for material in equipment for place in hospital_names if place == end}
 
     # from yesterday
     onhand_yest = {("M_{}_{}_{}".format(material,place,day-1),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): -1 for material in equipment for place in hospital_names for day in range(2,days)}
-    return {**shipped_from,**shipped_to_yest,**onhand_yest}
+    return {**shipped_from,**shipped_to_yest,**onhand_yest,**dummy_day0}
 
 # available to ship
 def availability_recipes(shipping):
@@ -172,7 +174,7 @@ def availability_recipes(shipping):
     
     # available to ship
     onhand = {("M_{}_{}_{}".format(material,place,day),"availability_{}_{}_{}".format(material,place,day)): -1 for material in materials for place in places for day in range(1,days)}
-    return {**shipped_from,**shipped_to_yest,**onhand}
+    return {**shipped_from,**onhand} #**shipped_to_yest,**onhand}
 
 # shipping over edge coefficients/recipes
 def total_shipped_recipes(shipping):
