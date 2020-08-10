@@ -124,9 +124,9 @@ def gen_equalities(factories,materials,shipping):
 # manufacturing coefficients/recipes
 def manufacturing_recipes(factories,resources,respirators,ppe):
     days = get_n_days()
-    resp_made = {("x_{}_{}_{}".format(equip,factory,day),"manufacturing_{}_{}_{}".format(material,factory,day)): respirators[equip][material] if material in respirators[equip].keys() else 0 for material in resources for factory,things in factories.items() for equip in things if equip in respirators.keys() for day in range(1,days)}
-    ppe_made = {("y_{}_{}_{}".format(equip,factory,day),"manufacturing_{}_{}_{}".format(material,factory,day)): ppe[equip][material] if material in ppe[equip].keys() else 0 for material in resources for factory,things in factories.items() for equip in things if equip in ppe.keys() for day in range(1,days)}
-    mat_onhand = {("M_{}_{}_{}".format(material,factory,day),"manufacturing_{}_{}_{}".format(material,factory,day)): -1 for material in resources for factory in factories.keys() for day in range(1,days)}
+    resp_made = {("x_{}_{}_{}".format(equip,factory,day),"manufacturing_{}_{}_{}".format(material,factory,day)): respirators[equip][material] if material in respirators[equip].keys() else 0 for material in resources for factory,things in factories.items() if factory != "DUMMY_RESERVE" for equip in things if equip in respirators.keys() for day in range(1,days)}
+    ppe_made = {("y_{}_{}_{}".format(equip,factory,day),"manufacturing_{}_{}_{}".format(material,factory,day)): ppe[equip][material] if material in ppe[equip].keys() else 0 for material in resources for factory,things in factories.items() if factory != "DUMMY_RESERVE" for equip in things if equip in ppe.keys() for day in range(1,days)}
+    mat_onhand = {("M_{}_{}_{}".format(material,factory,day),"manufacturing_{}_{}_{}".format(material,factory,day)): -1 for material in resources for factory in factories.keys() if factory != "DUMMY_RESERVE" for day in range(1,days)}
     return {**resp_made,**ppe_made,**mat_onhand}
 
 # onhand materials coefficients/recipes
@@ -134,18 +134,29 @@ def onhand_recipes(factories,resources,shipping,respirators,ppe):
     places = get_all_places()
     days = get_n_days()
     materials = get_all_materials(resources)
+    equipment = get_list_equipment()
 
-    # factories only
+    # factories only - subtract used for equipment
     resp_made_yest = {("x_{}_{}_{}".format(equip,factory,day-1),"onhand_{}_{}_{}".format(material,factory,day)): respirators[equip][material] if material in respirators[equip].keys() else 0 for material in resources for factory,things in factories.items() for equip in things if equip in respirators.keys() for day in range(2,days)}
     ppe_made_yest = {("y_{}_{}_{}".format(equip,factory,day-1),"onhand_{}_{}_{}".format(material,factory,day)): ppe[equip][material] if material in ppe[equip].keys() else 0 for material in resources for factory,things in factories.items() for equip in things if equip in ppe.keys() for day in range(2,days)}
     
+    # factories only - add resp and ppe made
+    resp_supply_add = {("x_{}_{}_{}".format(equip,factory,day),"onhand_{}_{}_{}".format(equip,factory,day)): -1 for equip in respirators.keys() for factory in factories.keys() for day in range(1,days)}
+    ppe_supply_add = {("y_{}_{}_{}".format(equip,factory,day),"onhand_{}_{}_{}".format(equip,factory,day)): -1 for equip in ppe.keys() for factory in factories.keys() for day in range(1,days)}
+        
     # all places; resources and equipment
     mat_onhand_yest = {("M_{}_{}_{}".format(material,place,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 for material in materials for place in places for day in range(2,days)}
     shipped_out_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else 1 if start == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
     shipped_in_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 if end == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
     mat_onhand = {("M_{}_{}_{}".format(material,place,day),"onhand_{}_{}_{}".format(material,place,day)): 1 for material in materials for place in places for day in range(1,days)}
-    
-    return {**resp_made_yest,**ppe_made_yest,**mat_onhand_yest,**shipped_out_yest,**shipped_in_yest,**mat_onhand}
+    return {**resp_made_yest,
+            **ppe_made_yest,
+            **mat_onhand_yest,
+            **shipped_out_yest,
+            **resp_supply_add,
+            **ppe_supply_add,
+            **shipped_in_yest,
+            **mat_onhand}
 
 # ppe and respirator demand coefficients/recipes
 def demand_recipes(hospitals,ppe):
