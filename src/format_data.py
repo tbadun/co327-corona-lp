@@ -15,14 +15,15 @@ shipping = read_data.read_shipping("../data/shipping.csv")
 
 # Adds dummy variable to ship from (accounts for any supply discrepencies)
 def add_dummy_shipping(shipping,factories,hospitals,large=1000000000):
-    all_locations = [k for k in factories.keys()] + [h[0] for h in hospitals]
+    all_locations = [k for k in factories.keys() if k != "DUMMY_RESERVE"] + [h[0] for h in hospitals]
     dummy_shipping = [["DUMMY_RESERVE",location,large,large] for location in all_locations]
     return shipping + dummy_shipping
 
 def add_dummy_factory(factories):
     return {**factories,**{"DUMMY_RESERVE":{}}}
 
-
+factories = add_dummy_factory(factories)
+shipping = add_dummy_shipping(shipping,factories,hospitals)
 
 
 # General helper functions
@@ -70,16 +71,21 @@ def manufacturing_upper_bounds(factories,resources):
     days = get_n_days()
     return {"manufacturing_{}_{}_{}".format(material,factory,day):0 for material in resources for factory in factories.keys() for day in range(1,days)}
 
-#########################################################################
-# COMBINE DEMAND FOR PPE, RESPIRATORS FOR HOSPITALS #####################
-#########################################################################
-# establish upper bounds for demand
-def demand_upper_bounds(hospitals,materials,resources):
-    places = get_all_places()
+# establish upper bounds for hospital demand
+def demand_upper_bounds(hospitals,ppe,respirators):
     days = get_n_days()
     demand = {h[0]:h for h in hospitals}
-    return {"demand_{}_{}_{}".format(material,place,day): demand[place][day] if place in demand.keys() and material not in resources else 0 for place in places for day in range(1,days) for material in materials}
+    return {"demand_{}_{}_{}".format(equipment,place,day): -demand[place][day] for place in demand.keys() for day in range(1,days) for equipment in ["ppe","respirators"]}
 
+# upper bound for material available to ship
+def availability_upper_bounds(resources):
+    places = get_all_places()
+    days = get_n_days()
+    materials = get_all_materials()
+    equipment = get_list_equipment()
+
+    return {"availability_{}_{}_{}".format(material,place,day): 0 for place in places for day in range(1,days) for material in materials}
+    
 # establish upper bounds for shipping capacity
 def shipping_cap_upper_bounds(shipping):
     days = get_n_days()
@@ -90,7 +96,8 @@ def shipping_cap_upper_bounds(shipping):
 def onhand_equalities(factories,materials):
     places = get_all_places()
     days = get_n_days()
-    return {"onhand_{}_{}_{}".format(material,place,day):0 for material in materials for place in places for day in range(1,days)}
+    equipment = get_list_equipment()
+    return {"onhand_{}_{}_{}".format(material,place,day): factories[place][material] if day == 1 and place in factories.keys() and material in resources and material in factories[place].keys() else 1000000 if place == "DUMMY_RESERVE" and material in equipment else 0 for material in materials for place in places for day in range(1,days)}
 
 # equalities for what was shipped over edge
 def total_shipped_equalities(shipping):
@@ -101,6 +108,7 @@ def total_shipped_equalities(shipping):
 def gen_upper_bounds(factories,resources,hospitals,materials,shipping):
     return {**manufacturing_upper_bounds(factories,resources),
     **demand_upper_bounds(hospitals,materials,resources),
+    **availability_upper_bounds(resources),
     **shipping_cap_upper_bounds(shipping)}
 
 # all equalities
@@ -131,39 +139,40 @@ def onhand_recipes(factories,resources,shipping,respirators,ppe):
     ppe_made_yest = {("y_{}_{}_{}".format(equip,factory,day-1),"onhand_{}_{}_{}".format(material,factory,day)): ppe[equip][material] if material in ppe[equip].keys() else 0 for material in resources for factory,things in factories.items() for equip in things if equip in ppe.keys() for day in range(2,days)}
     
     # all places; resources and equipment
-    mat_onhand_yest = {("M_{}_{}_{}".format(material,place,day-1),"onhand_{}_{}_{}".format(material,place,day)): -1 for material in materials for place in places for day in range(2,days)}
-    shipped_out_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 1 if start == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
-    shipped_in_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): -1 if end == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
+    mat_onhand_yest = {("M_{}_{}_{}".format(material,place,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 for material in materials for place in places for day in range(2,days)}
+    shipped_out_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else 1 if start == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
+    shipped_in_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 if end == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
     mat_onhand = {("M_{}_{}_{}".format(material,place,day),"onhand_{}_{}_{}".format(material,place,day)): 1 for material in materials for place in places for day in range(1,days)}
     
     return {**resp_made_yest,**ppe_made_yest,**mat_onhand_yest,**shipped_out_yest,**shipped_in_yest,**mat_onhand}
 
-# shipping demand coefficients/recipes
-#########################################################################
-# COMBINE DEMAND FOR PPE, RESPIRATORS FOR HOSPITALS #####################
-#########################################################################
-def demand_recipes(hospitals,resources,factories):
-    places = get_all_places()
-
+# ppe and respirator demand coefficients/recipes
+def demand_recipes(hospitals,ppe):
     days = get_n_days()
     hospital_names = [h[0] for h in hospitals]
     equipment = get_list_equipment()
+
+    # hospital total in/outflow
+    shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == start}
+    shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == end}
+
+    # from yesterday
+    onhand_yest = {("M_{}_{}_{}".format(material,place,day-1),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): -1 for material in equipment for place in hospital_names for day in range(2,days)}
+    return {**shipped_from,**shipped_to_yest,**onhand_yest}
+
+# available to ship
+def availability_recipes(shipping):
+    places = get_all_places()
+    days = get_n_days()
     materials = get_all_materials()
 
     # all in/outflow
-    shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"demand_{}_{}_{}".format(material,place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in materials for place in places if place == start}
-    shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"demand_{}_{}_{}".format(material,place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == end}
-
-    # all @ factories, 
-    mat_onhand_factory = {("M_{}_{}_{}".format(material,factory,day),"demand_{}_{}_{}".format(material,factory,day)): -1 for material in materials for factory in factories.keys() for day in range(1,days)}
-
-    # raw @ hospitals
-    raw_onhand_hospital = {("M_{}_{}_{}".format(resource,hospital,day),"demand_{}_{}_{}".format(resource,hospital,day)): -1 for resource in resources for hospital in hospital_names for day in range(1,days)}
-
-    # equipment @ hospitals
-    equip_onhand_hospital_yest = {("M_{}_{}_{}".format(equip,hospital,day-1),"demand_{}_{}_{}".format(equip,hospital,day)): 1 for equip in equipment for hospital in hospital_names for day in range(2,days)}
-
-    return {**shipped_from,**shipped_to_yest,**mat_onhand_factory,**raw_onhand_hospital,**equip_onhand_hospital_yest}
+    shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"availability_{}_{}_{}".format(material,place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in materials for place in places if place == start}
+    shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == end}
+    
+    # available to ship
+    onhand = {("M_{}_{}_{}".format(material,place,day),"availability_{}_{}_{}".format(material,place,day)): -1 for material in materials for place in places for day in range(1,days)}
+    return {**shipped_from,**shipped_to_yest,**onhand}
 
 # shipping over edge coefficients/recipes
 def total_shipped_recipes(shipping):
@@ -179,24 +188,29 @@ def shipping_cap_recipes(shipping):
     days = get_n_days()
     return {("s_{}->{}_{}".format(start,end,day),"capacities_{}->{}_{}".format(start,end,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping}
 
-#%%
 def gen_recipes(shipping,hospitals,resources,factories,respirators,ppe):
     return {**shipping_cap_recipes(shipping),
     **total_shipped_recipes(shipping),
-    **demand_recipes(hospitals,resources,factories),
+    **demand_recipes(hospitals,ppe),
+    **availability_recipes(shipping),
     **onhand_recipes(factories,resources,shipping,respirators,ppe),
     **manufacturing_recipes(factories,resources,respirators,ppe)}
 
-factories = add_dummy_factory(factories)
-shipping = add_dummy_shipping(shipping,factories,hospitals)
+
+
 materials = get_all_materials(resources)
 decision_vars = gen_decision_variables(factories,materials,hospitals,shipping)
 objective = gen_obj_fxn(decision_vars,shipping)
 
 upper_bounds = gen_upper_bounds(factories,resources,hospitals,materials,shipping)
-lower_bounds = gen_equalities(factories,materials,shipping)
+equalities = gen_equalities(factories,materials,shipping)
 recipes = gen_recipes(shipping,hospitals,resources,factories,respirators,ppe)
 
-# %%
 import gurobipy as gp 
 from gurobipy import GRB 
+import run_model
+
+
+m = run_model.solve(objective, decision_vars, recipes, upper_bounds, equalities)
+
+# %%

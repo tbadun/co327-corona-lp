@@ -55,96 +55,52 @@ s.t. 2 x_1 +         6 y_1  +         8 y_3 <= p1
      x_1, x_2, y_1, y_2, y_3 >= 0
 
 """
-
-import read_data 
-import prototype_model
+#%%
 import gurobipy as gp 
 from gurobipy import GRB 
 
-# Obtain processed data using read_data.py
-factories = read_data.read_cost_values("../data/factories.csv")
-respirators = read_data.read_cost_values("../data/respirators.csv")
-ppe = read_data.read_cost_values("../data/ppe.csv")
-
-# Create our objective function using gurobipy's multi-dictionary data type
-medical_supplies, objective = gp.multidict({
-    'respirator1' : 1, 
-    'respirator2' : 1,
-    'ppe1' : 1,
-    'ppe2' : 1,
-    'ppe3' : 1
-})
-
-p1 = 0
-p2 = 0
-p3 = 0
-m1 = 0
-m2 = 0
-
-# Function which update the sum of each materials in all 4 factories
-# For flexibility and easier application later.
-def factory_material_update():
-    global p1, p2, p3, m1, m2
-    for factory in factories:
-        for material in factories[factory]:
-            if material == 'metal1':
-                m1 += int(factories[factory][material])
-            elif material == 'metal2':
-                m2 += int(factories[factory][material])
-            elif material == 'plastic1':
-                p1 += int(factories[factory][material])
-            elif material == 'plastic2':
-                p2 += int(factories[factory][material])
-            elif material == 'plastic3':
-                p3 += int(factories[factory][material])
-             
-factory_material_update()
-
-
-
-materials, supply = gp.multidict({
-    'metal1' : m1,
-    'metal2' : m2,
-    'plastic1' : p1,
-    'plastic2' : p2, 
-    'plastic3' : p3
-})
-
-# Recipe of constraints with hard coded data inputs from respirator.csv & ppe.csv.
-# Will be updated in later versions
-
-# Ex: Respirator 1 need 3 unit of metal 1, 2 unit of plastic 1 and 4 unit of plastic 3 to produce.
-recipes = {
-    ('respirator1', 'metal1') : 3,
-    ('respirator1', 'metal2') : 0,
-    ('respirator1', 'plastic1') : 2,
-    ('respirator1', 'plastic2') : 0,
-    ('respirator1', 'plastic3') : 4,
-
-    ('respirator2', 'metal1') : 0,    
-    ('respirator2', 'metal2') : 3,
-    ('respirator2', 'plastic1') : 0,
-    ('respirator2', 'plastic2') : 7,
-    ('respirator2', 'plastic3') : 0,
-
-    ('ppe1', 'metal1') : 0,    
-    ('ppe1', 'metal2') : 8,
-    ('ppe1', 'plastic1') : 6,
-    ('ppe1', 'plastic2') : 5,
-    ('ppe1', 'plastic3') : 0,
+def print_solution(model):
+    print()
+    print('###### Results ######')
     
-    ('ppe2', 'metal1') : 1,
-    ('ppe2', 'metal2') : 0,
-    ('ppe2', 'plastic1') : 0,
-    ('ppe2', 'plastic2') : 2,
-    ('ppe2', 'plastic3') : 9,
-    
-    ('ppe3', 'metal1') : 2,
-    ('ppe3', 'metal2') : 1,
-    ('ppe3', 'plastic1') : 8,
-    ('ppe3', 'plastic2') : 2,
-    ('ppe3', 'plastic3') : 9,
-}
+    model.write('test.lp')
+    try:
+        with open("results.txt","w+") as f:
+            for v in model.getVars():
+                f.write('{}: {:,.0f}\n'.format(v.varName, v.x))
+            print('Obj: {:,.0f}'.format(model.objVal))
+            f.write('Obj: {:,.0f}\n'.format(model.objVal))
+    except:
+        print("No Solution Found")
 
-#Calls the solve function of prototype_model.py with the dictionaries defined above
-prototype_model.solve(medical_supplies, objective, materials, supply, recipes)
+# defines a function solve which solves a binary marketing problem
+# objective: a dictionary with where keys are decision variables
+#           and values are the method's reach
+# decision_vars: list of decision variables (marketing methods)
+# recipes: a dictionary where keys are (decision variable,constraint name) 
+#           pairs, and values are coefficients
+# upper_bounds: values which each contraint is less than or equal to 
+# lower_bounds: values which each contraint is greater than or equal to 
+def solve(objective, decision_vars, recipes, upper_bounds, equalities):
+    m = gp.Model("corona-opt")
+
+    # create decision variables for marketing methods
+    allvars = m.addVars(decision_vars,name=decision_vars,vtype=GRB.INTEGER)
+    outcome = gp.tupledict({i:allvars[i] for i in objective.keys()})
+
+    # set objective to maximize reach
+    m.setObjective(outcome.prod(objective), GRB.MINIMIZE)
+
+    # upper bounds
+    m.addConstrs((gp.quicksum(recipes[(i,k)]*allvars[i] for i in decision_vars if (i,k) in recipes.keys()) <= upper_bounds[k] for  k in upper_bounds.keys()), "upper")
+
+    # lower bounds
+    m.addConstrs((gp.quicksum(recipes[(i,k)]*allvars[i] for i in decision_vars if (i,k) in recipes.keys()) == equalities[k] for  k in equalities.keys()), "eq")
+
+    # solve model
+    m.optimize()
+
+    # print solution
+    print_solution(m)
+
+    return m
