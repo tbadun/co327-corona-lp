@@ -170,11 +170,11 @@ def availability_recipes(shipping):
 
     # all in/outflow
     shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"availability_{}_{}_{}".format(material,place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in materials for place in places if place == start}
-    # shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == end}
+    shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == end}
     
     # available to ship
     onhand = {("M_{}_{}_{}".format(material,place,day),"availability_{}_{}_{}".format(material,place,day)): -1 for material in materials for place in places for day in range(1,days)}
-    return {**shipped_from,**onhand} #**shipped_to_yest,**onhand}
+    return {**shipped_from,**shipped_to_yest,**onhand}
 
 # shipping over edge coefficients/recipes
 def total_shipped_recipes(shipping):
