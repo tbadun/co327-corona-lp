@@ -149,19 +149,22 @@ def onhand_recipes(factories,resources,shipping,respirators,ppe):
     shipped_out_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else 1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if start == place}
     shipped_in_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if end == place}
     mat_onhand = {("M_{}_{}_{}".format(material,place,day),"onhand_{}_{}_{}".format(material,place,day)): 1 for material in materials for place in places for day in range(1,days)}
-    dummy_day0 = {("z_{}_{}->{}_0".format(material,start,end),"demand_{}_{}_1".format("ppe" if material in ppe.keys() else "respirators",place)): -1 for start,end,cap,cost in shipping if start == "DUMMY_RESERVE" for material in equipment for place in hospital_names if place == end}
+    dummy_day0 = {("z_{}_{}->{}_0".format(material,start,end),"demand_{}_{}_1".format("ppe" if material in ppe.keys() else "respirators",place)): -1 for start,end,cap,cost in shipping if start == "DUMMY_RESERVE" for material in equipment for place in places if place == end}
     return {**resp_made_yest,
             **ppe_made_yest,
+            **resp_supply_add,
+            **ppe_supply_add,
             **mat_onhand_yest,
             **shipped_out_yest,
             **shipped_in_yest,
-            **mat_onhand}
+            **mat_onhand,
+            **dummy_day0}
 
 # ppe and respirator demand coefficients/recipes
 def demand_recipes(hospitals,ppe):
     days = get_n_days()
-    hospital_names = [h[0] for h in hospitals]
     equipment = get_list_equipment()
+    hospital_names = [h[0] for h in hospitals]
 
     # hospital total in/outflow
     shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == start}

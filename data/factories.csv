@@ -1,4 +1,7 @@
-﻿factory1, respirator1, 7.99, ppe1, 3.99, plastic1, 100, plastic2, 120, plastic3, 300, metal1, 140, metal2, 210
-factory2, respirator1, 7.59, ppe1, 3.59, ppe2, 4.99, plastic1, 190, plastic2, 220, metal1, 140, metal2, 220
-factory3, respirator2, 9.59, ppe2, 4.59, ppe3, 5.99, plastic1, 190, plastic3, 520, metal1, 240, metal2, 120
-factory4, ppe3, 12.95, plastic2, 300, metal2, 300
+toronto_factory, ppe1, 1.32, ppe2, 3.89, respirator1, 15.78, respirator2, 24.65, respirator3, 76.89, metal1, 3000, metal2, 2000, metal3, 100, plastic1, 50, plastic2, 1009, fabric1, 100, fabric2, 100
+montreal_factory, ppe1, 1.22, ppe2, 4.99, respirator1, 14.28, respirator2, 28.56, respirator3, 66.66, metal1, 100, metal2, 1000, metal3, 519, plastic1, 232, plastic2, 333, fabric2, 2999, fabric1, 122
+edmonton_factory, ppe1, 2.01, ppe2, 1.30, respirator1, 13.01, respirator2, 21.11, respirator3, 81.05, metal1, 533, metal2, 123, metal3, 50, plastic1, 75, plastic2, 35, fabric1, 1990, fabric2, 123
+vancouver_factory, ppe1, 1.58, ppe2, 5.00, respirator1, 21.10, respirator2, 23.99, respirator3, 79.31, metal1, 99, metal2, 99, metal3, 188, plastic1, 88, plastic2, 3000, fabric1, 1010, fabric2, 345
+quebec_factory, ppe1, 3.75, ppe2, 6.21, respirator1, 9.99, respirator2, 24.65, respirator3, 85.00, metal1, 56, metal2, 45, metal3, 2890, plastic1, 1679, plastic2, 321, fabric1, 190, fabric2, 909
+southwest_factory, ppe1, 0.98, ppe2, 1.77, respirator1, 10.12, respirator2, 19.95, respirator3, 69.44, metal1, 2100, metal2, 3333, metal3, 139, plastic1, 809, plastic2, 99, fabric1, 589, fabric2, 934
+hamilton_factory, ppe1, 1.43, ppe2, 5.42, respirator1, 20.36, respirator2, 29.35, respirator3, 49.91, metal1, 10, metal2, 20, metal3, 340, plastic1, 3432, plastic2, 1245, fabric1, 1244, fabric2, 24

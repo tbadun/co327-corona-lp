@@ -1,2 +1,3 @@
-﻿respirator1, plastic1, 2, plastic3, 4, metal1, 3
-respirator2, plastic2, 7, metal2, 3
+respirator1, metal1, 1, metal2, 2, plastic1, 3 
+respirator2, metal1, 1, metal2, 3, plastic2, 1
+respirator3, metal1, 1, metal3, 4, fabric2, 4

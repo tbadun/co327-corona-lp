@@ -37,7 +37,7 @@ def traverse_cast(list_of_lists: list):
 def clean_read(fname:str):
     with open(fname,encoding="utf-8-sig") as csvfile:
         data = list(csv.reader(csvfile))
-    return traverse_cast(data)
+    return [i for i in traverse_cast(data) if i!=[]]
 
 # reads csv and returns dictionary of contents
 # use for: respirators, factories, ppe
@@ -60,6 +60,7 @@ def read_demand(csv_name: str):
     cleaned = clean_read(csv_name)
     n_days = max([len(i) for i in cleaned]) # -1
     for i in range(len(cleaned)):
+        cleaned[i] = [j if j!='' else 0 for j in cleaned[i]]
         cleaned[i] = cleaned[i] + [0]*(n_days-len(cleaned[i]))
     # {row[0]: row[1:] + ([0] * (n_days-len(row)+1)) for row in cleaned}
     return cleaned
