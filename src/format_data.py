@@ -146,15 +146,14 @@ def onhand_recipes(factories,resources,shipping,respirators,ppe):
         
     # all places; resources and equipment
     mat_onhand_yest = {("M_{}_{}_{}".format(material,place,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 for material in materials for place in places for day in range(2,days)}
-    shipped_out_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else 1 if start == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
-    shipped_in_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 if end == place else 0 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places}
+    shipped_out_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else 1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if start == place}
+    shipped_in_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"onhand_{}_{}_{}".format(material,place,day)): 0 if place == "DUMMY_RESERVE" else -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if end == place}
     mat_onhand = {("M_{}_{}_{}".format(material,place,day),"onhand_{}_{}_{}".format(material,place,day)): 1 for material in materials for place in places for day in range(1,days)}
+    dummy_day0 = {("z_{}_{}->{}_0".format(material,start,end),"demand_{}_{}_1".format("ppe" if material in ppe.keys() else "respirators",place)): -1 for start,end,cap,cost in shipping if start == "DUMMY_RESERVE" for material in equipment for place in hospital_names if place == end}
     return {**resp_made_yest,
             **ppe_made_yest,
             **mat_onhand_yest,
             **shipped_out_yest,
-            **resp_supply_add,
-            **ppe_supply_add,
             **shipped_in_yest,
             **mat_onhand}
 
@@ -180,12 +179,12 @@ def availability_recipes(shipping):
     materials = get_all_materials()
 
     # all in/outflow
-    shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"availability_{}_{}_{}".format(material,place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in materials for place in places if place == start}
+    shipped_from_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): 1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == start}
     shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == end}
     
     # available to ship
     onhand = {("M_{}_{}_{}".format(material,place,day),"availability_{}_{}_{}".format(material,place,day)): -1 for material in materials for place in places for day in range(1,days)}
-    return {**shipped_from,**shipped_to_yest,**onhand}
+    return {**shipped_from_yest,**shipped_to_yest,**onhand}
 
 # shipping over edge coefficients/recipes
 def total_shipped_recipes(shipping):

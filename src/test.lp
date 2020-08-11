@@ -2370,3250 +2370,3184 @@ Subject To
    - z_respirator1_DUMMY_RESERVE->hospital4_18
    - z_respirator2_DUMMY_RESERVE->hospital4_18 - M_respirator1_hospital4_18
    - M_respirator2_hospital4_18 <= 0
- upper[availability_metal1_factory1_1]: z_metal1_factory1->hospital1_1
+ upper[availability_metal1_factory1_1]: - M_metal1_factory1_1 <= 0
+ upper[availability_metal2_factory1_1]: - M_metal2_factory1_1 <= 0
+ upper[availability_plastic1_factory1_1]: - M_plastic1_factory1_1 <= 0
+ upper[availability_plastic2_factory1_1]: - M_plastic2_factory1_1 <= 0
+ upper[availability_plastic3_factory1_1]: - M_plastic3_factory1_1 <= 0
+ upper[availability_ppe1_factory1_1]: - M_ppe1_factory1_1 <= 0
+ upper[availability_ppe2_factory1_1]: - M_ppe2_factory1_1 <= 0
+ upper[availability_ppe3_factory1_1]: - M_ppe3_factory1_1 <= 0
+ upper[availability_respirator1_factory1_1]: - M_respirator1_factory1_1
+   <= 0
+ upper[availability_respirator2_factory1_1]: - M_respirator2_factory1_1
+   <= 0
+ upper[availability_metal1_factory1_2]: z_metal1_factory1->hospital1_1
    + z_metal1_factory1->hospital2_1 + z_metal1_factory1->factory4_1
-   + z_metal1_factory1->factory2_1 - M_metal1_factory1_1 <= 0
- upper[availability_metal2_factory1_1]: z_metal2_factory1->hospital1_1
+   + z_metal1_factory1->factory2_1 - z_metal1_DUMMY_RESERVE->factory1_1
+   - M_metal1_factory1_2 <= 0
+ upper[availability_metal2_factory1_2]: z_metal2_factory1->hospital1_1
    + z_metal2_factory1->hospital2_1 + z_metal2_factory1->factory4_1
-   + z_metal2_factory1->factory2_1 - M_metal2_factory1_1 <= 0
- upper[availability_plastic1_factory1_1]: z_plastic1_factory1->hospital1_1
+   + z_metal2_factory1->factory2_1 - z_metal2_DUMMY_RESERVE->factory1_1
+   - M_metal2_factory1_2 <= 0
+ upper[availability_plastic1_factory1_2]: z_plastic1_factory1->hospital1_1
    + z_plastic1_factory1->hospital2_1 + z_plastic1_factory1->factory4_1
-   + z_plastic1_factory1->factory2_1 - M_plastic1_factory1_1 <= 0
- upper[availability_plastic2_factory1_1]: z_plastic2_factory1->hospital1_1
+   + z_plastic1_factory1->factory2_1 - z_plastic1_DUMMY_RESERVE->factory1_1
+   - M_plastic1_factory1_2 <= 0
+ upper[availability_plastic2_factory1_2]: z_plastic2_factory1->hospital1_1
    + z_plastic2_factory1->hospital2_1 + z_plastic2_factory1->factory4_1
-   + z_plastic2_factory1->factory2_1 - M_plastic2_factory1_1 <= 0
- upper[availability_plastic3_factory1_1]: z_plastic3_factory1->hospital1_1
+   + z_plastic2_factory1->factory2_1 - z_plastic2_DUMMY_RESERVE->factory1_1
+   - M_plastic2_factory1_2 <= 0
+ upper[availability_plastic3_factory1_2]: z_plastic3_factory1->hospital1_1
    + z_plastic3_factory1->hospital2_1 + z_plastic3_factory1->factory4_1
-   + z_plastic3_factory1->factory2_1 - M_plastic3_factory1_1 <= 0
- upper[availability_ppe1_factory1_1]: z_ppe1_factory1->hospital1_1
+   + z_plastic3_factory1->factory2_1 - z_plastic3_DUMMY_RESERVE->factory1_1
+   - M_plastic3_factory1_2 <= 0
+ upper[availability_ppe1_factory1_2]: z_ppe1_factory1->hospital1_1
    + z_ppe1_factory1->hospital2_1 + z_ppe1_factory1->factory4_1
-   + z_ppe1_factory1->factory2_1 - M_ppe1_factory1_1 <= 0
- upper[availability_ppe2_factory1_1]: z_ppe2_factory1->hospital1_1
+   + z_ppe1_factory1->factory2_1 - z_ppe1_DUMMY_RESERVE->factory1_1
+   - M_ppe1_factory1_2 <= 0
+ upper[availability_ppe2_factory1_2]: z_ppe2_factory1->hospital1_1
    + z_ppe2_factory1->hospital2_1 + z_ppe2_factory1->factory4_1
-   + z_ppe2_factory1->factory2_1 - M_ppe2_factory1_1 <= 0
- upper[availability_ppe3_factory1_1]: z_ppe3_factory1->hospital1_1
+   + z_ppe2_factory1->factory2_1 - z_ppe2_DUMMY_RESERVE->factory1_1
+   - M_ppe2_factory1_2 <= 0
+ upper[availability_ppe3_factory1_2]: z_ppe3_factory1->hospital1_1
    + z_ppe3_factory1->hospital2_1 + z_ppe3_factory1->factory4_1
-   + z_ppe3_factory1->factory2_1 - M_ppe3_factory1_1 <= 0
- upper[availability_respirator1_factory1_1]:
+   + z_ppe3_factory1->factory2_1 - z_ppe3_DUMMY_RESERVE->factory1_1
+   - M_ppe3_factory1_2 <= 0
+ upper[availability_respirator1_factory1_2]:
    z_respirator1_factory1->hospital1_1
    + z_respirator1_factory1->hospital2_1
    + z_respirator1_factory1->factory4_1
-   + z_respirator1_factory1->factory2_1 - M_respirator1_factory1_1 <= 0
- upper[availability_respirator2_factory1_1]:
+   + z_respirator1_factory1->factory2_1
+   - z_respirator1_DUMMY_RESERVE->factory1_1 - M_respirator1_factory1_2
+   <= 0
+ upper[availability_respirator2_factory1_2]:
    z_respirator2_factory1->hospital1_1
    + z_respirator2_factory1->hospital2_1
    + z_respirator2_factory1->factory4_1
-   + z_respirator2_factory1->factory2_1 - M_respirator2_factory1_1 <= 0
- upper[availability_metal1_factory1_2]:
-   - z_metal1_DUMMY_RESERVE->factory1_1 + z_metal1_factory1->hospital1_2
+   + z_respirator2_factory1->factory2_1
+   - z_respirator2_DUMMY_RESERVE->factory1_1 - M_respirator2_factory1_2
+   <= 0
+ upper[availability_metal1_factory1_3]: z_metal1_factory1->hospital1_2
    + z_metal1_factory1->hospital2_2 + z_metal1_factory1->factory4_2
-   + z_metal1_factory1->factory2_2 - M_metal1_factory1_2 <= 0
- upper[availability_metal2_factory1_2]:
-   - z_metal2_DUMMY_RESERVE->factory1_1 + z_metal2_factory1->hospital1_2
+   + z_metal1_factory1->factory2_2 - z_metal1_DUMMY_RESERVE->factory1_2
+   - M_metal1_factory1_3 <= 0
+ upper[availability_metal2_factory1_3]: z_metal2_factory1->hospital1_2
    + z_metal2_factory1->hospital2_2 + z_metal2_factory1->factory4_2
-   + z_metal2_factory1->factory2_2 - M_metal2_factory1_2 <= 0
- upper[availability_plastic1_factory1_2]:
-   - z_plastic1_DUMMY_RESERVE->factory1_1
-   + z_plastic1_factory1->hospital1_2 + z_plastic1_factory1->hospital2_2
-   + z_plastic1_factory1->factory4_2 + z_plastic1_factory1->factory2_2
-   - M_plastic1_factory1_2 <= 0
- upper[availability_plastic2_factory1_2]:
-   - z_plastic2_DUMMY_RESERVE->factory1_1
-   + z_plastic2_factory1->hospital1_2 + z_plastic2_factory1->hospital2_2
-   + z_plastic2_factory1->factory4_2 + z_plastic2_factory1->factory2_2
-   - M_plastic2_factory1_2 <= 0
- upper[availability_plastic3_factory1_2]:
-   - z_plastic3_DUMMY_RESERVE->factory1_1
-   + z_plastic3_factory1->hospital1_2 + z_plastic3_factory1->hospital2_2
-   + z_plastic3_factory1->factory4_2 + z_plastic3_factory1->factory2_2
-   - M_plastic3_factory1_2 <= 0
- upper[availability_ppe1_factory1_2]: - z_ppe1_DUMMY_RESERVE->factory1_1
-   + z_ppe1_factory1->hospital1_2 + z_ppe1_factory1->hospital2_2
-   + z_ppe1_factory1->factory4_2 + z_ppe1_factory1->factory2_2
-   - M_ppe1_factory1_2 <= 0
- upper[availability_ppe2_factory1_2]: - z_ppe2_DUMMY_RESERVE->factory1_1
-   + z_ppe2_factory1->hospital1_2 + z_ppe2_factory1->hospital2_2
-   + z_ppe2_factory1->factory4_2 + z_ppe2_factory1->factory2_2
-   - M_ppe2_factory1_2 <= 0
- upper[availability_ppe3_factory1_2]: - z_ppe3_DUMMY_RESERVE->factory1_1
-   + z_ppe3_factory1->hospital1_2 + z_ppe3_factory1->hospital2_2
-   + z_ppe3_factory1->factory4_2 + z_ppe3_factory1->factory2_2
-   - M_ppe3_factory1_2 <= 0
- upper[availability_respirator1_factory1_2]:
-   - z_respirator1_DUMMY_RESERVE->factory1_1
-   + z_respirator1_factory1->hospital1_2
-   + z_respirator1_factory1->hospital2_2
-   + z_respirator1_factory1->factory4_2
-   + z_respirator1_factory1->factory2_2 - M_respirator1_factory1_2 <= 0
- upper[availability_respirator2_factory1_2]:
-   - z_respirator2_DUMMY_RESERVE->factory1_1
-   + z_respirator2_factory1->hospital1_2
-   + z_respirator2_factory1->hospital2_2
-   + z_respirator2_factory1->factory4_2
-   + z_respirator2_factory1->factory2_2 - M_respirator2_factory1_2 <= 0
- upper[availability_metal1_factory1_3]:
-   - z_metal1_DUMMY_RESERVE->factory1_2 + z_metal1_factory1->hospital1_3
-   + z_metal1_factory1->hospital2_3 + z_metal1_factory1->factory4_3
-   + z_metal1_factory1->factory2_3 - M_metal1_factory1_3 <= 0
- upper[availability_metal2_factory1_3]:
-   - z_metal2_DUMMY_RESERVE->factory1_2 + z_metal2_factory1->hospital1_3
-   + z_metal2_factory1->hospital2_3 + z_metal2_factory1->factory4_3
-   + z_metal2_factory1->factory2_3 - M_metal2_factory1_3 <= 0
- upper[availability_plastic1_factory1_3]:
-   - z_plastic1_DUMMY_RESERVE->factory1_2
-   + z_plastic1_factory1->hospital1_3 + z_plastic1_factory1->hospital2_3
-   + z_plastic1_factory1->factory4_3 + z_plastic1_factory1->factory2_3
+   + z_metal2_factory1->factory2_2 - z_metal2_DUMMY_RESERVE->factory1_2
+   - M_metal2_factory1_3 <= 0
+ upper[availability_plastic1_factory1_3]: z_plastic1_factory1->hospital1_2
+   + z_plastic1_factory1->hospital2_2 + z_plastic1_factory1->factory4_2
+   + z_plastic1_factory1->factory2_2 - z_plastic1_DUMMY_RESERVE->factory1_2
    - M_plastic1_factory1_3 <= 0
- upper[availability_plastic2_factory1_3]:
-   - z_plastic2_DUMMY_RESERVE->factory1_2
-   + z_plastic2_factory1->hospital1_3 + z_plastic2_factory1->hospital2_3
-   + z_plastic2_factory1->factory4_3 + z_plastic2_factory1->factory2_3
+ upper[availability_plastic2_factory1_3]: z_plastic2_factory1->hospital1_2
+   + z_plastic2_factory1->hospital2_2 + z_plastic2_factory1->factory4_2
+   + z_plastic2_factory1->factory2_2 - z_plastic2_DUMMY_RESERVE->factory1_2
    - M_plastic2_factory1_3 <= 0
- upper[availability_plastic3_factory1_3]:
-   - z_plastic3_DUMMY_RESERVE->factory1_2
-   + z_plastic3_factory1->hospital1_3 + z_plastic3_factory1->hospital2_3
-   + z_plastic3_factory1->factory4_3 + z_plastic3_factory1->factory2_3
+ upper[availability_plastic3_factory1_3]: z_plastic3_factory1->hospital1_2
+   + z_plastic3_factory1->hospital2_2 + z_plastic3_factory1->factory4_2
+   + z_plastic3_factory1->factory2_2 - z_plastic3_DUMMY_RESERVE->factory1_2
    - M_plastic3_factory1_3 <= 0
- upper[availability_ppe1_factory1_3]: - z_ppe1_DUMMY_RESERVE->factory1_2
-   + z_ppe1_factory1->hospital1_3 + z_ppe1_factory1->hospital2_3
-   + z_ppe1_factory1->factory4_3 + z_ppe1_factory1->factory2_3
+ upper[availability_ppe1_factory1_3]: z_ppe1_factory1->hospital1_2
+   + z_ppe1_factory1->hospital2_2 + z_ppe1_factory1->factory4_2
+   + z_ppe1_factory1->factory2_2 - z_ppe1_DUMMY_RESERVE->factory1_2
    - M_ppe1_factory1_3 <= 0
- upper[availability_ppe2_factory1_3]: - z_ppe2_DUMMY_RESERVE->factory1_2
-   + z_ppe2_factory1->hospital1_3 + z_ppe2_factory1->hospital2_3
-   + z_ppe2_factory1->factory4_3 + z_ppe2_factory1->factory2_3
+ upper[availability_ppe2_factory1_3]: z_ppe2_factory1->hospital1_2
+   + z_ppe2_factory1->hospital2_2 + z_ppe2_factory1->factory4_2
+   + z_ppe2_factory1->factory2_2 - z_ppe2_DUMMY_RESERVE->factory1_2
    - M_ppe2_factory1_3 <= 0
- upper[availability_ppe3_factory1_3]: - z_ppe3_DUMMY_RESERVE->factory1_2
-   + z_ppe3_factory1->hospital1_3 + z_ppe3_factory1->hospital2_3
-   + z_ppe3_factory1->factory4_3 + z_ppe3_factory1->factory2_3
+ upper[availability_ppe3_factory1_3]: z_ppe3_factory1->hospital1_2
+   + z_ppe3_factory1->hospital2_2 + z_ppe3_factory1->factory4_2
+   + z_ppe3_factory1->factory2_2 - z_ppe3_DUMMY_RESERVE->factory1_2
    - M_ppe3_factory1_3 <= 0
  upper[availability_respirator1_factory1_3]:
-   - z_respirator1_DUMMY_RESERVE->factory1_2
-   + z_respirator1_factory1->hospital1_3
-   + z_respirator1_factory1->hospital2_3
-   + z_respirator1_factory1->factory4_3
-   + z_respirator1_factory1->factory2_3 - M_respirator1_factory1_3 <= 0
+   z_respirator1_factory1->hospital1_2
+   + z_respirator1_factory1->hospital2_2
+   + z_respirator1_factory1->factory4_2
+   + z_respirator1_factory1->factory2_2
+   - z_respirator1_DUMMY_RESERVE->factory1_2 - M_respirator1_factory1_3
+   <= 0
  upper[availability_respirator2_factory1_3]:
-   - z_respirator2_DUMMY_RESERVE->factory1_2
-   + z_respirator2_factory1->hospital1_3
-   + z_respirator2_factory1->hospital2_3
-   + z_respirator2_factory1->factory4_3
-   + z_respirator2_factory1->factory2_3 - M_respirator2_factory1_3 <= 0
- upper[availability_metal1_factory1_4]:
-   - z_metal1_DUMMY_RESERVE->factory1_3 + z_metal1_factory1->hospital1_4
-   + z_metal1_factory1->hospital2_4 + z_metal1_factory1->factory4_4
-   + z_metal1_factory1->factory2_4 - M_metal1_factory1_4 <= 0
- upper[availability_metal2_factory1_4]:
-   - z_metal2_DUMMY_RESERVE->factory1_3 + z_metal2_factory1->hospital1_4
-   + z_metal2_factory1->hospital2_4 + z_metal2_factory1->factory4_4
-   + z_metal2_factory1->factory2_4 - M_metal2_factory1_4 <= 0
- upper[availability_plastic1_factory1_4]:
-   - z_plastic1_DUMMY_RESERVE->factory1_3
-   + z_plastic1_factory1->hospital1_4 + z_plastic1_factory1->hospital2_4
-   + z_plastic1_factory1->factory4_4 + z_plastic1_factory1->factory2_4
+   z_respirator2_factory1->hospital1_2
+   + z_respirator2_factory1->hospital2_2
+   + z_respirator2_factory1->factory4_2
+   + z_respirator2_factory1->factory2_2
+   - z_respirator2_DUMMY_RESERVE->factory1_2 - M_respirator2_factory1_3
+   <= 0
+ upper[availability_metal1_factory1_4]: z_metal1_factory1->hospital1_3
+   + z_metal1_factory1->hospital2_3 + z_metal1_factory1->factory4_3
+   + z_metal1_factory1->factory2_3 - z_metal1_DUMMY_RESERVE->factory1_3
+   - M_metal1_factory1_4 <= 0
+ upper[availability_metal2_factory1_4]: z_metal2_factory1->hospital1_3
+   + z_metal2_factory1->hospital2_3 + z_metal2_factory1->factory4_3
+   + z_metal2_factory1->factory2_3 - z_metal2_DUMMY_RESERVE->factory1_3
+   - M_metal2_factory1_4 <= 0
+ upper[availability_plastic1_factory1_4]: z_plastic1_factory1->hospital1_3
+   + z_plastic1_factory1->hospital2_3 + z_plastic1_factory1->factory4_3
+   + z_plastic1_factory1->factory2_3 - z_plastic1_DUMMY_RESERVE->factory1_3
    - M_plastic1_factory1_4 <= 0
- upper[availability_plastic2_factory1_4]:
-   - z_plastic2_DUMMY_RESERVE->factory1_3
-   + z_plastic2_factory1->hospital1_4 + z_plastic2_factory1->hospital2_4
-   + z_plastic2_factory1->factory4_4 + z_plastic2_factory1->factory2_4
+ upper[availability_plastic2_factory1_4]: z_plastic2_factory1->hospital1_3
+   + z_plastic2_factory1->hospital2_3 + z_plastic2_factory1->factory4_3
+   + z_plastic2_factory1->factory2_3 - z_plastic2_DUMMY_RESERVE->factory1_3
    - M_plastic2_factory1_4 <= 0
- upper[availability_plastic3_factory1_4]:
-   - z_plastic3_DUMMY_RESERVE->factory1_3
-   + z_plastic3_factory1->hospital1_4 + z_plastic3_factory1->hospital2_4
-   + z_plastic3_factory1->factory4_4 + z_plastic3_factory1->factory2_4
+ upper[availability_plastic3_factory1_4]: z_plastic3_factory1->hospital1_3
+   + z_plastic3_factory1->hospital2_3 + z_plastic3_factory1->factory4_3
+   + z_plastic3_factory1->factory2_3 - z_plastic3_DUMMY_RESERVE->factory1_3
    - M_plastic3_factory1_4 <= 0
- upper[availability_ppe1_factory1_4]: - z_ppe1_DUMMY_RESERVE->factory1_3
-   + z_ppe1_factory1->hospital1_4 + z_ppe1_factory1->hospital2_4
-   + z_ppe1_factory1->factory4_4 + z_ppe1_factory1->factory2_4
+ upper[availability_ppe1_factory1_4]: z_ppe1_factory1->hospital1_3
+   + z_ppe1_factory1->hospital2_3 + z_ppe1_factory1->factory4_3
+   + z_ppe1_factory1->factory2_3 - z_ppe1_DUMMY_RESERVE->factory1_3
    - M_ppe1_factory1_4 <= 0
- upper[availability_ppe2_factory1_4]: - z_ppe2_DUMMY_RESERVE->factory1_3
-   + z_ppe2_factory1->hospital1_4 + z_ppe2_factory1->hospital2_4
-   + z_ppe2_factory1->factory4_4 + z_ppe2_factory1->factory2_4
+ upper[availability_ppe2_factory1_4]: z_ppe2_factory1->hospital1_3
+   + z_ppe2_factory1->hospital2_3 + z_ppe2_factory1->factory4_3
+   + z_ppe2_factory1->factory2_3 - z_ppe2_DUMMY_RESERVE->factory1_3
    - M_ppe2_factory1_4 <= 0
- upper[availability_ppe3_factory1_4]: - z_ppe3_DUMMY_RESERVE->factory1_3
-   + z_ppe3_factory1->hospital1_4 + z_ppe3_factory1->hospital2_4
-   + z_ppe3_factory1->factory4_4 + z_ppe3_factory1->factory2_4
+ upper[availability_ppe3_factory1_4]: z_ppe3_factory1->hospital1_3
+   + z_ppe3_factory1->hospital2_3 + z_ppe3_factory1->factory4_3
+   + z_ppe3_factory1->factory2_3 - z_ppe3_DUMMY_RESERVE->factory1_3
    - M_ppe3_factory1_4 <= 0
  upper[availability_respirator1_factory1_4]:
-   - z_respirator1_DUMMY_RESERVE->factory1_3
-   + z_respirator1_factory1->hospital1_4
-   + z_respirator1_factory1->hospital2_4
-   + z_respirator1_factory1->factory4_4
-   + z_respirator1_factory1->factory2_4 - M_respirator1_factory1_4 <= 0
+   z_respirator1_factory1->hospital1_3
+   + z_respirator1_factory1->hospital2_3
+   + z_respirator1_factory1->factory4_3
+   + z_respirator1_factory1->factory2_3
+   - z_respirator1_DUMMY_RESERVE->factory1_3 - M_respirator1_factory1_4
+   <= 0
  upper[availability_respirator2_factory1_4]:
-   - z_respirator2_DUMMY_RESERVE->factory1_3
-   + z_respirator2_factory1->hospital1_4
-   + z_respirator2_factory1->hospital2_4
-   + z_respirator2_factory1->factory4_4
-   + z_respirator2_factory1->factory2_4 - M_respirator2_factory1_4 <= 0
- upper[availability_metal1_factory1_5]:
-   - z_metal1_DUMMY_RESERVE->factory1_4 + z_metal1_factory1->hospital1_5
-   + z_metal1_factory1->hospital2_5 + z_metal1_factory1->factory4_5
-   + z_metal1_factory1->factory2_5 - M_metal1_factory1_5 <= 0
- upper[availability_metal2_factory1_5]:
-   - z_metal2_DUMMY_RESERVE->factory1_4 + z_metal2_factory1->hospital1_5
-   + z_metal2_factory1->hospital2_5 + z_metal2_factory1->factory4_5
-   + z_metal2_factory1->factory2_5 - M_metal2_factory1_5 <= 0
- upper[availability_plastic1_factory1_5]:
-   - z_plastic1_DUMMY_RESERVE->factory1_4
-   + z_plastic1_factory1->hospital1_5 + z_plastic1_factory1->hospital2_5
-   + z_plastic1_factory1->factory4_5 + z_plastic1_factory1->factory2_5
+   z_respirator2_factory1->hospital1_3
+   + z_respirator2_factory1->hospital2_3
+   + z_respirator2_factory1->factory4_3
+   + z_respirator2_factory1->factory2_3
+   - z_respirator2_DUMMY_RESERVE->factory1_3 - M_respirator2_factory1_4
+   <= 0
+ upper[availability_metal1_factory1_5]: z_metal1_factory1->hospital1_4
+   + z_metal1_factory1->hospital2_4 + z_metal1_factory1->factory4_4
+   + z_metal1_factory1->factory2_4 - z_metal1_DUMMY_RESERVE->factory1_4
+   - M_metal1_factory1_5 <= 0
+ upper[availability_metal2_factory1_5]: z_metal2_factory1->hospital1_4
+   + z_metal2_factory1->hospital2_4 + z_metal2_factory1->factory4_4
+   + z_metal2_factory1->factory2_4 - z_metal2_DUMMY_RESERVE->factory1_4
+   - M_metal2_factory1_5 <= 0
+ upper[availability_plastic1_factory1_5]: z_plastic1_factory1->hospital1_4
+   + z_plastic1_factory1->hospital2_4 + z_plastic1_factory1->factory4_4
+   + z_plastic1_factory1->factory2_4 - z_plastic1_DUMMY_RESERVE->factory1_4
    - M_plastic1_factory1_5 <= 0
- upper[availability_plastic2_factory1_5]:
-   - z_plastic2_DUMMY_RESERVE->factory1_4
-   + z_plastic2_factory1->hospital1_5 + z_plastic2_factory1->hospital2_5
-   + z_plastic2_factory1->factory4_5 + z_plastic2_factory1->factory2_5
+ upper[availability_plastic2_factory1_5]: z_plastic2_factory1->hospital1_4
+   + z_plastic2_factory1->hospital2_4 + z_plastic2_factory1->factory4_4
+   + z_plastic2_factory1->factory2_4 - z_plastic2_DUMMY_RESERVE->factory1_4
    - M_plastic2_factory1_5 <= 0
- upper[availability_plastic3_factory1_5]:
-   - z_plastic3_DUMMY_RESERVE->factory1_4
-   + z_plastic3_factory1->hospital1_5 + z_plastic3_factory1->hospital2_5
-   + z_plastic3_factory1->factory4_5 + z_plastic3_factory1->factory2_5
+ upper[availability_plastic3_factory1_5]: z_plastic3_factory1->hospital1_4
+   + z_plastic3_factory1->hospital2_4 + z_plastic3_factory1->factory4_4
+   + z_plastic3_factory1->factory2_4 - z_plastic3_DUMMY_RESERVE->factory1_4
    - M_plastic3_factory1_5 <= 0
- upper[availability_ppe1_factory1_5]: - z_ppe1_DUMMY_RESERVE->factory1_4
-   + z_ppe1_factory1->hospital1_5 + z_ppe1_factory1->hospital2_5
-   + z_ppe1_factory1->factory4_5 + z_ppe1_factory1->factory2_5
+ upper[availability_ppe1_factory1_5]: z_ppe1_factory1->hospital1_4
+   + z_ppe1_factory1->hospital2_4 + z_ppe1_factory1->factory4_4
+   + z_ppe1_factory1->factory2_4 - z_ppe1_DUMMY_RESERVE->factory1_4
    - M_ppe1_factory1_5 <= 0
- upper[availability_ppe2_factory1_5]: - z_ppe2_DUMMY_RESERVE->factory1_4
-   + z_ppe2_factory1->hospital1_5 + z_ppe2_factory1->hospital2_5
-   + z_ppe2_factory1->factory4_5 + z_ppe2_factory1->factory2_5
+ upper[availability_ppe2_factory1_5]: z_ppe2_factory1->hospital1_4
+   + z_ppe2_factory1->hospital2_4 + z_ppe2_factory1->factory4_4
+   + z_ppe2_factory1->factory2_4 - z_ppe2_DUMMY_RESERVE->factory1_4
    - M_ppe2_factory1_5 <= 0
- upper[availability_ppe3_factory1_5]: - z_ppe3_DUMMY_RESERVE->factory1_4
-   + z_ppe3_factory1->hospital1_5 + z_ppe3_factory1->hospital2_5
-   + z_ppe3_factory1->factory4_5 + z_ppe3_factory1->factory2_5
+ upper[availability_ppe3_factory1_5]: z_ppe3_factory1->hospital1_4
+   + z_ppe3_factory1->hospital2_4 + z_ppe3_factory1->factory4_4
+   + z_ppe3_factory1->factory2_4 - z_ppe3_DUMMY_RESERVE->factory1_4
    - M_ppe3_factory1_5 <= 0
  upper[availability_respirator1_factory1_5]:
-   - z_respirator1_DUMMY_RESERVE->factory1_4
-   + z_respirator1_factory1->hospital1_5
-   + z_respirator1_factory1->hospital2_5
-   + z_respirator1_factory1->factory4_5
-   + z_respirator1_factory1->factory2_5 - M_respirator1_factory1_5 <= 0
+   z_respirator1_factory1->hospital1_4
+   + z_respirator1_factory1->hospital2_4
+   + z_respirator1_factory1->factory4_4
+   + z_respirator1_factory1->factory2_4
+   - z_respirator1_DUMMY_RESERVE->factory1_4 - M_respirator1_factory1_5
+   <= 0
  upper[availability_respirator2_factory1_5]:
-   - z_respirator2_DUMMY_RESERVE->factory1_4
-   + z_respirator2_factory1->hospital1_5
-   + z_respirator2_factory1->hospital2_5
-   + z_respirator2_factory1->factory4_5
-   + z_respirator2_factory1->factory2_5 - M_respirator2_factory1_5 <= 0
- upper[availability_metal1_factory1_6]:
-   - z_metal1_DUMMY_RESERVE->factory1_5 + z_metal1_factory1->hospital1_6
-   + z_metal1_factory1->hospital2_6 + z_metal1_factory1->factory4_6
-   + z_metal1_factory1->factory2_6 - M_metal1_factory1_6 <= 0
- upper[availability_metal2_factory1_6]:
-   - z_metal2_DUMMY_RESERVE->factory1_5 + z_metal2_factory1->hospital1_6
-   + z_metal2_factory1->hospital2_6 + z_metal2_factory1->factory4_6
-   + z_metal2_factory1->factory2_6 - M_metal2_factory1_6 <= 0
- upper[availability_plastic1_factory1_6]:
-   - z_plastic1_DUMMY_RESERVE->factory1_5
-   + z_plastic1_factory1->hospital1_6 + z_plastic1_factory1->hospital2_6
-   + z_plastic1_factory1->factory4_6 + z_plastic1_factory1->factory2_6
+   z_respirator2_factory1->hospital1_4
+   + z_respirator2_factory1->hospital2_4
+   + z_respirator2_factory1->factory4_4
+   + z_respirator2_factory1->factory2_4
+   - z_respirator2_DUMMY_RESERVE->factory1_4 - M_respirator2_factory1_5
+   <= 0
+ upper[availability_metal1_factory1_6]: z_metal1_factory1->hospital1_5
+   + z_metal1_factory1->hospital2_5 + z_metal1_factory1->factory4_5
+   + z_metal1_factory1->factory2_5 - z_metal1_DUMMY_RESERVE->factory1_5
+   - M_metal1_factory1_6 <= 0
+ upper[availability_metal2_factory1_6]: z_metal2_factory1->hospital1_5
+   + z_metal2_factory1->hospital2_5 + z_metal2_factory1->factory4_5
+   + z_metal2_factory1->factory2_5 - z_metal2_DUMMY_RESERVE->factory1_5
+   - M_metal2_factory1_6 <= 0
+ upper[availability_plastic1_factory1_6]: z_plastic1_factory1->hospital1_5
+   + z_plastic1_factory1->hospital2_5 + z_plastic1_factory1->factory4_5
+   + z_plastic1_factory1->factory2_5 - z_plastic1_DUMMY_RESERVE->factory1_5
    - M_plastic1_factory1_6 <= 0
- upper[availability_plastic2_factory1_6]:
-   - z_plastic2_DUMMY_RESERVE->factory1_5
-   + z_plastic2_factory1->hospital1_6 + z_plastic2_factory1->hospital2_6
-   + z_plastic2_factory1->factory4_6 + z_plastic2_factory1->factory2_6
+ upper[availability_plastic2_factory1_6]: z_plastic2_factory1->hospital1_5
+   + z_plastic2_factory1->hospital2_5 + z_plastic2_factory1->factory4_5
+   + z_plastic2_factory1->factory2_5 - z_plastic2_DUMMY_RESERVE->factory1_5
    - M_plastic2_factory1_6 <= 0
- upper[availability_plastic3_factory1_6]:
-   - z_plastic3_DUMMY_RESERVE->factory1_5
-   + z_plastic3_factory1->hospital1_6 + z_plastic3_factory1->hospital2_6
-   + z_plastic3_factory1->factory4_6 + z_plastic3_factory1->factory2_6
+ upper[availability_plastic3_factory1_6]: z_plastic3_factory1->hospital1_5
+   + z_plastic3_factory1->hospital2_5 + z_plastic3_factory1->factory4_5
+   + z_plastic3_factory1->factory2_5 - z_plastic3_DUMMY_RESERVE->factory1_5
    - M_plastic3_factory1_6 <= 0
- upper[availability_ppe1_factory1_6]: - z_ppe1_DUMMY_RESERVE->factory1_5
-   + z_ppe1_factory1->hospital1_6 + z_ppe1_factory1->hospital2_6
-   + z_ppe1_factory1->factory4_6 + z_ppe1_factory1->factory2_6
+ upper[availability_ppe1_factory1_6]: z_ppe1_factory1->hospital1_5
+   + z_ppe1_factory1->hospital2_5 + z_ppe1_factory1->factory4_5
+   + z_ppe1_factory1->factory2_5 - z_ppe1_DUMMY_RESERVE->factory1_5
    - M_ppe1_factory1_6 <= 0
- upper[availability_ppe2_factory1_6]: - z_ppe2_DUMMY_RESERVE->factory1_5
-   + z_ppe2_factory1->hospital1_6 + z_ppe2_factory1->hospital2_6
-   + z_ppe2_factory1->factory4_6 + z_ppe2_factory1->factory2_6
+ upper[availability_ppe2_factory1_6]: z_ppe2_factory1->hospital1_5
+   + z_ppe2_factory1->hospital2_5 + z_ppe2_factory1->factory4_5
+   + z_ppe2_factory1->factory2_5 - z_ppe2_DUMMY_RESERVE->factory1_5
    - M_ppe2_factory1_6 <= 0
- upper[availability_ppe3_factory1_6]: - z_ppe3_DUMMY_RESERVE->factory1_5
-   + z_ppe3_factory1->hospital1_6 + z_ppe3_factory1->hospital2_6
-   + z_ppe3_factory1->factory4_6 + z_ppe3_factory1->factory2_6
+ upper[availability_ppe3_factory1_6]: z_ppe3_factory1->hospital1_5
+   + z_ppe3_factory1->hospital2_5 + z_ppe3_factory1->factory4_5
+   + z_ppe3_factory1->factory2_5 - z_ppe3_DUMMY_RESERVE->factory1_5
    - M_ppe3_factory1_6 <= 0
  upper[availability_respirator1_factory1_6]:
-   - z_respirator1_DUMMY_RESERVE->factory1_5
-   + z_respirator1_factory1->hospital1_6
-   + z_respirator1_factory1->hospital2_6
-   + z_respirator1_factory1->factory4_6
-   + z_respirator1_factory1->factory2_6 - M_respirator1_factory1_6 <= 0
+   z_respirator1_factory1->hospital1_5
+   + z_respirator1_factory1->hospital2_5
+   + z_respirator1_factory1->factory4_5
+   + z_respirator1_factory1->factory2_5
+   - z_respirator1_DUMMY_RESERVE->factory1_5 - M_respirator1_factory1_6
+   <= 0
  upper[availability_respirator2_factory1_6]:
-   - z_respirator2_DUMMY_RESERVE->factory1_5
-   + z_respirator2_factory1->hospital1_6
-   + z_respirator2_factory1->hospital2_6
-   + z_respirator2_factory1->factory4_6
-   + z_respirator2_factory1->factory2_6 - M_respirator2_factory1_6 <= 0
- upper[availability_metal1_factory1_7]:
-   - z_metal1_DUMMY_RESERVE->factory1_6 + z_metal1_factory1->hospital1_7
-   + z_metal1_factory1->hospital2_7 + z_metal1_factory1->factory4_7
-   + z_metal1_factory1->factory2_7 - M_metal1_factory1_7 <= 0
- upper[availability_metal2_factory1_7]:
-   - z_metal2_DUMMY_RESERVE->factory1_6 + z_metal2_factory1->hospital1_7
-   + z_metal2_factory1->hospital2_7 + z_metal2_factory1->factory4_7
-   + z_metal2_factory1->factory2_7 - M_metal2_factory1_7 <= 0
- upper[availability_plastic1_factory1_7]:
-   - z_plastic1_DUMMY_RESERVE->factory1_6
-   + z_plastic1_factory1->hospital1_7 + z_plastic1_factory1->hospital2_7
-   + z_plastic1_factory1->factory4_7 + z_plastic1_factory1->factory2_7
+   z_respirator2_factory1->hospital1_5
+   + z_respirator2_factory1->hospital2_5
+   + z_respirator2_factory1->factory4_5
+   + z_respirator2_factory1->factory2_5
+   - z_respirator2_DUMMY_RESERVE->factory1_5 - M_respirator2_factory1_6
+   <= 0
+ upper[availability_metal1_factory1_7]: z_metal1_factory1->hospital1_6
+   + z_metal1_factory1->hospital2_6 + z_metal1_factory1->factory4_6
+   + z_metal1_factory1->factory2_6 - z_metal1_DUMMY_RESERVE->factory1_6
+   - M_metal1_factory1_7 <= 0
+ upper[availability_metal2_factory1_7]: z_metal2_factory1->hospital1_6
+   + z_metal2_factory1->hospital2_6 + z_metal2_factory1->factory4_6
+   + z_metal2_factory1->factory2_6 - z_metal2_DUMMY_RESERVE->factory1_6
+   - M_metal2_factory1_7 <= 0
+ upper[availability_plastic1_factory1_7]: z_plastic1_factory1->hospital1_6
+   + z_plastic1_factory1->hospital2_6 + z_plastic1_factory1->factory4_6
+   + z_plastic1_factory1->factory2_6 - z_plastic1_DUMMY_RESERVE->factory1_6
    - M_plastic1_factory1_7 <= 0
- upper[availability_plastic2_factory1_7]:
-   - z_plastic2_DUMMY_RESERVE->factory1_6
-   + z_plastic2_factory1->hospital1_7 + z_plastic2_factory1->hospital2_7
-   + z_plastic2_factory1->factory4_7 + z_plastic2_factory1->factory2_7
+ upper[availability_plastic2_factory1_7]: z_plastic2_factory1->hospital1_6
+   + z_plastic2_factory1->hospital2_6 + z_plastic2_factory1->factory4_6
+   + z_plastic2_factory1->factory2_6 - z_plastic2_DUMMY_RESERVE->factory1_6
    - M_plastic2_factory1_7 <= 0
- upper[availability_plastic3_factory1_7]:
-   - z_plastic3_DUMMY_RESERVE->factory1_6
-   + z_plastic3_factory1->hospital1_7 + z_plastic3_factory1->hospital2_7
-   + z_plastic3_factory1->factory4_7 + z_plastic3_factory1->factory2_7
+ upper[availability_plastic3_factory1_7]: z_plastic3_factory1->hospital1_6
+   + z_plastic3_factory1->hospital2_6 + z_plastic3_factory1->factory4_6
+   + z_plastic3_factory1->factory2_6 - z_plastic3_DUMMY_RESERVE->factory1_6
    - M_plastic3_factory1_7 <= 0
- upper[availability_ppe1_factory1_7]: - z_ppe1_DUMMY_RESERVE->factory1_6
-   + z_ppe1_factory1->hospital1_7 + z_ppe1_factory1->hospital2_7
-   + z_ppe1_factory1->factory4_7 + z_ppe1_factory1->factory2_7
+ upper[availability_ppe1_factory1_7]: z_ppe1_factory1->hospital1_6
+   + z_ppe1_factory1->hospital2_6 + z_ppe1_factory1->factory4_6
+   + z_ppe1_factory1->factory2_6 - z_ppe1_DUMMY_RESERVE->factory1_6
    - M_ppe1_factory1_7 <= 0
- upper[availability_ppe2_factory1_7]: - z_ppe2_DUMMY_RESERVE->factory1_6
-   + z_ppe2_factory1->hospital1_7 + z_ppe2_factory1->hospital2_7
-   + z_ppe2_factory1->factory4_7 + z_ppe2_factory1->factory2_7
+ upper[availability_ppe2_factory1_7]: z_ppe2_factory1->hospital1_6
+   + z_ppe2_factory1->hospital2_6 + z_ppe2_factory1->factory4_6
+   + z_ppe2_factory1->factory2_6 - z_ppe2_DUMMY_RESERVE->factory1_6
    - M_ppe2_factory1_7 <= 0
- upper[availability_ppe3_factory1_7]: - z_ppe3_DUMMY_RESERVE->factory1_6
-   + z_ppe3_factory1->hospital1_7 + z_ppe3_factory1->hospital2_7
-   + z_ppe3_factory1->factory4_7 + z_ppe3_factory1->factory2_7
+ upper[availability_ppe3_factory1_7]: z_ppe3_factory1->hospital1_6
+   + z_ppe3_factory1->hospital2_6 + z_ppe3_factory1->factory4_6
+   + z_ppe3_factory1->factory2_6 - z_ppe3_DUMMY_RESERVE->factory1_6
    - M_ppe3_factory1_7 <= 0
  upper[availability_respirator1_factory1_7]:
-   - z_respirator1_DUMMY_RESERVE->factory1_6
-   + z_respirator1_factory1->hospital1_7
-   + z_respirator1_factory1->hospital2_7
-   + z_respirator1_factory1->factory4_7
-   + z_respirator1_factory1->factory2_7 - M_respirator1_factory1_7 <= 0
+   z_respirator1_factory1->hospital1_6
+   + z_respirator1_factory1->hospital2_6
+   + z_respirator1_factory1->factory4_6
+   + z_respirator1_factory1->factory2_6
+   - z_respirator1_DUMMY_RESERVE->factory1_6 - M_respirator1_factory1_7
+   <= 0
  upper[availability_respirator2_factory1_7]:
-   - z_respirator2_DUMMY_RESERVE->factory1_6
-   + z_respirator2_factory1->hospital1_7
-   + z_respirator2_factory1->hospital2_7
-   + z_respirator2_factory1->factory4_7
-   + z_respirator2_factory1->factory2_7 - M_respirator2_factory1_7 <= 0
- upper[availability_metal1_factory1_8]:
-   - z_metal1_DUMMY_RESERVE->factory1_7 + z_metal1_factory1->hospital1_8
-   + z_metal1_factory1->hospital2_8 + z_metal1_factory1->factory4_8
-   + z_metal1_factory1->factory2_8 - M_metal1_factory1_8 <= 0
- upper[availability_metal2_factory1_8]:
-   - z_metal2_DUMMY_RESERVE->factory1_7 + z_metal2_factory1->hospital1_8
-   + z_metal2_factory1->hospital2_8 + z_metal2_factory1->factory4_8
-   + z_metal2_factory1->factory2_8 - M_metal2_factory1_8 <= 0
- upper[availability_plastic1_factory1_8]:
-   - z_plastic1_DUMMY_RESERVE->factory1_7
-   + z_plastic1_factory1->hospital1_8 + z_plastic1_factory1->hospital2_8
-   + z_plastic1_factory1->factory4_8 + z_plastic1_factory1->factory2_8
+   z_respirator2_factory1->hospital1_6
+   + z_respirator2_factory1->hospital2_6
+   + z_respirator2_factory1->factory4_6
+   + z_respirator2_factory1->factory2_6
+   - z_respirator2_DUMMY_RESERVE->factory1_6 - M_respirator2_factory1_7
+   <= 0
+ upper[availability_metal1_factory1_8]: z_metal1_factory1->hospital1_7
+   + z_metal1_factory1->hospital2_7 + z_metal1_factory1->factory4_7
+   + z_metal1_factory1->factory2_7 - z_metal1_DUMMY_RESERVE->factory1_7
+   - M_metal1_factory1_8 <= 0
+ upper[availability_metal2_factory1_8]: z_metal2_factory1->hospital1_7
+   + z_metal2_factory1->hospital2_7 + z_metal2_factory1->factory4_7
+   + z_metal2_factory1->factory2_7 - z_metal2_DUMMY_RESERVE->factory1_7
+   - M_metal2_factory1_8 <= 0
+ upper[availability_plastic1_factory1_8]: z_plastic1_factory1->hospital1_7
+   + z_plastic1_factory1->hospital2_7 + z_plastic1_factory1->factory4_7
+   + z_plastic1_factory1->factory2_7 - z_plastic1_DUMMY_RESERVE->factory1_7
    - M_plastic1_factory1_8 <= 0
- upper[availability_plastic2_factory1_8]:
-   - z_plastic2_DUMMY_RESERVE->factory1_7
-   + z_plastic2_factory1->hospital1_8 + z_plastic2_factory1->hospital2_8
-   + z_plastic2_factory1->factory4_8 + z_plastic2_factory1->factory2_8
+ upper[availability_plastic2_factory1_8]: z_plastic2_factory1->hospital1_7
+   + z_plastic2_factory1->hospital2_7 + z_plastic2_factory1->factory4_7
+   + z_plastic2_factory1->factory2_7 - z_plastic2_DUMMY_RESERVE->factory1_7
    - M_plastic2_factory1_8 <= 0
- upper[availability_plastic3_factory1_8]:
-   - z_plastic3_DUMMY_RESERVE->factory1_7
-   + z_plastic3_factory1->hospital1_8 + z_plastic3_factory1->hospital2_8
-   + z_plastic3_factory1->factory4_8 + z_plastic3_factory1->factory2_8
+ upper[availability_plastic3_factory1_8]: z_plastic3_factory1->hospital1_7
+   + z_plastic3_factory1->hospital2_7 + z_plastic3_factory1->factory4_7
+   + z_plastic3_factory1->factory2_7 - z_plastic3_DUMMY_RESERVE->factory1_7
    - M_plastic3_factory1_8 <= 0
- upper[availability_ppe1_factory1_8]: - z_ppe1_DUMMY_RESERVE->factory1_7
-   + z_ppe1_factory1->hospital1_8 + z_ppe1_factory1->hospital2_8
-   + z_ppe1_factory1->factory4_8 + z_ppe1_factory1->factory2_8
+ upper[availability_ppe1_factory1_8]: z_ppe1_factory1->hospital1_7
+   + z_ppe1_factory1->hospital2_7 + z_ppe1_factory1->factory4_7
+   + z_ppe1_factory1->factory2_7 - z_ppe1_DUMMY_RESERVE->factory1_7
    - M_ppe1_factory1_8 <= 0
- upper[availability_ppe2_factory1_8]: - z_ppe2_DUMMY_RESERVE->factory1_7
-   + z_ppe2_factory1->hospital1_8 + z_ppe2_factory1->hospital2_8
-   + z_ppe2_factory1->factory4_8 + z_ppe2_factory1->factory2_8
+ upper[availability_ppe2_factory1_8]: z_ppe2_factory1->hospital1_7
+   + z_ppe2_factory1->hospital2_7 + z_ppe2_factory1->factory4_7
+   + z_ppe2_factory1->factory2_7 - z_ppe2_DUMMY_RESERVE->factory1_7
    - M_ppe2_factory1_8 <= 0
- upper[availability_ppe3_factory1_8]: - z_ppe3_DUMMY_RESERVE->factory1_7
-   + z_ppe3_factory1->hospital1_8 + z_ppe3_factory1->hospital2_8
-   + z_ppe3_factory1->factory4_8 + z_ppe3_factory1->factory2_8
+ upper[availability_ppe3_factory1_8]: z_ppe3_factory1->hospital1_7
+   + z_ppe3_factory1->hospital2_7 + z_ppe3_factory1->factory4_7
+   + z_ppe3_factory1->factory2_7 - z_ppe3_DUMMY_RESERVE->factory1_7
    - M_ppe3_factory1_8 <= 0
  upper[availability_respirator1_factory1_8]:
-   - z_respirator1_DUMMY_RESERVE->factory1_7
-   + z_respirator1_factory1->hospital1_8
-   + z_respirator1_factory1->hospital2_8
-   + z_respirator1_factory1->factory4_8
-   + z_respirator1_factory1->factory2_8 - M_respirator1_factory1_8 <= 0
+   z_respirator1_factory1->hospital1_7
+   + z_respirator1_factory1->hospital2_7
+   + z_respirator1_factory1->factory4_7
+   + z_respirator1_factory1->factory2_7
+   - z_respirator1_DUMMY_RESERVE->factory1_7 - M_respirator1_factory1_8
+   <= 0
  upper[availability_respirator2_factory1_8]:
-   - z_respirator2_DUMMY_RESERVE->factory1_7
-   + z_respirator2_factory1->hospital1_8
-   + z_respirator2_factory1->hospital2_8
-   + z_respirator2_factory1->factory4_8
-   + z_respirator2_factory1->factory2_8 - M_respirator2_factory1_8 <= 0
- upper[availability_metal1_factory1_9]:
-   - z_metal1_DUMMY_RESERVE->factory1_8 + z_metal1_factory1->hospital1_9
-   + z_metal1_factory1->hospital2_9 + z_metal1_factory1->factory4_9
-   + z_metal1_factory1->factory2_9 - M_metal1_factory1_9 <= 0
- upper[availability_metal2_factory1_9]:
-   - z_metal2_DUMMY_RESERVE->factory1_8 + z_metal2_factory1->hospital1_9
-   + z_metal2_factory1->hospital2_9 + z_metal2_factory1->factory4_9
-   + z_metal2_factory1->factory2_9 - M_metal2_factory1_9 <= 0
- upper[availability_plastic1_factory1_9]:
-   - z_plastic1_DUMMY_RESERVE->factory1_8
-   + z_plastic1_factory1->hospital1_9 + z_plastic1_factory1->hospital2_9
-   + z_plastic1_factory1->factory4_9 + z_plastic1_factory1->factory2_9
+   z_respirator2_factory1->hospital1_7
+   + z_respirator2_factory1->hospital2_7
+   + z_respirator2_factory1->factory4_7
+   + z_respirator2_factory1->factory2_7
+   - z_respirator2_DUMMY_RESERVE->factory1_7 - M_respirator2_factory1_8
+   <= 0
+ upper[availability_metal1_factory1_9]: z_metal1_factory1->hospital1_8
+   + z_metal1_factory1->hospital2_8 + z_metal1_factory1->factory4_8
+   + z_metal1_factory1->factory2_8 - z_metal1_DUMMY_RESERVE->factory1_8
+   - M_metal1_factory1_9 <= 0
+ upper[availability_metal2_factory1_9]: z_metal2_factory1->hospital1_8
+   + z_metal2_factory1->hospital2_8 + z_metal2_factory1->factory4_8
+   + z_metal2_factory1->factory2_8 - z_metal2_DUMMY_RESERVE->factory1_8
+   - M_metal2_factory1_9 <= 0
+ upper[availability_plastic1_factory1_9]: z_plastic1_factory1->hospital1_8
+   + z_plastic1_factory1->hospital2_8 + z_plastic1_factory1->factory4_8
+   + z_plastic1_factory1->factory2_8 - z_plastic1_DUMMY_RESERVE->factory1_8
    - M_plastic1_factory1_9 <= 0
- upper[availability_plastic2_factory1_9]:
-   - z_plastic2_DUMMY_RESERVE->factory1_8
-   + z_plastic2_factory1->hospital1_9 + z_plastic2_factory1->hospital2_9
-   + z_plastic2_factory1->factory4_9 + z_plastic2_factory1->factory2_9
+ upper[availability_plastic2_factory1_9]: z_plastic2_factory1->hospital1_8
+   + z_plastic2_factory1->hospital2_8 + z_plastic2_factory1->factory4_8
+   + z_plastic2_factory1->factory2_8 - z_plastic2_DUMMY_RESERVE->factory1_8
    - M_plastic2_factory1_9 <= 0
- upper[availability_plastic3_factory1_9]:
-   - z_plastic3_DUMMY_RESERVE->factory1_8
-   + z_plastic3_factory1->hospital1_9 + z_plastic3_factory1->hospital2_9
-   + z_plastic3_factory1->factory4_9 + z_plastic3_factory1->factory2_9
+ upper[availability_plastic3_factory1_9]: z_plastic3_factory1->hospital1_8
+   + z_plastic3_factory1->hospital2_8 + z_plastic3_factory1->factory4_8
+   + z_plastic3_factory1->factory2_8 - z_plastic3_DUMMY_RESERVE->factory1_8
    - M_plastic3_factory1_9 <= 0
- upper[availability_ppe1_factory1_9]: - z_ppe1_DUMMY_RESERVE->factory1_8
-   + z_ppe1_factory1->hospital1_9 + z_ppe1_factory1->hospital2_9
-   + z_ppe1_factory1->factory4_9 + z_ppe1_factory1->factory2_9
+ upper[availability_ppe1_factory1_9]: z_ppe1_factory1->hospital1_8
+   + z_ppe1_factory1->hospital2_8 + z_ppe1_factory1->factory4_8
+   + z_ppe1_factory1->factory2_8 - z_ppe1_DUMMY_RESERVE->factory1_8
    - M_ppe1_factory1_9 <= 0
- upper[availability_ppe2_factory1_9]: - z_ppe2_DUMMY_RESERVE->factory1_8
-   + z_ppe2_factory1->hospital1_9 + z_ppe2_factory1->hospital2_9
-   + z_ppe2_factory1->factory4_9 + z_ppe2_factory1->factory2_9
+ upper[availability_ppe2_factory1_9]: z_ppe2_factory1->hospital1_8
+   + z_ppe2_factory1->hospital2_8 + z_ppe2_factory1->factory4_8
+   + z_ppe2_factory1->factory2_8 - z_ppe2_DUMMY_RESERVE->factory1_8
    - M_ppe2_factory1_9 <= 0
- upper[availability_ppe3_factory1_9]: - z_ppe3_DUMMY_RESERVE->factory1_8
-   + z_ppe3_factory1->hospital1_9 + z_ppe3_factory1->hospital2_9
-   + z_ppe3_factory1->factory4_9 + z_ppe3_factory1->factory2_9
+ upper[availability_ppe3_factory1_9]: z_ppe3_factory1->hospital1_8
+   + z_ppe3_factory1->hospital2_8 + z_ppe3_factory1->factory4_8
+   + z_ppe3_factory1->factory2_8 - z_ppe3_DUMMY_RESERVE->factory1_8
    - M_ppe3_factory1_9 <= 0
  upper[availability_respirator1_factory1_9]:
-   - z_respirator1_DUMMY_RESERVE->factory1_8
-   + z_respirator1_factory1->hospital1_9
-   + z_respirator1_factory1->hospital2_9
-   + z_respirator1_factory1->factory4_9
-   + z_respirator1_factory1->factory2_9 - M_respirator1_factory1_9 <= 0
+   z_respirator1_factory1->hospital1_8
+   + z_respirator1_factory1->hospital2_8
+   + z_respirator1_factory1->factory4_8
+   + z_respirator1_factory1->factory2_8
+   - z_respirator1_DUMMY_RESERVE->factory1_8 - M_respirator1_factory1_9
+   <= 0
  upper[availability_respirator2_factory1_9]:
-   - z_respirator2_DUMMY_RESERVE->factory1_8
-   + z_respirator2_factory1->hospital1_9
-   + z_respirator2_factory1->hospital2_9
-   + z_respirator2_factory1->factory4_9
-   + z_respirator2_factory1->factory2_9 - M_respirator2_factory1_9 <= 0
- upper[availability_metal1_factory1_10]:
-   - z_metal1_DUMMY_RESERVE->factory1_9 + z_metal1_factory1->hospital1_10
-   + z_metal1_factory1->hospital2_10 + z_metal1_factory1->factory4_10
-   + z_metal1_factory1->factory2_10 - M_metal1_factory1_10 <= 0
- upper[availability_metal2_factory1_10]:
-   - z_metal2_DUMMY_RESERVE->factory1_9 + z_metal2_factory1->hospital1_10
-   + z_metal2_factory1->hospital2_10 + z_metal2_factory1->factory4_10
-   + z_metal2_factory1->factory2_10 - M_metal2_factory1_10 <= 0
- upper[availability_plastic1_factory1_10]:
-   - z_plastic1_DUMMY_RESERVE->factory1_9
-   + z_plastic1_factory1->hospital1_10 + z_plastic1_factory1->hospital2_10
-   + z_plastic1_factory1->factory4_10 + z_plastic1_factory1->factory2_10
+   z_respirator2_factory1->hospital1_8
+   + z_respirator2_factory1->hospital2_8
+   + z_respirator2_factory1->factory4_8
+   + z_respirator2_factory1->factory2_8
+   - z_respirator2_DUMMY_RESERVE->factory1_8 - M_respirator2_factory1_9
+   <= 0
+ upper[availability_metal1_factory1_10]: z_metal1_factory1->hospital1_9
+   + z_metal1_factory1->hospital2_9 + z_metal1_factory1->factory4_9
+   + z_metal1_factory1->factory2_9 - z_metal1_DUMMY_RESERVE->factory1_9
+   - M_metal1_factory1_10 <= 0
+ upper[availability_metal2_factory1_10]: z_metal2_factory1->hospital1_9
+   + z_metal2_factory1->hospital2_9 + z_metal2_factory1->factory4_9
+   + z_metal2_factory1->factory2_9 - z_metal2_DUMMY_RESERVE->factory1_9
+   - M_metal2_factory1_10 <= 0
+ upper[availability_plastic1_factory1_10]: z_plastic1_factory1->hospital1_9
+   + z_plastic1_factory1->hospital2_9 + z_plastic1_factory1->factory4_9
+   + z_plastic1_factory1->factory2_9 - z_plastic1_DUMMY_RESERVE->factory1_9
    - M_plastic1_factory1_10 <= 0
- upper[availability_plastic2_factory1_10]:
-   - z_plastic2_DUMMY_RESERVE->factory1_9
-   + z_plastic2_factory1->hospital1_10 + z_plastic2_factory1->hospital2_10
-   + z_plastic2_factory1->factory4_10 + z_plastic2_factory1->factory2_10
+ upper[availability_plastic2_factory1_10]: z_plastic2_factory1->hospital1_9
+   + z_plastic2_factory1->hospital2_9 + z_plastic2_factory1->factory4_9
+   + z_plastic2_factory1->factory2_9 - z_plastic2_DUMMY_RESERVE->factory1_9
    - M_plastic2_factory1_10 <= 0
- upper[availability_plastic3_factory1_10]:
-   - z_plastic3_DUMMY_RESERVE->factory1_9
-   + z_plastic3_factory1->hospital1_10 + z_plastic3_factory1->hospital2_10
-   + z_plastic3_factory1->factory4_10 + z_plastic3_factory1->factory2_10
+ upper[availability_plastic3_factory1_10]: z_plastic3_factory1->hospital1_9
+   + z_plastic3_factory1->hospital2_9 + z_plastic3_factory1->factory4_9
+   + z_plastic3_factory1->factory2_9 - z_plastic3_DUMMY_RESERVE->factory1_9
    - M_plastic3_factory1_10 <= 0
- upper[availability_ppe1_factory1_10]: - z_ppe1_DUMMY_RESERVE->factory1_9
-   + z_ppe1_factory1->hospital1_10 + z_ppe1_factory1->hospital2_10
-   + z_ppe1_factory1->factory4_10 + z_ppe1_factory1->factory2_10
+ upper[availability_ppe1_factory1_10]: z_ppe1_factory1->hospital1_9
+   + z_ppe1_factory1->hospital2_9 + z_ppe1_factory1->factory4_9
+   + z_ppe1_factory1->factory2_9 - z_ppe1_DUMMY_RESERVE->factory1_9
    - M_ppe1_factory1_10 <= 0
- upper[availability_ppe2_factory1_10]: - z_ppe2_DUMMY_RESERVE->factory1_9
-   + z_ppe2_factory1->hospital1_10 + z_ppe2_factory1->hospital2_10
-   + z_ppe2_factory1->factory4_10 + z_ppe2_factory1->factory2_10
+ upper[availability_ppe2_factory1_10]: z_ppe2_factory1->hospital1_9
+   + z_ppe2_factory1->hospital2_9 + z_ppe2_factory1->factory4_9
+   + z_ppe2_factory1->factory2_9 - z_ppe2_DUMMY_RESERVE->factory1_9
    - M_ppe2_factory1_10 <= 0
- upper[availability_ppe3_factory1_10]: - z_ppe3_DUMMY_RESERVE->factory1_9
-   + z_ppe3_factory1->hospital1_10 + z_ppe3_factory1->hospital2_10
-   + z_ppe3_factory1->factory4_10 + z_ppe3_factory1->factory2_10
+ upper[availability_ppe3_factory1_10]: z_ppe3_factory1->hospital1_9
+   + z_ppe3_factory1->hospital2_9 + z_ppe3_factory1->factory4_9
+   + z_ppe3_factory1->factory2_9 - z_ppe3_DUMMY_RESERVE->factory1_9
    - M_ppe3_factory1_10 <= 0
  upper[availability_respirator1_factory1_10]:
-   - z_respirator1_DUMMY_RESERVE->factory1_9
-   + z_respirator1_factory1->hospital1_10
-   + z_respirator1_factory1->hospital2_10
-   + z_respirator1_factory1->factory4_10
-   + z_respirator1_factory1->factory2_10 - M_respirator1_factory1_10 <= 0
+   z_respirator1_factory1->hospital1_9
+   + z_respirator1_factory1->hospital2_9
+   + z_respirator1_factory1->factory4_9
+   + z_respirator1_factory1->factory2_9
+   - z_respirator1_DUMMY_RESERVE->factory1_9 - M_respirator1_factory1_10
+   <= 0
  upper[availability_respirator2_factory1_10]:
-   - z_respirator2_DUMMY_RESERVE->factory1_9
-   + z_respirator2_factory1->hospital1_10
-   + z_respirator2_factory1->hospital2_10
-   + z_respirator2_factory1->factory4_10
-   + z_respirator2_factory1->factory2_10 - M_respirator2_factory1_10 <= 0
- upper[availability_metal1_factory1_11]:
-   - z_metal1_DUMMY_RESERVE->factory1_10 + z_metal1_factory1->hospital1_11
-   + z_metal1_factory1->hospital2_11 + z_metal1_factory1->factory4_11
-   + z_metal1_factory1->factory2_11 - M_metal1_factory1_11 <= 0
- upper[availability_metal2_factory1_11]:
-   - z_metal2_DUMMY_RESERVE->factory1_10 + z_metal2_factory1->hospital1_11
-   + z_metal2_factory1->hospital2_11 + z_metal2_factory1->factory4_11
-   + z_metal2_factory1->factory2_11 - M_metal2_factory1_11 <= 0
+   z_respirator2_factory1->hospital1_9
+   + z_respirator2_factory1->hospital2_9
+   + z_respirator2_factory1->factory4_9
+   + z_respirator2_factory1->factory2_9
+   - z_respirator2_DUMMY_RESERVE->factory1_9 - M_respirator2_factory1_10
+   <= 0
+ upper[availability_metal1_factory1_11]: z_metal1_factory1->hospital1_10
+   + z_metal1_factory1->hospital2_10 + z_metal1_factory1->factory4_10
+   + z_metal1_factory1->factory2_10 - z_metal1_DUMMY_RESERVE->factory1_10
+   - M_metal1_factory1_11 <= 0
+ upper[availability_metal2_factory1_11]: z_metal2_factory1->hospital1_10
+   + z_metal2_factory1->hospital2_10 + z_metal2_factory1->factory4_10
+   + z_metal2_factory1->factory2_10 - z_metal2_DUMMY_RESERVE->factory1_10
+   - M_metal2_factory1_11 <= 0
  upper[availability_plastic1_factory1_11]:
-   - z_plastic1_DUMMY_RESERVE->factory1_10
-   + z_plastic1_factory1->hospital1_11 + z_plastic1_factory1->hospital2_11
-   + z_plastic1_factory1->factory4_11 + z_plastic1_factory1->factory2_11
-   - M_plastic1_factory1_11 <= 0
+   z_plastic1_factory1->hospital1_10 + z_plastic1_factory1->hospital2_10
+   + z_plastic1_factory1->factory4_10 + z_plastic1_factory1->factory2_10
+   - z_plastic1_DUMMY_RESERVE->factory1_10 - M_plastic1_factory1_11 <= 0
  upper[availability_plastic2_factory1_11]:
-   - z_plastic2_DUMMY_RESERVE->factory1_10
-   + z_plastic2_factory1->hospital1_11 + z_plastic2_factory1->hospital2_11
-   + z_plastic2_factory1->factory4_11 + z_plastic2_factory1->factory2_11
-   - M_plastic2_factory1_11 <= 0
+   z_plastic2_factory1->hospital1_10 + z_plastic2_factory1->hospital2_10
+   + z_plastic2_factory1->factory4_10 + z_plastic2_factory1->factory2_10
+   - z_plastic2_DUMMY_RESERVE->factory1_10 - M_plastic2_factory1_11 <= 0
  upper[availability_plastic3_factory1_11]:
-   - z_plastic3_DUMMY_RESERVE->factory1_10
-   + z_plastic3_factory1->hospital1_11 + z_plastic3_factory1->hospital2_11
-   + z_plastic3_factory1->factory4_11 + z_plastic3_factory1->factory2_11
-   - M_plastic3_factory1_11 <= 0
- upper[availability_ppe1_factory1_11]: - z_ppe1_DUMMY_RESERVE->factory1_10
-   + z_ppe1_factory1->hospital1_11 + z_ppe1_factory1->hospital2_11
-   + z_ppe1_factory1->factory4_11 + z_ppe1_factory1->factory2_11
+   z_plastic3_factory1->hospital1_10 + z_plastic3_factory1->hospital2_10
+   + z_plastic3_factory1->factory4_10 + z_plastic3_factory1->factory2_10
+   - z_plastic3_DUMMY_RESERVE->factory1_10 - M_plastic3_factory1_11 <= 0
+ upper[availability_ppe1_factory1_11]: z_ppe1_factory1->hospital1_10
+   + z_ppe1_factory1->hospital2_10 + z_ppe1_factory1->factory4_10
+   + z_ppe1_factory1->factory2_10 - z_ppe1_DUMMY_RESERVE->factory1_10
    - M_ppe1_factory1_11 <= 0
- upper[availability_ppe2_factory1_11]: - z_ppe2_DUMMY_RESERVE->factory1_10
-   + z_ppe2_factory1->hospital1_11 + z_ppe2_factory1->hospital2_11
-   + z_ppe2_factory1->factory4_11 + z_ppe2_factory1->factory2_11
+ upper[availability_ppe2_factory1_11]: z_ppe2_factory1->hospital1_10
+   + z_ppe2_factory1->hospital2_10 + z_ppe2_factory1->factory4_10
+   + z_ppe2_factory1->factory2_10 - z_ppe2_DUMMY_RESERVE->factory1_10
    - M_ppe2_factory1_11 <= 0
- upper[availability_ppe3_factory1_11]: - z_ppe3_DUMMY_RESERVE->factory1_10
-   + z_ppe3_factory1->hospital1_11 + z_ppe3_factory1->hospital2_11
-   + z_ppe3_factory1->factory4_11 + z_ppe3_factory1->factory2_11
+ upper[availability_ppe3_factory1_11]: z_ppe3_factory1->hospital1_10
+   + z_ppe3_factory1->hospital2_10 + z_ppe3_factory1->factory4_10
+   + z_ppe3_factory1->factory2_10 - z_ppe3_DUMMY_RESERVE->factory1_10
    - M_ppe3_factory1_11 <= 0
  upper[availability_respirator1_factory1_11]:
-   - z_respirator1_DUMMY_RESERVE->factory1_10
-   + z_respirator1_factory1->hospital1_11
-   + z_respirator1_factory1->hospital2_11
-   + z_respirator1_factory1->factory4_11
-   + z_respirator1_factory1->factory2_11 - M_respirator1_factory1_11 <= 0
+   z_respirator1_factory1->hospital1_10
+   + z_respirator1_factory1->hospital2_10
+   + z_respirator1_factory1->factory4_10
+   + z_respirator1_factory1->factory2_10
+   - z_respirator1_DUMMY_RESERVE->factory1_10 - M_respirator1_factory1_11
+   <= 0
  upper[availability_respirator2_factory1_11]:
-   - z_respirator2_DUMMY_RESERVE->factory1_10
-   + z_respirator2_factory1->hospital1_11
-   + z_respirator2_factory1->hospital2_11
-   + z_respirator2_factory1->factory4_11
-   + z_respirator2_factory1->factory2_11 - M_respirator2_factory1_11 <= 0
- upper[availability_metal1_factory1_12]:
-   - z_metal1_DUMMY_RESERVE->factory1_11 + z_metal1_factory1->hospital1_12
-   + z_metal1_factory1->hospital2_12 + z_metal1_factory1->factory4_12
-   + z_metal1_factory1->factory2_12 - M_metal1_factory1_12 <= 0
- upper[availability_metal2_factory1_12]:
-   - z_metal2_DUMMY_RESERVE->factory1_11 + z_metal2_factory1->hospital1_12
-   + z_metal2_factory1->hospital2_12 + z_metal2_factory1->factory4_12
-   + z_metal2_factory1->factory2_12 - M_metal2_factory1_12 <= 0
+   z_respirator2_factory1->hospital1_10
+   + z_respirator2_factory1->hospital2_10
+   + z_respirator2_factory1->factory4_10
+   + z_respirator2_factory1->factory2_10
+   - z_respirator2_DUMMY_RESERVE->factory1_10 - M_respirator2_factory1_11
+   <= 0
+ upper[availability_metal1_factory1_12]: z_metal1_factory1->hospital1_11
+   + z_metal1_factory1->hospital2_11 + z_metal1_factory1->factory4_11
+   + z_metal1_factory1->factory2_11 - z_metal1_DUMMY_RESERVE->factory1_11
+   - M_metal1_factory1_12 <= 0
+ upper[availability_metal2_factory1_12]: z_metal2_factory1->hospital1_11
+   + z_metal2_factory1->hospital2_11 + z_metal2_factory1->factory4_11
+   + z_metal2_factory1->factory2_11 - z_metal2_DUMMY_RESERVE->factory1_11
+   - M_metal2_factory1_12 <= 0
  upper[availability_plastic1_factory1_12]:
-   - z_plastic1_DUMMY_RESERVE->factory1_11
-   + z_plastic1_factory1->hospital1_12 + z_plastic1_factory1->hospital2_12
-   + z_plastic1_factory1->factory4_12 + z_plastic1_factory1->factory2_12
-   - M_plastic1_factory1_12 <= 0
+   z_plastic1_factory1->hospital1_11 + z_plastic1_factory1->hospital2_11
+   + z_plastic1_factory1->factory4_11 + z_plastic1_factory1->factory2_11
+   - z_plastic1_DUMMY_RESERVE->factory1_11 - M_plastic1_factory1_12 <= 0
  upper[availability_plastic2_factory1_12]:
-   - z_plastic2_DUMMY_RESERVE->factory1_11
-   + z_plastic2_factory1->hospital1_12 + z_plastic2_factory1->hospital2_12
-   + z_plastic2_factory1->factory4_12 + z_plastic2_factory1->factory2_12
-   - M_plastic2_factory1_12 <= 0
+   z_plastic2_factory1->hospital1_11 + z_plastic2_factory1->hospital2_11
+   + z_plastic2_factory1->factory4_11 + z_plastic2_factory1->factory2_11
+   - z_plastic2_DUMMY_RESERVE->factory1_11 - M_plastic2_factory1_12 <= 0
  upper[availability_plastic3_factory1_12]:
-   - z_plastic3_DUMMY_RESERVE->factory1_11
-   + z_plastic3_factory1->hospital1_12 + z_plastic3_factory1->hospital2_12
-   + z_plastic3_factory1->factory4_12 + z_plastic3_factory1->factory2_12
-   - M_plastic3_factory1_12 <= 0
- upper[availability_ppe1_factory1_12]: - z_ppe1_DUMMY_RESERVE->factory1_11
-   + z_ppe1_factory1->hospital1_12 + z_ppe1_factory1->hospital2_12
-   + z_ppe1_factory1->factory4_12 + z_ppe1_factory1->factory2_12
+   z_plastic3_factory1->hospital1_11 + z_plastic3_factory1->hospital2_11
+   + z_plastic3_factory1->factory4_11 + z_plastic3_factory1->factory2_11
+   - z_plastic3_DUMMY_RESERVE->factory1_11 - M_plastic3_factory1_12 <= 0
+ upper[availability_ppe1_factory1_12]: z_ppe1_factory1->hospital1_11
+   + z_ppe1_factory1->hospital2_11 + z_ppe1_factory1->factory4_11
+   + z_ppe1_factory1->factory2_11 - z_ppe1_DUMMY_RESERVE->factory1_11
    - M_ppe1_factory1_12 <= 0
- upper[availability_ppe2_factory1_12]: - z_ppe2_DUMMY_RESERVE->factory1_11
-   + z_ppe2_factory1->hospital1_12 + z_ppe2_factory1->hospital2_12
-   + z_ppe2_factory1->factory4_12 + z_ppe2_factory1->factory2_12
+ upper[availability_ppe2_factory1_12]: z_ppe2_factory1->hospital1_11
+   + z_ppe2_factory1->hospital2_11 + z_ppe2_factory1->factory4_11
+   + z_ppe2_factory1->factory2_11 - z_ppe2_DUMMY_RESERVE->factory1_11
    - M_ppe2_factory1_12 <= 0
- upper[availability_ppe3_factory1_12]: - z_ppe3_DUMMY_RESERVE->factory1_11
-   + z_ppe3_factory1->hospital1_12 + z_ppe3_factory1->hospital2_12
-   + z_ppe3_factory1->factory4_12 + z_ppe3_factory1->factory2_12
+ upper[availability_ppe3_factory1_12]: z_ppe3_factory1->hospital1_11
+   + z_ppe3_factory1->hospital2_11 + z_ppe3_factory1->factory4_11
+   + z_ppe3_factory1->factory2_11 - z_ppe3_DUMMY_RESERVE->factory1_11
    - M_ppe3_factory1_12 <= 0
  upper[availability_respirator1_factory1_12]:
-   - z_respirator1_DUMMY_RESERVE->factory1_11
-   + z_respirator1_factory1->hospital1_12
-   + z_respirator1_factory1->hospital2_12
-   + z_respirator1_factory1->factory4_12
-   + z_respirator1_factory1->factory2_12 - M_respirator1_factory1_12 <= 0
+   z_respirator1_factory1->hospital1_11
+   + z_respirator1_factory1->hospital2_11
+   + z_respirator1_factory1->factory4_11
+   + z_respirator1_factory1->factory2_11
+   - z_respirator1_DUMMY_RESERVE->factory1_11 - M_respirator1_factory1_12
+   <= 0
  upper[availability_respirator2_factory1_12]:
-   - z_respirator2_DUMMY_RESERVE->factory1_11
-   + z_respirator2_factory1->hospital1_12
-   + z_respirator2_factory1->hospital2_12
-   + z_respirator2_factory1->factory4_12
-   + z_respirator2_factory1->factory2_12 - M_respirator2_factory1_12 <= 0
- upper[availability_metal1_factory1_13]:
-   - z_metal1_DUMMY_RESERVE->factory1_12 + z_metal1_factory1->hospital1_13
-   + z_metal1_factory1->hospital2_13 + z_metal1_factory1->factory4_13
-   + z_metal1_factory1->factory2_13 - M_metal1_factory1_13 <= 0
- upper[availability_metal2_factory1_13]:
-   - z_metal2_DUMMY_RESERVE->factory1_12 + z_metal2_factory1->hospital1_13
-   + z_metal2_factory1->hospital2_13 + z_metal2_factory1->factory4_13
-   + z_metal2_factory1->factory2_13 - M_metal2_factory1_13 <= 0
+   z_respirator2_factory1->hospital1_11
+   + z_respirator2_factory1->hospital2_11
+   + z_respirator2_factory1->factory4_11
+   + z_respirator2_factory1->factory2_11
+   - z_respirator2_DUMMY_RESERVE->factory1_11 - M_respirator2_factory1_12
+   <= 0
+ upper[availability_metal1_factory1_13]: z_metal1_factory1->hospital1_12
+   + z_metal1_factory1->hospital2_12 + z_metal1_factory1->factory4_12
+   + z_metal1_factory1->factory2_12 - z_metal1_DUMMY_RESERVE->factory1_12
+   - M_metal1_factory1_13 <= 0
+ upper[availability_metal2_factory1_13]: z_metal2_factory1->hospital1_12
+   + z_metal2_factory1->hospital2_12 + z_metal2_factory1->factory4_12
+   + z_metal2_factory1->factory2_12 - z_metal2_DUMMY_RESERVE->factory1_12
+   - M_metal2_factory1_13 <= 0
  upper[availability_plastic1_factory1_13]:
-   - z_plastic1_DUMMY_RESERVE->factory1_12
-   + z_plastic1_factory1->hospital1_13 + z_plastic1_factory1->hospital2_13
-   + z_plastic1_factory1->factory4_13 + z_plastic1_factory1->factory2_13
-   - M_plastic1_factory1_13 <= 0
+   z_plastic1_factory1->hospital1_12 + z_plastic1_factory1->hospital2_12
+   + z_plastic1_factory1->factory4_12 + z_plastic1_factory1->factory2_12
+   - z_plastic1_DUMMY_RESERVE->factory1_12 - M_plastic1_factory1_13 <= 0
  upper[availability_plastic2_factory1_13]:
-   - z_plastic2_DUMMY_RESERVE->factory1_12
-   + z_plastic2_factory1->hospital1_13 + z_plastic2_factory1->hospital2_13
-   + z_plastic2_factory1->factory4_13 + z_plastic2_factory1->factory2_13
-   - M_plastic2_factory1_13 <= 0
+   z_plastic2_factory1->hospital1_12 + z_plastic2_factory1->hospital2_12
+   + z_plastic2_factory1->factory4_12 + z_plastic2_factory1->factory2_12
+   - z_plastic2_DUMMY_RESERVE->factory1_12 - M_plastic2_factory1_13 <= 0
  upper[availability_plastic3_factory1_13]:
-   - z_plastic3_DUMMY_RESERVE->factory1_12
-   + z_plastic3_factory1->hospital1_13 + z_plastic3_factory1->hospital2_13
-   + z_plastic3_factory1->factory4_13 + z_plastic3_factory1->factory2_13
-   - M_plastic3_factory1_13 <= 0
- upper[availability_ppe1_factory1_13]: - z_ppe1_DUMMY_RESERVE->factory1_12
-   + z_ppe1_factory1->hospital1_13 + z_ppe1_factory1->hospital2_13
-   + z_ppe1_factory1->factory4_13 + z_ppe1_factory1->factory2_13
+   z_plastic3_factory1->hospital1_12 + z_plastic3_factory1->hospital2_12
+   + z_plastic3_factory1->factory4_12 + z_plastic3_factory1->factory2_12
+   - z_plastic3_DUMMY_RESERVE->factory1_12 - M_plastic3_factory1_13 <= 0
+ upper[availability_ppe1_factory1_13]: z_ppe1_factory1->hospital1_12
+   + z_ppe1_factory1->hospital2_12 + z_ppe1_factory1->factory4_12
+   + z_ppe1_factory1->factory2_12 - z_ppe1_DUMMY_RESERVE->factory1_12
    - M_ppe1_factory1_13 <= 0
- upper[availability_ppe2_factory1_13]: - z_ppe2_DUMMY_RESERVE->factory1_12
-   + z_ppe2_factory1->hospital1_13 + z_ppe2_factory1->hospital2_13
-   + z_ppe2_factory1->factory4_13 + z_ppe2_factory1->factory2_13
+ upper[availability_ppe2_factory1_13]: z_ppe2_factory1->hospital1_12
+   + z_ppe2_factory1->hospital2_12 + z_ppe2_factory1->factory4_12
+   + z_ppe2_factory1->factory2_12 - z_ppe2_DUMMY_RESERVE->factory1_12
    - M_ppe2_factory1_13 <= 0
- upper[availability_ppe3_factory1_13]: - z_ppe3_DUMMY_RESERVE->factory1_12
-   + z_ppe3_factory1->hospital1_13 + z_ppe3_factory1->hospital2_13
-   + z_ppe3_factory1->factory4_13 + z_ppe3_factory1->factory2_13
+ upper[availability_ppe3_factory1_13]: z_ppe3_factory1->hospital1_12
+   + z_ppe3_factory1->hospital2_12 + z_ppe3_factory1->factory4_12
+   + z_ppe3_factory1->factory2_12 - z_ppe3_DUMMY_RESERVE->factory1_12
    - M_ppe3_factory1_13 <= 0
  upper[availability_respirator1_factory1_13]:
-   - z_respirator1_DUMMY_RESERVE->factory1_12
-   + z_respirator1_factory1->hospital1_13
-   + z_respirator1_factory1->hospital2_13
-   + z_respirator1_factory1->factory4_13
-   + z_respirator1_factory1->factory2_13 - M_respirator1_factory1_13 <= 0
+   z_respirator1_factory1->hospital1_12
+   + z_respirator1_factory1->hospital2_12
+   + z_respirator1_factory1->factory4_12
+   + z_respirator1_factory1->factory2_12
+   - z_respirator1_DUMMY_RESERVE->factory1_12 - M_respirator1_factory1_13
+   <= 0
  upper[availability_respirator2_factory1_13]:
-   - z_respirator2_DUMMY_RESERVE->factory1_12
-   + z_respirator2_factory1->hospital1_13
-   + z_respirator2_factory1->hospital2_13
-   + z_respirator2_factory1->factory4_13
-   + z_respirator2_factory1->factory2_13 - M_respirator2_factory1_13 <= 0
- upper[availability_metal1_factory1_14]:
-   - z_metal1_DUMMY_RESERVE->factory1_13 + z_metal1_factory1->hospital1_14
-   + z_metal1_factory1->hospital2_14 + z_metal1_factory1->factory4_14
-   + z_metal1_factory1->factory2_14 - M_metal1_factory1_14 <= 0
- upper[availability_metal2_factory1_14]:
-   - z_metal2_DUMMY_RESERVE->factory1_13 + z_metal2_factory1->hospital1_14
-   + z_metal2_factory1->hospital2_14 + z_metal2_factory1->factory4_14
-   + z_metal2_factory1->factory2_14 - M_metal2_factory1_14 <= 0
+   z_respirator2_factory1->hospital1_12
+   + z_respirator2_factory1->hospital2_12
+   + z_respirator2_factory1->factory4_12
+   + z_respirator2_factory1->factory2_12
+   - z_respirator2_DUMMY_RESERVE->factory1_12 - M_respirator2_factory1_13
+   <= 0
+ upper[availability_metal1_factory1_14]: z_metal1_factory1->hospital1_13
+   + z_metal1_factory1->hospital2_13 + z_metal1_factory1->factory4_13
+   + z_metal1_factory1->factory2_13 - z_metal1_DUMMY_RESERVE->factory1_13
+   - M_metal1_factory1_14 <= 0
+ upper[availability_metal2_factory1_14]: z_metal2_factory1->hospital1_13
+   + z_metal2_factory1->hospital2_13 + z_metal2_factory1->factory4_13
+   + z_metal2_factory1->factory2_13 - z_metal2_DUMMY_RESERVE->factory1_13
+   - M_metal2_factory1_14 <= 0
  upper[availability_plastic1_factory1_14]:
-   - z_plastic1_DUMMY_RESERVE->factory1_13
-   + z_plastic1_factory1->hospital1_14 + z_plastic1_factory1->hospital2_14
-   + z_plastic1_factory1->factory4_14 + z_plastic1_factory1->factory2_14
-   - M_plastic1_factory1_14 <= 0
+   z_plastic1_factory1->hospital1_13 + z_plastic1_factory1->hospital2_13
+   + z_plastic1_factory1->factory4_13 + z_plastic1_factory1->factory2_13
+   - z_plastic1_DUMMY_RESERVE->factory1_13 - M_plastic1_factory1_14 <= 0
  upper[availability_plastic2_factory1_14]:
-   - z_plastic2_DUMMY_RESERVE->factory1_13
-   + z_plastic2_factory1->hospital1_14 + z_plastic2_factory1->hospital2_14
-   + z_plastic2_factory1->factory4_14 + z_plastic2_factory1->factory2_14
-   - M_plastic2_factory1_14 <= 0
+   z_plastic2_factory1->hospital1_13 + z_plastic2_factory1->hospital2_13
+   + z_plastic2_factory1->factory4_13 + z_plastic2_factory1->factory2_13
+   - z_plastic2_DUMMY_RESERVE->factory1_13 - M_plastic2_factory1_14 <= 0
  upper[availability_plastic3_factory1_14]:
-   - z_plastic3_DUMMY_RESERVE->factory1_13
-   + z_plastic3_factory1->hospital1_14 + z_plastic3_factory1->hospital2_14
-   + z_plastic3_factory1->factory4_14 + z_plastic3_factory1->factory2_14
-   - M_plastic3_factory1_14 <= 0
- upper[availability_ppe1_factory1_14]: - z_ppe1_DUMMY_RESERVE->factory1_13
-   + z_ppe1_factory1->hospital1_14 + z_ppe1_factory1->hospital2_14
-   + z_ppe1_factory1->factory4_14 + z_ppe1_factory1->factory2_14
+   z_plastic3_factory1->hospital1_13 + z_plastic3_factory1->hospital2_13
+   + z_plastic3_factory1->factory4_13 + z_plastic3_factory1->factory2_13
+   - z_plastic3_DUMMY_RESERVE->factory1_13 - M_plastic3_factory1_14 <= 0
+ upper[availability_ppe1_factory1_14]: z_ppe1_factory1->hospital1_13
+   + z_ppe1_factory1->hospital2_13 + z_ppe1_factory1->factory4_13
+   + z_ppe1_factory1->factory2_13 - z_ppe1_DUMMY_RESERVE->factory1_13
    - M_ppe1_factory1_14 <= 0
- upper[availability_ppe2_factory1_14]: - z_ppe2_DUMMY_RESERVE->factory1_13
-   + z_ppe2_factory1->hospital1_14 + z_ppe2_factory1->hospital2_14
-   + z_ppe2_factory1->factory4_14 + z_ppe2_factory1->factory2_14
+ upper[availability_ppe2_factory1_14]: z_ppe2_factory1->hospital1_13
+   + z_ppe2_factory1->hospital2_13 + z_ppe2_factory1->factory4_13
+   + z_ppe2_factory1->factory2_13 - z_ppe2_DUMMY_RESERVE->factory1_13
    - M_ppe2_factory1_14 <= 0
- upper[availability_ppe3_factory1_14]: - z_ppe3_DUMMY_RESERVE->factory1_13
-   + z_ppe3_factory1->hospital1_14 + z_ppe3_factory1->hospital2_14
-   + z_ppe3_factory1->factory4_14 + z_ppe3_factory1->factory2_14
+ upper[availability_ppe3_factory1_14]: z_ppe3_factory1->hospital1_13
+   + z_ppe3_factory1->hospital2_13 + z_ppe3_factory1->factory4_13
+   + z_ppe3_factory1->factory2_13 - z_ppe3_DUMMY_RESERVE->factory1_13
    - M_ppe3_factory1_14 <= 0
  upper[availability_respirator1_factory1_14]:
-   - z_respirator1_DUMMY_RESERVE->factory1_13
-   + z_respirator1_factory1->hospital1_14
-   + z_respirator1_factory1->hospital2_14
-   + z_respirator1_factory1->factory4_14
-   + z_respirator1_factory1->factory2_14 - M_respirator1_factory1_14 <= 0
+   z_respirator1_factory1->hospital1_13
+   + z_respirator1_factory1->hospital2_13
+   + z_respirator1_factory1->factory4_13
+   + z_respirator1_factory1->factory2_13
+   - z_respirator1_DUMMY_RESERVE->factory1_13 - M_respirator1_factory1_14
+   <= 0
  upper[availability_respirator2_factory1_14]:
-   - z_respirator2_DUMMY_RESERVE->factory1_13
-   + z_respirator2_factory1->hospital1_14
-   + z_respirator2_factory1->hospital2_14
-   + z_respirator2_factory1->factory4_14
-   + z_respirator2_factory1->factory2_14 - M_respirator2_factory1_14 <= 0
- upper[availability_metal1_factory1_15]:
-   - z_metal1_DUMMY_RESERVE->factory1_14 + z_metal1_factory1->hospital1_15
-   + z_metal1_factory1->hospital2_15 + z_metal1_factory1->factory4_15
-   + z_metal1_factory1->factory2_15 - M_metal1_factory1_15 <= 0
- upper[availability_metal2_factory1_15]:
-   - z_metal2_DUMMY_RESERVE->factory1_14 + z_metal2_factory1->hospital1_15
-   + z_metal2_factory1->hospital2_15 + z_metal2_factory1->factory4_15
-   + z_metal2_factory1->factory2_15 - M_metal2_factory1_15 <= 0
+   z_respirator2_factory1->hospital1_13
+   + z_respirator2_factory1->hospital2_13
+   + z_respirator2_factory1->factory4_13
+   + z_respirator2_factory1->factory2_13
+   - z_respirator2_DUMMY_RESERVE->factory1_13 - M_respirator2_factory1_14
+   <= 0
+ upper[availability_metal1_factory1_15]: z_metal1_factory1->hospital1_14
+   + z_metal1_factory1->hospital2_14 + z_metal1_factory1->factory4_14
+   + z_metal1_factory1->factory2_14 - z_metal1_DUMMY_RESERVE->factory1_14
+   - M_metal1_factory1_15 <= 0
+ upper[availability_metal2_factory1_15]: z_metal2_factory1->hospital1_14
+   + z_metal2_factory1->hospital2_14 + z_metal2_factory1->factory4_14
+   + z_metal2_factory1->factory2_14 - z_metal2_DUMMY_RESERVE->factory1_14
+   - M_metal2_factory1_15 <= 0
  upper[availability_plastic1_factory1_15]:
-   - z_plastic1_DUMMY_RESERVE->factory1_14
-   + z_plastic1_factory1->hospital1_15 + z_plastic1_factory1->hospital2_15
-   + z_plastic1_factory1->factory4_15 + z_plastic1_factory1->factory2_15
-   - M_plastic1_factory1_15 <= 0
+   z_plastic1_factory1->hospital1_14 + z_plastic1_factory1->hospital2_14
+   + z_plastic1_factory1->factory4_14 + z_plastic1_factory1->factory2_14
+   - z_plastic1_DUMMY_RESERVE->factory1_14 - M_plastic1_factory1_15 <= 0
  upper[availability_plastic2_factory1_15]:
-   - z_plastic2_DUMMY_RESERVE->factory1_14
-   + z_plastic2_factory1->hospital1_15 + z_plastic2_factory1->hospital2_15
-   + z_plastic2_factory1->factory4_15 + z_plastic2_factory1->factory2_15
-   - M_plastic2_factory1_15 <= 0
+   z_plastic2_factory1->hospital1_14 + z_plastic2_factory1->hospital2_14
+   + z_plastic2_factory1->factory4_14 + z_plastic2_factory1->factory2_14
+   - z_plastic2_DUMMY_RESERVE->factory1_14 - M_plastic2_factory1_15 <= 0
  upper[availability_plastic3_factory1_15]:
-   - z_plastic3_DUMMY_RESERVE->factory1_14
-   + z_plastic3_factory1->hospital1_15 + z_plastic3_factory1->hospital2_15
-   + z_plastic3_factory1->factory4_15 + z_plastic3_factory1->factory2_15
-   - M_plastic3_factory1_15 <= 0
- upper[availability_ppe1_factory1_15]: - z_ppe1_DUMMY_RESERVE->factory1_14
-   + z_ppe1_factory1->hospital1_15 + z_ppe1_factory1->hospital2_15
-   + z_ppe1_factory1->factory4_15 + z_ppe1_factory1->factory2_15
+   z_plastic3_factory1->hospital1_14 + z_plastic3_factory1->hospital2_14
+   + z_plastic3_factory1->factory4_14 + z_plastic3_factory1->factory2_14
+   - z_plastic3_DUMMY_RESERVE->factory1_14 - M_plastic3_factory1_15 <= 0
+ upper[availability_ppe1_factory1_15]: z_ppe1_factory1->hospital1_14
+   + z_ppe1_factory1->hospital2_14 + z_ppe1_factory1->factory4_14
+   + z_ppe1_factory1->factory2_14 - z_ppe1_DUMMY_RESERVE->factory1_14
    - M_ppe1_factory1_15 <= 0
- upper[availability_ppe2_factory1_15]: - z_ppe2_DUMMY_RESERVE->factory1_14
-   + z_ppe2_factory1->hospital1_15 + z_ppe2_factory1->hospital2_15
-   + z_ppe2_factory1->factory4_15 + z_ppe2_factory1->factory2_15
+ upper[availability_ppe2_factory1_15]: z_ppe2_factory1->hospital1_14
+   + z_ppe2_factory1->hospital2_14 + z_ppe2_factory1->factory4_14
+   + z_ppe2_factory1->factory2_14 - z_ppe2_DUMMY_RESERVE->factory1_14
    - M_ppe2_factory1_15 <= 0
- upper[availability_ppe3_factory1_15]: - z_ppe3_DUMMY_RESERVE->factory1_14
-   + z_ppe3_factory1->hospital1_15 + z_ppe3_factory1->hospital2_15
-   + z_ppe3_factory1->factory4_15 + z_ppe3_factory1->factory2_15
+ upper[availability_ppe3_factory1_15]: z_ppe3_factory1->hospital1_14
+   + z_ppe3_factory1->hospital2_14 + z_ppe3_factory1->factory4_14
+   + z_ppe3_factory1->factory2_14 - z_ppe3_DUMMY_RESERVE->factory1_14
    - M_ppe3_factory1_15 <= 0
  upper[availability_respirator1_factory1_15]:
-   - z_respirator1_DUMMY_RESERVE->factory1_14
-   + z_respirator1_factory1->hospital1_15
-   + z_respirator1_factory1->hospital2_15
-   + z_respirator1_factory1->factory4_15
-   + z_respirator1_factory1->factory2_15 - M_respirator1_factory1_15 <= 0
+   z_respirator1_factory1->hospital1_14
+   + z_respirator1_factory1->hospital2_14
+   + z_respirator1_factory1->factory4_14
+   + z_respirator1_factory1->factory2_14
+   - z_respirator1_DUMMY_RESERVE->factory1_14 - M_respirator1_factory1_15
+   <= 0
  upper[availability_respirator2_factory1_15]:
-   - z_respirator2_DUMMY_RESERVE->factory1_14
-   + z_respirator2_factory1->hospital1_15
-   + z_respirator2_factory1->hospital2_15
-   + z_respirator2_factory1->factory4_15
-   + z_respirator2_factory1->factory2_15 - M_respirator2_factory1_15 <= 0
- upper[availability_metal1_factory1_16]:
-   - z_metal1_DUMMY_RESERVE->factory1_15 + z_metal1_factory1->hospital1_16
-   + z_metal1_factory1->hospital2_16 + z_metal1_factory1->factory4_16
-   + z_metal1_factory1->factory2_16 - M_metal1_factory1_16 <= 0
- upper[availability_metal2_factory1_16]:
-   - z_metal2_DUMMY_RESERVE->factory1_15 + z_metal2_factory1->hospital1_16
-   + z_metal2_factory1->hospital2_16 + z_metal2_factory1->factory4_16
-   + z_metal2_factory1->factory2_16 - M_metal2_factory1_16 <= 0
+   z_respirator2_factory1->hospital1_14
+   + z_respirator2_factory1->hospital2_14
+   + z_respirator2_factory1->factory4_14
+   + z_respirator2_factory1->factory2_14
+   - z_respirator2_DUMMY_RESERVE->factory1_14 - M_respirator2_factory1_15
+   <= 0
+ upper[availability_metal1_factory1_16]: z_metal1_factory1->hospital1_15
+   + z_metal1_factory1->hospital2_15 + z_metal1_factory1->factory4_15
+   + z_metal1_factory1->factory2_15 - z_metal1_DUMMY_RESERVE->factory1_15
+   - M_metal1_factory1_16 <= 0
+ upper[availability_metal2_factory1_16]: z_metal2_factory1->hospital1_15
+   + z_metal2_factory1->hospital2_15 + z_metal2_factory1->factory4_15
+   + z_metal2_factory1->factory2_15 - z_metal2_DUMMY_RESERVE->factory1_15
+   - M_metal2_factory1_16 <= 0
  upper[availability_plastic1_factory1_16]:
-   - z_plastic1_DUMMY_RESERVE->factory1_15
-   + z_plastic1_factory1->hospital1_16 + z_plastic1_factory1->hospital2_16
-   + z_plastic1_factory1->factory4_16 + z_plastic1_factory1->factory2_16
-   - M_plastic1_factory1_16 <= 0
+   z_plastic1_factory1->hospital1_15 + z_plastic1_factory1->hospital2_15
+   + z_plastic1_factory1->factory4_15 + z_plastic1_factory1->factory2_15
+   - z_plastic1_DUMMY_RESERVE->factory1_15 - M_plastic1_factory1_16 <= 0
  upper[availability_plastic2_factory1_16]:
-   - z_plastic2_DUMMY_RESERVE->factory1_15
-   + z_plastic2_factory1->hospital1_16 + z_plastic2_factory1->hospital2_16
-   + z_plastic2_factory1->factory4_16 + z_plastic2_factory1->factory2_16
-   - M_plastic2_factory1_16 <= 0
+   z_plastic2_factory1->hospital1_15 + z_plastic2_factory1->hospital2_15
+   + z_plastic2_factory1->factory4_15 + z_plastic2_factory1->factory2_15
+   - z_plastic2_DUMMY_RESERVE->factory1_15 - M_plastic2_factory1_16 <= 0
  upper[availability_plastic3_factory1_16]:
-   - z_plastic3_DUMMY_RESERVE->factory1_15
-   + z_plastic3_factory1->hospital1_16 + z_plastic3_factory1->hospital2_16
-   + z_plastic3_factory1->factory4_16 + z_plastic3_factory1->factory2_16
-   - M_plastic3_factory1_16 <= 0
- upper[availability_ppe1_factory1_16]: - z_ppe1_DUMMY_RESERVE->factory1_15
-   + z_ppe1_factory1->hospital1_16 + z_ppe1_factory1->hospital2_16
-   + z_ppe1_factory1->factory4_16 + z_ppe1_factory1->factory2_16
+   z_plastic3_factory1->hospital1_15 + z_plastic3_factory1->hospital2_15
+   + z_plastic3_factory1->factory4_15 + z_plastic3_factory1->factory2_15
+   - z_plastic3_DUMMY_RESERVE->factory1_15 - M_plastic3_factory1_16 <= 0
+ upper[availability_ppe1_factory1_16]: z_ppe1_factory1->hospital1_15
+   + z_ppe1_factory1->hospital2_15 + z_ppe1_factory1->factory4_15
+   + z_ppe1_factory1->factory2_15 - z_ppe1_DUMMY_RESERVE->factory1_15
    - M_ppe1_factory1_16 <= 0
- upper[availability_ppe2_factory1_16]: - z_ppe2_DUMMY_RESERVE->factory1_15
-   + z_ppe2_factory1->hospital1_16 + z_ppe2_factory1->hospital2_16
-   + z_ppe2_factory1->factory4_16 + z_ppe2_factory1->factory2_16
+ upper[availability_ppe2_factory1_16]: z_ppe2_factory1->hospital1_15
+   + z_ppe2_factory1->hospital2_15 + z_ppe2_factory1->factory4_15
+   + z_ppe2_factory1->factory2_15 - z_ppe2_DUMMY_RESERVE->factory1_15
    - M_ppe2_factory1_16 <= 0
- upper[availability_ppe3_factory1_16]: - z_ppe3_DUMMY_RESERVE->factory1_15
-   + z_ppe3_factory1->hospital1_16 + z_ppe3_factory1->hospital2_16
-   + z_ppe3_factory1->factory4_16 + z_ppe3_factory1->factory2_16
+ upper[availability_ppe3_factory1_16]: z_ppe3_factory1->hospital1_15
+   + z_ppe3_factory1->hospital2_15 + z_ppe3_factory1->factory4_15
+   + z_ppe3_factory1->factory2_15 - z_ppe3_DUMMY_RESERVE->factory1_15
    - M_ppe3_factory1_16 <= 0
  upper[availability_respirator1_factory1_16]:
-   - z_respirator1_DUMMY_RESERVE->factory1_15
-   + z_respirator1_factory1->hospital1_16
-   + z_respirator1_factory1->hospital2_16
-   + z_respirator1_factory1->factory4_16
-   + z_respirator1_factory1->factory2_16 - M_respirator1_factory1_16 <= 0
+   z_respirator1_factory1->hospital1_15
+   + z_respirator1_factory1->hospital2_15
+   + z_respirator1_factory1->factory4_15
+   + z_respirator1_factory1->factory2_15
+   - z_respirator1_DUMMY_RESERVE->factory1_15 - M_respirator1_factory1_16
+   <= 0
  upper[availability_respirator2_factory1_16]:
-   - z_respirator2_DUMMY_RESERVE->factory1_15
-   + z_respirator2_factory1->hospital1_16
-   + z_respirator2_factory1->hospital2_16
-   + z_respirator2_factory1->factory4_16
-   + z_respirator2_factory1->factory2_16 - M_respirator2_factory1_16 <= 0
- upper[availability_metal1_factory1_17]:
-   - z_metal1_DUMMY_RESERVE->factory1_16 + z_metal1_factory1->hospital1_17
-   + z_metal1_factory1->hospital2_17 + z_metal1_factory1->factory4_17
-   + z_metal1_factory1->factory2_17 - M_metal1_factory1_17 <= 0
- upper[availability_metal2_factory1_17]:
-   - z_metal2_DUMMY_RESERVE->factory1_16 + z_metal2_factory1->hospital1_17
-   + z_metal2_factory1->hospital2_17 + z_metal2_factory1->factory4_17
-   + z_metal2_factory1->factory2_17 - M_metal2_factory1_17 <= 0
+   z_respirator2_factory1->hospital1_15
+   + z_respirator2_factory1->hospital2_15
+   + z_respirator2_factory1->factory4_15
+   + z_respirator2_factory1->factory2_15
+   - z_respirator2_DUMMY_RESERVE->factory1_15 - M_respirator2_factory1_16
+   <= 0
+ upper[availability_metal1_factory1_17]: z_metal1_factory1->hospital1_16
+   + z_metal1_factory1->hospital2_16 + z_metal1_factory1->factory4_16
+   + z_metal1_factory1->factory2_16 - z_metal1_DUMMY_RESERVE->factory1_16
+   - M_metal1_factory1_17 <= 0
+ upper[availability_metal2_factory1_17]: z_metal2_factory1->hospital1_16
+   + z_metal2_factory1->hospital2_16 + z_metal2_factory1->factory4_16
+   + z_metal2_factory1->factory2_16 - z_metal2_DUMMY_RESERVE->factory1_16
+   - M_metal2_factory1_17 <= 0
  upper[availability_plastic1_factory1_17]:
-   - z_plastic1_DUMMY_RESERVE->factory1_16
-   + z_plastic1_factory1->hospital1_17 + z_plastic1_factory1->hospital2_17
-   + z_plastic1_factory1->factory4_17 + z_plastic1_factory1->factory2_17
-   - M_plastic1_factory1_17 <= 0
+   z_plastic1_factory1->hospital1_16 + z_plastic1_factory1->hospital2_16
+   + z_plastic1_factory1->factory4_16 + z_plastic1_factory1->factory2_16
+   - z_plastic1_DUMMY_RESERVE->factory1_16 - M_plastic1_factory1_17 <= 0
  upper[availability_plastic2_factory1_17]:
-   - z_plastic2_DUMMY_RESERVE->factory1_16
-   + z_plastic2_factory1->hospital1_17 + z_plastic2_factory1->hospital2_17
-   + z_plastic2_factory1->factory4_17 + z_plastic2_factory1->factory2_17
-   - M_plastic2_factory1_17 <= 0
+   z_plastic2_factory1->hospital1_16 + z_plastic2_factory1->hospital2_16
+   + z_plastic2_factory1->factory4_16 + z_plastic2_factory1->factory2_16
+   - z_plastic2_DUMMY_RESERVE->factory1_16 - M_plastic2_factory1_17 <= 0
  upper[availability_plastic3_factory1_17]:
-   - z_plastic3_DUMMY_RESERVE->factory1_16
-   + z_plastic3_factory1->hospital1_17 + z_plastic3_factory1->hospital2_17
-   + z_plastic3_factory1->factory4_17 + z_plastic3_factory1->factory2_17
-   - M_plastic3_factory1_17 <= 0
- upper[availability_ppe1_factory1_17]: - z_ppe1_DUMMY_RESERVE->factory1_16
-   + z_ppe1_factory1->hospital1_17 + z_ppe1_factory1->hospital2_17
-   + z_ppe1_factory1->factory4_17 + z_ppe1_factory1->factory2_17
+   z_plastic3_factory1->hospital1_16 + z_plastic3_factory1->hospital2_16
+   + z_plastic3_factory1->factory4_16 + z_plastic3_factory1->factory2_16
+   - z_plastic3_DUMMY_RESERVE->factory1_16 - M_plastic3_factory1_17 <= 0
+ upper[availability_ppe1_factory1_17]: z_ppe1_factory1->hospital1_16
+   + z_ppe1_factory1->hospital2_16 + z_ppe1_factory1->factory4_16
+   + z_ppe1_factory1->factory2_16 - z_ppe1_DUMMY_RESERVE->factory1_16
    - M_ppe1_factory1_17 <= 0
- upper[availability_ppe2_factory1_17]: - z_ppe2_DUMMY_RESERVE->factory1_16
-   + z_ppe2_factory1->hospital1_17 + z_ppe2_factory1->hospital2_17
-   + z_ppe2_factory1->factory4_17 + z_ppe2_factory1->factory2_17
+ upper[availability_ppe2_factory1_17]: z_ppe2_factory1->hospital1_16
+   + z_ppe2_factory1->hospital2_16 + z_ppe2_factory1->factory4_16
+   + z_ppe2_factory1->factory2_16 - z_ppe2_DUMMY_RESERVE->factory1_16
    - M_ppe2_factory1_17 <= 0
- upper[availability_ppe3_factory1_17]: - z_ppe3_DUMMY_RESERVE->factory1_16
-   + z_ppe3_factory1->hospital1_17 + z_ppe3_factory1->hospital2_17
-   + z_ppe3_factory1->factory4_17 + z_ppe3_factory1->factory2_17
+ upper[availability_ppe3_factory1_17]: z_ppe3_factory1->hospital1_16
+   + z_ppe3_factory1->hospital2_16 + z_ppe3_factory1->factory4_16
+   + z_ppe3_factory1->factory2_16 - z_ppe3_DUMMY_RESERVE->factory1_16
    - M_ppe3_factory1_17 <= 0
  upper[availability_respirator1_factory1_17]:
-   - z_respirator1_DUMMY_RESERVE->factory1_16
-   + z_respirator1_factory1->hospital1_17
-   + z_respirator1_factory1->hospital2_17
-   + z_respirator1_factory1->factory4_17
-   + z_respirator1_factory1->factory2_17 - M_respirator1_factory1_17 <= 0
+   z_respirator1_factory1->hospital1_16
+   + z_respirator1_factory1->hospital2_16
+   + z_respirator1_factory1->factory4_16
+   + z_respirator1_factory1->factory2_16
+   - z_respirator1_DUMMY_RESERVE->factory1_16 - M_respirator1_factory1_17
+   <= 0
  upper[availability_respirator2_factory1_17]:
-   - z_respirator2_DUMMY_RESERVE->factory1_16
-   + z_respirator2_factory1->hospital1_17
-   + z_respirator2_factory1->hospital2_17
-   + z_respirator2_factory1->factory4_17
-   + z_respirator2_factory1->factory2_17 - M_respirator2_factory1_17 <= 0
- upper[availability_metal1_factory1_18]:
-   - z_metal1_DUMMY_RESERVE->factory1_17 + z_metal1_factory1->hospital1_18
-   + z_metal1_factory1->hospital2_18 + z_metal1_factory1->factory4_18
-   + z_metal1_factory1->factory2_18 - M_metal1_factory1_18 <= 0
- upper[availability_metal2_factory1_18]:
-   - z_metal2_DUMMY_RESERVE->factory1_17 + z_metal2_factory1->hospital1_18
-   + z_metal2_factory1->hospital2_18 + z_metal2_factory1->factory4_18
-   + z_metal2_factory1->factory2_18 - M_metal2_factory1_18 <= 0
+   z_respirator2_factory1->hospital1_16
+   + z_respirator2_factory1->hospital2_16
+   + z_respirator2_factory1->factory4_16
+   + z_respirator2_factory1->factory2_16
+   - z_respirator2_DUMMY_RESERVE->factory1_16 - M_respirator2_factory1_17
+   <= 0
+ upper[availability_metal1_factory1_18]: z_metal1_factory1->hospital1_17
+   + z_metal1_factory1->hospital2_17 + z_metal1_factory1->factory4_17
+   + z_metal1_factory1->factory2_17 - z_metal1_DUMMY_RESERVE->factory1_17
+   - M_metal1_factory1_18 <= 0
+ upper[availability_metal2_factory1_18]: z_metal2_factory1->hospital1_17
+   + z_metal2_factory1->hospital2_17 + z_metal2_factory1->factory4_17
+   + z_metal2_factory1->factory2_17 - z_metal2_DUMMY_RESERVE->factory1_17
+   - M_metal2_factory1_18 <= 0
  upper[availability_plastic1_factory1_18]:
-   - z_plastic1_DUMMY_RESERVE->factory1_17
-   + z_plastic1_factory1->hospital1_18 + z_plastic1_factory1->hospital2_18
-   + z_plastic1_factory1->factory4_18 + z_plastic1_factory1->factory2_18
-   - M_plastic1_factory1_18 <= 0
+   z_plastic1_factory1->hospital1_17 + z_plastic1_factory1->hospital2_17
+   + z_plastic1_factory1->factory4_17 + z_plastic1_factory1->factory2_17
+   - z_plastic1_DUMMY_RESERVE->factory1_17 - M_plastic1_factory1_18 <= 0
  upper[availability_plastic2_factory1_18]:
-   - z_plastic2_DUMMY_RESERVE->factory1_17
-   + z_plastic2_factory1->hospital1_18 + z_plastic2_factory1->hospital2_18
-   + z_plastic2_factory1->factory4_18 + z_plastic2_factory1->factory2_18
-   - M_plastic2_factory1_18 <= 0
+   z_plastic2_factory1->hospital1_17 + z_plastic2_factory1->hospital2_17
+   + z_plastic2_factory1->factory4_17 + z_plastic2_factory1->factory2_17
+   - z_plastic2_DUMMY_RESERVE->factory1_17 - M_plastic2_factory1_18 <= 0
  upper[availability_plastic3_factory1_18]:
-   - z_plastic3_DUMMY_RESERVE->factory1_17
-   + z_plastic3_factory1->hospital1_18 + z_plastic3_factory1->hospital2_18
-   + z_plastic3_factory1->factory4_18 + z_plastic3_factory1->factory2_18
-   - M_plastic3_factory1_18 <= 0
- upper[availability_ppe1_factory1_18]: - z_ppe1_DUMMY_RESERVE->factory1_17
-   + z_ppe1_factory1->hospital1_18 + z_ppe1_factory1->hospital2_18
-   + z_ppe1_factory1->factory4_18 + z_ppe1_factory1->factory2_18
+   z_plastic3_factory1->hospital1_17 + z_plastic3_factory1->hospital2_17
+   + z_plastic3_factory1->factory4_17 + z_plastic3_factory1->factory2_17
+   - z_plastic3_DUMMY_RESERVE->factory1_17 - M_plastic3_factory1_18 <= 0
+ upper[availability_ppe1_factory1_18]: z_ppe1_factory1->hospital1_17
+   + z_ppe1_factory1->hospital2_17 + z_ppe1_factory1->factory4_17
+   + z_ppe1_factory1->factory2_17 - z_ppe1_DUMMY_RESERVE->factory1_17
    - M_ppe1_factory1_18 <= 0
- upper[availability_ppe2_factory1_18]: - z_ppe2_DUMMY_RESERVE->factory1_17
-   + z_ppe2_factory1->hospital1_18 + z_ppe2_factory1->hospital2_18
-   + z_ppe2_factory1->factory4_18 + z_ppe2_factory1->factory2_18
+ upper[availability_ppe2_factory1_18]: z_ppe2_factory1->hospital1_17
+   + z_ppe2_factory1->hospital2_17 + z_ppe2_factory1->factory4_17
+   + z_ppe2_factory1->factory2_17 - z_ppe2_DUMMY_RESERVE->factory1_17
    - M_ppe2_factory1_18 <= 0
- upper[availability_ppe3_factory1_18]: - z_ppe3_DUMMY_RESERVE->factory1_17
-   + z_ppe3_factory1->hospital1_18 + z_ppe3_factory1->hospital2_18
-   + z_ppe3_factory1->factory4_18 + z_ppe3_factory1->factory2_18
+ upper[availability_ppe3_factory1_18]: z_ppe3_factory1->hospital1_17
+   + z_ppe3_factory1->hospital2_17 + z_ppe3_factory1->factory4_17
+   + z_ppe3_factory1->factory2_17 - z_ppe3_DUMMY_RESERVE->factory1_17
    - M_ppe3_factory1_18 <= 0
  upper[availability_respirator1_factory1_18]:
-   - z_respirator1_DUMMY_RESERVE->factory1_17
-   + z_respirator1_factory1->hospital1_18
-   + z_respirator1_factory1->hospital2_18
-   + z_respirator1_factory1->factory4_18
-   + z_respirator1_factory1->factory2_18 - M_respirator1_factory1_18 <= 0
+   z_respirator1_factory1->hospital1_17
+   + z_respirator1_factory1->hospital2_17
+   + z_respirator1_factory1->factory4_17
+   + z_respirator1_factory1->factory2_17
+   - z_respirator1_DUMMY_RESERVE->factory1_17 - M_respirator1_factory1_18
+   <= 0
  upper[availability_respirator2_factory1_18]:
-   - z_respirator2_DUMMY_RESERVE->factory1_17
-   + z_respirator2_factory1->hospital1_18
-   + z_respirator2_factory1->hospital2_18
-   + z_respirator2_factory1->factory4_18
-   + z_respirator2_factory1->factory2_18 - M_respirator2_factory1_18 <= 0
- upper[availability_metal1_factory1_19]:
-   - z_metal1_DUMMY_RESERVE->factory1_18 + z_metal1_factory1->hospital1_19
-   + z_metal1_factory1->hospital2_19 + z_metal1_factory1->factory4_19
-   + z_metal1_factory1->factory2_19 - M_metal1_factory1_19 <= 0
- upper[availability_metal2_factory1_19]:
-   - z_metal2_DUMMY_RESERVE->factory1_18 + z_metal2_factory1->hospital1_19
-   + z_metal2_factory1->hospital2_19 + z_metal2_factory1->factory4_19
-   + z_metal2_factory1->factory2_19 - M_metal2_factory1_19 <= 0
+   z_respirator2_factory1->hospital1_17
+   + z_respirator2_factory1->hospital2_17
+   + z_respirator2_factory1->factory4_17
+   + z_respirator2_factory1->factory2_17
+   - z_respirator2_DUMMY_RESERVE->factory1_17 - M_respirator2_factory1_18
+   <= 0
+ upper[availability_metal1_factory1_19]: z_metal1_factory1->hospital1_18
+   + z_metal1_factory1->hospital2_18 + z_metal1_factory1->factory4_18
+   + z_metal1_factory1->factory2_18 - z_metal1_DUMMY_RESERVE->factory1_18
+   - M_metal1_factory1_19 <= 0
+ upper[availability_metal2_factory1_19]: z_metal2_factory1->hospital1_18
+   + z_metal2_factory1->hospital2_18 + z_metal2_factory1->factory4_18
+   + z_metal2_factory1->factory2_18 - z_metal2_DUMMY_RESERVE->factory1_18
+   - M_metal2_factory1_19 <= 0
  upper[availability_plastic1_factory1_19]:
-   - z_plastic1_DUMMY_RESERVE->factory1_18
-   + z_plastic1_factory1->hospital1_19 + z_plastic1_factory1->hospital2_19
-   + z_plastic1_factory1->factory4_19 + z_plastic1_factory1->factory2_19
-   - M_plastic1_factory1_19 <= 0
+   z_plastic1_factory1->hospital1_18 + z_plastic1_factory1->hospital2_18
+   + z_plastic1_factory1->factory4_18 + z_plastic1_factory1->factory2_18
+   - z_plastic1_DUMMY_RESERVE->factory1_18 - M_plastic1_factory1_19 <= 0
  upper[availability_plastic2_factory1_19]:
-   - z_plastic2_DUMMY_RESERVE->factory1_18
-   + z_plastic2_factory1->hospital1_19 + z_plastic2_factory1->hospital2_19
-   + z_plastic2_factory1->factory4_19 + z_plastic2_factory1->factory2_19
-   - M_plastic2_factory1_19 <= 0
+   z_plastic2_factory1->hospital1_18 + z_plastic2_factory1->hospital2_18
+   + z_plastic2_factory1->factory4_18 + z_plastic2_factory1->factory2_18
+   - z_plastic2_DUMMY_RESERVE->factory1_18 - M_plastic2_factory1_19 <= 0
  upper[availability_plastic3_factory1_19]:
-   - z_plastic3_DUMMY_RESERVE->factory1_18
-   + z_plastic3_factory1->hospital1_19 + z_plastic3_factory1->hospital2_19
-   + z_plastic3_factory1->factory4_19 + z_plastic3_factory1->factory2_19
-   - M_plastic3_factory1_19 <= 0
- upper[availability_ppe1_factory1_19]: - z_ppe1_DUMMY_RESERVE->factory1_18
-   + z_ppe1_factory1->hospital1_19 + z_ppe1_factory1->hospital2_19
-   + z_ppe1_factory1->factory4_19 + z_ppe1_factory1->factory2_19
+   z_plastic3_factory1->hospital1_18 + z_plastic3_factory1->hospital2_18
+   + z_plastic3_factory1->factory4_18 + z_plastic3_factory1->factory2_18
+   - z_plastic3_DUMMY_RESERVE->factory1_18 - M_plastic3_factory1_19 <= 0
+ upper[availability_ppe1_factory1_19]: z_ppe1_factory1->hospital1_18
+   + z_ppe1_factory1->hospital2_18 + z_ppe1_factory1->factory4_18
+   + z_ppe1_factory1->factory2_18 - z_ppe1_DUMMY_RESERVE->factory1_18
    - M_ppe1_factory1_19 <= 0
- upper[availability_ppe2_factory1_19]: - z_ppe2_DUMMY_RESERVE->factory1_18
-   + z_ppe2_factory1->hospital1_19 + z_ppe2_factory1->hospital2_19
-   + z_ppe2_factory1->factory4_19 + z_ppe2_factory1->factory2_19
+ upper[availability_ppe2_factory1_19]: z_ppe2_factory1->hospital1_18
+   + z_ppe2_factory1->hospital2_18 + z_ppe2_factory1->factory4_18
+   + z_ppe2_factory1->factory2_18 - z_ppe2_DUMMY_RESERVE->factory1_18
    - M_ppe2_factory1_19 <= 0
- upper[availability_ppe3_factory1_19]: - z_ppe3_DUMMY_RESERVE->factory1_18
-   + z_ppe3_factory1->hospital1_19 + z_ppe3_factory1->hospital2_19
-   + z_ppe3_factory1->factory4_19 + z_ppe3_factory1->factory2_19
+ upper[availability_ppe3_factory1_19]: z_ppe3_factory1->hospital1_18
+   + z_ppe3_factory1->hospital2_18 + z_ppe3_factory1->factory4_18
+   + z_ppe3_factory1->factory2_18 - z_ppe3_DUMMY_RESERVE->factory1_18
    - M_ppe3_factory1_19 <= 0
  upper[availability_respirator1_factory1_19]:
-   - z_respirator1_DUMMY_RESERVE->factory1_18
-   + z_respirator1_factory1->hospital1_19
-   + z_respirator1_factory1->hospital2_19
-   + z_respirator1_factory1->factory4_19
-   + z_respirator1_factory1->factory2_19 - M_respirator1_factory1_19 <= 0
+   z_respirator1_factory1->hospital1_18
+   + z_respirator1_factory1->hospital2_18
+   + z_respirator1_factory1->factory4_18
+   + z_respirator1_factory1->factory2_18
+   - z_respirator1_DUMMY_RESERVE->factory1_18 - M_respirator1_factory1_19
+   <= 0
  upper[availability_respirator2_factory1_19]:
-   - z_respirator2_DUMMY_RESERVE->factory1_18
-   + z_respirator2_factory1->hospital1_19
-   + z_respirator2_factory1->hospital2_19
-   + z_respirator2_factory1->factory4_19
-   + z_respirator2_factory1->factory2_19 - M_respirator2_factory1_19 <= 0
- upper[availability_metal1_factory2_1]: z_metal1_factory2->hospital3_1
-   + z_metal1_factory2->hospital4_1 - M_metal1_factory2_1 <= 0
- upper[availability_metal2_factory2_1]: z_metal2_factory2->hospital3_1
-   + z_metal2_factory2->hospital4_1 - M_metal2_factory2_1 <= 0
- upper[availability_plastic1_factory2_1]: z_plastic1_factory2->hospital3_1
-   + z_plastic1_factory2->hospital4_1 - M_plastic1_factory2_1 <= 0
- upper[availability_plastic2_factory2_1]: z_plastic2_factory2->hospital3_1
-   + z_plastic2_factory2->hospital4_1 - M_plastic2_factory2_1 <= 0
- upper[availability_plastic3_factory2_1]: z_plastic3_factory2->hospital3_1
-   + z_plastic3_factory2->hospital4_1 - M_plastic3_factory2_1 <= 0
- upper[availability_ppe1_factory2_1]: z_ppe1_factory2->hospital3_1
-   + z_ppe1_factory2->hospital4_1 - M_ppe1_factory2_1 <= 0
- upper[availability_ppe2_factory2_1]: z_ppe2_factory2->hospital3_1
-   + z_ppe2_factory2->hospital4_1 - M_ppe2_factory2_1 <= 0
- upper[availability_ppe3_factory2_1]: z_ppe3_factory2->hospital3_1
-   + z_ppe3_factory2->hospital4_1 - M_ppe3_factory2_1 <= 0
- upper[availability_respirator1_factory2_1]:
-   z_respirator1_factory2->hospital3_1
-   + z_respirator1_factory2->hospital4_1 - M_respirator1_factory2_1 <= 0
- upper[availability_respirator2_factory2_1]:
-   z_respirator2_factory2->hospital3_1
-   + z_respirator2_factory2->hospital4_1 - M_respirator2_factory2_1 <= 0
- upper[availability_metal1_factory2_2]: - z_metal1_factory1->factory2_1
+   z_respirator2_factory1->hospital1_18
+   + z_respirator2_factory1->hospital2_18
+   + z_respirator2_factory1->factory4_18
+   + z_respirator2_factory1->factory2_18
+   - z_respirator2_DUMMY_RESERVE->factory1_18 - M_respirator2_factory1_19
+   <= 0
+ upper[availability_metal1_factory2_1]: - M_metal1_factory2_1 <= 0
+ upper[availability_metal2_factory2_1]: - M_metal2_factory2_1 <= 0
+ upper[availability_plastic1_factory2_1]: - M_plastic1_factory2_1 <= 0
+ upper[availability_plastic2_factory2_1]: - M_plastic2_factory2_1 <= 0
+ upper[availability_plastic3_factory2_1]: - M_plastic3_factory2_1 <= 0
+ upper[availability_ppe1_factory2_1]: - M_ppe1_factory2_1 <= 0
+ upper[availability_ppe2_factory2_1]: - M_ppe2_factory2_1 <= 0
+ upper[availability_ppe3_factory2_1]: - M_ppe3_factory2_1 <= 0
+ upper[availability_respirator1_factory2_1]: - M_respirator1_factory2_1
+   <= 0
+ upper[availability_respirator2_factory2_1]: - M_respirator2_factory2_1
+   <= 0
+ upper[availability_metal1_factory2_2]: z_metal1_factory2->hospital3_1
+   + z_metal1_factory2->hospital4_1 - z_metal1_factory1->factory2_1
    - z_metal1_factory4->factory2_1 - z_metal1_DUMMY_RESERVE->factory2_1
-   + z_metal1_factory2->hospital3_2 + z_metal1_factory2->hospital4_2
    - M_metal1_factory2_2 <= 0
- upper[availability_metal2_factory2_2]: - z_metal2_factory1->factory2_1
+ upper[availability_metal2_factory2_2]: z_metal2_factory2->hospital3_1
+   + z_metal2_factory2->hospital4_1 - z_metal2_factory1->factory2_1
    - z_metal2_factory4->factory2_1 - z_metal2_DUMMY_RESERVE->factory2_1
-   + z_metal2_factory2->hospital3_2 + z_metal2_factory2->hospital4_2
    - M_metal2_factory2_2 <= 0
- upper[availability_plastic1_factory2_2]: - z_plastic1_factory1->factory2_1
+ upper[availability_plastic1_factory2_2]: z_plastic1_factory2->hospital3_1
+   + z_plastic1_factory2->hospital4_1 - z_plastic1_factory1->factory2_1
    - z_plastic1_factory4->factory2_1 - z_plastic1_DUMMY_RESERVE->factory2_1
-   + z_plastic1_factory2->hospital3_2 + z_plastic1_factory2->hospital4_2
    - M_plastic1_factory2_2 <= 0
- upper[availability_plastic2_factory2_2]: - z_plastic2_factory1->factory2_1
+ upper[availability_plastic2_factory2_2]: z_plastic2_factory2->hospital3_1
+   + z_plastic2_factory2->hospital4_1 - z_plastic2_factory1->factory2_1
    - z_plastic2_factory4->factory2_1 - z_plastic2_DUMMY_RESERVE->factory2_1
-   + z_plastic2_factory2->hospital3_2 + z_plastic2_factory2->hospital4_2
    - M_plastic2_factory2_2 <= 0
- upper[availability_plastic3_factory2_2]: - z_plastic3_factory1->factory2_1
+ upper[availability_plastic3_factory2_2]: z_plastic3_factory2->hospital3_1
+   + z_plastic3_factory2->hospital4_1 - z_plastic3_factory1->factory2_1
    - z_plastic3_factory4->factory2_1 - z_plastic3_DUMMY_RESERVE->factory2_1
-   + z_plastic3_factory2->hospital3_2 + z_plastic3_factory2->hospital4_2
    - M_plastic3_factory2_2 <= 0
- upper[availability_ppe1_factory2_2]: - z_ppe1_factory1->factory2_1
+ upper[availability_ppe1_factory2_2]: z_ppe1_factory2->hospital3_1
+   + z_ppe1_factory2->hospital4_1 - z_ppe1_factory1->factory2_1
    - z_ppe1_factory4->factory2_1 - z_ppe1_DUMMY_RESERVE->factory2_1
-   + z_ppe1_factory2->hospital3_2 + z_ppe1_factory2->hospital4_2
    - M_ppe1_factory2_2 <= 0
- upper[availability_ppe2_factory2_2]: - z_ppe2_factory1->factory2_1
+ upper[availability_ppe2_factory2_2]: z_ppe2_factory2->hospital3_1
+   + z_ppe2_factory2->hospital4_1 - z_ppe2_factory1->factory2_1
    - z_ppe2_factory4->factory2_1 - z_ppe2_DUMMY_RESERVE->factory2_1
-   + z_ppe2_factory2->hospital3_2 + z_ppe2_factory2->hospital4_2
    - M_ppe2_factory2_2 <= 0
- upper[availability_ppe3_factory2_2]: - z_ppe3_factory1->factory2_1
+ upper[availability_ppe3_factory2_2]: z_ppe3_factory2->hospital3_1
+   + z_ppe3_factory2->hospital4_1 - z_ppe3_factory1->factory2_1
    - z_ppe3_factory4->factory2_1 - z_ppe3_DUMMY_RESERVE->factory2_1
-   + z_ppe3_factory2->hospital3_2 + z_ppe3_factory2->hospital4_2
    - M_ppe3_factory2_2 <= 0
  upper[availability_respirator1_factory2_2]:
+   z_respirator1_factory2->hospital3_1
+   + z_respirator1_factory2->hospital4_1
    - z_respirator1_factory1->factory2_1
    - z_respirator1_factory4->factory2_1
-   - z_respirator1_DUMMY_RESERVE->factory2_1
-   + z_respirator1_factory2->hospital3_2
-   + z_respirator1_factory2->hospital4_2 - M_respirator1_factory2_2 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_1 - M_respirator1_factory2_2
+   <= 0
  upper[availability_respirator2_factory2_2]:
+   z_respirator2_factory2->hospital3_1
+   + z_respirator2_factory2->hospital4_1
    - z_respirator2_factory1->factory2_1
    - z_respirator2_factory4->factory2_1
-   - z_respirator2_DUMMY_RESERVE->factory2_1
-   + z_respirator2_factory2->hospital3_2
-   + z_respirator2_factory2->hospital4_2 - M_respirator2_factory2_2 <= 0
- upper[availability_metal1_factory2_3]: - z_metal1_factory1->factory2_2
+   - z_respirator2_DUMMY_RESERVE->factory2_1 - M_respirator2_factory2_2
+   <= 0
+ upper[availability_metal1_factory2_3]: z_metal1_factory2->hospital3_2
+   + z_metal1_factory2->hospital4_2 - z_metal1_factory1->factory2_2
    - z_metal1_factory4->factory2_2 - z_metal1_DUMMY_RESERVE->factory2_2
-   + z_metal1_factory2->hospital3_3 + z_metal1_factory2->hospital4_3
    - M_metal1_factory2_3 <= 0
- upper[availability_metal2_factory2_3]: - z_metal2_factory1->factory2_2
+ upper[availability_metal2_factory2_3]: z_metal2_factory2->hospital3_2
+   + z_metal2_factory2->hospital4_2 - z_metal2_factory1->factory2_2
    - z_metal2_factory4->factory2_2 - z_metal2_DUMMY_RESERVE->factory2_2
-   + z_metal2_factory2->hospital3_3 + z_metal2_factory2->hospital4_3
    - M_metal2_factory2_3 <= 0
- upper[availability_plastic1_factory2_3]: - z_plastic1_factory1->factory2_2
+ upper[availability_plastic1_factory2_3]: z_plastic1_factory2->hospital3_2
+   + z_plastic1_factory2->hospital4_2 - z_plastic1_factory1->factory2_2
    - z_plastic1_factory4->factory2_2 - z_plastic1_DUMMY_RESERVE->factory2_2
-   + z_plastic1_factory2->hospital3_3 + z_plastic1_factory2->hospital4_3
    - M_plastic1_factory2_3 <= 0
- upper[availability_plastic2_factory2_3]: - z_plastic2_factory1->factory2_2
+ upper[availability_plastic2_factory2_3]: z_plastic2_factory2->hospital3_2
+   + z_plastic2_factory2->hospital4_2 - z_plastic2_factory1->factory2_2
    - z_plastic2_factory4->factory2_2 - z_plastic2_DUMMY_RESERVE->factory2_2
-   + z_plastic2_factory2->hospital3_3 + z_plastic2_factory2->hospital4_3
    - M_plastic2_factory2_3 <= 0
- upper[availability_plastic3_factory2_3]: - z_plastic3_factory1->factory2_2
+ upper[availability_plastic3_factory2_3]: z_plastic3_factory2->hospital3_2
+   + z_plastic3_factory2->hospital4_2 - z_plastic3_factory1->factory2_2
    - z_plastic3_factory4->factory2_2 - z_plastic3_DUMMY_RESERVE->factory2_2
-   + z_plastic3_factory2->hospital3_3 + z_plastic3_factory2->hospital4_3
    - M_plastic3_factory2_3 <= 0
- upper[availability_ppe1_factory2_3]: - z_ppe1_factory1->factory2_2
+ upper[availability_ppe1_factory2_3]: z_ppe1_factory2->hospital3_2
+   + z_ppe1_factory2->hospital4_2 - z_ppe1_factory1->factory2_2
    - z_ppe1_factory4->factory2_2 - z_ppe1_DUMMY_RESERVE->factory2_2
-   + z_ppe1_factory2->hospital3_3 + z_ppe1_factory2->hospital4_3
    - M_ppe1_factory2_3 <= 0
- upper[availability_ppe2_factory2_3]: - z_ppe2_factory1->factory2_2
+ upper[availability_ppe2_factory2_3]: z_ppe2_factory2->hospital3_2
+   + z_ppe2_factory2->hospital4_2 - z_ppe2_factory1->factory2_2
    - z_ppe2_factory4->factory2_2 - z_ppe2_DUMMY_RESERVE->factory2_2
-   + z_ppe2_factory2->hospital3_3 + z_ppe2_factory2->hospital4_3
    - M_ppe2_factory2_3 <= 0
- upper[availability_ppe3_factory2_3]: - z_ppe3_factory1->factory2_2
+ upper[availability_ppe3_factory2_3]: z_ppe3_factory2->hospital3_2
+   + z_ppe3_factory2->hospital4_2 - z_ppe3_factory1->factory2_2
    - z_ppe3_factory4->factory2_2 - z_ppe3_DUMMY_RESERVE->factory2_2
-   + z_ppe3_factory2->hospital3_3 + z_ppe3_factory2->hospital4_3
    - M_ppe3_factory2_3 <= 0
  upper[availability_respirator1_factory2_3]:
+   z_respirator1_factory2->hospital3_2
+   + z_respirator1_factory2->hospital4_2
    - z_respirator1_factory1->factory2_2
    - z_respirator1_factory4->factory2_2
-   - z_respirator1_DUMMY_RESERVE->factory2_2
-   + z_respirator1_factory2->hospital3_3
-   + z_respirator1_factory2->hospital4_3 - M_respirator1_factory2_3 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_2 - M_respirator1_factory2_3
+   <= 0
  upper[availability_respirator2_factory2_3]:
+   z_respirator2_factory2->hospital3_2
+   + z_respirator2_factory2->hospital4_2
    - z_respirator2_factory1->factory2_2
    - z_respirator2_factory4->factory2_2
-   - z_respirator2_DUMMY_RESERVE->factory2_2
-   + z_respirator2_factory2->hospital3_3
-   + z_respirator2_factory2->hospital4_3 - M_respirator2_factory2_3 <= 0
- upper[availability_metal1_factory2_4]: - z_metal1_factory1->factory2_3
+   - z_respirator2_DUMMY_RESERVE->factory2_2 - M_respirator2_factory2_3
+   <= 0
+ upper[availability_metal1_factory2_4]: z_metal1_factory2->hospital3_3
+   + z_metal1_factory2->hospital4_3 - z_metal1_factory1->factory2_3
    - z_metal1_factory4->factory2_3 - z_metal1_DUMMY_RESERVE->factory2_3
-   + z_metal1_factory2->hospital3_4 + z_metal1_factory2->hospital4_4
    - M_metal1_factory2_4 <= 0
- upper[availability_metal2_factory2_4]: - z_metal2_factory1->factory2_3
+ upper[availability_metal2_factory2_4]: z_metal2_factory2->hospital3_3
+   + z_metal2_factory2->hospital4_3 - z_metal2_factory1->factory2_3
    - z_metal2_factory4->factory2_3 - z_metal2_DUMMY_RESERVE->factory2_3
-   + z_metal2_factory2->hospital3_4 + z_metal2_factory2->hospital4_4
    - M_metal2_factory2_4 <= 0
- upper[availability_plastic1_factory2_4]: - z_plastic1_factory1->factory2_3
+ upper[availability_plastic1_factory2_4]: z_plastic1_factory2->hospital3_3
+   + z_plastic1_factory2->hospital4_3 - z_plastic1_factory1->factory2_3
    - z_plastic1_factory4->factory2_3 - z_plastic1_DUMMY_RESERVE->factory2_3
-   + z_plastic1_factory2->hospital3_4 + z_plastic1_factory2->hospital4_4
    - M_plastic1_factory2_4 <= 0
- upper[availability_plastic2_factory2_4]: - z_plastic2_factory1->factory2_3
+ upper[availability_plastic2_factory2_4]: z_plastic2_factory2->hospital3_3
+   + z_plastic2_factory2->hospital4_3 - z_plastic2_factory1->factory2_3
    - z_plastic2_factory4->factory2_3 - z_plastic2_DUMMY_RESERVE->factory2_3
-   + z_plastic2_factory2->hospital3_4 + z_plastic2_factory2->hospital4_4
    - M_plastic2_factory2_4 <= 0
- upper[availability_plastic3_factory2_4]: - z_plastic3_factory1->factory2_3
+ upper[availability_plastic3_factory2_4]: z_plastic3_factory2->hospital3_3
+   + z_plastic3_factory2->hospital4_3 - z_plastic3_factory1->factory2_3
    - z_plastic3_factory4->factory2_3 - z_plastic3_DUMMY_RESERVE->factory2_3
-   + z_plastic3_factory2->hospital3_4 + z_plastic3_factory2->hospital4_4
    - M_plastic3_factory2_4 <= 0
- upper[availability_ppe1_factory2_4]: - z_ppe1_factory1->factory2_3
+ upper[availability_ppe1_factory2_4]: z_ppe1_factory2->hospital3_3
+   + z_ppe1_factory2->hospital4_3 - z_ppe1_factory1->factory2_3
    - z_ppe1_factory4->factory2_3 - z_ppe1_DUMMY_RESERVE->factory2_3
-   + z_ppe1_factory2->hospital3_4 + z_ppe1_factory2->hospital4_4
    - M_ppe1_factory2_4 <= 0
- upper[availability_ppe2_factory2_4]: - z_ppe2_factory1->factory2_3
+ upper[availability_ppe2_factory2_4]: z_ppe2_factory2->hospital3_3
+   + z_ppe2_factory2->hospital4_3 - z_ppe2_factory1->factory2_3
    - z_ppe2_factory4->factory2_3 - z_ppe2_DUMMY_RESERVE->factory2_3
-   + z_ppe2_factory2->hospital3_4 + z_ppe2_factory2->hospital4_4
    - M_ppe2_factory2_4 <= 0
- upper[availability_ppe3_factory2_4]: - z_ppe3_factory1->factory2_3
+ upper[availability_ppe3_factory2_4]: z_ppe3_factory2->hospital3_3
+   + z_ppe3_factory2->hospital4_3 - z_ppe3_factory1->factory2_3
    - z_ppe3_factory4->factory2_3 - z_ppe3_DUMMY_RESERVE->factory2_3
-   + z_ppe3_factory2->hospital3_4 + z_ppe3_factory2->hospital4_4
    - M_ppe3_factory2_4 <= 0
  upper[availability_respirator1_factory2_4]:
+   z_respirator1_factory2->hospital3_3
+   + z_respirator1_factory2->hospital4_3
    - z_respirator1_factory1->factory2_3
    - z_respirator1_factory4->factory2_3
-   - z_respirator1_DUMMY_RESERVE->factory2_3
-   + z_respirator1_factory2->hospital3_4
-   + z_respirator1_factory2->hospital4_4 - M_respirator1_factory2_4 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_3 - M_respirator1_factory2_4
+   <= 0
  upper[availability_respirator2_factory2_4]:
+   z_respirator2_factory2->hospital3_3
+   + z_respirator2_factory2->hospital4_3
    - z_respirator2_factory1->factory2_3
    - z_respirator2_factory4->factory2_3
-   - z_respirator2_DUMMY_RESERVE->factory2_3
-   + z_respirator2_factory2->hospital3_4
-   + z_respirator2_factory2->hospital4_4 - M_respirator2_factory2_4 <= 0
- upper[availability_metal1_factory2_5]: - z_metal1_factory1->factory2_4
+   - z_respirator2_DUMMY_RESERVE->factory2_3 - M_respirator2_factory2_4
+   <= 0
+ upper[availability_metal1_factory2_5]: z_metal1_factory2->hospital3_4
+   + z_metal1_factory2->hospital4_4 - z_metal1_factory1->factory2_4
    - z_metal1_factory4->factory2_4 - z_metal1_DUMMY_RESERVE->factory2_4
-   + z_metal1_factory2->hospital3_5 + z_metal1_factory2->hospital4_5
    - M_metal1_factory2_5 <= 0
- upper[availability_metal2_factory2_5]: - z_metal2_factory1->factory2_4
+ upper[availability_metal2_factory2_5]: z_metal2_factory2->hospital3_4
+   + z_metal2_factory2->hospital4_4 - z_metal2_factory1->factory2_4
    - z_metal2_factory4->factory2_4 - z_metal2_DUMMY_RESERVE->factory2_4
-   + z_metal2_factory2->hospital3_5 + z_metal2_factory2->hospital4_5
    - M_metal2_factory2_5 <= 0
- upper[availability_plastic1_factory2_5]: - z_plastic1_factory1->factory2_4
+ upper[availability_plastic1_factory2_5]: z_plastic1_factory2->hospital3_4
+   + z_plastic1_factory2->hospital4_4 - z_plastic1_factory1->factory2_4
    - z_plastic1_factory4->factory2_4 - z_plastic1_DUMMY_RESERVE->factory2_4
-   + z_plastic1_factory2->hospital3_5 + z_plastic1_factory2->hospital4_5
    - M_plastic1_factory2_5 <= 0
- upper[availability_plastic2_factory2_5]: - z_plastic2_factory1->factory2_4
+ upper[availability_plastic2_factory2_5]: z_plastic2_factory2->hospital3_4
+   + z_plastic2_factory2->hospital4_4 - z_plastic2_factory1->factory2_4
    - z_plastic2_factory4->factory2_4 - z_plastic2_DUMMY_RESERVE->factory2_4
-   + z_plastic2_factory2->hospital3_5 + z_plastic2_factory2->hospital4_5
    - M_plastic2_factory2_5 <= 0
- upper[availability_plastic3_factory2_5]: - z_plastic3_factory1->factory2_4
+ upper[availability_plastic3_factory2_5]: z_plastic3_factory2->hospital3_4
+   + z_plastic3_factory2->hospital4_4 - z_plastic3_factory1->factory2_4
    - z_plastic3_factory4->factory2_4 - z_plastic3_DUMMY_RESERVE->factory2_4
-   + z_plastic3_factory2->hospital3_5 + z_plastic3_factory2->hospital4_5
    - M_plastic3_factory2_5 <= 0
- upper[availability_ppe1_factory2_5]: - z_ppe1_factory1->factory2_4
+ upper[availability_ppe1_factory2_5]: z_ppe1_factory2->hospital3_4
+   + z_ppe1_factory2->hospital4_4 - z_ppe1_factory1->factory2_4
    - z_ppe1_factory4->factory2_4 - z_ppe1_DUMMY_RESERVE->factory2_4
-   + z_ppe1_factory2->hospital3_5 + z_ppe1_factory2->hospital4_5
    - M_ppe1_factory2_5 <= 0
- upper[availability_ppe2_factory2_5]: - z_ppe2_factory1->factory2_4
+ upper[availability_ppe2_factory2_5]: z_ppe2_factory2->hospital3_4
+   + z_ppe2_factory2->hospital4_4 - z_ppe2_factory1->factory2_4
    - z_ppe2_factory4->factory2_4 - z_ppe2_DUMMY_RESERVE->factory2_4
-   + z_ppe2_factory2->hospital3_5 + z_ppe2_factory2->hospital4_5
    - M_ppe2_factory2_5 <= 0
- upper[availability_ppe3_factory2_5]: - z_ppe3_factory1->factory2_4
+ upper[availability_ppe3_factory2_5]: z_ppe3_factory2->hospital3_4
+   + z_ppe3_factory2->hospital4_4 - z_ppe3_factory1->factory2_4
    - z_ppe3_factory4->factory2_4 - z_ppe3_DUMMY_RESERVE->factory2_4
-   + z_ppe3_factory2->hospital3_5 + z_ppe3_factory2->hospital4_5
    - M_ppe3_factory2_5 <= 0
  upper[availability_respirator1_factory2_5]:
+   z_respirator1_factory2->hospital3_4
+   + z_respirator1_factory2->hospital4_4
    - z_respirator1_factory1->factory2_4
    - z_respirator1_factory4->factory2_4
-   - z_respirator1_DUMMY_RESERVE->factory2_4
-   + z_respirator1_factory2->hospital3_5
-   + z_respirator1_factory2->hospital4_5 - M_respirator1_factory2_5 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_4 - M_respirator1_factory2_5
+   <= 0
  upper[availability_respirator2_factory2_5]:
+   z_respirator2_factory2->hospital3_4
+   + z_respirator2_factory2->hospital4_4
    - z_respirator2_factory1->factory2_4
    - z_respirator2_factory4->factory2_4
-   - z_respirator2_DUMMY_RESERVE->factory2_4
-   + z_respirator2_factory2->hospital3_5
-   + z_respirator2_factory2->hospital4_5 - M_respirator2_factory2_5 <= 0
- upper[availability_metal1_factory2_6]: - z_metal1_factory1->factory2_5
+   - z_respirator2_DUMMY_RESERVE->factory2_4 - M_respirator2_factory2_5
+   <= 0
+ upper[availability_metal1_factory2_6]: z_metal1_factory2->hospital3_5
+   + z_metal1_factory2->hospital4_5 - z_metal1_factory1->factory2_5
    - z_metal1_factory4->factory2_5 - z_metal1_DUMMY_RESERVE->factory2_5
-   + z_metal1_factory2->hospital3_6 + z_metal1_factory2->hospital4_6
    - M_metal1_factory2_6 <= 0
- upper[availability_metal2_factory2_6]: - z_metal2_factory1->factory2_5
+ upper[availability_metal2_factory2_6]: z_metal2_factory2->hospital3_5
+   + z_metal2_factory2->hospital4_5 - z_metal2_factory1->factory2_5
    - z_metal2_factory4->factory2_5 - z_metal2_DUMMY_RESERVE->factory2_5
-   + z_metal2_factory2->hospital3_6 + z_metal2_factory2->hospital4_6
    - M_metal2_factory2_6 <= 0
- upper[availability_plastic1_factory2_6]: - z_plastic1_factory1->factory2_5
+ upper[availability_plastic1_factory2_6]: z_plastic1_factory2->hospital3_5
+   + z_plastic1_factory2->hospital4_5 - z_plastic1_factory1->factory2_5
    - z_plastic1_factory4->factory2_5 - z_plastic1_DUMMY_RESERVE->factory2_5
-   + z_plastic1_factory2->hospital3_6 + z_plastic1_factory2->hospital4_6
    - M_plastic1_factory2_6 <= 0
- upper[availability_plastic2_factory2_6]: - z_plastic2_factory1->factory2_5
+ upper[availability_plastic2_factory2_6]: z_plastic2_factory2->hospital3_5
+   + z_plastic2_factory2->hospital4_5 - z_plastic2_factory1->factory2_5
    - z_plastic2_factory4->factory2_5 - z_plastic2_DUMMY_RESERVE->factory2_5
-   + z_plastic2_factory2->hospital3_6 + z_plastic2_factory2->hospital4_6
    - M_plastic2_factory2_6 <= 0
- upper[availability_plastic3_factory2_6]: - z_plastic3_factory1->factory2_5
+ upper[availability_plastic3_factory2_6]: z_plastic3_factory2->hospital3_5
+   + z_plastic3_factory2->hospital4_5 - z_plastic3_factory1->factory2_5
    - z_plastic3_factory4->factory2_5 - z_plastic3_DUMMY_RESERVE->factory2_5
-   + z_plastic3_factory2->hospital3_6 + z_plastic3_factory2->hospital4_6
    - M_plastic3_factory2_6 <= 0
- upper[availability_ppe1_factory2_6]: - z_ppe1_factory1->factory2_5
+ upper[availability_ppe1_factory2_6]: z_ppe1_factory2->hospital3_5
+   + z_ppe1_factory2->hospital4_5 - z_ppe1_factory1->factory2_5
    - z_ppe1_factory4->factory2_5 - z_ppe1_DUMMY_RESERVE->factory2_5
-   + z_ppe1_factory2->hospital3_6 + z_ppe1_factory2->hospital4_6
    - M_ppe1_factory2_6 <= 0
- upper[availability_ppe2_factory2_6]: - z_ppe2_factory1->factory2_5
+ upper[availability_ppe2_factory2_6]: z_ppe2_factory2->hospital3_5
+   + z_ppe2_factory2->hospital4_5 - z_ppe2_factory1->factory2_5
    - z_ppe2_factory4->factory2_5 - z_ppe2_DUMMY_RESERVE->factory2_5
-   + z_ppe2_factory2->hospital3_6 + z_ppe2_factory2->hospital4_6
    - M_ppe2_factory2_6 <= 0
- upper[availability_ppe3_factory2_6]: - z_ppe3_factory1->factory2_5
+ upper[availability_ppe3_factory2_6]: z_ppe3_factory2->hospital3_5
+   + z_ppe3_factory2->hospital4_5 - z_ppe3_factory1->factory2_5
    - z_ppe3_factory4->factory2_5 - z_ppe3_DUMMY_RESERVE->factory2_5
-   + z_ppe3_factory2->hospital3_6 + z_ppe3_factory2->hospital4_6
    - M_ppe3_factory2_6 <= 0
  upper[availability_respirator1_factory2_6]:
+   z_respirator1_factory2->hospital3_5
+   + z_respirator1_factory2->hospital4_5
    - z_respirator1_factory1->factory2_5
    - z_respirator1_factory4->factory2_5
-   - z_respirator1_DUMMY_RESERVE->factory2_5
-   + z_respirator1_factory2->hospital3_6
-   + z_respirator1_factory2->hospital4_6 - M_respirator1_factory2_6 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_5 - M_respirator1_factory2_6
+   <= 0
  upper[availability_respirator2_factory2_6]:
+   z_respirator2_factory2->hospital3_5
+   + z_respirator2_factory2->hospital4_5
    - z_respirator2_factory1->factory2_5
    - z_respirator2_factory4->factory2_5
-   - z_respirator2_DUMMY_RESERVE->factory2_5
-   + z_respirator2_factory2->hospital3_6
-   + z_respirator2_factory2->hospital4_6 - M_respirator2_factory2_6 <= 0
- upper[availability_metal1_factory2_7]: - z_metal1_factory1->factory2_6
+   - z_respirator2_DUMMY_RESERVE->factory2_5 - M_respirator2_factory2_6
+   <= 0
+ upper[availability_metal1_factory2_7]: z_metal1_factory2->hospital3_6
+   + z_metal1_factory2->hospital4_6 - z_metal1_factory1->factory2_6
    - z_metal1_factory4->factory2_6 - z_metal1_DUMMY_RESERVE->factory2_6
-   + z_metal1_factory2->hospital3_7 + z_metal1_factory2->hospital4_7
    - M_metal1_factory2_7 <= 0
- upper[availability_metal2_factory2_7]: - z_metal2_factory1->factory2_6
+ upper[availability_metal2_factory2_7]: z_metal2_factory2->hospital3_6
+   + z_metal2_factory2->hospital4_6 - z_metal2_factory1->factory2_6
    - z_metal2_factory4->factory2_6 - z_metal2_DUMMY_RESERVE->factory2_6
-   + z_metal2_factory2->hospital3_7 + z_metal2_factory2->hospital4_7
    - M_metal2_factory2_7 <= 0
- upper[availability_plastic1_factory2_7]: - z_plastic1_factory1->factory2_6
+ upper[availability_plastic1_factory2_7]: z_plastic1_factory2->hospital3_6
+   + z_plastic1_factory2->hospital4_6 - z_plastic1_factory1->factory2_6
    - z_plastic1_factory4->factory2_6 - z_plastic1_DUMMY_RESERVE->factory2_6
-   + z_plastic1_factory2->hospital3_7 + z_plastic1_factory2->hospital4_7
    - M_plastic1_factory2_7 <= 0
- upper[availability_plastic2_factory2_7]: - z_plastic2_factory1->factory2_6
+ upper[availability_plastic2_factory2_7]: z_plastic2_factory2->hospital3_6
+   + z_plastic2_factory2->hospital4_6 - z_plastic2_factory1->factory2_6
    - z_plastic2_factory4->factory2_6 - z_plastic2_DUMMY_RESERVE->factory2_6
-   + z_plastic2_factory2->hospital3_7 + z_plastic2_factory2->hospital4_7
    - M_plastic2_factory2_7 <= 0
- upper[availability_plastic3_factory2_7]: - z_plastic3_factory1->factory2_6
+ upper[availability_plastic3_factory2_7]: z_plastic3_factory2->hospital3_6
+   + z_plastic3_factory2->hospital4_6 - z_plastic3_factory1->factory2_6
    - z_plastic3_factory4->factory2_6 - z_plastic3_DUMMY_RESERVE->factory2_6
-   + z_plastic3_factory2->hospital3_7 + z_plastic3_factory2->hospital4_7
    - M_plastic3_factory2_7 <= 0
- upper[availability_ppe1_factory2_7]: - z_ppe1_factory1->factory2_6
+ upper[availability_ppe1_factory2_7]: z_ppe1_factory2->hospital3_6
+   + z_ppe1_factory2->hospital4_6 - z_ppe1_factory1->factory2_6
    - z_ppe1_factory4->factory2_6 - z_ppe1_DUMMY_RESERVE->factory2_6
-   + z_ppe1_factory2->hospital3_7 + z_ppe1_factory2->hospital4_7
    - M_ppe1_factory2_7 <= 0
- upper[availability_ppe2_factory2_7]: - z_ppe2_factory1->factory2_6
+ upper[availability_ppe2_factory2_7]: z_ppe2_factory2->hospital3_6
+   + z_ppe2_factory2->hospital4_6 - z_ppe2_factory1->factory2_6
    - z_ppe2_factory4->factory2_6 - z_ppe2_DUMMY_RESERVE->factory2_6
-   + z_ppe2_factory2->hospital3_7 + z_ppe2_factory2->hospital4_7
    - M_ppe2_factory2_7 <= 0
- upper[availability_ppe3_factory2_7]: - z_ppe3_factory1->factory2_6
+ upper[availability_ppe3_factory2_7]: z_ppe3_factory2->hospital3_6
+   + z_ppe3_factory2->hospital4_6 - z_ppe3_factory1->factory2_6
    - z_ppe3_factory4->factory2_6 - z_ppe3_DUMMY_RESERVE->factory2_6
-   + z_ppe3_factory2->hospital3_7 + z_ppe3_factory2->hospital4_7
    - M_ppe3_factory2_7 <= 0
  upper[availability_respirator1_factory2_7]:
+   z_respirator1_factory2->hospital3_6
+   + z_respirator1_factory2->hospital4_6
    - z_respirator1_factory1->factory2_6
    - z_respirator1_factory4->factory2_6
-   - z_respirator1_DUMMY_RESERVE->factory2_6
-   + z_respirator1_factory2->hospital3_7
-   + z_respirator1_factory2->hospital4_7 - M_respirator1_factory2_7 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_6 - M_respirator1_factory2_7
+   <= 0
  upper[availability_respirator2_factory2_7]:
+   z_respirator2_factory2->hospital3_6
+   + z_respirator2_factory2->hospital4_6
    - z_respirator2_factory1->factory2_6
    - z_respirator2_factory4->factory2_6
-   - z_respirator2_DUMMY_RESERVE->factory2_6
-   + z_respirator2_factory2->hospital3_7
-   + z_respirator2_factory2->hospital4_7 - M_respirator2_factory2_7 <= 0
- upper[availability_metal1_factory2_8]: - z_metal1_factory1->factory2_7
+   - z_respirator2_DUMMY_RESERVE->factory2_6 - M_respirator2_factory2_7
+   <= 0
+ upper[availability_metal1_factory2_8]: z_metal1_factory2->hospital3_7
+   + z_metal1_factory2->hospital4_7 - z_metal1_factory1->factory2_7
    - z_metal1_factory4->factory2_7 - z_metal1_DUMMY_RESERVE->factory2_7
-   + z_metal1_factory2->hospital3_8 + z_metal1_factory2->hospital4_8
    - M_metal1_factory2_8 <= 0
- upper[availability_metal2_factory2_8]: - z_metal2_factory1->factory2_7
+ upper[availability_metal2_factory2_8]: z_metal2_factory2->hospital3_7
+   + z_metal2_factory2->hospital4_7 - z_metal2_factory1->factory2_7
    - z_metal2_factory4->factory2_7 - z_metal2_DUMMY_RESERVE->factory2_7
-   + z_metal2_factory2->hospital3_8 + z_metal2_factory2->hospital4_8
    - M_metal2_factory2_8 <= 0
- upper[availability_plastic1_factory2_8]: - z_plastic1_factory1->factory2_7
+ upper[availability_plastic1_factory2_8]: z_plastic1_factory2->hospital3_7
+   + z_plastic1_factory2->hospital4_7 - z_plastic1_factory1->factory2_7
    - z_plastic1_factory4->factory2_7 - z_plastic1_DUMMY_RESERVE->factory2_7
-   + z_plastic1_factory2->hospital3_8 + z_plastic1_factory2->hospital4_8
    - M_plastic1_factory2_8 <= 0
- upper[availability_plastic2_factory2_8]: - z_plastic2_factory1->factory2_7
+ upper[availability_plastic2_factory2_8]: z_plastic2_factory2->hospital3_7
+   + z_plastic2_factory2->hospital4_7 - z_plastic2_factory1->factory2_7
    - z_plastic2_factory4->factory2_7 - z_plastic2_DUMMY_RESERVE->factory2_7
-   + z_plastic2_factory2->hospital3_8 + z_plastic2_factory2->hospital4_8
    - M_plastic2_factory2_8 <= 0
- upper[availability_plastic3_factory2_8]: - z_plastic3_factory1->factory2_7
+ upper[availability_plastic3_factory2_8]: z_plastic3_factory2->hospital3_7
+   + z_plastic3_factory2->hospital4_7 - z_plastic3_factory1->factory2_7
    - z_plastic3_factory4->factory2_7 - z_plastic3_DUMMY_RESERVE->factory2_7
-   + z_plastic3_factory2->hospital3_8 + z_plastic3_factory2->hospital4_8
    - M_plastic3_factory2_8 <= 0
- upper[availability_ppe1_factory2_8]: - z_ppe1_factory1->factory2_7
+ upper[availability_ppe1_factory2_8]: z_ppe1_factory2->hospital3_7
+   + z_ppe1_factory2->hospital4_7 - z_ppe1_factory1->factory2_7
    - z_ppe1_factory4->factory2_7 - z_ppe1_DUMMY_RESERVE->factory2_7
-   + z_ppe1_factory2->hospital3_8 + z_ppe1_factory2->hospital4_8
    - M_ppe1_factory2_8 <= 0
- upper[availability_ppe2_factory2_8]: - z_ppe2_factory1->factory2_7
+ upper[availability_ppe2_factory2_8]: z_ppe2_factory2->hospital3_7
+   + z_ppe2_factory2->hospital4_7 - z_ppe2_factory1->factory2_7
    - z_ppe2_factory4->factory2_7 - z_ppe2_DUMMY_RESERVE->factory2_7
-   + z_ppe2_factory2->hospital3_8 + z_ppe2_factory2->hospital4_8
    - M_ppe2_factory2_8 <= 0
- upper[availability_ppe3_factory2_8]: - z_ppe3_factory1->factory2_7
+ upper[availability_ppe3_factory2_8]: z_ppe3_factory2->hospital3_7
+   + z_ppe3_factory2->hospital4_7 - z_ppe3_factory1->factory2_7
    - z_ppe3_factory4->factory2_7 - z_ppe3_DUMMY_RESERVE->factory2_7
-   + z_ppe3_factory2->hospital3_8 + z_ppe3_factory2->hospital4_8
    - M_ppe3_factory2_8 <= 0
  upper[availability_respirator1_factory2_8]:
+   z_respirator1_factory2->hospital3_7
+   + z_respirator1_factory2->hospital4_7
    - z_respirator1_factory1->factory2_7
    - z_respirator1_factory4->factory2_7
-   - z_respirator1_DUMMY_RESERVE->factory2_7
-   + z_respirator1_factory2->hospital3_8
-   + z_respirator1_factory2->hospital4_8 - M_respirator1_factory2_8 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_7 - M_respirator1_factory2_8
+   <= 0
  upper[availability_respirator2_factory2_8]:
+   z_respirator2_factory2->hospital3_7
+   + z_respirator2_factory2->hospital4_7
    - z_respirator2_factory1->factory2_7
    - z_respirator2_factory4->factory2_7
-   - z_respirator2_DUMMY_RESERVE->factory2_7
-   + z_respirator2_factory2->hospital3_8
-   + z_respirator2_factory2->hospital4_8 - M_respirator2_factory2_8 <= 0
- upper[availability_metal1_factory2_9]: - z_metal1_factory1->factory2_8
+   - z_respirator2_DUMMY_RESERVE->factory2_7 - M_respirator2_factory2_8
+   <= 0
+ upper[availability_metal1_factory2_9]: z_metal1_factory2->hospital3_8
+   + z_metal1_factory2->hospital4_8 - z_metal1_factory1->factory2_8
    - z_metal1_factory4->factory2_8 - z_metal1_DUMMY_RESERVE->factory2_8
-   + z_metal1_factory2->hospital3_9 + z_metal1_factory2->hospital4_9
    - M_metal1_factory2_9 <= 0
- upper[availability_metal2_factory2_9]: - z_metal2_factory1->factory2_8
+ upper[availability_metal2_factory2_9]: z_metal2_factory2->hospital3_8
+   + z_metal2_factory2->hospital4_8 - z_metal2_factory1->factory2_8
    - z_metal2_factory4->factory2_8 - z_metal2_DUMMY_RESERVE->factory2_8
-   + z_metal2_factory2->hospital3_9 + z_metal2_factory2->hospital4_9
    - M_metal2_factory2_9 <= 0
- upper[availability_plastic1_factory2_9]: - z_plastic1_factory1->factory2_8
+ upper[availability_plastic1_factory2_9]: z_plastic1_factory2->hospital3_8
+   + z_plastic1_factory2->hospital4_8 - z_plastic1_factory1->factory2_8
    - z_plastic1_factory4->factory2_8 - z_plastic1_DUMMY_RESERVE->factory2_8
-   + z_plastic1_factory2->hospital3_9 + z_plastic1_factory2->hospital4_9
    - M_plastic1_factory2_9 <= 0
- upper[availability_plastic2_factory2_9]: - z_plastic2_factory1->factory2_8
+ upper[availability_plastic2_factory2_9]: z_plastic2_factory2->hospital3_8
+   + z_plastic2_factory2->hospital4_8 - z_plastic2_factory1->factory2_8
    - z_plastic2_factory4->factory2_8 - z_plastic2_DUMMY_RESERVE->factory2_8
-   + z_plastic2_factory2->hospital3_9 + z_plastic2_factory2->hospital4_9
    - M_plastic2_factory2_9 <= 0
- upper[availability_plastic3_factory2_9]: - z_plastic3_factory1->factory2_8
+ upper[availability_plastic3_factory2_9]: z_plastic3_factory2->hospital3_8
+   + z_plastic3_factory2->hospital4_8 - z_plastic3_factory1->factory2_8
    - z_plastic3_factory4->factory2_8 - z_plastic3_DUMMY_RESERVE->factory2_8
-   + z_plastic3_factory2->hospital3_9 + z_plastic3_factory2->hospital4_9
    - M_plastic3_factory2_9 <= 0
- upper[availability_ppe1_factory2_9]: - z_ppe1_factory1->factory2_8
+ upper[availability_ppe1_factory2_9]: z_ppe1_factory2->hospital3_8
+   + z_ppe1_factory2->hospital4_8 - z_ppe1_factory1->factory2_8
    - z_ppe1_factory4->factory2_8 - z_ppe1_DUMMY_RESERVE->factory2_8
-   + z_ppe1_factory2->hospital3_9 + z_ppe1_factory2->hospital4_9
    - M_ppe1_factory2_9 <= 0
- upper[availability_ppe2_factory2_9]: - z_ppe2_factory1->factory2_8
+ upper[availability_ppe2_factory2_9]: z_ppe2_factory2->hospital3_8
+   + z_ppe2_factory2->hospital4_8 - z_ppe2_factory1->factory2_8
    - z_ppe2_factory4->factory2_8 - z_ppe2_DUMMY_RESERVE->factory2_8
-   + z_ppe2_factory2->hospital3_9 + z_ppe2_factory2->hospital4_9
    - M_ppe2_factory2_9 <= 0
- upper[availability_ppe3_factory2_9]: - z_ppe3_factory1->factory2_8
+ upper[availability_ppe3_factory2_9]: z_ppe3_factory2->hospital3_8
+   + z_ppe3_factory2->hospital4_8 - z_ppe3_factory1->factory2_8
    - z_ppe3_factory4->factory2_8 - z_ppe3_DUMMY_RESERVE->factory2_8
-   + z_ppe3_factory2->hospital3_9 + z_ppe3_factory2->hospital4_9
    - M_ppe3_factory2_9 <= 0
  upper[availability_respirator1_factory2_9]:
+   z_respirator1_factory2->hospital3_8
+   + z_respirator1_factory2->hospital4_8
    - z_respirator1_factory1->factory2_8
    - z_respirator1_factory4->factory2_8
-   - z_respirator1_DUMMY_RESERVE->factory2_8
-   + z_respirator1_factory2->hospital3_9
-   + z_respirator1_factory2->hospital4_9 - M_respirator1_factory2_9 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_8 - M_respirator1_factory2_9
+   <= 0
  upper[availability_respirator2_factory2_9]:
+   z_respirator2_factory2->hospital3_8
+   + z_respirator2_factory2->hospital4_8
    - z_respirator2_factory1->factory2_8
    - z_respirator2_factory4->factory2_8
-   - z_respirator2_DUMMY_RESERVE->factory2_8
-   + z_respirator2_factory2->hospital3_9
-   + z_respirator2_factory2->hospital4_9 - M_respirator2_factory2_9 <= 0
- upper[availability_metal1_factory2_10]: - z_metal1_factory1->factory2_9
+   - z_respirator2_DUMMY_RESERVE->factory2_8 - M_respirator2_factory2_9
+   <= 0
+ upper[availability_metal1_factory2_10]: z_metal1_factory2->hospital3_9
+   + z_metal1_factory2->hospital4_9 - z_metal1_factory1->factory2_9
    - z_metal1_factory4->factory2_9 - z_metal1_DUMMY_RESERVE->factory2_9
-   + z_metal1_factory2->hospital3_10 + z_metal1_factory2->hospital4_10
    - M_metal1_factory2_10 <= 0
- upper[availability_metal2_factory2_10]: - z_metal2_factory1->factory2_9
+ upper[availability_metal2_factory2_10]: z_metal2_factory2->hospital3_9
+   + z_metal2_factory2->hospital4_9 - z_metal2_factory1->factory2_9
    - z_metal2_factory4->factory2_9 - z_metal2_DUMMY_RESERVE->factory2_9
-   + z_metal2_factory2->hospital3_10 + z_metal2_factory2->hospital4_10
    - M_metal2_factory2_10 <= 0
- upper[availability_plastic1_factory2_10]:
-   - z_plastic1_factory1->factory2_9 - z_plastic1_factory4->factory2_9
-   - z_plastic1_DUMMY_RESERVE->factory2_9
-   + z_plastic1_factory2->hospital3_10 + z_plastic1_factory2->hospital4_10
+ upper[availability_plastic1_factory2_10]: z_plastic1_factory2->hospital3_9
+   + z_plastic1_factory2->hospital4_9 - z_plastic1_factory1->factory2_9
+   - z_plastic1_factory4->factory2_9 - z_plastic1_DUMMY_RESERVE->factory2_9
    - M_plastic1_factory2_10 <= 0
- upper[availability_plastic2_factory2_10]:
-   - z_plastic2_factory1->factory2_9 - z_plastic2_factory4->factory2_9
-   - z_plastic2_DUMMY_RESERVE->factory2_9
-   + z_plastic2_factory2->hospital3_10 + z_plastic2_factory2->hospital4_10
+ upper[availability_plastic2_factory2_10]: z_plastic2_factory2->hospital3_9
+   + z_plastic2_factory2->hospital4_9 - z_plastic2_factory1->factory2_9
+   - z_plastic2_factory4->factory2_9 - z_plastic2_DUMMY_RESERVE->factory2_9
    - M_plastic2_factory2_10 <= 0
- upper[availability_plastic3_factory2_10]:
-   - z_plastic3_factory1->factory2_9 - z_plastic3_factory4->factory2_9
-   - z_plastic3_DUMMY_RESERVE->factory2_9
-   + z_plastic3_factory2->hospital3_10 + z_plastic3_factory2->hospital4_10
+ upper[availability_plastic3_factory2_10]: z_plastic3_factory2->hospital3_9
+   + z_plastic3_factory2->hospital4_9 - z_plastic3_factory1->factory2_9
+   - z_plastic3_factory4->factory2_9 - z_plastic3_DUMMY_RESERVE->factory2_9
    - M_plastic3_factory2_10 <= 0
- upper[availability_ppe1_factory2_10]: - z_ppe1_factory1->factory2_9
+ upper[availability_ppe1_factory2_10]: z_ppe1_factory2->hospital3_9
+   + z_ppe1_factory2->hospital4_9 - z_ppe1_factory1->factory2_9
    - z_ppe1_factory4->factory2_9 - z_ppe1_DUMMY_RESERVE->factory2_9
-   + z_ppe1_factory2->hospital3_10 + z_ppe1_factory2->hospital4_10
    - M_ppe1_factory2_10 <= 0
- upper[availability_ppe2_factory2_10]: - z_ppe2_factory1->factory2_9
+ upper[availability_ppe2_factory2_10]: z_ppe2_factory2->hospital3_9
+   + z_ppe2_factory2->hospital4_9 - z_ppe2_factory1->factory2_9
    - z_ppe2_factory4->factory2_9 - z_ppe2_DUMMY_RESERVE->factory2_9
-   + z_ppe2_factory2->hospital3_10 + z_ppe2_factory2->hospital4_10
    - M_ppe2_factory2_10 <= 0
- upper[availability_ppe3_factory2_10]: - z_ppe3_factory1->factory2_9
+ upper[availability_ppe3_factory2_10]: z_ppe3_factory2->hospital3_9
+   + z_ppe3_factory2->hospital4_9 - z_ppe3_factory1->factory2_9
    - z_ppe3_factory4->factory2_9 - z_ppe3_DUMMY_RESERVE->factory2_9
-   + z_ppe3_factory2->hospital3_10 + z_ppe3_factory2->hospital4_10
    - M_ppe3_factory2_10 <= 0
  upper[availability_respirator1_factory2_10]:
+   z_respirator1_factory2->hospital3_9
+   + z_respirator1_factory2->hospital4_9
    - z_respirator1_factory1->factory2_9
    - z_respirator1_factory4->factory2_9
-   - z_respirator1_DUMMY_RESERVE->factory2_9
-   + z_respirator1_factory2->hospital3_10
-   + z_respirator1_factory2->hospital4_10 - M_respirator1_factory2_10 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_9 - M_respirator1_factory2_10
+   <= 0
  upper[availability_respirator2_factory2_10]:
+   z_respirator2_factory2->hospital3_9
+   + z_respirator2_factory2->hospital4_9
    - z_respirator2_factory1->factory2_9
    - z_respirator2_factory4->factory2_9
-   - z_respirator2_DUMMY_RESERVE->factory2_9
-   + z_respirator2_factory2->hospital3_10
-   + z_respirator2_factory2->hospital4_10 - M_respirator2_factory2_10 <= 0
- upper[availability_metal1_factory2_11]: - z_metal1_factory1->factory2_10
+   - z_respirator2_DUMMY_RESERVE->factory2_9 - M_respirator2_factory2_10
+   <= 0
+ upper[availability_metal1_factory2_11]: z_metal1_factory2->hospital3_10
+   + z_metal1_factory2->hospital4_10 - z_metal1_factory1->factory2_10
    - z_metal1_factory4->factory2_10 - z_metal1_DUMMY_RESERVE->factory2_10
-   + z_metal1_factory2->hospital3_11 + z_metal1_factory2->hospital4_11
    - M_metal1_factory2_11 <= 0
- upper[availability_metal2_factory2_11]: - z_metal2_factory1->factory2_10
+ upper[availability_metal2_factory2_11]: z_metal2_factory2->hospital3_10
+   + z_metal2_factory2->hospital4_10 - z_metal2_factory1->factory2_10
    - z_metal2_factory4->factory2_10 - z_metal2_DUMMY_RESERVE->factory2_10
-   + z_metal2_factory2->hospital3_11 + z_metal2_factory2->hospital4_11
    - M_metal2_factory2_11 <= 0
  upper[availability_plastic1_factory2_11]:
+   z_plastic1_factory2->hospital3_10 + z_plastic1_factory2->hospital4_10
    - z_plastic1_factory1->factory2_10 - z_plastic1_factory4->factory2_10
-   - z_plastic1_DUMMY_RESERVE->factory2_10
-   + z_plastic1_factory2->hospital3_11 + z_plastic1_factory2->hospital4_11
-   - M_plastic1_factory2_11 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_10 - M_plastic1_factory2_11 <= 0
  upper[availability_plastic2_factory2_11]:
+   z_plastic2_factory2->hospital3_10 + z_plastic2_factory2->hospital4_10
    - z_plastic2_factory1->factory2_10 - z_plastic2_factory4->factory2_10
-   - z_plastic2_DUMMY_RESERVE->factory2_10
-   + z_plastic2_factory2->hospital3_11 + z_plastic2_factory2->hospital4_11
-   - M_plastic2_factory2_11 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_10 - M_plastic2_factory2_11 <= 0
  upper[availability_plastic3_factory2_11]:
+   z_plastic3_factory2->hospital3_10 + z_plastic3_factory2->hospital4_10
    - z_plastic3_factory1->factory2_10 - z_plastic3_factory4->factory2_10
-   - z_plastic3_DUMMY_RESERVE->factory2_10
-   + z_plastic3_factory2->hospital3_11 + z_plastic3_factory2->hospital4_11
-   - M_plastic3_factory2_11 <= 0
- upper[availability_ppe1_factory2_11]: - z_ppe1_factory1->factory2_10
+   - z_plastic3_DUMMY_RESERVE->factory2_10 - M_plastic3_factory2_11 <= 0
+ upper[availability_ppe1_factory2_11]: z_ppe1_factory2->hospital3_10
+   + z_ppe1_factory2->hospital4_10 - z_ppe1_factory1->factory2_10
    - z_ppe1_factory4->factory2_10 - z_ppe1_DUMMY_RESERVE->factory2_10
-   + z_ppe1_factory2->hospital3_11 + z_ppe1_factory2->hospital4_11
    - M_ppe1_factory2_11 <= 0
- upper[availability_ppe2_factory2_11]: - z_ppe2_factory1->factory2_10
+ upper[availability_ppe2_factory2_11]: z_ppe2_factory2->hospital3_10
+   + z_ppe2_factory2->hospital4_10 - z_ppe2_factory1->factory2_10
    - z_ppe2_factory4->factory2_10 - z_ppe2_DUMMY_RESERVE->factory2_10
-   + z_ppe2_factory2->hospital3_11 + z_ppe2_factory2->hospital4_11
    - M_ppe2_factory2_11 <= 0
- upper[availability_ppe3_factory2_11]: - z_ppe3_factory1->factory2_10
+ upper[availability_ppe3_factory2_11]: z_ppe3_factory2->hospital3_10
+   + z_ppe3_factory2->hospital4_10 - z_ppe3_factory1->factory2_10
    - z_ppe3_factory4->factory2_10 - z_ppe3_DUMMY_RESERVE->factory2_10
-   + z_ppe3_factory2->hospital3_11 + z_ppe3_factory2->hospital4_11
    - M_ppe3_factory2_11 <= 0
  upper[availability_respirator1_factory2_11]:
+   z_respirator1_factory2->hospital3_10
+   + z_respirator1_factory2->hospital4_10
    - z_respirator1_factory1->factory2_10
    - z_respirator1_factory4->factory2_10
-   - z_respirator1_DUMMY_RESERVE->factory2_10
-   + z_respirator1_factory2->hospital3_11
-   + z_respirator1_factory2->hospital4_11 - M_respirator1_factory2_11 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_10 - M_respirator1_factory2_11
+   <= 0
  upper[availability_respirator2_factory2_11]:
+   z_respirator2_factory2->hospital3_10
+   + z_respirator2_factory2->hospital4_10
    - z_respirator2_factory1->factory2_10
    - z_respirator2_factory4->factory2_10
-   - z_respirator2_DUMMY_RESERVE->factory2_10
-   + z_respirator2_factory2->hospital3_11
-   + z_respirator2_factory2->hospital4_11 - M_respirator2_factory2_11 <= 0
- upper[availability_metal1_factory2_12]: - z_metal1_factory1->factory2_11
+   - z_respirator2_DUMMY_RESERVE->factory2_10 - M_respirator2_factory2_11
+   <= 0
+ upper[availability_metal1_factory2_12]: z_metal1_factory2->hospital3_11
+   + z_metal1_factory2->hospital4_11 - z_metal1_factory1->factory2_11
    - z_metal1_factory4->factory2_11 - z_metal1_DUMMY_RESERVE->factory2_11
-   + z_metal1_factory2->hospital3_12 + z_metal1_factory2->hospital4_12
    - M_metal1_factory2_12 <= 0
- upper[availability_metal2_factory2_12]: - z_metal2_factory1->factory2_11
+ upper[availability_metal2_factory2_12]: z_metal2_factory2->hospital3_11
+   + z_metal2_factory2->hospital4_11 - z_metal2_factory1->factory2_11
    - z_metal2_factory4->factory2_11 - z_metal2_DUMMY_RESERVE->factory2_11
-   + z_metal2_factory2->hospital3_12 + z_metal2_factory2->hospital4_12
    - M_metal2_factory2_12 <= 0
  upper[availability_plastic1_factory2_12]:
+   z_plastic1_factory2->hospital3_11 + z_plastic1_factory2->hospital4_11
    - z_plastic1_factory1->factory2_11 - z_plastic1_factory4->factory2_11
-   - z_plastic1_DUMMY_RESERVE->factory2_11
-   + z_plastic1_factory2->hospital3_12 + z_plastic1_factory2->hospital4_12
-   - M_plastic1_factory2_12 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_11 - M_plastic1_factory2_12 <= 0
  upper[availability_plastic2_factory2_12]:
+   z_plastic2_factory2->hospital3_11 + z_plastic2_factory2->hospital4_11
    - z_plastic2_factory1->factory2_11 - z_plastic2_factory4->factory2_11
-   - z_plastic2_DUMMY_RESERVE->factory2_11
-   + z_plastic2_factory2->hospital3_12 + z_plastic2_factory2->hospital4_12
-   - M_plastic2_factory2_12 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_11 - M_plastic2_factory2_12 <= 0
  upper[availability_plastic3_factory2_12]:
+   z_plastic3_factory2->hospital3_11 + z_plastic3_factory2->hospital4_11
    - z_plastic3_factory1->factory2_11 - z_plastic3_factory4->factory2_11
-   - z_plastic3_DUMMY_RESERVE->factory2_11
-   + z_plastic3_factory2->hospital3_12 + z_plastic3_factory2->hospital4_12
-   - M_plastic3_factory2_12 <= 0
- upper[availability_ppe1_factory2_12]: - z_ppe1_factory1->factory2_11
+   - z_plastic3_DUMMY_RESERVE->factory2_11 - M_plastic3_factory2_12 <= 0
+ upper[availability_ppe1_factory2_12]: z_ppe1_factory2->hospital3_11
+   + z_ppe1_factory2->hospital4_11 - z_ppe1_factory1->factory2_11
    - z_ppe1_factory4->factory2_11 - z_ppe1_DUMMY_RESERVE->factory2_11
-   + z_ppe1_factory2->hospital3_12 + z_ppe1_factory2->hospital4_12
    - M_ppe1_factory2_12 <= 0
- upper[availability_ppe2_factory2_12]: - z_ppe2_factory1->factory2_11
+ upper[availability_ppe2_factory2_12]: z_ppe2_factory2->hospital3_11
+   + z_ppe2_factory2->hospital4_11 - z_ppe2_factory1->factory2_11
    - z_ppe2_factory4->factory2_11 - z_ppe2_DUMMY_RESERVE->factory2_11
-   + z_ppe2_factory2->hospital3_12 + z_ppe2_factory2->hospital4_12
    - M_ppe2_factory2_12 <= 0
- upper[availability_ppe3_factory2_12]: - z_ppe3_factory1->factory2_11
+ upper[availability_ppe3_factory2_12]: z_ppe3_factory2->hospital3_11
+   + z_ppe3_factory2->hospital4_11 - z_ppe3_factory1->factory2_11
    - z_ppe3_factory4->factory2_11 - z_ppe3_DUMMY_RESERVE->factory2_11
-   + z_ppe3_factory2->hospital3_12 + z_ppe3_factory2->hospital4_12
    - M_ppe3_factory2_12 <= 0
  upper[availability_respirator1_factory2_12]:
+   z_respirator1_factory2->hospital3_11
+   + z_respirator1_factory2->hospital4_11
    - z_respirator1_factory1->factory2_11
    - z_respirator1_factory4->factory2_11
-   - z_respirator1_DUMMY_RESERVE->factory2_11
-   + z_respirator1_factory2->hospital3_12
-   + z_respirator1_factory2->hospital4_12 - M_respirator1_factory2_12 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_11 - M_respirator1_factory2_12
+   <= 0
  upper[availability_respirator2_factory2_12]:
+   z_respirator2_factory2->hospital3_11
+   + z_respirator2_factory2->hospital4_11
    - z_respirator2_factory1->factory2_11
    - z_respirator2_factory4->factory2_11
-   - z_respirator2_DUMMY_RESERVE->factory2_11
-   + z_respirator2_factory2->hospital3_12
-   + z_respirator2_factory2->hospital4_12 - M_respirator2_factory2_12 <= 0
- upper[availability_metal1_factory2_13]: - z_metal1_factory1->factory2_12
+   - z_respirator2_DUMMY_RESERVE->factory2_11 - M_respirator2_factory2_12
+   <= 0
+ upper[availability_metal1_factory2_13]: z_metal1_factory2->hospital3_12
+   + z_metal1_factory2->hospital4_12 - z_metal1_factory1->factory2_12
    - z_metal1_factory4->factory2_12 - z_metal1_DUMMY_RESERVE->factory2_12
-   + z_metal1_factory2->hospital3_13 + z_metal1_factory2->hospital4_13
    - M_metal1_factory2_13 <= 0
- upper[availability_metal2_factory2_13]: - z_metal2_factory1->factory2_12
+ upper[availability_metal2_factory2_13]: z_metal2_factory2->hospital3_12
+   + z_metal2_factory2->hospital4_12 - z_metal2_factory1->factory2_12
    - z_metal2_factory4->factory2_12 - z_metal2_DUMMY_RESERVE->factory2_12
-   + z_metal2_factory2->hospital3_13 + z_metal2_factory2->hospital4_13
    - M_metal2_factory2_13 <= 0
  upper[availability_plastic1_factory2_13]:
+   z_plastic1_factory2->hospital3_12 + z_plastic1_factory2->hospital4_12
    - z_plastic1_factory1->factory2_12 - z_plastic1_factory4->factory2_12
-   - z_plastic1_DUMMY_RESERVE->factory2_12
-   + z_plastic1_factory2->hospital3_13 + z_plastic1_factory2->hospital4_13
-   - M_plastic1_factory2_13 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_12 - M_plastic1_factory2_13 <= 0
  upper[availability_plastic2_factory2_13]:
+   z_plastic2_factory2->hospital3_12 + z_plastic2_factory2->hospital4_12
    - z_plastic2_factory1->factory2_12 - z_plastic2_factory4->factory2_12
-   - z_plastic2_DUMMY_RESERVE->factory2_12
-   + z_plastic2_factory2->hospital3_13 + z_plastic2_factory2->hospital4_13
-   - M_plastic2_factory2_13 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_12 - M_plastic2_factory2_13 <= 0
  upper[availability_plastic3_factory2_13]:
+   z_plastic3_factory2->hospital3_12 + z_plastic3_factory2->hospital4_12
    - z_plastic3_factory1->factory2_12 - z_plastic3_factory4->factory2_12
-   - z_plastic3_DUMMY_RESERVE->factory2_12
-   + z_plastic3_factory2->hospital3_13 + z_plastic3_factory2->hospital4_13
-   - M_plastic3_factory2_13 <= 0
- upper[availability_ppe1_factory2_13]: - z_ppe1_factory1->factory2_12
+   - z_plastic3_DUMMY_RESERVE->factory2_12 - M_plastic3_factory2_13 <= 0
+ upper[availability_ppe1_factory2_13]: z_ppe1_factory2->hospital3_12
+   + z_ppe1_factory2->hospital4_12 - z_ppe1_factory1->factory2_12
    - z_ppe1_factory4->factory2_12 - z_ppe1_DUMMY_RESERVE->factory2_12
-   + z_ppe1_factory2->hospital3_13 + z_ppe1_factory2->hospital4_13
    - M_ppe1_factory2_13 <= 0
- upper[availability_ppe2_factory2_13]: - z_ppe2_factory1->factory2_12
+ upper[availability_ppe2_factory2_13]: z_ppe2_factory2->hospital3_12
+   + z_ppe2_factory2->hospital4_12 - z_ppe2_factory1->factory2_12
    - z_ppe2_factory4->factory2_12 - z_ppe2_DUMMY_RESERVE->factory2_12
-   + z_ppe2_factory2->hospital3_13 + z_ppe2_factory2->hospital4_13
    - M_ppe2_factory2_13 <= 0
- upper[availability_ppe3_factory2_13]: - z_ppe3_factory1->factory2_12
+ upper[availability_ppe3_factory2_13]: z_ppe3_factory2->hospital3_12
+   + z_ppe3_factory2->hospital4_12 - z_ppe3_factory1->factory2_12
    - z_ppe3_factory4->factory2_12 - z_ppe3_DUMMY_RESERVE->factory2_12
-   + z_ppe3_factory2->hospital3_13 + z_ppe3_factory2->hospital4_13
    - M_ppe3_factory2_13 <= 0
  upper[availability_respirator1_factory2_13]:
+   z_respirator1_factory2->hospital3_12
+   + z_respirator1_factory2->hospital4_12
    - z_respirator1_factory1->factory2_12
    - z_respirator1_factory4->factory2_12
-   - z_respirator1_DUMMY_RESERVE->factory2_12
-   + z_respirator1_factory2->hospital3_13
-   + z_respirator1_factory2->hospital4_13 - M_respirator1_factory2_13 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_12 - M_respirator1_factory2_13
+   <= 0
  upper[availability_respirator2_factory2_13]:
+   z_respirator2_factory2->hospital3_12
+   + z_respirator2_factory2->hospital4_12
    - z_respirator2_factory1->factory2_12
    - z_respirator2_factory4->factory2_12
-   - z_respirator2_DUMMY_RESERVE->factory2_12
-   + z_respirator2_factory2->hospital3_13
-   + z_respirator2_factory2->hospital4_13 - M_respirator2_factory2_13 <= 0
- upper[availability_metal1_factory2_14]: - z_metal1_factory1->factory2_13
+   - z_respirator2_DUMMY_RESERVE->factory2_12 - M_respirator2_factory2_13
+   <= 0
+ upper[availability_metal1_factory2_14]: z_metal1_factory2->hospital3_13
+   + z_metal1_factory2->hospital4_13 - z_metal1_factory1->factory2_13
    - z_metal1_factory4->factory2_13 - z_metal1_DUMMY_RESERVE->factory2_13
-   + z_metal1_factory2->hospital3_14 + z_metal1_factory2->hospital4_14
    - M_metal1_factory2_14 <= 0
- upper[availability_metal2_factory2_14]: - z_metal2_factory1->factory2_13
+ upper[availability_metal2_factory2_14]: z_metal2_factory2->hospital3_13
+   + z_metal2_factory2->hospital4_13 - z_metal2_factory1->factory2_13
    - z_metal2_factory4->factory2_13 - z_metal2_DUMMY_RESERVE->factory2_13
-   + z_metal2_factory2->hospital3_14 + z_metal2_factory2->hospital4_14
    - M_metal2_factory2_14 <= 0
  upper[availability_plastic1_factory2_14]:
+   z_plastic1_factory2->hospital3_13 + z_plastic1_factory2->hospital4_13
    - z_plastic1_factory1->factory2_13 - z_plastic1_factory4->factory2_13
-   - z_plastic1_DUMMY_RESERVE->factory2_13
-   + z_plastic1_factory2->hospital3_14 + z_plastic1_factory2->hospital4_14
-   - M_plastic1_factory2_14 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_13 - M_plastic1_factory2_14 <= 0
  upper[availability_plastic2_factory2_14]:
+   z_plastic2_factory2->hospital3_13 + z_plastic2_factory2->hospital4_13
    - z_plastic2_factory1->factory2_13 - z_plastic2_factory4->factory2_13
-   - z_plastic2_DUMMY_RESERVE->factory2_13
-   + z_plastic2_factory2->hospital3_14 + z_plastic2_factory2->hospital4_14
-   - M_plastic2_factory2_14 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_13 - M_plastic2_factory2_14 <= 0
  upper[availability_plastic3_factory2_14]:
+   z_plastic3_factory2->hospital3_13 + z_plastic3_factory2->hospital4_13
    - z_plastic3_factory1->factory2_13 - z_plastic3_factory4->factory2_13
-   - z_plastic3_DUMMY_RESERVE->factory2_13
-   + z_plastic3_factory2->hospital3_14 + z_plastic3_factory2->hospital4_14
-   - M_plastic3_factory2_14 <= 0
- upper[availability_ppe1_factory2_14]: - z_ppe1_factory1->factory2_13
+   - z_plastic3_DUMMY_RESERVE->factory2_13 - M_plastic3_factory2_14 <= 0
+ upper[availability_ppe1_factory2_14]: z_ppe1_factory2->hospital3_13
+   + z_ppe1_factory2->hospital4_13 - z_ppe1_factory1->factory2_13
    - z_ppe1_factory4->factory2_13 - z_ppe1_DUMMY_RESERVE->factory2_13
-   + z_ppe1_factory2->hospital3_14 + z_ppe1_factory2->hospital4_14
    - M_ppe1_factory2_14 <= 0
- upper[availability_ppe2_factory2_14]: - z_ppe2_factory1->factory2_13
+ upper[availability_ppe2_factory2_14]: z_ppe2_factory2->hospital3_13
+   + z_ppe2_factory2->hospital4_13 - z_ppe2_factory1->factory2_13
    - z_ppe2_factory4->factory2_13 - z_ppe2_DUMMY_RESERVE->factory2_13
-   + z_ppe2_factory2->hospital3_14 + z_ppe2_factory2->hospital4_14
    - M_ppe2_factory2_14 <= 0
- upper[availability_ppe3_factory2_14]: - z_ppe3_factory1->factory2_13
+ upper[availability_ppe3_factory2_14]: z_ppe3_factory2->hospital3_13
+   + z_ppe3_factory2->hospital4_13 - z_ppe3_factory1->factory2_13
    - z_ppe3_factory4->factory2_13 - z_ppe3_DUMMY_RESERVE->factory2_13
-   + z_ppe3_factory2->hospital3_14 + z_ppe3_factory2->hospital4_14
    - M_ppe3_factory2_14 <= 0
  upper[availability_respirator1_factory2_14]:
+   z_respirator1_factory2->hospital3_13
+   + z_respirator1_factory2->hospital4_13
    - z_respirator1_factory1->factory2_13
    - z_respirator1_factory4->factory2_13
-   - z_respirator1_DUMMY_RESERVE->factory2_13
-   + z_respirator1_factory2->hospital3_14
-   + z_respirator1_factory2->hospital4_14 - M_respirator1_factory2_14 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_13 - M_respirator1_factory2_14
+   <= 0
  upper[availability_respirator2_factory2_14]:
+   z_respirator2_factory2->hospital3_13
+   + z_respirator2_factory2->hospital4_13
    - z_respirator2_factory1->factory2_13
    - z_respirator2_factory4->factory2_13
-   - z_respirator2_DUMMY_RESERVE->factory2_13
-   + z_respirator2_factory2->hospital3_14
-   + z_respirator2_factory2->hospital4_14 - M_respirator2_factory2_14 <= 0
- upper[availability_metal1_factory2_15]: - z_metal1_factory1->factory2_14
+   - z_respirator2_DUMMY_RESERVE->factory2_13 - M_respirator2_factory2_14
+   <= 0
+ upper[availability_metal1_factory2_15]: z_metal1_factory2->hospital3_14
+   + z_metal1_factory2->hospital4_14 - z_metal1_factory1->factory2_14
    - z_metal1_factory4->factory2_14 - z_metal1_DUMMY_RESERVE->factory2_14
-   + z_metal1_factory2->hospital3_15 + z_metal1_factory2->hospital4_15
    - M_metal1_factory2_15 <= 0
- upper[availability_metal2_factory2_15]: - z_metal2_factory1->factory2_14
+ upper[availability_metal2_factory2_15]: z_metal2_factory2->hospital3_14
+   + z_metal2_factory2->hospital4_14 - z_metal2_factory1->factory2_14
    - z_metal2_factory4->factory2_14 - z_metal2_DUMMY_RESERVE->factory2_14
-   + z_metal2_factory2->hospital3_15 + z_metal2_factory2->hospital4_15
    - M_metal2_factory2_15 <= 0
  upper[availability_plastic1_factory2_15]:
+   z_plastic1_factory2->hospital3_14 + z_plastic1_factory2->hospital4_14
    - z_plastic1_factory1->factory2_14 - z_plastic1_factory4->factory2_14
-   - z_plastic1_DUMMY_RESERVE->factory2_14
-   + z_plastic1_factory2->hospital3_15 + z_plastic1_factory2->hospital4_15
-   - M_plastic1_factory2_15 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_14 - M_plastic1_factory2_15 <= 0
  upper[availability_plastic2_factory2_15]:
+   z_plastic2_factory2->hospital3_14 + z_plastic2_factory2->hospital4_14
    - z_plastic2_factory1->factory2_14 - z_plastic2_factory4->factory2_14
-   - z_plastic2_DUMMY_RESERVE->factory2_14
-   + z_plastic2_factory2->hospital3_15 + z_plastic2_factory2->hospital4_15
-   - M_plastic2_factory2_15 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_14 - M_plastic2_factory2_15 <= 0
  upper[availability_plastic3_factory2_15]:
+   z_plastic3_factory2->hospital3_14 + z_plastic3_factory2->hospital4_14
    - z_plastic3_factory1->factory2_14 - z_plastic3_factory4->factory2_14
-   - z_plastic3_DUMMY_RESERVE->factory2_14
-   + z_plastic3_factory2->hospital3_15 + z_plastic3_factory2->hospital4_15
-   - M_plastic3_factory2_15 <= 0
- upper[availability_ppe1_factory2_15]: - z_ppe1_factory1->factory2_14
+   - z_plastic3_DUMMY_RESERVE->factory2_14 - M_plastic3_factory2_15 <= 0
+ upper[availability_ppe1_factory2_15]: z_ppe1_factory2->hospital3_14
+   + z_ppe1_factory2->hospital4_14 - z_ppe1_factory1->factory2_14
    - z_ppe1_factory4->factory2_14 - z_ppe1_DUMMY_RESERVE->factory2_14
-   + z_ppe1_factory2->hospital3_15 + z_ppe1_factory2->hospital4_15
    - M_ppe1_factory2_15 <= 0
- upper[availability_ppe2_factory2_15]: - z_ppe2_factory1->factory2_14
+ upper[availability_ppe2_factory2_15]: z_ppe2_factory2->hospital3_14
+   + z_ppe2_factory2->hospital4_14 - z_ppe2_factory1->factory2_14
    - z_ppe2_factory4->factory2_14 - z_ppe2_DUMMY_RESERVE->factory2_14
-   + z_ppe2_factory2->hospital3_15 + z_ppe2_factory2->hospital4_15
    - M_ppe2_factory2_15 <= 0
- upper[availability_ppe3_factory2_15]: - z_ppe3_factory1->factory2_14
+ upper[availability_ppe3_factory2_15]: z_ppe3_factory2->hospital3_14
+   + z_ppe3_factory2->hospital4_14 - z_ppe3_factory1->factory2_14
    - z_ppe3_factory4->factory2_14 - z_ppe3_DUMMY_RESERVE->factory2_14
-   + z_ppe3_factory2->hospital3_15 + z_ppe3_factory2->hospital4_15
    - M_ppe3_factory2_15 <= 0
  upper[availability_respirator1_factory2_15]:
+   z_respirator1_factory2->hospital3_14
+   + z_respirator1_factory2->hospital4_14
    - z_respirator1_factory1->factory2_14
    - z_respirator1_factory4->factory2_14
-   - z_respirator1_DUMMY_RESERVE->factory2_14
-   + z_respirator1_factory2->hospital3_15
-   + z_respirator1_factory2->hospital4_15 - M_respirator1_factory2_15 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_14 - M_respirator1_factory2_15
+   <= 0
  upper[availability_respirator2_factory2_15]:
+   z_respirator2_factory2->hospital3_14
+   + z_respirator2_factory2->hospital4_14
    - z_respirator2_factory1->factory2_14
    - z_respirator2_factory4->factory2_14
-   - z_respirator2_DUMMY_RESERVE->factory2_14
-   + z_respirator2_factory2->hospital3_15
-   + z_respirator2_factory2->hospital4_15 - M_respirator2_factory2_15 <= 0
- upper[availability_metal1_factory2_16]: - z_metal1_factory1->factory2_15
+   - z_respirator2_DUMMY_RESERVE->factory2_14 - M_respirator2_factory2_15
+   <= 0
+ upper[availability_metal1_factory2_16]: z_metal1_factory2->hospital3_15
+   + z_metal1_factory2->hospital4_15 - z_metal1_factory1->factory2_15
    - z_metal1_factory4->factory2_15 - z_metal1_DUMMY_RESERVE->factory2_15
-   + z_metal1_factory2->hospital3_16 + z_metal1_factory2->hospital4_16
    - M_metal1_factory2_16 <= 0
- upper[availability_metal2_factory2_16]: - z_metal2_factory1->factory2_15
+ upper[availability_metal2_factory2_16]: z_metal2_factory2->hospital3_15
+   + z_metal2_factory2->hospital4_15 - z_metal2_factory1->factory2_15
    - z_metal2_factory4->factory2_15 - z_metal2_DUMMY_RESERVE->factory2_15
-   + z_metal2_factory2->hospital3_16 + z_metal2_factory2->hospital4_16
    - M_metal2_factory2_16 <= 0
  upper[availability_plastic1_factory2_16]:
+   z_plastic1_factory2->hospital3_15 + z_plastic1_factory2->hospital4_15
    - z_plastic1_factory1->factory2_15 - z_plastic1_factory4->factory2_15
-   - z_plastic1_DUMMY_RESERVE->factory2_15
-   + z_plastic1_factory2->hospital3_16 + z_plastic1_factory2->hospital4_16
-   - M_plastic1_factory2_16 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_15 - M_plastic1_factory2_16 <= 0
  upper[availability_plastic2_factory2_16]:
+   z_plastic2_factory2->hospital3_15 + z_plastic2_factory2->hospital4_15
    - z_plastic2_factory1->factory2_15 - z_plastic2_factory4->factory2_15
-   - z_plastic2_DUMMY_RESERVE->factory2_15
-   + z_plastic2_factory2->hospital3_16 + z_plastic2_factory2->hospital4_16
-   - M_plastic2_factory2_16 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_15 - M_plastic2_factory2_16 <= 0
  upper[availability_plastic3_factory2_16]:
+   z_plastic3_factory2->hospital3_15 + z_plastic3_factory2->hospital4_15
    - z_plastic3_factory1->factory2_15 - z_plastic3_factory4->factory2_15
-   - z_plastic3_DUMMY_RESERVE->factory2_15
-   + z_plastic3_factory2->hospital3_16 + z_plastic3_factory2->hospital4_16
-   - M_plastic3_factory2_16 <= 0
- upper[availability_ppe1_factory2_16]: - z_ppe1_factory1->factory2_15
+   - z_plastic3_DUMMY_RESERVE->factory2_15 - M_plastic3_factory2_16 <= 0
+ upper[availability_ppe1_factory2_16]: z_ppe1_factory2->hospital3_15
+   + z_ppe1_factory2->hospital4_15 - z_ppe1_factory1->factory2_15
    - z_ppe1_factory4->factory2_15 - z_ppe1_DUMMY_RESERVE->factory2_15
-   + z_ppe1_factory2->hospital3_16 + z_ppe1_factory2->hospital4_16
    - M_ppe1_factory2_16 <= 0
- upper[availability_ppe2_factory2_16]: - z_ppe2_factory1->factory2_15
+ upper[availability_ppe2_factory2_16]: z_ppe2_factory2->hospital3_15
+   + z_ppe2_factory2->hospital4_15 - z_ppe2_factory1->factory2_15
    - z_ppe2_factory4->factory2_15 - z_ppe2_DUMMY_RESERVE->factory2_15
-   + z_ppe2_factory2->hospital3_16 + z_ppe2_factory2->hospital4_16
    - M_ppe2_factory2_16 <= 0
- upper[availability_ppe3_factory2_16]: - z_ppe3_factory1->factory2_15
+ upper[availability_ppe3_factory2_16]: z_ppe3_factory2->hospital3_15
+   + z_ppe3_factory2->hospital4_15 - z_ppe3_factory1->factory2_15
    - z_ppe3_factory4->factory2_15 - z_ppe3_DUMMY_RESERVE->factory2_15
-   + z_ppe3_factory2->hospital3_16 + z_ppe3_factory2->hospital4_16
    - M_ppe3_factory2_16 <= 0
  upper[availability_respirator1_factory2_16]:
+   z_respirator1_factory2->hospital3_15
+   + z_respirator1_factory2->hospital4_15
    - z_respirator1_factory1->factory2_15
    - z_respirator1_factory4->factory2_15
-   - z_respirator1_DUMMY_RESERVE->factory2_15
-   + z_respirator1_factory2->hospital3_16
-   + z_respirator1_factory2->hospital4_16 - M_respirator1_factory2_16 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_15 - M_respirator1_factory2_16
+   <= 0
  upper[availability_respirator2_factory2_16]:
+   z_respirator2_factory2->hospital3_15
+   + z_respirator2_factory2->hospital4_15
    - z_respirator2_factory1->factory2_15
    - z_respirator2_factory4->factory2_15
-   - z_respirator2_DUMMY_RESERVE->factory2_15
-   + z_respirator2_factory2->hospital3_16
-   + z_respirator2_factory2->hospital4_16 - M_respirator2_factory2_16 <= 0
- upper[availability_metal1_factory2_17]: - z_metal1_factory1->factory2_16
+   - z_respirator2_DUMMY_RESERVE->factory2_15 - M_respirator2_factory2_16
+   <= 0
+ upper[availability_metal1_factory2_17]: z_metal1_factory2->hospital3_16
+   + z_metal1_factory2->hospital4_16 - z_metal1_factory1->factory2_16
    - z_metal1_factory4->factory2_16 - z_metal1_DUMMY_RESERVE->factory2_16
-   + z_metal1_factory2->hospital3_17 + z_metal1_factory2->hospital4_17
    - M_metal1_factory2_17 <= 0
- upper[availability_metal2_factory2_17]: - z_metal2_factory1->factory2_16
+ upper[availability_metal2_factory2_17]: z_metal2_factory2->hospital3_16
+   + z_metal2_factory2->hospital4_16 - z_metal2_factory1->factory2_16
    - z_metal2_factory4->factory2_16 - z_metal2_DUMMY_RESERVE->factory2_16
-   + z_metal2_factory2->hospital3_17 + z_metal2_factory2->hospital4_17
    - M_metal2_factory2_17 <= 0
  upper[availability_plastic1_factory2_17]:
+   z_plastic1_factory2->hospital3_16 + z_plastic1_factory2->hospital4_16
    - z_plastic1_factory1->factory2_16 - z_plastic1_factory4->factory2_16
-   - z_plastic1_DUMMY_RESERVE->factory2_16
-   + z_plastic1_factory2->hospital3_17 + z_plastic1_factory2->hospital4_17
-   - M_plastic1_factory2_17 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_16 - M_plastic1_factory2_17 <= 0
  upper[availability_plastic2_factory2_17]:
+   z_plastic2_factory2->hospital3_16 + z_plastic2_factory2->hospital4_16
    - z_plastic2_factory1->factory2_16 - z_plastic2_factory4->factory2_16
-   - z_plastic2_DUMMY_RESERVE->factory2_16
-   + z_plastic2_factory2->hospital3_17 + z_plastic2_factory2->hospital4_17
-   - M_plastic2_factory2_17 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_16 - M_plastic2_factory2_17 <= 0
  upper[availability_plastic3_factory2_17]:
+   z_plastic3_factory2->hospital3_16 + z_plastic3_factory2->hospital4_16
    - z_plastic3_factory1->factory2_16 - z_plastic3_factory4->factory2_16
-   - z_plastic3_DUMMY_RESERVE->factory2_16
-   + z_plastic3_factory2->hospital3_17 + z_plastic3_factory2->hospital4_17
-   - M_plastic3_factory2_17 <= 0
- upper[availability_ppe1_factory2_17]: - z_ppe1_factory1->factory2_16
+   - z_plastic3_DUMMY_RESERVE->factory2_16 - M_plastic3_factory2_17 <= 0
+ upper[availability_ppe1_factory2_17]: z_ppe1_factory2->hospital3_16
+   + z_ppe1_factory2->hospital4_16 - z_ppe1_factory1->factory2_16
    - z_ppe1_factory4->factory2_16 - z_ppe1_DUMMY_RESERVE->factory2_16
-   + z_ppe1_factory2->hospital3_17 + z_ppe1_factory2->hospital4_17
    - M_ppe1_factory2_17 <= 0
- upper[availability_ppe2_factory2_17]: - z_ppe2_factory1->factory2_16
+ upper[availability_ppe2_factory2_17]: z_ppe2_factory2->hospital3_16
+   + z_ppe2_factory2->hospital4_16 - z_ppe2_factory1->factory2_16
    - z_ppe2_factory4->factory2_16 - z_ppe2_DUMMY_RESERVE->factory2_16
-   + z_ppe2_factory2->hospital3_17 + z_ppe2_factory2->hospital4_17
    - M_ppe2_factory2_17 <= 0
- upper[availability_ppe3_factory2_17]: - z_ppe3_factory1->factory2_16
+ upper[availability_ppe3_factory2_17]: z_ppe3_factory2->hospital3_16
+   + z_ppe3_factory2->hospital4_16 - z_ppe3_factory1->factory2_16
    - z_ppe3_factory4->factory2_16 - z_ppe3_DUMMY_RESERVE->factory2_16
-   + z_ppe3_factory2->hospital3_17 + z_ppe3_factory2->hospital4_17
    - M_ppe3_factory2_17 <= 0
  upper[availability_respirator1_factory2_17]:
+   z_respirator1_factory2->hospital3_16
+   + z_respirator1_factory2->hospital4_16
    - z_respirator1_factory1->factory2_16
    - z_respirator1_factory4->factory2_16
-   - z_respirator1_DUMMY_RESERVE->factory2_16
-   + z_respirator1_factory2->hospital3_17
-   + z_respirator1_factory2->hospital4_17 - M_respirator1_factory2_17 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_16 - M_respirator1_factory2_17
+   <= 0
  upper[availability_respirator2_factory2_17]:
+   z_respirator2_factory2->hospital3_16
+   + z_respirator2_factory2->hospital4_16
    - z_respirator2_factory1->factory2_16
    - z_respirator2_factory4->factory2_16
-   - z_respirator2_DUMMY_RESERVE->factory2_16
-   + z_respirator2_factory2->hospital3_17
-   + z_respirator2_factory2->hospital4_17 - M_respirator2_factory2_17 <= 0
- upper[availability_metal1_factory2_18]: - z_metal1_factory1->factory2_17
+   - z_respirator2_DUMMY_RESERVE->factory2_16 - M_respirator2_factory2_17
+   <= 0
+ upper[availability_metal1_factory2_18]: z_metal1_factory2->hospital3_17
+   + z_metal1_factory2->hospital4_17 - z_metal1_factory1->factory2_17
    - z_metal1_factory4->factory2_17 - z_metal1_DUMMY_RESERVE->factory2_17
-   + z_metal1_factory2->hospital3_18 + z_metal1_factory2->hospital4_18
    - M_metal1_factory2_18 <= 0
- upper[availability_metal2_factory2_18]: - z_metal2_factory1->factory2_17
+ upper[availability_metal2_factory2_18]: z_metal2_factory2->hospital3_17
+   + z_metal2_factory2->hospital4_17 - z_metal2_factory1->factory2_17
    - z_metal2_factory4->factory2_17 - z_metal2_DUMMY_RESERVE->factory2_17
-   + z_metal2_factory2->hospital3_18 + z_metal2_factory2->hospital4_18
    - M_metal2_factory2_18 <= 0
  upper[availability_plastic1_factory2_18]:
+   z_plastic1_factory2->hospital3_17 + z_plastic1_factory2->hospital4_17
    - z_plastic1_factory1->factory2_17 - z_plastic1_factory4->factory2_17
-   - z_plastic1_DUMMY_RESERVE->factory2_17
-   + z_plastic1_factory2->hospital3_18 + z_plastic1_factory2->hospital4_18
-   - M_plastic1_factory2_18 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_17 - M_plastic1_factory2_18 <= 0
  upper[availability_plastic2_factory2_18]:
+   z_plastic2_factory2->hospital3_17 + z_plastic2_factory2->hospital4_17
    - z_plastic2_factory1->factory2_17 - z_plastic2_factory4->factory2_17
-   - z_plastic2_DUMMY_RESERVE->factory2_17
-   + z_plastic2_factory2->hospital3_18 + z_plastic2_factory2->hospital4_18
-   - M_plastic2_factory2_18 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_17 - M_plastic2_factory2_18 <= 0
  upper[availability_plastic3_factory2_18]:
+   z_plastic3_factory2->hospital3_17 + z_plastic3_factory2->hospital4_17
    - z_plastic3_factory1->factory2_17 - z_plastic3_factory4->factory2_17
-   - z_plastic3_DUMMY_RESERVE->factory2_17
-   + z_plastic3_factory2->hospital3_18 + z_plastic3_factory2->hospital4_18
-   - M_plastic3_factory2_18 <= 0
- upper[availability_ppe1_factory2_18]: - z_ppe1_factory1->factory2_17
+   - z_plastic3_DUMMY_RESERVE->factory2_17 - M_plastic3_factory2_18 <= 0
+ upper[availability_ppe1_factory2_18]: z_ppe1_factory2->hospital3_17
+   + z_ppe1_factory2->hospital4_17 - z_ppe1_factory1->factory2_17
    - z_ppe1_factory4->factory2_17 - z_ppe1_DUMMY_RESERVE->factory2_17
-   + z_ppe1_factory2->hospital3_18 + z_ppe1_factory2->hospital4_18
    - M_ppe1_factory2_18 <= 0
- upper[availability_ppe2_factory2_18]: - z_ppe2_factory1->factory2_17
+ upper[availability_ppe2_factory2_18]: z_ppe2_factory2->hospital3_17
+   + z_ppe2_factory2->hospital4_17 - z_ppe2_factory1->factory2_17
    - z_ppe2_factory4->factory2_17 - z_ppe2_DUMMY_RESERVE->factory2_17
-   + z_ppe2_factory2->hospital3_18 + z_ppe2_factory2->hospital4_18
    - M_ppe2_factory2_18 <= 0
- upper[availability_ppe3_factory2_18]: - z_ppe3_factory1->factory2_17
+ upper[availability_ppe3_factory2_18]: z_ppe3_factory2->hospital3_17
+   + z_ppe3_factory2->hospital4_17 - z_ppe3_factory1->factory2_17
    - z_ppe3_factory4->factory2_17 - z_ppe3_DUMMY_RESERVE->factory2_17
-   + z_ppe3_factory2->hospital3_18 + z_ppe3_factory2->hospital4_18
    - M_ppe3_factory2_18 <= 0
  upper[availability_respirator1_factory2_18]:
+   z_respirator1_factory2->hospital3_17
+   + z_respirator1_factory2->hospital4_17
    - z_respirator1_factory1->factory2_17
    - z_respirator1_factory4->factory2_17
-   - z_respirator1_DUMMY_RESERVE->factory2_17
-   + z_respirator1_factory2->hospital3_18
-   + z_respirator1_factory2->hospital4_18 - M_respirator1_factory2_18 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_17 - M_respirator1_factory2_18
+   <= 0
  upper[availability_respirator2_factory2_18]:
+   z_respirator2_factory2->hospital3_17
+   + z_respirator2_factory2->hospital4_17
    - z_respirator2_factory1->factory2_17
    - z_respirator2_factory4->factory2_17
-   - z_respirator2_DUMMY_RESERVE->factory2_17
-   + z_respirator2_factory2->hospital3_18
-   + z_respirator2_factory2->hospital4_18 - M_respirator2_factory2_18 <= 0
- upper[availability_metal1_factory2_19]: - z_metal1_factory1->factory2_18
+   - z_respirator2_DUMMY_RESERVE->factory2_17 - M_respirator2_factory2_18
+   <= 0
+ upper[availability_metal1_factory2_19]: z_metal1_factory2->hospital3_18
+   + z_metal1_factory2->hospital4_18 - z_metal1_factory1->factory2_18
    - z_metal1_factory4->factory2_18 - z_metal1_DUMMY_RESERVE->factory2_18
-   + z_metal1_factory2->hospital3_19 + z_metal1_factory2->hospital4_19
    - M_metal1_factory2_19 <= 0
- upper[availability_metal2_factory2_19]: - z_metal2_factory1->factory2_18
+ upper[availability_metal2_factory2_19]: z_metal2_factory2->hospital3_18
+   + z_metal2_factory2->hospital4_18 - z_metal2_factory1->factory2_18
    - z_metal2_factory4->factory2_18 - z_metal2_DUMMY_RESERVE->factory2_18
-   + z_metal2_factory2->hospital3_19 + z_metal2_factory2->hospital4_19
    - M_metal2_factory2_19 <= 0
  upper[availability_plastic1_factory2_19]:
+   z_plastic1_factory2->hospital3_18 + z_plastic1_factory2->hospital4_18
    - z_plastic1_factory1->factory2_18 - z_plastic1_factory4->factory2_18
-   - z_plastic1_DUMMY_RESERVE->factory2_18
-   + z_plastic1_factory2->hospital3_19 + z_plastic1_factory2->hospital4_19
-   - M_plastic1_factory2_19 <= 0
+   - z_plastic1_DUMMY_RESERVE->factory2_18 - M_plastic1_factory2_19 <= 0
  upper[availability_plastic2_factory2_19]:
+   z_plastic2_factory2->hospital3_18 + z_plastic2_factory2->hospital4_18
    - z_plastic2_factory1->factory2_18 - z_plastic2_factory4->factory2_18
-   - z_plastic2_DUMMY_RESERVE->factory2_18
-   + z_plastic2_factory2->hospital3_19 + z_plastic2_factory2->hospital4_19
-   - M_plastic2_factory2_19 <= 0
+   - z_plastic2_DUMMY_RESERVE->factory2_18 - M_plastic2_factory2_19 <= 0
  upper[availability_plastic3_factory2_19]:
+   z_plastic3_factory2->hospital3_18 + z_plastic3_factory2->hospital4_18
    - z_plastic3_factory1->factory2_18 - z_plastic3_factory4->factory2_18
-   - z_plastic3_DUMMY_RESERVE->factory2_18
-   + z_plastic3_factory2->hospital3_19 + z_plastic3_factory2->hospital4_19
-   - M_plastic3_factory2_19 <= 0
- upper[availability_ppe1_factory2_19]: - z_ppe1_factory1->factory2_18
+   - z_plastic3_DUMMY_RESERVE->factory2_18 - M_plastic3_factory2_19 <= 0
+ upper[availability_ppe1_factory2_19]: z_ppe1_factory2->hospital3_18
+   + z_ppe1_factory2->hospital4_18 - z_ppe1_factory1->factory2_18
    - z_ppe1_factory4->factory2_18 - z_ppe1_DUMMY_RESERVE->factory2_18
-   + z_ppe1_factory2->hospital3_19 + z_ppe1_factory2->hospital4_19
    - M_ppe1_factory2_19 <= 0
- upper[availability_ppe2_factory2_19]: - z_ppe2_factory1->factory2_18
+ upper[availability_ppe2_factory2_19]: z_ppe2_factory2->hospital3_18
+   + z_ppe2_factory2->hospital4_18 - z_ppe2_factory1->factory2_18
    - z_ppe2_factory4->factory2_18 - z_ppe2_DUMMY_RESERVE->factory2_18
-   + z_ppe2_factory2->hospital3_19 + z_ppe2_factory2->hospital4_19
    - M_ppe2_factory2_19 <= 0
- upper[availability_ppe3_factory2_19]: - z_ppe3_factory1->factory2_18
+ upper[availability_ppe3_factory2_19]: z_ppe3_factory2->hospital3_18
+   + z_ppe3_factory2->hospital4_18 - z_ppe3_factory1->factory2_18
    - z_ppe3_factory4->factory2_18 - z_ppe3_DUMMY_RESERVE->factory2_18
-   + z_ppe3_factory2->hospital3_19 + z_ppe3_factory2->hospital4_19
    - M_ppe3_factory2_19 <= 0
  upper[availability_respirator1_factory2_19]:
+   z_respirator1_factory2->hospital3_18
+   + z_respirator1_factory2->hospital4_18
    - z_respirator1_factory1->factory2_18
    - z_respirator1_factory4->factory2_18
-   - z_respirator1_DUMMY_RESERVE->factory2_18
-   + z_respirator1_factory2->hospital3_19
-   + z_respirator1_factory2->hospital4_19 - M_respirator1_factory2_19 <= 0
+   - z_respirator1_DUMMY_RESERVE->factory2_18 - M_respirator1_factory2_19
+   <= 0
  upper[availability_respirator2_factory2_19]:
+   z_respirator2_factory2->hospital3_18
+   + z_respirator2_factory2->hospital4_18
    - z_respirator2_factory1->factory2_18
    - z_respirator2_factory4->factory2_18
-   - z_respirator2_DUMMY_RESERVE->factory2_18
-   + z_respirator2_factory2->hospital3_19
-   + z_respirator2_factory2->hospital4_19 - M_respirator2_factory2_19 <= 0
- upper[availability_metal1_factory3_1]: z_metal1_factory3->hospital1_1
-   + z_metal1_factory3->hospital2_1 - M_metal1_factory3_1 <= 0
- upper[availability_metal2_factory3_1]: z_metal2_factory3->hospital1_1
-   + z_metal2_factory3->hospital2_1 - M_metal2_factory3_1 <= 0
- upper[availability_plastic1_factory3_1]: z_plastic1_factory3->hospital1_1
-   + z_plastic1_factory3->hospital2_1 - M_plastic1_factory3_1 <= 0
- upper[availability_plastic2_factory3_1]: z_plastic2_factory3->hospital1_1
-   + z_plastic2_factory3->hospital2_1 - M_plastic2_factory3_1 <= 0
- upper[availability_plastic3_factory3_1]: z_plastic3_factory3->hospital1_1
-   + z_plastic3_factory3->hospital2_1 - M_plastic3_factory3_1 <= 0
- upper[availability_ppe1_factory3_1]: z_ppe1_factory3->hospital1_1
-   + z_ppe1_factory3->hospital2_1 - M_ppe1_factory3_1 <= 0
- upper[availability_ppe2_factory3_1]: z_ppe2_factory3->hospital1_1
-   + z_ppe2_factory3->hospital2_1 - M_ppe2_factory3_1 <= 0
- upper[availability_ppe3_factory3_1]: z_ppe3_factory3->hospital1_1
-   + z_ppe3_factory3->hospital2_1 - M_ppe3_factory3_1 <= 0
- upper[availability_respirator1_factory3_1]:
-   z_respirator1_factory3->hospital1_1
-   + z_respirator1_factory3->hospital2_1 - M_respirator1_factory3_1 <= 0
- upper[availability_respirator2_factory3_1]:
-   z_respirator2_factory3->hospital1_1
-   + z_respirator2_factory3->hospital2_1 - M_respirator2_factory3_1 <= 0
- upper[availability_metal1_factory3_2]:
-   - z_metal1_DUMMY_RESERVE->factory3_1 + z_metal1_factory3->hospital1_2
-   + z_metal1_factory3->hospital2_2 - M_metal1_factory3_2 <= 0
- upper[availability_metal2_factory3_2]:
-   - z_metal2_DUMMY_RESERVE->factory3_1 + z_metal2_factory3->hospital1_2
-   + z_metal2_factory3->hospital2_2 - M_metal2_factory3_2 <= 0
- upper[availability_plastic1_factory3_2]:
-   - z_plastic1_DUMMY_RESERVE->factory3_1
-   + z_plastic1_factory3->hospital1_2 + z_plastic1_factory3->hospital2_2
-   - M_plastic1_factory3_2 <= 0
- upper[availability_plastic2_factory3_2]:
-   - z_plastic2_DUMMY_RESERVE->factory3_1
-   + z_plastic2_factory3->hospital1_2 + z_plastic2_factory3->hospital2_2
-   - M_plastic2_factory3_2 <= 0
- upper[availability_plastic3_factory3_2]:
-   - z_plastic3_DUMMY_RESERVE->factory3_1
-   + z_plastic3_factory3->hospital1_2 + z_plastic3_factory3->hospital2_2
-   - M_plastic3_factory3_2 <= 0
- upper[availability_ppe1_factory3_2]: - z_ppe1_DUMMY_RESERVE->factory3_1
-   + z_ppe1_factory3->hospital1_2 + z_ppe1_factory3->hospital2_2
+   - z_respirator2_DUMMY_RESERVE->factory2_18 - M_respirator2_factory2_19
+   <= 0
+ upper[availability_metal1_factory3_1]: - M_metal1_factory3_1 <= 0
+ upper[availability_metal2_factory3_1]: - M_metal2_factory3_1 <= 0
+ upper[availability_plastic1_factory3_1]: - M_plastic1_factory3_1 <= 0
+ upper[availability_plastic2_factory3_1]: - M_plastic2_factory3_1 <= 0
+ upper[availability_plastic3_factory3_1]: - M_plastic3_factory3_1 <= 0
+ upper[availability_ppe1_factory3_1]: - M_ppe1_factory3_1 <= 0
+ upper[availability_ppe2_factory3_1]: - M_ppe2_factory3_1 <= 0
+ upper[availability_ppe3_factory3_1]: - M_ppe3_factory3_1 <= 0
+ upper[availability_respirator1_factory3_1]: - M_respirator1_factory3_1
+   <= 0
+ upper[availability_respirator2_factory3_1]: - M_respirator2_factory3_1
+   <= 0
+ upper[availability_metal1_factory3_2]: z_metal1_factory3->hospital1_1
+   + z_metal1_factory3->hospital2_1 - z_metal1_DUMMY_RESERVE->factory3_1
+   - M_metal1_factory3_2 <= 0
+ upper[availability_metal2_factory3_2]: z_metal2_factory3->hospital1_1
+   + z_metal2_factory3->hospital2_1 - z_metal2_DUMMY_RESERVE->factory3_1
+   - M_metal2_factory3_2 <= 0
+ upper[availability_plastic1_factory3_2]: z_plastic1_factory3->hospital1_1
+   + z_plastic1_factory3->hospital2_1
+   - z_plastic1_DUMMY_RESERVE->factory3_1 - M_plastic1_factory3_2 <= 0
+ upper[availability_plastic2_factory3_2]: z_plastic2_factory3->hospital1_1
+   + z_plastic2_factory3->hospital2_1
+   - z_plastic2_DUMMY_RESERVE->factory3_1 - M_plastic2_factory3_2 <= 0
+ upper[availability_plastic3_factory3_2]: z_plastic3_factory3->hospital1_1
+   + z_plastic3_factory3->hospital2_1
+   - z_plastic3_DUMMY_RESERVE->factory3_1 - M_plastic3_factory3_2 <= 0
+ upper[availability_ppe1_factory3_2]: z_ppe1_factory3->hospital1_1
+   + z_ppe1_factory3->hospital2_1 - z_ppe1_DUMMY_RESERVE->factory3_1
    - M_ppe1_factory3_2 <= 0
- upper[availability_ppe2_factory3_2]: - z_ppe2_DUMMY_RESERVE->factory3_1
-   + z_ppe2_factory3->hospital1_2 + z_ppe2_factory3->hospital2_2
+ upper[availability_ppe2_factory3_2]: z_ppe2_factory3->hospital1_1
+   + z_ppe2_factory3->hospital2_1 - z_ppe2_DUMMY_RESERVE->factory3_1
    - M_ppe2_factory3_2 <= 0
- upper[availability_ppe3_factory3_2]: - z_ppe3_DUMMY_RESERVE->factory3_1
-   + z_ppe3_factory3->hospital1_2 + z_ppe3_factory3->hospital2_2
+ upper[availability_ppe3_factory3_2]: z_ppe3_factory3->hospital1_1
+   + z_ppe3_factory3->hospital2_1 - z_ppe3_DUMMY_RESERVE->factory3_1
    - M_ppe3_factory3_2 <= 0
  upper[availability_respirator1_factory3_2]:
-   - z_respirator1_DUMMY_RESERVE->factory3_1
-   + z_respirator1_factory3->hospital1_2
-   + z_respirator1_factory3->hospital2_2 - M_respirator1_factory3_2 <= 0
+   z_respirator1_factory3->hospital1_1
+   + z_respirator1_factory3->hospital2_1
+   - z_respirator1_DUMMY_RESERVE->factory3_1 - M_respirator1_factory3_2
+   <= 0
  upper[availability_respirator2_factory3_2]:
-   - z_respirator2_DUMMY_RESERVE->factory3_1
-   + z_respirator2_factory3->hospital1_2
-   + z_respirator2_factory3->hospital2_2 - M_respirator2_factory3_2 <= 0
- upper[availability_metal1_factory3_3]:
-   - z_metal1_DUMMY_RESERVE->factory3_2 + z_metal1_factory3->hospital1_3
-   + z_metal1_factory3->hospital2_3 - M_metal1_factory3_3 <= 0
- upper[availability_metal2_factory3_3]:
-   - z_metal2_DUMMY_RESERVE->factory3_2 + z_metal2_factory3->hospital1_3
-   + z_metal2_factory3->hospital2_3 - M_metal2_factory3_3 <= 0
- upper[availability_plastic1_factory3_3]:
-   - z_plastic1_DUMMY_RESERVE->factory3_2
-   + z_plastic1_factory3->hospital1_3 + z_plastic1_factory3->hospital2_3
-   - M_plastic1_factory3_3 <= 0
- upper[availability_plastic2_factory3_3]:
-   - z_plastic2_DUMMY_RESERVE->factory3_2
-   + z_plastic2_factory3->hospital1_3 + z_plastic2_factory3->hospital2_3
-   - M_plastic2_factory3_3 <= 0
- upper[availability_plastic3_factory3_3]:
-   - z_plastic3_DUMMY_RESERVE->factory3_2
-   + z_plastic3_factory3->hospital1_3 + z_plastic3_factory3->hospital2_3
-   - M_plastic3_factory3_3 <= 0
- upper[availability_ppe1_factory3_3]: - z_ppe1_DUMMY_RESERVE->factory3_2
-   + z_ppe1_factory3->hospital1_3 + z_ppe1_factory3->hospital2_3
+   z_respirator2_factory3->hospital1_1
+   + z_respirator2_factory3->hospital2_1
+   - z_respirator2_DUMMY_RESERVE->factory3_1 - M_respirator2_factory3_2
+   <= 0
+ upper[availability_metal1_factory3_3]: z_metal1_factory3->hospital1_2
+   + z_metal1_factory3->hospital2_2 - z_metal1_DUMMY_RESERVE->factory3_2
+   - M_metal1_factory3_3 <= 0
+ upper[availability_metal2_factory3_3]: z_metal2_factory3->hospital1_2
+   + z_metal2_factory3->hospital2_2 - z_metal2_DUMMY_RESERVE->factory3_2
+   - M_metal2_factory3_3 <= 0
+ upper[availability_plastic1_factory3_3]: z_plastic1_factory3->hospital1_2
+   + z_plastic1_factory3->hospital2_2
+   - z_plastic1_DUMMY_RESERVE->factory3_2 - M_plastic1_factory3_3 <= 0
+ upper[availability_plastic2_factory3_3]: z_plastic2_factory3->hospital1_2
+   + z_plastic2_factory3->hospital2_2
+   - z_plastic2_DUMMY_RESERVE->factory3_2 - M_plastic2_factory3_3 <= 0
+ upper[availability_plastic3_factory3_3]: z_plastic3_factory3->hospital1_2
+   + z_plastic3_factory3->hospital2_2
+   - z_plastic3_DUMMY_RESERVE->factory3_2 - M_plastic3_factory3_3 <= 0
+ upper[availability_ppe1_factory3_3]: z_ppe1_factory3->hospital1_2
+   + z_ppe1_factory3->hospital2_2 - z_ppe1_DUMMY_RESERVE->factory3_2
    - M_ppe1_factory3_3 <= 0
- upper[availability_ppe2_factory3_3]: - z_ppe2_DUMMY_RESERVE->factory3_2
-   + z_ppe2_factory3->hospital1_3 + z_ppe2_factory3->hospital2_3
+ upper[availability_ppe2_factory3_3]: z_ppe2_factory3->hospital1_2
+   + z_ppe2_factory3->hospital2_2 - z_ppe2_DUMMY_RESERVE->factory3_2
    - M_ppe2_factory3_3 <= 0
- upper[availability_ppe3_factory3_3]: - z_ppe3_DUMMY_RESERVE->factory3_2
-   + z_ppe3_factory3->hospital1_3 + z_ppe3_factory3->hospital2_3
+ upper[availability_ppe3_factory3_3]: z_ppe3_factory3->hospital1_2
+   + z_ppe3_factory3->hospital2_2 - z_ppe3_DUMMY_RESERVE->factory3_2
    - M_ppe3_factory3_3 <= 0
  upper[availability_respirator1_factory3_3]:
-   - z_respirator1_DUMMY_RESERVE->factory3_2
-   + z_respirator1_factory3->hospital1_3
-   + z_respirator1_factory3->hospital2_3 - M_respirator1_factory3_3 <= 0
+   z_respirator1_factory3->hospital1_2
+   + z_respirator1_factory3->hospital2_2
+   - z_respirator1_DUMMY_RESERVE->factory3_2 - M_respirator1_factory3_3
+   <= 0
  upper[availability_respirator2_factory3_3]:
-   - z_respirator2_DUMMY_RESERVE->factory3_2
-   + z_respirator2_factory3->hospital1_3
-   + z_respirator2_factory3->hospital2_3 - M_respirator2_factory3_3 <= 0
- upper[availability_metal1_factory3_4]:
-   - z_metal1_DUMMY_RESERVE->factory3_3 + z_metal1_factory3->hospital1_4
-   + z_metal1_factory3->hospital2_4 - M_metal1_factory3_4 <= 0
- upper[availability_metal2_factory3_4]:
-   - z_metal2_DUMMY_RESERVE->factory3_3 + z_metal2_factory3->hospital1_4
-   + z_metal2_factory3->hospital2_4 - M_metal2_factory3_4 <= 0
- upper[availability_plastic1_factory3_4]:
-   - z_plastic1_DUMMY_RESERVE->factory3_3
-   + z_plastic1_factory3->hospital1_4 + z_plastic1_factory3->hospital2_4
-   - M_plastic1_factory3_4 <= 0
- upper[availability_plastic2_factory3_4]:
-   - z_plastic2_DUMMY_RESERVE->factory3_3
-   + z_plastic2_factory3->hospital1_4 + z_plastic2_factory3->hospital2_4
-   - M_plastic2_factory3_4 <= 0
- upper[availability_plastic3_factory3_4]:
-   - z_plastic3_DUMMY_RESERVE->factory3_3
-   + z_plastic3_factory3->hospital1_4 + z_plastic3_factory3->hospital2_4
-   - M_plastic3_factory3_4 <= 0
- upper[availability_ppe1_factory3_4]: - z_ppe1_DUMMY_RESERVE->factory3_3
-   + z_ppe1_factory3->hospital1_4 + z_ppe1_factory3->hospital2_4
+   z_respirator2_factory3->hospital1_2
+   + z_respirator2_factory3->hospital2_2
+   - z_respirator2_DUMMY_RESERVE->factory3_2 - M_respirator2_factory3_3
+   <= 0
+ upper[availability_metal1_factory3_4]: z_metal1_factory3->hospital1_3
+   + z_metal1_factory3->hospital2_3 - z_metal1_DUMMY_RESERVE->factory3_3
+   - M_metal1_factory3_4 <= 0
+ upper[availability_metal2_factory3_4]: z_metal2_factory3->hospital1_3
+   + z_metal2_factory3->hospital2_3 - z_metal2_DUMMY_RESERVE->factory3_3
+   - M_metal2_factory3_4 <= 0
+ upper[availability_plastic1_factory3_4]: z_plastic1_factory3->hospital1_3
+   + z_plastic1_factory3->hospital2_3
+   - z_plastic1_DUMMY_RESERVE->factory3_3 - M_plastic1_factory3_4 <= 0
+ upper[availability_plastic2_factory3_4]: z_plastic2_factory3->hospital1_3
+   + z_plastic2_factory3->hospital2_3
+   - z_plastic2_DUMMY_RESERVE->factory3_3 - M_plastic2_factory3_4 <= 0
+ upper[availability_plastic3_factory3_4]: z_plastic3_factory3->hospital1_3
+   + z_plastic3_factory3->hospital2_3
+   - z_plastic3_DUMMY_RESERVE->factory3_3 - M_plastic3_factory3_4 <= 0
+ upper[availability_ppe1_factory3_4]: z_ppe1_factory3->hospital1_3
+   + z_ppe1_factory3->hospital2_3 - z_ppe1_DUMMY_RESERVE->factory3_3
    - M_ppe1_factory3_4 <= 0
- upper[availability_ppe2_factory3_4]: - z_ppe2_DUMMY_RESERVE->factory3_3
-   + z_ppe2_factory3->hospital1_4 + z_ppe2_factory3->hospital2_4
+ upper[availability_ppe2_factory3_4]: z_ppe2_factory3->hospital1_3
+   + z_ppe2_factory3->hospital2_3 - z_ppe2_DUMMY_RESERVE->factory3_3
    - M_ppe2_factory3_4 <= 0
- upper[availability_ppe3_factory3_4]: - z_ppe3_DUMMY_RESERVE->factory3_3
-   + z_ppe3_factory3->hospital1_4 + z_ppe3_factory3->hospital2_4
+ upper[availability_ppe3_factory3_4]: z_ppe3_factory3->hospital1_3
+   + z_ppe3_factory3->hospital2_3 - z_ppe3_DUMMY_RESERVE->factory3_3
    - M_ppe3_factory3_4 <= 0
  upper[availability_respirator1_factory3_4]:
-   - z_respirator1_DUMMY_RESERVE->factory3_3
-   + z_respirator1_factory3->hospital1_4
-   + z_respirator1_factory3->hospital2_4 - M_respirator1_factory3_4 <= 0
+   z_respirator1_factory3->hospital1_3
+   + z_respirator1_factory3->hospital2_3
+   - z_respirator1_DUMMY_RESERVE->factory3_3 - M_respirator1_factory3_4
+   <= 0
  upper[availability_respirator2_factory3_4]:
-   - z_respirator2_DUMMY_RESERVE->factory3_3
-   + z_respirator2_factory3->hospital1_4
-   + z_respirator2_factory3->hospital2_4 - M_respirator2_factory3_4 <= 0
- upper[availability_metal1_factory3_5]:
-   - z_metal1_DUMMY_RESERVE->factory3_4 + z_metal1_factory3->hospital1_5
-   + z_metal1_factory3->hospital2_5 - M_metal1_factory3_5 <= 0
- upper[availability_metal2_factory3_5]:
-   - z_metal2_DUMMY_RESERVE->factory3_4 + z_metal2_factory3->hospital1_5
-   + z_metal2_factory3->hospital2_5 - M_metal2_factory3_5 <= 0
- upper[availability_plastic1_factory3_5]:
-   - z_plastic1_DUMMY_RESERVE->factory3_4
-   + z_plastic1_factory3->hospital1_5 + z_plastic1_factory3->hospital2_5
-   - M_plastic1_factory3_5 <= 0
- upper[availability_plastic2_factory3_5]:
-   - z_plastic2_DUMMY_RESERVE->factory3_4
-   + z_plastic2_factory3->hospital1_5 + z_plastic2_factory3->hospital2_5
-   - M_plastic2_factory3_5 <= 0
- upper[availability_plastic3_factory3_5]:
-   - z_plastic3_DUMMY_RESERVE->factory3_4
-   + z_plastic3_factory3->hospital1_5 + z_plastic3_factory3->hospital2_5
-   - M_plastic3_factory3_5 <= 0
- upper[availability_ppe1_factory3_5]: - z_ppe1_DUMMY_RESERVE->factory3_4
-   + z_ppe1_factory3->hospital1_5 + z_ppe1_factory3->hospital2_5
+   z_respirator2_factory3->hospital1_3
+   + z_respirator2_factory3->hospital2_3
+   - z_respirator2_DUMMY_RESERVE->factory3_3 - M_respirator2_factory3_4
+   <= 0
+ upper[availability_metal1_factory3_5]: z_metal1_factory3->hospital1_4
+   + z_metal1_factory3->hospital2_4 - z_metal1_DUMMY_RESERVE->factory3_4
+   - M_metal1_factory3_5 <= 0
+ upper[availability_metal2_factory3_5]: z_metal2_factory3->hospital1_4
+   + z_metal2_factory3->hospital2_4 - z_metal2_DUMMY_RESERVE->factory3_4
+   - M_metal2_factory3_5 <= 0
+ upper[availability_plastic1_factory3_5]: z_plastic1_factory3->hospital1_4
+   + z_plastic1_factory3->hospital2_4
+   - z_plastic1_DUMMY_RESERVE->factory3_4 - M_plastic1_factory3_5 <= 0
+ upper[availability_plastic2_factory3_5]: z_plastic2_factory3->hospital1_4
+   + z_plastic2_factory3->hospital2_4
+   - z_plastic2_DUMMY_RESERVE->factory3_4 - M_plastic2_factory3_5 <= 0
+ upper[availability_plastic3_factory3_5]: z_plastic3_factory3->hospital1_4
+   + z_plastic3_factory3->hospital2_4
+   - z_plastic3_DUMMY_RESERVE->factory3_4 - M_plastic3_factory3_5 <= 0
+ upper[availability_ppe1_factory3_5]: z_ppe1_factory3->hospital1_4
+   + z_ppe1_factory3->hospital2_4 - z_ppe1_DUMMY_RESERVE->factory3_4
    - M_ppe1_factory3_5 <= 0
- upper[availability_ppe2_factory3_5]: - z_ppe2_DUMMY_RESERVE->factory3_4
-   + z_ppe2_factory3->hospital1_5 + z_ppe2_factory3->hospital2_5
+ upper[availability_ppe2_factory3_5]: z_ppe2_factory3->hospital1_4
+   + z_ppe2_factory3->hospital2_4 - z_ppe2_DUMMY_RESERVE->factory3_4
    - M_ppe2_factory3_5 <= 0
- upper[availability_ppe3_factory3_5]: - z_ppe3_DUMMY_RESERVE->factory3_4
-   + z_ppe3_factory3->hospital1_5 + z_ppe3_factory3->hospital2_5
+ upper[availability_ppe3_factory3_5]: z_ppe3_factory3->hospital1_4
+   + z_ppe3_factory3->hospital2_4 - z_ppe3_DUMMY_RESERVE->factory3_4
    - M_ppe3_factory3_5 <= 0
  upper[availability_respirator1_factory3_5]:
-   - z_respirator1_DUMMY_RESERVE->factory3_4
-   + z_respirator1_factory3->hospital1_5
-   + z_respirator1_factory3->hospital2_5 - M_respirator1_factory3_5 <= 0
+   z_respirator1_factory3->hospital1_4
+   + z_respirator1_factory3->hospital2_4
+   - z_respirator1_DUMMY_RESERVE->factory3_4 - M_respirator1_factory3_5
+   <= 0
  upper[availability_respirator2_factory3_5]:
-   - z_respirator2_DUMMY_RESERVE->factory3_4
-   + z_respirator2_factory3->hospital1_5
-   + z_respirator2_factory3->hospital2_5 - M_respirator2_factory3_5 <= 0
- upper[availability_metal1_factory3_6]:
-   - z_metal1_DUMMY_RESERVE->factory3_5 + z_metal1_factory3->hospital1_6
-   + z_metal1_factory3->hospital2_6 - M_metal1_factory3_6 <= 0
- upper[availability_metal2_factory3_6]:
-   - z_metal2_DUMMY_RESERVE->factory3_5 + z_metal2_factory3->hospital1_6
-   + z_metal2_factory3->hospital2_6 - M_metal2_factory3_6 <= 0
- upper[availability_plastic1_factory3_6]:
-   - z_plastic1_DUMMY_RESERVE->factory3_5
-   + z_plastic1_factory3->hospital1_6 + z_plastic1_factory3->hospital2_6
-   - M_plastic1_factory3_6 <= 0
- upper[availability_plastic2_factory3_6]:
-   - z_plastic2_DUMMY_RESERVE->factory3_5
-   + z_plastic2_factory3->hospital1_6 + z_plastic2_factory3->hospital2_6
-   - M_plastic2_factory3_6 <= 0
- upper[availability_plastic3_factory3_6]:
-   - z_plastic3_DUMMY_RESERVE->factory3_5
-   + z_plastic3_factory3->hospital1_6 + z_plastic3_factory3->hospital2_6
-   - M_plastic3_factory3_6 <= 0
- upper[availability_ppe1_factory3_6]: - z_ppe1_DUMMY_RESERVE->factory3_5
-   + z_ppe1_factory3->hospital1_6 + z_ppe1_factory3->hospital2_6
+   z_respirator2_factory3->hospital1_4
+   + z_respirator2_factory3->hospital2_4
+   - z_respirator2_DUMMY_RESERVE->factory3_4 - M_respirator2_factory3_5
+   <= 0
+ upper[availability_metal1_factory3_6]: z_metal1_factory3->hospital1_5
+   + z_metal1_factory3->hospital2_5 - z_metal1_DUMMY_RESERVE->factory3_5
+   - M_metal1_factory3_6 <= 0
+ upper[availability_metal2_factory3_6]: z_metal2_factory3->hospital1_5
+   + z_metal2_factory3->hospital2_5 - z_metal2_DUMMY_RESERVE->factory3_5
+   - M_metal2_factory3_6 <= 0
+ upper[availability_plastic1_factory3_6]: z_plastic1_factory3->hospital1_5
+   + z_plastic1_factory3->hospital2_5
+   - z_plastic1_DUMMY_RESERVE->factory3_5 - M_plastic1_factory3_6 <= 0
+ upper[availability_plastic2_factory3_6]: z_plastic2_factory3->hospital1_5
+   + z_plastic2_factory3->hospital2_5
+   - z_plastic2_DUMMY_RESERVE->factory3_5 - M_plastic2_factory3_6 <= 0
+ upper[availability_plastic3_factory3_6]: z_plastic3_factory3->hospital1_5
+   + z_plastic3_factory3->hospital2_5
+   - z_plastic3_DUMMY_RESERVE->factory3_5 - M_plastic3_factory3_6 <= 0
+ upper[availability_ppe1_factory3_6]: z_ppe1_factory3->hospital1_5
+   + z_ppe1_factory3->hospital2_5 - z_ppe1_DUMMY_RESERVE->factory3_5
    - M_ppe1_factory3_6 <= 0
- upper[availability_ppe2_factory3_6]: - z_ppe2_DUMMY_RESERVE->factory3_5
-   + z_ppe2_factory3->hospital1_6 + z_ppe2_factory3->hospital2_6
+ upper[availability_ppe2_factory3_6]: z_ppe2_factory3->hospital1_5
+   + z_ppe2_factory3->hospital2_5 - z_ppe2_DUMMY_RESERVE->factory3_5
    - M_ppe2_factory3_6 <= 0
- upper[availability_ppe3_factory3_6]: - z_ppe3_DUMMY_RESERVE->factory3_5
-   + z_ppe3_factory3->hospital1_6 + z_ppe3_factory3->hospital2_6
+ upper[availability_ppe3_factory3_6]: z_ppe3_factory3->hospital1_5
+   + z_ppe3_factory3->hospital2_5 - z_ppe3_DUMMY_RESERVE->factory3_5
    - M_ppe3_factory3_6 <= 0
  upper[availability_respirator1_factory3_6]:
-   - z_respirator1_DUMMY_RESERVE->factory3_5
-   + z_respirator1_factory3->hospital1_6
-   + z_respirator1_factory3->hospital2_6 - M_respirator1_factory3_6 <= 0
+   z_respirator1_factory3->hospital1_5
+   + z_respirator1_factory3->hospital2_5
+   - z_respirator1_DUMMY_RESERVE->factory3_5 - M_respirator1_factory3_6
+   <= 0
  upper[availability_respirator2_factory3_6]:
-   - z_respirator2_DUMMY_RESERVE->factory3_5
-   + z_respirator2_factory3->hospital1_6
-   + z_respirator2_factory3->hospital2_6 - M_respirator2_factory3_6 <= 0
- upper[availability_metal1_factory3_7]:
-   - z_metal1_DUMMY_RESERVE->factory3_6 + z_metal1_factory3->hospital1_7
-   + z_metal1_factory3->hospital2_7 - M_metal1_factory3_7 <= 0
- upper[availability_metal2_factory3_7]:
-   - z_metal2_DUMMY_RESERVE->factory3_6 + z_metal2_factory3->hospital1_7
-   + z_metal2_factory3->hospital2_7 - M_metal2_factory3_7 <= 0
- upper[availability_plastic1_factory3_7]:
-   - z_plastic1_DUMMY_RESERVE->factory3_6
-   + z_plastic1_factory3->hospital1_7 + z_plastic1_factory3->hospital2_7
-   - M_plastic1_factory3_7 <= 0
- upper[availability_plastic2_factory3_7]:
-   - z_plastic2_DUMMY_RESERVE->factory3_6
-   + z_plastic2_factory3->hospital1_7 + z_plastic2_factory3->hospital2_7
-   - M_plastic2_factory3_7 <= 0
- upper[availability_plastic3_factory3_7]:
-   - z_plastic3_DUMMY_RESERVE->factory3_6
-   + z_plastic3_factory3->hospital1_7 + z_plastic3_factory3->hospital2_7
-   - M_plastic3_factory3_7 <= 0
- upper[availability_ppe1_factory3_7]: - z_ppe1_DUMMY_RESERVE->factory3_6
-   + z_ppe1_factory3->hospital1_7 + z_ppe1_factory3->hospital2_7
+   z_respirator2_factory3->hospital1_5
+   + z_respirator2_factory3->hospital2_5
+   - z_respirator2_DUMMY_RESERVE->factory3_5 - M_respirator2_factory3_6
+   <= 0
+ upper[availability_metal1_factory3_7]: z_metal1_factory3->hospital1_6
+   + z_metal1_factory3->hospital2_6 - z_metal1_DUMMY_RESERVE->factory3_6
+   - M_metal1_factory3_7 <= 0
+ upper[availability_metal2_factory3_7]: z_metal2_factory3->hospital1_6
+   + z_metal2_factory3->hospital2_6 - z_metal2_DUMMY_RESERVE->factory3_6
+   - M_metal2_factory3_7 <= 0
+ upper[availability_plastic1_factory3_7]: z_plastic1_factory3->hospital1_6
+   + z_plastic1_factory3->hospital2_6
+   - z_plastic1_DUMMY_RESERVE->factory3_6 - M_plastic1_factory3_7 <= 0
+ upper[availability_plastic2_factory3_7]: z_plastic2_factory3->hospital1_6
+   + z_plastic2_factory3->hospital2_6
+   - z_plastic2_DUMMY_RESERVE->factory3_6 - M_plastic2_factory3_7 <= 0
+ upper[availability_plastic3_factory3_7]: z_plastic3_factory3->hospital1_6
+   + z_plastic3_factory3->hospital2_6
+   - z_plastic3_DUMMY_RESERVE->factory3_6 - M_plastic3_factory3_7 <= 0
+ upper[availability_ppe1_factory3_7]: z_ppe1_factory3->hospital1_6
+   + z_ppe1_factory3->hospital2_6 - z_ppe1_DUMMY_RESERVE->factory3_6
    - M_ppe1_factory3_7 <= 0
- upper[availability_ppe2_factory3_7]: - z_ppe2_DUMMY_RESERVE->factory3_6
-   + z_ppe2_factory3->hospital1_7 + z_ppe2_factory3->hospital2_7
+ upper[availability_ppe2_factory3_7]: z_ppe2_factory3->hospital1_6
+   + z_ppe2_factory3->hospital2_6 - z_ppe2_DUMMY_RESERVE->factory3_6
    - M_ppe2_factory3_7 <= 0
- upper[availability_ppe3_factory3_7]: - z_ppe3_DUMMY_RESERVE->factory3_6
-   + z_ppe3_factory3->hospital1_7 + z_ppe3_factory3->hospital2_7
+ upper[availability_ppe3_factory3_7]: z_ppe3_factory3->hospital1_6
+   + z_ppe3_factory3->hospital2_6 - z_ppe3_DUMMY_RESERVE->factory3_6
    - M_ppe3_factory3_7 <= 0
  upper[availability_respirator1_factory3_7]:
-   - z_respirator1_DUMMY_RESERVE->factory3_6
-   + z_respirator1_factory3->hospital1_7
-   + z_respirator1_factory3->hospital2_7 - M_respirator1_factory3_7 <= 0
+   z_respirator1_factory3->hospital1_6
+   + z_respirator1_factory3->hospital2_6
+   - z_respirator1_DUMMY_RESERVE->factory3_6 - M_respirator1_factory3_7
+   <= 0
  upper[availability_respirator2_factory3_7]:
-   - z_respirator2_DUMMY_RESERVE->factory3_6
-   + z_respirator2_factory3->hospital1_7
-   + z_respirator2_factory3->hospital2_7 - M_respirator2_factory3_7 <= 0
- upper[availability_metal1_factory3_8]:
-   - z_metal1_DUMMY_RESERVE->factory3_7 + z_metal1_factory3->hospital1_8
-   + z_metal1_factory3->hospital2_8 - M_metal1_factory3_8 <= 0
- upper[availability_metal2_factory3_8]:
-   - z_metal2_DUMMY_RESERVE->factory3_7 + z_metal2_factory3->hospital1_8
-   + z_metal2_factory3->hospital2_8 - M_metal2_factory3_8 <= 0
- upper[availability_plastic1_factory3_8]:
-   - z_plastic1_DUMMY_RESERVE->factory3_7
-   + z_plastic1_factory3->hospital1_8 + z_plastic1_factory3->hospital2_8
-   - M_plastic1_factory3_8 <= 0
- upper[availability_plastic2_factory3_8]:
-   - z_plastic2_DUMMY_RESERVE->factory3_7
-   + z_plastic2_factory3->hospital1_8 + z_plastic2_factory3->hospital2_8
-   - M_plastic2_factory3_8 <= 0
- upper[availability_plastic3_factory3_8]:
-   - z_plastic3_DUMMY_RESERVE->factory3_7
-   + z_plastic3_factory3->hospital1_8 + z_plastic3_factory3->hospital2_8
-   - M_plastic3_factory3_8 <= 0
- upper[availability_ppe1_factory3_8]: - z_ppe1_DUMMY_RESERVE->factory3_7
-   + z_ppe1_factory3->hospital1_8 + z_ppe1_factory3->hospital2_8
+   z_respirator2_factory3->hospital1_6
+   + z_respirator2_factory3->hospital2_6
+   - z_respirator2_DUMMY_RESERVE->factory3_6 - M_respirator2_factory3_7
+   <= 0
+ upper[availability_metal1_factory3_8]: z_metal1_factory3->hospital1_7
+   + z_metal1_factory3->hospital2_7 - z_metal1_DUMMY_RESERVE->factory3_7
+   - M_metal1_factory3_8 <= 0
+ upper[availability_metal2_factory3_8]: z_metal2_factory3->hospital1_7
+   + z_metal2_factory3->hospital2_7 - z_metal2_DUMMY_RESERVE->factory3_7
+   - M_metal2_factory3_8 <= 0
+ upper[availability_plastic1_factory3_8]: z_plastic1_factory3->hospital1_7
+   + z_plastic1_factory3->hospital2_7
+   - z_plastic1_DUMMY_RESERVE->factory3_7 - M_plastic1_factory3_8 <= 0
+ upper[availability_plastic2_factory3_8]: z_plastic2_factory3->hospital1_7
+   + z_plastic2_factory3->hospital2_7
+   - z_plastic2_DUMMY_RESERVE->factory3_7 - M_plastic2_factory3_8 <= 0
+ upper[availability_plastic3_factory3_8]: z_plastic3_factory3->hospital1_7
+   + z_plastic3_factory3->hospital2_7
+   - z_plastic3_DUMMY_RESERVE->factory3_7 - M_plastic3_factory3_8 <= 0
+ upper[availability_ppe1_factory3_8]: z_ppe1_factory3->hospital1_7
+   + z_ppe1_factory3->hospital2_7 - z_ppe1_DUMMY_RESERVE->factory3_7
    - M_ppe1_factory3_8 <= 0
- upper[availability_ppe2_factory3_8]: - z_ppe2_DUMMY_RESERVE->factory3_7
-   + z_ppe2_factory3->hospital1_8 + z_ppe2_factory3->hospital2_8
+ upper[availability_ppe2_factory3_8]: z_ppe2_factory3->hospital1_7
+   + z_ppe2_factory3->hospital2_7 - z_ppe2_DUMMY_RESERVE->factory3_7
    - M_ppe2_factory3_8 <= 0
- upper[availability_ppe3_factory3_8]: - z_ppe3_DUMMY_RESERVE->factory3_7
-   + z_ppe3_factory3->hospital1_8 + z_ppe3_factory3->hospital2_8
+ upper[availability_ppe3_factory3_8]: z_ppe3_factory3->hospital1_7
+   + z_ppe3_factory3->hospital2_7 - z_ppe3_DUMMY_RESERVE->factory3_7
    - M_ppe3_factory3_8 <= 0
  upper[availability_respirator1_factory3_8]:
-   - z_respirator1_DUMMY_RESERVE->factory3_7
-   + z_respirator1_factory3->hospital1_8
-   + z_respirator1_factory3->hospital2_8 - M_respirator1_factory3_8 <= 0
+   z_respirator1_factory3->hospital1_7
+   + z_respirator1_factory3->hospital2_7
+   - z_respirator1_DUMMY_RESERVE->factory3_7 - M_respirator1_factory3_8
+   <= 0
  upper[availability_respirator2_factory3_8]:
-   - z_respirator2_DUMMY_RESERVE->factory3_7
-   + z_respirator2_factory3->hospital1_8
-   + z_respirator2_factory3->hospital2_8 - M_respirator2_factory3_8 <= 0
- upper[availability_metal1_factory3_9]:
-   - z_metal1_DUMMY_RESERVE->factory3_8 + z_metal1_factory3->hospital1_9
-   + z_metal1_factory3->hospital2_9 - M_metal1_factory3_9 <= 0
- upper[availability_metal2_factory3_9]:
-   - z_metal2_DUMMY_RESERVE->factory3_8 + z_metal2_factory3->hospital1_9
-   + z_metal2_factory3->hospital2_9 - M_metal2_factory3_9 <= 0
- upper[availability_plastic1_factory3_9]:
-   - z_plastic1_DUMMY_RESERVE->factory3_8
-   + z_plastic1_factory3->hospital1_9 + z_plastic1_factory3->hospital2_9
-   - M_plastic1_factory3_9 <= 0
- upper[availability_plastic2_factory3_9]:
-   - z_plastic2_DUMMY_RESERVE->factory3_8
-   + z_plastic2_factory3->hospital1_9 + z_plastic2_factory3->hospital2_9
-   - M_plastic2_factory3_9 <= 0
- upper[availability_plastic3_factory3_9]:
-   - z_plastic3_DUMMY_RESERVE->factory3_8
-   + z_plastic3_factory3->hospital1_9 + z_plastic3_factory3->hospital2_9
-   - M_plastic3_factory3_9 <= 0
- upper[availability_ppe1_factory3_9]: - z_ppe1_DUMMY_RESERVE->factory3_8
-   + z_ppe1_factory3->hospital1_9 + z_ppe1_factory3->hospital2_9
+   z_respirator2_factory3->hospital1_7
+   + z_respirator2_factory3->hospital2_7
+   - z_respirator2_DUMMY_RESERVE->factory3_7 - M_respirator2_factory3_8
+   <= 0
+ upper[availability_metal1_factory3_9]: z_metal1_factory3->hospital1_8
+   + z_metal1_factory3->hospital2_8 - z_metal1_DUMMY_RESERVE->factory3_8
+   - M_metal1_factory3_9 <= 0
+ upper[availability_metal2_factory3_9]: z_metal2_factory3->hospital1_8
+   + z_metal2_factory3->hospital2_8 - z_metal2_DUMMY_RESERVE->factory3_8
+   - M_metal2_factory3_9 <= 0
+ upper[availability_plastic1_factory3_9]: z_plastic1_factory3->hospital1_8
+   + z_plastic1_factory3->hospital2_8
+   - z_plastic1_DUMMY_RESERVE->factory3_8 - M_plastic1_factory3_9 <= 0
+ upper[availability_plastic2_factory3_9]: z_plastic2_factory3->hospital1_8
+   + z_plastic2_factory3->hospital2_8
+   - z_plastic2_DUMMY_RESERVE->factory3_8 - M_plastic2_factory3_9 <= 0
+ upper[availability_plastic3_factory3_9]: z_plastic3_factory3->hospital1_8
+   + z_plastic3_factory3->hospital2_8
+   - z_plastic3_DUMMY_RESERVE->factory3_8 - M_plastic3_factory3_9 <= 0
+ upper[availability_ppe1_factory3_9]: z_ppe1_factory3->hospital1_8
+   + z_ppe1_factory3->hospital2_8 - z_ppe1_DUMMY_RESERVE->factory3_8
    - M_ppe1_factory3_9 <= 0
- upper[availability_ppe2_factory3_9]: - z_ppe2_DUMMY_RESERVE->factory3_8
-   + z_ppe2_factory3->hospital1_9 + z_ppe2_factory3->hospital2_9
+ upper[availability_ppe2_factory3_9]: z_ppe2_factory3->hospital1_8
+   + z_ppe2_factory3->hospital2_8 - z_ppe2_DUMMY_RESERVE->factory3_8
    - M_ppe2_factory3_9 <= 0
- upper[availability_ppe3_factory3_9]: - z_ppe3_DUMMY_RESERVE->factory3_8
-   + z_ppe3_factory3->hospital1_9 + z_ppe3_factory3->hospital2_9
+ upper[availability_ppe3_factory3_9]: z_ppe3_factory3->hospital1_8
+   + z_ppe3_factory3->hospital2_8 - z_ppe3_DUMMY_RESERVE->factory3_8
    - M_ppe3_factory3_9 <= 0
  upper[availability_respirator1_factory3_9]:
-   - z_respirator1_DUMMY_RESERVE->factory3_8
-   + z_respirator1_factory3->hospital1_9
-   + z_respirator1_factory3->hospital2_9 - M_respirator1_factory3_9 <= 0
+   z_respirator1_factory3->hospital1_8
+   + z_respirator1_factory3->hospital2_8
+   - z_respirator1_DUMMY_RESERVE->factory3_8 - M_respirator1_factory3_9
+   <= 0
  upper[availability_respirator2_factory3_9]:
-   - z_respirator2_DUMMY_RESERVE->factory3_8
-   + z_respirator2_factory3->hospital1_9
-   + z_respirator2_factory3->hospital2_9 - M_respirator2_factory3_9 <= 0
- upper[availability_metal1_factory3_10]:
-   - z_metal1_DUMMY_RESERVE->factory3_9 + z_metal1_factory3->hospital1_10
-   + z_metal1_factory3->hospital2_10 - M_metal1_factory3_10 <= 0
- upper[availability_metal2_factory3_10]:
-   - z_metal2_DUMMY_RESERVE->factory3_9 + z_metal2_factory3->hospital1_10
-   + z_metal2_factory3->hospital2_10 - M_metal2_factory3_10 <= 0
- upper[availability_plastic1_factory3_10]:
-   - z_plastic1_DUMMY_RESERVE->factory3_9
-   + z_plastic1_factory3->hospital1_10 + z_plastic1_factory3->hospital2_10
-   - M_plastic1_factory3_10 <= 0
- upper[availability_plastic2_factory3_10]:
-   - z_plastic2_DUMMY_RESERVE->factory3_9
-   + z_plastic2_factory3->hospital1_10 + z_plastic2_factory3->hospital2_10
-   - M_plastic2_factory3_10 <= 0
- upper[availability_plastic3_factory3_10]:
-   - z_plastic3_DUMMY_RESERVE->factory3_9
-   + z_plastic3_factory3->hospital1_10 + z_plastic3_factory3->hospital2_10
-   - M_plastic3_factory3_10 <= 0
- upper[availability_ppe1_factory3_10]: - z_ppe1_DUMMY_RESERVE->factory3_9
-   + z_ppe1_factory3->hospital1_10 + z_ppe1_factory3->hospital2_10
+   z_respirator2_factory3->hospital1_8
+   + z_respirator2_factory3->hospital2_8
+   - z_respirator2_DUMMY_RESERVE->factory3_8 - M_respirator2_factory3_9
+   <= 0
+ upper[availability_metal1_factory3_10]: z_metal1_factory3->hospital1_9
+   + z_metal1_factory3->hospital2_9 - z_metal1_DUMMY_RESERVE->factory3_9
+   - M_metal1_factory3_10 <= 0
+ upper[availability_metal2_factory3_10]: z_metal2_factory3->hospital1_9
+   + z_metal2_factory3->hospital2_9 - z_metal2_DUMMY_RESERVE->factory3_9
+   - M_metal2_factory3_10 <= 0
+ upper[availability_plastic1_factory3_10]: z_plastic1_factory3->hospital1_9
+   + z_plastic1_factory3->hospital2_9
+   - z_plastic1_DUMMY_RESERVE->factory3_9 - M_plastic1_factory3_10 <= 0
+ upper[availability_plastic2_factory3_10]: z_plastic2_factory3->hospital1_9
+   + z_plastic2_factory3->hospital2_9
+   - z_plastic2_DUMMY_RESERVE->factory3_9 - M_plastic2_factory3_10 <= 0
+ upper[availability_plastic3_factory3_10]: z_plastic3_factory3->hospital1_9
+   + z_plastic3_factory3->hospital2_9
+   - z_plastic3_DUMMY_RESERVE->factory3_9 - M_plastic3_factory3_10 <= 0
+ upper[availability_ppe1_factory3_10]: z_ppe1_factory3->hospital1_9
+   + z_ppe1_factory3->hospital2_9 - z_ppe1_DUMMY_RESERVE->factory3_9
    - M_ppe1_factory3_10 <= 0
- upper[availability_ppe2_factory3_10]: - z_ppe2_DUMMY_RESERVE->factory3_9
-   + z_ppe2_factory3->hospital1_10 + z_ppe2_factory3->hospital2_10
+ upper[availability_ppe2_factory3_10]: z_ppe2_factory3->hospital1_9
+   + z_ppe2_factory3->hospital2_9 - z_ppe2_DUMMY_RESERVE->factory3_9
    - M_ppe2_factory3_10 <= 0
- upper[availability_ppe3_factory3_10]: - z_ppe3_DUMMY_RESERVE->factory3_9
-   + z_ppe3_factory3->hospital1_10 + z_ppe3_factory3->hospital2_10
+ upper[availability_ppe3_factory3_10]: z_ppe3_factory3->hospital1_9
+   + z_ppe3_factory3->hospital2_9 - z_ppe3_DUMMY_RESERVE->factory3_9
    - M_ppe3_factory3_10 <= 0
  upper[availability_respirator1_factory3_10]:
-   - z_respirator1_DUMMY_RESERVE->factory3_9
-   + z_respirator1_factory3->hospital1_10
-   + z_respirator1_factory3->hospital2_10 - M_respirator1_factory3_10 <= 0
+   z_respirator1_factory3->hospital1_9
+   + z_respirator1_factory3->hospital2_9
+   - z_respirator1_DUMMY_RESERVE->factory3_9 - M_respirator1_factory3_10
+   <= 0
  upper[availability_respirator2_factory3_10]:
-   - z_respirator2_DUMMY_RESERVE->factory3_9
-   + z_respirator2_factory3->hospital1_10
-   + z_respirator2_factory3->hospital2_10 - M_respirator2_factory3_10 <= 0
- upper[availability_metal1_factory3_11]:
-   - z_metal1_DUMMY_RESERVE->factory3_10 + z_metal1_factory3->hospital1_11
-   + z_metal1_factory3->hospital2_11 - M_metal1_factory3_11 <= 0
- upper[availability_metal2_factory3_11]:
-   - z_metal2_DUMMY_RESERVE->factory3_10 + z_metal2_factory3->hospital1_11
-   + z_metal2_factory3->hospital2_11 - M_metal2_factory3_11 <= 0
+   z_respirator2_factory3->hospital1_9
+   + z_respirator2_factory3->hospital2_9
+   - z_respirator2_DUMMY_RESERVE->factory3_9 - M_respirator2_factory3_10
+   <= 0
+ upper[availability_metal1_factory3_11]: z_metal1_factory3->hospital1_10
+   + z_metal1_factory3->hospital2_10 - z_metal1_DUMMY_RESERVE->factory3_10
+   - M_metal1_factory3_11 <= 0
+ upper[availability_metal2_factory3_11]: z_metal2_factory3->hospital1_10
+   + z_metal2_factory3->hospital2_10 - z_metal2_DUMMY_RESERVE->factory3_10
+   - M_metal2_factory3_11 <= 0
  upper[availability_plastic1_factory3_11]:
-   - z_plastic1_DUMMY_RESERVE->factory3_10
-   + z_plastic1_factory3->hospital1_11 + z_plastic1_factory3->hospital2_11
-   - M_plastic1_factory3_11 <= 0
+   z_plastic1_factory3->hospital1_10 + z_plastic1_factory3->hospital2_10
+   - z_plastic1_DUMMY_RESERVE->factory3_10 - M_plastic1_factory3_11 <= 0
  upper[availability_plastic2_factory3_11]:
-   - z_plastic2_DUMMY_RESERVE->factory3_10
-   + z_plastic2_factory3->hospital1_11 + z_plastic2_factory3->hospital2_11
-   - M_plastic2_factory3_11 <= 0
+   z_plastic2_factory3->hospital1_10 + z_plastic2_factory3->hospital2_10
+   - z_plastic2_DUMMY_RESERVE->factory3_10 - M_plastic2_factory3_11 <= 0
  upper[availability_plastic3_factory3_11]:
-   - z_plastic3_DUMMY_RESERVE->factory3_10
-   + z_plastic3_factory3->hospital1_11 + z_plastic3_factory3->hospital2_11
-   - M_plastic3_factory3_11 <= 0
- upper[availability_ppe1_factory3_11]: - z_ppe1_DUMMY_RESERVE->factory3_10
-   + z_ppe1_factory3->hospital1_11 + z_ppe1_factory3->hospital2_11
+   z_plastic3_factory3->hospital1_10 + z_plastic3_factory3->hospital2_10
+   - z_plastic3_DUMMY_RESERVE->factory3_10 - M_plastic3_factory3_11 <= 0
+ upper[availability_ppe1_factory3_11]: z_ppe1_factory3->hospital1_10
+   + z_ppe1_factory3->hospital2_10 - z_ppe1_DUMMY_RESERVE->factory3_10
    - M_ppe1_factory3_11 <= 0
- upper[availability_ppe2_factory3_11]: - z_ppe2_DUMMY_RESERVE->factory3_10
-   + z_ppe2_factory3->hospital1_11 + z_ppe2_factory3->hospital2_11
+ upper[availability_ppe2_factory3_11]: z_ppe2_factory3->hospital1_10
+   + z_ppe2_factory3->hospital2_10 - z_ppe2_DUMMY_RESERVE->factory3_10
    - M_ppe2_factory3_11 <= 0
- upper[availability_ppe3_factory3_11]: - z_ppe3_DUMMY_RESERVE->factory3_10
-   + z_ppe3_factory3->hospital1_11 + z_ppe3_factory3->hospital2_11
+ upper[availability_ppe3_factory3_11]: z_ppe3_factory3->hospital1_10
+   + z_ppe3_factory3->hospital2_10 - z_ppe3_DUMMY_RESERVE->factory3_10
    - M_ppe3_factory3_11 <= 0
  upper[availability_respirator1_factory3_11]:
-   - z_respirator1_DUMMY_RESERVE->factory3_10
-   + z_respirator1_factory3->hospital1_11
-   + z_respirator1_factory3->hospital2_11 - M_respirator1_factory3_11 <= 0
+   z_respirator1_factory3->hospital1_10
+   + z_respirator1_factory3->hospital2_10
+   - z_respirator1_DUMMY_RESERVE->factory3_10 - M_respirator1_factory3_11
+   <= 0
  upper[availability_respirator2_factory3_11]:
-   - z_respirator2_DUMMY_RESERVE->factory3_10
-   + z_respirator2_factory3->hospital1_11
-   + z_respirator2_factory3->hospital2_11 - M_respirator2_factory3_11 <= 0
- upper[availability_metal1_factory3_12]:
-   - z_metal1_DUMMY_RESERVE->factory3_11 + z_metal1_factory3->hospital1_12
-   + z_metal1_factory3->hospital2_12 - M_metal1_factory3_12 <= 0
- upper[availability_metal2_factory3_12]:
-   - z_metal2_DUMMY_RESERVE->factory3_11 + z_metal2_factory3->hospital1_12
-   + z_metal2_factory3->hospital2_12 - M_metal2_factory3_12 <= 0
+   z_respirator2_factory3->hospital1_10
+   + z_respirator2_factory3->hospital2_10
+   - z_respirator2_DUMMY_RESERVE->factory3_10 - M_respirator2_factory3_11
+   <= 0
+ upper[availability_metal1_factory3_12]: z_metal1_factory3->hospital1_11
+   + z_metal1_factory3->hospital2_11 - z_metal1_DUMMY_RESERVE->factory3_11
+   - M_metal1_factory3_12 <= 0
+ upper[availability_metal2_factory3_12]: z_metal2_factory3->hospital1_11
+   + z_metal2_factory3->hospital2_11 - z_metal2_DUMMY_RESERVE->factory3_11
+   - M_metal2_factory3_12 <= 0
  upper[availability_plastic1_factory3_12]:
-   - z_plastic1_DUMMY_RESERVE->factory3_11
-   + z_plastic1_factory3->hospital1_12 + z_plastic1_factory3->hospital2_12
-   - M_plastic1_factory3_12 <= 0
+   z_plastic1_factory3->hospital1_11 + z_plastic1_factory3->hospital2_11
+   - z_plastic1_DUMMY_RESERVE->factory3_11 - M_plastic1_factory3_12 <= 0
  upper[availability_plastic2_factory3_12]:
-   - z_plastic2_DUMMY_RESERVE->factory3_11
-   + z_plastic2_factory3->hospital1_12 + z_plastic2_factory3->hospital2_12
-   - M_plastic2_factory3_12 <= 0
+   z_plastic2_factory3->hospital1_11 + z_plastic2_factory3->hospital2_11
+   - z_plastic2_DUMMY_RESERVE->factory3_11 - M_plastic2_factory3_12 <= 0
  upper[availability_plastic3_factory3_12]:
-   - z_plastic3_DUMMY_RESERVE->factory3_11
-   + z_plastic3_factory3->hospital1_12 + z_plastic3_factory3->hospital2_12
-   - M_plastic3_factory3_12 <= 0
- upper[availability_ppe1_factory3_12]: - z_ppe1_DUMMY_RESERVE->factory3_11
-   + z_ppe1_factory3->hospital1_12 + z_ppe1_factory3->hospital2_12
+   z_plastic3_factory3->hospital1_11 + z_plastic3_factory3->hospital2_11
+   - z_plastic3_DUMMY_RESERVE->factory3_11 - M_plastic3_factory3_12 <= 0
+ upper[availability_ppe1_factory3_12]: z_ppe1_factory3->hospital1_11
+   + z_ppe1_factory3->hospital2_11 - z_ppe1_DUMMY_RESERVE->factory3_11
    - M_ppe1_factory3_12 <= 0
- upper[availability_ppe2_factory3_12]: - z_ppe2_DUMMY_RESERVE->factory3_11
-   + z_ppe2_factory3->hospital1_12 + z_ppe2_factory3->hospital2_12
+ upper[availability_ppe2_factory3_12]: z_ppe2_factory3->hospital1_11
+   + z_ppe2_factory3->hospital2_11 - z_ppe2_DUMMY_RESERVE->factory3_11
    - M_ppe2_factory3_12 <= 0
- upper[availability_ppe3_factory3_12]: - z_ppe3_DUMMY_RESERVE->factory3_11
-   + z_ppe3_factory3->hospital1_12 + z_ppe3_factory3->hospital2_12
+ upper[availability_ppe3_factory3_12]: z_ppe3_factory3->hospital1_11
+   + z_ppe3_factory3->hospital2_11 - z_ppe3_DUMMY_RESERVE->factory3_11
    - M_ppe3_factory3_12 <= 0
  upper[availability_respirator1_factory3_12]:
-   - z_respirator1_DUMMY_RESERVE->factory3_11
-   + z_respirator1_factory3->hospital1_12
-   + z_respirator1_factory3->hospital2_12 - M_respirator1_factory3_12 <= 0
+   z_respirator1_factory3->hospital1_11
+   + z_respirator1_factory3->hospital2_11
+   - z_respirator1_DUMMY_RESERVE->factory3_11 - M_respirator1_factory3_12
+   <= 0
  upper[availability_respirator2_factory3_12]:
-   - z_respirator2_DUMMY_RESERVE->factory3_11
-   + z_respirator2_factory3->hospital1_12
-   + z_respirator2_factory3->hospital2_12 - M_respirator2_factory3_12 <= 0
- upper[availability_metal1_factory3_13]:
-   - z_metal1_DUMMY_RESERVE->factory3_12 + z_metal1_factory3->hospital1_13
-   + z_metal1_factory3->hospital2_13 - M_metal1_factory3_13 <= 0
- upper[availability_metal2_factory3_13]:
-   - z_metal2_DUMMY_RESERVE->factory3_12 + z_metal2_factory3->hospital1_13
-   + z_metal2_factory3->hospital2_13 - M_metal2_factory3_13 <= 0
+   z_respirator2_factory3->hospital1_11
+   + z_respirator2_factory3->hospital2_11
+   - z_respirator2_DUMMY_RESERVE->factory3_11 - M_respirator2_factory3_12
+   <= 0
+ upper[availability_metal1_factory3_13]: z_metal1_factory3->hospital1_12
+   + z_metal1_factory3->hospital2_12 - z_metal1_DUMMY_RESERVE->factory3_12
+   - M_metal1_factory3_13 <= 0
+ upper[availability_metal2_factory3_13]: z_metal2_factory3->hospital1_12
+   + z_metal2_factory3->hospital2_12 - z_metal2_DUMMY_RESERVE->factory3_12
+   - M_metal2_factory3_13 <= 0
  upper[availability_plastic1_factory3_13]:
-   - z_plastic1_DUMMY_RESERVE->factory3_12
-   + z_plastic1_factory3->hospital1_13 + z_plastic1_factory3->hospital2_13
-   - M_plastic1_factory3_13 <= 0
+   z_plastic1_factory3->hospital1_12 + z_plastic1_factory3->hospital2_12
+   - z_plastic1_DUMMY_RESERVE->factory3_12 - M_plastic1_factory3_13 <= 0
  upper[availability_plastic2_factory3_13]:
-   - z_plastic2_DUMMY_RESERVE->factory3_12
-   + z_plastic2_factory3->hospital1_13 + z_plastic2_factory3->hospital2_13
-   - M_plastic2_factory3_13 <= 0
+   z_plastic2_factory3->hospital1_12 + z_plastic2_factory3->hospital2_12
+   - z_plastic2_DUMMY_RESERVE->factory3_12 - M_plastic2_factory3_13 <= 0
  upper[availability_plastic3_factory3_13]:
-   - z_plastic3_DUMMY_RESERVE->factory3_12
-   + z_plastic3_factory3->hospital1_13 + z_plastic3_factory3->hospital2_13
-   - M_plastic3_factory3_13 <= 0
- upper[availability_ppe1_factory3_13]: - z_ppe1_DUMMY_RESERVE->factory3_12
-   + z_ppe1_factory3->hospital1_13 + z_ppe1_factory3->hospital2_13
+   z_plastic3_factory3->hospital1_12 + z_plastic3_factory3->hospital2_12
+   - z_plastic3_DUMMY_RESERVE->factory3_12 - M_plastic3_factory3_13 <= 0
+ upper[availability_ppe1_factory3_13]: z_ppe1_factory3->hospital1_12
+   + z_ppe1_factory3->hospital2_12 - z_ppe1_DUMMY_RESERVE->factory3_12
    - M_ppe1_factory3_13 <= 0
- upper[availability_ppe2_factory3_13]: - z_ppe2_DUMMY_RESERVE->factory3_12
-   + z_ppe2_factory3->hospital1_13 + z_ppe2_factory3->hospital2_13
+ upper[availability_ppe2_factory3_13]: z_ppe2_factory3->hospital1_12
+   + z_ppe2_factory3->hospital2_12 - z_ppe2_DUMMY_RESERVE->factory3_12
    - M_ppe2_factory3_13 <= 0
- upper[availability_ppe3_factory3_13]: - z_ppe3_DUMMY_RESERVE->factory3_12
-   + z_ppe3_factory3->hospital1_13 + z_ppe3_factory3->hospital2_13
+ upper[availability_ppe3_factory3_13]: z_ppe3_factory3->hospital1_12
+   + z_ppe3_factory3->hospital2_12 - z_ppe3_DUMMY_RESERVE->factory3_12
    - M_ppe3_factory3_13 <= 0
  upper[availability_respirator1_factory3_13]:
-   - z_respirator1_DUMMY_RESERVE->factory3_12
-   + z_respirator1_factory3->hospital1_13
-   + z_respirator1_factory3->hospital2_13 - M_respirator1_factory3_13 <= 0
+   z_respirator1_factory3->hospital1_12
+   + z_respirator1_factory3->hospital2_12
+   - z_respirator1_DUMMY_RESERVE->factory3_12 - M_respirator1_factory3_13
+   <= 0
  upper[availability_respirator2_factory3_13]:
-   - z_respirator2_DUMMY_RESERVE->factory3_12
-   + z_respirator2_factory3->hospital1_13
-   + z_respirator2_factory3->hospital2_13 - M_respirator2_factory3_13 <= 0
- upper[availability_metal1_factory3_14]:
-   - z_metal1_DUMMY_RESERVE->factory3_13 + z_metal1_factory3->hospital1_14
-   + z_metal1_factory3->hospital2_14 - M_metal1_factory3_14 <= 0
- upper[availability_metal2_factory3_14]:
-   - z_metal2_DUMMY_RESERVE->factory3_13 + z_metal2_factory3->hospital1_14
-   + z_metal2_factory3->hospital2_14 - M_metal2_factory3_14 <= 0
+   z_respirator2_factory3->hospital1_12
+   + z_respirator2_factory3->hospital2_12
+   - z_respirator2_DUMMY_RESERVE->factory3_12 - M_respirator2_factory3_13
+   <= 0
+ upper[availability_metal1_factory3_14]: z_metal1_factory3->hospital1_13
+   + z_metal1_factory3->hospital2_13 - z_metal1_DUMMY_RESERVE->factory3_13
+   - M_metal1_factory3_14 <= 0
+ upper[availability_metal2_factory3_14]: z_metal2_factory3->hospital1_13
+   + z_metal2_factory3->hospital2_13 - z_metal2_DUMMY_RESERVE->factory3_13
+   - M_metal2_factory3_14 <= 0
  upper[availability_plastic1_factory3_14]:
-   - z_plastic1_DUMMY_RESERVE->factory3_13
-   + z_plastic1_factory3->hospital1_14 + z_plastic1_factory3->hospital2_14
-   - M_plastic1_factory3_14 <= 0
+   z_plastic1_factory3->hospital1_13 + z_plastic1_factory3->hospital2_13
+   - z_plastic1_DUMMY_RESERVE->factory3_13 - M_plastic1_factory3_14 <= 0
  upper[availability_plastic2_factory3_14]:
-   - z_plastic2_DUMMY_RESERVE->factory3_13
-   + z_plastic2_factory3->hospital1_14 + z_plastic2_factory3->hospital2_14
-   - M_plastic2_factory3_14 <= 0
+   z_plastic2_factory3->hospital1_13 + z_plastic2_factory3->hospital2_13
+   - z_plastic2_DUMMY_RESERVE->factory3_13 - M_plastic2_factory3_14 <= 0
  upper[availability_plastic3_factory3_14]:
-   - z_plastic3_DUMMY_RESERVE->factory3_13
-   + z_plastic3_factory3->hospital1_14 + z_plastic3_factory3->hospital2_14
-   - M_plastic3_factory3_14 <= 0
- upper[availability_ppe1_factory3_14]: - z_ppe1_DUMMY_RESERVE->factory3_13
-   + z_ppe1_factory3->hospital1_14 + z_ppe1_factory3->hospital2_14
+   z_plastic3_factory3->hospital1_13 + z_plastic3_factory3->hospital2_13
+   - z_plastic3_DUMMY_RESERVE->factory3_13 - M_plastic3_factory3_14 <= 0
+ upper[availability_ppe1_factory3_14]: z_ppe1_factory3->hospital1_13
+   + z_ppe1_factory3->hospital2_13 - z_ppe1_DUMMY_RESERVE->factory3_13
    - M_ppe1_factory3_14 <= 0
- upper[availability_ppe2_factory3_14]: - z_ppe2_DUMMY_RESERVE->factory3_13
-   + z_ppe2_factory3->hospital1_14 + z_ppe2_factory3->hospital2_14
+ upper[availability_ppe2_factory3_14]: z_ppe2_factory3->hospital1_13
+   + z_ppe2_factory3->hospital2_13 - z_ppe2_DUMMY_RESERVE->factory3_13
    - M_ppe2_factory3_14 <= 0
- upper[availability_ppe3_factory3_14]: - z_ppe3_DUMMY_RESERVE->factory3_13
-   + z_ppe3_factory3->hospital1_14 + z_ppe3_factory3->hospital2_14
+ upper[availability_ppe3_factory3_14]: z_ppe3_factory3->hospital1_13
+   + z_ppe3_factory3->hospital2_13 - z_ppe3_DUMMY_RESERVE->factory3_13
    - M_ppe3_factory3_14 <= 0
  upper[availability_respirator1_factory3_14]:
-   - z_respirator1_DUMMY_RESERVE->factory3_13
-   + z_respirator1_factory3->hospital1_14
-   + z_respirator1_factory3->hospital2_14 - M_respirator1_factory3_14 <= 0
+   z_respirator1_factory3->hospital1_13
+   + z_respirator1_factory3->hospital2_13
+   - z_respirator1_DUMMY_RESERVE->factory3_13 - M_respirator1_factory3_14
+   <= 0
  upper[availability_respirator2_factory3_14]:
-   - z_respirator2_DUMMY_RESERVE->factory3_13
-   + z_respirator2_factory3->hospital1_14
-   + z_respirator2_factory3->hospital2_14 - M_respirator2_factory3_14 <= 0
- upper[availability_metal1_factory3_15]:
-   - z_metal1_DUMMY_RESERVE->factory3_14 + z_metal1_factory3->hospital1_15
-   + z_metal1_factory3->hospital2_15 - M_metal1_factory3_15 <= 0
- upper[availability_metal2_factory3_15]:
-   - z_metal2_DUMMY_RESERVE->factory3_14 + z_metal2_factory3->hospital1_15
-   + z_metal2_factory3->hospital2_15 - M_metal2_factory3_15 <= 0
+   z_respirator2_factory3->hospital1_13
+   + z_respirator2_factory3->hospital2_13
+   - z_respirator2_DUMMY_RESERVE->factory3_13 - M_respirator2_factory3_14
+   <= 0
+ upper[availability_metal1_factory3_15]: z_metal1_factory3->hospital1_14
+   + z_metal1_factory3->hospital2_14 - z_metal1_DUMMY_RESERVE->factory3_14
+   - M_metal1_factory3_15 <= 0
+ upper[availability_metal2_factory3_15]: z_metal2_factory3->hospital1_14
+   + z_metal2_factory3->hospital2_14 - z_metal2_DUMMY_RESERVE->factory3_14
+   - M_metal2_factory3_15 <= 0
  upper[availability_plastic1_factory3_15]:
-   - z_plastic1_DUMMY_RESERVE->factory3_14
-   + z_plastic1_factory3->hospital1_15 + z_plastic1_factory3->hospital2_15
-   - M_plastic1_factory3_15 <= 0
+   z_plastic1_factory3->hospital1_14 + z_plastic1_factory3->hospital2_14
+   - z_plastic1_DUMMY_RESERVE->factory3_14 - M_plastic1_factory3_15 <= 0
  upper[availability_plastic2_factory3_15]:
-   - z_plastic2_DUMMY_RESERVE->factory3_14
-   + z_plastic2_factory3->hospital1_15 + z_plastic2_factory3->hospital2_15
-   - M_plastic2_factory3_15 <= 0
+   z_plastic2_factory3->hospital1_14 + z_plastic2_factory3->hospital2_14
+   - z_plastic2_DUMMY_RESERVE->factory3_14 - M_plastic2_factory3_15 <= 0
  upper[availability_plastic3_factory3_15]:
-   - z_plastic3_DUMMY_RESERVE->factory3_14
-   + z_plastic3_factory3->hospital1_15 + z_plastic3_factory3->hospital2_15
-   - M_plastic3_factory3_15 <= 0
- upper[availability_ppe1_factory3_15]: - z_ppe1_DUMMY_RESERVE->factory3_14
-   + z_ppe1_factory3->hospital1_15 + z_ppe1_factory3->hospital2_15
+   z_plastic3_factory3->hospital1_14 + z_plastic3_factory3->hospital2_14
+   - z_plastic3_DUMMY_RESERVE->factory3_14 - M_plastic3_factory3_15 <= 0
+ upper[availability_ppe1_factory3_15]: z_ppe1_factory3->hospital1_14
+   + z_ppe1_factory3->hospital2_14 - z_ppe1_DUMMY_RESERVE->factory3_14
    - M_ppe1_factory3_15 <= 0
- upper[availability_ppe2_factory3_15]: - z_ppe2_DUMMY_RESERVE->factory3_14
-   + z_ppe2_factory3->hospital1_15 + z_ppe2_factory3->hospital2_15
+ upper[availability_ppe2_factory3_15]: z_ppe2_factory3->hospital1_14
+   + z_ppe2_factory3->hospital2_14 - z_ppe2_DUMMY_RESERVE->factory3_14
    - M_ppe2_factory3_15 <= 0
- upper[availability_ppe3_factory3_15]: - z_ppe3_DUMMY_RESERVE->factory3_14
-   + z_ppe3_factory3->hospital1_15 + z_ppe3_factory3->hospital2_15
+ upper[availability_ppe3_factory3_15]: z_ppe3_factory3->hospital1_14
+   + z_ppe3_factory3->hospital2_14 - z_ppe3_DUMMY_RESERVE->factory3_14
    - M_ppe3_factory3_15 <= 0
  upper[availability_respirator1_factory3_15]:
-   - z_respirator1_DUMMY_RESERVE->factory3_14
-   + z_respirator1_factory3->hospital1_15
-   + z_respirator1_factory3->hospital2_15 - M_respirator1_factory3_15 <= 0
+   z_respirator1_factory3->hospital1_14
+   + z_respirator1_factory3->hospital2_14
+   - z_respirator1_DUMMY_RESERVE->factory3_14 - M_respirator1_factory3_15
+   <= 0
  upper[availability_respirator2_factory3_15]:
-   - z_respirator2_DUMMY_RESERVE->factory3_14
-   + z_respirator2_factory3->hospital1_15
-   + z_respirator2_factory3->hospital2_15 - M_respirator2_factory3_15 <= 0
- upper[availability_metal1_factory3_16]:
-   - z_metal1_DUMMY_RESERVE->factory3_15 + z_metal1_factory3->hospital1_16
-   + z_metal1_factory3->hospital2_16 - M_metal1_factory3_16 <= 0
- upper[availability_metal2_factory3_16]:
-   - z_metal2_DUMMY_RESERVE->factory3_15 + z_metal2_factory3->hospital1_16
-   + z_metal2_factory3->hospital2_16 - M_metal2_factory3_16 <= 0
+   z_respirator2_factory3->hospital1_14
+   + z_respirator2_factory3->hospital2_14
+   - z_respirator2_DUMMY_RESERVE->factory3_14 - M_respirator2_factory3_15
+   <= 0
+ upper[availability_metal1_factory3_16]: z_metal1_factory3->hospital1_15
+   + z_metal1_factory3->hospital2_15 - z_metal1_DUMMY_RESERVE->factory3_15
+   - M_metal1_factory3_16 <= 0
+ upper[availability_metal2_factory3_16]: z_metal2_factory3->hospital1_15
+   + z_metal2_factory3->hospital2_15 - z_metal2_DUMMY_RESERVE->factory3_15
+   - M_metal2_factory3_16 <= 0
  upper[availability_plastic1_factory3_16]:
-   - z_plastic1_DUMMY_RESERVE->factory3_15
-   + z_plastic1_factory3->hospital1_16 + z_plastic1_factory3->hospital2_16
-   - M_plastic1_factory3_16 <= 0
+   z_plastic1_factory3->hospital1_15 + z_plastic1_factory3->hospital2_15
+   - z_plastic1_DUMMY_RESERVE->factory3_15 - M_plastic1_factory3_16 <= 0
  upper[availability_plastic2_factory3_16]:
-   - z_plastic2_DUMMY_RESERVE->factory3_15
-   + z_plastic2_factory3->hospital1_16 + z_plastic2_factory3->hospital2_16
-   - M_plastic2_factory3_16 <= 0
+   z_plastic2_factory3->hospital1_15 + z_plastic2_factory3->hospital2_15
+   - z_plastic2_DUMMY_RESERVE->factory3_15 - M_plastic2_factory3_16 <= 0
  upper[availability_plastic3_factory3_16]:
-   - z_plastic3_DUMMY_RESERVE->factory3_15
-   + z_plastic3_factory3->hospital1_16 + z_plastic3_factory3->hospital2_16
-   - M_plastic3_factory3_16 <= 0
- upper[availability_ppe1_factory3_16]: - z_ppe1_DUMMY_RESERVE->factory3_15
-   + z_ppe1_factory3->hospital1_16 + z_ppe1_factory3->hospital2_16
+   z_plastic3_factory3->hospital1_15 + z_plastic3_factory3->hospital2_15
+   - z_plastic3_DUMMY_RESERVE->factory3_15 - M_plastic3_factory3_16 <= 0
+ upper[availability_ppe1_factory3_16]: z_ppe1_factory3->hospital1_15
+   + z_ppe1_factory3->hospital2_15 - z_ppe1_DUMMY_RESERVE->factory3_15
    - M_ppe1_factory3_16 <= 0
- upper[availability_ppe2_factory3_16]: - z_ppe2_DUMMY_RESERVE->factory3_15
-   + z_ppe2_factory3->hospital1_16 + z_ppe2_factory3->hospital2_16
+ upper[availability_ppe2_factory3_16]: z_ppe2_factory3->hospital1_15
+   + z_ppe2_factory3->hospital2_15 - z_ppe2_DUMMY_RESERVE->factory3_15
    - M_ppe2_factory3_16 <= 0
- upper[availability_ppe3_factory3_16]: - z_ppe3_DUMMY_RESERVE->factory3_15
-   + z_ppe3_factory3->hospital1_16 + z_ppe3_factory3->hospital2_16
+ upper[availability_ppe3_factory3_16]: z_ppe3_factory3->hospital1_15
+   + z_ppe3_factory3->hospital2_15 - z_ppe3_DUMMY_RESERVE->factory3_15
    - M_ppe3_factory3_16 <= 0
  upper[availability_respirator1_factory3_16]:
-   - z_respirator1_DUMMY_RESERVE->factory3_15
-   + z_respirator1_factory3->hospital1_16
-   + z_respirator1_factory3->hospital2_16 - M_respirator1_factory3_16 <= 0
+   z_respirator1_factory3->hospital1_15
+   + z_respirator1_factory3->hospital2_15
+   - z_respirator1_DUMMY_RESERVE->factory3_15 - M_respirator1_factory3_16
+   <= 0
  upper[availability_respirator2_factory3_16]:
-   - z_respirator2_DUMMY_RESERVE->factory3_15
-   + z_respirator2_factory3->hospital1_16
-   + z_respirator2_factory3->hospital2_16 - M_respirator2_factory3_16 <= 0
- upper[availability_metal1_factory3_17]:
-   - z_metal1_DUMMY_RESERVE->factory3_16 + z_metal1_factory3->hospital1_17
-   + z_metal1_factory3->hospital2_17 - M_metal1_factory3_17 <= 0
- upper[availability_metal2_factory3_17]:
-   - z_metal2_DUMMY_RESERVE->factory3_16 + z_metal2_factory3->hospital1_17
-   + z_metal2_factory3->hospital2_17 - M_metal2_factory3_17 <= 0
+   z_respirator2_factory3->hospital1_15
+   + z_respirator2_factory3->hospital2_15
+   - z_respirator2_DUMMY_RESERVE->factory3_15 - M_respirator2_factory3_16
+   <= 0
+ upper[availability_metal1_factory3_17]: z_metal1_factory3->hospital1_16
+   + z_metal1_factory3->hospital2_16 - z_metal1_DUMMY_RESERVE->factory3_16
+   - M_metal1_factory3_17 <= 0
+ upper[availability_metal2_factory3_17]: z_metal2_factory3->hospital1_16
+   + z_metal2_factory3->hospital2_16 - z_metal2_DUMMY_RESERVE->factory3_16
+   - M_metal2_factory3_17 <= 0
  upper[availability_plastic1_factory3_17]:
-   - z_plastic1_DUMMY_RESERVE->factory3_16
-   + z_plastic1_factory3->hospital1_17 + z_plastic1_factory3->hospital2_17
-   - M_plastic1_factory3_17 <= 0
+   z_plastic1_factory3->hospital1_16 + z_plastic1_factory3->hospital2_16
+   - z_plastic1_DUMMY_RESERVE->factory3_16 - M_plastic1_factory3_17 <= 0
  upper[availability_plastic2_factory3_17]:
-   - z_plastic2_DUMMY_RESERVE->factory3_16
-   + z_plastic2_factory3->hospital1_17 + z_plastic2_factory3->hospital2_17
-   - M_plastic2_factory3_17 <= 0
+   z_plastic2_factory3->hospital1_16 + z_plastic2_factory3->hospital2_16
+   - z_plastic2_DUMMY_RESERVE->factory3_16 - M_plastic2_factory3_17 <= 0
  upper[availability_plastic3_factory3_17]:
-   - z_plastic3_DUMMY_RESERVE->factory3_16
-   + z_plastic3_factory3->hospital1_17 + z_plastic3_factory3->hospital2_17
-   - M_plastic3_factory3_17 <= 0
- upper[availability_ppe1_factory3_17]: - z_ppe1_DUMMY_RESERVE->factory3_16
-   + z_ppe1_factory3->hospital1_17 + z_ppe1_factory3->hospital2_17
+   z_plastic3_factory3->hospital1_16 + z_plastic3_factory3->hospital2_16
+   - z_plastic3_DUMMY_RESERVE->factory3_16 - M_plastic3_factory3_17 <= 0
+ upper[availability_ppe1_factory3_17]: z_ppe1_factory3->hospital1_16
+   + z_ppe1_factory3->hospital2_16 - z_ppe1_DUMMY_RESERVE->factory3_16
    - M_ppe1_factory3_17 <= 0
- upper[availability_ppe2_factory3_17]: - z_ppe2_DUMMY_RESERVE->factory3_16
-   + z_ppe2_factory3->hospital1_17 + z_ppe2_factory3->hospital2_17
+ upper[availability_ppe2_factory3_17]: z_ppe2_factory3->hospital1_16
+   + z_ppe2_factory3->hospital2_16 - z_ppe2_DUMMY_RESERVE->factory3_16
    - M_ppe2_factory3_17 <= 0
- upper[availability_ppe3_factory3_17]: - z_ppe3_DUMMY_RESERVE->factory3_16
-   + z_ppe3_factory3->hospital1_17 + z_ppe3_factory3->hospital2_17
+ upper[availability_ppe3_factory3_17]: z_ppe3_factory3->hospital1_16
+   + z_ppe3_factory3->hospital2_16 - z_ppe3_DUMMY_RESERVE->factory3_16
    - M_ppe3_factory3_17 <= 0
  upper[availability_respirator1_factory3_17]:
-   - z_respirator1_DUMMY_RESERVE->factory3_16
-   + z_respirator1_factory3->hospital1_17
-   + z_respirator1_factory3->hospital2_17 - M_respirator1_factory3_17 <= 0
+   z_respirator1_factory3->hospital1_16
+   + z_respirator1_factory3->hospital2_16
+   - z_respirator1_DUMMY_RESERVE->factory3_16 - M_respirator1_factory3_17
+   <= 0
  upper[availability_respirator2_factory3_17]:
-   - z_respirator2_DUMMY_RESERVE->factory3_16
-   + z_respirator2_factory3->hospital1_17
-   + z_respirator2_factory3->hospital2_17 - M_respirator2_factory3_17 <= 0
- upper[availability_metal1_factory3_18]:
-   - z_metal1_DUMMY_RESERVE->factory3_17 + z_metal1_factory3->hospital1_18
-   + z_metal1_factory3->hospital2_18 - M_metal1_factory3_18 <= 0
- upper[availability_metal2_factory3_18]:
-   - z_metal2_DUMMY_RESERVE->factory3_17 + z_metal2_factory3->hospital1_18
-   + z_metal2_factory3->hospital2_18 - M_metal2_factory3_18 <= 0
+   z_respirator2_factory3->hospital1_16
+   + z_respirator2_factory3->hospital2_16
+   - z_respirator2_DUMMY_RESERVE->factory3_16 - M_respirator2_factory3_17
+   <= 0
+ upper[availability_metal1_factory3_18]: z_metal1_factory3->hospital1_17
+   + z_metal1_factory3->hospital2_17 - z_metal1_DUMMY_RESERVE->factory3_17
+   - M_metal1_factory3_18 <= 0
+ upper[availability_metal2_factory3_18]: z_metal2_factory3->hospital1_17
+   + z_metal2_factory3->hospital2_17 - z_metal2_DUMMY_RESERVE->factory3_17
+   - M_metal2_factory3_18 <= 0
  upper[availability_plastic1_factory3_18]:
-   - z_plastic1_DUMMY_RESERVE->factory3_17
-   + z_plastic1_factory3->hospital1_18 + z_plastic1_factory3->hospital2_18
-   - M_plastic1_factory3_18 <= 0
+   z_plastic1_factory3->hospital1_17 + z_plastic1_factory3->hospital2_17
+   - z_plastic1_DUMMY_RESERVE->factory3_17 - M_plastic1_factory3_18 <= 0
  upper[availability_plastic2_factory3_18]:
-   - z_plastic2_DUMMY_RESERVE->factory3_17
-   + z_plastic2_factory3->hospital1_18 + z_plastic2_factory3->hospital2_18
-   - M_plastic2_factory3_18 <= 0
+   z_plastic2_factory3->hospital1_17 + z_plastic2_factory3->hospital2_17
+   - z_plastic2_DUMMY_RESERVE->factory3_17 - M_plastic2_factory3_18 <= 0
  upper[availability_plastic3_factory3_18]:
-   - z_plastic3_DUMMY_RESERVE->factory3_17
-   + z_plastic3_factory3->hospital1_18 + z_plastic3_factory3->hospital2_18
-   - M_plastic3_factory3_18 <= 0
- upper[availability_ppe1_factory3_18]: - z_ppe1_DUMMY_RESERVE->factory3_17
-   + z_ppe1_factory3->hospital1_18 + z_ppe1_factory3->hospital2_18
+   z_plastic3_factory3->hospital1_17 + z_plastic3_factory3->hospital2_17
+   - z_plastic3_DUMMY_RESERVE->factory3_17 - M_plastic3_factory3_18 <= 0
+ upper[availability_ppe1_factory3_18]: z_ppe1_factory3->hospital1_17
+   + z_ppe1_factory3->hospital2_17 - z_ppe1_DUMMY_RESERVE->factory3_17
    - M_ppe1_factory3_18 <= 0
- upper[availability_ppe2_factory3_18]: - z_ppe2_DUMMY_RESERVE->factory3_17
-   + z_ppe2_factory3->hospital1_18 + z_ppe2_factory3->hospital2_18
+ upper[availability_ppe2_factory3_18]: z_ppe2_factory3->hospital1_17
+   + z_ppe2_factory3->hospital2_17 - z_ppe2_DUMMY_RESERVE->factory3_17
    - M_ppe2_factory3_18 <= 0
- upper[availability_ppe3_factory3_18]: - z_ppe3_DUMMY_RESERVE->factory3_17
-   + z_ppe3_factory3->hospital1_18 + z_ppe3_factory3->hospital2_18
+ upper[availability_ppe3_factory3_18]: z_ppe3_factory3->hospital1_17
+   + z_ppe3_factory3->hospital2_17 - z_ppe3_DUMMY_RESERVE->factory3_17
    - M_ppe3_factory3_18 <= 0
  upper[availability_respirator1_factory3_18]:
-   - z_respirator1_DUMMY_RESERVE->factory3_17
-   + z_respirator1_factory3->hospital1_18
-   + z_respirator1_factory3->hospital2_18 - M_respirator1_factory3_18 <= 0
+   z_respirator1_factory3->hospital1_17
+   + z_respirator1_factory3->hospital2_17
+   - z_respirator1_DUMMY_RESERVE->factory3_17 - M_respirator1_factory3_18
+   <= 0
  upper[availability_respirator2_factory3_18]:
-   - z_respirator2_DUMMY_RESERVE->factory3_17
-   + z_respirator2_factory3->hospital1_18
-   + z_respirator2_factory3->hospital2_18 - M_respirator2_factory3_18 <= 0
- upper[availability_metal1_factory3_19]:
-   - z_metal1_DUMMY_RESERVE->factory3_18 + z_metal1_factory3->hospital1_19
-   + z_metal1_factory3->hospital2_19 - M_metal1_factory3_19 <= 0
- upper[availability_metal2_factory3_19]:
-   - z_metal2_DUMMY_RESERVE->factory3_18 + z_metal2_factory3->hospital1_19
-   + z_metal2_factory3->hospital2_19 - M_metal2_factory3_19 <= 0
+   z_respirator2_factory3->hospital1_17
+   + z_respirator2_factory3->hospital2_17
+   - z_respirator2_DUMMY_RESERVE->factory3_17 - M_respirator2_factory3_18
+   <= 0
+ upper[availability_metal1_factory3_19]: z_metal1_factory3->hospital1_18
+   + z_metal1_factory3->hospital2_18 - z_metal1_DUMMY_RESERVE->factory3_18
+   - M_metal1_factory3_19 <= 0
+ upper[availability_metal2_factory3_19]: z_metal2_factory3->hospital1_18
+   + z_metal2_factory3->hospital2_18 - z_metal2_DUMMY_RESERVE->factory3_18
+   - M_metal2_factory3_19 <= 0
  upper[availability_plastic1_factory3_19]:
-   - z_plastic1_DUMMY_RESERVE->factory3_18
-   + z_plastic1_factory3->hospital1_19 + z_plastic1_factory3->hospital2_19
-   - M_plastic1_factory3_19 <= 0
+   z_plastic1_factory3->hospital1_18 + z_plastic1_factory3->hospital2_18
+   - z_plastic1_DUMMY_RESERVE->factory3_18 - M_plastic1_factory3_19 <= 0
  upper[availability_plastic2_factory3_19]:
-   - z_plastic2_DUMMY_RESERVE->factory3_18
-   + z_plastic2_factory3->hospital1_19 + z_plastic2_factory3->hospital2_19
-   - M_plastic2_factory3_19 <= 0
+   z_plastic2_factory3->hospital1_18 + z_plastic2_factory3->hospital2_18
+   - z_plastic2_DUMMY_RESERVE->factory3_18 - M_plastic2_factory3_19 <= 0
  upper[availability_plastic3_factory3_19]:
-   - z_plastic3_DUMMY_RESERVE->factory3_18
-   + z_plastic3_factory3->hospital1_19 + z_plastic3_factory3->hospital2_19
-   - M_plastic3_factory3_19 <= 0
- upper[availability_ppe1_factory3_19]: - z_ppe1_DUMMY_RESERVE->factory3_18
-   + z_ppe1_factory3->hospital1_19 + z_ppe1_factory3->hospital2_19
+   z_plastic3_factory3->hospital1_18 + z_plastic3_factory3->hospital2_18
+   - z_plastic3_DUMMY_RESERVE->factory3_18 - M_plastic3_factory3_19 <= 0
+ upper[availability_ppe1_factory3_19]: z_ppe1_factory3->hospital1_18
+   + z_ppe1_factory3->hospital2_18 - z_ppe1_DUMMY_RESERVE->factory3_18
    - M_ppe1_factory3_19 <= 0
- upper[availability_ppe2_factory3_19]: - z_ppe2_DUMMY_RESERVE->factory3_18
-   + z_ppe2_factory3->hospital1_19 + z_ppe2_factory3->hospital2_19
+ upper[availability_ppe2_factory3_19]: z_ppe2_factory3->hospital1_18
+   + z_ppe2_factory3->hospital2_18 - z_ppe2_DUMMY_RESERVE->factory3_18
    - M_ppe2_factory3_19 <= 0
- upper[availability_ppe3_factory3_19]: - z_ppe3_DUMMY_RESERVE->factory3_18
-   + z_ppe3_factory3->hospital1_19 + z_ppe3_factory3->hospital2_19
+ upper[availability_ppe3_factory3_19]: z_ppe3_factory3->hospital1_18
+   + z_ppe3_factory3->hospital2_18 - z_ppe3_DUMMY_RESERVE->factory3_18
    - M_ppe3_factory3_19 <= 0
  upper[availability_respirator1_factory3_19]:
-   - z_respirator1_DUMMY_RESERVE->factory3_18
-   + z_respirator1_factory3->hospital1_19
-   + z_respirator1_factory3->hospital2_19 - M_respirator1_factory3_19 <= 0
+   z_respirator1_factory3->hospital1_18
+   + z_respirator1_factory3->hospital2_18
+   - z_respirator1_DUMMY_RESERVE->factory3_18 - M_respirator1_factory3_19
+   <= 0
  upper[availability_respirator2_factory3_19]:
-   - z_respirator2_DUMMY_RESERVE->factory3_18
-   + z_respirator2_factory3->hospital1_19
-   + z_respirator2_factory3->hospital2_19 - M_respirator2_factory3_19 <= 0
- upper[availability_metal1_factory4_1]: z_metal1_factory4->hospital3_1
-   + z_metal1_factory4->hospital4_1 + z_metal1_factory4->factory2_1
-   - M_metal1_factory4_1 <= 0
- upper[availability_metal2_factory4_1]: z_metal2_factory4->hospital3_1
-   + z_metal2_factory4->hospital4_1 + z_metal2_factory4->factory2_1
-   - M_metal2_factory4_1 <= 0
- upper[availability_plastic1_factory4_1]: z_plastic1_factory4->hospital3_1
-   + z_plastic1_factory4->hospital4_1 + z_plastic1_factory4->factory2_1
-   - M_plastic1_factory4_1 <= 0
- upper[availability_plastic2_factory4_1]: z_plastic2_factory4->hospital3_1
-   + z_plastic2_factory4->hospital4_1 + z_plastic2_factory4->factory2_1
-   - M_plastic2_factory4_1 <= 0
- upper[availability_plastic3_factory4_1]: z_plastic3_factory4->hospital3_1
-   + z_plastic3_factory4->hospital4_1 + z_plastic3_factory4->factory2_1
-   - M_plastic3_factory4_1 <= 0
- upper[availability_ppe1_factory4_1]: z_ppe1_factory4->hospital3_1
-   + z_ppe1_factory4->hospital4_1 + z_ppe1_factory4->factory2_1
-   - M_ppe1_factory4_1 <= 0
- upper[availability_ppe2_factory4_1]: z_ppe2_factory4->hospital3_1
-   + z_ppe2_factory4->hospital4_1 + z_ppe2_factory4->factory2_1
-   - M_ppe2_factory4_1 <= 0
- upper[availability_ppe3_factory4_1]: z_ppe3_factory4->hospital3_1
-   + z_ppe3_factory4->hospital4_1 + z_ppe3_factory4->factory2_1
-   - M_ppe3_factory4_1 <= 0
- upper[availability_respirator1_factory4_1]:
-   z_respirator1_factory4->hospital3_1
-   + z_respirator1_factory4->hospital4_1
-   + z_respirator1_factory4->factory2_1 - M_respirator1_factory4_1 <= 0
- upper[availability_respirator2_factory4_1]:
-   z_respirator2_factory4->hospital3_1
-   + z_respirator2_factory4->hospital4_1
-   + z_respirator2_factory4->factory2_1 - M_respirator2_factory4_1 <= 0
- upper[availability_metal1_factory4_2]: - z_metal1_factory1->factory4_1
-   - z_metal1_DUMMY_RESERVE->factory4_1 + z_metal1_factory4->hospital3_2
-   + z_metal1_factory4->hospital4_2 + z_metal1_factory4->factory2_2
+   z_respirator2_factory3->hospital1_18
+   + z_respirator2_factory3->hospital2_18
+   - z_respirator2_DUMMY_RESERVE->factory3_18 - M_respirator2_factory3_19
+   <= 0
+ upper[availability_metal1_factory4_1]: - M_metal1_factory4_1 <= 0
+ upper[availability_metal2_factory4_1]: - M_metal2_factory4_1 <= 0
+ upper[availability_plastic1_factory4_1]: - M_plastic1_factory4_1 <= 0
+ upper[availability_plastic2_factory4_1]: - M_plastic2_factory4_1 <= 0
+ upper[availability_plastic3_factory4_1]: - M_plastic3_factory4_1 <= 0
+ upper[availability_ppe1_factory4_1]: - M_ppe1_factory4_1 <= 0
+ upper[availability_ppe2_factory4_1]: - M_ppe2_factory4_1 <= 0
+ upper[availability_ppe3_factory4_1]: - M_ppe3_factory4_1 <= 0
+ upper[availability_respirator1_factory4_1]: - M_respirator1_factory4_1
+   <= 0
+ upper[availability_respirator2_factory4_1]: - M_respirator2_factory4_1
+   <= 0
+ upper[availability_metal1_factory4_2]: z_metal1_factory4->hospital3_1
+   + z_metal1_factory4->hospital4_1 - z_metal1_factory1->factory4_1
+   + z_metal1_factory4->factory2_1 - z_metal1_DUMMY_RESERVE->factory4_1
    - M_metal1_factory4_2 <= 0
- upper[availability_metal2_factory4_2]: - z_metal2_factory1->factory4_1
-   - z_metal2_DUMMY_RESERVE->factory4_1 + z_metal2_factory4->hospital3_2
-   + z_metal2_factory4->hospital4_2 + z_metal2_factory4->factory2_2
+ upper[availability_metal2_factory4_2]: z_metal2_factory4->hospital3_1
+   + z_metal2_factory4->hospital4_1 - z_metal2_factory1->factory4_1
+   + z_metal2_factory4->factory2_1 - z_metal2_DUMMY_RESERVE->factory4_1
    - M_metal2_factory4_2 <= 0
- upper[availability_plastic1_factory4_2]: - z_plastic1_factory1->factory4_1
-   - z_plastic1_DUMMY_RESERVE->factory4_1
-   + z_plastic1_factory4->hospital3_2 + z_plastic1_factory4->hospital4_2
-   + z_plastic1_factory4->factory2_2 - M_plastic1_factory4_2 <= 0
- upper[availability_plastic2_factory4_2]: - z_plastic2_factory1->factory4_1
-   - z_plastic2_DUMMY_RESERVE->factory4_1
-   + z_plastic2_factory4->hospital3_2 + z_plastic2_factory4->hospital4_2
-   + z_plastic2_factory4->factory2_2 - M_plastic2_factory4_2 <= 0
- upper[availability_plastic3_factory4_2]: - z_plastic3_factory1->factory4_1
-   - z_plastic3_DUMMY_RESERVE->factory4_1
-   + z_plastic3_factory4->hospital3_2 + z_plastic3_factory4->hospital4_2
-   + z_plastic3_factory4->factory2_2 - M_plastic3_factory4_2 <= 0
- upper[availability_ppe1_factory4_2]: - z_ppe1_factory1->factory4_1
-   - z_ppe1_DUMMY_RESERVE->factory4_1 + z_ppe1_factory4->hospital3_2
-   + z_ppe1_factory4->hospital4_2 + z_ppe1_factory4->factory2_2
+ upper[availability_plastic1_factory4_2]: z_plastic1_factory4->hospital3_1
+   + z_plastic1_factory4->hospital4_1 - z_plastic1_factory1->factory4_1
+   + z_plastic1_factory4->factory2_1 - z_plastic1_DUMMY_RESERVE->factory4_1
+   - M_plastic1_factory4_2 <= 0
+ upper[availability_plastic2_factory4_2]: z_plastic2_factory4->hospital3_1
+   + z_plastic2_factory4->hospital4_1 - z_plastic2_factory1->factory4_1
+   + z_plastic2_factory4->factory2_1 - z_plastic2_DUMMY_RESERVE->factory4_1
+   - M_plastic2_factory4_2 <= 0
+ upper[availability_plastic3_factory4_2]: z_plastic3_factory4->hospital3_1
+   + z_plastic3_factory4->hospital4_1 - z_plastic3_factory1->factory4_1
+   + z_plastic3_factory4->factory2_1 - z_plastic3_DUMMY_RESERVE->factory4_1
+   - M_plastic3_factory4_2 <= 0
+ upper[availability_ppe1_factory4_2]: z_ppe1_factory4->hospital3_1
+   + z_ppe1_factory4->hospital4_1 - z_ppe1_factory1->factory4_1
+   + z_ppe1_factory4->factory2_1 - z_ppe1_DUMMY_RESERVE->factory4_1
    - M_ppe1_factory4_2 <= 0
- upper[availability_ppe2_factory4_2]: - z_ppe2_factory1->factory4_1
-   - z_ppe2_DUMMY_RESERVE->factory4_1 + z_ppe2_factory4->hospital3_2
-   + z_ppe2_factory4->hospital4_2 + z_ppe2_factory4->factory2_2
+ upper[availability_ppe2_factory4_2]: z_ppe2_factory4->hospital3_1
+   + z_ppe2_factory4->hospital4_1 - z_ppe2_factory1->factory4_1
+   + z_ppe2_factory4->factory2_1 - z_ppe2_DUMMY_RESERVE->factory4_1
    - M_ppe2_factory4_2 <= 0
- upper[availability_ppe3_factory4_2]: - z_ppe3_factory1->factory4_1
-   - z_ppe3_DUMMY_RESERVE->factory4_1 + z_ppe3_factory4->hospital3_2
-   + z_ppe3_factory4->hospital4_2 + z_ppe3_factory4->factory2_2
+ upper[availability_ppe3_factory4_2]: z_ppe3_factory4->hospital3_1
+   + z_ppe3_factory4->hospital4_1 - z_ppe3_factory1->factory4_1
+   + z_ppe3_factory4->factory2_1 - z_ppe3_DUMMY_RESERVE->factory4_1
    - M_ppe3_factory4_2 <= 0
  upper[availability_respirator1_factory4_2]:
+   z_respirator1_factory4->hospital3_1
+   + z_respirator1_factory4->hospital4_1
    - z_respirator1_factory1->factory4_1
-   - z_respirator1_DUMMY_RESERVE->factory4_1
-   + z_respirator1_factory4->hospital3_2
-   + z_respirator1_factory4->hospital4_2
-   + z_respirator1_factory4->factory2_2 - M_respirator1_factory4_2 <= 0
+   + z_respirator1_factory4->factory2_1
+   - z_respirator1_DUMMY_RESERVE->factory4_1 - M_respirator1_factory4_2
+   <= 0
  upper[availability_respirator2_factory4_2]:
+   z_respirator2_factory4->hospital3_1
+   + z_respirator2_factory4->hospital4_1
    - z_respirator2_factory1->factory4_1
-   - z_respirator2_DUMMY_RESERVE->factory4_1
-   + z_respirator2_factory4->hospital3_2
-   + z_respirator2_factory4->hospital4_2
-   + z_respirator2_factory4->factory2_2 - M_respirator2_factory4_2 <= 0
- upper[availability_metal1_factory4_3]: - z_metal1_factory1->factory4_2
-   - z_metal1_DUMMY_RESERVE->factory4_2 + z_metal1_factory4->hospital3_3
-   + z_metal1_factory4->hospital4_3 + z_metal1_factory4->factory2_3
+   + z_respirator2_factory4->factory2_1
+   - z_respirator2_DUMMY_RESERVE->factory4_1 - M_respirator2_factory4_2
+   <= 0
+ upper[availability_metal1_factory4_3]: z_metal1_factory4->hospital3_2
+   + z_metal1_factory4->hospital4_2 - z_metal1_factory1->factory4_2
+   + z_metal1_factory4->factory2_2 - z_metal1_DUMMY_RESERVE->factory4_2
    - M_metal1_factory4_3 <= 0
- upper[availability_metal2_factory4_3]: - z_metal2_factory1->factory4_2
-   - z_metal2_DUMMY_RESERVE->factory4_2 + z_metal2_factory4->hospital3_3
-   + z_metal2_factory4->hospital4_3 + z_metal2_factory4->factory2_3
+ upper[availability_metal2_factory4_3]: z_metal2_factory4->hospital3_2
+   + z_metal2_factory4->hospital4_2 - z_metal2_factory1->factory4_2
+   + z_metal2_factory4->factory2_2 - z_metal2_DUMMY_RESERVE->factory4_2
    - M_metal2_factory4_3 <= 0
- upper[availability_plastic1_factory4_3]: - z_plastic1_factory1->factory4_2
-   - z_plastic1_DUMMY_RESERVE->factory4_2
-   + z_plastic1_factory4->hospital3_3 + z_plastic1_factory4->hospital4_3
-   + z_plastic1_factory4->factory2_3 - M_plastic1_factory4_3 <= 0
- upper[availability_plastic2_factory4_3]: - z_plastic2_factory1->factory4_2
-   - z_plastic2_DUMMY_RESERVE->factory4_2
-   + z_plastic2_factory4->hospital3_3 + z_plastic2_factory4->hospital4_3
-   + z_plastic2_factory4->factory2_3 - M_plastic2_factory4_3 <= 0
- upper[availability_plastic3_factory4_3]: - z_plastic3_factory1->factory4_2
-   - z_plastic3_DUMMY_RESERVE->factory4_2
-   + z_plastic3_factory4->hospital3_3 + z_plastic3_factory4->hospital4_3
-   + z_plastic3_factory4->factory2_3 - M_plastic3_factory4_3 <= 0
- upper[availability_ppe1_factory4_3]: - z_ppe1_factory1->factory4_2
-   - z_ppe1_DUMMY_RESERVE->factory4_2 + z_ppe1_factory4->hospital3_3
-   + z_ppe1_factory4->hospital4_3 + z_ppe1_factory4->factory2_3
+ upper[availability_plastic1_factory4_3]: z_plastic1_factory4->hospital3_2
+   + z_plastic1_factory4->hospital4_2 - z_plastic1_factory1->factory4_2
+   + z_plastic1_factory4->factory2_2 - z_plastic1_DUMMY_RESERVE->factory4_2
+   - M_plastic1_factory4_3 <= 0
+ upper[availability_plastic2_factory4_3]: z_plastic2_factory4->hospital3_2
+   + z_plastic2_factory4->hospital4_2 - z_plastic2_factory1->factory4_2
+   + z_plastic2_factory4->factory2_2 - z_plastic2_DUMMY_RESERVE->factory4_2
+   - M_plastic2_factory4_3 <= 0
+ upper[availability_plastic3_factory4_3]: z_plastic3_factory4->hospital3_2
+   + z_plastic3_factory4->hospital4_2 - z_plastic3_factory1->factory4_2
+   + z_plastic3_factory4->factory2_2 - z_plastic3_DUMMY_RESERVE->factory4_2
+   - M_plastic3_factory4_3 <= 0
+ upper[availability_ppe1_factory4_3]: z_ppe1_factory4->hospital3_2
+   + z_ppe1_factory4->hospital4_2 - z_ppe1_factory1->factory4_2
+   + z_ppe1_factory4->factory2_2 - z_ppe1_DUMMY_RESERVE->factory4_2
    - M_ppe1_factory4_3 <= 0
- upper[availability_ppe2_factory4_3]: - z_ppe2_factory1->factory4_2
-   - z_ppe2_DUMMY_RESERVE->factory4_2 + z_ppe2_factory4->hospital3_3
-   + z_ppe2_factory4->hospital4_3 + z_ppe2_factory4->factory2_3
+ upper[availability_ppe2_factory4_3]: z_ppe2_factory4->hospital3_2
+   + z_ppe2_factory4->hospital4_2 - z_ppe2_factory1->factory4_2
+   + z_ppe2_factory4->factory2_2 - z_ppe2_DUMMY_RESERVE->factory4_2
    - M_ppe2_factory4_3 <= 0
- upper[availability_ppe3_factory4_3]: - z_ppe3_factory1->factory4_2
-   - z_ppe3_DUMMY_RESERVE->factory4_2 + z_ppe3_factory4->hospital3_3
-   + z_ppe3_factory4->hospital4_3 + z_ppe3_factory4->factory2_3
+ upper[availability_ppe3_factory4_3]: z_ppe3_factory4->hospital3_2
+   + z_ppe3_factory4->hospital4_2 - z_ppe3_factory1->factory4_2
+   + z_ppe3_factory4->factory2_2 - z_ppe3_DUMMY_RESERVE->factory4_2
    - M_ppe3_factory4_3 <= 0
  upper[availability_respirator1_factory4_3]:
+   z_respirator1_factory4->hospital3_2
+   + z_respirator1_factory4->hospital4_2
    - z_respirator1_factory1->factory4_2
-   - z_respirator1_DUMMY_RESERVE->factory4_2
-   + z_respirator1_factory4->hospital3_3
-   + z_respirator1_factory4->hospital4_3
-   + z_respirator1_factory4->factory2_3 - M_respirator1_factory4_3 <= 0
+   + z_respirator1_factory4->factory2_2
+   - z_respirator1_DUMMY_RESERVE->factory4_2 - M_respirator1_factory4_3
+   <= 0
  upper[availability_respirator2_factory4_3]:
+   z_respirator2_factory4->hospital3_2
+   + z_respirator2_factory4->hospital4_2
    - z_respirator2_factory1->factory4_2
-   - z_respirator2_DUMMY_RESERVE->factory4_2
-   + z_respirator2_factory4->hospital3_3
-   + z_respirator2_factory4->hospital4_3
-   + z_respirator2_factory4->factory2_3 - M_respirator2_factory4_3 <= 0
- upper[availability_metal1_factory4_4]: - z_metal1_factory1->factory4_3
-   - z_metal1_DUMMY_RESERVE->factory4_3 + z_metal1_factory4->hospital3_4
-   + z_metal1_factory4->hospital4_4 + z_metal1_factory4->factory2_4
+   + z_respirator2_factory4->factory2_2
+   - z_respirator2_DUMMY_RESERVE->factory4_2 - M_respirator2_factory4_3
+   <= 0
+ upper[availability_metal1_factory4_4]: z_metal1_factory4->hospital3_3
+   + z_metal1_factory4->hospital4_3 - z_metal1_factory1->factory4_3
+   + z_metal1_factory4->factory2_3 - z_metal1_DUMMY_RESERVE->factory4_3
    - M_metal1_factory4_4 <= 0
- upper[availability_metal2_factory4_4]: - z_metal2_factory1->factory4_3
-   - z_metal2_DUMMY_RESERVE->factory4_3 + z_metal2_factory4->hospital3_4
-   + z_metal2_factory4->hospital4_4 + z_metal2_factory4->factory2_4
+ upper[availability_metal2_factory4_4]: z_metal2_factory4->hospital3_3
+   + z_metal2_factory4->hospital4_3 - z_metal2_factory1->factory4_3
+   + z_metal2_factory4->factory2_3 - z_metal2_DUMMY_RESERVE->factory4_3
    - M_metal2_factory4_4 <= 0
- upper[availability_plastic1_factory4_4]: - z_plastic1_factory1->factory4_3
-   - z_plastic1_DUMMY_RESERVE->factory4_3
-   + z_plastic1_factory4->hospital3_4 + z_plastic1_factory4->hospital4_4
-   + z_plastic1_factory4->factory2_4 - M_plastic1_factory4_4 <= 0
- upper[availability_plastic2_factory4_4]: - z_plastic2_factory1->factory4_3
-   - z_plastic2_DUMMY_RESERVE->factory4_3
-   + z_plastic2_factory4->hospital3_4 + z_plastic2_factory4->hospital4_4
-   + z_plastic2_factory4->factory2_4 - M_plastic2_factory4_4 <= 0
- upper[availability_plastic3_factory4_4]: - z_plastic3_factory1->factory4_3
-   - z_plastic3_DUMMY_RESERVE->factory4_3
-   + z_plastic3_factory4->hospital3_4 + z_plastic3_factory4->hospital4_4
-   + z_plastic3_factory4->factory2_4 - M_plastic3_factory4_4 <= 0
- upper[availability_ppe1_factory4_4]: - z_ppe1_factory1->factory4_3
-   - z_ppe1_DUMMY_RESERVE->factory4_3 + z_ppe1_factory4->hospital3_4
-   + z_ppe1_factory4->hospital4_4 + z_ppe1_factory4->factory2_4
+ upper[availability_plastic1_factory4_4]: z_plastic1_factory4->hospital3_3
+   + z_plastic1_factory4->hospital4_3 - z_plastic1_factory1->factory4_3
+   + z_plastic1_factory4->factory2_3 - z_plastic1_DUMMY_RESERVE->factory4_3
+   - M_plastic1_factory4_4 <= 0
+ upper[availability_plastic2_factory4_4]: z_plastic2_factory4->hospital3_3
+   + z_plastic2_factory4->hospital4_3 - z_plastic2_factory1->factory4_3
+   + z_plastic2_factory4->factory2_3 - z_plastic2_DUMMY_RESERVE->factory4_3
+   - M_plastic2_factory4_4 <= 0
+ upper[availability_plastic3_factory4_4]: z_plastic3_factory4->hospital3_3
+   + z_plastic3_factory4->hospital4_3 - z_plastic3_factory1->factory4_3
+   + z_plastic3_factory4->factory2_3 - z_plastic3_DUMMY_RESERVE->factory4_3
+   - M_plastic3_factory4_4 <= 0
+ upper[availability_ppe1_factory4_4]: z_ppe1_factory4->hospital3_3
+   + z_ppe1_factory4->hospital4_3 - z_ppe1_factory1->factory4_3
+   + z_ppe1_factory4->factory2_3 - z_ppe1_DUMMY_RESERVE->factory4_3
    - M_ppe1_factory4_4 <= 0
- upper[availability_ppe2_factory4_4]: - z_ppe2_factory1->factory4_3
-   - z_ppe2_DUMMY_RESERVE->factory4_3 + z_ppe2_factory4->hospital3_4
-   + z_ppe2_factory4->hospital4_4 + z_ppe2_factory4->factory2_4
+ upper[availability_ppe2_factory4_4]: z_ppe2_factory4->hospital3_3
+   + z_ppe2_factory4->hospital4_3 - z_ppe2_factory1->factory4_3
+   + z_ppe2_factory4->factory2_3 - z_ppe2_DUMMY_RESERVE->factory4_3
    - M_ppe2_factory4_4 <= 0
- upper[availability_ppe3_factory4_4]: - z_ppe3_factory1->factory4_3
-   - z_ppe3_DUMMY_RESERVE->factory4_3 + z_ppe3_factory4->hospital3_4
-   + z_ppe3_factory4->hospital4_4 + z_ppe3_factory4->factory2_4
+ upper[availability_ppe3_factory4_4]: z_ppe3_factory4->hospital3_3
+   + z_ppe3_factory4->hospital4_3 - z_ppe3_factory1->factory4_3
+   + z_ppe3_factory4->factory2_3 - z_ppe3_DUMMY_RESERVE->factory4_3
    - M_ppe3_factory4_4 <= 0
  upper[availability_respirator1_factory4_4]:
+   z_respirator1_factory4->hospital3_3
+   + z_respirator1_factory4->hospital4_3
    - z_respirator1_factory1->factory4_3
-   - z_respirator1_DUMMY_RESERVE->factory4_3
-   + z_respirator1_factory4->hospital3_4
-   + z_respirator1_factory4->hospital4_4
-   + z_respirator1_factory4->factory2_4 - M_respirator1_factory4_4 <= 0
+   + z_respirator1_factory4->factory2_3
+   - z_respirator1_DUMMY_RESERVE->factory4_3 - M_respirator1_factory4_4
+   <= 0
  upper[availability_respirator2_factory4_4]:
+   z_respirator2_factory4->hospital3_3
+   + z_respirator2_factory4->hospital4_3
    - z_respirator2_factory1->factory4_3
-   - z_respirator2_DUMMY_RESERVE->factory4_3
-   + z_respirator2_factory4->hospital3_4
-   + z_respirator2_factory4->hospital4_4
-   + z_respirator2_factory4->factory2_4 - M_respirator2_factory4_4 <= 0
- upper[availability_metal1_factory4_5]: - z_metal1_factory1->factory4_4
-   - z_metal1_DUMMY_RESERVE->factory4_4 + z_metal1_factory4->hospital3_5
-   + z_metal1_factory4->hospital4_5 + z_metal1_factory4->factory2_5
+   + z_respirator2_factory4->factory2_3
+   - z_respirator2_DUMMY_RESERVE->factory4_3 - M_respirator2_factory4_4
+   <= 0
+ upper[availability_metal1_factory4_5]: z_metal1_factory4->hospital3_4
+   + z_metal1_factory4->hospital4_4 - z_metal1_factory1->factory4_4
+   + z_metal1_factory4->factory2_4 - z_metal1_DUMMY_RESERVE->factory4_4
    - M_metal1_factory4_5 <= 0
- upper[availability_metal2_factory4_5]: - z_metal2_factory1->factory4_4
-   - z_metal2_DUMMY_RESERVE->factory4_4 + z_metal2_factory4->hospital3_5
-   + z_metal2_factory4->hospital4_5 + z_metal2_factory4->factory2_5
+ upper[availability_metal2_factory4_5]: z_metal2_factory4->hospital3_4
+   + z_metal2_factory4->hospital4_4 - z_metal2_factory1->factory4_4
+   + z_metal2_factory4->factory2_4 - z_metal2_DUMMY_RESERVE->factory4_4
    - M_metal2_factory4_5 <= 0
- upper[availability_plastic1_factory4_5]: - z_plastic1_factory1->factory4_4
-   - z_plastic1_DUMMY_RESERVE->factory4_4
-   + z_plastic1_factory4->hospital3_5 + z_plastic1_factory4->hospital4_5
-   + z_plastic1_factory4->factory2_5 - M_plastic1_factory4_5 <= 0
- upper[availability_plastic2_factory4_5]: - z_plastic2_factory1->factory4_4
-   - z_plastic2_DUMMY_RESERVE->factory4_4
-   + z_plastic2_factory4->hospital3_5 + z_plastic2_factory4->hospital4_5
-   + z_plastic2_factory4->factory2_5 - M_plastic2_factory4_5 <= 0
- upper[availability_plastic3_factory4_5]: - z_plastic3_factory1->factory4_4
-   - z_plastic3_DUMMY_RESERVE->factory4_4
-   + z_plastic3_factory4->hospital3_5 + z_plastic3_factory4->hospital4_5
-   + z_plastic3_factory4->factory2_5 - M_plastic3_factory4_5 <= 0
- upper[availability_ppe1_factory4_5]: - z_ppe1_factory1->factory4_4
-   - z_ppe1_DUMMY_RESERVE->factory4_4 + z_ppe1_factory4->hospital3_5
-   + z_ppe1_factory4->hospital4_5 + z_ppe1_factory4->factory2_5
+ upper[availability_plastic1_factory4_5]: z_plastic1_factory4->hospital3_4
+   + z_plastic1_factory4->hospital4_4 - z_plastic1_factory1->factory4_4
+   + z_plastic1_factory4->factory2_4 - z_plastic1_DUMMY_RESERVE->factory4_4
+   - M_plastic1_factory4_5 <= 0
+ upper[availability_plastic2_factory4_5]: z_plastic2_factory4->hospital3_4
+   + z_plastic2_factory4->hospital4_4 - z_plastic2_factory1->factory4_4
+   + z_plastic2_factory4->factory2_4 - z_plastic2_DUMMY_RESERVE->factory4_4
+   - M_plastic2_factory4_5 <= 0
+ upper[availability_plastic3_factory4_5]: z_plastic3_factory4->hospital3_4
+   + z_plastic3_factory4->hospital4_4 - z_plastic3_factory1->factory4_4
+   + z_plastic3_factory4->factory2_4 - z_plastic3_DUMMY_RESERVE->factory4_4
+   - M_plastic3_factory4_5 <= 0
+ upper[availability_ppe1_factory4_5]: z_ppe1_factory4->hospital3_4
+   + z_ppe1_factory4->hospital4_4 - z_ppe1_factory1->factory4_4
+   + z_ppe1_factory4->factory2_4 - z_ppe1_DUMMY_RESERVE->factory4_4
    - M_ppe1_factory4_5 <= 0
- upper[availability_ppe2_factory4_5]: - z_ppe2_factory1->factory4_4
-   - z_ppe2_DUMMY_RESERVE->factory4_4 + z_ppe2_factory4->hospital3_5
-   + z_ppe2_factory4->hospital4_5 + z_ppe2_factory4->factory2_5
+ upper[availability_ppe2_factory4_5]: z_ppe2_factory4->hospital3_4
+   + z_ppe2_factory4->hospital4_4 - z_ppe2_factory1->factory4_4
+   + z_ppe2_factory4->factory2_4 - z_ppe2_DUMMY_RESERVE->factory4_4
    - M_ppe2_factory4_5 <= 0
- upper[availability_ppe3_factory4_5]: - z_ppe3_factory1->factory4_4
-   - z_ppe3_DUMMY_RESERVE->factory4_4 + z_ppe3_factory4->hospital3_5
-   + z_ppe3_factory4->hospital4_5 + z_ppe3_factory4->factory2_5
+ upper[availability_ppe3_factory4_5]: z_ppe3_factory4->hospital3_4
+   + z_ppe3_factory4->hospital4_4 - z_ppe3_factory1->factory4_4
+   + z_ppe3_factory4->factory2_4 - z_ppe3_DUMMY_RESERVE->factory4_4
    - M_ppe3_factory4_5 <= 0
  upper[availability_respirator1_factory4_5]:
+   z_respirator1_factory4->hospital3_4
+   + z_respirator1_factory4->hospital4_4
    - z_respirator1_factory1->factory4_4
-   - z_respirator1_DUMMY_RESERVE->factory4_4
-   + z_respirator1_factory4->hospital3_5
-   + z_respirator1_factory4->hospital4_5
-   + z_respirator1_factory4->factory2_5 - M_respirator1_factory4_5 <= 0
+   + z_respirator1_factory4->factory2_4
+   - z_respirator1_DUMMY_RESERVE->factory4_4 - M_respirator1_factory4_5
+   <= 0
  upper[availability_respirator2_factory4_5]:
+   z_respirator2_factory4->hospital3_4
+   + z_respirator2_factory4->hospital4_4
    - z_respirator2_factory1->factory4_4
-   - z_respirator2_DUMMY_RESERVE->factory4_4
-   + z_respirator2_factory4->hospital3_5
-   + z_respirator2_factory4->hospital4_5
-   + z_respirator2_factory4->factory2_5 - M_respirator2_factory4_5 <= 0
- upper[availability_metal1_factory4_6]: - z_metal1_factory1->factory4_5
-   - z_metal1_DUMMY_RESERVE->factory4_5 + z_metal1_factory4->hospital3_6
-   + z_metal1_factory4->hospital4_6 + z_metal1_factory4->factory2_6
+   + z_respirator2_factory4->factory2_4
+   - z_respirator2_DUMMY_RESERVE->factory4_4 - M_respirator2_factory4_5
+   <= 0
+ upper[availability_metal1_factory4_6]: z_metal1_factory4->hospital3_5
+   + z_metal1_factory4->hospital4_5 - z_metal1_factory1->factory4_5
+   + z_metal1_factory4->factory2_5 - z_metal1_DUMMY_RESERVE->factory4_5
    - M_metal1_factory4_6 <= 0
- upper[availability_metal2_factory4_6]: - z_metal2_factory1->factory4_5
-   - z_metal2_DUMMY_RESERVE->factory4_5 + z_metal2_factory4->hospital3_6
-   + z_metal2_factory4->hospital4_6 + z_metal2_factory4->factory2_6
+ upper[availability_metal2_factory4_6]: z_metal2_factory4->hospital3_5
+   + z_metal2_factory4->hospital4_5 - z_metal2_factory1->factory4_5
+   + z_metal2_factory4->factory2_5 - z_metal2_DUMMY_RESERVE->factory4_5
    - M_metal2_factory4_6 <= 0
- upper[availability_plastic1_factory4_6]: - z_plastic1_factory1->factory4_5
-   - z_plastic1_DUMMY_RESERVE->factory4_5
-   + z_plastic1_factory4->hospital3_6 + z_plastic1_factory4->hospital4_6
-   + z_plastic1_factory4->factory2_6 - M_plastic1_factory4_6 <= 0
- upper[availability_plastic2_factory4_6]: - z_plastic2_factory1->factory4_5
-   - z_plastic2_DUMMY_RESERVE->factory4_5
-   + z_plastic2_factory4->hospital3_6 + z_plastic2_factory4->hospital4_6
-   + z_plastic2_factory4->factory2_6 - M_plastic2_factory4_6 <= 0
- upper[availability_plastic3_factory4_6]: - z_plastic3_factory1->factory4_5
-   - z_plastic3_DUMMY_RESERVE->factory4_5
-   + z_plastic3_factory4->hospital3_6 + z_plastic3_factory4->hospital4_6
-   + z_plastic3_factory4->factory2_6 - M_plastic3_factory4_6 <= 0
- upper[availability_ppe1_factory4_6]: - z_ppe1_factory1->factory4_5
-   - z_ppe1_DUMMY_RESERVE->factory4_5 + z_ppe1_factory4->hospital3_6
-   + z_ppe1_factory4->hospital4_6 + z_ppe1_factory4->factory2_6
+ upper[availability_plastic1_factory4_6]: z_plastic1_factory4->hospital3_5
+   + z_plastic1_factory4->hospital4_5 - z_plastic1_factory1->factory4_5
+   + z_plastic1_factory4->factory2_5 - z_plastic1_DUMMY_RESERVE->factory4_5
+   - M_plastic1_factory4_6 <= 0
+ upper[availability_plastic2_factory4_6]: z_plastic2_factory4->hospital3_5
+   + z_plastic2_factory4->hospital4_5 - z_plastic2_factory1->factory4_5
+   + z_plastic2_factory4->factory2_5 - z_plastic2_DUMMY_RESERVE->factory4_5
+   - M_plastic2_factory4_6 <= 0
+ upper[availability_plastic3_factory4_6]: z_plastic3_factory4->hospital3_5
+   + z_plastic3_factory4->hospital4_5 - z_plastic3_factory1->factory4_5
+   + z_plastic3_factory4->factory2_5 - z_plastic3_DUMMY_RESERVE->factory4_5
+   - M_plastic3_factory4_6 <= 0
+ upper[availability_ppe1_factory4_6]: z_ppe1_factory4->hospital3_5
+   + z_ppe1_factory4->hospital4_5 - z_ppe1_factory1->factory4_5
+   + z_ppe1_factory4->factory2_5 - z_ppe1_DUMMY_RESERVE->factory4_5
    - M_ppe1_factory4_6 <= 0
- upper[availability_ppe2_factory4_6]: - z_ppe2_factory1->factory4_5
-   - z_ppe2_DUMMY_RESERVE->factory4_5 + z_ppe2_factory4->hospital3_6
-   + z_ppe2_factory4->hospital4_6 + z_ppe2_factory4->factory2_6
+ upper[availability_ppe2_factory4_6]: z_ppe2_factory4->hospital3_5
+   + z_ppe2_factory4->hospital4_5 - z_ppe2_factory1->factory4_5
+   + z_ppe2_factory4->factory2_5 - z_ppe2_DUMMY_RESERVE->factory4_5
    - M_ppe2_factory4_6 <= 0
- upper[availability_ppe3_factory4_6]: - z_ppe3_factory1->factory4_5
-   - z_ppe3_DUMMY_RESERVE->factory4_5 + z_ppe3_factory4->hospital3_6
-   + z_ppe3_factory4->hospital4_6 + z_ppe3_factory4->factory2_6
+ upper[availability_ppe3_factory4_6]: z_ppe3_factory4->hospital3_5
+   + z_ppe3_factory4->hospital4_5 - z_ppe3_factory1->factory4_5
+   + z_ppe3_factory4->factory2_5 - z_ppe3_DUMMY_RESERVE->factory4_5
    - M_ppe3_factory4_6 <= 0
  upper[availability_respirator1_factory4_6]:
+   z_respirator1_factory4->hospital3_5
+   + z_respirator1_factory4->hospital4_5
    - z_respirator1_factory1->factory4_5
-   - z_respirator1_DUMMY_RESERVE->factory4_5
-   + z_respirator1_factory4->hospital3_6
-   + z_respirator1_factory4->hospital4_6
-   + z_respirator1_factory4->factory2_6 - M_respirator1_factory4_6 <= 0
+   + z_respirator1_factory4->factory2_5
+   - z_respirator1_DUMMY_RESERVE->factory4_5 - M_respirator1_factory4_6
+   <= 0
  upper[availability_respirator2_factory4_6]:
+   z_respirator2_factory4->hospital3_5
+   + z_respirator2_factory4->hospital4_5
    - z_respirator2_factory1->factory4_5
-   - z_respirator2_DUMMY_RESERVE->factory4_5
-   + z_respirator2_factory4->hospital3_6
-   + z_respirator2_factory4->hospital4_6
-   + z_respirator2_factory4->factory2_6 - M_respirator2_factory4_6 <= 0
- upper[availability_metal1_factory4_7]: - z_metal1_factory1->factory4_6
-   - z_metal1_DUMMY_RESERVE->factory4_6 + z_metal1_factory4->hospital3_7
-   + z_metal1_factory4->hospital4_7 + z_metal1_factory4->factory2_7
+   + z_respirator2_factory4->factory2_5
+   - z_respirator2_DUMMY_RESERVE->factory4_5 - M_respirator2_factory4_6
+   <= 0
+ upper[availability_metal1_factory4_7]: z_metal1_factory4->hospital3_6
+   + z_metal1_factory4->hospital4_6 - z_metal1_factory1->factory4_6
+   + z_metal1_factory4->factory2_6 - z_metal1_DUMMY_RESERVE->factory4_6
    - M_metal1_factory4_7 <= 0
- upper[availability_metal2_factory4_7]: - z_metal2_factory1->factory4_6
-   - z_metal2_DUMMY_RESERVE->factory4_6 + z_metal2_factory4->hospital3_7
-   + z_metal2_factory4->hospital4_7 + z_metal2_factory4->factory2_7
+ upper[availability_metal2_factory4_7]: z_metal2_factory4->hospital3_6
+   + z_metal2_factory4->hospital4_6 - z_metal2_factory1->factory4_6
+   + z_metal2_factory4->factory2_6 - z_metal2_DUMMY_RESERVE->factory4_6
    - M_metal2_factory4_7 <= 0
- upper[availability_plastic1_factory4_7]: - z_plastic1_factory1->factory4_6
-   - z_plastic1_DUMMY_RESERVE->factory4_6
-   + z_plastic1_factory4->hospital3_7 + z_plastic1_factory4->hospital4_7
-   + z_plastic1_factory4->factory2_7 - M_plastic1_factory4_7 <= 0
- upper[availability_plastic2_factory4_7]: - z_plastic2_factory1->factory4_6
-   - z_plastic2_DUMMY_RESERVE->factory4_6
-   + z_plastic2_factory4->hospital3_7 + z_plastic2_factory4->hospital4_7
-   + z_plastic2_factory4->factory2_7 - M_plastic2_factory4_7 <= 0
- upper[availability_plastic3_factory4_7]: - z_plastic3_factory1->factory4_6
-   - z_plastic3_DUMMY_RESERVE->factory4_6
-   + z_plastic3_factory4->hospital3_7 + z_plastic3_factory4->hospital4_7
-   + z_plastic3_factory4->factory2_7 - M_plastic3_factory4_7 <= 0
- upper[availability_ppe1_factory4_7]: - z_ppe1_factory1->factory4_6
-   - z_ppe1_DUMMY_RESERVE->factory4_6 + z_ppe1_factory4->hospital3_7
-   + z_ppe1_factory4->hospital4_7 + z_ppe1_factory4->factory2_7
+ upper[availability_plastic1_factory4_7]: z_plastic1_factory4->hospital3_6
+   + z_plastic1_factory4->hospital4_6 - z_plastic1_factory1->factory4_6
+   + z_plastic1_factory4->factory2_6 - z_plastic1_DUMMY_RESERVE->factory4_6
+   - M_plastic1_factory4_7 <= 0
+ upper[availability_plastic2_factory4_7]: z_plastic2_factory4->hospital3_6
+   + z_plastic2_factory4->hospital4_6 - z_plastic2_factory1->factory4_6
+   + z_plastic2_factory4->factory2_6 - z_plastic2_DUMMY_RESERVE->factory4_6
+   - M_plastic2_factory4_7 <= 0
+ upper[availability_plastic3_factory4_7]: z_plastic3_factory4->hospital3_6
+   + z_plastic3_factory4->hospital4_6 - z_plastic3_factory1->factory4_6
+   + z_plastic3_factory4->factory2_6 - z_plastic3_DUMMY_RESERVE->factory4_6
+   - M_plastic3_factory4_7 <= 0
+ upper[availability_ppe1_factory4_7]: z_ppe1_factory4->hospital3_6
+   + z_ppe1_factory4->hospital4_6 - z_ppe1_factory1->factory4_6
+   + z_ppe1_factory4->factory2_6 - z_ppe1_DUMMY_RESERVE->factory4_6
    - M_ppe1_factory4_7 <= 0
- upper[availability_ppe2_factory4_7]: - z_ppe2_factory1->factory4_6
-   - z_ppe2_DUMMY_RESERVE->factory4_6 + z_ppe2_factory4->hospital3_7
-   + z_ppe2_factory4->hospital4_7 + z_ppe2_factory4->factory2_7
+ upper[availability_ppe2_factory4_7]: z_ppe2_factory4->hospital3_6
+   + z_ppe2_factory4->hospital4_6 - z_ppe2_factory1->factory4_6
+   + z_ppe2_factory4->factory2_6 - z_ppe2_DUMMY_RESERVE->factory4_6
    - M_ppe2_factory4_7 <= 0
- upper[availability_ppe3_factory4_7]: - z_ppe3_factory1->factory4_6
-   - z_ppe3_DUMMY_RESERVE->factory4_6 + z_ppe3_factory4->hospital3_7
-   + z_ppe3_factory4->hospital4_7 + z_ppe3_factory4->factory2_7
+ upper[availability_ppe3_factory4_7]: z_ppe3_factory4->hospital3_6
+   + z_ppe3_factory4->hospital4_6 - z_ppe3_factory1->factory4_6
+   + z_ppe3_factory4->factory2_6 - z_ppe3_DUMMY_RESERVE->factory4_6
    - M_ppe3_factory4_7 <= 0
  upper[availability_respirator1_factory4_7]:
+   z_respirator1_factory4->hospital3_6
+   + z_respirator1_factory4->hospital4_6
    - z_respirator1_factory1->factory4_6
-   - z_respirator1_DUMMY_RESERVE->factory4_6
-   + z_respirator1_factory4->hospital3_7
-   + z_respirator1_factory4->hospital4_7
-   + z_respirator1_factory4->factory2_7 - M_respirator1_factory4_7 <= 0
+   + z_respirator1_factory4->factory2_6
+   - z_respirator1_DUMMY_RESERVE->factory4_6 - M_respirator1_factory4_7
+   <= 0
  upper[availability_respirator2_factory4_7]:
+   z_respirator2_factory4->hospital3_6
+   + z_respirator2_factory4->hospital4_6
    - z_respirator2_factory1->factory4_6
-   - z_respirator2_DUMMY_RESERVE->factory4_6
-   + z_respirator2_factory4->hospital3_7
-   + z_respirator2_factory4->hospital4_7
-   + z_respirator2_factory4->factory2_7 - M_respirator2_factory4_7 <= 0
- upper[availability_metal1_factory4_8]: - z_metal1_factory1->factory4_7
-   - z_metal1_DUMMY_RESERVE->factory4_7 + z_metal1_factory4->hospital3_8
-   + z_metal1_factory4->hospital4_8 + z_metal1_factory4->factory2_8
+   + z_respirator2_factory4->factory2_6
+   - z_respirator2_DUMMY_RESERVE->factory4_6 - M_respirator2_factory4_7
+   <= 0
+ upper[availability_metal1_factory4_8]: z_metal1_factory4->hospital3_7
+   + z_metal1_factory4->hospital4_7 - z_metal1_factory1->factory4_7
+   + z_metal1_factory4->factory2_7 - z_metal1_DUMMY_RESERVE->factory4_7
    - M_metal1_factory4_8 <= 0
- upper[availability_metal2_factory4_8]: - z_metal2_factory1->factory4_7
-   - z_metal2_DUMMY_RESERVE->factory4_7 + z_metal2_factory4->hospital3_8
-   + z_metal2_factory4->hospital4_8 + z_metal2_factory4->factory2_8
+ upper[availability_metal2_factory4_8]: z_metal2_factory4->hospital3_7
+   + z_metal2_factory4->hospital4_7 - z_metal2_factory1->factory4_7
+   + z_metal2_factory4->factory2_7 - z_metal2_DUMMY_RESERVE->factory4_7
    - M_metal2_factory4_8 <= 0
- upper[availability_plastic1_factory4_8]: - z_plastic1_factory1->factory4_7
-   - z_plastic1_DUMMY_RESERVE->factory4_7
-   + z_plastic1_factory4->hospital3_8 + z_plastic1_factory4->hospital4_8
-   + z_plastic1_factory4->factory2_8 - M_plastic1_factory4_8 <= 0
- upper[availability_plastic2_factory4_8]: - z_plastic2_factory1->factory4_7
-   - z_plastic2_DUMMY_RESERVE->factory4_7
-   + z_plastic2_factory4->hospital3_8 + z_plastic2_factory4->hospital4_8
-   + z_plastic2_factory4->factory2_8 - M_plastic2_factory4_8 <= 0
- upper[availability_plastic3_factory4_8]: - z_plastic3_factory1->factory4_7
-   - z_plastic3_DUMMY_RESERVE->factory4_7
-   + z_plastic3_factory4->hospital3_8 + z_plastic3_factory4->hospital4_8
-   + z_plastic3_factory4->factory2_8 - M_plastic3_factory4_8 <= 0
- upper[availability_ppe1_factory4_8]: - z_ppe1_factory1->factory4_7
-   - z_ppe1_DUMMY_RESERVE->factory4_7 + z_ppe1_factory4->hospital3_8
-   + z_ppe1_factory4->hospital4_8 + z_ppe1_factory4->factory2_8
+ upper[availability_plastic1_factory4_8]: z_plastic1_factory4->hospital3_7
+   + z_plastic1_factory4->hospital4_7 - z_plastic1_factory1->factory4_7
+   + z_plastic1_factory4->factory2_7 - z_plastic1_DUMMY_RESERVE->factory4_7
+   - M_plastic1_factory4_8 <= 0
+ upper[availability_plastic2_factory4_8]: z_plastic2_factory4->hospital3_7
+   + z_plastic2_factory4->hospital4_7 - z_plastic2_factory1->factory4_7
+   + z_plastic2_factory4->factory2_7 - z_plastic2_DUMMY_RESERVE->factory4_7
+   - M_plastic2_factory4_8 <= 0
+ upper[availability_plastic3_factory4_8]: z_plastic3_factory4->hospital3_7
+   + z_plastic3_factory4->hospital4_7 - z_plastic3_factory1->factory4_7
+   + z_plastic3_factory4->factory2_7 - z_plastic3_DUMMY_RESERVE->factory4_7
+   - M_plastic3_factory4_8 <= 0
+ upper[availability_ppe1_factory4_8]: z_ppe1_factory4->hospital3_7
+   + z_ppe1_factory4->hospital4_7 - z_ppe1_factory1->factory4_7
+   + z_ppe1_factory4->factory2_7 - z_ppe1_DUMMY_RESERVE->factory4_7
    - M_ppe1_factory4_8 <= 0
- upper[availability_ppe2_factory4_8]: - z_ppe2_factory1->factory4_7
-   - z_ppe2_DUMMY_RESERVE->factory4_7 + z_ppe2_factory4->hospital3_8
-   + z_ppe2_factory4->hospital4_8 + z_ppe2_factory4->factory2_8
+ upper[availability_ppe2_factory4_8]: z_ppe2_factory4->hospital3_7
+   + z_ppe2_factory4->hospital4_7 - z_ppe2_factory1->factory4_7
+   + z_ppe2_factory4->factory2_7 - z_ppe2_DUMMY_RESERVE->factory4_7
    - M_ppe2_factory4_8 <= 0
- upper[availability_ppe3_factory4_8]: - z_ppe3_factory1->factory4_7
-   - z_ppe3_DUMMY_RESERVE->factory4_7 + z_ppe3_factory4->hospital3_8
-   + z_ppe3_factory4->hospital4_8 + z_ppe3_factory4->factory2_8
+ upper[availability_ppe3_factory4_8]: z_ppe3_factory4->hospital3_7
+   + z_ppe3_factory4->hospital4_7 - z_ppe3_factory1->factory4_7
+   + z_ppe3_factory4->factory2_7 - z_ppe3_DUMMY_RESERVE->factory4_7
    - M_ppe3_factory4_8 <= 0
  upper[availability_respirator1_factory4_8]:
+   z_respirator1_factory4->hospital3_7
+   + z_respirator1_factory4->hospital4_7
    - z_respirator1_factory1->factory4_7
-   - z_respirator1_DUMMY_RESERVE->factory4_7
-   + z_respirator1_factory4->hospital3_8
-   + z_respirator1_factory4->hospital4_8
-   + z_respirator1_factory4->factory2_8 - M_respirator1_factory4_8 <= 0
+   + z_respirator1_factory4->factory2_7
+   - z_respirator1_DUMMY_RESERVE->factory4_7 - M_respirator1_factory4_8
+   <= 0
  upper[availability_respirator2_factory4_8]:
+   z_respirator2_factory4->hospital3_7
+   + z_respirator2_factory4->hospital4_7
    - z_respirator2_factory1->factory4_7
-   - z_respirator2_DUMMY_RESERVE->factory4_7
-   + z_respirator2_factory4->hospital3_8
-   + z_respirator2_factory4->hospital4_8
-   + z_respirator2_factory4->factory2_8 - M_respirator2_factory4_8 <= 0
- upper[availability_metal1_factory4_9]: - z_metal1_factory1->factory4_8
-   - z_metal1_DUMMY_RESERVE->factory4_8 + z_metal1_factory4->hospital3_9
-   + z_metal1_factory4->hospital4_9 + z_metal1_factory4->factory2_9
+   + z_respirator2_factory4->factory2_7
+   - z_respirator2_DUMMY_RESERVE->factory4_7 - M_respirator2_factory4_8
+   <= 0
+ upper[availability_metal1_factory4_9]: z_metal1_factory4->hospital3_8
+   + z_metal1_factory4->hospital4_8 - z_metal1_factory1->factory4_8
+   + z_metal1_factory4->factory2_8 - z_metal1_DUMMY_RESERVE->factory4_8
    - M_metal1_factory4_9 <= 0
- upper[availability_metal2_factory4_9]: - z_metal2_factory1->factory4_8
-   - z_metal2_DUMMY_RESERVE->factory4_8 + z_metal2_factory4->hospital3_9
-   + z_metal2_factory4->hospital4_9 + z_metal2_factory4->factory2_9
+ upper[availability_metal2_factory4_9]: z_metal2_factory4->hospital3_8
+   + z_metal2_factory4->hospital4_8 - z_metal2_factory1->factory4_8
+   + z_metal2_factory4->factory2_8 - z_metal2_DUMMY_RESERVE->factory4_8
    - M_metal2_factory4_9 <= 0
- upper[availability_plastic1_factory4_9]: - z_plastic1_factory1->factory4_8
-   - z_plastic1_DUMMY_RESERVE->factory4_8
-   + z_plastic1_factory4->hospital3_9 + z_plastic1_factory4->hospital4_9
-   + z_plastic1_factory4->factory2_9 - M_plastic1_factory4_9 <= 0
- upper[availability_plastic2_factory4_9]: - z_plastic2_factory1->factory4_8
-   - z_plastic2_DUMMY_RESERVE->factory4_8
-   + z_plastic2_factory4->hospital3_9 + z_plastic2_factory4->hospital4_9
-   + z_plastic2_factory4->factory2_9 - M_plastic2_factory4_9 <= 0
- upper[availability_plastic3_factory4_9]: - z_plastic3_factory1->factory4_8
-   - z_plastic3_DUMMY_RESERVE->factory4_8
-   + z_plastic3_factory4->hospital3_9 + z_plastic3_factory4->hospital4_9
-   + z_plastic3_factory4->factory2_9 - M_plastic3_factory4_9 <= 0
- upper[availability_ppe1_factory4_9]: - z_ppe1_factory1->factory4_8
-   - z_ppe1_DUMMY_RESERVE->factory4_8 + z_ppe1_factory4->hospital3_9
-   + z_ppe1_factory4->hospital4_9 + z_ppe1_factory4->factory2_9
+ upper[availability_plastic1_factory4_9]: z_plastic1_factory4->hospital3_8
+   + z_plastic1_factory4->hospital4_8 - z_plastic1_factory1->factory4_8
+   + z_plastic1_factory4->factory2_8 - z_plastic1_DUMMY_RESERVE->factory4_8
+   - M_plastic1_factory4_9 <= 0
+ upper[availability_plastic2_factory4_9]: z_plastic2_factory4->hospital3_8
+   + z_plastic2_factory4->hospital4_8 - z_plastic2_factory1->factory4_8
+   + z_plastic2_factory4->factory2_8 - z_plastic2_DUMMY_RESERVE->factory4_8
+   - M_plastic2_factory4_9 <= 0
+ upper[availability_plastic3_factory4_9]: z_plastic3_factory4->hospital3_8
+   + z_plastic3_factory4->hospital4_8 - z_plastic3_factory1->factory4_8
+   + z_plastic3_factory4->factory2_8 - z_plastic3_DUMMY_RESERVE->factory4_8
+   - M_plastic3_factory4_9 <= 0
+ upper[availability_ppe1_factory4_9]: z_ppe1_factory4->hospital3_8
+   + z_ppe1_factory4->hospital4_8 - z_ppe1_factory1->factory4_8
+   + z_ppe1_factory4->factory2_8 - z_ppe1_DUMMY_RESERVE->factory4_8
    - M_ppe1_factory4_9 <= 0
- upper[availability_ppe2_factory4_9]: - z_ppe2_factory1->factory4_8
-   - z_ppe2_DUMMY_RESERVE->factory4_8 + z_ppe2_factory4->hospital3_9
-   + z_ppe2_factory4->hospital4_9 + z_ppe2_factory4->factory2_9
+ upper[availability_ppe2_factory4_9]: z_ppe2_factory4->hospital3_8
+   + z_ppe2_factory4->hospital4_8 - z_ppe2_factory1->factory4_8
+   + z_ppe2_factory4->factory2_8 - z_ppe2_DUMMY_RESERVE->factory4_8
    - M_ppe2_factory4_9 <= 0
- upper[availability_ppe3_factory4_9]: - z_ppe3_factory1->factory4_8
-   - z_ppe3_DUMMY_RESERVE->factory4_8 + z_ppe3_factory4->hospital3_9
-   + z_ppe3_factory4->hospital4_9 + z_ppe3_factory4->factory2_9
+ upper[availability_ppe3_factory4_9]: z_ppe3_factory4->hospital3_8
+   + z_ppe3_factory4->hospital4_8 - z_ppe3_factory1->factory4_8
+   + z_ppe3_factory4->factory2_8 - z_ppe3_DUMMY_RESERVE->factory4_8
    - M_ppe3_factory4_9 <= 0
  upper[availability_respirator1_factory4_9]:
+   z_respirator1_factory4->hospital3_8
+   + z_respirator1_factory4->hospital4_8
    - z_respirator1_factory1->factory4_8
-   - z_respirator1_DUMMY_RESERVE->factory4_8
-   + z_respirator1_factory4->hospital3_9
-   + z_respirator1_factory4->hospital4_9
-   + z_respirator1_factory4->factory2_9 - M_respirator1_factory4_9 <= 0
+   + z_respirator1_factory4->factory2_8
+   - z_respirator1_DUMMY_RESERVE->factory4_8 - M_respirator1_factory4_9
+   <= 0
  upper[availability_respirator2_factory4_9]:
+   z_respirator2_factory4->hospital3_8
+   + z_respirator2_factory4->hospital4_8
    - z_respirator2_factory1->factory4_8
-   - z_respirator2_DUMMY_RESERVE->factory4_8
-   + z_respirator2_factory4->hospital3_9
-   + z_respirator2_factory4->hospital4_9
-   + z_respirator2_factory4->factory2_9 - M_respirator2_factory4_9 <= 0
- upper[availability_metal1_factory4_10]: - z_metal1_factory1->factory4_9
-   - z_metal1_DUMMY_RESERVE->factory4_9 + z_metal1_factory4->hospital3_10
-   + z_metal1_factory4->hospital4_10 + z_metal1_factory4->factory2_10
+   + z_respirator2_factory4->factory2_8
+   - z_respirator2_DUMMY_RESERVE->factory4_8 - M_respirator2_factory4_9
+   <= 0
+ upper[availability_metal1_factory4_10]: z_metal1_factory4->hospital3_9
+   + z_metal1_factory4->hospital4_9 - z_metal1_factory1->factory4_9
+   + z_metal1_factory4->factory2_9 - z_metal1_DUMMY_RESERVE->factory4_9
    - M_metal1_factory4_10 <= 0
- upper[availability_metal2_factory4_10]: - z_metal2_factory1->factory4_9
-   - z_metal2_DUMMY_RESERVE->factory4_9 + z_metal2_factory4->hospital3_10
-   + z_metal2_factory4->hospital4_10 + z_metal2_factory4->factory2_10
+ upper[availability_metal2_factory4_10]: z_metal2_factory4->hospital3_9
+   + z_metal2_factory4->hospital4_9 - z_metal2_factory1->factory4_9
+   + z_metal2_factory4->factory2_9 - z_metal2_DUMMY_RESERVE->factory4_9
    - M_metal2_factory4_10 <= 0
- upper[availability_plastic1_factory4_10]:
-   - z_plastic1_factory1->factory4_9 - z_plastic1_DUMMY_RESERVE->factory4_9
-   + z_plastic1_factory4->hospital3_10 + z_plastic1_factory4->hospital4_10
-   + z_plastic1_factory4->factory2_10 - M_plastic1_factory4_10 <= 0
- upper[availability_plastic2_factory4_10]:
-   - z_plastic2_factory1->factory4_9 - z_plastic2_DUMMY_RESERVE->factory4_9
-   + z_plastic2_factory4->hospital3_10 + z_plastic2_factory4->hospital4_10
-   + z_plastic2_factory4->factory2_10 - M_plastic2_factory4_10 <= 0
- upper[availability_plastic3_factory4_10]:
-   - z_plastic3_factory1->factory4_9 - z_plastic3_DUMMY_RESERVE->factory4_9
-   + z_plastic3_factory4->hospital3_10 + z_plastic3_factory4->hospital4_10
-   + z_plastic3_factory4->factory2_10 - M_plastic3_factory4_10 <= 0
- upper[availability_ppe1_factory4_10]: - z_ppe1_factory1->factory4_9
-   - z_ppe1_DUMMY_RESERVE->factory4_9 + z_ppe1_factory4->hospital3_10
-   + z_ppe1_factory4->hospital4_10 + z_ppe1_factory4->factory2_10
+ upper[availability_plastic1_factory4_10]: z_plastic1_factory4->hospital3_9
+   + z_plastic1_factory4->hospital4_9 - z_plastic1_factory1->factory4_9
+   + z_plastic1_factory4->factory2_9 - z_plastic1_DUMMY_RESERVE->factory4_9
+   - M_plastic1_factory4_10 <= 0
+ upper[availability_plastic2_factory4_10]: z_plastic2_factory4->hospital3_9
+   + z_plastic2_factory4->hospital4_9 - z_plastic2_factory1->factory4_9
+   + z_plastic2_factory4->factory2_9 - z_plastic2_DUMMY_RESERVE->factory4_9
+   - M_plastic2_factory4_10 <= 0
+ upper[availability_plastic3_factory4_10]: z_plastic3_factory4->hospital3_9
+   + z_plastic3_factory4->hospital4_9 - z_plastic3_factory1->factory4_9
+   + z_plastic3_factory4->factory2_9 - z_plastic3_DUMMY_RESERVE->factory4_9
+   - M_plastic3_factory4_10 <= 0
+ upper[availability_ppe1_factory4_10]: z_ppe1_factory4->hospital3_9
+   + z_ppe1_factory4->hospital4_9 - z_ppe1_factory1->factory4_9
+   + z_ppe1_factory4->factory2_9 - z_ppe1_DUMMY_RESERVE->factory4_9
    - M_ppe1_factory4_10 <= 0
- upper[availability_ppe2_factory4_10]: - z_ppe2_factory1->factory4_9
-   - z_ppe2_DUMMY_RESERVE->factory4_9 + z_ppe2_factory4->hospital3_10
-   + z_ppe2_factory4->hospital4_10 + z_ppe2_factory4->factory2_10
+ upper[availability_ppe2_factory4_10]: z_ppe2_factory4->hospital3_9
+   + z_ppe2_factory4->hospital4_9 - z_ppe2_factory1->factory4_9
+   + z_ppe2_factory4->factory2_9 - z_ppe2_DUMMY_RESERVE->factory4_9
    - M_ppe2_factory4_10 <= 0
- upper[availability_ppe3_factory4_10]: - z_ppe3_factory1->factory4_9
-   - z_ppe3_DUMMY_RESERVE->factory4_9 + z_ppe3_factory4->hospital3_10
-   + z_ppe3_factory4->hospital4_10 + z_ppe3_factory4->factory2_10
+ upper[availability_ppe3_factory4_10]: z_ppe3_factory4->hospital3_9
+   + z_ppe3_factory4->hospital4_9 - z_ppe3_factory1->factory4_9
+   + z_ppe3_factory4->factory2_9 - z_ppe3_DUMMY_RESERVE->factory4_9
    - M_ppe3_factory4_10 <= 0
  upper[availability_respirator1_factory4_10]:
+   z_respirator1_factory4->hospital3_9
+   + z_respirator1_factory4->hospital4_9
    - z_respirator1_factory1->factory4_9
-   - z_respirator1_DUMMY_RESERVE->factory4_9
-   + z_respirator1_factory4->hospital3_10
-   + z_respirator1_factory4->hospital4_10
-   + z_respirator1_factory4->factory2_10 - M_respirator1_factory4_10 <= 0
+   + z_respirator1_factory4->factory2_9
+   - z_respirator1_DUMMY_RESERVE->factory4_9 - M_respirator1_factory4_10
+   <= 0
  upper[availability_respirator2_factory4_10]:
+   z_respirator2_factory4->hospital3_9
+   + z_respirator2_factory4->hospital4_9
    - z_respirator2_factory1->factory4_9
-   - z_respirator2_DUMMY_RESERVE->factory4_9
-   + z_respirator2_factory4->hospital3_10
-   + z_respirator2_factory4->hospital4_10
-   + z_respirator2_factory4->factory2_10 - M_respirator2_factory4_10 <= 0
- upper[availability_metal1_factory4_11]: - z_metal1_factory1->factory4_10
-   - z_metal1_DUMMY_RESERVE->factory4_10 + z_metal1_factory4->hospital3_11
-   + z_metal1_factory4->hospital4_11 + z_metal1_factory4->factory2_11
+   + z_respirator2_factory4->factory2_9
+   - z_respirator2_DUMMY_RESERVE->factory4_9 - M_respirator2_factory4_10
+   <= 0
+ upper[availability_metal1_factory4_11]: z_metal1_factory4->hospital3_10
+   + z_metal1_factory4->hospital4_10 - z_metal1_factory1->factory4_10
+   + z_metal1_factory4->factory2_10 - z_metal1_DUMMY_RESERVE->factory4_10
    - M_metal1_factory4_11 <= 0
- upper[availability_metal2_factory4_11]: - z_metal2_factory1->factory4_10
-   - z_metal2_DUMMY_RESERVE->factory4_10 + z_metal2_factory4->hospital3_11
-   + z_metal2_factory4->hospital4_11 + z_metal2_factory4->factory2_11
+ upper[availability_metal2_factory4_11]: z_metal2_factory4->hospital3_10
+   + z_metal2_factory4->hospital4_10 - z_metal2_factory1->factory4_10
+   + z_metal2_factory4->factory2_10 - z_metal2_DUMMY_RESERVE->factory4_10
    - M_metal2_factory4_11 <= 0
  upper[availability_plastic1_factory4_11]:
-   - z_plastic1_factory1->factory4_10
-   - z_plastic1_DUMMY_RESERVE->factory4_10
-   + z_plastic1_factory4->hospital3_11 + z_plastic1_factory4->hospital4_11
-   + z_plastic1_factory4->factory2_11 - M_plastic1_factory4_11 <= 0
+   z_plastic1_factory4->hospital3_10 + z_plastic1_factory4->hospital4_10
+   - z_plastic1_factory1->factory4_10 + z_plastic1_factory4->factory2_10
+   - z_plastic1_DUMMY_RESERVE->factory4_10 - M_plastic1_factory4_11 <= 0
  upper[availability_plastic2_factory4_11]:
-   - z_plastic2_factory1->factory4_10
-   - z_plastic2_DUMMY_RESERVE->factory4_10
-   + z_plastic2_factory4->hospital3_11 + z_plastic2_factory4->hospital4_11
-   + z_plastic2_factory4->factory2_11 - M_plastic2_factory4_11 <= 0
+   z_plastic2_factory4->hospital3_10 + z_plastic2_factory4->hospital4_10
+   - z_plastic2_factory1->factory4_10 + z_plastic2_factory4->factory2_10
+   - z_plastic2_DUMMY_RESERVE->factory4_10 - M_plastic2_factory4_11 <= 0
  upper[availability_plastic3_factory4_11]:
-   - z_plastic3_factory1->factory4_10
-   - z_plastic3_DUMMY_RESERVE->factory4_10
-   + z_plastic3_factory4->hospital3_11 + z_plastic3_factory4->hospital4_11
-   + z_plastic3_factory4->factory2_11 - M_plastic3_factory4_11 <= 0
- upper[availability_ppe1_factory4_11]: - z_ppe1_factory1->factory4_10
-   - z_ppe1_DUMMY_RESERVE->factory4_10 + z_ppe1_factory4->hospital3_11
-   + z_ppe1_factory4->hospital4_11 + z_ppe1_factory4->factory2_11
+   z_plastic3_factory4->hospital3_10 + z_plastic3_factory4->hospital4_10
+   - z_plastic3_factory1->factory4_10 + z_plastic3_factory4->factory2_10
+   - z_plastic3_DUMMY_RESERVE->factory4_10 - M_plastic3_factory4_11 <= 0
+ upper[availability_ppe1_factory4_11]: z_ppe1_factory4->hospital3_10
+   + z_ppe1_factory4->hospital4_10 - z_ppe1_factory1->factory4_10
+   + z_ppe1_factory4->factory2_10 - z_ppe1_DUMMY_RESERVE->factory4_10
    - M_ppe1_factory4_11 <= 0
- upper[availability_ppe2_factory4_11]: - z_ppe2_factory1->factory4_10
-   - z_ppe2_DUMMY_RESERVE->factory4_10 + z_ppe2_factory4->hospital3_11
-   + z_ppe2_factory4->hospital4_11 + z_ppe2_factory4->factory2_11
+ upper[availability_ppe2_factory4_11]: z_ppe2_factory4->hospital3_10
+   + z_ppe2_factory4->hospital4_10 - z_ppe2_factory1->factory4_10
+   + z_ppe2_factory4->factory2_10 - z_ppe2_DUMMY_RESERVE->factory4_10
    - M_ppe2_factory4_11 <= 0
- upper[availability_ppe3_factory4_11]: - z_ppe3_factory1->factory4_10
-   - z_ppe3_DUMMY_RESERVE->factory4_10 + z_ppe3_factory4->hospital3_11
-   + z_ppe3_factory4->hospital4_11 + z_ppe3_factory4->factory2_11
+ upper[availability_ppe3_factory4_11]: z_ppe3_factory4->hospital3_10
+   + z_ppe3_factory4->hospital4_10 - z_ppe3_factory1->factory4_10
+   + z_ppe3_factory4->factory2_10 - z_ppe3_DUMMY_RESERVE->factory4_10
    - M_ppe3_factory4_11 <= 0
  upper[availability_respirator1_factory4_11]:
+   z_respirator1_factory4->hospital3_10
+   + z_respirator1_factory4->hospital4_10
    - z_respirator1_factory1->factory4_10
-   - z_respirator1_DUMMY_RESERVE->factory4_10
-   + z_respirator1_factory4->hospital3_11
-   + z_respirator1_factory4->hospital4_11
-   + z_respirator1_factory4->factory2_11 - M_respirator1_factory4_11 <= 0
+   + z_respirator1_factory4->factory2_10
+   - z_respirator1_DUMMY_RESERVE->factory4_10 - M_respirator1_factory4_11
+   <= 0
  upper[availability_respirator2_factory4_11]:
+   z_respirator2_factory4->hospital3_10
+   + z_respirator2_factory4->hospital4_10
    - z_respirator2_factory1->factory4_10
-   - z_respirator2_DUMMY_RESERVE->factory4_10
-   + z_respirator2_factory4->hospital3_11
-   + z_respirator2_factory4->hospital4_11
-   + z_respirator2_factory4->factory2_11 - M_respirator2_factory4_11 <= 0
- upper[availability_metal1_factory4_12]: - z_metal1_factory1->factory4_11
-   - z_metal1_DUMMY_RESERVE->factory4_11 + z_metal1_factory4->hospital3_12
-   + z_metal1_factory4->hospital4_12 + z_metal1_factory4->factory2_12
+   + z_respirator2_factory4->factory2_10
+   - z_respirator2_DUMMY_RESERVE->factory4_10 - M_respirator2_factory4_11
+   <= 0
+ upper[availability_metal1_factory4_12]: z_metal1_factory4->hospital3_11
+   + z_metal1_factory4->hospital4_11 - z_metal1_factory1->factory4_11
+   + z_metal1_factory4->factory2_11 - z_metal1_DUMMY_RESERVE->factory4_11
    - M_metal1_factory4_12 <= 0
- upper[availability_metal2_factory4_12]: - z_metal2_factory1->factory4_11
-   - z_metal2_DUMMY_RESERVE->factory4_11 + z_metal2_factory4->hospital3_12
-   + z_metal2_factory4->hospital4_12 + z_metal2_factory4->factory2_12
+ upper[availability_metal2_factory4_12]: z_metal2_factory4->hospital3_11
+   + z_metal2_factory4->hospital4_11 - z_metal2_factory1->factory4_11
+   + z_metal2_factory4->factory2_11 - z_metal2_DUMMY_RESERVE->factory4_11
    - M_metal2_factory4_12 <= 0
  upper[availability_plastic1_factory4_12]:
-   - z_plastic1_factory1->factory4_11
-   - z_plastic1_DUMMY_RESERVE->factory4_11
-   + z_plastic1_factory4->hospital3_12 + z_plastic1_factory4->hospital4_12
-   + z_plastic1_factory4->factory2_12 - M_plastic1_factory4_12 <= 0
+   z_plastic1_factory4->hospital3_11 + z_plastic1_factory4->hospital4_11
+   - z_plastic1_factory1->factory4_11 + z_plastic1_factory4->factory2_11
+   - z_plastic1_DUMMY_RESERVE->factory4_11 - M_plastic1_factory4_12 <= 0
  upper[availability_plastic2_factory4_12]:
-   - z_plastic2_factory1->factory4_11
-   - z_plastic2_DUMMY_RESERVE->factory4_11
-   + z_plastic2_factory4->hospital3_12 + z_plastic2_factory4->hospital4_12
-   + z_plastic2_factory4->factory2_12 - M_plastic2_factory4_12 <= 0
+   z_plastic2_factory4->hospital3_11 + z_plastic2_factory4->hospital4_11
+   - z_plastic2_factory1->factory4_11 + z_plastic2_factory4->factory2_11
+   - z_plastic2_DUMMY_RESERVE->factory4_11 - M_plastic2_factory4_12 <= 0
  upper[availability_plastic3_factory4_12]:
-   - z_plastic3_factory1->factory4_11
-   - z_plastic3_DUMMY_RESERVE->factory4_11
-   + z_plastic3_factory4->hospital3_12 + z_plastic3_factory4->hospital4_12
-   + z_plastic3_factory4->factory2_12 - M_plastic3_factory4_12 <= 0
- upper[availability_ppe1_factory4_12]: - z_ppe1_factory1->factory4_11
-   - z_ppe1_DUMMY_RESERVE->factory4_11 + z_ppe1_factory4->hospital3_12
-   + z_ppe1_factory4->hospital4_12 + z_ppe1_factory4->factory2_12
+   z_plastic3_factory4->hospital3_11 + z_plastic3_factory4->hospital4_11
+   - z_plastic3_factory1->factory4_11 + z_plastic3_factory4->factory2_11
+   - z_plastic3_DUMMY_RESERVE->factory4_11 - M_plastic3_factory4_12 <= 0
+ upper[availability_ppe1_factory4_12]: z_ppe1_factory4->hospital3_11
+   + z_ppe1_factory4->hospital4_11 - z_ppe1_factory1->factory4_11
+   + z_ppe1_factory4->factory2_11 - z_ppe1_DUMMY_RESERVE->factory4_11
    - M_ppe1_factory4_12 <= 0
- upper[availability_ppe2_factory4_12]: - z_ppe2_factory1->factory4_11
-   - z_ppe2_DUMMY_RESERVE->factory4_11 + z_ppe2_factory4->hospital3_12
-   + z_ppe2_factory4->hospital4_12 + z_ppe2_factory4->factory2_12
+ upper[availability_ppe2_factory4_12]: z_ppe2_factory4->hospital3_11
+   + z_ppe2_factory4->hospital4_11 - z_ppe2_factory1->factory4_11
+   + z_ppe2_factory4->factory2_11 - z_ppe2_DUMMY_RESERVE->factory4_11
    - M_ppe2_factory4_12 <= 0
- upper[availability_ppe3_factory4_12]: - z_ppe3_factory1->factory4_11
-   - z_ppe3_DUMMY_RESERVE->factory4_11 + z_ppe3_factory4->hospital3_12
-   + z_ppe3_factory4->hospital4_12 + z_ppe3_factory4->factory2_12
+ upper[availability_ppe3_factory4_12]: z_ppe3_factory4->hospital3_11
+   + z_ppe3_factory4->hospital4_11 - z_ppe3_factory1->factory4_11
+   + z_ppe3_factory4->factory2_11 - z_ppe3_DUMMY_RESERVE->factory4_11
    - M_ppe3_factory4_12 <= 0
  upper[availability_respirator1_factory4_12]:
+   z_respirator1_factory4->hospital3_11
+   + z_respirator1_factory4->hospital4_11
    - z_respirator1_factory1->factory4_11
-   - z_respirator1_DUMMY_RESERVE->factory4_11
-   + z_respirator1_factory4->hospital3_12
-   + z_respirator1_factory4->hospital4_12
-   + z_respirator1_factory4->factory2_12 - M_respirator1_factory4_12 <= 0
+   + z_respirator1_factory4->factory2_11
+   - z_respirator1_DUMMY_RESERVE->factory4_11 - M_respirator1_factory4_12
+   <= 0
  upper[availability_respirator2_factory4_12]:
+   z_respirator2_factory4->hospital3_11
+   + z_respirator2_factory4->hospital4_11
    - z_respirator2_factory1->factory4_11
-   - z_respirator2_DUMMY_RESERVE->factory4_11
-   + z_respirator2_factory4->hospital3_12
-   + z_respirator2_factory4->hospital4_12
-   + z_respirator2_factory4->factory2_12 - M_respirator2_factory4_12 <= 0
- upper[availability_metal1_factory4_13]: - z_metal1_factory1->factory4_12
-   - z_metal1_DUMMY_RESERVE->factory4_12 + z_metal1_factory4->hospital3_13
-   + z_metal1_factory4->hospital4_13 + z_metal1_factory4->factory2_13
+   + z_respirator2_factory4->factory2_11
+   - z_respirator2_DUMMY_RESERVE->factory4_11 - M_respirator2_factory4_12
+   <= 0
+ upper[availability_metal1_factory4_13]: z_metal1_factory4->hospital3_12
+   + z_metal1_factory4->hospital4_12 - z_metal1_factory1->factory4_12
+   + z_metal1_factory4->factory2_12 - z_metal1_DUMMY_RESERVE->factory4_12
    - M_metal1_factory4_13 <= 0
- upper[availability_metal2_factory4_13]: - z_metal2_factory1->factory4_12
-   - z_metal2_DUMMY_RESERVE->factory4_12 + z_metal2_factory4->hospital3_13
-   + z_metal2_factory4->hospital4_13 + z_metal2_factory4->factory2_13
+ upper[availability_metal2_factory4_13]: z_metal2_factory4->hospital3_12
+   + z_metal2_factory4->hospital4_12 - z_metal2_factory1->factory4_12
+   + z_metal2_factory4->factory2_12 - z_metal2_DUMMY_RESERVE->factory4_12
    - M_metal2_factory4_13 <= 0
  upper[availability_plastic1_factory4_13]:
-   - z_plastic1_factory1->factory4_12
-   - z_plastic1_DUMMY_RESERVE->factory4_12
-   + z_plastic1_factory4->hospital3_13 + z_plastic1_factory4->hospital4_13
-   + z_plastic1_factory4->factory2_13 - M_plastic1_factory4_13 <= 0
+   z_plastic1_factory4->hospital3_12 + z_plastic1_factory4->hospital4_12
+   - z_plastic1_factory1->factory4_12 + z_plastic1_factory4->factory2_12
+   - z_plastic1_DUMMY_RESERVE->factory4_12 - M_plastic1_factory4_13 <= 0
  upper[availability_plastic2_factory4_13]:
-   - z_plastic2_factory1->factory4_12
-   - z_plastic2_DUMMY_RESERVE->factory4_12
-   + z_plastic2_factory4->hospital3_13 + z_plastic2_factory4->hospital4_13
-   + z_plastic2_factory4->factory2_13 - M_plastic2_factory4_13 <= 0
+   z_plastic2_factory4->hospital3_12 + z_plastic2_factory4->hospital4_12
+   - z_plastic2_factory1->factory4_12 + z_plastic2_factory4->factory2_12
+   - z_plastic2_DUMMY_RESERVE->factory4_12 - M_plastic2_factory4_13 <= 0
  upper[availability_plastic3_factory4_13]:
-   - z_plastic3_factory1->factory4_12
-   - z_plastic3_DUMMY_RESERVE->factory4_12
-   + z_plastic3_factory4->hospital3_13 + z_plastic3_factory4->hospital4_13
-   + z_plastic3_factory4->factory2_13 - M_plastic3_factory4_13 <= 0
- upper[availability_ppe1_factory4_13]: - z_ppe1_factory1->factory4_12
-   - z_ppe1_DUMMY_RESERVE->factory4_12 + z_ppe1_factory4->hospital3_13
-   + z_ppe1_factory4->hospital4_13 + z_ppe1_factory4->factory2_13
+   z_plastic3_factory4->hospital3_12 + z_plastic3_factory4->hospital4_12
+   - z_plastic3_factory1->factory4_12 + z_plastic3_factory4->factory2_12
+   - z_plastic3_DUMMY_RESERVE->factory4_12 - M_plastic3_factory4_13 <= 0
+ upper[availability_ppe1_factory4_13]: z_ppe1_factory4->hospital3_12
+   + z_ppe1_factory4->hospital4_12 - z_ppe1_factory1->factory4_12
+   + z_ppe1_factory4->factory2_12 - z_ppe1_DUMMY_RESERVE->factory4_12
    - M_ppe1_factory4_13 <= 0
- upper[availability_ppe2_factory4_13]: - z_ppe2_factory1->factory4_12
-   - z_ppe2_DUMMY_RESERVE->factory4_12 + z_ppe2_factory4->hospital3_13
-   + z_ppe2_factory4->hospital4_13 + z_ppe2_factory4->factory2_13
+ upper[availability_ppe2_factory4_13]: z_ppe2_factory4->hospital3_12
+   + z_ppe2_factory4->hospital4_12 - z_ppe2_factory1->factory4_12
+   + z_ppe2_factory4->factory2_12 - z_ppe2_DUMMY_RESERVE->factory4_12
    - M_ppe2_factory4_13 <= 0
- upper[availability_ppe3_factory4_13]: - z_ppe3_factory1->factory4_12
-   - z_ppe3_DUMMY_RESERVE->factory4_12 + z_ppe3_factory4->hospital3_13
-   + z_ppe3_factory4->hospital4_13 + z_ppe3_factory4->factory2_13
+ upper[availability_ppe3_factory4_13]: z_ppe3_factory4->hospital3_12
+   + z_ppe3_factory4->hospital4_12 - z_ppe3_factory1->factory4_12
+   + z_ppe3_factory4->factory2_12 - z_ppe3_DUMMY_RESERVE->factory4_12
    - M_ppe3_factory4_13 <= 0
  upper[availability_respirator1_factory4_13]:
+   z_respirator1_factory4->hospital3_12
+   + z_respirator1_factory4->hospital4_12
    - z_respirator1_factory1->factory4_12
-   - z_respirator1_DUMMY_RESERVE->factory4_12
-   + z_respirator1_factory4->hospital3_13
-   + z_respirator1_factory4->hospital4_13
-   + z_respirator1_factory4->factory2_13 - M_respirator1_factory4_13 <= 0
+   + z_respirator1_factory4->factory2_12
+   - z_respirator1_DUMMY_RESERVE->factory4_12 - M_respirator1_factory4_13
+   <= 0
  upper[availability_respirator2_factory4_13]:
+   z_respirator2_factory4->hospital3_12
+   + z_respirator2_factory4->hospital4_12
    - z_respirator2_factory1->factory4_12
-   - z_respirator2_DUMMY_RESERVE->factory4_12
-   + z_respirator2_factory4->hospital3_13
-   + z_respirator2_factory4->hospital4_13
-   + z_respirator2_factory4->factory2_13 - M_respirator2_factory4_13 <= 0
- upper[availability_metal1_factory4_14]: - z_metal1_factory1->factory4_13
-   - z_metal1_DUMMY_RESERVE->factory4_13 + z_metal1_factory4->hospital3_14
-   + z_metal1_factory4->hospital4_14 + z_metal1_factory4->factory2_14
+   + z_respirator2_factory4->factory2_12
+   - z_respirator2_DUMMY_RESERVE->factory4_12 - M_respirator2_factory4_13
+   <= 0
+ upper[availability_metal1_factory4_14]: z_metal1_factory4->hospital3_13
+   + z_metal1_factory4->hospital4_13 - z_metal1_factory1->factory4_13
+   + z_metal1_factory4->factory2_13 - z_metal1_DUMMY_RESERVE->factory4_13
    - M_metal1_factory4_14 <= 0
- upper[availability_metal2_factory4_14]: - z_metal2_factory1->factory4_13
-   - z_metal2_DUMMY_RESERVE->factory4_13 + z_metal2_factory4->hospital3_14
-   + z_metal2_factory4->hospital4_14 + z_metal2_factory4->factory2_14
+ upper[availability_metal2_factory4_14]: z_metal2_factory4->hospital3_13
+   + z_metal2_factory4->hospital4_13 - z_metal2_factory1->factory4_13
+   + z_metal2_factory4->factory2_13 - z_metal2_DUMMY_RESERVE->factory4_13
    - M_metal2_factory4_14 <= 0
  upper[availability_plastic1_factory4_14]:
-   - z_plastic1_factory1->factory4_13
-   - z_plastic1_DUMMY_RESERVE->factory4_13
-   + z_plastic1_factory4->hospital3_14 + z_plastic1_factory4->hospital4_14
-   + z_plastic1_factory4->factory2_14 - M_plastic1_factory4_14 <= 0
+   z_plastic1_factory4->hospital3_13 + z_plastic1_factory4->hospital4_13
+   - z_plastic1_factory1->factory4_13 + z_plastic1_factory4->factory2_13
+   - z_plastic1_DUMMY_RESERVE->factory4_13 - M_plastic1_factory4_14 <= 0
  upper[availability_plastic2_factory4_14]:
-   - z_plastic2_factory1->factory4_13
-   - z_plastic2_DUMMY_RESERVE->factory4_13
-   + z_plastic2_factory4->hospital3_14 + z_plastic2_factory4->hospital4_14
-   + z_plastic2_factory4->factory2_14 - M_plastic2_factory4_14 <= 0
+   z_plastic2_factory4->hospital3_13 + z_plastic2_factory4->hospital4_13
+   - z_plastic2_factory1->factory4_13 + z_plastic2_factory4->factory2_13
+   - z_plastic2_DUMMY_RESERVE->factory4_13 - M_plastic2_factory4_14 <= 0
  upper[availability_plastic3_factory4_14]:
-   - z_plastic3_factory1->factory4_13
-   - z_plastic3_DUMMY_RESERVE->factory4_13
-   + z_plastic3_factory4->hospital3_14 + z_plastic3_factory4->hospital4_14
-   + z_plastic3_factory4->factory2_14 - M_plastic3_factory4_14 <= 0
- upper[availability_ppe1_factory4_14]: - z_ppe1_factory1->factory4_13
-   - z_ppe1_DUMMY_RESERVE->factory4_13 + z_ppe1_factory4->hospital3_14
-   + z_ppe1_factory4->hospital4_14 + z_ppe1_factory4->factory2_14
+   z_plastic3_factory4->hospital3_13 + z_plastic3_factory4->hospital4_13
+   - z_plastic3_factory1->factory4_13 + z_plastic3_factory4->factory2_13
+   - z_plastic3_DUMMY_RESERVE->factory4_13 - M_plastic3_factory4_14 <= 0
+ upper[availability_ppe1_factory4_14]: z_ppe1_factory4->hospital3_13
+   + z_ppe1_factory4->hospital4_13 - z_ppe1_factory1->factory4_13
+   + z_ppe1_factory4->factory2_13 - z_ppe1_DUMMY_RESERVE->factory4_13
    - M_ppe1_factory4_14 <= 0
- upper[availability_ppe2_factory4_14]: - z_ppe2_factory1->factory4_13
-   - z_ppe2_DUMMY_RESERVE->factory4_13 + z_ppe2_factory4->hospital3_14
-   + z_ppe2_factory4->hospital4_14 + z_ppe2_factory4->factory2_14
+ upper[availability_ppe2_factory4_14]: z_ppe2_factory4->hospital3_13
+   + z_ppe2_factory4->hospital4_13 - z_ppe2_factory1->factory4_13
+   + z_ppe2_factory4->factory2_13 - z_ppe2_DUMMY_RESERVE->factory4_13
    - M_ppe2_factory4_14 <= 0
- upper[availability_ppe3_factory4_14]: - z_ppe3_factory1->factory4_13
-   - z_ppe3_DUMMY_RESERVE->factory4_13 + z_ppe3_factory4->hospital3_14
-   + z_ppe3_factory4->hospital4_14 + z_ppe3_factory4->factory2_14
+ upper[availability_ppe3_factory4_14]: z_ppe3_factory4->hospital3_13
+   + z_ppe3_factory4->hospital4_13 - z_ppe3_factory1->factory4_13
+   + z_ppe3_factory4->factory2_13 - z_ppe3_DUMMY_RESERVE->factory4_13
    - M_ppe3_factory4_14 <= 0
  upper[availability_respirator1_factory4_14]:
+   z_respirator1_factory4->hospital3_13
+   + z_respirator1_factory4->hospital4_13
    - z_respirator1_factory1->factory4_13
-   - z_respirator1_DUMMY_RESERVE->factory4_13
-   + z_respirator1_factory4->hospital3_14
-   + z_respirator1_factory4->hospital4_14
-   + z_respirator1_factory4->factory2_14 - M_respirator1_factory4_14 <= 0
+   + z_respirator1_factory4->factory2_13
+   - z_respirator1_DUMMY_RESERVE->factory4_13 - M_respirator1_factory4_14
+   <= 0
  upper[availability_respirator2_factory4_14]:
+   z_respirator2_factory4->hospital3_13
+   + z_respirator2_factory4->hospital4_13
    - z_respirator2_factory1->factory4_13
-   - z_respirator2_DUMMY_RESERVE->factory4_13
-   + z_respirator2_factory4->hospital3_14
-   + z_respirator2_factory4->hospital4_14
-   + z_respirator2_factory4->factory2_14 - M_respirator2_factory4_14 <= 0
- upper[availability_metal1_factory4_15]: - z_metal1_factory1->factory4_14
-   - z_metal1_DUMMY_RESERVE->factory4_14 + z_metal1_factory4->hospital3_15
-   + z_metal1_factory4->hospital4_15 + z_metal1_factory4->factory2_15
+   + z_respirator2_factory4->factory2_13
+   - z_respirator2_DUMMY_RESERVE->factory4_13 - M_respirator2_factory4_14
+   <= 0
+ upper[availability_metal1_factory4_15]: z_metal1_factory4->hospital3_14
+   + z_metal1_factory4->hospital4_14 - z_metal1_factory1->factory4_14
+   + z_metal1_factory4->factory2_14 - z_metal1_DUMMY_RESERVE->factory4_14
    - M_metal1_factory4_15 <= 0
- upper[availability_metal2_factory4_15]: - z_metal2_factory1->factory4_14
-   - z_metal2_DUMMY_RESERVE->factory4_14 + z_metal2_factory4->hospital3_15
-   + z_metal2_factory4->hospital4_15 + z_metal2_factory4->factory2_15
+ upper[availability_metal2_factory4_15]: z_metal2_factory4->hospital3_14
+   + z_metal2_factory4->hospital4_14 - z_metal2_factory1->factory4_14
+   + z_metal2_factory4->factory2_14 - z_metal2_DUMMY_RESERVE->factory4_14
    - M_metal2_factory4_15 <= 0
  upper[availability_plastic1_factory4_15]:
-   - z_plastic1_factory1->factory4_14
-   - z_plastic1_DUMMY_RESERVE->factory4_14
-   + z_plastic1_factory4->hospital3_15 + z_plastic1_factory4->hospital4_15
-   + z_plastic1_factory4->factory2_15 - M_plastic1_factory4_15 <= 0
+   z_plastic1_factory4->hospital3_14 + z_plastic1_factory4->hospital4_14
+   - z_plastic1_factory1->factory4_14 + z_plastic1_factory4->factory2_14
+   - z_plastic1_DUMMY_RESERVE->factory4_14 - M_plastic1_factory4_15 <= 0
  upper[availability_plastic2_factory4_15]:
-   - z_plastic2_factory1->factory4_14
-   - z_plastic2_DUMMY_RESERVE->factory4_14
-   + z_plastic2_factory4->hospital3_15 + z_plastic2_factory4->hospital4_15
-   + z_plastic2_factory4->factory2_15 - M_plastic2_factory4_15 <= 0
+   z_plastic2_factory4->hospital3_14 + z_plastic2_factory4->hospital4_14
+   - z_plastic2_factory1->factory4_14 + z_plastic2_factory4->factory2_14
+   - z_plastic2_DUMMY_RESERVE->factory4_14 - M_plastic2_factory4_15 <= 0
  upper[availability_plastic3_factory4_15]:
-   - z_plastic3_factory1->factory4_14
-   - z_plastic3_DUMMY_RESERVE->factory4_14
-   + z_plastic3_factory4->hospital3_15 + z_plastic3_factory4->hospital4_15
-   + z_plastic3_factory4->factory2_15 - M_plastic3_factory4_15 <= 0
- upper[availability_ppe1_factory4_15]: - z_ppe1_factory1->factory4_14
-   - z_ppe1_DUMMY_RESERVE->factory4_14 + z_ppe1_factory4->hospital3_15
-   + z_ppe1_factory4->hospital4_15 + z_ppe1_factory4->factory2_15
+   z_plastic3_factory4->hospital3_14 + z_plastic3_factory4->hospital4_14
+   - z_plastic3_factory1->factory4_14 + z_plastic3_factory4->factory2_14
+   - z_plastic3_DUMMY_RESERVE->factory4_14 - M_plastic3_factory4_15 <= 0
+ upper[availability_ppe1_factory4_15]: z_ppe1_factory4->hospital3_14
+   + z_ppe1_factory4->hospital4_14 - z_ppe1_factory1->factory4_14
+   + z_ppe1_factory4->factory2_14 - z_ppe1_DUMMY_RESERVE->factory4_14
    - M_ppe1_factory4_15 <= 0
- upper[availability_ppe2_factory4_15]: - z_ppe2_factory1->factory4_14
-   - z_ppe2_DUMMY_RESERVE->factory4_14 + z_ppe2_factory4->hospital3_15
-   + z_ppe2_factory4->hospital4_15 + z_ppe2_factory4->factory2_15
+ upper[availability_ppe2_factory4_15]: z_ppe2_factory4->hospital3_14
+   + z_ppe2_factory4->hospital4_14 - z_ppe2_factory1->factory4_14
+   + z_ppe2_factory4->factory2_14 - z_ppe2_DUMMY_RESERVE->factory4_14
    - M_ppe2_factory4_15 <= 0
- upper[availability_ppe3_factory4_15]: - z_ppe3_factory1->factory4_14
-   - z_ppe3_DUMMY_RESERVE->factory4_14 + z_ppe3_factory4->hospital3_15
-   + z_ppe3_factory4->hospital4_15 + z_ppe3_factory4->factory2_15
+ upper[availability_ppe3_factory4_15]: z_ppe3_factory4->hospital3_14
+   + z_ppe3_factory4->hospital4_14 - z_ppe3_factory1->factory4_14
+   + z_ppe3_factory4->factory2_14 - z_ppe3_DUMMY_RESERVE->factory4_14
    - M_ppe3_factory4_15 <= 0
  upper[availability_respirator1_factory4_15]:
+   z_respirator1_factory4->hospital3_14
+   + z_respirator1_factory4->hospital4_14
    - z_respirator1_factory1->factory4_14
-   - z_respirator1_DUMMY_RESERVE->factory4_14
-   + z_respirator1_factory4->hospital3_15
-   + z_respirator1_factory4->hospital4_15
-   + z_respirator1_factory4->factory2_15 - M_respirator1_factory4_15 <= 0
+   + z_respirator1_factory4->factory2_14
+   - z_respirator1_DUMMY_RESERVE->factory4_14 - M_respirator1_factory4_15
+   <= 0
  upper[availability_respirator2_factory4_15]:
+   z_respirator2_factory4->hospital3_14
+   + z_respirator2_factory4->hospital4_14
    - z_respirator2_factory1->factory4_14
-   - z_respirator2_DUMMY_RESERVE->factory4_14
-   + z_respirator2_factory4->hospital3_15
-   + z_respirator2_factory4->hospital4_15
-   + z_respirator2_factory4->factory2_15 - M_respirator2_factory4_15 <= 0
- upper[availability_metal1_factory4_16]: - z_metal1_factory1->factory4_15
-   - z_metal1_DUMMY_RESERVE->factory4_15 + z_metal1_factory4->hospital3_16
-   + z_metal1_factory4->hospital4_16 + z_metal1_factory4->factory2_16
+   + z_respirator2_factory4->factory2_14
+   - z_respirator2_DUMMY_RESERVE->factory4_14 - M_respirator2_factory4_15
+   <= 0
+ upper[availability_metal1_factory4_16]: z_metal1_factory4->hospital3_15
+   + z_metal1_factory4->hospital4_15 - z_metal1_factory1->factory4_15
+   + z_metal1_factory4->factory2_15 - z_metal1_DUMMY_RESERVE->factory4_15
    - M_metal1_factory4_16 <= 0
- upper[availability_metal2_factory4_16]: - z_metal2_factory1->factory4_15
-   - z_metal2_DUMMY_RESERVE->factory4_15 + z_metal2_factory4->hospital3_16
-   + z_metal2_factory4->hospital4_16 + z_metal2_factory4->factory2_16
+ upper[availability_metal2_factory4_16]: z_metal2_factory4->hospital3_15
+   + z_metal2_factory4->hospital4_15 - z_metal2_factory1->factory4_15
+   + z_metal2_factory4->factory2_15 - z_metal2_DUMMY_RESERVE->factory4_15
    - M_metal2_factory4_16 <= 0
  upper[availability_plastic1_factory4_16]:
-   - z_plastic1_factory1->factory4_15
-   - z_plastic1_DUMMY_RESERVE->factory4_15
-   + z_plastic1_factory4->hospital3_16 + z_plastic1_factory4->hospital4_16
-   + z_plastic1_factory4->factory2_16 - M_plastic1_factory4_16 <= 0
+   z_plastic1_factory4->hospital3_15 + z_plastic1_factory4->hospital4_15
+   - z_plastic1_factory1->factory4_15 + z_plastic1_factory4->factory2_15
+   - z_plastic1_DUMMY_RESERVE->factory4_15 - M_plastic1_factory4_16 <= 0
  upper[availability_plastic2_factory4_16]:
-   - z_plastic2_factory1->factory4_15
-   - z_plastic2_DUMMY_RESERVE->factory4_15
-   + z_plastic2_factory4->hospital3_16 + z_plastic2_factory4->hospital4_16
-   + z_plastic2_factory4->factory2_16 - M_plastic2_factory4_16 <= 0
+   z_plastic2_factory4->hospital3_15 + z_plastic2_factory4->hospital4_15
+   - z_plastic2_factory1->factory4_15 + z_plastic2_factory4->factory2_15
+   - z_plastic2_DUMMY_RESERVE->factory4_15 - M_plastic2_factory4_16 <= 0
  upper[availability_plastic3_factory4_16]:
-   - z_plastic3_factory1->factory4_15
-   - z_plastic3_DUMMY_RESERVE->factory4_15
-   + z_plastic3_factory4->hospital3_16 + z_plastic3_factory4->hospital4_16
-   + z_plastic3_factory4->factory2_16 - M_plastic3_factory4_16 <= 0
- upper[availability_ppe1_factory4_16]: - z_ppe1_factory1->factory4_15
-   - z_ppe1_DUMMY_RESERVE->factory4_15 + z_ppe1_factory4->hospital3_16
-   + z_ppe1_factory4->hospital4_16 + z_ppe1_factory4->factory2_16
+   z_plastic3_factory4->hospital3_15 + z_plastic3_factory4->hospital4_15
+   - z_plastic3_factory1->factory4_15 + z_plastic3_factory4->factory2_15
+   - z_plastic3_DUMMY_RESERVE->factory4_15 - M_plastic3_factory4_16 <= 0
+ upper[availability_ppe1_factory4_16]: z_ppe1_factory4->hospital3_15
+   + z_ppe1_factory4->hospital4_15 - z_ppe1_factory1->factory4_15
+   + z_ppe1_factory4->factory2_15 - z_ppe1_DUMMY_RESERVE->factory4_15
    - M_ppe1_factory4_16 <= 0
- upper[availability_ppe2_factory4_16]: - z_ppe2_factory1->factory4_15
-   - z_ppe2_DUMMY_RESERVE->factory4_15 + z_ppe2_factory4->hospital3_16
-   + z_ppe2_factory4->hospital4_16 + z_ppe2_factory4->factory2_16
+ upper[availability_ppe2_factory4_16]: z_ppe2_factory4->hospital3_15
+   + z_ppe2_factory4->hospital4_15 - z_ppe2_factory1->factory4_15
+   + z_ppe2_factory4->factory2_15 - z_ppe2_DUMMY_RESERVE->factory4_15
    - M_ppe2_factory4_16 <= 0
- upper[availability_ppe3_factory4_16]: - z_ppe3_factory1->factory4_15
-   - z_ppe3_DUMMY_RESERVE->factory4_15 + z_ppe3_factory4->hospital3_16
-   + z_ppe3_factory4->hospital4_16 + z_ppe3_factory4->factory2_16
+ upper[availability_ppe3_factory4_16]: z_ppe3_factory4->hospital3_15
+   + z_ppe3_factory4->hospital4_15 - z_ppe3_factory1->factory4_15
+   + z_ppe3_factory4->factory2_15 - z_ppe3_DUMMY_RESERVE->factory4_15
    - M_ppe3_factory4_16 <= 0
  upper[availability_respirator1_factory4_16]:
+   z_respirator1_factory4->hospital3_15
+   + z_respirator1_factory4->hospital4_15
    - z_respirator1_factory1->factory4_15
-   - z_respirator1_DUMMY_RESERVE->factory4_15
-   + z_respirator1_factory4->hospital3_16
-   + z_respirator1_factory4->hospital4_16
-   + z_respirator1_factory4->factory2_16 - M_respirator1_factory4_16 <= 0
+   + z_respirator1_factory4->factory2_15
+   - z_respirator1_DUMMY_RESERVE->factory4_15 - M_respirator1_factory4_16
+   <= 0
  upper[availability_respirator2_factory4_16]:
+   z_respirator2_factory4->hospital3_15
+   + z_respirator2_factory4->hospital4_15
    - z_respirator2_factory1->factory4_15
-   - z_respirator2_DUMMY_RESERVE->factory4_15
-   + z_respirator2_factory4->hospital3_16
-   + z_respirator2_factory4->hospital4_16
-   + z_respirator2_factory4->factory2_16 - M_respirator2_factory4_16 <= 0
- upper[availability_metal1_factory4_17]: - z_metal1_factory1->factory4_16
-   - z_metal1_DUMMY_RESERVE->factory4_16 + z_metal1_factory4->hospital3_17
-   + z_metal1_factory4->hospital4_17 + z_metal1_factory4->factory2_17
+   + z_respirator2_factory4->factory2_15
+   - z_respirator2_DUMMY_RESERVE->factory4_15 - M_respirator2_factory4_16
+   <= 0
+ upper[availability_metal1_factory4_17]: z_metal1_factory4->hospital3_16
+   + z_metal1_factory4->hospital4_16 - z_metal1_factory1->factory4_16
+   + z_metal1_factory4->factory2_16 - z_metal1_DUMMY_RESERVE->factory4_16
    - M_metal1_factory4_17 <= 0
- upper[availability_metal2_factory4_17]: - z_metal2_factory1->factory4_16
-   - z_metal2_DUMMY_RESERVE->factory4_16 + z_metal2_factory4->hospital3_17
-   + z_metal2_factory4->hospital4_17 + z_metal2_factory4->factory2_17
+ upper[availability_metal2_factory4_17]: z_metal2_factory4->hospital3_16
+   + z_metal2_factory4->hospital4_16 - z_metal2_factory1->factory4_16
+   + z_metal2_factory4->factory2_16 - z_metal2_DUMMY_RESERVE->factory4_16
    - M_metal2_factory4_17 <= 0
  upper[availability_plastic1_factory4_17]:
-   - z_plastic1_factory1->factory4_16
-   - z_plastic1_DUMMY_RESERVE->factory4_16
-   + z_plastic1_factory4->hospital3_17 + z_plastic1_factory4->hospital4_17
-   + z_plastic1_factory4->factory2_17 - M_plastic1_factory4_17 <= 0
+   z_plastic1_factory4->hospital3_16 + z_plastic1_factory4->hospital4_16
+   - z_plastic1_factory1->factory4_16 + z_plastic1_factory4->factory2_16
+   - z_plastic1_DUMMY_RESERVE->factory4_16 - M_plastic1_factory4_17 <= 0
  upper[availability_plastic2_factory4_17]:
-   - z_plastic2_factory1->factory4_16
-   - z_plastic2_DUMMY_RESERVE->factory4_16
-   + z_plastic2_factory4->hospital3_17 + z_plastic2_factory4->hospital4_17
-   + z_plastic2_factory4->factory2_17 - M_plastic2_factory4_17 <= 0
+   z_plastic2_factory4->hospital3_16 + z_plastic2_factory4->hospital4_16
+   - z_plastic2_factory1->factory4_16 + z_plastic2_factory4->factory2_16
+   - z_plastic2_DUMMY_RESERVE->factory4_16 - M_plastic2_factory4_17 <= 0
  upper[availability_plastic3_factory4_17]:
-   - z_plastic3_factory1->factory4_16
-   - z_plastic3_DUMMY_RESERVE->factory4_16
-   + z_plastic3_factory4->hospital3_17 + z_plastic3_factory4->hospital4_17
-   + z_plastic3_factory4->factory2_17 - M_plastic3_factory4_17 <= 0
- upper[availability_ppe1_factory4_17]: - z_ppe1_factory1->factory4_16
-   - z_ppe1_DUMMY_RESERVE->factory4_16 + z_ppe1_factory4->hospital3_17
-   + z_ppe1_factory4->hospital4_17 + z_ppe1_factory4->factory2_17
+   z_plastic3_factory4->hospital3_16 + z_plastic3_factory4->hospital4_16
+   - z_plastic3_factory1->factory4_16 + z_plastic3_factory4->factory2_16
+   - z_plastic3_DUMMY_RESERVE->factory4_16 - M_plastic3_factory4_17 <= 0
+ upper[availability_ppe1_factory4_17]: z_ppe1_factory4->hospital3_16
+   + z_ppe1_factory4->hospital4_16 - z_ppe1_factory1->factory4_16
+   + z_ppe1_factory4->factory2_16 - z_ppe1_DUMMY_RESERVE->factory4_16
    - M_ppe1_factory4_17 <= 0
- upper[availability_ppe2_factory4_17]: - z_ppe2_factory1->factory4_16
-   - z_ppe2_DUMMY_RESERVE->factory4_16 + z_ppe2_factory4->hospital3_17
-   + z_ppe2_factory4->hospital4_17 + z_ppe2_factory4->factory2_17
+ upper[availability_ppe2_factory4_17]: z_ppe2_factory4->hospital3_16
+   + z_ppe2_factory4->hospital4_16 - z_ppe2_factory1->factory4_16
+   + z_ppe2_factory4->factory2_16 - z_ppe2_DUMMY_RESERVE->factory4_16
    - M_ppe2_factory4_17 <= 0
- upper[availability_ppe3_factory4_17]: - z_ppe3_factory1->factory4_16
-   - z_ppe3_DUMMY_RESERVE->factory4_16 + z_ppe3_factory4->hospital3_17
-   + z_ppe3_factory4->hospital4_17 + z_ppe3_factory4->factory2_17
+ upper[availability_ppe3_factory4_17]: z_ppe3_factory4->hospital3_16
+   + z_ppe3_factory4->hospital4_16 - z_ppe3_factory1->factory4_16
+   + z_ppe3_factory4->factory2_16 - z_ppe3_DUMMY_RESERVE->factory4_16
    - M_ppe3_factory4_17 <= 0
  upper[availability_respirator1_factory4_17]:
+   z_respirator1_factory4->hospital3_16
+   + z_respirator1_factory4->hospital4_16
    - z_respirator1_factory1->factory4_16
-   - z_respirator1_DUMMY_RESERVE->factory4_16
-   + z_respirator1_factory4->hospital3_17
-   + z_respirator1_factory4->hospital4_17
-   + z_respirator1_factory4->factory2_17 - M_respirator1_factory4_17 <= 0
+   + z_respirator1_factory4->factory2_16
+   - z_respirator1_DUMMY_RESERVE->factory4_16 - M_respirator1_factory4_17
+   <= 0
  upper[availability_respirator2_factory4_17]:
+   z_respirator2_factory4->hospital3_16
+   + z_respirator2_factory4->hospital4_16
    - z_respirator2_factory1->factory4_16
-   - z_respirator2_DUMMY_RESERVE->factory4_16
-   + z_respirator2_factory4->hospital3_17
-   + z_respirator2_factory4->hospital4_17
-   + z_respirator2_factory4->factory2_17 - M_respirator2_factory4_17 <= 0
- upper[availability_metal1_factory4_18]: - z_metal1_factory1->factory4_17
-   - z_metal1_DUMMY_RESERVE->factory4_17 + z_metal1_factory4->hospital3_18
-   + z_metal1_factory4->hospital4_18 + z_metal1_factory4->factory2_18
+   + z_respirator2_factory4->factory2_16
+   - z_respirator2_DUMMY_RESERVE->factory4_16 - M_respirator2_factory4_17
+   <= 0
+ upper[availability_metal1_factory4_18]: z_metal1_factory4->hospital3_17
+   + z_metal1_factory4->hospital4_17 - z_metal1_factory1->factory4_17
+   + z_metal1_factory4->factory2_17 - z_metal1_DUMMY_RESERVE->factory4_17
    - M_metal1_factory4_18 <= 0
- upper[availability_metal2_factory4_18]: - z_metal2_factory1->factory4_17
-   - z_metal2_DUMMY_RESERVE->factory4_17 + z_metal2_factory4->hospital3_18
-   + z_metal2_factory4->hospital4_18 + z_metal2_factory4->factory2_18
+ upper[availability_metal2_factory4_18]: z_metal2_factory4->hospital3_17
+   + z_metal2_factory4->hospital4_17 - z_metal2_factory1->factory4_17
+   + z_metal2_factory4->factory2_17 - z_metal2_DUMMY_RESERVE->factory4_17
    - M_metal2_factory4_18 <= 0
  upper[availability_plastic1_factory4_18]:
-   - z_plastic1_factory1->factory4_17
-   - z_plastic1_DUMMY_RESERVE->factory4_17
-   + z_plastic1_factory4->hospital3_18 + z_plastic1_factory4->hospital4_18
-   + z_plastic1_factory4->factory2_18 - M_plastic1_factory4_18 <= 0
+   z_plastic1_factory4->hospital3_17 + z_plastic1_factory4->hospital4_17
+   - z_plastic1_factory1->factory4_17 + z_plastic1_factory4->factory2_17
+   - z_plastic1_DUMMY_RESERVE->factory4_17 - M_plastic1_factory4_18 <= 0
  upper[availability_plastic2_factory4_18]:
-   - z_plastic2_factory1->factory4_17
-   - z_plastic2_DUMMY_RESERVE->factory4_17
-   + z_plastic2_factory4->hospital3_18 + z_plastic2_factory4->hospital4_18
-   + z_plastic2_factory4->factory2_18 - M_plastic2_factory4_18 <= 0
+   z_plastic2_factory4->hospital3_17 + z_plastic2_factory4->hospital4_17
+   - z_plastic2_factory1->factory4_17 + z_plastic2_factory4->factory2_17
+   - z_plastic2_DUMMY_RESERVE->factory4_17 - M_plastic2_factory4_18 <= 0
  upper[availability_plastic3_factory4_18]:
-   - z_plastic3_factory1->factory4_17
-   - z_plastic3_DUMMY_RESERVE->factory4_17
-   + z_plastic3_factory4->hospital3_18 + z_plastic3_factory4->hospital4_18
-   + z_plastic3_factory4->factory2_18 - M_plastic3_factory4_18 <= 0
- upper[availability_ppe1_factory4_18]: - z_ppe1_factory1->factory4_17
-   - z_ppe1_DUMMY_RESERVE->factory4_17 + z_ppe1_factory4->hospital3_18
-   + z_ppe1_factory4->hospital4_18 + z_ppe1_factory4->factory2_18
+   z_plastic3_factory4->hospital3_17 + z_plastic3_factory4->hospital4_17
+   - z_plastic3_factory1->factory4_17 + z_plastic3_factory4->factory2_17
+   - z_plastic3_DUMMY_RESERVE->factory4_17 - M_plastic3_factory4_18 <= 0
+ upper[availability_ppe1_factory4_18]: z_ppe1_factory4->hospital3_17
+   + z_ppe1_factory4->hospital4_17 - z_ppe1_factory1->factory4_17
+   + z_ppe1_factory4->factory2_17 - z_ppe1_DUMMY_RESERVE->factory4_17
    - M_ppe1_factory4_18 <= 0
- upper[availability_ppe2_factory4_18]: - z_ppe2_factory1->factory4_17
-   - z_ppe2_DUMMY_RESERVE->factory4_17 + z_ppe2_factory4->hospital3_18
-   + z_ppe2_factory4->hospital4_18 + z_ppe2_factory4->factory2_18
+ upper[availability_ppe2_factory4_18]: z_ppe2_factory4->hospital3_17
+   + z_ppe2_factory4->hospital4_17 - z_ppe2_factory1->factory4_17
+   + z_ppe2_factory4->factory2_17 - z_ppe2_DUMMY_RESERVE->factory4_17
    - M_ppe2_factory4_18 <= 0
- upper[availability_ppe3_factory4_18]: - z_ppe3_factory1->factory4_17
-   - z_ppe3_DUMMY_RESERVE->factory4_17 + z_ppe3_factory4->hospital3_18
-   + z_ppe3_factory4->hospital4_18 + z_ppe3_factory4->factory2_18
+ upper[availability_ppe3_factory4_18]: z_ppe3_factory4->hospital3_17
+   + z_ppe3_factory4->hospital4_17 - z_ppe3_factory1->factory4_17
+   + z_ppe3_factory4->factory2_17 - z_ppe3_DUMMY_RESERVE->factory4_17
    - M_ppe3_factory4_18 <= 0
  upper[availability_respirator1_factory4_18]:
+   z_respirator1_factory4->hospital3_17
+   + z_respirator1_factory4->hospital4_17
    - z_respirator1_factory1->factory4_17
-   - z_respirator1_DUMMY_RESERVE->factory4_17
-   + z_respirator1_factory4->hospital3_18
-   + z_respirator1_factory4->hospital4_18
-   + z_respirator1_factory4->factory2_18 - M_respirator1_factory4_18 <= 0
+   + z_respirator1_factory4->factory2_17
+   - z_respirator1_DUMMY_RESERVE->factory4_17 - M_respirator1_factory4_18
+   <= 0
  upper[availability_respirator2_factory4_18]:
+   z_respirator2_factory4->hospital3_17
+   + z_respirator2_factory4->hospital4_17
    - z_respirator2_factory1->factory4_17
-   - z_respirator2_DUMMY_RESERVE->factory4_17
-   + z_respirator2_factory4->hospital3_18
-   + z_respirator2_factory4->hospital4_18
-   + z_respirator2_factory4->factory2_18 - M_respirator2_factory4_18 <= 0
- upper[availability_metal1_factory4_19]: - z_metal1_factory1->factory4_18
-   - z_metal1_DUMMY_RESERVE->factory4_18 + z_metal1_factory4->hospital3_19
-   + z_metal1_factory4->hospital4_19 + z_metal1_factory4->factory2_19
+   + z_respirator2_factory4->factory2_17
+   - z_respirator2_DUMMY_RESERVE->factory4_17 - M_respirator2_factory4_18
+   <= 0
+ upper[availability_metal1_factory4_19]: z_metal1_factory4->hospital3_18
+   + z_metal1_factory4->hospital4_18 - z_metal1_factory1->factory4_18
+   + z_metal1_factory4->factory2_18 - z_metal1_DUMMY_RESERVE->factory4_18
    - M_metal1_factory4_19 <= 0
- upper[availability_metal2_factory4_19]: - z_metal2_factory1->factory4_18
-   - z_metal2_DUMMY_RESERVE->factory4_18 + z_metal2_factory4->hospital3_19
-   + z_metal2_factory4->hospital4_19 + z_metal2_factory4->factory2_19
+ upper[availability_metal2_factory4_19]: z_metal2_factory4->hospital3_18
+   + z_metal2_factory4->hospital4_18 - z_metal2_factory1->factory4_18
+   + z_metal2_factory4->factory2_18 - z_metal2_DUMMY_RESERVE->factory4_18
    - M_metal2_factory4_19 <= 0
  upper[availability_plastic1_factory4_19]:
-   - z_plastic1_factory1->factory4_18
-   - z_plastic1_DUMMY_RESERVE->factory4_18
-   + z_plastic1_factory4->hospital3_19 + z_plastic1_factory4->hospital4_19
-   + z_plastic1_factory4->factory2_19 - M_plastic1_factory4_19 <= 0
+   z_plastic1_factory4->hospital3_18 + z_plastic1_factory4->hospital4_18
+   - z_plastic1_factory1->factory4_18 + z_plastic1_factory4->factory2_18
+   - z_plastic1_DUMMY_RESERVE->factory4_18 - M_plastic1_factory4_19 <= 0
  upper[availability_plastic2_factory4_19]:
-   - z_plastic2_factory1->factory4_18
-   - z_plastic2_DUMMY_RESERVE->factory4_18
-   + z_plastic2_factory4->hospital3_19 + z_plastic2_factory4->hospital4_19
-   + z_plastic2_factory4->factory2_19 - M_plastic2_factory4_19 <= 0
+   z_plastic2_factory4->hospital3_18 + z_plastic2_factory4->hospital4_18
+   - z_plastic2_factory1->factory4_18 + z_plastic2_factory4->factory2_18
+   - z_plastic2_DUMMY_RESERVE->factory4_18 - M_plastic2_factory4_19 <= 0
  upper[availability_plastic3_factory4_19]:
-   - z_plastic3_factory1->factory4_18
-   - z_plastic3_DUMMY_RESERVE->factory4_18
-   + z_plastic3_factory4->hospital3_19 + z_plastic3_factory4->hospital4_19
-   + z_plastic3_factory4->factory2_19 - M_plastic3_factory4_19 <= 0
- upper[availability_ppe1_factory4_19]: - z_ppe1_factory1->factory4_18
-   - z_ppe1_DUMMY_RESERVE->factory4_18 + z_ppe1_factory4->hospital3_19
-   + z_ppe1_factory4->hospital4_19 + z_ppe1_factory4->factory2_19
+   z_plastic3_factory4->hospital3_18 + z_plastic3_factory4->hospital4_18
+   - z_plastic3_factory1->factory4_18 + z_plastic3_factory4->factory2_18
+   - z_plastic3_DUMMY_RESERVE->factory4_18 - M_plastic3_factory4_19 <= 0
+ upper[availability_ppe1_factory4_19]: z_ppe1_factory4->hospital3_18
+   + z_ppe1_factory4->hospital4_18 - z_ppe1_factory1->factory4_18
+   + z_ppe1_factory4->factory2_18 - z_ppe1_DUMMY_RESERVE->factory4_18
    - M_ppe1_factory4_19 <= 0
- upper[availability_ppe2_factory4_19]: - z_ppe2_factory1->factory4_18
-   - z_ppe2_DUMMY_RESERVE->factory4_18 + z_ppe2_factory4->hospital3_19
-   + z_ppe2_factory4->hospital4_19 + z_ppe2_factory4->factory2_19
+ upper[availability_ppe2_factory4_19]: z_ppe2_factory4->hospital3_18
+   + z_ppe2_factory4->hospital4_18 - z_ppe2_factory1->factory4_18
+   + z_ppe2_factory4->factory2_18 - z_ppe2_DUMMY_RESERVE->factory4_18
    - M_ppe2_factory4_19 <= 0
- upper[availability_ppe3_factory4_19]: - z_ppe3_factory1->factory4_18
-   - z_ppe3_DUMMY_RESERVE->factory4_18 + z_ppe3_factory4->hospital3_19
-   + z_ppe3_factory4->hospital4_19 + z_ppe3_factory4->factory2_19
+ upper[availability_ppe3_factory4_19]: z_ppe3_factory4->hospital3_18
+   + z_ppe3_factory4->hospital4_18 - z_ppe3_factory1->factory4_18
+   + z_ppe3_factory4->factory2_18 - z_ppe3_DUMMY_RESERVE->factory4_18
    - M_ppe3_factory4_19 <= 0
  upper[availability_respirator1_factory4_19]:
+   z_respirator1_factory4->hospital3_18
+   + z_respirator1_factory4->hospital4_18
    - z_respirator1_factory1->factory4_18
-   - z_respirator1_DUMMY_RESERVE->factory4_18
-   + z_respirator1_factory4->hospital3_19
-   + z_respirator1_factory4->hospital4_19
-   + z_respirator1_factory4->factory2_19 - M_respirator1_factory4_19 <= 0
+   + z_respirator1_factory4->factory2_18
+   - z_respirator1_DUMMY_RESERVE->factory4_18 - M_respirator1_factory4_19
+   <= 0
  upper[availability_respirator2_factory4_19]:
+   z_respirator2_factory4->hospital3_18
+   + z_respirator2_factory4->hospital4_18
    - z_respirator2_factory1->factory4_18
-   - z_respirator2_DUMMY_RESERVE->factory4_18
-   + z_respirator2_factory4->hospital3_19
-   + z_respirator2_factory4->hospital4_19
-   + z_respirator2_factory4->factory2_19 - M_respirator2_factory4_19 <= 0
- upper[availability_metal1_DUMMY_RESERVE_1]:
+   + z_respirator2_factory4->factory2_18
+   - z_respirator2_DUMMY_RESERVE->factory4_18 - M_respirator2_factory4_19
+   <= 0
+ upper[availability_metal1_DUMMY_RESERVE_1]: - M_metal1_DUMMY_RESERVE_1
+   <= 0
+ upper[availability_metal2_DUMMY_RESERVE_1]: - M_metal2_DUMMY_RESERVE_1
+   <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_1]: - M_plastic1_DUMMY_RESERVE_1
+   <= 0
+ upper[availability_plastic2_DUMMY_RESERVE_1]: - M_plastic2_DUMMY_RESERVE_1
+   <= 0
+ upper[availability_plastic3_DUMMY_RESERVE_1]: - M_plastic3_DUMMY_RESERVE_1
+   <= 0
+ upper[availability_ppe1_DUMMY_RESERVE_1]: - M_ppe1_DUMMY_RESERVE_1 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_1]: - M_ppe2_DUMMY_RESERVE_1 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_1]: - M_ppe3_DUMMY_RESERVE_1 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_1]:
+   - M_respirator1_DUMMY_RESERVE_1 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_1]:
+   - M_respirator2_DUMMY_RESERVE_1 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_2]:
    z_metal1_DUMMY_RESERVE->factory1_1 + z_metal1_DUMMY_RESERVE->factory2_1
    + z_metal1_DUMMY_RESERVE->factory3_1
    + z_metal1_DUMMY_RESERVE->factory4_1
    + z_metal1_DUMMY_RESERVE->hospital1_1
    + z_metal1_DUMMY_RESERVE->hospital2_1
    + z_metal1_DUMMY_RESERVE->hospital3_1
-   + z_metal1_DUMMY_RESERVE->hospital4_1 - M_metal1_DUMMY_RESERVE_1 <= 0
- upper[availability_metal2_DUMMY_RESERVE_1]:
+   + z_metal1_DUMMY_RESERVE->hospital4_1 - M_metal1_DUMMY_RESERVE_2 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_2]:
    z_metal2_DUMMY_RESERVE->factory1_1 + z_metal2_DUMMY_RESERVE->factory2_1
    + z_metal2_DUMMY_RESERVE->factory3_1
    + z_metal2_DUMMY_RESERVE->factory4_1
    + z_metal2_DUMMY_RESERVE->hospital1_1
    + z_metal2_DUMMY_RESERVE->hospital2_1
    + z_metal2_DUMMY_RESERVE->hospital3_1
-   + z_metal2_DUMMY_RESERVE->hospital4_1 - M_metal2_DUMMY_RESERVE_1 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_1]:
+   + z_metal2_DUMMY_RESERVE->hospital4_1 - M_metal2_DUMMY_RESERVE_2 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_2]:
    z_plastic1_DUMMY_RESERVE->factory1_1
    + z_plastic1_DUMMY_RESERVE->factory2_1
    + z_plastic1_DUMMY_RESERVE->factory3_1
@@ -5621,9 +5555,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_1
    + z_plastic1_DUMMY_RESERVE->hospital2_1
    + z_plastic1_DUMMY_RESERVE->hospital3_1
-   + z_plastic1_DUMMY_RESERVE->hospital4_1 - M_plastic1_DUMMY_RESERVE_1
+   + z_plastic1_DUMMY_RESERVE->hospital4_1 - M_plastic1_DUMMY_RESERVE_2
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_1]:
+ upper[availability_plastic2_DUMMY_RESERVE_2]:
    z_plastic2_DUMMY_RESERVE->factory1_1
    + z_plastic2_DUMMY_RESERVE->factory2_1
    + z_plastic2_DUMMY_RESERVE->factory3_1
@@ -5631,9 +5565,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_1
    + z_plastic2_DUMMY_RESERVE->hospital2_1
    + z_plastic2_DUMMY_RESERVE->hospital3_1
-   + z_plastic2_DUMMY_RESERVE->hospital4_1 - M_plastic2_DUMMY_RESERVE_1
+   + z_plastic2_DUMMY_RESERVE->hospital4_1 - M_plastic2_DUMMY_RESERVE_2
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_1]:
+ upper[availability_plastic3_DUMMY_RESERVE_2]:
    z_plastic3_DUMMY_RESERVE->factory1_1
    + z_plastic3_DUMMY_RESERVE->factory2_1
    + z_plastic3_DUMMY_RESERVE->factory3_1
@@ -5641,24 +5575,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_1
    + z_plastic3_DUMMY_RESERVE->hospital2_1
    + z_plastic3_DUMMY_RESERVE->hospital3_1
-   + z_plastic3_DUMMY_RESERVE->hospital4_1 - M_plastic3_DUMMY_RESERVE_1
+   + z_plastic3_DUMMY_RESERVE->hospital4_1 - M_plastic3_DUMMY_RESERVE_2
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_1]: z_ppe1_DUMMY_RESERVE->factory1_1
+ upper[availability_ppe1_DUMMY_RESERVE_2]: z_ppe1_DUMMY_RESERVE->factory1_1
    + z_ppe1_DUMMY_RESERVE->factory2_1 + z_ppe1_DUMMY_RESERVE->factory3_1
    + z_ppe1_DUMMY_RESERVE->factory4_1 + z_ppe1_DUMMY_RESERVE->hospital1_1
    + z_ppe1_DUMMY_RESERVE->hospital2_1 + z_ppe1_DUMMY_RESERVE->hospital3_1
-   + z_ppe1_DUMMY_RESERVE->hospital4_1 - M_ppe1_DUMMY_RESERVE_1 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_1]: z_ppe2_DUMMY_RESERVE->factory1_1
+   + z_ppe1_DUMMY_RESERVE->hospital4_1 - M_ppe1_DUMMY_RESERVE_2 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_2]: z_ppe2_DUMMY_RESERVE->factory1_1
    + z_ppe2_DUMMY_RESERVE->factory2_1 + z_ppe2_DUMMY_RESERVE->factory3_1
    + z_ppe2_DUMMY_RESERVE->factory4_1 + z_ppe2_DUMMY_RESERVE->hospital1_1
    + z_ppe2_DUMMY_RESERVE->hospital2_1 + z_ppe2_DUMMY_RESERVE->hospital3_1
-   + z_ppe2_DUMMY_RESERVE->hospital4_1 - M_ppe2_DUMMY_RESERVE_1 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_1]: z_ppe3_DUMMY_RESERVE->factory1_1
+   + z_ppe2_DUMMY_RESERVE->hospital4_1 - M_ppe2_DUMMY_RESERVE_2 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_2]: z_ppe3_DUMMY_RESERVE->factory1_1
    + z_ppe3_DUMMY_RESERVE->factory2_1 + z_ppe3_DUMMY_RESERVE->factory3_1
    + z_ppe3_DUMMY_RESERVE->factory4_1 + z_ppe3_DUMMY_RESERVE->hospital1_1
    + z_ppe3_DUMMY_RESERVE->hospital2_1 + z_ppe3_DUMMY_RESERVE->hospital3_1
-   + z_ppe3_DUMMY_RESERVE->hospital4_1 - M_ppe3_DUMMY_RESERVE_1 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_1]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_1 - M_ppe3_DUMMY_RESERVE_2 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_2]:
    z_respirator1_DUMMY_RESERVE->factory1_1
    + z_respirator1_DUMMY_RESERVE->factory2_1
    + z_respirator1_DUMMY_RESERVE->factory3_1
@@ -5667,8 +5601,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_1
    + z_respirator1_DUMMY_RESERVE->hospital3_1
    + z_respirator1_DUMMY_RESERVE->hospital4_1
-   - M_respirator1_DUMMY_RESERVE_1 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_1]:
+   - M_respirator1_DUMMY_RESERVE_2 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_2]:
    z_respirator2_DUMMY_RESERVE->factory1_1
    + z_respirator2_DUMMY_RESERVE->factory2_1
    + z_respirator2_DUMMY_RESERVE->factory3_1
@@ -5677,24 +5611,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_1
    + z_respirator2_DUMMY_RESERVE->hospital3_1
    + z_respirator2_DUMMY_RESERVE->hospital4_1
-   - M_respirator2_DUMMY_RESERVE_1 <= 0
- upper[availability_metal1_DUMMY_RESERVE_2]:
+   - M_respirator2_DUMMY_RESERVE_2 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_3]:
    z_metal1_DUMMY_RESERVE->factory1_2 + z_metal1_DUMMY_RESERVE->factory2_2
    + z_metal1_DUMMY_RESERVE->factory3_2
    + z_metal1_DUMMY_RESERVE->factory4_2
    + z_metal1_DUMMY_RESERVE->hospital1_2
    + z_metal1_DUMMY_RESERVE->hospital2_2
    + z_metal1_DUMMY_RESERVE->hospital3_2
-   + z_metal1_DUMMY_RESERVE->hospital4_2 - M_metal1_DUMMY_RESERVE_2 <= 0
- upper[availability_metal2_DUMMY_RESERVE_2]:
+   + z_metal1_DUMMY_RESERVE->hospital4_2 - M_metal1_DUMMY_RESERVE_3 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_3]:
    z_metal2_DUMMY_RESERVE->factory1_2 + z_metal2_DUMMY_RESERVE->factory2_2
    + z_metal2_DUMMY_RESERVE->factory3_2
    + z_metal2_DUMMY_RESERVE->factory4_2
    + z_metal2_DUMMY_RESERVE->hospital1_2
    + z_metal2_DUMMY_RESERVE->hospital2_2
    + z_metal2_DUMMY_RESERVE->hospital3_2
-   + z_metal2_DUMMY_RESERVE->hospital4_2 - M_metal2_DUMMY_RESERVE_2 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_2]:
+   + z_metal2_DUMMY_RESERVE->hospital4_2 - M_metal2_DUMMY_RESERVE_3 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_3]:
    z_plastic1_DUMMY_RESERVE->factory1_2
    + z_plastic1_DUMMY_RESERVE->factory2_2
    + z_plastic1_DUMMY_RESERVE->factory3_2
@@ -5702,9 +5636,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_2
    + z_plastic1_DUMMY_RESERVE->hospital2_2
    + z_plastic1_DUMMY_RESERVE->hospital3_2
-   + z_plastic1_DUMMY_RESERVE->hospital4_2 - M_plastic1_DUMMY_RESERVE_2
+   + z_plastic1_DUMMY_RESERVE->hospital4_2 - M_plastic1_DUMMY_RESERVE_3
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_2]:
+ upper[availability_plastic2_DUMMY_RESERVE_3]:
    z_plastic2_DUMMY_RESERVE->factory1_2
    + z_plastic2_DUMMY_RESERVE->factory2_2
    + z_plastic2_DUMMY_RESERVE->factory3_2
@@ -5712,9 +5646,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_2
    + z_plastic2_DUMMY_RESERVE->hospital2_2
    + z_plastic2_DUMMY_RESERVE->hospital3_2
-   + z_plastic2_DUMMY_RESERVE->hospital4_2 - M_plastic2_DUMMY_RESERVE_2
+   + z_plastic2_DUMMY_RESERVE->hospital4_2 - M_plastic2_DUMMY_RESERVE_3
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_2]:
+ upper[availability_plastic3_DUMMY_RESERVE_3]:
    z_plastic3_DUMMY_RESERVE->factory1_2
    + z_plastic3_DUMMY_RESERVE->factory2_2
    + z_plastic3_DUMMY_RESERVE->factory3_2
@@ -5722,24 +5656,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_2
    + z_plastic3_DUMMY_RESERVE->hospital2_2
    + z_plastic3_DUMMY_RESERVE->hospital3_2
-   + z_plastic3_DUMMY_RESERVE->hospital4_2 - M_plastic3_DUMMY_RESERVE_2
+   + z_plastic3_DUMMY_RESERVE->hospital4_2 - M_plastic3_DUMMY_RESERVE_3
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_2]: z_ppe1_DUMMY_RESERVE->factory1_2
+ upper[availability_ppe1_DUMMY_RESERVE_3]: z_ppe1_DUMMY_RESERVE->factory1_2
    + z_ppe1_DUMMY_RESERVE->factory2_2 + z_ppe1_DUMMY_RESERVE->factory3_2
    + z_ppe1_DUMMY_RESERVE->factory4_2 + z_ppe1_DUMMY_RESERVE->hospital1_2
    + z_ppe1_DUMMY_RESERVE->hospital2_2 + z_ppe1_DUMMY_RESERVE->hospital3_2
-   + z_ppe1_DUMMY_RESERVE->hospital4_2 - M_ppe1_DUMMY_RESERVE_2 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_2]: z_ppe2_DUMMY_RESERVE->factory1_2
+   + z_ppe1_DUMMY_RESERVE->hospital4_2 - M_ppe1_DUMMY_RESERVE_3 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_3]: z_ppe2_DUMMY_RESERVE->factory1_2
    + z_ppe2_DUMMY_RESERVE->factory2_2 + z_ppe2_DUMMY_RESERVE->factory3_2
    + z_ppe2_DUMMY_RESERVE->factory4_2 + z_ppe2_DUMMY_RESERVE->hospital1_2
    + z_ppe2_DUMMY_RESERVE->hospital2_2 + z_ppe2_DUMMY_RESERVE->hospital3_2
-   + z_ppe2_DUMMY_RESERVE->hospital4_2 - M_ppe2_DUMMY_RESERVE_2 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_2]: z_ppe3_DUMMY_RESERVE->factory1_2
+   + z_ppe2_DUMMY_RESERVE->hospital4_2 - M_ppe2_DUMMY_RESERVE_3 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_3]: z_ppe3_DUMMY_RESERVE->factory1_2
    + z_ppe3_DUMMY_RESERVE->factory2_2 + z_ppe3_DUMMY_RESERVE->factory3_2
    + z_ppe3_DUMMY_RESERVE->factory4_2 + z_ppe3_DUMMY_RESERVE->hospital1_2
    + z_ppe3_DUMMY_RESERVE->hospital2_2 + z_ppe3_DUMMY_RESERVE->hospital3_2
-   + z_ppe3_DUMMY_RESERVE->hospital4_2 - M_ppe3_DUMMY_RESERVE_2 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_2]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_2 - M_ppe3_DUMMY_RESERVE_3 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_3]:
    z_respirator1_DUMMY_RESERVE->factory1_2
    + z_respirator1_DUMMY_RESERVE->factory2_2
    + z_respirator1_DUMMY_RESERVE->factory3_2
@@ -5748,8 +5682,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_2
    + z_respirator1_DUMMY_RESERVE->hospital3_2
    + z_respirator1_DUMMY_RESERVE->hospital4_2
-   - M_respirator1_DUMMY_RESERVE_2 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_2]:
+   - M_respirator1_DUMMY_RESERVE_3 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_3]:
    z_respirator2_DUMMY_RESERVE->factory1_2
    + z_respirator2_DUMMY_RESERVE->factory2_2
    + z_respirator2_DUMMY_RESERVE->factory3_2
@@ -5758,24 +5692,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_2
    + z_respirator2_DUMMY_RESERVE->hospital3_2
    + z_respirator2_DUMMY_RESERVE->hospital4_2
-   - M_respirator2_DUMMY_RESERVE_2 <= 0
- upper[availability_metal1_DUMMY_RESERVE_3]:
+   - M_respirator2_DUMMY_RESERVE_3 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_4]:
    z_metal1_DUMMY_RESERVE->factory1_3 + z_metal1_DUMMY_RESERVE->factory2_3
    + z_metal1_DUMMY_RESERVE->factory3_3
    + z_metal1_DUMMY_RESERVE->factory4_3
    + z_metal1_DUMMY_RESERVE->hospital1_3
    + z_metal1_DUMMY_RESERVE->hospital2_3
    + z_metal1_DUMMY_RESERVE->hospital3_3
-   + z_metal1_DUMMY_RESERVE->hospital4_3 - M_metal1_DUMMY_RESERVE_3 <= 0
- upper[availability_metal2_DUMMY_RESERVE_3]:
+   + z_metal1_DUMMY_RESERVE->hospital4_3 - M_metal1_DUMMY_RESERVE_4 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_4]:
    z_metal2_DUMMY_RESERVE->factory1_3 + z_metal2_DUMMY_RESERVE->factory2_3
    + z_metal2_DUMMY_RESERVE->factory3_3
    + z_metal2_DUMMY_RESERVE->factory4_3
    + z_metal2_DUMMY_RESERVE->hospital1_3
    + z_metal2_DUMMY_RESERVE->hospital2_3
    + z_metal2_DUMMY_RESERVE->hospital3_3
-   + z_metal2_DUMMY_RESERVE->hospital4_3 - M_metal2_DUMMY_RESERVE_3 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_3]:
+   + z_metal2_DUMMY_RESERVE->hospital4_3 - M_metal2_DUMMY_RESERVE_4 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_4]:
    z_plastic1_DUMMY_RESERVE->factory1_3
    + z_plastic1_DUMMY_RESERVE->factory2_3
    + z_plastic1_DUMMY_RESERVE->factory3_3
@@ -5783,9 +5717,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_3
    + z_plastic1_DUMMY_RESERVE->hospital2_3
    + z_plastic1_DUMMY_RESERVE->hospital3_3
-   + z_plastic1_DUMMY_RESERVE->hospital4_3 - M_plastic1_DUMMY_RESERVE_3
+   + z_plastic1_DUMMY_RESERVE->hospital4_3 - M_plastic1_DUMMY_RESERVE_4
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_3]:
+ upper[availability_plastic2_DUMMY_RESERVE_4]:
    z_plastic2_DUMMY_RESERVE->factory1_3
    + z_plastic2_DUMMY_RESERVE->factory2_3
    + z_plastic2_DUMMY_RESERVE->factory3_3
@@ -5793,9 +5727,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_3
    + z_plastic2_DUMMY_RESERVE->hospital2_3
    + z_plastic2_DUMMY_RESERVE->hospital3_3
-   + z_plastic2_DUMMY_RESERVE->hospital4_3 - M_plastic2_DUMMY_RESERVE_3
+   + z_plastic2_DUMMY_RESERVE->hospital4_3 - M_plastic2_DUMMY_RESERVE_4
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_3]:
+ upper[availability_plastic3_DUMMY_RESERVE_4]:
    z_plastic3_DUMMY_RESERVE->factory1_3
    + z_plastic3_DUMMY_RESERVE->factory2_3
    + z_plastic3_DUMMY_RESERVE->factory3_3
@@ -5803,24 +5737,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_3
    + z_plastic3_DUMMY_RESERVE->hospital2_3
    + z_plastic3_DUMMY_RESERVE->hospital3_3
-   + z_plastic3_DUMMY_RESERVE->hospital4_3 - M_plastic3_DUMMY_RESERVE_3
+   + z_plastic3_DUMMY_RESERVE->hospital4_3 - M_plastic3_DUMMY_RESERVE_4
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_3]: z_ppe1_DUMMY_RESERVE->factory1_3
+ upper[availability_ppe1_DUMMY_RESERVE_4]: z_ppe1_DUMMY_RESERVE->factory1_3
    + z_ppe1_DUMMY_RESERVE->factory2_3 + z_ppe1_DUMMY_RESERVE->factory3_3
    + z_ppe1_DUMMY_RESERVE->factory4_3 + z_ppe1_DUMMY_RESERVE->hospital1_3
    + z_ppe1_DUMMY_RESERVE->hospital2_3 + z_ppe1_DUMMY_RESERVE->hospital3_3
-   + z_ppe1_DUMMY_RESERVE->hospital4_3 - M_ppe1_DUMMY_RESERVE_3 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_3]: z_ppe2_DUMMY_RESERVE->factory1_3
+   + z_ppe1_DUMMY_RESERVE->hospital4_3 - M_ppe1_DUMMY_RESERVE_4 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_4]: z_ppe2_DUMMY_RESERVE->factory1_3
    + z_ppe2_DUMMY_RESERVE->factory2_3 + z_ppe2_DUMMY_RESERVE->factory3_3
    + z_ppe2_DUMMY_RESERVE->factory4_3 + z_ppe2_DUMMY_RESERVE->hospital1_3
    + z_ppe2_DUMMY_RESERVE->hospital2_3 + z_ppe2_DUMMY_RESERVE->hospital3_3
-   + z_ppe2_DUMMY_RESERVE->hospital4_3 - M_ppe2_DUMMY_RESERVE_3 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_3]: z_ppe3_DUMMY_RESERVE->factory1_3
+   + z_ppe2_DUMMY_RESERVE->hospital4_3 - M_ppe2_DUMMY_RESERVE_4 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_4]: z_ppe3_DUMMY_RESERVE->factory1_3
    + z_ppe3_DUMMY_RESERVE->factory2_3 + z_ppe3_DUMMY_RESERVE->factory3_3
    + z_ppe3_DUMMY_RESERVE->factory4_3 + z_ppe3_DUMMY_RESERVE->hospital1_3
    + z_ppe3_DUMMY_RESERVE->hospital2_3 + z_ppe3_DUMMY_RESERVE->hospital3_3
-   + z_ppe3_DUMMY_RESERVE->hospital4_3 - M_ppe3_DUMMY_RESERVE_3 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_3]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_3 - M_ppe3_DUMMY_RESERVE_4 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_4]:
    z_respirator1_DUMMY_RESERVE->factory1_3
    + z_respirator1_DUMMY_RESERVE->factory2_3
    + z_respirator1_DUMMY_RESERVE->factory3_3
@@ -5829,8 +5763,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_3
    + z_respirator1_DUMMY_RESERVE->hospital3_3
    + z_respirator1_DUMMY_RESERVE->hospital4_3
-   - M_respirator1_DUMMY_RESERVE_3 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_3]:
+   - M_respirator1_DUMMY_RESERVE_4 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_4]:
    z_respirator2_DUMMY_RESERVE->factory1_3
    + z_respirator2_DUMMY_RESERVE->factory2_3
    + z_respirator2_DUMMY_RESERVE->factory3_3
@@ -5839,24 +5773,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_3
    + z_respirator2_DUMMY_RESERVE->hospital3_3
    + z_respirator2_DUMMY_RESERVE->hospital4_3
-   - M_respirator2_DUMMY_RESERVE_3 <= 0
- upper[availability_metal1_DUMMY_RESERVE_4]:
+   - M_respirator2_DUMMY_RESERVE_4 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_5]:
    z_metal1_DUMMY_RESERVE->factory1_4 + z_metal1_DUMMY_RESERVE->factory2_4
    + z_metal1_DUMMY_RESERVE->factory3_4
    + z_metal1_DUMMY_RESERVE->factory4_4
    + z_metal1_DUMMY_RESERVE->hospital1_4
    + z_metal1_DUMMY_RESERVE->hospital2_4
    + z_metal1_DUMMY_RESERVE->hospital3_4
-   + z_metal1_DUMMY_RESERVE->hospital4_4 - M_metal1_DUMMY_RESERVE_4 <= 0
- upper[availability_metal2_DUMMY_RESERVE_4]:
+   + z_metal1_DUMMY_RESERVE->hospital4_4 - M_metal1_DUMMY_RESERVE_5 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_5]:
    z_metal2_DUMMY_RESERVE->factory1_4 + z_metal2_DUMMY_RESERVE->factory2_4
    + z_metal2_DUMMY_RESERVE->factory3_4
    + z_metal2_DUMMY_RESERVE->factory4_4
    + z_metal2_DUMMY_RESERVE->hospital1_4
    + z_metal2_DUMMY_RESERVE->hospital2_4
    + z_metal2_DUMMY_RESERVE->hospital3_4
-   + z_metal2_DUMMY_RESERVE->hospital4_4 - M_metal2_DUMMY_RESERVE_4 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_4]:
+   + z_metal2_DUMMY_RESERVE->hospital4_4 - M_metal2_DUMMY_RESERVE_5 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_5]:
    z_plastic1_DUMMY_RESERVE->factory1_4
    + z_plastic1_DUMMY_RESERVE->factory2_4
    + z_plastic1_DUMMY_RESERVE->factory3_4
@@ -5864,9 +5798,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_4
    + z_plastic1_DUMMY_RESERVE->hospital2_4
    + z_plastic1_DUMMY_RESERVE->hospital3_4
-   + z_plastic1_DUMMY_RESERVE->hospital4_4 - M_plastic1_DUMMY_RESERVE_4
+   + z_plastic1_DUMMY_RESERVE->hospital4_4 - M_plastic1_DUMMY_RESERVE_5
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_4]:
+ upper[availability_plastic2_DUMMY_RESERVE_5]:
    z_plastic2_DUMMY_RESERVE->factory1_4
    + z_plastic2_DUMMY_RESERVE->factory2_4
    + z_plastic2_DUMMY_RESERVE->factory3_4
@@ -5874,9 +5808,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_4
    + z_plastic2_DUMMY_RESERVE->hospital2_4
    + z_plastic2_DUMMY_RESERVE->hospital3_4
-   + z_plastic2_DUMMY_RESERVE->hospital4_4 - M_plastic2_DUMMY_RESERVE_4
+   + z_plastic2_DUMMY_RESERVE->hospital4_4 - M_plastic2_DUMMY_RESERVE_5
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_4]:
+ upper[availability_plastic3_DUMMY_RESERVE_5]:
    z_plastic3_DUMMY_RESERVE->factory1_4
    + z_plastic3_DUMMY_RESERVE->factory2_4
    + z_plastic3_DUMMY_RESERVE->factory3_4
@@ -5884,24 +5818,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_4
    + z_plastic3_DUMMY_RESERVE->hospital2_4
    + z_plastic3_DUMMY_RESERVE->hospital3_4
-   + z_plastic3_DUMMY_RESERVE->hospital4_4 - M_plastic3_DUMMY_RESERVE_4
+   + z_plastic3_DUMMY_RESERVE->hospital4_4 - M_plastic3_DUMMY_RESERVE_5
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_4]: z_ppe1_DUMMY_RESERVE->factory1_4
+ upper[availability_ppe1_DUMMY_RESERVE_5]: z_ppe1_DUMMY_RESERVE->factory1_4
    + z_ppe1_DUMMY_RESERVE->factory2_4 + z_ppe1_DUMMY_RESERVE->factory3_4
    + z_ppe1_DUMMY_RESERVE->factory4_4 + z_ppe1_DUMMY_RESERVE->hospital1_4
    + z_ppe1_DUMMY_RESERVE->hospital2_4 + z_ppe1_DUMMY_RESERVE->hospital3_4
-   + z_ppe1_DUMMY_RESERVE->hospital4_4 - M_ppe1_DUMMY_RESERVE_4 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_4]: z_ppe2_DUMMY_RESERVE->factory1_4
+   + z_ppe1_DUMMY_RESERVE->hospital4_4 - M_ppe1_DUMMY_RESERVE_5 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_5]: z_ppe2_DUMMY_RESERVE->factory1_4
    + z_ppe2_DUMMY_RESERVE->factory2_4 + z_ppe2_DUMMY_RESERVE->factory3_4
    + z_ppe2_DUMMY_RESERVE->factory4_4 + z_ppe2_DUMMY_RESERVE->hospital1_4
    + z_ppe2_DUMMY_RESERVE->hospital2_4 + z_ppe2_DUMMY_RESERVE->hospital3_4
-   + z_ppe2_DUMMY_RESERVE->hospital4_4 - M_ppe2_DUMMY_RESERVE_4 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_4]: z_ppe3_DUMMY_RESERVE->factory1_4
+   + z_ppe2_DUMMY_RESERVE->hospital4_4 - M_ppe2_DUMMY_RESERVE_5 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_5]: z_ppe3_DUMMY_RESERVE->factory1_4
    + z_ppe3_DUMMY_RESERVE->factory2_4 + z_ppe3_DUMMY_RESERVE->factory3_4
    + z_ppe3_DUMMY_RESERVE->factory4_4 + z_ppe3_DUMMY_RESERVE->hospital1_4
    + z_ppe3_DUMMY_RESERVE->hospital2_4 + z_ppe3_DUMMY_RESERVE->hospital3_4
-   + z_ppe3_DUMMY_RESERVE->hospital4_4 - M_ppe3_DUMMY_RESERVE_4 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_4]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_4 - M_ppe3_DUMMY_RESERVE_5 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_5]:
    z_respirator1_DUMMY_RESERVE->factory1_4
    + z_respirator1_DUMMY_RESERVE->factory2_4
    + z_respirator1_DUMMY_RESERVE->factory3_4
@@ -5910,8 +5844,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_4
    + z_respirator1_DUMMY_RESERVE->hospital3_4
    + z_respirator1_DUMMY_RESERVE->hospital4_4
-   - M_respirator1_DUMMY_RESERVE_4 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_4]:
+   - M_respirator1_DUMMY_RESERVE_5 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_5]:
    z_respirator2_DUMMY_RESERVE->factory1_4
    + z_respirator2_DUMMY_RESERVE->factory2_4
    + z_respirator2_DUMMY_RESERVE->factory3_4
@@ -5920,24 +5854,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_4
    + z_respirator2_DUMMY_RESERVE->hospital3_4
    + z_respirator2_DUMMY_RESERVE->hospital4_4
-   - M_respirator2_DUMMY_RESERVE_4 <= 0
- upper[availability_metal1_DUMMY_RESERVE_5]:
+   - M_respirator2_DUMMY_RESERVE_5 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_6]:
    z_metal1_DUMMY_RESERVE->factory1_5 + z_metal1_DUMMY_RESERVE->factory2_5
    + z_metal1_DUMMY_RESERVE->factory3_5
    + z_metal1_DUMMY_RESERVE->factory4_5
    + z_metal1_DUMMY_RESERVE->hospital1_5
    + z_metal1_DUMMY_RESERVE->hospital2_5
    + z_metal1_DUMMY_RESERVE->hospital3_5
-   + z_metal1_DUMMY_RESERVE->hospital4_5 - M_metal1_DUMMY_RESERVE_5 <= 0
- upper[availability_metal2_DUMMY_RESERVE_5]:
+   + z_metal1_DUMMY_RESERVE->hospital4_5 - M_metal1_DUMMY_RESERVE_6 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_6]:
    z_metal2_DUMMY_RESERVE->factory1_5 + z_metal2_DUMMY_RESERVE->factory2_5
    + z_metal2_DUMMY_RESERVE->factory3_5
    + z_metal2_DUMMY_RESERVE->factory4_5
    + z_metal2_DUMMY_RESERVE->hospital1_5
    + z_metal2_DUMMY_RESERVE->hospital2_5
    + z_metal2_DUMMY_RESERVE->hospital3_5
-   + z_metal2_DUMMY_RESERVE->hospital4_5 - M_metal2_DUMMY_RESERVE_5 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_5]:
+   + z_metal2_DUMMY_RESERVE->hospital4_5 - M_metal2_DUMMY_RESERVE_6 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_6]:
    z_plastic1_DUMMY_RESERVE->factory1_5
    + z_plastic1_DUMMY_RESERVE->factory2_5
    + z_plastic1_DUMMY_RESERVE->factory3_5
@@ -5945,9 +5879,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_5
    + z_plastic1_DUMMY_RESERVE->hospital2_5
    + z_plastic1_DUMMY_RESERVE->hospital3_5
-   + z_plastic1_DUMMY_RESERVE->hospital4_5 - M_plastic1_DUMMY_RESERVE_5
+   + z_plastic1_DUMMY_RESERVE->hospital4_5 - M_plastic1_DUMMY_RESERVE_6
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_5]:
+ upper[availability_plastic2_DUMMY_RESERVE_6]:
    z_plastic2_DUMMY_RESERVE->factory1_5
    + z_plastic2_DUMMY_RESERVE->factory2_5
    + z_plastic2_DUMMY_RESERVE->factory3_5
@@ -5955,9 +5889,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_5
    + z_plastic2_DUMMY_RESERVE->hospital2_5
    + z_plastic2_DUMMY_RESERVE->hospital3_5
-   + z_plastic2_DUMMY_RESERVE->hospital4_5 - M_plastic2_DUMMY_RESERVE_5
+   + z_plastic2_DUMMY_RESERVE->hospital4_5 - M_plastic2_DUMMY_RESERVE_6
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_5]:
+ upper[availability_plastic3_DUMMY_RESERVE_6]:
    z_plastic3_DUMMY_RESERVE->factory1_5
    + z_plastic3_DUMMY_RESERVE->factory2_5
    + z_plastic3_DUMMY_RESERVE->factory3_5
@@ -5965,24 +5899,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_5
    + z_plastic3_DUMMY_RESERVE->hospital2_5
    + z_plastic3_DUMMY_RESERVE->hospital3_5
-   + z_plastic3_DUMMY_RESERVE->hospital4_5 - M_plastic3_DUMMY_RESERVE_5
+   + z_plastic3_DUMMY_RESERVE->hospital4_5 - M_plastic3_DUMMY_RESERVE_6
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_5]: z_ppe1_DUMMY_RESERVE->factory1_5
+ upper[availability_ppe1_DUMMY_RESERVE_6]: z_ppe1_DUMMY_RESERVE->factory1_5
    + z_ppe1_DUMMY_RESERVE->factory2_5 + z_ppe1_DUMMY_RESERVE->factory3_5
    + z_ppe1_DUMMY_RESERVE->factory4_5 + z_ppe1_DUMMY_RESERVE->hospital1_5
    + z_ppe1_DUMMY_RESERVE->hospital2_5 + z_ppe1_DUMMY_RESERVE->hospital3_5
-   + z_ppe1_DUMMY_RESERVE->hospital4_5 - M_ppe1_DUMMY_RESERVE_5 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_5]: z_ppe2_DUMMY_RESERVE->factory1_5
+   + z_ppe1_DUMMY_RESERVE->hospital4_5 - M_ppe1_DUMMY_RESERVE_6 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_6]: z_ppe2_DUMMY_RESERVE->factory1_5
    + z_ppe2_DUMMY_RESERVE->factory2_5 + z_ppe2_DUMMY_RESERVE->factory3_5
    + z_ppe2_DUMMY_RESERVE->factory4_5 + z_ppe2_DUMMY_RESERVE->hospital1_5
    + z_ppe2_DUMMY_RESERVE->hospital2_5 + z_ppe2_DUMMY_RESERVE->hospital3_5
-   + z_ppe2_DUMMY_RESERVE->hospital4_5 - M_ppe2_DUMMY_RESERVE_5 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_5]: z_ppe3_DUMMY_RESERVE->factory1_5
+   + z_ppe2_DUMMY_RESERVE->hospital4_5 - M_ppe2_DUMMY_RESERVE_6 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_6]: z_ppe3_DUMMY_RESERVE->factory1_5
    + z_ppe3_DUMMY_RESERVE->factory2_5 + z_ppe3_DUMMY_RESERVE->factory3_5
    + z_ppe3_DUMMY_RESERVE->factory4_5 + z_ppe3_DUMMY_RESERVE->hospital1_5
    + z_ppe3_DUMMY_RESERVE->hospital2_5 + z_ppe3_DUMMY_RESERVE->hospital3_5
-   + z_ppe3_DUMMY_RESERVE->hospital4_5 - M_ppe3_DUMMY_RESERVE_5 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_5]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_5 - M_ppe3_DUMMY_RESERVE_6 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_6]:
    z_respirator1_DUMMY_RESERVE->factory1_5
    + z_respirator1_DUMMY_RESERVE->factory2_5
    + z_respirator1_DUMMY_RESERVE->factory3_5
@@ -5991,8 +5925,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_5
    + z_respirator1_DUMMY_RESERVE->hospital3_5
    + z_respirator1_DUMMY_RESERVE->hospital4_5
-   - M_respirator1_DUMMY_RESERVE_5 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_5]:
+   - M_respirator1_DUMMY_RESERVE_6 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_6]:
    z_respirator2_DUMMY_RESERVE->factory1_5
    + z_respirator2_DUMMY_RESERVE->factory2_5
    + z_respirator2_DUMMY_RESERVE->factory3_5
@@ -6001,24 +5935,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_5
    + z_respirator2_DUMMY_RESERVE->hospital3_5
    + z_respirator2_DUMMY_RESERVE->hospital4_5
-   - M_respirator2_DUMMY_RESERVE_5 <= 0
- upper[availability_metal1_DUMMY_RESERVE_6]:
+   - M_respirator2_DUMMY_RESERVE_6 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_7]:
    z_metal1_DUMMY_RESERVE->factory1_6 + z_metal1_DUMMY_RESERVE->factory2_6
    + z_metal1_DUMMY_RESERVE->factory3_6
    + z_metal1_DUMMY_RESERVE->factory4_6
    + z_metal1_DUMMY_RESERVE->hospital1_6
    + z_metal1_DUMMY_RESERVE->hospital2_6
    + z_metal1_DUMMY_RESERVE->hospital3_6
-   + z_metal1_DUMMY_RESERVE->hospital4_6 - M_metal1_DUMMY_RESERVE_6 <= 0
- upper[availability_metal2_DUMMY_RESERVE_6]:
+   + z_metal1_DUMMY_RESERVE->hospital4_6 - M_metal1_DUMMY_RESERVE_7 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_7]:
    z_metal2_DUMMY_RESERVE->factory1_6 + z_metal2_DUMMY_RESERVE->factory2_6
    + z_metal2_DUMMY_RESERVE->factory3_6
    + z_metal2_DUMMY_RESERVE->factory4_6
    + z_metal2_DUMMY_RESERVE->hospital1_6
    + z_metal2_DUMMY_RESERVE->hospital2_6
    + z_metal2_DUMMY_RESERVE->hospital3_6
-   + z_metal2_DUMMY_RESERVE->hospital4_6 - M_metal2_DUMMY_RESERVE_6 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_6]:
+   + z_metal2_DUMMY_RESERVE->hospital4_6 - M_metal2_DUMMY_RESERVE_7 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_7]:
    z_plastic1_DUMMY_RESERVE->factory1_6
    + z_plastic1_DUMMY_RESERVE->factory2_6
    + z_plastic1_DUMMY_RESERVE->factory3_6
@@ -6026,9 +5960,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_6
    + z_plastic1_DUMMY_RESERVE->hospital2_6
    + z_plastic1_DUMMY_RESERVE->hospital3_6
-   + z_plastic1_DUMMY_RESERVE->hospital4_6 - M_plastic1_DUMMY_RESERVE_6
+   + z_plastic1_DUMMY_RESERVE->hospital4_6 - M_plastic1_DUMMY_RESERVE_7
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_6]:
+ upper[availability_plastic2_DUMMY_RESERVE_7]:
    z_plastic2_DUMMY_RESERVE->factory1_6
    + z_plastic2_DUMMY_RESERVE->factory2_6
    + z_plastic2_DUMMY_RESERVE->factory3_6
@@ -6036,9 +5970,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_6
    + z_plastic2_DUMMY_RESERVE->hospital2_6
    + z_plastic2_DUMMY_RESERVE->hospital3_6
-   + z_plastic2_DUMMY_RESERVE->hospital4_6 - M_plastic2_DUMMY_RESERVE_6
+   + z_plastic2_DUMMY_RESERVE->hospital4_6 - M_plastic2_DUMMY_RESERVE_7
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_6]:
+ upper[availability_plastic3_DUMMY_RESERVE_7]:
    z_plastic3_DUMMY_RESERVE->factory1_6
    + z_plastic3_DUMMY_RESERVE->factory2_6
    + z_plastic3_DUMMY_RESERVE->factory3_6
@@ -6046,24 +5980,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_6
    + z_plastic3_DUMMY_RESERVE->hospital2_6
    + z_plastic3_DUMMY_RESERVE->hospital3_6
-   + z_plastic3_DUMMY_RESERVE->hospital4_6 - M_plastic3_DUMMY_RESERVE_6
+   + z_plastic3_DUMMY_RESERVE->hospital4_6 - M_plastic3_DUMMY_RESERVE_7
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_6]: z_ppe1_DUMMY_RESERVE->factory1_6
+ upper[availability_ppe1_DUMMY_RESERVE_7]: z_ppe1_DUMMY_RESERVE->factory1_6
    + z_ppe1_DUMMY_RESERVE->factory2_6 + z_ppe1_DUMMY_RESERVE->factory3_6
    + z_ppe1_DUMMY_RESERVE->factory4_6 + z_ppe1_DUMMY_RESERVE->hospital1_6
    + z_ppe1_DUMMY_RESERVE->hospital2_6 + z_ppe1_DUMMY_RESERVE->hospital3_6
-   + z_ppe1_DUMMY_RESERVE->hospital4_6 - M_ppe1_DUMMY_RESERVE_6 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_6]: z_ppe2_DUMMY_RESERVE->factory1_6
+   + z_ppe1_DUMMY_RESERVE->hospital4_6 - M_ppe1_DUMMY_RESERVE_7 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_7]: z_ppe2_DUMMY_RESERVE->factory1_6
    + z_ppe2_DUMMY_RESERVE->factory2_6 + z_ppe2_DUMMY_RESERVE->factory3_6
    + z_ppe2_DUMMY_RESERVE->factory4_6 + z_ppe2_DUMMY_RESERVE->hospital1_6
    + z_ppe2_DUMMY_RESERVE->hospital2_6 + z_ppe2_DUMMY_RESERVE->hospital3_6
-   + z_ppe2_DUMMY_RESERVE->hospital4_6 - M_ppe2_DUMMY_RESERVE_6 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_6]: z_ppe3_DUMMY_RESERVE->factory1_6
+   + z_ppe2_DUMMY_RESERVE->hospital4_6 - M_ppe2_DUMMY_RESERVE_7 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_7]: z_ppe3_DUMMY_RESERVE->factory1_6
    + z_ppe3_DUMMY_RESERVE->factory2_6 + z_ppe3_DUMMY_RESERVE->factory3_6
    + z_ppe3_DUMMY_RESERVE->factory4_6 + z_ppe3_DUMMY_RESERVE->hospital1_6
    + z_ppe3_DUMMY_RESERVE->hospital2_6 + z_ppe3_DUMMY_RESERVE->hospital3_6
-   + z_ppe3_DUMMY_RESERVE->hospital4_6 - M_ppe3_DUMMY_RESERVE_6 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_6]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_6 - M_ppe3_DUMMY_RESERVE_7 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_7]:
    z_respirator1_DUMMY_RESERVE->factory1_6
    + z_respirator1_DUMMY_RESERVE->factory2_6
    + z_respirator1_DUMMY_RESERVE->factory3_6
@@ -6072,8 +6006,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_6
    + z_respirator1_DUMMY_RESERVE->hospital3_6
    + z_respirator1_DUMMY_RESERVE->hospital4_6
-   - M_respirator1_DUMMY_RESERVE_6 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_6]:
+   - M_respirator1_DUMMY_RESERVE_7 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_7]:
    z_respirator2_DUMMY_RESERVE->factory1_6
    + z_respirator2_DUMMY_RESERVE->factory2_6
    + z_respirator2_DUMMY_RESERVE->factory3_6
@@ -6082,24 +6016,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_6
    + z_respirator2_DUMMY_RESERVE->hospital3_6
    + z_respirator2_DUMMY_RESERVE->hospital4_6
-   - M_respirator2_DUMMY_RESERVE_6 <= 0
- upper[availability_metal1_DUMMY_RESERVE_7]:
+   - M_respirator2_DUMMY_RESERVE_7 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_8]:
    z_metal1_DUMMY_RESERVE->factory1_7 + z_metal1_DUMMY_RESERVE->factory2_7
    + z_metal1_DUMMY_RESERVE->factory3_7
    + z_metal1_DUMMY_RESERVE->factory4_7
    + z_metal1_DUMMY_RESERVE->hospital1_7
    + z_metal1_DUMMY_RESERVE->hospital2_7
    + z_metal1_DUMMY_RESERVE->hospital3_7
-   + z_metal1_DUMMY_RESERVE->hospital4_7 - M_metal1_DUMMY_RESERVE_7 <= 0
- upper[availability_metal2_DUMMY_RESERVE_7]:
+   + z_metal1_DUMMY_RESERVE->hospital4_7 - M_metal1_DUMMY_RESERVE_8 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_8]:
    z_metal2_DUMMY_RESERVE->factory1_7 + z_metal2_DUMMY_RESERVE->factory2_7
    + z_metal2_DUMMY_RESERVE->factory3_7
    + z_metal2_DUMMY_RESERVE->factory4_7
    + z_metal2_DUMMY_RESERVE->hospital1_7
    + z_metal2_DUMMY_RESERVE->hospital2_7
    + z_metal2_DUMMY_RESERVE->hospital3_7
-   + z_metal2_DUMMY_RESERVE->hospital4_7 - M_metal2_DUMMY_RESERVE_7 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_7]:
+   + z_metal2_DUMMY_RESERVE->hospital4_7 - M_metal2_DUMMY_RESERVE_8 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_8]:
    z_plastic1_DUMMY_RESERVE->factory1_7
    + z_plastic1_DUMMY_RESERVE->factory2_7
    + z_plastic1_DUMMY_RESERVE->factory3_7
@@ -6107,9 +6041,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_7
    + z_plastic1_DUMMY_RESERVE->hospital2_7
    + z_plastic1_DUMMY_RESERVE->hospital3_7
-   + z_plastic1_DUMMY_RESERVE->hospital4_7 - M_plastic1_DUMMY_RESERVE_7
+   + z_plastic1_DUMMY_RESERVE->hospital4_7 - M_plastic1_DUMMY_RESERVE_8
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_7]:
+ upper[availability_plastic2_DUMMY_RESERVE_8]:
    z_plastic2_DUMMY_RESERVE->factory1_7
    + z_plastic2_DUMMY_RESERVE->factory2_7
    + z_plastic2_DUMMY_RESERVE->factory3_7
@@ -6117,9 +6051,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_7
    + z_plastic2_DUMMY_RESERVE->hospital2_7
    + z_plastic2_DUMMY_RESERVE->hospital3_7
-   + z_plastic2_DUMMY_RESERVE->hospital4_7 - M_plastic2_DUMMY_RESERVE_7
+   + z_plastic2_DUMMY_RESERVE->hospital4_7 - M_plastic2_DUMMY_RESERVE_8
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_7]:
+ upper[availability_plastic3_DUMMY_RESERVE_8]:
    z_plastic3_DUMMY_RESERVE->factory1_7
    + z_plastic3_DUMMY_RESERVE->factory2_7
    + z_plastic3_DUMMY_RESERVE->factory3_7
@@ -6127,24 +6061,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_7
    + z_plastic3_DUMMY_RESERVE->hospital2_7
    + z_plastic3_DUMMY_RESERVE->hospital3_7
-   + z_plastic3_DUMMY_RESERVE->hospital4_7 - M_plastic3_DUMMY_RESERVE_7
+   + z_plastic3_DUMMY_RESERVE->hospital4_7 - M_plastic3_DUMMY_RESERVE_8
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_7]: z_ppe1_DUMMY_RESERVE->factory1_7
+ upper[availability_ppe1_DUMMY_RESERVE_8]: z_ppe1_DUMMY_RESERVE->factory1_7
    + z_ppe1_DUMMY_RESERVE->factory2_7 + z_ppe1_DUMMY_RESERVE->factory3_7
    + z_ppe1_DUMMY_RESERVE->factory4_7 + z_ppe1_DUMMY_RESERVE->hospital1_7
    + z_ppe1_DUMMY_RESERVE->hospital2_7 + z_ppe1_DUMMY_RESERVE->hospital3_7
-   + z_ppe1_DUMMY_RESERVE->hospital4_7 - M_ppe1_DUMMY_RESERVE_7 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_7]: z_ppe2_DUMMY_RESERVE->factory1_7
+   + z_ppe1_DUMMY_RESERVE->hospital4_7 - M_ppe1_DUMMY_RESERVE_8 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_8]: z_ppe2_DUMMY_RESERVE->factory1_7
    + z_ppe2_DUMMY_RESERVE->factory2_7 + z_ppe2_DUMMY_RESERVE->factory3_7
    + z_ppe2_DUMMY_RESERVE->factory4_7 + z_ppe2_DUMMY_RESERVE->hospital1_7
    + z_ppe2_DUMMY_RESERVE->hospital2_7 + z_ppe2_DUMMY_RESERVE->hospital3_7
-   + z_ppe2_DUMMY_RESERVE->hospital4_7 - M_ppe2_DUMMY_RESERVE_7 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_7]: z_ppe3_DUMMY_RESERVE->factory1_7
+   + z_ppe2_DUMMY_RESERVE->hospital4_7 - M_ppe2_DUMMY_RESERVE_8 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_8]: z_ppe3_DUMMY_RESERVE->factory1_7
    + z_ppe3_DUMMY_RESERVE->factory2_7 + z_ppe3_DUMMY_RESERVE->factory3_7
    + z_ppe3_DUMMY_RESERVE->factory4_7 + z_ppe3_DUMMY_RESERVE->hospital1_7
    + z_ppe3_DUMMY_RESERVE->hospital2_7 + z_ppe3_DUMMY_RESERVE->hospital3_7
-   + z_ppe3_DUMMY_RESERVE->hospital4_7 - M_ppe3_DUMMY_RESERVE_7 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_7]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_7 - M_ppe3_DUMMY_RESERVE_8 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_8]:
    z_respirator1_DUMMY_RESERVE->factory1_7
    + z_respirator1_DUMMY_RESERVE->factory2_7
    + z_respirator1_DUMMY_RESERVE->factory3_7
@@ -6153,8 +6087,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_7
    + z_respirator1_DUMMY_RESERVE->hospital3_7
    + z_respirator1_DUMMY_RESERVE->hospital4_7
-   - M_respirator1_DUMMY_RESERVE_7 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_7]:
+   - M_respirator1_DUMMY_RESERVE_8 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_8]:
    z_respirator2_DUMMY_RESERVE->factory1_7
    + z_respirator2_DUMMY_RESERVE->factory2_7
    + z_respirator2_DUMMY_RESERVE->factory3_7
@@ -6163,24 +6097,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_7
    + z_respirator2_DUMMY_RESERVE->hospital3_7
    + z_respirator2_DUMMY_RESERVE->hospital4_7
-   - M_respirator2_DUMMY_RESERVE_7 <= 0
- upper[availability_metal1_DUMMY_RESERVE_8]:
+   - M_respirator2_DUMMY_RESERVE_8 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_9]:
    z_metal1_DUMMY_RESERVE->factory1_8 + z_metal1_DUMMY_RESERVE->factory2_8
    + z_metal1_DUMMY_RESERVE->factory3_8
    + z_metal1_DUMMY_RESERVE->factory4_8
    + z_metal1_DUMMY_RESERVE->hospital1_8
    + z_metal1_DUMMY_RESERVE->hospital2_8
    + z_metal1_DUMMY_RESERVE->hospital3_8
-   + z_metal1_DUMMY_RESERVE->hospital4_8 - M_metal1_DUMMY_RESERVE_8 <= 0
- upper[availability_metal2_DUMMY_RESERVE_8]:
+   + z_metal1_DUMMY_RESERVE->hospital4_8 - M_metal1_DUMMY_RESERVE_9 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_9]:
    z_metal2_DUMMY_RESERVE->factory1_8 + z_metal2_DUMMY_RESERVE->factory2_8
    + z_metal2_DUMMY_RESERVE->factory3_8
    + z_metal2_DUMMY_RESERVE->factory4_8
    + z_metal2_DUMMY_RESERVE->hospital1_8
    + z_metal2_DUMMY_RESERVE->hospital2_8
    + z_metal2_DUMMY_RESERVE->hospital3_8
-   + z_metal2_DUMMY_RESERVE->hospital4_8 - M_metal2_DUMMY_RESERVE_8 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_8]:
+   + z_metal2_DUMMY_RESERVE->hospital4_8 - M_metal2_DUMMY_RESERVE_9 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_9]:
    z_plastic1_DUMMY_RESERVE->factory1_8
    + z_plastic1_DUMMY_RESERVE->factory2_8
    + z_plastic1_DUMMY_RESERVE->factory3_8
@@ -6188,9 +6122,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_8
    + z_plastic1_DUMMY_RESERVE->hospital2_8
    + z_plastic1_DUMMY_RESERVE->hospital3_8
-   + z_plastic1_DUMMY_RESERVE->hospital4_8 - M_plastic1_DUMMY_RESERVE_8
+   + z_plastic1_DUMMY_RESERVE->hospital4_8 - M_plastic1_DUMMY_RESERVE_9
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_8]:
+ upper[availability_plastic2_DUMMY_RESERVE_9]:
    z_plastic2_DUMMY_RESERVE->factory1_8
    + z_plastic2_DUMMY_RESERVE->factory2_8
    + z_plastic2_DUMMY_RESERVE->factory3_8
@@ -6198,9 +6132,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_8
    + z_plastic2_DUMMY_RESERVE->hospital2_8
    + z_plastic2_DUMMY_RESERVE->hospital3_8
-   + z_plastic2_DUMMY_RESERVE->hospital4_8 - M_plastic2_DUMMY_RESERVE_8
+   + z_plastic2_DUMMY_RESERVE->hospital4_8 - M_plastic2_DUMMY_RESERVE_9
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_8]:
+ upper[availability_plastic3_DUMMY_RESERVE_9]:
    z_plastic3_DUMMY_RESERVE->factory1_8
    + z_plastic3_DUMMY_RESERVE->factory2_8
    + z_plastic3_DUMMY_RESERVE->factory3_8
@@ -6208,24 +6142,24 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_8
    + z_plastic3_DUMMY_RESERVE->hospital2_8
    + z_plastic3_DUMMY_RESERVE->hospital3_8
-   + z_plastic3_DUMMY_RESERVE->hospital4_8 - M_plastic3_DUMMY_RESERVE_8
+   + z_plastic3_DUMMY_RESERVE->hospital4_8 - M_plastic3_DUMMY_RESERVE_9
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_8]: z_ppe1_DUMMY_RESERVE->factory1_8
+ upper[availability_ppe1_DUMMY_RESERVE_9]: z_ppe1_DUMMY_RESERVE->factory1_8
    + z_ppe1_DUMMY_RESERVE->factory2_8 + z_ppe1_DUMMY_RESERVE->factory3_8
    + z_ppe1_DUMMY_RESERVE->factory4_8 + z_ppe1_DUMMY_RESERVE->hospital1_8
    + z_ppe1_DUMMY_RESERVE->hospital2_8 + z_ppe1_DUMMY_RESERVE->hospital3_8
-   + z_ppe1_DUMMY_RESERVE->hospital4_8 - M_ppe1_DUMMY_RESERVE_8 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_8]: z_ppe2_DUMMY_RESERVE->factory1_8
+   + z_ppe1_DUMMY_RESERVE->hospital4_8 - M_ppe1_DUMMY_RESERVE_9 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_9]: z_ppe2_DUMMY_RESERVE->factory1_8
    + z_ppe2_DUMMY_RESERVE->factory2_8 + z_ppe2_DUMMY_RESERVE->factory3_8
    + z_ppe2_DUMMY_RESERVE->factory4_8 + z_ppe2_DUMMY_RESERVE->hospital1_8
    + z_ppe2_DUMMY_RESERVE->hospital2_8 + z_ppe2_DUMMY_RESERVE->hospital3_8
-   + z_ppe2_DUMMY_RESERVE->hospital4_8 - M_ppe2_DUMMY_RESERVE_8 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_8]: z_ppe3_DUMMY_RESERVE->factory1_8
+   + z_ppe2_DUMMY_RESERVE->hospital4_8 - M_ppe2_DUMMY_RESERVE_9 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_9]: z_ppe3_DUMMY_RESERVE->factory1_8
    + z_ppe3_DUMMY_RESERVE->factory2_8 + z_ppe3_DUMMY_RESERVE->factory3_8
    + z_ppe3_DUMMY_RESERVE->factory4_8 + z_ppe3_DUMMY_RESERVE->hospital1_8
    + z_ppe3_DUMMY_RESERVE->hospital2_8 + z_ppe3_DUMMY_RESERVE->hospital3_8
-   + z_ppe3_DUMMY_RESERVE->hospital4_8 - M_ppe3_DUMMY_RESERVE_8 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_8]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_8 - M_ppe3_DUMMY_RESERVE_9 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_9]:
    z_respirator1_DUMMY_RESERVE->factory1_8
    + z_respirator1_DUMMY_RESERVE->factory2_8
    + z_respirator1_DUMMY_RESERVE->factory3_8
@@ -6234,8 +6168,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_8
    + z_respirator1_DUMMY_RESERVE->hospital3_8
    + z_respirator1_DUMMY_RESERVE->hospital4_8
-   - M_respirator1_DUMMY_RESERVE_8 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_8]:
+   - M_respirator1_DUMMY_RESERVE_9 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_9]:
    z_respirator2_DUMMY_RESERVE->factory1_8
    + z_respirator2_DUMMY_RESERVE->factory2_8
    + z_respirator2_DUMMY_RESERVE->factory3_8
@@ -6244,24 +6178,24 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_8
    + z_respirator2_DUMMY_RESERVE->hospital3_8
    + z_respirator2_DUMMY_RESERVE->hospital4_8
-   - M_respirator2_DUMMY_RESERVE_8 <= 0
- upper[availability_metal1_DUMMY_RESERVE_9]:
+   - M_respirator2_DUMMY_RESERVE_9 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_10]:
    z_metal1_DUMMY_RESERVE->factory1_9 + z_metal1_DUMMY_RESERVE->factory2_9
    + z_metal1_DUMMY_RESERVE->factory3_9
    + z_metal1_DUMMY_RESERVE->factory4_9
    + z_metal1_DUMMY_RESERVE->hospital1_9
    + z_metal1_DUMMY_RESERVE->hospital2_9
    + z_metal1_DUMMY_RESERVE->hospital3_9
-   + z_metal1_DUMMY_RESERVE->hospital4_9 - M_metal1_DUMMY_RESERVE_9 <= 0
- upper[availability_metal2_DUMMY_RESERVE_9]:
+   + z_metal1_DUMMY_RESERVE->hospital4_9 - M_metal1_DUMMY_RESERVE_10 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_10]:
    z_metal2_DUMMY_RESERVE->factory1_9 + z_metal2_DUMMY_RESERVE->factory2_9
    + z_metal2_DUMMY_RESERVE->factory3_9
    + z_metal2_DUMMY_RESERVE->factory4_9
    + z_metal2_DUMMY_RESERVE->hospital1_9
    + z_metal2_DUMMY_RESERVE->hospital2_9
    + z_metal2_DUMMY_RESERVE->hospital3_9
-   + z_metal2_DUMMY_RESERVE->hospital4_9 - M_metal2_DUMMY_RESERVE_9 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_9]:
+   + z_metal2_DUMMY_RESERVE->hospital4_9 - M_metal2_DUMMY_RESERVE_10 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_10]:
    z_plastic1_DUMMY_RESERVE->factory1_9
    + z_plastic1_DUMMY_RESERVE->factory2_9
    + z_plastic1_DUMMY_RESERVE->factory3_9
@@ -6269,9 +6203,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_9
    + z_plastic1_DUMMY_RESERVE->hospital2_9
    + z_plastic1_DUMMY_RESERVE->hospital3_9
-   + z_plastic1_DUMMY_RESERVE->hospital4_9 - M_plastic1_DUMMY_RESERVE_9
+   + z_plastic1_DUMMY_RESERVE->hospital4_9 - M_plastic1_DUMMY_RESERVE_10
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_9]:
+ upper[availability_plastic2_DUMMY_RESERVE_10]:
    z_plastic2_DUMMY_RESERVE->factory1_9
    + z_plastic2_DUMMY_RESERVE->factory2_9
    + z_plastic2_DUMMY_RESERVE->factory3_9
@@ -6279,9 +6213,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_9
    + z_plastic2_DUMMY_RESERVE->hospital2_9
    + z_plastic2_DUMMY_RESERVE->hospital3_9
-   + z_plastic2_DUMMY_RESERVE->hospital4_9 - M_plastic2_DUMMY_RESERVE_9
+   + z_plastic2_DUMMY_RESERVE->hospital4_9 - M_plastic2_DUMMY_RESERVE_10
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_9]:
+ upper[availability_plastic3_DUMMY_RESERVE_10]:
    z_plastic3_DUMMY_RESERVE->factory1_9
    + z_plastic3_DUMMY_RESERVE->factory2_9
    + z_plastic3_DUMMY_RESERVE->factory3_9
@@ -6289,24 +6223,27 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_9
    + z_plastic3_DUMMY_RESERVE->hospital2_9
    + z_plastic3_DUMMY_RESERVE->hospital3_9
-   + z_plastic3_DUMMY_RESERVE->hospital4_9 - M_plastic3_DUMMY_RESERVE_9
+   + z_plastic3_DUMMY_RESERVE->hospital4_9 - M_plastic3_DUMMY_RESERVE_10
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_9]: z_ppe1_DUMMY_RESERVE->factory1_9
-   + z_ppe1_DUMMY_RESERVE->factory2_9 + z_ppe1_DUMMY_RESERVE->factory3_9
-   + z_ppe1_DUMMY_RESERVE->factory4_9 + z_ppe1_DUMMY_RESERVE->hospital1_9
-   + z_ppe1_DUMMY_RESERVE->hospital2_9 + z_ppe1_DUMMY_RESERVE->hospital3_9
-   + z_ppe1_DUMMY_RESERVE->hospital4_9 - M_ppe1_DUMMY_RESERVE_9 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_9]: z_ppe2_DUMMY_RESERVE->factory1_9
-   + z_ppe2_DUMMY_RESERVE->factory2_9 + z_ppe2_DUMMY_RESERVE->factory3_9
-   + z_ppe2_DUMMY_RESERVE->factory4_9 + z_ppe2_DUMMY_RESERVE->hospital1_9
-   + z_ppe2_DUMMY_RESERVE->hospital2_9 + z_ppe2_DUMMY_RESERVE->hospital3_9
-   + z_ppe2_DUMMY_RESERVE->hospital4_9 - M_ppe2_DUMMY_RESERVE_9 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_9]: z_ppe3_DUMMY_RESERVE->factory1_9
-   + z_ppe3_DUMMY_RESERVE->factory2_9 + z_ppe3_DUMMY_RESERVE->factory3_9
-   + z_ppe3_DUMMY_RESERVE->factory4_9 + z_ppe3_DUMMY_RESERVE->hospital1_9
-   + z_ppe3_DUMMY_RESERVE->hospital2_9 + z_ppe3_DUMMY_RESERVE->hospital3_9
-   + z_ppe3_DUMMY_RESERVE->hospital4_9 - M_ppe3_DUMMY_RESERVE_9 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_9]:
+ upper[availability_ppe1_DUMMY_RESERVE_10]:
+   z_ppe1_DUMMY_RESERVE->factory1_9 + z_ppe1_DUMMY_RESERVE->factory2_9
+   + z_ppe1_DUMMY_RESERVE->factory3_9 + z_ppe1_DUMMY_RESERVE->factory4_9
+   + z_ppe1_DUMMY_RESERVE->hospital1_9 + z_ppe1_DUMMY_RESERVE->hospital2_9
+   + z_ppe1_DUMMY_RESERVE->hospital3_9 + z_ppe1_DUMMY_RESERVE->hospital4_9
+   - M_ppe1_DUMMY_RESERVE_10 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_10]:
+   z_ppe2_DUMMY_RESERVE->factory1_9 + z_ppe2_DUMMY_RESERVE->factory2_9
+   + z_ppe2_DUMMY_RESERVE->factory3_9 + z_ppe2_DUMMY_RESERVE->factory4_9
+   + z_ppe2_DUMMY_RESERVE->hospital1_9 + z_ppe2_DUMMY_RESERVE->hospital2_9
+   + z_ppe2_DUMMY_RESERVE->hospital3_9 + z_ppe2_DUMMY_RESERVE->hospital4_9
+   - M_ppe2_DUMMY_RESERVE_10 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_10]:
+   z_ppe3_DUMMY_RESERVE->factory1_9 + z_ppe3_DUMMY_RESERVE->factory2_9
+   + z_ppe3_DUMMY_RESERVE->factory3_9 + z_ppe3_DUMMY_RESERVE->factory4_9
+   + z_ppe3_DUMMY_RESERVE->hospital1_9 + z_ppe3_DUMMY_RESERVE->hospital2_9
+   + z_ppe3_DUMMY_RESERVE->hospital3_9 + z_ppe3_DUMMY_RESERVE->hospital4_9
+   - M_ppe3_DUMMY_RESERVE_10 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_10]:
    z_respirator1_DUMMY_RESERVE->factory1_9
    + z_respirator1_DUMMY_RESERVE->factory2_9
    + z_respirator1_DUMMY_RESERVE->factory3_9
@@ -6315,8 +6252,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_9
    + z_respirator1_DUMMY_RESERVE->hospital3_9
    + z_respirator1_DUMMY_RESERVE->hospital4_9
-   - M_respirator1_DUMMY_RESERVE_9 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_9]:
+   - M_respirator1_DUMMY_RESERVE_10 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_10]:
    z_respirator2_DUMMY_RESERVE->factory1_9
    + z_respirator2_DUMMY_RESERVE->factory2_9
    + z_respirator2_DUMMY_RESERVE->factory3_9
@@ -6325,8 +6262,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_9
    + z_respirator2_DUMMY_RESERVE->hospital3_9
    + z_respirator2_DUMMY_RESERVE->hospital4_9
-   - M_respirator2_DUMMY_RESERVE_9 <= 0
- upper[availability_metal1_DUMMY_RESERVE_10]:
+   - M_respirator2_DUMMY_RESERVE_10 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_11]:
    z_metal1_DUMMY_RESERVE->factory1_10
    + z_metal1_DUMMY_RESERVE->factory2_10
    + z_metal1_DUMMY_RESERVE->factory3_10
@@ -6334,8 +6271,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_10
    + z_metal1_DUMMY_RESERVE->hospital2_10
    + z_metal1_DUMMY_RESERVE->hospital3_10
-   + z_metal1_DUMMY_RESERVE->hospital4_10 - M_metal1_DUMMY_RESERVE_10 <= 0
- upper[availability_metal2_DUMMY_RESERVE_10]:
+   + z_metal1_DUMMY_RESERVE->hospital4_10 - M_metal1_DUMMY_RESERVE_11 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_11]:
    z_metal2_DUMMY_RESERVE->factory1_10
    + z_metal2_DUMMY_RESERVE->factory2_10
    + z_metal2_DUMMY_RESERVE->factory3_10
@@ -6343,8 +6280,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_10
    + z_metal2_DUMMY_RESERVE->hospital2_10
    + z_metal2_DUMMY_RESERVE->hospital3_10
-   + z_metal2_DUMMY_RESERVE->hospital4_10 - M_metal2_DUMMY_RESERVE_10 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_10]:
+   + z_metal2_DUMMY_RESERVE->hospital4_10 - M_metal2_DUMMY_RESERVE_11 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_11]:
    z_plastic1_DUMMY_RESERVE->factory1_10
    + z_plastic1_DUMMY_RESERVE->factory2_10
    + z_plastic1_DUMMY_RESERVE->factory3_10
@@ -6352,9 +6289,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_10
    + z_plastic1_DUMMY_RESERVE->hospital2_10
    + z_plastic1_DUMMY_RESERVE->hospital3_10
-   + z_plastic1_DUMMY_RESERVE->hospital4_10 - M_plastic1_DUMMY_RESERVE_10
+   + z_plastic1_DUMMY_RESERVE->hospital4_10 - M_plastic1_DUMMY_RESERVE_11
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_10]:
+ upper[availability_plastic2_DUMMY_RESERVE_11]:
    z_plastic2_DUMMY_RESERVE->factory1_10
    + z_plastic2_DUMMY_RESERVE->factory2_10
    + z_plastic2_DUMMY_RESERVE->factory3_10
@@ -6362,9 +6299,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_10
    + z_plastic2_DUMMY_RESERVE->hospital2_10
    + z_plastic2_DUMMY_RESERVE->hospital3_10
-   + z_plastic2_DUMMY_RESERVE->hospital4_10 - M_plastic2_DUMMY_RESERVE_10
+   + z_plastic2_DUMMY_RESERVE->hospital4_10 - M_plastic2_DUMMY_RESERVE_11
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_10]:
+ upper[availability_plastic3_DUMMY_RESERVE_11]:
    z_plastic3_DUMMY_RESERVE->factory1_10
    + z_plastic3_DUMMY_RESERVE->factory2_10
    + z_plastic3_DUMMY_RESERVE->factory3_10
@@ -6372,30 +6309,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_10
    + z_plastic3_DUMMY_RESERVE->hospital2_10
    + z_plastic3_DUMMY_RESERVE->hospital3_10
-   + z_plastic3_DUMMY_RESERVE->hospital4_10 - M_plastic3_DUMMY_RESERVE_10
+   + z_plastic3_DUMMY_RESERVE->hospital4_10 - M_plastic3_DUMMY_RESERVE_11
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_10]:
+ upper[availability_ppe1_DUMMY_RESERVE_11]:
    z_ppe1_DUMMY_RESERVE->factory1_10 + z_ppe1_DUMMY_RESERVE->factory2_10
    + z_ppe1_DUMMY_RESERVE->factory3_10 + z_ppe1_DUMMY_RESERVE->factory4_10
    + z_ppe1_DUMMY_RESERVE->hospital1_10
    + z_ppe1_DUMMY_RESERVE->hospital2_10
    + z_ppe1_DUMMY_RESERVE->hospital3_10
-   + z_ppe1_DUMMY_RESERVE->hospital4_10 - M_ppe1_DUMMY_RESERVE_10 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_10]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_10 - M_ppe1_DUMMY_RESERVE_11 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_11]:
    z_ppe2_DUMMY_RESERVE->factory1_10 + z_ppe2_DUMMY_RESERVE->factory2_10
    + z_ppe2_DUMMY_RESERVE->factory3_10 + z_ppe2_DUMMY_RESERVE->factory4_10
    + z_ppe2_DUMMY_RESERVE->hospital1_10
    + z_ppe2_DUMMY_RESERVE->hospital2_10
    + z_ppe2_DUMMY_RESERVE->hospital3_10
-   + z_ppe2_DUMMY_RESERVE->hospital4_10 - M_ppe2_DUMMY_RESERVE_10 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_10]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_10 - M_ppe2_DUMMY_RESERVE_11 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_11]:
    z_ppe3_DUMMY_RESERVE->factory1_10 + z_ppe3_DUMMY_RESERVE->factory2_10
    + z_ppe3_DUMMY_RESERVE->factory3_10 + z_ppe3_DUMMY_RESERVE->factory4_10
    + z_ppe3_DUMMY_RESERVE->hospital1_10
    + z_ppe3_DUMMY_RESERVE->hospital2_10
    + z_ppe3_DUMMY_RESERVE->hospital3_10
-   + z_ppe3_DUMMY_RESERVE->hospital4_10 - M_ppe3_DUMMY_RESERVE_10 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_10]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_10 - M_ppe3_DUMMY_RESERVE_11 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_11]:
    z_respirator1_DUMMY_RESERVE->factory1_10
    + z_respirator1_DUMMY_RESERVE->factory2_10
    + z_respirator1_DUMMY_RESERVE->factory3_10
@@ -6404,8 +6341,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_10
    + z_respirator1_DUMMY_RESERVE->hospital3_10
    + z_respirator1_DUMMY_RESERVE->hospital4_10
-   - M_respirator1_DUMMY_RESERVE_10 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_10]:
+   - M_respirator1_DUMMY_RESERVE_11 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_11]:
    z_respirator2_DUMMY_RESERVE->factory1_10
    + z_respirator2_DUMMY_RESERVE->factory2_10
    + z_respirator2_DUMMY_RESERVE->factory3_10
@@ -6414,8 +6351,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_10
    + z_respirator2_DUMMY_RESERVE->hospital3_10
    + z_respirator2_DUMMY_RESERVE->hospital4_10
-   - M_respirator2_DUMMY_RESERVE_10 <= 0
- upper[availability_metal1_DUMMY_RESERVE_11]:
+   - M_respirator2_DUMMY_RESERVE_11 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_12]:
    z_metal1_DUMMY_RESERVE->factory1_11
    + z_metal1_DUMMY_RESERVE->factory2_11
    + z_metal1_DUMMY_RESERVE->factory3_11
@@ -6423,8 +6360,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_11
    + z_metal1_DUMMY_RESERVE->hospital2_11
    + z_metal1_DUMMY_RESERVE->hospital3_11
-   + z_metal1_DUMMY_RESERVE->hospital4_11 - M_metal1_DUMMY_RESERVE_11 <= 0
- upper[availability_metal2_DUMMY_RESERVE_11]:
+   + z_metal1_DUMMY_RESERVE->hospital4_11 - M_metal1_DUMMY_RESERVE_12 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_12]:
    z_metal2_DUMMY_RESERVE->factory1_11
    + z_metal2_DUMMY_RESERVE->factory2_11
    + z_metal2_DUMMY_RESERVE->factory3_11
@@ -6432,8 +6369,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_11
    + z_metal2_DUMMY_RESERVE->hospital2_11
    + z_metal2_DUMMY_RESERVE->hospital3_11
-   + z_metal2_DUMMY_RESERVE->hospital4_11 - M_metal2_DUMMY_RESERVE_11 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_11]:
+   + z_metal2_DUMMY_RESERVE->hospital4_11 - M_metal2_DUMMY_RESERVE_12 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_12]:
    z_plastic1_DUMMY_RESERVE->factory1_11
    + z_plastic1_DUMMY_RESERVE->factory2_11
    + z_plastic1_DUMMY_RESERVE->factory3_11
@@ -6441,9 +6378,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_11
    + z_plastic1_DUMMY_RESERVE->hospital2_11
    + z_plastic1_DUMMY_RESERVE->hospital3_11
-   + z_plastic1_DUMMY_RESERVE->hospital4_11 - M_plastic1_DUMMY_RESERVE_11
+   + z_plastic1_DUMMY_RESERVE->hospital4_11 - M_plastic1_DUMMY_RESERVE_12
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_11]:
+ upper[availability_plastic2_DUMMY_RESERVE_12]:
    z_plastic2_DUMMY_RESERVE->factory1_11
    + z_plastic2_DUMMY_RESERVE->factory2_11
    + z_plastic2_DUMMY_RESERVE->factory3_11
@@ -6451,9 +6388,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_11
    + z_plastic2_DUMMY_RESERVE->hospital2_11
    + z_plastic2_DUMMY_RESERVE->hospital3_11
-   + z_plastic2_DUMMY_RESERVE->hospital4_11 - M_plastic2_DUMMY_RESERVE_11
+   + z_plastic2_DUMMY_RESERVE->hospital4_11 - M_plastic2_DUMMY_RESERVE_12
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_11]:
+ upper[availability_plastic3_DUMMY_RESERVE_12]:
    z_plastic3_DUMMY_RESERVE->factory1_11
    + z_plastic3_DUMMY_RESERVE->factory2_11
    + z_plastic3_DUMMY_RESERVE->factory3_11
@@ -6461,30 +6398,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_11
    + z_plastic3_DUMMY_RESERVE->hospital2_11
    + z_plastic3_DUMMY_RESERVE->hospital3_11
-   + z_plastic3_DUMMY_RESERVE->hospital4_11 - M_plastic3_DUMMY_RESERVE_11
+   + z_plastic3_DUMMY_RESERVE->hospital4_11 - M_plastic3_DUMMY_RESERVE_12
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_11]:
+ upper[availability_ppe1_DUMMY_RESERVE_12]:
    z_ppe1_DUMMY_RESERVE->factory1_11 + z_ppe1_DUMMY_RESERVE->factory2_11
    + z_ppe1_DUMMY_RESERVE->factory3_11 + z_ppe1_DUMMY_RESERVE->factory4_11
    + z_ppe1_DUMMY_RESERVE->hospital1_11
    + z_ppe1_DUMMY_RESERVE->hospital2_11
    + z_ppe1_DUMMY_RESERVE->hospital3_11
-   + z_ppe1_DUMMY_RESERVE->hospital4_11 - M_ppe1_DUMMY_RESERVE_11 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_11]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_11 - M_ppe1_DUMMY_RESERVE_12 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_12]:
    z_ppe2_DUMMY_RESERVE->factory1_11 + z_ppe2_DUMMY_RESERVE->factory2_11
    + z_ppe2_DUMMY_RESERVE->factory3_11 + z_ppe2_DUMMY_RESERVE->factory4_11
    + z_ppe2_DUMMY_RESERVE->hospital1_11
    + z_ppe2_DUMMY_RESERVE->hospital2_11
    + z_ppe2_DUMMY_RESERVE->hospital3_11
-   + z_ppe2_DUMMY_RESERVE->hospital4_11 - M_ppe2_DUMMY_RESERVE_11 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_11]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_11 - M_ppe2_DUMMY_RESERVE_12 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_12]:
    z_ppe3_DUMMY_RESERVE->factory1_11 + z_ppe3_DUMMY_RESERVE->factory2_11
    + z_ppe3_DUMMY_RESERVE->factory3_11 + z_ppe3_DUMMY_RESERVE->factory4_11
    + z_ppe3_DUMMY_RESERVE->hospital1_11
    + z_ppe3_DUMMY_RESERVE->hospital2_11
    + z_ppe3_DUMMY_RESERVE->hospital3_11
-   + z_ppe3_DUMMY_RESERVE->hospital4_11 - M_ppe3_DUMMY_RESERVE_11 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_11]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_11 - M_ppe3_DUMMY_RESERVE_12 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_12]:
    z_respirator1_DUMMY_RESERVE->factory1_11
    + z_respirator1_DUMMY_RESERVE->factory2_11
    + z_respirator1_DUMMY_RESERVE->factory3_11
@@ -6493,8 +6430,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_11
    + z_respirator1_DUMMY_RESERVE->hospital3_11
    + z_respirator1_DUMMY_RESERVE->hospital4_11
-   - M_respirator1_DUMMY_RESERVE_11 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_11]:
+   - M_respirator1_DUMMY_RESERVE_12 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_12]:
    z_respirator2_DUMMY_RESERVE->factory1_11
    + z_respirator2_DUMMY_RESERVE->factory2_11
    + z_respirator2_DUMMY_RESERVE->factory3_11
@@ -6503,8 +6440,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_11
    + z_respirator2_DUMMY_RESERVE->hospital3_11
    + z_respirator2_DUMMY_RESERVE->hospital4_11
-   - M_respirator2_DUMMY_RESERVE_11 <= 0
- upper[availability_metal1_DUMMY_RESERVE_12]:
+   - M_respirator2_DUMMY_RESERVE_12 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_13]:
    z_metal1_DUMMY_RESERVE->factory1_12
    + z_metal1_DUMMY_RESERVE->factory2_12
    + z_metal1_DUMMY_RESERVE->factory3_12
@@ -6512,8 +6449,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_12
    + z_metal1_DUMMY_RESERVE->hospital2_12
    + z_metal1_DUMMY_RESERVE->hospital3_12
-   + z_metal1_DUMMY_RESERVE->hospital4_12 - M_metal1_DUMMY_RESERVE_12 <= 0
- upper[availability_metal2_DUMMY_RESERVE_12]:
+   + z_metal1_DUMMY_RESERVE->hospital4_12 - M_metal1_DUMMY_RESERVE_13 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_13]:
    z_metal2_DUMMY_RESERVE->factory1_12
    + z_metal2_DUMMY_RESERVE->factory2_12
    + z_metal2_DUMMY_RESERVE->factory3_12
@@ -6521,8 +6458,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_12
    + z_metal2_DUMMY_RESERVE->hospital2_12
    + z_metal2_DUMMY_RESERVE->hospital3_12
-   + z_metal2_DUMMY_RESERVE->hospital4_12 - M_metal2_DUMMY_RESERVE_12 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_12]:
+   + z_metal2_DUMMY_RESERVE->hospital4_12 - M_metal2_DUMMY_RESERVE_13 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_13]:
    z_plastic1_DUMMY_RESERVE->factory1_12
    + z_plastic1_DUMMY_RESERVE->factory2_12
    + z_plastic1_DUMMY_RESERVE->factory3_12
@@ -6530,9 +6467,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_12
    + z_plastic1_DUMMY_RESERVE->hospital2_12
    + z_plastic1_DUMMY_RESERVE->hospital3_12
-   + z_plastic1_DUMMY_RESERVE->hospital4_12 - M_plastic1_DUMMY_RESERVE_12
+   + z_plastic1_DUMMY_RESERVE->hospital4_12 - M_plastic1_DUMMY_RESERVE_13
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_12]:
+ upper[availability_plastic2_DUMMY_RESERVE_13]:
    z_plastic2_DUMMY_RESERVE->factory1_12
    + z_plastic2_DUMMY_RESERVE->factory2_12
    + z_plastic2_DUMMY_RESERVE->factory3_12
@@ -6540,9 +6477,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_12
    + z_plastic2_DUMMY_RESERVE->hospital2_12
    + z_plastic2_DUMMY_RESERVE->hospital3_12
-   + z_plastic2_DUMMY_RESERVE->hospital4_12 - M_plastic2_DUMMY_RESERVE_12
+   + z_plastic2_DUMMY_RESERVE->hospital4_12 - M_plastic2_DUMMY_RESERVE_13
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_12]:
+ upper[availability_plastic3_DUMMY_RESERVE_13]:
    z_plastic3_DUMMY_RESERVE->factory1_12
    + z_plastic3_DUMMY_RESERVE->factory2_12
    + z_plastic3_DUMMY_RESERVE->factory3_12
@@ -6550,30 +6487,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_12
    + z_plastic3_DUMMY_RESERVE->hospital2_12
    + z_plastic3_DUMMY_RESERVE->hospital3_12
-   + z_plastic3_DUMMY_RESERVE->hospital4_12 - M_plastic3_DUMMY_RESERVE_12
+   + z_plastic3_DUMMY_RESERVE->hospital4_12 - M_plastic3_DUMMY_RESERVE_13
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_12]:
+ upper[availability_ppe1_DUMMY_RESERVE_13]:
    z_ppe1_DUMMY_RESERVE->factory1_12 + z_ppe1_DUMMY_RESERVE->factory2_12
    + z_ppe1_DUMMY_RESERVE->factory3_12 + z_ppe1_DUMMY_RESERVE->factory4_12
    + z_ppe1_DUMMY_RESERVE->hospital1_12
    + z_ppe1_DUMMY_RESERVE->hospital2_12
    + z_ppe1_DUMMY_RESERVE->hospital3_12
-   + z_ppe1_DUMMY_RESERVE->hospital4_12 - M_ppe1_DUMMY_RESERVE_12 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_12]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_12 - M_ppe1_DUMMY_RESERVE_13 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_13]:
    z_ppe2_DUMMY_RESERVE->factory1_12 + z_ppe2_DUMMY_RESERVE->factory2_12
    + z_ppe2_DUMMY_RESERVE->factory3_12 + z_ppe2_DUMMY_RESERVE->factory4_12
    + z_ppe2_DUMMY_RESERVE->hospital1_12
    + z_ppe2_DUMMY_RESERVE->hospital2_12
    + z_ppe2_DUMMY_RESERVE->hospital3_12
-   + z_ppe2_DUMMY_RESERVE->hospital4_12 - M_ppe2_DUMMY_RESERVE_12 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_12]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_12 - M_ppe2_DUMMY_RESERVE_13 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_13]:
    z_ppe3_DUMMY_RESERVE->factory1_12 + z_ppe3_DUMMY_RESERVE->factory2_12
    + z_ppe3_DUMMY_RESERVE->factory3_12 + z_ppe3_DUMMY_RESERVE->factory4_12
    + z_ppe3_DUMMY_RESERVE->hospital1_12
    + z_ppe3_DUMMY_RESERVE->hospital2_12
    + z_ppe3_DUMMY_RESERVE->hospital3_12
-   + z_ppe3_DUMMY_RESERVE->hospital4_12 - M_ppe3_DUMMY_RESERVE_12 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_12]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_12 - M_ppe3_DUMMY_RESERVE_13 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_13]:
    z_respirator1_DUMMY_RESERVE->factory1_12
    + z_respirator1_DUMMY_RESERVE->factory2_12
    + z_respirator1_DUMMY_RESERVE->factory3_12
@@ -6582,8 +6519,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_12
    + z_respirator1_DUMMY_RESERVE->hospital3_12
    + z_respirator1_DUMMY_RESERVE->hospital4_12
-   - M_respirator1_DUMMY_RESERVE_12 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_12]:
+   - M_respirator1_DUMMY_RESERVE_13 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_13]:
    z_respirator2_DUMMY_RESERVE->factory1_12
    + z_respirator2_DUMMY_RESERVE->factory2_12
    + z_respirator2_DUMMY_RESERVE->factory3_12
@@ -6592,8 +6529,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_12
    + z_respirator2_DUMMY_RESERVE->hospital3_12
    + z_respirator2_DUMMY_RESERVE->hospital4_12
-   - M_respirator2_DUMMY_RESERVE_12 <= 0
- upper[availability_metal1_DUMMY_RESERVE_13]:
+   - M_respirator2_DUMMY_RESERVE_13 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_14]:
    z_metal1_DUMMY_RESERVE->factory1_13
    + z_metal1_DUMMY_RESERVE->factory2_13
    + z_metal1_DUMMY_RESERVE->factory3_13
@@ -6601,8 +6538,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_13
    + z_metal1_DUMMY_RESERVE->hospital2_13
    + z_metal1_DUMMY_RESERVE->hospital3_13
-   + z_metal1_DUMMY_RESERVE->hospital4_13 - M_metal1_DUMMY_RESERVE_13 <= 0
- upper[availability_metal2_DUMMY_RESERVE_13]:
+   + z_metal1_DUMMY_RESERVE->hospital4_13 - M_metal1_DUMMY_RESERVE_14 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_14]:
    z_metal2_DUMMY_RESERVE->factory1_13
    + z_metal2_DUMMY_RESERVE->factory2_13
    + z_metal2_DUMMY_RESERVE->factory3_13
@@ -6610,8 +6547,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_13
    + z_metal2_DUMMY_RESERVE->hospital2_13
    + z_metal2_DUMMY_RESERVE->hospital3_13
-   + z_metal2_DUMMY_RESERVE->hospital4_13 - M_metal2_DUMMY_RESERVE_13 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_13]:
+   + z_metal2_DUMMY_RESERVE->hospital4_13 - M_metal2_DUMMY_RESERVE_14 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_14]:
    z_plastic1_DUMMY_RESERVE->factory1_13
    + z_plastic1_DUMMY_RESERVE->factory2_13
    + z_plastic1_DUMMY_RESERVE->factory3_13
@@ -6619,9 +6556,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_13
    + z_plastic1_DUMMY_RESERVE->hospital2_13
    + z_plastic1_DUMMY_RESERVE->hospital3_13
-   + z_plastic1_DUMMY_RESERVE->hospital4_13 - M_plastic1_DUMMY_RESERVE_13
+   + z_plastic1_DUMMY_RESERVE->hospital4_13 - M_plastic1_DUMMY_RESERVE_14
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_13]:
+ upper[availability_plastic2_DUMMY_RESERVE_14]:
    z_plastic2_DUMMY_RESERVE->factory1_13
    + z_plastic2_DUMMY_RESERVE->factory2_13
    + z_plastic2_DUMMY_RESERVE->factory3_13
@@ -6629,9 +6566,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_13
    + z_plastic2_DUMMY_RESERVE->hospital2_13
    + z_plastic2_DUMMY_RESERVE->hospital3_13
-   + z_plastic2_DUMMY_RESERVE->hospital4_13 - M_plastic2_DUMMY_RESERVE_13
+   + z_plastic2_DUMMY_RESERVE->hospital4_13 - M_plastic2_DUMMY_RESERVE_14
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_13]:
+ upper[availability_plastic3_DUMMY_RESERVE_14]:
    z_plastic3_DUMMY_RESERVE->factory1_13
    + z_plastic3_DUMMY_RESERVE->factory2_13
    + z_plastic3_DUMMY_RESERVE->factory3_13
@@ -6639,30 +6576,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_13
    + z_plastic3_DUMMY_RESERVE->hospital2_13
    + z_plastic3_DUMMY_RESERVE->hospital3_13
-   + z_plastic3_DUMMY_RESERVE->hospital4_13 - M_plastic3_DUMMY_RESERVE_13
+   + z_plastic3_DUMMY_RESERVE->hospital4_13 - M_plastic3_DUMMY_RESERVE_14
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_13]:
+ upper[availability_ppe1_DUMMY_RESERVE_14]:
    z_ppe1_DUMMY_RESERVE->factory1_13 + z_ppe1_DUMMY_RESERVE->factory2_13
    + z_ppe1_DUMMY_RESERVE->factory3_13 + z_ppe1_DUMMY_RESERVE->factory4_13
    + z_ppe1_DUMMY_RESERVE->hospital1_13
    + z_ppe1_DUMMY_RESERVE->hospital2_13
    + z_ppe1_DUMMY_RESERVE->hospital3_13
-   + z_ppe1_DUMMY_RESERVE->hospital4_13 - M_ppe1_DUMMY_RESERVE_13 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_13]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_13 - M_ppe1_DUMMY_RESERVE_14 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_14]:
    z_ppe2_DUMMY_RESERVE->factory1_13 + z_ppe2_DUMMY_RESERVE->factory2_13
    + z_ppe2_DUMMY_RESERVE->factory3_13 + z_ppe2_DUMMY_RESERVE->factory4_13
    + z_ppe2_DUMMY_RESERVE->hospital1_13
    + z_ppe2_DUMMY_RESERVE->hospital2_13
    + z_ppe2_DUMMY_RESERVE->hospital3_13
-   + z_ppe2_DUMMY_RESERVE->hospital4_13 - M_ppe2_DUMMY_RESERVE_13 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_13]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_13 - M_ppe2_DUMMY_RESERVE_14 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_14]:
    z_ppe3_DUMMY_RESERVE->factory1_13 + z_ppe3_DUMMY_RESERVE->factory2_13
    + z_ppe3_DUMMY_RESERVE->factory3_13 + z_ppe3_DUMMY_RESERVE->factory4_13
    + z_ppe3_DUMMY_RESERVE->hospital1_13
    + z_ppe3_DUMMY_RESERVE->hospital2_13
    + z_ppe3_DUMMY_RESERVE->hospital3_13
-   + z_ppe3_DUMMY_RESERVE->hospital4_13 - M_ppe3_DUMMY_RESERVE_13 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_13]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_13 - M_ppe3_DUMMY_RESERVE_14 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_14]:
    z_respirator1_DUMMY_RESERVE->factory1_13
    + z_respirator1_DUMMY_RESERVE->factory2_13
    + z_respirator1_DUMMY_RESERVE->factory3_13
@@ -6671,8 +6608,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_13
    + z_respirator1_DUMMY_RESERVE->hospital3_13
    + z_respirator1_DUMMY_RESERVE->hospital4_13
-   - M_respirator1_DUMMY_RESERVE_13 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_13]:
+   - M_respirator1_DUMMY_RESERVE_14 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_14]:
    z_respirator2_DUMMY_RESERVE->factory1_13
    + z_respirator2_DUMMY_RESERVE->factory2_13
    + z_respirator2_DUMMY_RESERVE->factory3_13
@@ -6681,8 +6618,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_13
    + z_respirator2_DUMMY_RESERVE->hospital3_13
    + z_respirator2_DUMMY_RESERVE->hospital4_13
-   - M_respirator2_DUMMY_RESERVE_13 <= 0
- upper[availability_metal1_DUMMY_RESERVE_14]:
+   - M_respirator2_DUMMY_RESERVE_14 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_15]:
    z_metal1_DUMMY_RESERVE->factory1_14
    + z_metal1_DUMMY_RESERVE->factory2_14
    + z_metal1_DUMMY_RESERVE->factory3_14
@@ -6690,8 +6627,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_14
    + z_metal1_DUMMY_RESERVE->hospital2_14
    + z_metal1_DUMMY_RESERVE->hospital3_14
-   + z_metal1_DUMMY_RESERVE->hospital4_14 - M_metal1_DUMMY_RESERVE_14 <= 0
- upper[availability_metal2_DUMMY_RESERVE_14]:
+   + z_metal1_DUMMY_RESERVE->hospital4_14 - M_metal1_DUMMY_RESERVE_15 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_15]:
    z_metal2_DUMMY_RESERVE->factory1_14
    + z_metal2_DUMMY_RESERVE->factory2_14
    + z_metal2_DUMMY_RESERVE->factory3_14
@@ -6699,8 +6636,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_14
    + z_metal2_DUMMY_RESERVE->hospital2_14
    + z_metal2_DUMMY_RESERVE->hospital3_14
-   + z_metal2_DUMMY_RESERVE->hospital4_14 - M_metal2_DUMMY_RESERVE_14 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_14]:
+   + z_metal2_DUMMY_RESERVE->hospital4_14 - M_metal2_DUMMY_RESERVE_15 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_15]:
    z_plastic1_DUMMY_RESERVE->factory1_14
    + z_plastic1_DUMMY_RESERVE->factory2_14
    + z_plastic1_DUMMY_RESERVE->factory3_14
@@ -6708,9 +6645,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_14
    + z_plastic1_DUMMY_RESERVE->hospital2_14
    + z_plastic1_DUMMY_RESERVE->hospital3_14
-   + z_plastic1_DUMMY_RESERVE->hospital4_14 - M_plastic1_DUMMY_RESERVE_14
+   + z_plastic1_DUMMY_RESERVE->hospital4_14 - M_plastic1_DUMMY_RESERVE_15
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_14]:
+ upper[availability_plastic2_DUMMY_RESERVE_15]:
    z_plastic2_DUMMY_RESERVE->factory1_14
    + z_plastic2_DUMMY_RESERVE->factory2_14
    + z_plastic2_DUMMY_RESERVE->factory3_14
@@ -6718,9 +6655,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_14
    + z_plastic2_DUMMY_RESERVE->hospital2_14
    + z_plastic2_DUMMY_RESERVE->hospital3_14
-   + z_plastic2_DUMMY_RESERVE->hospital4_14 - M_plastic2_DUMMY_RESERVE_14
+   + z_plastic2_DUMMY_RESERVE->hospital4_14 - M_plastic2_DUMMY_RESERVE_15
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_14]:
+ upper[availability_plastic3_DUMMY_RESERVE_15]:
    z_plastic3_DUMMY_RESERVE->factory1_14
    + z_plastic3_DUMMY_RESERVE->factory2_14
    + z_plastic3_DUMMY_RESERVE->factory3_14
@@ -6728,30 +6665,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_14
    + z_plastic3_DUMMY_RESERVE->hospital2_14
    + z_plastic3_DUMMY_RESERVE->hospital3_14
-   + z_plastic3_DUMMY_RESERVE->hospital4_14 - M_plastic3_DUMMY_RESERVE_14
+   + z_plastic3_DUMMY_RESERVE->hospital4_14 - M_plastic3_DUMMY_RESERVE_15
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_14]:
+ upper[availability_ppe1_DUMMY_RESERVE_15]:
    z_ppe1_DUMMY_RESERVE->factory1_14 + z_ppe1_DUMMY_RESERVE->factory2_14
    + z_ppe1_DUMMY_RESERVE->factory3_14 + z_ppe1_DUMMY_RESERVE->factory4_14
    + z_ppe1_DUMMY_RESERVE->hospital1_14
    + z_ppe1_DUMMY_RESERVE->hospital2_14
    + z_ppe1_DUMMY_RESERVE->hospital3_14
-   + z_ppe1_DUMMY_RESERVE->hospital4_14 - M_ppe1_DUMMY_RESERVE_14 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_14]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_14 - M_ppe1_DUMMY_RESERVE_15 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_15]:
    z_ppe2_DUMMY_RESERVE->factory1_14 + z_ppe2_DUMMY_RESERVE->factory2_14
    + z_ppe2_DUMMY_RESERVE->factory3_14 + z_ppe2_DUMMY_RESERVE->factory4_14
    + z_ppe2_DUMMY_RESERVE->hospital1_14
    + z_ppe2_DUMMY_RESERVE->hospital2_14
    + z_ppe2_DUMMY_RESERVE->hospital3_14
-   + z_ppe2_DUMMY_RESERVE->hospital4_14 - M_ppe2_DUMMY_RESERVE_14 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_14]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_14 - M_ppe2_DUMMY_RESERVE_15 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_15]:
    z_ppe3_DUMMY_RESERVE->factory1_14 + z_ppe3_DUMMY_RESERVE->factory2_14
    + z_ppe3_DUMMY_RESERVE->factory3_14 + z_ppe3_DUMMY_RESERVE->factory4_14
    + z_ppe3_DUMMY_RESERVE->hospital1_14
    + z_ppe3_DUMMY_RESERVE->hospital2_14
    + z_ppe3_DUMMY_RESERVE->hospital3_14
-   + z_ppe3_DUMMY_RESERVE->hospital4_14 - M_ppe3_DUMMY_RESERVE_14 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_14]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_14 - M_ppe3_DUMMY_RESERVE_15 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_15]:
    z_respirator1_DUMMY_RESERVE->factory1_14
    + z_respirator1_DUMMY_RESERVE->factory2_14
    + z_respirator1_DUMMY_RESERVE->factory3_14
@@ -6760,8 +6697,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_14
    + z_respirator1_DUMMY_RESERVE->hospital3_14
    + z_respirator1_DUMMY_RESERVE->hospital4_14
-   - M_respirator1_DUMMY_RESERVE_14 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_14]:
+   - M_respirator1_DUMMY_RESERVE_15 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_15]:
    z_respirator2_DUMMY_RESERVE->factory1_14
    + z_respirator2_DUMMY_RESERVE->factory2_14
    + z_respirator2_DUMMY_RESERVE->factory3_14
@@ -6770,8 +6707,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_14
    + z_respirator2_DUMMY_RESERVE->hospital3_14
    + z_respirator2_DUMMY_RESERVE->hospital4_14
-   - M_respirator2_DUMMY_RESERVE_14 <= 0
- upper[availability_metal1_DUMMY_RESERVE_15]:
+   - M_respirator2_DUMMY_RESERVE_15 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_16]:
    z_metal1_DUMMY_RESERVE->factory1_15
    + z_metal1_DUMMY_RESERVE->factory2_15
    + z_metal1_DUMMY_RESERVE->factory3_15
@@ -6779,8 +6716,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_15
    + z_metal1_DUMMY_RESERVE->hospital2_15
    + z_metal1_DUMMY_RESERVE->hospital3_15
-   + z_metal1_DUMMY_RESERVE->hospital4_15 - M_metal1_DUMMY_RESERVE_15 <= 0
- upper[availability_metal2_DUMMY_RESERVE_15]:
+   + z_metal1_DUMMY_RESERVE->hospital4_15 - M_metal1_DUMMY_RESERVE_16 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_16]:
    z_metal2_DUMMY_RESERVE->factory1_15
    + z_metal2_DUMMY_RESERVE->factory2_15
    + z_metal2_DUMMY_RESERVE->factory3_15
@@ -6788,8 +6725,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_15
    + z_metal2_DUMMY_RESERVE->hospital2_15
    + z_metal2_DUMMY_RESERVE->hospital3_15
-   + z_metal2_DUMMY_RESERVE->hospital4_15 - M_metal2_DUMMY_RESERVE_15 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_15]:
+   + z_metal2_DUMMY_RESERVE->hospital4_15 - M_metal2_DUMMY_RESERVE_16 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_16]:
    z_plastic1_DUMMY_RESERVE->factory1_15
    + z_plastic1_DUMMY_RESERVE->factory2_15
    + z_plastic1_DUMMY_RESERVE->factory3_15
@@ -6797,9 +6734,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_15
    + z_plastic1_DUMMY_RESERVE->hospital2_15
    + z_plastic1_DUMMY_RESERVE->hospital3_15
-   + z_plastic1_DUMMY_RESERVE->hospital4_15 - M_plastic1_DUMMY_RESERVE_15
+   + z_plastic1_DUMMY_RESERVE->hospital4_15 - M_plastic1_DUMMY_RESERVE_16
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_15]:
+ upper[availability_plastic2_DUMMY_RESERVE_16]:
    z_plastic2_DUMMY_RESERVE->factory1_15
    + z_plastic2_DUMMY_RESERVE->factory2_15
    + z_plastic2_DUMMY_RESERVE->factory3_15
@@ -6807,9 +6744,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_15
    + z_plastic2_DUMMY_RESERVE->hospital2_15
    + z_plastic2_DUMMY_RESERVE->hospital3_15
-   + z_plastic2_DUMMY_RESERVE->hospital4_15 - M_plastic2_DUMMY_RESERVE_15
+   + z_plastic2_DUMMY_RESERVE->hospital4_15 - M_plastic2_DUMMY_RESERVE_16
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_15]:
+ upper[availability_plastic3_DUMMY_RESERVE_16]:
    z_plastic3_DUMMY_RESERVE->factory1_15
    + z_plastic3_DUMMY_RESERVE->factory2_15
    + z_plastic3_DUMMY_RESERVE->factory3_15
@@ -6817,30 +6754,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_15
    + z_plastic3_DUMMY_RESERVE->hospital2_15
    + z_plastic3_DUMMY_RESERVE->hospital3_15
-   + z_plastic3_DUMMY_RESERVE->hospital4_15 - M_plastic3_DUMMY_RESERVE_15
+   + z_plastic3_DUMMY_RESERVE->hospital4_15 - M_plastic3_DUMMY_RESERVE_16
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_15]:
+ upper[availability_ppe1_DUMMY_RESERVE_16]:
    z_ppe1_DUMMY_RESERVE->factory1_15 + z_ppe1_DUMMY_RESERVE->factory2_15
    + z_ppe1_DUMMY_RESERVE->factory3_15 + z_ppe1_DUMMY_RESERVE->factory4_15
    + z_ppe1_DUMMY_RESERVE->hospital1_15
    + z_ppe1_DUMMY_RESERVE->hospital2_15
    + z_ppe1_DUMMY_RESERVE->hospital3_15
-   + z_ppe1_DUMMY_RESERVE->hospital4_15 - M_ppe1_DUMMY_RESERVE_15 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_15]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_15 - M_ppe1_DUMMY_RESERVE_16 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_16]:
    z_ppe2_DUMMY_RESERVE->factory1_15 + z_ppe2_DUMMY_RESERVE->factory2_15
    + z_ppe2_DUMMY_RESERVE->factory3_15 + z_ppe2_DUMMY_RESERVE->factory4_15
    + z_ppe2_DUMMY_RESERVE->hospital1_15
    + z_ppe2_DUMMY_RESERVE->hospital2_15
    + z_ppe2_DUMMY_RESERVE->hospital3_15
-   + z_ppe2_DUMMY_RESERVE->hospital4_15 - M_ppe2_DUMMY_RESERVE_15 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_15]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_15 - M_ppe2_DUMMY_RESERVE_16 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_16]:
    z_ppe3_DUMMY_RESERVE->factory1_15 + z_ppe3_DUMMY_RESERVE->factory2_15
    + z_ppe3_DUMMY_RESERVE->factory3_15 + z_ppe3_DUMMY_RESERVE->factory4_15
    + z_ppe3_DUMMY_RESERVE->hospital1_15
    + z_ppe3_DUMMY_RESERVE->hospital2_15
    + z_ppe3_DUMMY_RESERVE->hospital3_15
-   + z_ppe3_DUMMY_RESERVE->hospital4_15 - M_ppe3_DUMMY_RESERVE_15 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_15]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_15 - M_ppe3_DUMMY_RESERVE_16 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_16]:
    z_respirator1_DUMMY_RESERVE->factory1_15
    + z_respirator1_DUMMY_RESERVE->factory2_15
    + z_respirator1_DUMMY_RESERVE->factory3_15
@@ -6849,8 +6786,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_15
    + z_respirator1_DUMMY_RESERVE->hospital3_15
    + z_respirator1_DUMMY_RESERVE->hospital4_15
-   - M_respirator1_DUMMY_RESERVE_15 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_15]:
+   - M_respirator1_DUMMY_RESERVE_16 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_16]:
    z_respirator2_DUMMY_RESERVE->factory1_15
    + z_respirator2_DUMMY_RESERVE->factory2_15
    + z_respirator2_DUMMY_RESERVE->factory3_15
@@ -6859,8 +6796,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_15
    + z_respirator2_DUMMY_RESERVE->hospital3_15
    + z_respirator2_DUMMY_RESERVE->hospital4_15
-   - M_respirator2_DUMMY_RESERVE_15 <= 0
- upper[availability_metal1_DUMMY_RESERVE_16]:
+   - M_respirator2_DUMMY_RESERVE_16 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_17]:
    z_metal1_DUMMY_RESERVE->factory1_16
    + z_metal1_DUMMY_RESERVE->factory2_16
    + z_metal1_DUMMY_RESERVE->factory3_16
@@ -6868,8 +6805,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_16
    + z_metal1_DUMMY_RESERVE->hospital2_16
    + z_metal1_DUMMY_RESERVE->hospital3_16
-   + z_metal1_DUMMY_RESERVE->hospital4_16 - M_metal1_DUMMY_RESERVE_16 <= 0
- upper[availability_metal2_DUMMY_RESERVE_16]:
+   + z_metal1_DUMMY_RESERVE->hospital4_16 - M_metal1_DUMMY_RESERVE_17 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_17]:
    z_metal2_DUMMY_RESERVE->factory1_16
    + z_metal2_DUMMY_RESERVE->factory2_16
    + z_metal2_DUMMY_RESERVE->factory3_16
@@ -6877,8 +6814,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_16
    + z_metal2_DUMMY_RESERVE->hospital2_16
    + z_metal2_DUMMY_RESERVE->hospital3_16
-   + z_metal2_DUMMY_RESERVE->hospital4_16 - M_metal2_DUMMY_RESERVE_16 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_16]:
+   + z_metal2_DUMMY_RESERVE->hospital4_16 - M_metal2_DUMMY_RESERVE_17 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_17]:
    z_plastic1_DUMMY_RESERVE->factory1_16
    + z_plastic1_DUMMY_RESERVE->factory2_16
    + z_plastic1_DUMMY_RESERVE->factory3_16
@@ -6886,9 +6823,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_16
    + z_plastic1_DUMMY_RESERVE->hospital2_16
    + z_plastic1_DUMMY_RESERVE->hospital3_16
-   + z_plastic1_DUMMY_RESERVE->hospital4_16 - M_plastic1_DUMMY_RESERVE_16
+   + z_plastic1_DUMMY_RESERVE->hospital4_16 - M_plastic1_DUMMY_RESERVE_17
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_16]:
+ upper[availability_plastic2_DUMMY_RESERVE_17]:
    z_plastic2_DUMMY_RESERVE->factory1_16
    + z_plastic2_DUMMY_RESERVE->factory2_16
    + z_plastic2_DUMMY_RESERVE->factory3_16
@@ -6896,9 +6833,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_16
    + z_plastic2_DUMMY_RESERVE->hospital2_16
    + z_plastic2_DUMMY_RESERVE->hospital3_16
-   + z_plastic2_DUMMY_RESERVE->hospital4_16 - M_plastic2_DUMMY_RESERVE_16
+   + z_plastic2_DUMMY_RESERVE->hospital4_16 - M_plastic2_DUMMY_RESERVE_17
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_16]:
+ upper[availability_plastic3_DUMMY_RESERVE_17]:
    z_plastic3_DUMMY_RESERVE->factory1_16
    + z_plastic3_DUMMY_RESERVE->factory2_16
    + z_plastic3_DUMMY_RESERVE->factory3_16
@@ -6906,30 +6843,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_16
    + z_plastic3_DUMMY_RESERVE->hospital2_16
    + z_plastic3_DUMMY_RESERVE->hospital3_16
-   + z_plastic3_DUMMY_RESERVE->hospital4_16 - M_plastic3_DUMMY_RESERVE_16
+   + z_plastic3_DUMMY_RESERVE->hospital4_16 - M_plastic3_DUMMY_RESERVE_17
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_16]:
+ upper[availability_ppe1_DUMMY_RESERVE_17]:
    z_ppe1_DUMMY_RESERVE->factory1_16 + z_ppe1_DUMMY_RESERVE->factory2_16
    + z_ppe1_DUMMY_RESERVE->factory3_16 + z_ppe1_DUMMY_RESERVE->factory4_16
    + z_ppe1_DUMMY_RESERVE->hospital1_16
    + z_ppe1_DUMMY_RESERVE->hospital2_16
    + z_ppe1_DUMMY_RESERVE->hospital3_16
-   + z_ppe1_DUMMY_RESERVE->hospital4_16 - M_ppe1_DUMMY_RESERVE_16 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_16]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_16 - M_ppe1_DUMMY_RESERVE_17 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_17]:
    z_ppe2_DUMMY_RESERVE->factory1_16 + z_ppe2_DUMMY_RESERVE->factory2_16
    + z_ppe2_DUMMY_RESERVE->factory3_16 + z_ppe2_DUMMY_RESERVE->factory4_16
    + z_ppe2_DUMMY_RESERVE->hospital1_16
    + z_ppe2_DUMMY_RESERVE->hospital2_16
    + z_ppe2_DUMMY_RESERVE->hospital3_16
-   + z_ppe2_DUMMY_RESERVE->hospital4_16 - M_ppe2_DUMMY_RESERVE_16 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_16]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_16 - M_ppe2_DUMMY_RESERVE_17 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_17]:
    z_ppe3_DUMMY_RESERVE->factory1_16 + z_ppe3_DUMMY_RESERVE->factory2_16
    + z_ppe3_DUMMY_RESERVE->factory3_16 + z_ppe3_DUMMY_RESERVE->factory4_16
    + z_ppe3_DUMMY_RESERVE->hospital1_16
    + z_ppe3_DUMMY_RESERVE->hospital2_16
    + z_ppe3_DUMMY_RESERVE->hospital3_16
-   + z_ppe3_DUMMY_RESERVE->hospital4_16 - M_ppe3_DUMMY_RESERVE_16 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_16]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_16 - M_ppe3_DUMMY_RESERVE_17 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_17]:
    z_respirator1_DUMMY_RESERVE->factory1_16
    + z_respirator1_DUMMY_RESERVE->factory2_16
    + z_respirator1_DUMMY_RESERVE->factory3_16
@@ -6938,8 +6875,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_16
    + z_respirator1_DUMMY_RESERVE->hospital3_16
    + z_respirator1_DUMMY_RESERVE->hospital4_16
-   - M_respirator1_DUMMY_RESERVE_16 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_16]:
+   - M_respirator1_DUMMY_RESERVE_17 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_17]:
    z_respirator2_DUMMY_RESERVE->factory1_16
    + z_respirator2_DUMMY_RESERVE->factory2_16
    + z_respirator2_DUMMY_RESERVE->factory3_16
@@ -6948,8 +6885,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_16
    + z_respirator2_DUMMY_RESERVE->hospital3_16
    + z_respirator2_DUMMY_RESERVE->hospital4_16
-   - M_respirator2_DUMMY_RESERVE_16 <= 0
- upper[availability_metal1_DUMMY_RESERVE_17]:
+   - M_respirator2_DUMMY_RESERVE_17 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_18]:
    z_metal1_DUMMY_RESERVE->factory1_17
    + z_metal1_DUMMY_RESERVE->factory2_17
    + z_metal1_DUMMY_RESERVE->factory3_17
@@ -6957,8 +6894,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_17
    + z_metal1_DUMMY_RESERVE->hospital2_17
    + z_metal1_DUMMY_RESERVE->hospital3_17
-   + z_metal1_DUMMY_RESERVE->hospital4_17 - M_metal1_DUMMY_RESERVE_17 <= 0
- upper[availability_metal2_DUMMY_RESERVE_17]:
+   + z_metal1_DUMMY_RESERVE->hospital4_17 - M_metal1_DUMMY_RESERVE_18 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_18]:
    z_metal2_DUMMY_RESERVE->factory1_17
    + z_metal2_DUMMY_RESERVE->factory2_17
    + z_metal2_DUMMY_RESERVE->factory3_17
@@ -6966,8 +6903,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_17
    + z_metal2_DUMMY_RESERVE->hospital2_17
    + z_metal2_DUMMY_RESERVE->hospital3_17
-   + z_metal2_DUMMY_RESERVE->hospital4_17 - M_metal2_DUMMY_RESERVE_17 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_17]:
+   + z_metal2_DUMMY_RESERVE->hospital4_17 - M_metal2_DUMMY_RESERVE_18 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_18]:
    z_plastic1_DUMMY_RESERVE->factory1_17
    + z_plastic1_DUMMY_RESERVE->factory2_17
    + z_plastic1_DUMMY_RESERVE->factory3_17
@@ -6975,9 +6912,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_17
    + z_plastic1_DUMMY_RESERVE->hospital2_17
    + z_plastic1_DUMMY_RESERVE->hospital3_17
-   + z_plastic1_DUMMY_RESERVE->hospital4_17 - M_plastic1_DUMMY_RESERVE_17
+   + z_plastic1_DUMMY_RESERVE->hospital4_17 - M_plastic1_DUMMY_RESERVE_18
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_17]:
+ upper[availability_plastic2_DUMMY_RESERVE_18]:
    z_plastic2_DUMMY_RESERVE->factory1_17
    + z_plastic2_DUMMY_RESERVE->factory2_17
    + z_plastic2_DUMMY_RESERVE->factory3_17
@@ -6985,9 +6922,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_17
    + z_plastic2_DUMMY_RESERVE->hospital2_17
    + z_plastic2_DUMMY_RESERVE->hospital3_17
-   + z_plastic2_DUMMY_RESERVE->hospital4_17 - M_plastic2_DUMMY_RESERVE_17
+   + z_plastic2_DUMMY_RESERVE->hospital4_17 - M_plastic2_DUMMY_RESERVE_18
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_17]:
+ upper[availability_plastic3_DUMMY_RESERVE_18]:
    z_plastic3_DUMMY_RESERVE->factory1_17
    + z_plastic3_DUMMY_RESERVE->factory2_17
    + z_plastic3_DUMMY_RESERVE->factory3_17
@@ -6995,30 +6932,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_17
    + z_plastic3_DUMMY_RESERVE->hospital2_17
    + z_plastic3_DUMMY_RESERVE->hospital3_17
-   + z_plastic3_DUMMY_RESERVE->hospital4_17 - M_plastic3_DUMMY_RESERVE_17
+   + z_plastic3_DUMMY_RESERVE->hospital4_17 - M_plastic3_DUMMY_RESERVE_18
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_17]:
+ upper[availability_ppe1_DUMMY_RESERVE_18]:
    z_ppe1_DUMMY_RESERVE->factory1_17 + z_ppe1_DUMMY_RESERVE->factory2_17
    + z_ppe1_DUMMY_RESERVE->factory3_17 + z_ppe1_DUMMY_RESERVE->factory4_17
    + z_ppe1_DUMMY_RESERVE->hospital1_17
    + z_ppe1_DUMMY_RESERVE->hospital2_17
    + z_ppe1_DUMMY_RESERVE->hospital3_17
-   + z_ppe1_DUMMY_RESERVE->hospital4_17 - M_ppe1_DUMMY_RESERVE_17 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_17]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_17 - M_ppe1_DUMMY_RESERVE_18 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_18]:
    z_ppe2_DUMMY_RESERVE->factory1_17 + z_ppe2_DUMMY_RESERVE->factory2_17
    + z_ppe2_DUMMY_RESERVE->factory3_17 + z_ppe2_DUMMY_RESERVE->factory4_17
    + z_ppe2_DUMMY_RESERVE->hospital1_17
    + z_ppe2_DUMMY_RESERVE->hospital2_17
    + z_ppe2_DUMMY_RESERVE->hospital3_17
-   + z_ppe2_DUMMY_RESERVE->hospital4_17 - M_ppe2_DUMMY_RESERVE_17 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_17]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_17 - M_ppe2_DUMMY_RESERVE_18 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_18]:
    z_ppe3_DUMMY_RESERVE->factory1_17 + z_ppe3_DUMMY_RESERVE->factory2_17
    + z_ppe3_DUMMY_RESERVE->factory3_17 + z_ppe3_DUMMY_RESERVE->factory4_17
    + z_ppe3_DUMMY_RESERVE->hospital1_17
    + z_ppe3_DUMMY_RESERVE->hospital2_17
    + z_ppe3_DUMMY_RESERVE->hospital3_17
-   + z_ppe3_DUMMY_RESERVE->hospital4_17 - M_ppe3_DUMMY_RESERVE_17 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_17]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_17 - M_ppe3_DUMMY_RESERVE_18 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_18]:
    z_respirator1_DUMMY_RESERVE->factory1_17
    + z_respirator1_DUMMY_RESERVE->factory2_17
    + z_respirator1_DUMMY_RESERVE->factory3_17
@@ -7027,8 +6964,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_17
    + z_respirator1_DUMMY_RESERVE->hospital3_17
    + z_respirator1_DUMMY_RESERVE->hospital4_17
-   - M_respirator1_DUMMY_RESERVE_17 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_17]:
+   - M_respirator1_DUMMY_RESERVE_18 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_18]:
    z_respirator2_DUMMY_RESERVE->factory1_17
    + z_respirator2_DUMMY_RESERVE->factory2_17
    + z_respirator2_DUMMY_RESERVE->factory3_17
@@ -7037,8 +6974,8 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_17
    + z_respirator2_DUMMY_RESERVE->hospital3_17
    + z_respirator2_DUMMY_RESERVE->hospital4_17
-   - M_respirator2_DUMMY_RESERVE_17 <= 0
- upper[availability_metal1_DUMMY_RESERVE_18]:
+   - M_respirator2_DUMMY_RESERVE_18 <= 0
+ upper[availability_metal1_DUMMY_RESERVE_19]:
    z_metal1_DUMMY_RESERVE->factory1_18
    + z_metal1_DUMMY_RESERVE->factory2_18
    + z_metal1_DUMMY_RESERVE->factory3_18
@@ -7046,8 +6983,8 @@ Subject To
    + z_metal1_DUMMY_RESERVE->hospital1_18
    + z_metal1_DUMMY_RESERVE->hospital2_18
    + z_metal1_DUMMY_RESERVE->hospital3_18
-   + z_metal1_DUMMY_RESERVE->hospital4_18 - M_metal1_DUMMY_RESERVE_18 <= 0
- upper[availability_metal2_DUMMY_RESERVE_18]:
+   + z_metal1_DUMMY_RESERVE->hospital4_18 - M_metal1_DUMMY_RESERVE_19 <= 0
+ upper[availability_metal2_DUMMY_RESERVE_19]:
    z_metal2_DUMMY_RESERVE->factory1_18
    + z_metal2_DUMMY_RESERVE->factory2_18
    + z_metal2_DUMMY_RESERVE->factory3_18
@@ -7055,8 +6992,8 @@ Subject To
    + z_metal2_DUMMY_RESERVE->hospital1_18
    + z_metal2_DUMMY_RESERVE->hospital2_18
    + z_metal2_DUMMY_RESERVE->hospital3_18
-   + z_metal2_DUMMY_RESERVE->hospital4_18 - M_metal2_DUMMY_RESERVE_18 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_18]:
+   + z_metal2_DUMMY_RESERVE->hospital4_18 - M_metal2_DUMMY_RESERVE_19 <= 0
+ upper[availability_plastic1_DUMMY_RESERVE_19]:
    z_plastic1_DUMMY_RESERVE->factory1_18
    + z_plastic1_DUMMY_RESERVE->factory2_18
    + z_plastic1_DUMMY_RESERVE->factory3_18
@@ -7064,9 +7001,9 @@ Subject To
    + z_plastic1_DUMMY_RESERVE->hospital1_18
    + z_plastic1_DUMMY_RESERVE->hospital2_18
    + z_plastic1_DUMMY_RESERVE->hospital3_18
-   + z_plastic1_DUMMY_RESERVE->hospital4_18 - M_plastic1_DUMMY_RESERVE_18
+   + z_plastic1_DUMMY_RESERVE->hospital4_18 - M_plastic1_DUMMY_RESERVE_19
    <= 0
- upper[availability_plastic2_DUMMY_RESERVE_18]:
+ upper[availability_plastic2_DUMMY_RESERVE_19]:
    z_plastic2_DUMMY_RESERVE->factory1_18
    + z_plastic2_DUMMY_RESERVE->factory2_18
    + z_plastic2_DUMMY_RESERVE->factory3_18
@@ -7074,9 +7011,9 @@ Subject To
    + z_plastic2_DUMMY_RESERVE->hospital1_18
    + z_plastic2_DUMMY_RESERVE->hospital2_18
    + z_plastic2_DUMMY_RESERVE->hospital3_18
-   + z_plastic2_DUMMY_RESERVE->hospital4_18 - M_plastic2_DUMMY_RESERVE_18
+   + z_plastic2_DUMMY_RESERVE->hospital4_18 - M_plastic2_DUMMY_RESERVE_19
    <= 0
- upper[availability_plastic3_DUMMY_RESERVE_18]:
+ upper[availability_plastic3_DUMMY_RESERVE_19]:
    z_plastic3_DUMMY_RESERVE->factory1_18
    + z_plastic3_DUMMY_RESERVE->factory2_18
    + z_plastic3_DUMMY_RESERVE->factory3_18
@@ -7084,30 +7021,30 @@ Subject To
    + z_plastic3_DUMMY_RESERVE->hospital1_18
    + z_plastic3_DUMMY_RESERVE->hospital2_18
    + z_plastic3_DUMMY_RESERVE->hospital3_18
-   + z_plastic3_DUMMY_RESERVE->hospital4_18 - M_plastic3_DUMMY_RESERVE_18
+   + z_plastic3_DUMMY_RESERVE->hospital4_18 - M_plastic3_DUMMY_RESERVE_19
    <= 0
- upper[availability_ppe1_DUMMY_RESERVE_18]:
+ upper[availability_ppe1_DUMMY_RESERVE_19]:
    z_ppe1_DUMMY_RESERVE->factory1_18 + z_ppe1_DUMMY_RESERVE->factory2_18
    + z_ppe1_DUMMY_RESERVE->factory3_18 + z_ppe1_DUMMY_RESERVE->factory4_18
    + z_ppe1_DUMMY_RESERVE->hospital1_18
    + z_ppe1_DUMMY_RESERVE->hospital2_18
    + z_ppe1_DUMMY_RESERVE->hospital3_18
-   + z_ppe1_DUMMY_RESERVE->hospital4_18 - M_ppe1_DUMMY_RESERVE_18 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_18]:
+   + z_ppe1_DUMMY_RESERVE->hospital4_18 - M_ppe1_DUMMY_RESERVE_19 <= 0
+ upper[availability_ppe2_DUMMY_RESERVE_19]:
    z_ppe2_DUMMY_RESERVE->factory1_18 + z_ppe2_DUMMY_RESERVE->factory2_18
    + z_ppe2_DUMMY_RESERVE->factory3_18 + z_ppe2_DUMMY_RESERVE->factory4_18
    + z_ppe2_DUMMY_RESERVE->hospital1_18
    + z_ppe2_DUMMY_RESERVE->hospital2_18
    + z_ppe2_DUMMY_RESERVE->hospital3_18
-   + z_ppe2_DUMMY_RESERVE->hospital4_18 - M_ppe2_DUMMY_RESERVE_18 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_18]:
+   + z_ppe2_DUMMY_RESERVE->hospital4_18 - M_ppe2_DUMMY_RESERVE_19 <= 0
+ upper[availability_ppe3_DUMMY_RESERVE_19]:
    z_ppe3_DUMMY_RESERVE->factory1_18 + z_ppe3_DUMMY_RESERVE->factory2_18
    + z_ppe3_DUMMY_RESERVE->factory3_18 + z_ppe3_DUMMY_RESERVE->factory4_18
    + z_ppe3_DUMMY_RESERVE->hospital1_18
    + z_ppe3_DUMMY_RESERVE->hospital2_18
    + z_ppe3_DUMMY_RESERVE->hospital3_18
-   + z_ppe3_DUMMY_RESERVE->hospital4_18 - M_ppe3_DUMMY_RESERVE_18 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_18]:
+   + z_ppe3_DUMMY_RESERVE->hospital4_18 - M_ppe3_DUMMY_RESERVE_19 <= 0
+ upper[availability_respirator1_DUMMY_RESERVE_19]:
    z_respirator1_DUMMY_RESERVE->factory1_18
    + z_respirator1_DUMMY_RESERVE->factory2_18
    + z_respirator1_DUMMY_RESERVE->factory3_18
@@ -7116,8 +7053,8 @@ Subject To
    + z_respirator1_DUMMY_RESERVE->hospital2_18
    + z_respirator1_DUMMY_RESERVE->hospital3_18
    + z_respirator1_DUMMY_RESERVE->hospital4_18
-   - M_respirator1_DUMMY_RESERVE_18 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_18]:
+   - M_respirator1_DUMMY_RESERVE_19 <= 0
+ upper[availability_respirator2_DUMMY_RESERVE_19]:
    z_respirator2_DUMMY_RESERVE->factory1_18
    + z_respirator2_DUMMY_RESERVE->factory2_18
    + z_respirator2_DUMMY_RESERVE->factory3_18
@@ -7126,801 +7063,720 @@ Subject To
    + z_respirator2_DUMMY_RESERVE->hospital2_18
    + z_respirator2_DUMMY_RESERVE->hospital3_18
    + z_respirator2_DUMMY_RESERVE->hospital4_18
-   - M_respirator2_DUMMY_RESERVE_18 <= 0
- upper[availability_metal1_DUMMY_RESERVE_19]:
-   z_metal1_DUMMY_RESERVE->factory1_19
-   + z_metal1_DUMMY_RESERVE->factory2_19
-   + z_metal1_DUMMY_RESERVE->factory3_19
-   + z_metal1_DUMMY_RESERVE->factory4_19
-   + z_metal1_DUMMY_RESERVE->hospital1_19
-   + z_metal1_DUMMY_RESERVE->hospital2_19
-   + z_metal1_DUMMY_RESERVE->hospital3_19
-   + z_metal1_DUMMY_RESERVE->hospital4_19 - M_metal1_DUMMY_RESERVE_19 <= 0
- upper[availability_metal2_DUMMY_RESERVE_19]:
-   z_metal2_DUMMY_RESERVE->factory1_19
-   + z_metal2_DUMMY_RESERVE->factory2_19
-   + z_metal2_DUMMY_RESERVE->factory3_19
-   + z_metal2_DUMMY_RESERVE->factory4_19
-   + z_metal2_DUMMY_RESERVE->hospital1_19
-   + z_metal2_DUMMY_RESERVE->hospital2_19
-   + z_metal2_DUMMY_RESERVE->hospital3_19
-   + z_metal2_DUMMY_RESERVE->hospital4_19 - M_metal2_DUMMY_RESERVE_19 <= 0
- upper[availability_plastic1_DUMMY_RESERVE_19]:
-   z_plastic1_DUMMY_RESERVE->factory1_19
-   + z_plastic1_DUMMY_RESERVE->factory2_19
-   + z_plastic1_DUMMY_RESERVE->factory3_19
-   + z_plastic1_DUMMY_RESERVE->factory4_19
-   + z_plastic1_DUMMY_RESERVE->hospital1_19
-   + z_plastic1_DUMMY_RESERVE->hospital2_19
-   + z_plastic1_DUMMY_RESERVE->hospital3_19
-   + z_plastic1_DUMMY_RESERVE->hospital4_19 - M_plastic1_DUMMY_RESERVE_19
-   <= 0
- upper[availability_plastic2_DUMMY_RESERVE_19]:
-   z_plastic2_DUMMY_RESERVE->factory1_19
-   + z_plastic2_DUMMY_RESERVE->factory2_19
-   + z_plastic2_DUMMY_RESERVE->factory3_19
-   + z_plastic2_DUMMY_RESERVE->factory4_19
-   + z_plastic2_DUMMY_RESERVE->hospital1_19
-   + z_plastic2_DUMMY_RESERVE->hospital2_19
-   + z_plastic2_DUMMY_RESERVE->hospital3_19
-   + z_plastic2_DUMMY_RESERVE->hospital4_19 - M_plastic2_DUMMY_RESERVE_19
-   <= 0
- upper[availability_plastic3_DUMMY_RESERVE_19]:
-   z_plastic3_DUMMY_RESERVE->factory1_19
-   + z_plastic3_DUMMY_RESERVE->factory2_19
-   + z_plastic3_DUMMY_RESERVE->factory3_19
-   + z_plastic3_DUMMY_RESERVE->factory4_19
-   + z_plastic3_DUMMY_RESERVE->hospital1_19
-   + z_plastic3_DUMMY_RESERVE->hospital2_19
-   + z_plastic3_DUMMY_RESERVE->hospital3_19
-   + z_plastic3_DUMMY_RESERVE->hospital4_19 - M_plastic3_DUMMY_RESERVE_19
-   <= 0
- upper[availability_ppe1_DUMMY_RESERVE_19]:
-   z_ppe1_DUMMY_RESERVE->factory1_19 + z_ppe1_DUMMY_RESERVE->factory2_19
-   + z_ppe1_DUMMY_RESERVE->factory3_19 + z_ppe1_DUMMY_RESERVE->factory4_19
-   + z_ppe1_DUMMY_RESERVE->hospital1_19
-   + z_ppe1_DUMMY_RESERVE->hospital2_19
-   + z_ppe1_DUMMY_RESERVE->hospital3_19
-   + z_ppe1_DUMMY_RESERVE->hospital4_19 - M_ppe1_DUMMY_RESERVE_19 <= 0
- upper[availability_ppe2_DUMMY_RESERVE_19]:
-   z_ppe2_DUMMY_RESERVE->factory1_19 + z_ppe2_DUMMY_RESERVE->factory2_19
-   + z_ppe2_DUMMY_RESERVE->factory3_19 + z_ppe2_DUMMY_RESERVE->factory4_19
-   + z_ppe2_DUMMY_RESERVE->hospital1_19
-   + z_ppe2_DUMMY_RESERVE->hospital2_19
-   + z_ppe2_DUMMY_RESERVE->hospital3_19
-   + z_ppe2_DUMMY_RESERVE->hospital4_19 - M_ppe2_DUMMY_RESERVE_19 <= 0
- upper[availability_ppe3_DUMMY_RESERVE_19]:
-   z_ppe3_DUMMY_RESERVE->factory1_19 + z_ppe3_DUMMY_RESERVE->factory2_19
-   + z_ppe3_DUMMY_RESERVE->factory3_19 + z_ppe3_DUMMY_RESERVE->factory4_19
-   + z_ppe3_DUMMY_RESERVE->hospital1_19
-   + z_ppe3_DUMMY_RESERVE->hospital2_19
-   + z_ppe3_DUMMY_RESERVE->hospital3_19
-   + z_ppe3_DUMMY_RESERVE->hospital4_19 - M_ppe3_DUMMY_RESERVE_19 <= 0
- upper[availability_respirator1_DUMMY_RESERVE_19]:
-   z_respirator1_DUMMY_RESERVE->factory1_19
-   + z_respirator1_DUMMY_RESERVE->factory2_19
-   + z_respirator1_DUMMY_RESERVE->factory3_19
-   + z_respirator1_DUMMY_RESERVE->factory4_19
-   + z_respirator1_DUMMY_RESERVE->hospital1_19
-   + z_respirator1_DUMMY_RESERVE->hospital2_19
-   + z_respirator1_DUMMY_RESERVE->hospital3_19
-   + z_respirator1_DUMMY_RESERVE->hospital4_19
-   - M_respirator1_DUMMY_RESERVE_19 <= 0
- upper[availability_respirator2_DUMMY_RESERVE_19]:
-   z_respirator2_DUMMY_RESERVE->factory1_19
-   + z_respirator2_DUMMY_RESERVE->factory2_19
-   + z_respirator2_DUMMY_RESERVE->factory3_19
-   + z_respirator2_DUMMY_RESERVE->factory4_19
-   + z_respirator2_DUMMY_RESERVE->hospital1_19
-   + z_respirator2_DUMMY_RESERVE->hospital2_19
-   + z_respirator2_DUMMY_RESERVE->hospital3_19
-   + z_respirator2_DUMMY_RESERVE->hospital4_19
    - M_respirator2_DUMMY_RESERVE_19 <= 0
- upper[availability_metal1_hospital1_1]: z_metal1_hospital1->hospital2_1
-   - M_metal1_hospital1_1 <= 0
- upper[availability_metal2_hospital1_1]: z_metal2_hospital1->hospital2_1
-   - M_metal2_hospital1_1 <= 0
- upper[availability_plastic1_hospital1_1]:
-   z_plastic1_hospital1->hospital2_1 - M_plastic1_hospital1_1 <= 0
- upper[availability_plastic2_hospital1_1]:
-   z_plastic2_hospital1->hospital2_1 - M_plastic2_hospital1_1 <= 0
- upper[availability_plastic3_hospital1_1]:
-   z_plastic3_hospital1->hospital2_1 - M_plastic3_hospital1_1 <= 0
- upper[availability_ppe1_hospital1_1]: z_ppe1_hospital1->hospital2_1
-   - M_ppe1_hospital1_1 <= 0
- upper[availability_ppe2_hospital1_1]: z_ppe2_hospital1->hospital2_1
-   - M_ppe2_hospital1_1 <= 0
- upper[availability_ppe3_hospital1_1]: z_ppe3_hospital1->hospital2_1
-   - M_ppe3_hospital1_1 <= 0
- upper[availability_respirator1_hospital1_1]:
-   z_respirator1_hospital1->hospital2_1 - M_respirator1_hospital1_1 <= 0
- upper[availability_respirator2_hospital1_1]:
-   z_respirator2_hospital1->hospital2_1 - M_respirator2_hospital1_1 <= 0
+ upper[availability_metal1_hospital1_1]: - M_metal1_hospital1_1 <= 0
+ upper[availability_metal2_hospital1_1]: - M_metal2_hospital1_1 <= 0
+ upper[availability_plastic1_hospital1_1]: - M_plastic1_hospital1_1 <= 0
+ upper[availability_plastic2_hospital1_1]: - M_plastic2_hospital1_1 <= 0
+ upper[availability_plastic3_hospital1_1]: - M_plastic3_hospital1_1 <= 0
+ upper[availability_ppe1_hospital1_1]: - M_ppe1_hospital1_1 <= 0
+ upper[availability_ppe2_hospital1_1]: - M_ppe2_hospital1_1 <= 0
+ upper[availability_ppe3_hospital1_1]: - M_ppe3_hospital1_1 <= 0
+ upper[availability_respirator1_hospital1_1]: - M_respirator1_hospital1_1
+   <= 0
+ upper[availability_respirator2_hospital1_1]: - M_respirator2_hospital1_1
+   <= 0
  upper[availability_metal1_hospital1_2]: - z_metal1_factory1->hospital1_1
-   - z_metal1_factory3->hospital1_1 - z_metal1_DUMMY_RESERVE->hospital1_1
-   + z_metal1_hospital1->hospital2_2 - M_metal1_hospital1_2 <= 0
+   - z_metal1_factory3->hospital1_1 + z_metal1_hospital1->hospital2_1
+   - z_metal1_DUMMY_RESERVE->hospital1_1 - M_metal1_hospital1_2 <= 0
  upper[availability_metal2_hospital1_2]: - z_metal2_factory1->hospital1_1
-   - z_metal2_factory3->hospital1_1 - z_metal2_DUMMY_RESERVE->hospital1_1
-   + z_metal2_hospital1->hospital2_2 - M_metal2_hospital1_2 <= 0
+   - z_metal2_factory3->hospital1_1 + z_metal2_hospital1->hospital2_1
+   - z_metal2_DUMMY_RESERVE->hospital1_1 - M_metal2_hospital1_2 <= 0
  upper[availability_plastic1_hospital1_2]:
    - z_plastic1_factory1->hospital1_1 - z_plastic1_factory3->hospital1_1
-   - z_plastic1_DUMMY_RESERVE->hospital1_1
-   + z_plastic1_hospital1->hospital2_2 - M_plastic1_hospital1_2 <= 0
+   + z_plastic1_hospital1->hospital2_1
+   - z_plastic1_DUMMY_RESERVE->hospital1_1 - M_plastic1_hospital1_2 <= 0
  upper[availability_plastic2_hospital1_2]:
    - z_plastic2_factory1->hospital1_1 - z_plastic2_factory3->hospital1_1
-   - z_plastic2_DUMMY_RESERVE->hospital1_1
-   + z_plastic2_hospital1->hospital2_2 - M_plastic2_hospital1_2 <= 0
+   + z_plastic2_hospital1->hospital2_1
+   - z_plastic2_DUMMY_RESERVE->hospital1_1 - M_plastic2_hospital1_2 <= 0
  upper[availability_plastic3_hospital1_2]:
    - z_plastic3_factory1->hospital1_1 - z_plastic3_factory3->hospital1_1
-   - z_plastic3_DUMMY_RESERVE->hospital1_1
-   + z_plastic3_hospital1->hospital2_2 - M_plastic3_hospital1_2 <= 0
+   + z_plastic3_hospital1->hospital2_1
+   - z_plastic3_DUMMY_RESERVE->hospital1_1 - M_plastic3_hospital1_2 <= 0
  upper[availability_ppe1_hospital1_2]: - z_ppe1_factory1->hospital1_1
-   - z_ppe1_factory3->hospital1_1 - z_ppe1_DUMMY_RESERVE->hospital1_1
-   + z_ppe1_hospital1->hospital2_2 - M_ppe1_hospital1_2 <= 0
+   - z_ppe1_factory3->hospital1_1 + z_ppe1_hospital1->hospital2_1
+   - z_ppe1_DUMMY_RESERVE->hospital1_1 - M_ppe1_hospital1_2 <= 0
  upper[availability_ppe2_hospital1_2]: - z_ppe2_factory1->hospital1_1
-   - z_ppe2_factory3->hospital1_1 - z_ppe2_DUMMY_RESERVE->hospital1_1
-   + z_ppe2_hospital1->hospital2_2 - M_ppe2_hospital1_2 <= 0
+   - z_ppe2_factory3->hospital1_1 + z_ppe2_hospital1->hospital2_1
+   - z_ppe2_DUMMY_RESERVE->hospital1_1 - M_ppe2_hospital1_2 <= 0
  upper[availability_ppe3_hospital1_2]: - z_ppe3_factory1->hospital1_1
-   - z_ppe3_factory3->hospital1_1 - z_ppe3_DUMMY_RESERVE->hospital1_1
-   + z_ppe3_hospital1->hospital2_2 - M_ppe3_hospital1_2 <= 0
+   - z_ppe3_factory3->hospital1_1 + z_ppe3_hospital1->hospital2_1
+   - z_ppe3_DUMMY_RESERVE->hospital1_1 - M_ppe3_hospital1_2 <= 0
  upper[availability_respirator1_hospital1_2]:
    - z_respirator1_factory1->hospital1_1
    - z_respirator1_factory3->hospital1_1
-   - z_respirator1_DUMMY_RESERVE->hospital1_1
-   + z_respirator1_hospital1->hospital2_2 - M_respirator1_hospital1_2 <= 0
+   + z_respirator1_hospital1->hospital2_1
+   - z_respirator1_DUMMY_RESERVE->hospital1_1 - M_respirator1_hospital1_2
+   <= 0
  upper[availability_respirator2_hospital1_2]:
    - z_respirator2_factory1->hospital1_1
    - z_respirator2_factory3->hospital1_1
-   - z_respirator2_DUMMY_RESERVE->hospital1_1
-   + z_respirator2_hospital1->hospital2_2 - M_respirator2_hospital1_2 <= 0
+   + z_respirator2_hospital1->hospital2_1
+   - z_respirator2_DUMMY_RESERVE->hospital1_1 - M_respirator2_hospital1_2
+   <= 0
  upper[availability_metal1_hospital1_3]: - z_metal1_factory1->hospital1_2
-   - z_metal1_factory3->hospital1_2 - z_metal1_DUMMY_RESERVE->hospital1_2
-   + z_metal1_hospital1->hospital2_3 - M_metal1_hospital1_3 <= 0
+   - z_metal1_factory3->hospital1_2 + z_metal1_hospital1->hospital2_2
+   - z_metal1_DUMMY_RESERVE->hospital1_2 - M_metal1_hospital1_3 <= 0
  upper[availability_metal2_hospital1_3]: - z_metal2_factory1->hospital1_2
-   - z_metal2_factory3->hospital1_2 - z_metal2_DUMMY_RESERVE->hospital1_2
-   + z_metal2_hospital1->hospital2_3 - M_metal2_hospital1_3 <= 0
+   - z_metal2_factory3->hospital1_2 + z_metal2_hospital1->hospital2_2
+   - z_metal2_DUMMY_RESERVE->hospital1_2 - M_metal2_hospital1_3 <= 0
  upper[availability_plastic1_hospital1_3]:
    - z_plastic1_factory1->hospital1_2 - z_plastic1_factory3->hospital1_2
-   - z_plastic1_DUMMY_RESERVE->hospital1_2
-   + z_plastic1_hospital1->hospital2_3 - M_plastic1_hospital1_3 <= 0
+   + z_plastic1_hospital1->hospital2_2
+   - z_plastic1_DUMMY_RESERVE->hospital1_2 - M_plastic1_hospital1_3 <= 0
  upper[availability_plastic2_hospital1_3]:
    - z_plastic2_factory1->hospital1_2 - z_plastic2_factory3->hospital1_2
-   - z_plastic2_DUMMY_RESERVE->hospital1_2
-   + z_plastic2_hospital1->hospital2_3 - M_plastic2_hospital1_3 <= 0
+   + z_plastic2_hospital1->hospital2_2
+   - z_plastic2_DUMMY_RESERVE->hospital1_2 - M_plastic2_hospital1_3 <= 0
  upper[availability_plastic3_hospital1_3]:
    - z_plastic3_factory1->hospital1_2 - z_plastic3_factory3->hospital1_2
-   - z_plastic3_DUMMY_RESERVE->hospital1_2
-   + z_plastic3_hospital1->hospital2_3 - M_plastic3_hospital1_3 <= 0
+   + z_plastic3_hospital1->hospital2_2
+   - z_plastic3_DUMMY_RESERVE->hospital1_2 - M_plastic3_hospital1_3 <= 0
  upper[availability_ppe1_hospital1_3]: - z_ppe1_factory1->hospital1_2
-   - z_ppe1_factory3->hospital1_2 - z_ppe1_DUMMY_RESERVE->hospital1_2
-   + z_ppe1_hospital1->hospital2_3 - M_ppe1_hospital1_3 <= 0
+   - z_ppe1_factory3->hospital1_2 + z_ppe1_hospital1->hospital2_2
+   - z_ppe1_DUMMY_RESERVE->hospital1_2 - M_ppe1_hospital1_3 <= 0
  upper[availability_ppe2_hospital1_3]: - z_ppe2_factory1->hospital1_2
-   - z_ppe2_factory3->hospital1_2 - z_ppe2_DUMMY_RESERVE->hospital1_2
-   + z_ppe2_hospital1->hospital2_3 - M_ppe2_hospital1_3 <= 0
+   - z_ppe2_factory3->hospital1_2 + z_ppe2_hospital1->hospital2_2
+   - z_ppe2_DUMMY_RESERVE->hospital1_2 - M_ppe2_hospital1_3 <= 0
  upper[availability_ppe3_hospital1_3]: - z_ppe3_factory1->hospital1_2
-   - z_ppe3_factory3->hospital1_2 - z_ppe3_DUMMY_RESERVE->hospital1_2
-   + z_ppe3_hospital1->hospital2_3 - M_ppe3_hospital1_3 <= 0
+   - z_ppe3_factory3->hospital1_2 + z_ppe3_hospital1->hospital2_2
+   - z_ppe3_DUMMY_RESERVE->hospital1_2 - M_ppe3_hospital1_3 <= 0
  upper[availability_respirator1_hospital1_3]:
    - z_respirator1_factory1->hospital1_2
    - z_respirator1_factory3->hospital1_2
-   - z_respirator1_DUMMY_RESERVE->hospital1_2
-   + z_respirator1_hospital1->hospital2_3 - M_respirator1_hospital1_3 <= 0
+   + z_respirator1_hospital1->hospital2_2
+   - z_respirator1_DUMMY_RESERVE->hospital1_2 - M_respirator1_hospital1_3
+   <= 0
  upper[availability_respirator2_hospital1_3]:
    - z_respirator2_factory1->hospital1_2
    - z_respirator2_factory3->hospital1_2
-   - z_respirator2_DUMMY_RESERVE->hospital1_2
-   + z_respirator2_hospital1->hospital2_3 - M_respirator2_hospital1_3 <= 0
+   + z_respirator2_hospital1->hospital2_2
+   - z_respirator2_DUMMY_RESERVE->hospital1_2 - M_respirator2_hospital1_3
+   <= 0
  upper[availability_metal1_hospital1_4]: - z_metal1_factory1->hospital1_3
-   - z_metal1_factory3->hospital1_3 - z_metal1_DUMMY_RESERVE->hospital1_3
-   + z_metal1_hospital1->hospital2_4 - M_metal1_hospital1_4 <= 0
+   - z_metal1_factory3->hospital1_3 + z_metal1_hospital1->hospital2_3
+   - z_metal1_DUMMY_RESERVE->hospital1_3 - M_metal1_hospital1_4 <= 0
  upper[availability_metal2_hospital1_4]: - z_metal2_factory1->hospital1_3
-   - z_metal2_factory3->hospital1_3 - z_metal2_DUMMY_RESERVE->hospital1_3
-   + z_metal2_hospital1->hospital2_4 - M_metal2_hospital1_4 <= 0
+   - z_metal2_factory3->hospital1_3 + z_metal2_hospital1->hospital2_3
+   - z_metal2_DUMMY_RESERVE->hospital1_3 - M_metal2_hospital1_4 <= 0
  upper[availability_plastic1_hospital1_4]:
    - z_plastic1_factory1->hospital1_3 - z_plastic1_factory3->hospital1_3
-   - z_plastic1_DUMMY_RESERVE->hospital1_3
-   + z_plastic1_hospital1->hospital2_4 - M_plastic1_hospital1_4 <= 0
+   + z_plastic1_hospital1->hospital2_3
+   - z_plastic1_DUMMY_RESERVE->hospital1_3 - M_plastic1_hospital1_4 <= 0
  upper[availability_plastic2_hospital1_4]:
    - z_plastic2_factory1->hospital1_3 - z_plastic2_factory3->hospital1_3
-   - z_plastic2_DUMMY_RESERVE->hospital1_3
-   + z_plastic2_hospital1->hospital2_4 - M_plastic2_hospital1_4 <= 0
+   + z_plastic2_hospital1->hospital2_3
+   - z_plastic2_DUMMY_RESERVE->hospital1_3 - M_plastic2_hospital1_4 <= 0
  upper[availability_plastic3_hospital1_4]:
    - z_plastic3_factory1->hospital1_3 - z_plastic3_factory3->hospital1_3
-   - z_plastic3_DUMMY_RESERVE->hospital1_3
-   + z_plastic3_hospital1->hospital2_4 - M_plastic3_hospital1_4 <= 0
+   + z_plastic3_hospital1->hospital2_3
+   - z_plastic3_DUMMY_RESERVE->hospital1_3 - M_plastic3_hospital1_4 <= 0
  upper[availability_ppe1_hospital1_4]: - z_ppe1_factory1->hospital1_3
-   - z_ppe1_factory3->hospital1_3 - z_ppe1_DUMMY_RESERVE->hospital1_3
-   + z_ppe1_hospital1->hospital2_4 - M_ppe1_hospital1_4 <= 0
+   - z_ppe1_factory3->hospital1_3 + z_ppe1_hospital1->hospital2_3
+   - z_ppe1_DUMMY_RESERVE->hospital1_3 - M_ppe1_hospital1_4 <= 0
  upper[availability_ppe2_hospital1_4]: - z_ppe2_factory1->hospital1_3
-   - z_ppe2_factory3->hospital1_3 - z_ppe2_DUMMY_RESERVE->hospital1_3
-   + z_ppe2_hospital1->hospital2_4 - M_ppe2_hospital1_4 <= 0
+   - z_ppe2_factory3->hospital1_3 + z_ppe2_hospital1->hospital2_3
+   - z_ppe2_DUMMY_RESERVE->hospital1_3 - M_ppe2_hospital1_4 <= 0
  upper[availability_ppe3_hospital1_4]: - z_ppe3_factory1->hospital1_3
-   - z_ppe3_factory3->hospital1_3 - z_ppe3_DUMMY_RESERVE->hospital1_3
-   + z_ppe3_hospital1->hospital2_4 - M_ppe3_hospital1_4 <= 0
+   - z_ppe3_factory3->hospital1_3 + z_ppe3_hospital1->hospital2_3
+   - z_ppe3_DUMMY_RESERVE->hospital1_3 - M_ppe3_hospital1_4 <= 0
  upper[availability_respirator1_hospital1_4]:
    - z_respirator1_factory1->hospital1_3
    - z_respirator1_factory3->hospital1_3
-   - z_respirator1_DUMMY_RESERVE->hospital1_3
-   + z_respirator1_hospital1->hospital2_4 - M_respirator1_hospital1_4 <= 0
+   + z_respirator1_hospital1->hospital2_3
+   - z_respirator1_DUMMY_RESERVE->hospital1_3 - M_respirator1_hospital1_4
+   <= 0
  upper[availability_respirator2_hospital1_4]:
    - z_respirator2_factory1->hospital1_3
    - z_respirator2_factory3->hospital1_3
-   - z_respirator2_DUMMY_RESERVE->hospital1_3
-   + z_respirator2_hospital1->hospital2_4 - M_respirator2_hospital1_4 <= 0
+   + z_respirator2_hospital1->hospital2_3
+   - z_respirator2_DUMMY_RESERVE->hospital1_3 - M_respirator2_hospital1_4
+   <= 0
  upper[availability_metal1_hospital1_5]: - z_metal1_factory1->hospital1_4
-   - z_metal1_factory3->hospital1_4 - z_metal1_DUMMY_RESERVE->hospital1_4
-   + z_metal1_hospital1->hospital2_5 - M_metal1_hospital1_5 <= 0
+   - z_metal1_factory3->hospital1_4 + z_metal1_hospital1->hospital2_4
+   - z_metal1_DUMMY_RESERVE->hospital1_4 - M_metal1_hospital1_5 <= 0
  upper[availability_metal2_hospital1_5]: - z_metal2_factory1->hospital1_4
-   - z_metal2_factory3->hospital1_4 - z_metal2_DUMMY_RESERVE->hospital1_4
-   + z_metal2_hospital1->hospital2_5 - M_metal2_hospital1_5 <= 0
+   - z_metal2_factory3->hospital1_4 + z_metal2_hospital1->hospital2_4
+   - z_metal2_DUMMY_RESERVE->hospital1_4 - M_metal2_hospital1_5 <= 0
  upper[availability_plastic1_hospital1_5]:
    - z_plastic1_factory1->hospital1_4 - z_plastic1_factory3->hospital1_4
-   - z_plastic1_DUMMY_RESERVE->hospital1_4
-   + z_plastic1_hospital1->hospital2_5 - M_plastic1_hospital1_5 <= 0
+   + z_plastic1_hospital1->hospital2_4
+   - z_plastic1_DUMMY_RESERVE->hospital1_4 - M_plastic1_hospital1_5 <= 0
  upper[availability_plastic2_hospital1_5]:
    - z_plastic2_factory1->hospital1_4 - z_plastic2_factory3->hospital1_4
-   - z_plastic2_DUMMY_RESERVE->hospital1_4
-   + z_plastic2_hospital1->hospital2_5 - M_plastic2_hospital1_5 <= 0
+   + z_plastic2_hospital1->hospital2_4
+   - z_plastic2_DUMMY_RESERVE->hospital1_4 - M_plastic2_hospital1_5 <= 0
  upper[availability_plastic3_hospital1_5]:
    - z_plastic3_factory1->hospital1_4 - z_plastic3_factory3->hospital1_4
-   - z_plastic3_DUMMY_RESERVE->hospital1_4
-   + z_plastic3_hospital1->hospital2_5 - M_plastic3_hospital1_5 <= 0
+   + z_plastic3_hospital1->hospital2_4
+   - z_plastic3_DUMMY_RESERVE->hospital1_4 - M_plastic3_hospital1_5 <= 0
  upper[availability_ppe1_hospital1_5]: - z_ppe1_factory1->hospital1_4
-   - z_ppe1_factory3->hospital1_4 - z_ppe1_DUMMY_RESERVE->hospital1_4
-   + z_ppe1_hospital1->hospital2_5 - M_ppe1_hospital1_5 <= 0
+   - z_ppe1_factory3->hospital1_4 + z_ppe1_hospital1->hospital2_4
+   - z_ppe1_DUMMY_RESERVE->hospital1_4 - M_ppe1_hospital1_5 <= 0
  upper[availability_ppe2_hospital1_5]: - z_ppe2_factory1->hospital1_4
-   - z_ppe2_factory3->hospital1_4 - z_ppe2_DUMMY_RESERVE->hospital1_4
-   + z_ppe2_hospital1->hospital2_5 - M_ppe2_hospital1_5 <= 0
+   - z_ppe2_factory3->hospital1_4 + z_ppe2_hospital1->hospital2_4
+   - z_ppe2_DUMMY_RESERVE->hospital1_4 - M_ppe2_hospital1_5 <= 0
  upper[availability_ppe3_hospital1_5]: - z_ppe3_factory1->hospital1_4
-   - z_ppe3_factory3->hospital1_4 - z_ppe3_DUMMY_RESERVE->hospital1_4
-   + z_ppe3_hospital1->hospital2_5 - M_ppe3_hospital1_5 <= 0
+   - z_ppe3_factory3->hospital1_4 + z_ppe3_hospital1->hospital2_4
+   - z_ppe3_DUMMY_RESERVE->hospital1_4 - M_ppe3_hospital1_5 <= 0
  upper[availability_respirator1_hospital1_5]:
    - z_respirator1_factory1->hospital1_4
    - z_respirator1_factory3->hospital1_4
-   - z_respirator1_DUMMY_RESERVE->hospital1_4
-   + z_respirator1_hospital1->hospital2_5 - M_respirator1_hospital1_5 <= 0
+   + z_respirator1_hospital1->hospital2_4
+   - z_respirator1_DUMMY_RESERVE->hospital1_4 - M_respirator1_hospital1_5
+   <= 0
  upper[availability_respirator2_hospital1_5]:
    - z_respirator2_factory1->hospital1_4
    - z_respirator2_factory3->hospital1_4
-   - z_respirator2_DUMMY_RESERVE->hospital1_4
-   + z_respirator2_hospital1->hospital2_5 - M_respirator2_hospital1_5 <= 0
+   + z_respirator2_hospital1->hospital2_4
+   - z_respirator2_DUMMY_RESERVE->hospital1_4 - M_respirator2_hospital1_5
+   <= 0
  upper[availability_metal1_hospital1_6]: - z_metal1_factory1->hospital1_5
-   - z_metal1_factory3->hospital1_5 - z_metal1_DUMMY_RESERVE->hospital1_5
-   + z_metal1_hospital1->hospital2_6 - M_metal1_hospital1_6 <= 0
+   - z_metal1_factory3->hospital1_5 + z_metal1_hospital1->hospital2_5
+   - z_metal1_DUMMY_RESERVE->hospital1_5 - M_metal1_hospital1_6 <= 0
  upper[availability_metal2_hospital1_6]: - z_metal2_factory1->hospital1_5
-   - z_metal2_factory3->hospital1_5 - z_metal2_DUMMY_RESERVE->hospital1_5
-   + z_metal2_hospital1->hospital2_6 - M_metal2_hospital1_6 <= 0
+   - z_metal2_factory3->hospital1_5 + z_metal2_hospital1->hospital2_5
+   - z_metal2_DUMMY_RESERVE->hospital1_5 - M_metal2_hospital1_6 <= 0
  upper[availability_plastic1_hospital1_6]:
    - z_plastic1_factory1->hospital1_5 - z_plastic1_factory3->hospital1_5
-   - z_plastic1_DUMMY_RESERVE->hospital1_5
-   + z_plastic1_hospital1->hospital2_6 - M_plastic1_hospital1_6 <= 0
+   + z_plastic1_hospital1->hospital2_5
+   - z_plastic1_DUMMY_RESERVE->hospital1_5 - M_plastic1_hospital1_6 <= 0
  upper[availability_plastic2_hospital1_6]:
    - z_plastic2_factory1->hospital1_5 - z_plastic2_factory3->hospital1_5
-   - z_plastic2_DUMMY_RESERVE->hospital1_5
-   + z_plastic2_hospital1->hospital2_6 - M_plastic2_hospital1_6 <= 0
+   + z_plastic2_hospital1->hospital2_5
+   - z_plastic2_DUMMY_RESERVE->hospital1_5 - M_plastic2_hospital1_6 <= 0
  upper[availability_plastic3_hospital1_6]:
    - z_plastic3_factory1->hospital1_5 - z_plastic3_factory3->hospital1_5
-   - z_plastic3_DUMMY_RESERVE->hospital1_5
-   + z_plastic3_hospital1->hospital2_6 - M_plastic3_hospital1_6 <= 0
+   + z_plastic3_hospital1->hospital2_5
+   - z_plastic3_DUMMY_RESERVE->hospital1_5 - M_plastic3_hospital1_6 <= 0
  upper[availability_ppe1_hospital1_6]: - z_ppe1_factory1->hospital1_5
-   - z_ppe1_factory3->hospital1_5 - z_ppe1_DUMMY_RESERVE->hospital1_5
-   + z_ppe1_hospital1->hospital2_6 - M_ppe1_hospital1_6 <= 0
+   - z_ppe1_factory3->hospital1_5 + z_ppe1_hospital1->hospital2_5
+   - z_ppe1_DUMMY_RESERVE->hospital1_5 - M_ppe1_hospital1_6 <= 0
  upper[availability_ppe2_hospital1_6]: - z_ppe2_factory1->hospital1_5
-   - z_ppe2_factory3->hospital1_5 - z_ppe2_DUMMY_RESERVE->hospital1_5
-   + z_ppe2_hospital1->hospital2_6 - M_ppe2_hospital1_6 <= 0
+   - z_ppe2_factory3->hospital1_5 + z_ppe2_hospital1->hospital2_5
+   - z_ppe2_DUMMY_RESERVE->hospital1_5 - M_ppe2_hospital1_6 <= 0
  upper[availability_ppe3_hospital1_6]: - z_ppe3_factory1->hospital1_5
-   - z_ppe3_factory3->hospital1_5 - z_ppe3_DUMMY_RESERVE->hospital1_5
-   + z_ppe3_hospital1->hospital2_6 - M_ppe3_hospital1_6 <= 0
+   - z_ppe3_factory3->hospital1_5 + z_ppe3_hospital1->hospital2_5
+   - z_ppe3_DUMMY_RESERVE->hospital1_5 - M_ppe3_hospital1_6 <= 0
  upper[availability_respirator1_hospital1_6]:
    - z_respirator1_factory1->hospital1_5
    - z_respirator1_factory3->hospital1_5
-   - z_respirator1_DUMMY_RESERVE->hospital1_5
-   + z_respirator1_hospital1->hospital2_6 - M_respirator1_hospital1_6 <= 0
+   + z_respirator1_hospital1->hospital2_5
+   - z_respirator1_DUMMY_RESERVE->hospital1_5 - M_respirator1_hospital1_6
+   <= 0
  upper[availability_respirator2_hospital1_6]:
    - z_respirator2_factory1->hospital1_5
    - z_respirator2_factory3->hospital1_5
-   - z_respirator2_DUMMY_RESERVE->hospital1_5
-   + z_respirator2_hospital1->hospital2_6 - M_respirator2_hospital1_6 <= 0
+   + z_respirator2_hospital1->hospital2_5
+   - z_respirator2_DUMMY_RESERVE->hospital1_5 - M_respirator2_hospital1_6
+   <= 0
  upper[availability_metal1_hospital1_7]: - z_metal1_factory1->hospital1_6
-   - z_metal1_factory3->hospital1_6 - z_metal1_DUMMY_RESERVE->hospital1_6
-   + z_metal1_hospital1->hospital2_7 - M_metal1_hospital1_7 <= 0
+   - z_metal1_factory3->hospital1_6 + z_metal1_hospital1->hospital2_6
+   - z_metal1_DUMMY_RESERVE->hospital1_6 - M_metal1_hospital1_7 <= 0
  upper[availability_metal2_hospital1_7]: - z_metal2_factory1->hospital1_6
-   - z_metal2_factory3->hospital1_6 - z_metal2_DUMMY_RESERVE->hospital1_6
-   + z_metal2_hospital1->hospital2_7 - M_metal2_hospital1_7 <= 0
+   - z_metal2_factory3->hospital1_6 + z_metal2_hospital1->hospital2_6
+   - z_metal2_DUMMY_RESERVE->hospital1_6 - M_metal2_hospital1_7 <= 0
  upper[availability_plastic1_hospital1_7]:
    - z_plastic1_factory1->hospital1_6 - z_plastic1_factory3->hospital1_6
-   - z_plastic1_DUMMY_RESERVE->hospital1_6
-   + z_plastic1_hospital1->hospital2_7 - M_plastic1_hospital1_7 <= 0
+   + z_plastic1_hospital1->hospital2_6
+   - z_plastic1_DUMMY_RESERVE->hospital1_6 - M_plastic1_hospital1_7 <= 0
  upper[availability_plastic2_hospital1_7]:
    - z_plastic2_factory1->hospital1_6 - z_plastic2_factory3->hospital1_6
-   - z_plastic2_DUMMY_RESERVE->hospital1_6
-   + z_plastic2_hospital1->hospital2_7 - M_plastic2_hospital1_7 <= 0
+   + z_plastic2_hospital1->hospital2_6
+   - z_plastic2_DUMMY_RESERVE->hospital1_6 - M_plastic2_hospital1_7 <= 0
  upper[availability_plastic3_hospital1_7]:
    - z_plastic3_factory1->hospital1_6 - z_plastic3_factory3->hospital1_6
-   - z_plastic3_DUMMY_RESERVE->hospital1_6
-   + z_plastic3_hospital1->hospital2_7 - M_plastic3_hospital1_7 <= 0
+   + z_plastic3_hospital1->hospital2_6
+   - z_plastic3_DUMMY_RESERVE->hospital1_6 - M_plastic3_hospital1_7 <= 0
  upper[availability_ppe1_hospital1_7]: - z_ppe1_factory1->hospital1_6
-   - z_ppe1_factory3->hospital1_6 - z_ppe1_DUMMY_RESERVE->hospital1_6
-   + z_ppe1_hospital1->hospital2_7 - M_ppe1_hospital1_7 <= 0
+   - z_ppe1_factory3->hospital1_6 + z_ppe1_hospital1->hospital2_6
+   - z_ppe1_DUMMY_RESERVE->hospital1_6 - M_ppe1_hospital1_7 <= 0
  upper[availability_ppe2_hospital1_7]: - z_ppe2_factory1->hospital1_6
-   - z_ppe2_factory3->hospital1_6 - z_ppe2_DUMMY_RESERVE->hospital1_6
-   + z_ppe2_hospital1->hospital2_7 - M_ppe2_hospital1_7 <= 0
+   - z_ppe2_factory3->hospital1_6 + z_ppe2_hospital1->hospital2_6
+   - z_ppe2_DUMMY_RESERVE->hospital1_6 - M_ppe2_hospital1_7 <= 0
  upper[availability_ppe3_hospital1_7]: - z_ppe3_factory1->hospital1_6
-   - z_ppe3_factory3->hospital1_6 - z_ppe3_DUMMY_RESERVE->hospital1_6
-   + z_ppe3_hospital1->hospital2_7 - M_ppe3_hospital1_7 <= 0
+   - z_ppe3_factory3->hospital1_6 + z_ppe3_hospital1->hospital2_6
+   - z_ppe3_DUMMY_RESERVE->hospital1_6 - M_ppe3_hospital1_7 <= 0
  upper[availability_respirator1_hospital1_7]:
    - z_respirator1_factory1->hospital1_6
    - z_respirator1_factory3->hospital1_6
-   - z_respirator1_DUMMY_RESERVE->hospital1_6
-   + z_respirator1_hospital1->hospital2_7 - M_respirator1_hospital1_7 <= 0
+   + z_respirator1_hospital1->hospital2_6
+   - z_respirator1_DUMMY_RESERVE->hospital1_6 - M_respirator1_hospital1_7
+   <= 0
  upper[availability_respirator2_hospital1_7]:
    - z_respirator2_factory1->hospital1_6
    - z_respirator2_factory3->hospital1_6
-   - z_respirator2_DUMMY_RESERVE->hospital1_6
-   + z_respirator2_hospital1->hospital2_7 - M_respirator2_hospital1_7 <= 0
+   + z_respirator2_hospital1->hospital2_6
+   - z_respirator2_DUMMY_RESERVE->hospital1_6 - M_respirator2_hospital1_7
+   <= 0
  upper[availability_metal1_hospital1_8]: - z_metal1_factory1->hospital1_7
-   - z_metal1_factory3->hospital1_7 - z_metal1_DUMMY_RESERVE->hospital1_7
-   + z_metal1_hospital1->hospital2_8 - M_metal1_hospital1_8 <= 0
+   - z_metal1_factory3->hospital1_7 + z_metal1_hospital1->hospital2_7
+   - z_metal1_DUMMY_RESERVE->hospital1_7 - M_metal1_hospital1_8 <= 0
  upper[availability_metal2_hospital1_8]: - z_metal2_factory1->hospital1_7
-   - z_metal2_factory3->hospital1_7 - z_metal2_DUMMY_RESERVE->hospital1_7
-   + z_metal2_hospital1->hospital2_8 - M_metal2_hospital1_8 <= 0
+   - z_metal2_factory3->hospital1_7 + z_metal2_hospital1->hospital2_7
+   - z_metal2_DUMMY_RESERVE->hospital1_7 - M_metal2_hospital1_8 <= 0
  upper[availability_plastic1_hospital1_8]:
    - z_plastic1_factory1->hospital1_7 - z_plastic1_factory3->hospital1_7
-   - z_plastic1_DUMMY_RESERVE->hospital1_7
-   + z_plastic1_hospital1->hospital2_8 - M_plastic1_hospital1_8 <= 0
+   + z_plastic1_hospital1->hospital2_7
+   - z_plastic1_DUMMY_RESERVE->hospital1_7 - M_plastic1_hospital1_8 <= 0
  upper[availability_plastic2_hospital1_8]:
    - z_plastic2_factory1->hospital1_7 - z_plastic2_factory3->hospital1_7
-   - z_plastic2_DUMMY_RESERVE->hospital1_7
-   + z_plastic2_hospital1->hospital2_8 - M_plastic2_hospital1_8 <= 0
+   + z_plastic2_hospital1->hospital2_7
+   - z_plastic2_DUMMY_RESERVE->hospital1_7 - M_plastic2_hospital1_8 <= 0
  upper[availability_plastic3_hospital1_8]:
    - z_plastic3_factory1->hospital1_7 - z_plastic3_factory3->hospital1_7
-   - z_plastic3_DUMMY_RESERVE->hospital1_7
-   + z_plastic3_hospital1->hospital2_8 - M_plastic3_hospital1_8 <= 0
+   + z_plastic3_hospital1->hospital2_7
+   - z_plastic3_DUMMY_RESERVE->hospital1_7 - M_plastic3_hospital1_8 <= 0
  upper[availability_ppe1_hospital1_8]: - z_ppe1_factory1->hospital1_7
-   - z_ppe1_factory3->hospital1_7 - z_ppe1_DUMMY_RESERVE->hospital1_7
-   + z_ppe1_hospital1->hospital2_8 - M_ppe1_hospital1_8 <= 0
+   - z_ppe1_factory3->hospital1_7 + z_ppe1_hospital1->hospital2_7
+   - z_ppe1_DUMMY_RESERVE->hospital1_7 - M_ppe1_hospital1_8 <= 0
  upper[availability_ppe2_hospital1_8]: - z_ppe2_factory1->hospital1_7
-   - z_ppe2_factory3->hospital1_7 - z_ppe2_DUMMY_RESERVE->hospital1_7
-   + z_ppe2_hospital1->hospital2_8 - M_ppe2_hospital1_8 <= 0
+   - z_ppe2_factory3->hospital1_7 + z_ppe2_hospital1->hospital2_7
+   - z_ppe2_DUMMY_RESERVE->hospital1_7 - M_ppe2_hospital1_8 <= 0
  upper[availability_ppe3_hospital1_8]: - z_ppe3_factory1->hospital1_7
-   - z_ppe3_factory3->hospital1_7 - z_ppe3_DUMMY_RESERVE->hospital1_7
-   + z_ppe3_hospital1->hospital2_8 - M_ppe3_hospital1_8 <= 0
+   - z_ppe3_factory3->hospital1_7 + z_ppe3_hospital1->hospital2_7
+   - z_ppe3_DUMMY_RESERVE->hospital1_7 - M_ppe3_hospital1_8 <= 0
  upper[availability_respirator1_hospital1_8]:
    - z_respirator1_factory1->hospital1_7
    - z_respirator1_factory3->hospital1_7
-   - z_respirator1_DUMMY_RESERVE->hospital1_7
-   + z_respirator1_hospital1->hospital2_8 - M_respirator1_hospital1_8 <= 0
+   + z_respirator1_hospital1->hospital2_7
+   - z_respirator1_DUMMY_RESERVE->hospital1_7 - M_respirator1_hospital1_8
+   <= 0
  upper[availability_respirator2_hospital1_8]:
    - z_respirator2_factory1->hospital1_7
    - z_respirator2_factory3->hospital1_7
-   - z_respirator2_DUMMY_RESERVE->hospital1_7
-   + z_respirator2_hospital1->hospital2_8 - M_respirator2_hospital1_8 <= 0
+   + z_respirator2_hospital1->hospital2_7
+   - z_respirator2_DUMMY_RESERVE->hospital1_7 - M_respirator2_hospital1_8
+   <= 0
  upper[availability_metal1_hospital1_9]: - z_metal1_factory1->hospital1_8
-   - z_metal1_factory3->hospital1_8 - z_metal1_DUMMY_RESERVE->hospital1_8
-   + z_metal1_hospital1->hospital2_9 - M_metal1_hospital1_9 <= 0
+   - z_metal1_factory3->hospital1_8 + z_metal1_hospital1->hospital2_8
+   - z_metal1_DUMMY_RESERVE->hospital1_8 - M_metal1_hospital1_9 <= 0
  upper[availability_metal2_hospital1_9]: - z_metal2_factory1->hospital1_8
-   - z_metal2_factory3->hospital1_8 - z_metal2_DUMMY_RESERVE->hospital1_8
-   + z_metal2_hospital1->hospital2_9 - M_metal2_hospital1_9 <= 0
+   - z_metal2_factory3->hospital1_8 + z_metal2_hospital1->hospital2_8
+   - z_metal2_DUMMY_RESERVE->hospital1_8 - M_metal2_hospital1_9 <= 0
  upper[availability_plastic1_hospital1_9]:
    - z_plastic1_factory1->hospital1_8 - z_plastic1_factory3->hospital1_8
-   - z_plastic1_DUMMY_RESERVE->hospital1_8
-   + z_plastic1_hospital1->hospital2_9 - M_plastic1_hospital1_9 <= 0
+   + z_plastic1_hospital1->hospital2_8
+   - z_plastic1_DUMMY_RESERVE->hospital1_8 - M_plastic1_hospital1_9 <= 0
  upper[availability_plastic2_hospital1_9]:
    - z_plastic2_factory1->hospital1_8 - z_plastic2_factory3->hospital1_8
-   - z_plastic2_DUMMY_RESERVE->hospital1_8
-   + z_plastic2_hospital1->hospital2_9 - M_plastic2_hospital1_9 <= 0
+   + z_plastic2_hospital1->hospital2_8
+   - z_plastic2_DUMMY_RESERVE->hospital1_8 - M_plastic2_hospital1_9 <= 0
  upper[availability_plastic3_hospital1_9]:
    - z_plastic3_factory1->hospital1_8 - z_plastic3_factory3->hospital1_8
-   - z_plastic3_DUMMY_RESERVE->hospital1_8
-   + z_plastic3_hospital1->hospital2_9 - M_plastic3_hospital1_9 <= 0
+   + z_plastic3_hospital1->hospital2_8
+   - z_plastic3_DUMMY_RESERVE->hospital1_8 - M_plastic3_hospital1_9 <= 0
  upper[availability_ppe1_hospital1_9]: - z_ppe1_factory1->hospital1_8
-   - z_ppe1_factory3->hospital1_8 - z_ppe1_DUMMY_RESERVE->hospital1_8
-   + z_ppe1_hospital1->hospital2_9 - M_ppe1_hospital1_9 <= 0
+   - z_ppe1_factory3->hospital1_8 + z_ppe1_hospital1->hospital2_8
+   - z_ppe1_DUMMY_RESERVE->hospital1_8 - M_ppe1_hospital1_9 <= 0
  upper[availability_ppe2_hospital1_9]: - z_ppe2_factory1->hospital1_8
-   - z_ppe2_factory3->hospital1_8 - z_ppe2_DUMMY_RESERVE->hospital1_8
-   + z_ppe2_hospital1->hospital2_9 - M_ppe2_hospital1_9 <= 0
+   - z_ppe2_factory3->hospital1_8 + z_ppe2_hospital1->hospital2_8
+   - z_ppe2_DUMMY_RESERVE->hospital1_8 - M_ppe2_hospital1_9 <= 0
  upper[availability_ppe3_hospital1_9]: - z_ppe3_factory1->hospital1_8
-   - z_ppe3_factory3->hospital1_8 - z_ppe3_DUMMY_RESERVE->hospital1_8
-   + z_ppe3_hospital1->hospital2_9 - M_ppe3_hospital1_9 <= 0
+   - z_ppe3_factory3->hospital1_8 + z_ppe3_hospital1->hospital2_8
+   - z_ppe3_DUMMY_RESERVE->hospital1_8 - M_ppe3_hospital1_9 <= 0
  upper[availability_respirator1_hospital1_9]:
    - z_respirator1_factory1->hospital1_8
    - z_respirator1_factory3->hospital1_8
-   - z_respirator1_DUMMY_RESERVE->hospital1_8
-   + z_respirator1_hospital1->hospital2_9 - M_respirator1_hospital1_9 <= 0
+   + z_respirator1_hospital1->hospital2_8
+   - z_respirator1_DUMMY_RESERVE->hospital1_8 - M_respirator1_hospital1_9
+   <= 0
  upper[availability_respirator2_hospital1_9]:
    - z_respirator2_factory1->hospital1_8
    - z_respirator2_factory3->hospital1_8
-   - z_respirator2_DUMMY_RESERVE->hospital1_8
-   + z_respirator2_hospital1->hospital2_9 - M_respirator2_hospital1_9 <= 0
+   + z_respirator2_hospital1->hospital2_8
+   - z_respirator2_DUMMY_RESERVE->hospital1_8 - M_respirator2_hospital1_9
+   <= 0
  upper[availability_metal1_hospital1_10]: - z_metal1_factory1->hospital1_9
-   - z_metal1_factory3->hospital1_9 - z_metal1_DUMMY_RESERVE->hospital1_9
-   + z_metal1_hospital1->hospital2_10 - M_metal1_hospital1_10 <= 0
+   - z_metal1_factory3->hospital1_9 + z_metal1_hospital1->hospital2_9
+   - z_metal1_DUMMY_RESERVE->hospital1_9 - M_metal1_hospital1_10 <= 0
  upper[availability_metal2_hospital1_10]: - z_metal2_factory1->hospital1_9
-   - z_metal2_factory3->hospital1_9 - z_metal2_DUMMY_RESERVE->hospital1_9
-   + z_metal2_hospital1->hospital2_10 - M_metal2_hospital1_10 <= 0
+   - z_metal2_factory3->hospital1_9 + z_metal2_hospital1->hospital2_9
+   - z_metal2_DUMMY_RESERVE->hospital1_9 - M_metal2_hospital1_10 <= 0
  upper[availability_plastic1_hospital1_10]:
    - z_plastic1_factory1->hospital1_9 - z_plastic1_factory3->hospital1_9
-   - z_plastic1_DUMMY_RESERVE->hospital1_9
-   + z_plastic1_hospital1->hospital2_10 - M_plastic1_hospital1_10 <= 0
+   + z_plastic1_hospital1->hospital2_9
+   - z_plastic1_DUMMY_RESERVE->hospital1_9 - M_plastic1_hospital1_10 <= 0
  upper[availability_plastic2_hospital1_10]:
    - z_plastic2_factory1->hospital1_9 - z_plastic2_factory3->hospital1_9
-   - z_plastic2_DUMMY_RESERVE->hospital1_9
-   + z_plastic2_hospital1->hospital2_10 - M_plastic2_hospital1_10 <= 0
+   + z_plastic2_hospital1->hospital2_9
+   - z_plastic2_DUMMY_RESERVE->hospital1_9 - M_plastic2_hospital1_10 <= 0
  upper[availability_plastic3_hospital1_10]:
    - z_plastic3_factory1->hospital1_9 - z_plastic3_factory3->hospital1_9
-   - z_plastic3_DUMMY_RESERVE->hospital1_9
-   + z_plastic3_hospital1->hospital2_10 - M_plastic3_hospital1_10 <= 0
+   + z_plastic3_hospital1->hospital2_9
+   - z_plastic3_DUMMY_RESERVE->hospital1_9 - M_plastic3_hospital1_10 <= 0
  upper[availability_ppe1_hospital1_10]: - z_ppe1_factory1->hospital1_9
-   - z_ppe1_factory3->hospital1_9 - z_ppe1_DUMMY_RESERVE->hospital1_9
-   + z_ppe1_hospital1->hospital2_10 - M_ppe1_hospital1_10 <= 0
+   - z_ppe1_factory3->hospital1_9 + z_ppe1_hospital1->hospital2_9
+   - z_ppe1_DUMMY_RESERVE->hospital1_9 - M_ppe1_hospital1_10 <= 0
  upper[availability_ppe2_hospital1_10]: - z_ppe2_factory1->hospital1_9
-   - z_ppe2_factory3->hospital1_9 - z_ppe2_DUMMY_RESERVE->hospital1_9
-   + z_ppe2_hospital1->hospital2_10 - M_ppe2_hospital1_10 <= 0
+   - z_ppe2_factory3->hospital1_9 + z_ppe2_hospital1->hospital2_9
+   - z_ppe2_DUMMY_RESERVE->hospital1_9 - M_ppe2_hospital1_10 <= 0
  upper[availability_ppe3_hospital1_10]: - z_ppe3_factory1->hospital1_9
-   - z_ppe3_factory3->hospital1_9 - z_ppe3_DUMMY_RESERVE->hospital1_9
-   + z_ppe3_hospital1->hospital2_10 - M_ppe3_hospital1_10 <= 0
+   - z_ppe3_factory3->hospital1_9 + z_ppe3_hospital1->hospital2_9
+   - z_ppe3_DUMMY_RESERVE->hospital1_9 - M_ppe3_hospital1_10 <= 0
  upper[availability_respirator1_hospital1_10]:
    - z_respirator1_factory1->hospital1_9
    - z_respirator1_factory3->hospital1_9
-   - z_respirator1_DUMMY_RESERVE->hospital1_9
-   + z_respirator1_hospital1->hospital2_10 - M_respirator1_hospital1_10
+   + z_respirator1_hospital1->hospital2_9
+   - z_respirator1_DUMMY_RESERVE->hospital1_9 - M_respirator1_hospital1_10
    <= 0
  upper[availability_respirator2_hospital1_10]:
    - z_respirator2_factory1->hospital1_9
    - z_respirator2_factory3->hospital1_9
-   - z_respirator2_DUMMY_RESERVE->hospital1_9
-   + z_respirator2_hospital1->hospital2_10 - M_respirator2_hospital1_10
+   + z_respirator2_hospital1->hospital2_9
+   - z_respirator2_DUMMY_RESERVE->hospital1_9 - M_respirator2_hospital1_10
    <= 0
  upper[availability_metal1_hospital1_11]: - z_metal1_factory1->hospital1_10
-   - z_metal1_factory3->hospital1_10 - z_metal1_DUMMY_RESERVE->hospital1_10
-   + z_metal1_hospital1->hospital2_11 - M_metal1_hospital1_11 <= 0
+   - z_metal1_factory3->hospital1_10 + z_metal1_hospital1->hospital2_10
+   - z_metal1_DUMMY_RESERVE->hospital1_10 - M_metal1_hospital1_11 <= 0
  upper[availability_metal2_hospital1_11]: - z_metal2_factory1->hospital1_10
-   - z_metal2_factory3->hospital1_10 - z_metal2_DUMMY_RESERVE->hospital1_10
-   + z_metal2_hospital1->hospital2_11 - M_metal2_hospital1_11 <= 0
+   - z_metal2_factory3->hospital1_10 + z_metal2_hospital1->hospital2_10
+   - z_metal2_DUMMY_RESERVE->hospital1_10 - M_metal2_hospital1_11 <= 0
  upper[availability_plastic1_hospital1_11]:
    - z_plastic1_factory1->hospital1_10 - z_plastic1_factory3->hospital1_10
-   - z_plastic1_DUMMY_RESERVE->hospital1_10
-   + z_plastic1_hospital1->hospital2_11 - M_plastic1_hospital1_11 <= 0
+   + z_plastic1_hospital1->hospital2_10
+   - z_plastic1_DUMMY_RESERVE->hospital1_10 - M_plastic1_hospital1_11 <= 0
  upper[availability_plastic2_hospital1_11]:
    - z_plastic2_factory1->hospital1_10 - z_plastic2_factory3->hospital1_10
-   - z_plastic2_DUMMY_RESERVE->hospital1_10
-   + z_plastic2_hospital1->hospital2_11 - M_plastic2_hospital1_11 <= 0
+   + z_plastic2_hospital1->hospital2_10
+   - z_plastic2_DUMMY_RESERVE->hospital1_10 - M_plastic2_hospital1_11 <= 0
  upper[availability_plastic3_hospital1_11]:
    - z_plastic3_factory1->hospital1_10 - z_plastic3_factory3->hospital1_10
-   - z_plastic3_DUMMY_RESERVE->hospital1_10
-   + z_plastic3_hospital1->hospital2_11 - M_plastic3_hospital1_11 <= 0
+   + z_plastic3_hospital1->hospital2_10
+   - z_plastic3_DUMMY_RESERVE->hospital1_10 - M_plastic3_hospital1_11 <= 0
  upper[availability_ppe1_hospital1_11]: - z_ppe1_factory1->hospital1_10
-   - z_ppe1_factory3->hospital1_10 - z_ppe1_DUMMY_RESERVE->hospital1_10
-   + z_ppe1_hospital1->hospital2_11 - M_ppe1_hospital1_11 <= 0
+   - z_ppe1_factory3->hospital1_10 + z_ppe1_hospital1->hospital2_10
+   - z_ppe1_DUMMY_RESERVE->hospital1_10 - M_ppe1_hospital1_11 <= 0
  upper[availability_ppe2_hospital1_11]: - z_ppe2_factory1->hospital1_10
-   - z_ppe2_factory3->hospital1_10 - z_ppe2_DUMMY_RESERVE->hospital1_10
-   + z_ppe2_hospital1->hospital2_11 - M_ppe2_hospital1_11 <= 0
+   - z_ppe2_factory3->hospital1_10 + z_ppe2_hospital1->hospital2_10
+   - z_ppe2_DUMMY_RESERVE->hospital1_10 - M_ppe2_hospital1_11 <= 0
  upper[availability_ppe3_hospital1_11]: - z_ppe3_factory1->hospital1_10
-   - z_ppe3_factory3->hospital1_10 - z_ppe3_DUMMY_RESERVE->hospital1_10
-   + z_ppe3_hospital1->hospital2_11 - M_ppe3_hospital1_11 <= 0
+   - z_ppe3_factory3->hospital1_10 + z_ppe3_hospital1->hospital2_10
+   - z_ppe3_DUMMY_RESERVE->hospital1_10 - M_ppe3_hospital1_11 <= 0
  upper[availability_respirator1_hospital1_11]:
    - z_respirator1_factory1->hospital1_10
    - z_respirator1_factory3->hospital1_10
-   - z_respirator1_DUMMY_RESERVE->hospital1_10
-   + z_respirator1_hospital1->hospital2_11 - M_respirator1_hospital1_11
+   + z_respirator1_hospital1->hospital2_10
+   - z_respirator1_DUMMY_RESERVE->hospital1_10 - M_respirator1_hospital1_11
    <= 0
  upper[availability_respirator2_hospital1_11]:
    - z_respirator2_factory1->hospital1_10
    - z_respirator2_factory3->hospital1_10
-   - z_respirator2_DUMMY_RESERVE->hospital1_10
-   + z_respirator2_hospital1->hospital2_11 - M_respirator2_hospital1_11
+   + z_respirator2_hospital1->hospital2_10
+   - z_respirator2_DUMMY_RESERVE->hospital1_10 - M_respirator2_hospital1_11
    <= 0
  upper[availability_metal1_hospital1_12]: - z_metal1_factory1->hospital1_11
-   - z_metal1_factory3->hospital1_11 - z_metal1_DUMMY_RESERVE->hospital1_11
-   + z_metal1_hospital1->hospital2_12 - M_metal1_hospital1_12 <= 0
+   - z_metal1_factory3->hospital1_11 + z_metal1_hospital1->hospital2_11
+   - z_metal1_DUMMY_RESERVE->hospital1_11 - M_metal1_hospital1_12 <= 0
  upper[availability_metal2_hospital1_12]: - z_metal2_factory1->hospital1_11
-   - z_metal2_factory3->hospital1_11 - z_metal2_DUMMY_RESERVE->hospital1_11
-   + z_metal2_hospital1->hospital2_12 - M_metal2_hospital1_12 <= 0
+   - z_metal2_factory3->hospital1_11 + z_metal2_hospital1->hospital2_11
+   - z_metal2_DUMMY_RESERVE->hospital1_11 - M_metal2_hospital1_12 <= 0
  upper[availability_plastic1_hospital1_12]:
    - z_plastic1_factory1->hospital1_11 - z_plastic1_factory3->hospital1_11
-   - z_plastic1_DUMMY_RESERVE->hospital1_11
-   + z_plastic1_hospital1->hospital2_12 - M_plastic1_hospital1_12 <= 0
+   + z_plastic1_hospital1->hospital2_11
+   - z_plastic1_DUMMY_RESERVE->hospital1_11 - M_plastic1_hospital1_12 <= 0
  upper[availability_plastic2_hospital1_12]:
    - z_plastic2_factory1->hospital1_11 - z_plastic2_factory3->hospital1_11
-   - z_plastic2_DUMMY_RESERVE->hospital1_11
-   + z_plastic2_hospital1->hospital2_12 - M_plastic2_hospital1_12 <= 0
+   + z_plastic2_hospital1->hospital2_11
+   - z_plastic2_DUMMY_RESERVE->hospital1_11 - M_plastic2_hospital1_12 <= 0
  upper[availability_plastic3_hospital1_12]:
    - z_plastic3_factory1->hospital1_11 - z_plastic3_factory3->hospital1_11
-   - z_plastic3_DUMMY_RESERVE->hospital1_11
-   + z_plastic3_hospital1->hospital2_12 - M_plastic3_hospital1_12 <= 0
+   + z_plastic3_hospital1->hospital2_11
+   - z_plastic3_DUMMY_RESERVE->hospital1_11 - M_plastic3_hospital1_12 <= 0
  upper[availability_ppe1_hospital1_12]: - z_ppe1_factory1->hospital1_11
-   - z_ppe1_factory3->hospital1_11 - z_ppe1_DUMMY_RESERVE->hospital1_11
-   + z_ppe1_hospital1->hospital2_12 - M_ppe1_hospital1_12 <= 0
+   - z_ppe1_factory3->hospital1_11 + z_ppe1_hospital1->hospital2_11
+   - z_ppe1_DUMMY_RESERVE->hospital1_11 - M_ppe1_hospital1_12 <= 0
  upper[availability_ppe2_hospital1_12]: - z_ppe2_factory1->hospital1_11
-   - z_ppe2_factory3->hospital1_11 - z_ppe2_DUMMY_RESERVE->hospital1_11
-   + z_ppe2_hospital1->hospital2_12 - M_ppe2_hospital1_12 <= 0
+   - z_ppe2_factory3->hospital1_11 + z_ppe2_hospital1->hospital2_11
+   - z_ppe2_DUMMY_RESERVE->hospital1_11 - M_ppe2_hospital1_12 <= 0
  upper[availability_ppe3_hospital1_12]: - z_ppe3_factory1->hospital1_11
-   - z_ppe3_factory3->hospital1_11 - z_ppe3_DUMMY_RESERVE->hospital1_11
-   + z_ppe3_hospital1->hospital2_12 - M_ppe3_hospital1_12 <= 0
+   - z_ppe3_factory3->hospital1_11 + z_ppe3_hospital1->hospital2_11
+   - z_ppe3_DUMMY_RESERVE->hospital1_11 - M_ppe3_hospital1_12 <= 0
  upper[availability_respirator1_hospital1_12]:
    - z_respirator1_factory1->hospital1_11
    - z_respirator1_factory3->hospital1_11
-   - z_respirator1_DUMMY_RESERVE->hospital1_11
-   + z_respirator1_hospital1->hospital2_12 - M_respirator1_hospital1_12
+   + z_respirator1_hospital1->hospital2_11
+   - z_respirator1_DUMMY_RESERVE->hospital1_11 - M_respirator1_hospital1_12
    <= 0
  upper[availability_respirator2_hospital1_12]:
    - z_respirator2_factory1->hospital1_11
    - z_respirator2_factory3->hospital1_11
-   - z_respirator2_DUMMY_RESERVE->hospital1_11
-   + z_respirator2_hospital1->hospital2_12 - M_respirator2_hospital1_12
+   + z_respirator2_hospital1->hospital2_11
+   - z_respirator2_DUMMY_RESERVE->hospital1_11 - M_respirator2_hospital1_12
    <= 0
  upper[availability_metal1_hospital1_13]: - z_metal1_factory1->hospital1_12
-   - z_metal1_factory3->hospital1_12 - z_metal1_DUMMY_RESERVE->hospital1_12
-   + z_metal1_hospital1->hospital2_13 - M_metal1_hospital1_13 <= 0
+   - z_metal1_factory3->hospital1_12 + z_metal1_hospital1->hospital2_12
+   - z_metal1_DUMMY_RESERVE->hospital1_12 - M_metal1_hospital1_13 <= 0
  upper[availability_metal2_hospital1_13]: - z_metal2_factory1->hospital1_12
-   - z_metal2_factory3->hospital1_12 - z_metal2_DUMMY_RESERVE->hospital1_12
-   + z_metal2_hospital1->hospital2_13 - M_metal2_hospital1_13 <= 0
+   - z_metal2_factory3->hospital1_12 + z_metal2_hospital1->hospital2_12
+   - z_metal2_DUMMY_RESERVE->hospital1_12 - M_metal2_hospital1_13 <= 0
  upper[availability_plastic1_hospital1_13]:
    - z_plastic1_factory1->hospital1_12 - z_plastic1_factory3->hospital1_12
-   - z_plastic1_DUMMY_RESERVE->hospital1_12
-   + z_plastic1_hospital1->hospital2_13 - M_plastic1_hospital1_13 <= 0
+   + z_plastic1_hospital1->hospital2_12
+   - z_plastic1_DUMMY_RESERVE->hospital1_12 - M_plastic1_hospital1_13 <= 0
  upper[availability_plastic2_hospital1_13]:
    - z_plastic2_factory1->hospital1_12 - z_plastic2_factory3->hospital1_12
-   - z_plastic2_DUMMY_RESERVE->hospital1_12
-   + z_plastic2_hospital1->hospital2_13 - M_plastic2_hospital1_13 <= 0
+   + z_plastic2_hospital1->hospital2_12
+   - z_plastic2_DUMMY_RESERVE->hospital1_12 - M_plastic2_hospital1_13 <= 0
  upper[availability_plastic3_hospital1_13]:
    - z_plastic3_factory1->hospital1_12 - z_plastic3_factory3->hospital1_12
-   - z_plastic3_DUMMY_RESERVE->hospital1_12
-   + z_plastic3_hospital1->hospital2_13 - M_plastic3_hospital1_13 <= 0
+   + z_plastic3_hospital1->hospital2_12
+   - z_plastic3_DUMMY_RESERVE->hospital1_12 - M_plastic3_hospital1_13 <= 0
  upper[availability_ppe1_hospital1_13]: - z_ppe1_factory1->hospital1_12
-   - z_ppe1_factory3->hospital1_12 - z_ppe1_DUMMY_RESERVE->hospital1_12
-   + z_ppe1_hospital1->hospital2_13 - M_ppe1_hospital1_13 <= 0
+   - z_ppe1_factory3->hospital1_12 + z_ppe1_hospital1->hospital2_12
+   - z_ppe1_DUMMY_RESERVE->hospital1_12 - M_ppe1_hospital1_13 <= 0
  upper[availability_ppe2_hospital1_13]: - z_ppe2_factory1->hospital1_12
-   - z_ppe2_factory3->hospital1_12 - z_ppe2_DUMMY_RESERVE->hospital1_12
-   + z_ppe2_hospital1->hospital2_13 - M_ppe2_hospital1_13 <= 0
+   - z_ppe2_factory3->hospital1_12 + z_ppe2_hospital1->hospital2_12
+   - z_ppe2_DUMMY_RESERVE->hospital1_12 - M_ppe2_hospital1_13 <= 0
  upper[availability_ppe3_hospital1_13]: - z_ppe3_factory1->hospital1_12
-   - z_ppe3_factory3->hospital1_12 - z_ppe3_DUMMY_RESERVE->hospital1_12
-   + z_ppe3_hospital1->hospital2_13 - M_ppe3_hospital1_13 <= 0
+   - z_ppe3_factory3->hospital1_12 + z_ppe3_hospital1->hospital2_12
+   - z_ppe3_DUMMY_RESERVE->hospital1_12 - M_ppe3_hospital1_13 <= 0
  upper[availability_respirator1_hospital1_13]:
    - z_respirator1_factory1->hospital1_12
    - z_respirator1_factory3->hospital1_12
-   - z_respirator1_DUMMY_RESERVE->hospital1_12
-   + z_respirator1_hospital1->hospital2_13 - M_respirator1_hospital1_13
+   + z_respirator1_hospital1->hospital2_12
+   - z_respirator1_DUMMY_RESERVE->hospital1_12 - M_respirator1_hospital1_13
    <= 0
  upper[availability_respirator2_hospital1_13]:
    - z_respirator2_factory1->hospital1_12
    - z_respirator2_factory3->hospital1_12
-   - z_respirator2_DUMMY_RESERVE->hospital1_12
-   + z_respirator2_hospital1->hospital2_13 - M_respirator2_hospital1_13
+   + z_respirator2_hospital1->hospital2_12
+   - z_respirator2_DUMMY_RESERVE->hospital1_12 - M_respirator2_hospital1_13
    <= 0
  upper[availability_metal1_hospital1_14]: - z_metal1_factory1->hospital1_13
-   - z_metal1_factory3->hospital1_13 - z_metal1_DUMMY_RESERVE->hospital1_13
-   + z_metal1_hospital1->hospital2_14 - M_metal1_hospital1_14 <= 0
+   - z_metal1_factory3->hospital1_13 + z_metal1_hospital1->hospital2_13
+   - z_metal1_DUMMY_RESERVE->hospital1_13 - M_metal1_hospital1_14 <= 0
  upper[availability_metal2_hospital1_14]: - z_metal2_factory1->hospital1_13
-   - z_metal2_factory3->hospital1_13 - z_metal2_DUMMY_RESERVE->hospital1_13
-   + z_metal2_hospital1->hospital2_14 - M_metal2_hospital1_14 <= 0
+   - z_metal2_factory3->hospital1_13 + z_metal2_hospital1->hospital2_13
+   - z_metal2_DUMMY_RESERVE->hospital1_13 - M_metal2_hospital1_14 <= 0
  upper[availability_plastic1_hospital1_14]:
    - z_plastic1_factory1->hospital1_13 - z_plastic1_factory3->hospital1_13
-   - z_plastic1_DUMMY_RESERVE->hospital1_13
-   + z_plastic1_hospital1->hospital2_14 - M_plastic1_hospital1_14 <= 0
+   + z_plastic1_hospital1->hospital2_13
+   - z_plastic1_DUMMY_RESERVE->hospital1_13 - M_plastic1_hospital1_14 <= 0
  upper[availability_plastic2_hospital1_14]:
    - z_plastic2_factory1->hospital1_13 - z_plastic2_factory3->hospital1_13
-   - z_plastic2_DUMMY_RESERVE->hospital1_13
-   + z_plastic2_hospital1->hospital2_14 - M_plastic2_hospital1_14 <= 0
+   + z_plastic2_hospital1->hospital2_13
+   - z_plastic2_DUMMY_RESERVE->hospital1_13 - M_plastic2_hospital1_14 <= 0
  upper[availability_plastic3_hospital1_14]:
    - z_plastic3_factory1->hospital1_13 - z_plastic3_factory3->hospital1_13
-   - z_plastic3_DUMMY_RESERVE->hospital1_13
-   + z_plastic3_hospital1->hospital2_14 - M_plastic3_hospital1_14 <= 0
+   + z_plastic3_hospital1->hospital2_13
+   - z_plastic3_DUMMY_RESERVE->hospital1_13 - M_plastic3_hospital1_14 <= 0
  upper[availability_ppe1_hospital1_14]: - z_ppe1_factory1->hospital1_13
-   - z_ppe1_factory3->hospital1_13 - z_ppe1_DUMMY_RESERVE->hospital1_13
-   + z_ppe1_hospital1->hospital2_14 - M_ppe1_hospital1_14 <= 0
+   - z_ppe1_factory3->hospital1_13 + z_ppe1_hospital1->hospital2_13
+   - z_ppe1_DUMMY_RESERVE->hospital1_13 - M_ppe1_hospital1_14 <= 0
  upper[availability_ppe2_hospital1_14]: - z_ppe2_factory1->hospital1_13
-   - z_ppe2_factory3->hospital1_13 - z_ppe2_DUMMY_RESERVE->hospital1_13
-   + z_ppe2_hospital1->hospital2_14 - M_ppe2_hospital1_14 <= 0
+   - z_ppe2_factory3->hospital1_13 + z_ppe2_hospital1->hospital2_13
+   - z_ppe2_DUMMY_RESERVE->hospital1_13 - M_ppe2_hospital1_14 <= 0
  upper[availability_ppe3_hospital1_14]: - z_ppe3_factory1->hospital1_13
-   - z_ppe3_factory3->hospital1_13 - z_ppe3_DUMMY_RESERVE->hospital1_13
-   + z_ppe3_hospital1->hospital2_14 - M_ppe3_hospital1_14 <= 0
+   - z_ppe3_factory3->hospital1_13 + z_ppe3_hospital1->hospital2_13
+   - z_ppe3_DUMMY_RESERVE->hospital1_13 - M_ppe3_hospital1_14 <= 0
  upper[availability_respirator1_hospital1_14]:
    - z_respirator1_factory1->hospital1_13
    - z_respirator1_factory3->hospital1_13
-   - z_respirator1_DUMMY_RESERVE->hospital1_13
-   + z_respirator1_hospital1->hospital2_14 - M_respirator1_hospital1_14
+   + z_respirator1_hospital1->hospital2_13
+   - z_respirator1_DUMMY_RESERVE->hospital1_13 - M_respirator1_hospital1_14
    <= 0
  upper[availability_respirator2_hospital1_14]:
    - z_respirator2_factory1->hospital1_13
    - z_respirator2_factory3->hospital1_13
-   - z_respirator2_DUMMY_RESERVE->hospital1_13
-   + z_respirator2_hospital1->hospital2_14 - M_respirator2_hospital1_14
+   + z_respirator2_hospital1->hospital2_13
+   - z_respirator2_DUMMY_RESERVE->hospital1_13 - M_respirator2_hospital1_14
    <= 0
  upper[availability_metal1_hospital1_15]: - z_metal1_factory1->hospital1_14
-   - z_metal1_factory3->hospital1_14 - z_metal1_DUMMY_RESERVE->hospital1_14
-   + z_metal1_hospital1->hospital2_15 - M_metal1_hospital1_15 <= 0
+   - z_metal1_factory3->hospital1_14 + z_metal1_hospital1->hospital2_14
+   - z_metal1_DUMMY_RESERVE->hospital1_14 - M_metal1_hospital1_15 <= 0
  upper[availability_metal2_hospital1_15]: - z_metal2_factory1->hospital1_14
-   - z_metal2_factory3->hospital1_14 - z_metal2_DUMMY_RESERVE->hospital1_14
-   + z_metal2_hospital1->hospital2_15 - M_metal2_hospital1_15 <= 0
+   - z_metal2_factory3->hospital1_14 + z_metal2_hospital1->hospital2_14
+   - z_metal2_DUMMY_RESERVE->hospital1_14 - M_metal2_hospital1_15 <= 0
  upper[availability_plastic1_hospital1_15]:
    - z_plastic1_factory1->hospital1_14 - z_plastic1_factory3->hospital1_14
-   - z_plastic1_DUMMY_RESERVE->hospital1_14
-   + z_plastic1_hospital1->hospital2_15 - M_plastic1_hospital1_15 <= 0
+   + z_plastic1_hospital1->hospital2_14
+   - z_plastic1_DUMMY_RESERVE->hospital1_14 - M_plastic1_hospital1_15 <= 0
  upper[availability_plastic2_hospital1_15]:
    - z_plastic2_factory1->hospital1_14 - z_plastic2_factory3->hospital1_14
-   - z_plastic2_DUMMY_RESERVE->hospital1_14
-   + z_plastic2_hospital1->hospital2_15 - M_plastic2_hospital1_15 <= 0
+   + z_plastic2_hospital1->hospital2_14
+   - z_plastic2_DUMMY_RESERVE->hospital1_14 - M_plastic2_hospital1_15 <= 0
  upper[availability_plastic3_hospital1_15]:
    - z_plastic3_factory1->hospital1_14 - z_plastic3_factory3->hospital1_14
-   - z_plastic3_DUMMY_RESERVE->hospital1_14
-   + z_plastic3_hospital1->hospital2_15 - M_plastic3_hospital1_15 <= 0
+   + z_plastic3_hospital1->hospital2_14
+   - z_plastic3_DUMMY_RESERVE->hospital1_14 - M_plastic3_hospital1_15 <= 0
  upper[availability_ppe1_hospital1_15]: - z_ppe1_factory1->hospital1_14
-   - z_ppe1_factory3->hospital1_14 - z_ppe1_DUMMY_RESERVE->hospital1_14
-   + z_ppe1_hospital1->hospital2_15 - M_ppe1_hospital1_15 <= 0
+   - z_ppe1_factory3->hospital1_14 + z_ppe1_hospital1->hospital2_14
+   - z_ppe1_DUMMY_RESERVE->hospital1_14 - M_ppe1_hospital1_15 <= 0
  upper[availability_ppe2_hospital1_15]: - z_ppe2_factory1->hospital1_14
-   - z_ppe2_factory3->hospital1_14 - z_ppe2_DUMMY_RESERVE->hospital1_14
-   + z_ppe2_hospital1->hospital2_15 - M_ppe2_hospital1_15 <= 0
+   - z_ppe2_factory3->hospital1_14 + z_ppe2_hospital1->hospital2_14
+   - z_ppe2_DUMMY_RESERVE->hospital1_14 - M_ppe2_hospital1_15 <= 0
  upper[availability_ppe3_hospital1_15]: - z_ppe3_factory1->hospital1_14
-   - z_ppe3_factory3->hospital1_14 - z_ppe3_DUMMY_RESERVE->hospital1_14
-   + z_ppe3_hospital1->hospital2_15 - M_ppe3_hospital1_15 <= 0
+   - z_ppe3_factory3->hospital1_14 + z_ppe3_hospital1->hospital2_14
+   - z_ppe3_DUMMY_RESERVE->hospital1_14 - M_ppe3_hospital1_15 <= 0
  upper[availability_respirator1_hospital1_15]:
    - z_respirator1_factory1->hospital1_14
    - z_respirator1_factory3->hospital1_14
-   - z_respirator1_DUMMY_RESERVE->hospital1_14
-   + z_respirator1_hospital1->hospital2_15 - M_respirator1_hospital1_15
+   + z_respirator1_hospital1->hospital2_14
+   - z_respirator1_DUMMY_RESERVE->hospital1_14 - M_respirator1_hospital1_15
    <= 0
  upper[availability_respirator2_hospital1_15]:
    - z_respirator2_factory1->hospital1_14
    - z_respirator2_factory3->hospital1_14
-   - z_respirator2_DUMMY_RESERVE->hospital1_14
-   + z_respirator2_hospital1->hospital2_15 - M_respirator2_hospital1_15
+   + z_respirator2_hospital1->hospital2_14
+   - z_respirator2_DUMMY_RESERVE->hospital1_14 - M_respirator2_hospital1_15
    <= 0
  upper[availability_metal1_hospital1_16]: - z_metal1_factory1->hospital1_15
-   - z_metal1_factory3->hospital1_15 - z_metal1_DUMMY_RESERVE->hospital1_15
-   + z_metal1_hospital1->hospital2_16 - M_metal1_hospital1_16 <= 0
+   - z_metal1_factory3->hospital1_15 + z_metal1_hospital1->hospital2_15
+   - z_metal1_DUMMY_RESERVE->hospital1_15 - M_metal1_hospital1_16 <= 0
  upper[availability_metal2_hospital1_16]: - z_metal2_factory1->hospital1_15
-   - z_metal2_factory3->hospital1_15 - z_metal2_DUMMY_RESERVE->hospital1_15
-   + z_metal2_hospital1->hospital2_16 - M_metal2_hospital1_16 <= 0
+   - z_metal2_factory3->hospital1_15 + z_metal2_hospital1->hospital2_15
+   - z_metal2_DUMMY_RESERVE->hospital1_15 - M_metal2_hospital1_16 <= 0
  upper[availability_plastic1_hospital1_16]:
    - z_plastic1_factory1->hospital1_15 - z_plastic1_factory3->hospital1_15
-   - z_plastic1_DUMMY_RESERVE->hospital1_15
-   + z_plastic1_hospital1->hospital2_16 - M_plastic1_hospital1_16 <= 0
+   + z_plastic1_hospital1->hospital2_15
+   - z_plastic1_DUMMY_RESERVE->hospital1_15 - M_plastic1_hospital1_16 <= 0
  upper[availability_plastic2_hospital1_16]:
    - z_plastic2_factory1->hospital1_15 - z_plastic2_factory3->hospital1_15
-   - z_plastic2_DUMMY_RESERVE->hospital1_15
-   + z_plastic2_hospital1->hospital2_16 - M_plastic2_hospital1_16 <= 0
+   + z_plastic2_hospital1->hospital2_15
+   - z_plastic2_DUMMY_RESERVE->hospital1_15 - M_plastic2_hospital1_16 <= 0
  upper[availability_plastic3_hospital1_16]:
    - z_plastic3_factory1->hospital1_15 - z_plastic3_factory3->hospital1_15
-   - z_plastic3_DUMMY_RESERVE->hospital1_15
-   + z_plastic3_hospital1->hospital2_16 - M_plastic3_hospital1_16 <= 0
+   + z_plastic3_hospital1->hospital2_15
+   - z_plastic3_DUMMY_RESERVE->hospital1_15 - M_plastic3_hospital1_16 <= 0
  upper[availability_ppe1_hospital1_16]: - z_ppe1_factory1->hospital1_15
-   - z_ppe1_factory3->hospital1_15 - z_ppe1_DUMMY_RESERVE->hospital1_15
-   + z_ppe1_hospital1->hospital2_16 - M_ppe1_hospital1_16 <= 0
+   - z_ppe1_factory3->hospital1_15 + z_ppe1_hospital1->hospital2_15
+   - z_ppe1_DUMMY_RESERVE->hospital1_15 - M_ppe1_hospital1_16 <= 0
  upper[availability_ppe2_hospital1_16]: - z_ppe2_factory1->hospital1_15
-   - z_ppe2_factory3->hospital1_15 - z_ppe2_DUMMY_RESERVE->hospital1_15
-   + z_ppe2_hospital1->hospital2_16 - M_ppe2_hospital1_16 <= 0
+   - z_ppe2_factory3->hospital1_15 + z_ppe2_hospital1->hospital2_15
+   - z_ppe2_DUMMY_RESERVE->hospital1_15 - M_ppe2_hospital1_16 <= 0
  upper[availability_ppe3_hospital1_16]: - z_ppe3_factory1->hospital1_15
-   - z_ppe3_factory3->hospital1_15 - z_ppe3_DUMMY_RESERVE->hospital1_15
-   + z_ppe3_hospital1->hospital2_16 - M_ppe3_hospital1_16 <= 0
+   - z_ppe3_factory3->hospital1_15 + z_ppe3_hospital1->hospital2_15
+   - z_ppe3_DUMMY_RESERVE->hospital1_15 - M_ppe3_hospital1_16 <= 0
  upper[availability_respirator1_hospital1_16]:
    - z_respirator1_factory1->hospital1_15
    - z_respirator1_factory3->hospital1_15
-   - z_respirator1_DUMMY_RESERVE->hospital1_15
-   + z_respirator1_hospital1->hospital2_16 - M_respirator1_hospital1_16
+   + z_respirator1_hospital1->hospital2_15
+   - z_respirator1_DUMMY_RESERVE->hospital1_15 - M_respirator1_hospital1_16
    <= 0
  upper[availability_respirator2_hospital1_16]:
    - z_respirator2_factory1->hospital1_15
    - z_respirator2_factory3->hospital1_15
-   - z_respirator2_DUMMY_RESERVE->hospital1_15
-   + z_respirator2_hospital1->hospital2_16 - M_respirator2_hospital1_16
+   + z_respirator2_hospital1->hospital2_15
+   - z_respirator2_DUMMY_RESERVE->hospital1_15 - M_respirator2_hospital1_16
    <= 0
  upper[availability_metal1_hospital1_17]: - z_metal1_factory1->hospital1_16
-   - z_metal1_factory3->hospital1_16 - z_metal1_DUMMY_RESERVE->hospital1_16
-   + z_metal1_hospital1->hospital2_17 - M_metal1_hospital1_17 <= 0
+   - z_metal1_factory3->hospital1_16 + z_metal1_hospital1->hospital2_16
+   - z_metal1_DUMMY_RESERVE->hospital1_16 - M_metal1_hospital1_17 <= 0
  upper[availability_metal2_hospital1_17]: - z_metal2_factory1->hospital1_16
-   - z_metal2_factory3->hospital1_16 - z_metal2_DUMMY_RESERVE->hospital1_16
-   + z_metal2_hospital1->hospital2_17 - M_metal2_hospital1_17 <= 0
+   - z_metal2_factory3->hospital1_16 + z_metal2_hospital1->hospital2_16
+   - z_metal2_DUMMY_RESERVE->hospital1_16 - M_metal2_hospital1_17 <= 0
  upper[availability_plastic1_hospital1_17]:
    - z_plastic1_factory1->hospital1_16 - z_plastic1_factory3->hospital1_16
-   - z_plastic1_DUMMY_RESERVE->hospital1_16
-   + z_plastic1_hospital1->hospital2_17 - M_plastic1_hospital1_17 <= 0
+   + z_plastic1_hospital1->hospital2_16
+   - z_plastic1_DUMMY_RESERVE->hospital1_16 - M_plastic1_hospital1_17 <= 0
  upper[availability_plastic2_hospital1_17]:
    - z_plastic2_factory1->hospital1_16 - z_plastic2_factory3->hospital1_16
-   - z_plastic2_DUMMY_RESERVE->hospital1_16
-   + z_plastic2_hospital1->hospital2_17 - M_plastic2_hospital1_17 <= 0
+   + z_plastic2_hospital1->hospital2_16
+   - z_plastic2_DUMMY_RESERVE->hospital1_16 - M_plastic2_hospital1_17 <= 0
  upper[availability_plastic3_hospital1_17]:
    - z_plastic3_factory1->hospital1_16 - z_plastic3_factory3->hospital1_16
-   - z_plastic3_DUMMY_RESERVE->hospital1_16
-   + z_plastic3_hospital1->hospital2_17 - M_plastic3_hospital1_17 <= 0
+   + z_plastic3_hospital1->hospital2_16
+   - z_plastic3_DUMMY_RESERVE->hospital1_16 - M_plastic3_hospital1_17 <= 0
  upper[availability_ppe1_hospital1_17]: - z_ppe1_factory1->hospital1_16
-   - z_ppe1_factory3->hospital1_16 - z_ppe1_DUMMY_RESERVE->hospital1_16
-   + z_ppe1_hospital1->hospital2_17 - M_ppe1_hospital1_17 <= 0
+   - z_ppe1_factory3->hospital1_16 + z_ppe1_hospital1->hospital2_16
+   - z_ppe1_DUMMY_RESERVE->hospital1_16 - M_ppe1_hospital1_17 <= 0
  upper[availability_ppe2_hospital1_17]: - z_ppe2_factory1->hospital1_16
-   - z_ppe2_factory3->hospital1_16 - z_ppe2_DUMMY_RESERVE->hospital1_16
-   + z_ppe2_hospital1->hospital2_17 - M_ppe2_hospital1_17 <= 0
+   - z_ppe2_factory3->hospital1_16 + z_ppe2_hospital1->hospital2_16
+   - z_ppe2_DUMMY_RESERVE->hospital1_16 - M_ppe2_hospital1_17 <= 0
  upper[availability_ppe3_hospital1_17]: - z_ppe3_factory1->hospital1_16
-   - z_ppe3_factory3->hospital1_16 - z_ppe3_DUMMY_RESERVE->hospital1_16
-   + z_ppe3_hospital1->hospital2_17 - M_ppe3_hospital1_17 <= 0
+   - z_ppe3_factory3->hospital1_16 + z_ppe3_hospital1->hospital2_16
+   - z_ppe3_DUMMY_RESERVE->hospital1_16 - M_ppe3_hospital1_17 <= 0
  upper[availability_respirator1_hospital1_17]:
    - z_respirator1_factory1->hospital1_16
    - z_respirator1_factory3->hospital1_16
-   - z_respirator1_DUMMY_RESERVE->hospital1_16
-   + z_respirator1_hospital1->hospital2_17 - M_respirator1_hospital1_17
+   + z_respirator1_hospital1->hospital2_16
+   - z_respirator1_DUMMY_RESERVE->hospital1_16 - M_respirator1_hospital1_17
    <= 0
  upper[availability_respirator2_hospital1_17]:
    - z_respirator2_factory1->hospital1_16
    - z_respirator2_factory3->hospital1_16
-   - z_respirator2_DUMMY_RESERVE->hospital1_16
-   + z_respirator2_hospital1->hospital2_17 - M_respirator2_hospital1_17
+   + z_respirator2_hospital1->hospital2_16
+   - z_respirator2_DUMMY_RESERVE->hospital1_16 - M_respirator2_hospital1_17
    <= 0
  upper[availability_metal1_hospital1_18]: - z_metal1_factory1->hospital1_17
-   - z_metal1_factory3->hospital1_17 - z_metal1_DUMMY_RESERVE->hospital1_17
-   + z_metal1_hospital1->hospital2_18 - M_metal1_hospital1_18 <= 0
+   - z_metal1_factory3->hospital1_17 + z_metal1_hospital1->hospital2_17
+   - z_metal1_DUMMY_RESERVE->hospital1_17 - M_metal1_hospital1_18 <= 0
  upper[availability_metal2_hospital1_18]: - z_metal2_factory1->hospital1_17
-   - z_metal2_factory3->hospital1_17 - z_metal2_DUMMY_RESERVE->hospital1_17
-   + z_metal2_hospital1->hospital2_18 - M_metal2_hospital1_18 <= 0
+   - z_metal2_factory3->hospital1_17 + z_metal2_hospital1->hospital2_17
+   - z_metal2_DUMMY_RESERVE->hospital1_17 - M_metal2_hospital1_18 <= 0
  upper[availability_plastic1_hospital1_18]:
    - z_plastic1_factory1->hospital1_17 - z_plastic1_factory3->hospital1_17
-   - z_plastic1_DUMMY_RESERVE->hospital1_17
-   + z_plastic1_hospital1->hospital2_18 - M_plastic1_hospital1_18 <= 0
+   + z_plastic1_hospital1->hospital2_17
+   - z_plastic1_DUMMY_RESERVE->hospital1_17 - M_plastic1_hospital1_18 <= 0
  upper[availability_plastic2_hospital1_18]:
    - z_plastic2_factory1->hospital1_17 - z_plastic2_factory3->hospital1_17
-   - z_plastic2_DUMMY_RESERVE->hospital1_17
-   + z_plastic2_hospital1->hospital2_18 - M_plastic2_hospital1_18 <= 0
+   + z_plastic2_hospital1->hospital2_17
+   - z_plastic2_DUMMY_RESERVE->hospital1_17 - M_plastic2_hospital1_18 <= 0
  upper[availability_plastic3_hospital1_18]:
    - z_plastic3_factory1->hospital1_17 - z_plastic3_factory3->hospital1_17
-   - z_plastic3_DUMMY_RESERVE->hospital1_17
-   + z_plastic3_hospital1->hospital2_18 - M_plastic3_hospital1_18 <= 0
+   + z_plastic3_hospital1->hospital2_17
+   - z_plastic3_DUMMY_RESERVE->hospital1_17 - M_plastic3_hospital1_18 <= 0
  upper[availability_ppe1_hospital1_18]: - z_ppe1_factory1->hospital1_17
-   - z_ppe1_factory3->hospital1_17 - z_ppe1_DUMMY_RESERVE->hospital1_17
-   + z_ppe1_hospital1->hospital2_18 - M_ppe1_hospital1_18 <= 0
+   - z_ppe1_factory3->hospital1_17 + z_ppe1_hospital1->hospital2_17
+   - z_ppe1_DUMMY_RESERVE->hospital1_17 - M_ppe1_hospital1_18 <= 0
  upper[availability_ppe2_hospital1_18]: - z_ppe2_factory1->hospital1_17
-   - z_ppe2_factory3->hospital1_17 - z_ppe2_DUMMY_RESERVE->hospital1_17
-   + z_ppe2_hospital1->hospital2_18 - M_ppe2_hospital1_18 <= 0
+   - z_ppe2_factory3->hospital1_17 + z_ppe2_hospital1->hospital2_17
+   - z_ppe2_DUMMY_RESERVE->hospital1_17 - M_ppe2_hospital1_18 <= 0
  upper[availability_ppe3_hospital1_18]: - z_ppe3_factory1->hospital1_17
-   - z_ppe3_factory3->hospital1_17 - z_ppe3_DUMMY_RESERVE->hospital1_17
-   + z_ppe3_hospital1->hospital2_18 - M_ppe3_hospital1_18 <= 0
+   - z_ppe3_factory3->hospital1_17 + z_ppe3_hospital1->hospital2_17
+   - z_ppe3_DUMMY_RESERVE->hospital1_17 - M_ppe3_hospital1_18 <= 0
  upper[availability_respirator1_hospital1_18]:
    - z_respirator1_factory1->hospital1_17
    - z_respirator1_factory3->hospital1_17
-   - z_respirator1_DUMMY_RESERVE->hospital1_17
-   + z_respirator1_hospital1->hospital2_18 - M_respirator1_hospital1_18
+   + z_respirator1_hospital1->hospital2_17
+   - z_respirator1_DUMMY_RESERVE->hospital1_17 - M_respirator1_hospital1_18
    <= 0
  upper[availability_respirator2_hospital1_18]:
    - z_respirator2_factory1->hospital1_17
    - z_respirator2_factory3->hospital1_17
-   - z_respirator2_DUMMY_RESERVE->hospital1_17
-   + z_respirator2_hospital1->hospital2_18 - M_respirator2_hospital1_18
+   + z_respirator2_hospital1->hospital2_17
+   - z_respirator2_DUMMY_RESERVE->hospital1_17 - M_respirator2_hospital1_18
    <= 0
  upper[availability_metal1_hospital1_19]: - z_metal1_factory1->hospital1_18
-   - z_metal1_factory3->hospital1_18 - z_metal1_DUMMY_RESERVE->hospital1_18
-   + z_metal1_hospital1->hospital2_19 - M_metal1_hospital1_19 <= 0
+   - z_metal1_factory3->hospital1_18 + z_metal1_hospital1->hospital2_18
+   - z_metal1_DUMMY_RESERVE->hospital1_18 - M_metal1_hospital1_19 <= 0
  upper[availability_metal2_hospital1_19]: - z_metal2_factory1->hospital1_18
-   - z_metal2_factory3->hospital1_18 - z_metal2_DUMMY_RESERVE->hospital1_18
-   + z_metal2_hospital1->hospital2_19 - M_metal2_hospital1_19 <= 0
+   - z_metal2_factory3->hospital1_18 + z_metal2_hospital1->hospital2_18
+   - z_metal2_DUMMY_RESERVE->hospital1_18 - M_metal2_hospital1_19 <= 0
  upper[availability_plastic1_hospital1_19]:
    - z_plastic1_factory1->hospital1_18 - z_plastic1_factory3->hospital1_18
-   - z_plastic1_DUMMY_RESERVE->hospital1_18
-   + z_plastic1_hospital1->hospital2_19 - M_plastic1_hospital1_19 <= 0
+   + z_plastic1_hospital1->hospital2_18
+   - z_plastic1_DUMMY_RESERVE->hospital1_18 - M_plastic1_hospital1_19 <= 0
  upper[availability_plastic2_hospital1_19]:
    - z_plastic2_factory1->hospital1_18 - z_plastic2_factory3->hospital1_18
-   - z_plastic2_DUMMY_RESERVE->hospital1_18
-   + z_plastic2_hospital1->hospital2_19 - M_plastic2_hospital1_19 <= 0
+   + z_plastic2_hospital1->hospital2_18
+   - z_plastic2_DUMMY_RESERVE->hospital1_18 - M_plastic2_hospital1_19 <= 0
  upper[availability_plastic3_hospital1_19]:
    - z_plastic3_factory1->hospital1_18 - z_plastic3_factory3->hospital1_18
-   - z_plastic3_DUMMY_RESERVE->hospital1_18
-   + z_plastic3_hospital1->hospital2_19 - M_plastic3_hospital1_19 <= 0
+   + z_plastic3_hospital1->hospital2_18
+   - z_plastic3_DUMMY_RESERVE->hospital1_18 - M_plastic3_hospital1_19 <= 0
  upper[availability_ppe1_hospital1_19]: - z_ppe1_factory1->hospital1_18
-   - z_ppe1_factory3->hospital1_18 - z_ppe1_DUMMY_RESERVE->hospital1_18
-   + z_ppe1_hospital1->hospital2_19 - M_ppe1_hospital1_19 <= 0
+   - z_ppe1_factory3->hospital1_18 + z_ppe1_hospital1->hospital2_18
+   - z_ppe1_DUMMY_RESERVE->hospital1_18 - M_ppe1_hospital1_19 <= 0
  upper[availability_ppe2_hospital1_19]: - z_ppe2_factory1->hospital1_18
-   - z_ppe2_factory3->hospital1_18 - z_ppe2_DUMMY_RESERVE->hospital1_18
-   + z_ppe2_hospital1->hospital2_19 - M_ppe2_hospital1_19 <= 0
+   - z_ppe2_factory3->hospital1_18 + z_ppe2_hospital1->hospital2_18
+   - z_ppe2_DUMMY_RESERVE->hospital1_18 - M_ppe2_hospital1_19 <= 0
  upper[availability_ppe3_hospital1_19]: - z_ppe3_factory1->hospital1_18
-   - z_ppe3_factory3->hospital1_18 - z_ppe3_DUMMY_RESERVE->hospital1_18
-   + z_ppe3_hospital1->hospital2_19 - M_ppe3_hospital1_19 <= 0
+   - z_ppe3_factory3->hospital1_18 + z_ppe3_hospital1->hospital2_18
+   - z_ppe3_DUMMY_RESERVE->hospital1_18 - M_ppe3_hospital1_19 <= 0
  upper[availability_respirator1_hospital1_19]:
    - z_respirator1_factory1->hospital1_18
    - z_respirator1_factory3->hospital1_18
-   - z_respirator1_DUMMY_RESERVE->hospital1_18
-   + z_respirator1_hospital1->hospital2_19 - M_respirator1_hospital1_19
+   + z_respirator1_hospital1->hospital2_18
+   - z_respirator1_DUMMY_RESERVE->hospital1_18 - M_respirator1_hospital1_19
    <= 0
  upper[availability_respirator2_hospital1_19]:
    - z_respirator2_factory1->hospital1_18
    - z_respirator2_factory3->hospital1_18
-   - z_respirator2_DUMMY_RESERVE->hospital1_18
-   + z_respirator2_hospital1->hospital2_19 - M_respirator2_hospital1_19
+   + z_respirator2_hospital1->hospital2_18
+   - z_respirator2_DUMMY_RESERVE->hospital1_18 - M_respirator2_hospital1_19
    <= 0
  upper[availability_metal1_hospital2_1]: - M_metal1_hospital2_1 <= 0
  upper[availability_metal2_hospital2_1]: - M_metal2_hospital2_1 <= 0
@@ -10537,242 +10393,350 @@ Subject To
    s_DUMMY_RESERVE->hospital4_19 <= 1e+09
  eq[onhand_metal1_factory1_1]: M_metal1_factory1_1 = 140
  eq[onhand_metal1_factory1_2]: 3 x_respirator1_factory1_1
+   + z_metal1_factory1->hospital1_1 + z_metal1_factory1->hospital2_1
+   + z_metal1_factory1->factory4_1 + z_metal1_factory1->factory2_1
    - z_metal1_DUMMY_RESERVE->factory1_1 - M_metal1_factory1_1
    + M_metal1_factory1_2 = 0
  eq[onhand_metal1_factory1_3]: 3 x_respirator1_factory1_2
+   + z_metal1_factory1->hospital1_2 + z_metal1_factory1->hospital2_2
+   + z_metal1_factory1->factory4_2 + z_metal1_factory1->factory2_2
    - z_metal1_DUMMY_RESERVE->factory1_2 - M_metal1_factory1_2
    + M_metal1_factory1_3 = 0
  eq[onhand_metal1_factory1_4]: 3 x_respirator1_factory1_3
+   + z_metal1_factory1->hospital1_3 + z_metal1_factory1->hospital2_3
+   + z_metal1_factory1->factory4_3 + z_metal1_factory1->factory2_3
    - z_metal1_DUMMY_RESERVE->factory1_3 - M_metal1_factory1_3
    + M_metal1_factory1_4 = 0
  eq[onhand_metal1_factory1_5]: 3 x_respirator1_factory1_4
+   + z_metal1_factory1->hospital1_4 + z_metal1_factory1->hospital2_4
+   + z_metal1_factory1->factory4_4 + z_metal1_factory1->factory2_4
    - z_metal1_DUMMY_RESERVE->factory1_4 - M_metal1_factory1_4
    + M_metal1_factory1_5 = 0
  eq[onhand_metal1_factory1_6]: 3 x_respirator1_factory1_5
+   + z_metal1_factory1->hospital1_5 + z_metal1_factory1->hospital2_5
+   + z_metal1_factory1->factory4_5 + z_metal1_factory1->factory2_5
    - z_metal1_DUMMY_RESERVE->factory1_5 - M_metal1_factory1_5
    + M_metal1_factory1_6 = 0
  eq[onhand_metal1_factory1_7]: 3 x_respirator1_factory1_6
+   + z_metal1_factory1->hospital1_6 + z_metal1_factory1->hospital2_6
+   + z_metal1_factory1->factory4_6 + z_metal1_factory1->factory2_6
    - z_metal1_DUMMY_RESERVE->factory1_6 - M_metal1_factory1_6
    + M_metal1_factory1_7 = 0
  eq[onhand_metal1_factory1_8]: 3 x_respirator1_factory1_7
+   + z_metal1_factory1->hospital1_7 + z_metal1_factory1->hospital2_7
+   + z_metal1_factory1->factory4_7 + z_metal1_factory1->factory2_7
    - z_metal1_DUMMY_RESERVE->factory1_7 - M_metal1_factory1_7
    + M_metal1_factory1_8 = 0
  eq[onhand_metal1_factory1_9]: 3 x_respirator1_factory1_8
+   + z_metal1_factory1->hospital1_8 + z_metal1_factory1->hospital2_8
+   + z_metal1_factory1->factory4_8 + z_metal1_factory1->factory2_8
    - z_metal1_DUMMY_RESERVE->factory1_8 - M_metal1_factory1_8
    + M_metal1_factory1_9 = 0
  eq[onhand_metal1_factory1_10]: 3 x_respirator1_factory1_9
+   + z_metal1_factory1->hospital1_9 + z_metal1_factory1->hospital2_9
+   + z_metal1_factory1->factory4_9 + z_metal1_factory1->factory2_9
    - z_metal1_DUMMY_RESERVE->factory1_9 - M_metal1_factory1_9
    + M_metal1_factory1_10 = 0
  eq[onhand_metal1_factory1_11]: 3 x_respirator1_factory1_10
+   + z_metal1_factory1->hospital1_10 + z_metal1_factory1->hospital2_10
+   + z_metal1_factory1->factory4_10 + z_metal1_factory1->factory2_10
    - z_metal1_DUMMY_RESERVE->factory1_10 - M_metal1_factory1_10
    + M_metal1_factory1_11 = 0
  eq[onhand_metal1_factory1_12]: 3 x_respirator1_factory1_11
+   + z_metal1_factory1->hospital1_11 + z_metal1_factory1->hospital2_11
+   + z_metal1_factory1->factory4_11 + z_metal1_factory1->factory2_11
    - z_metal1_DUMMY_RESERVE->factory1_11 - M_metal1_factory1_11
    + M_metal1_factory1_12 = 0
  eq[onhand_metal1_factory1_13]: 3 x_respirator1_factory1_12
+   + z_metal1_factory1->hospital1_12 + z_metal1_factory1->hospital2_12
+   + z_metal1_factory1->factory4_12 + z_metal1_factory1->factory2_12
    - z_metal1_DUMMY_RESERVE->factory1_12 - M_metal1_factory1_12
    + M_metal1_factory1_13 = 0
  eq[onhand_metal1_factory1_14]: 3 x_respirator1_factory1_13
+   + z_metal1_factory1->hospital1_13 + z_metal1_factory1->hospital2_13
+   + z_metal1_factory1->factory4_13 + z_metal1_factory1->factory2_13
    - z_metal1_DUMMY_RESERVE->factory1_13 - M_metal1_factory1_13
    + M_metal1_factory1_14 = 0
  eq[onhand_metal1_factory1_15]: 3 x_respirator1_factory1_14
+   + z_metal1_factory1->hospital1_14 + z_metal1_factory1->hospital2_14
+   + z_metal1_factory1->factory4_14 + z_metal1_factory1->factory2_14
    - z_metal1_DUMMY_RESERVE->factory1_14 - M_metal1_factory1_14
    + M_metal1_factory1_15 = 0
  eq[onhand_metal1_factory1_16]: 3 x_respirator1_factory1_15
+   + z_metal1_factory1->hospital1_15 + z_metal1_factory1->hospital2_15
+   + z_metal1_factory1->factory4_15 + z_metal1_factory1->factory2_15
    - z_metal1_DUMMY_RESERVE->factory1_15 - M_metal1_factory1_15
    + M_metal1_factory1_16 = 0
  eq[onhand_metal1_factory1_17]: 3 x_respirator1_factory1_16
+   + z_metal1_factory1->hospital1_16 + z_metal1_factory1->hospital2_16
+   + z_metal1_factory1->factory4_16 + z_metal1_factory1->factory2_16
    - z_metal1_DUMMY_RESERVE->factory1_16 - M_metal1_factory1_16
    + M_metal1_factory1_17 = 0
  eq[onhand_metal1_factory1_18]: 3 x_respirator1_factory1_17
+   + z_metal1_factory1->hospital1_17 + z_metal1_factory1->hospital2_17
+   + z_metal1_factory1->factory4_17 + z_metal1_factory1->factory2_17
    - z_metal1_DUMMY_RESERVE->factory1_17 - M_metal1_factory1_17
    + M_metal1_factory1_18 = 0
  eq[onhand_metal1_factory1_19]: 3 x_respirator1_factory1_18
+   + z_metal1_factory1->hospital1_18 + z_metal1_factory1->hospital2_18
+   + z_metal1_factory1->factory4_18 + z_metal1_factory1->factory2_18
    - z_metal1_DUMMY_RESERVE->factory1_18 - M_metal1_factory1_18
    + M_metal1_factory1_19 = 0
  eq[onhand_metal1_factory2_1]: M_metal1_factory2_1 = 140
  eq[onhand_metal1_factory2_2]: 3 x_respirator1_factory2_1
-   + y_ppe2_factory2_1 - z_metal1_factory1->factory2_1
+   + y_ppe2_factory2_1 + z_metal1_factory2->hospital3_1
+   + z_metal1_factory2->hospital4_1 - z_metal1_factory1->factory2_1
    - z_metal1_factory4->factory2_1 - z_metal1_DUMMY_RESERVE->factory2_1
    - M_metal1_factory2_1 + M_metal1_factory2_2 = 0
  eq[onhand_metal1_factory2_3]: 3 x_respirator1_factory2_2
-   + y_ppe2_factory2_2 - z_metal1_factory1->factory2_2
+   + y_ppe2_factory2_2 + z_metal1_factory2->hospital3_2
+   + z_metal1_factory2->hospital4_2 - z_metal1_factory1->factory2_2
    - z_metal1_factory4->factory2_2 - z_metal1_DUMMY_RESERVE->factory2_2
    - M_metal1_factory2_2 + M_metal1_factory2_3 = 0
  eq[onhand_metal1_factory2_4]: 3 x_respirator1_factory2_3
-   + y_ppe2_factory2_3 - z_metal1_factory1->factory2_3
+   + y_ppe2_factory2_3 + z_metal1_factory2->hospital3_3
+   + z_metal1_factory2->hospital4_3 - z_metal1_factory1->factory2_3
    - z_metal1_factory4->factory2_3 - z_metal1_DUMMY_RESERVE->factory2_3
    - M_metal1_factory2_3 + M_metal1_factory2_4 = 0
  eq[onhand_metal1_factory2_5]: 3 x_respirator1_factory2_4
-   + y_ppe2_factory2_4 - z_metal1_factory1->factory2_4
+   + y_ppe2_factory2_4 + z_metal1_factory2->hospital3_4
+   + z_metal1_factory2->hospital4_4 - z_metal1_factory1->factory2_4
    - z_metal1_factory4->factory2_4 - z_metal1_DUMMY_RESERVE->factory2_4
    - M_metal1_factory2_4 + M_metal1_factory2_5 = 0
  eq[onhand_metal1_factory2_6]: 3 x_respirator1_factory2_5
-   + y_ppe2_factory2_5 - z_metal1_factory1->factory2_5
+   + y_ppe2_factory2_5 + z_metal1_factory2->hospital3_5
+   + z_metal1_factory2->hospital4_5 - z_metal1_factory1->factory2_5
    - z_metal1_factory4->factory2_5 - z_metal1_DUMMY_RESERVE->factory2_5
    - M_metal1_factory2_5 + M_metal1_factory2_6 = 0
  eq[onhand_metal1_factory2_7]: 3 x_respirator1_factory2_6
-   + y_ppe2_factory2_6 - z_metal1_factory1->factory2_6
+   + y_ppe2_factory2_6 + z_metal1_factory2->hospital3_6
+   + z_metal1_factory2->hospital4_6 - z_metal1_factory1->factory2_6
    - z_metal1_factory4->factory2_6 - z_metal1_DUMMY_RESERVE->factory2_6
    - M_metal1_factory2_6 + M_metal1_factory2_7 = 0
  eq[onhand_metal1_factory2_8]: 3 x_respirator1_factory2_7
-   + y_ppe2_factory2_7 - z_metal1_factory1->factory2_7
+   + y_ppe2_factory2_7 + z_metal1_factory2->hospital3_7
+   + z_metal1_factory2->hospital4_7 - z_metal1_factory1->factory2_7
    - z_metal1_factory4->factory2_7 - z_metal1_DUMMY_RESERVE->factory2_7
    - M_metal1_factory2_7 + M_metal1_factory2_8 = 0
  eq[onhand_metal1_factory2_9]: 3 x_respirator1_factory2_8
-   + y_ppe2_factory2_8 - z_metal1_factory1->factory2_8
+   + y_ppe2_factory2_8 + z_metal1_factory2->hospital3_8
+   + z_metal1_factory2->hospital4_8 - z_metal1_factory1->factory2_8
    - z_metal1_factory4->factory2_8 - z_metal1_DUMMY_RESERVE->factory2_8
    - M_metal1_factory2_8 + M_metal1_factory2_9 = 0
  eq[onhand_metal1_factory2_10]: 3 x_respirator1_factory2_9
-   + y_ppe2_factory2_9 - z_metal1_factory1->factory2_9
+   + y_ppe2_factory2_9 + z_metal1_factory2->hospital3_9
+   + z_metal1_factory2->hospital4_9 - z_metal1_factory1->factory2_9
    - z_metal1_factory4->factory2_9 - z_metal1_DUMMY_RESERVE->factory2_9
    - M_metal1_factory2_9 + M_metal1_factory2_10 = 0
  eq[onhand_metal1_factory2_11]: 3 x_respirator1_factory2_10
-   + y_ppe2_factory2_10 - z_metal1_factory1->factory2_10
+   + y_ppe2_factory2_10 + z_metal1_factory2->hospital3_10
+   + z_metal1_factory2->hospital4_10 - z_metal1_factory1->factory2_10
    - z_metal1_factory4->factory2_10 - z_metal1_DUMMY_RESERVE->factory2_10
    - M_metal1_factory2_10 + M_metal1_factory2_11 = 0
  eq[onhand_metal1_factory2_12]: 3 x_respirator1_factory2_11
-   + y_ppe2_factory2_11 - z_metal1_factory1->factory2_11
+   + y_ppe2_factory2_11 + z_metal1_factory2->hospital3_11
+   + z_metal1_factory2->hospital4_11 - z_metal1_factory1->factory2_11
    - z_metal1_factory4->factory2_11 - z_metal1_DUMMY_RESERVE->factory2_11
    - M_metal1_factory2_11 + M_metal1_factory2_12 = 0
  eq[onhand_metal1_factory2_13]: 3 x_respirator1_factory2_12
-   + y_ppe2_factory2_12 - z_metal1_factory1->factory2_12
+   + y_ppe2_factory2_12 + z_metal1_factory2->hospital3_12
+   + z_metal1_factory2->hospital4_12 - z_metal1_factory1->factory2_12
    - z_metal1_factory4->factory2_12 - z_metal1_DUMMY_RESERVE->factory2_12
    - M_metal1_factory2_12 + M_metal1_factory2_13 = 0
  eq[onhand_metal1_factory2_14]: 3 x_respirator1_factory2_13
-   + y_ppe2_factory2_13 - z_metal1_factory1->factory2_13
+   + y_ppe2_factory2_13 + z_metal1_factory2->hospital3_13
+   + z_metal1_factory2->hospital4_13 - z_metal1_factory1->factory2_13
    - z_metal1_factory4->factory2_13 - z_metal1_DUMMY_RESERVE->factory2_13
    - M_metal1_factory2_13 + M_metal1_factory2_14 = 0
  eq[onhand_metal1_factory2_15]: 3 x_respirator1_factory2_14
-   + y_ppe2_factory2_14 - z_metal1_factory1->factory2_14
+   + y_ppe2_factory2_14 + z_metal1_factory2->hospital3_14
+   + z_metal1_factory2->hospital4_14 - z_metal1_factory1->factory2_14
    - z_metal1_factory4->factory2_14 - z_metal1_DUMMY_RESERVE->factory2_14
    - M_metal1_factory2_14 + M_metal1_factory2_15 = 0
  eq[onhand_metal1_factory2_16]: 3 x_respirator1_factory2_15
-   + y_ppe2_factory2_15 - z_metal1_factory1->factory2_15
+   + y_ppe2_factory2_15 + z_metal1_factory2->hospital3_15
+   + z_metal1_factory2->hospital4_15 - z_metal1_factory1->factory2_15
    - z_metal1_factory4->factory2_15 - z_metal1_DUMMY_RESERVE->factory2_15
    - M_metal1_factory2_15 + M_metal1_factory2_16 = 0
  eq[onhand_metal1_factory2_17]: 3 x_respirator1_factory2_16
-   + y_ppe2_factory2_16 - z_metal1_factory1->factory2_16
+   + y_ppe2_factory2_16 + z_metal1_factory2->hospital3_16
+   + z_metal1_factory2->hospital4_16 - z_metal1_factory1->factory2_16
    - z_metal1_factory4->factory2_16 - z_metal1_DUMMY_RESERVE->factory2_16
    - M_metal1_factory2_16 + M_metal1_factory2_17 = 0
  eq[onhand_metal1_factory2_18]: 3 x_respirator1_factory2_17
-   + y_ppe2_factory2_17 - z_metal1_factory1->factory2_17
+   + y_ppe2_factory2_17 + z_metal1_factory2->hospital3_17
+   + z_metal1_factory2->hospital4_17 - z_metal1_factory1->factory2_17
    - z_metal1_factory4->factory2_17 - z_metal1_DUMMY_RESERVE->factory2_17
    - M_metal1_factory2_17 + M_metal1_factory2_18 = 0
  eq[onhand_metal1_factory2_19]: 3 x_respirator1_factory2_18
-   + y_ppe2_factory2_18 - z_metal1_factory1->factory2_18
+   + y_ppe2_factory2_18 + z_metal1_factory2->hospital3_18
+   + z_metal1_factory2->hospital4_18 - z_metal1_factory1->factory2_18
    - z_metal1_factory4->factory2_18 - z_metal1_DUMMY_RESERVE->factory2_18
    - M_metal1_factory2_18 + M_metal1_factory2_19 = 0
  eq[onhand_metal1_factory3_1]: M_metal1_factory3_1 = 240
  eq[onhand_metal1_factory3_2]: y_ppe2_factory3_1 + 2 y_ppe3_factory3_1
+   + z_metal1_factory3->hospital1_1 + z_metal1_factory3->hospital2_1
    - z_metal1_DUMMY_RESERVE->factory3_1 - M_metal1_factory3_1
    + M_metal1_factory3_2 = 0
  eq[onhand_metal1_factory3_3]: y_ppe2_factory3_2 + 2 y_ppe3_factory3_2
+   + z_metal1_factory3->hospital1_2 + z_metal1_factory3->hospital2_2
    - z_metal1_DUMMY_RESERVE->factory3_2 - M_metal1_factory3_2
    + M_metal1_factory3_3 = 0
  eq[onhand_metal1_factory3_4]: y_ppe2_factory3_3 + 2 y_ppe3_factory3_3
+   + z_metal1_factory3->hospital1_3 + z_metal1_factory3->hospital2_3
    - z_metal1_DUMMY_RESERVE->factory3_3 - M_metal1_factory3_3
    + M_metal1_factory3_4 = 0
  eq[onhand_metal1_factory3_5]: y_ppe2_factory3_4 + 2 y_ppe3_factory3_4
+   + z_metal1_factory3->hospital1_4 + z_metal1_factory3->hospital2_4
    - z_metal1_DUMMY_RESERVE->factory3_4 - M_metal1_factory3_4
    + M_metal1_factory3_5 = 0
  eq[onhand_metal1_factory3_6]: y_ppe2_factory3_5 + 2 y_ppe3_factory3_5
+   + z_metal1_factory3->hospital1_5 + z_metal1_factory3->hospital2_5
    - z_metal1_DUMMY_RESERVE->factory3_5 - M_metal1_factory3_5
    + M_metal1_factory3_6 = 0
  eq[onhand_metal1_factory3_7]: y_ppe2_factory3_6 + 2 y_ppe3_factory3_6
+   + z_metal1_factory3->hospital1_6 + z_metal1_factory3->hospital2_6
    - z_metal1_DUMMY_RESERVE->factory3_6 - M_metal1_factory3_6
    + M_metal1_factory3_7 = 0
  eq[onhand_metal1_factory3_8]: y_ppe2_factory3_7 + 2 y_ppe3_factory3_7
+   + z_metal1_factory3->hospital1_7 + z_metal1_factory3->hospital2_7
    - z_metal1_DUMMY_RESERVE->factory3_7 - M_metal1_factory3_7
    + M_metal1_factory3_8 = 0
  eq[onhand_metal1_factory3_9]: y_ppe2_factory3_8 + 2 y_ppe3_factory3_8
+   + z_metal1_factory3->hospital1_8 + z_metal1_factory3->hospital2_8
    - z_metal1_DUMMY_RESERVE->factory3_8 - M_metal1_factory3_8
    + M_metal1_factory3_9 = 0
  eq[onhand_metal1_factory3_10]: y_ppe2_factory3_9 + 2 y_ppe3_factory3_9
+   + z_metal1_factory3->hospital1_9 + z_metal1_factory3->hospital2_9
    - z_metal1_DUMMY_RESERVE->factory3_9 - M_metal1_factory3_9
    + M_metal1_factory3_10 = 0
  eq[onhand_metal1_factory3_11]: y_ppe2_factory3_10 + 2 y_ppe3_factory3_10
+   + z_metal1_factory3->hospital1_10 + z_metal1_factory3->hospital2_10
    - z_metal1_DUMMY_RESERVE->factory3_10 - M_metal1_factory3_10
    + M_metal1_factory3_11 = 0
  eq[onhand_metal1_factory3_12]: y_ppe2_factory3_11 + 2 y_ppe3_factory3_11
+   + z_metal1_factory3->hospital1_11 + z_metal1_factory3->hospital2_11
    - z_metal1_DUMMY_RESERVE->factory3_11 - M_metal1_factory3_11
    + M_metal1_factory3_12 = 0
  eq[onhand_metal1_factory3_13]: y_ppe2_factory3_12 + 2 y_ppe3_factory3_12
+   + z_metal1_factory3->hospital1_12 + z_metal1_factory3->hospital2_12
    - z_metal1_DUMMY_RESERVE->factory3_12 - M_metal1_factory3_12
    + M_metal1_factory3_13 = 0
  eq[onhand_metal1_factory3_14]: y_ppe2_factory3_13 + 2 y_ppe3_factory3_13
+   + z_metal1_factory3->hospital1_13 + z_metal1_factory3->hospital2_13
    - z_metal1_DUMMY_RESERVE->factory3_13 - M_metal1_factory3_13
    + M_metal1_factory3_14 = 0
  eq[onhand_metal1_factory3_15]: y_ppe2_factory3_14 + 2 y_ppe3_factory3_14
+   + z_metal1_factory3->hospital1_14 + z_metal1_factory3->hospital2_14
    - z_metal1_DUMMY_RESERVE->factory3_14 - M_metal1_factory3_14
    + M_metal1_factory3_15 = 0
  eq[onhand_metal1_factory3_16]: y_ppe2_factory3_15 + 2 y_ppe3_factory3_15
+   + z_metal1_factory3->hospital1_15 + z_metal1_factory3->hospital2_15
    - z_metal1_DUMMY_RESERVE->factory3_15 - M_metal1_factory3_15
    + M_metal1_factory3_16 = 0
  eq[onhand_metal1_factory3_17]: y_ppe2_factory3_16 + 2 y_ppe3_factory3_16
+   + z_metal1_factory3->hospital1_16 + z_metal1_factory3->hospital2_16
    - z_metal1_DUMMY_RESERVE->factory3_16 - M_metal1_factory3_16
    + M_metal1_factory3_17 = 0
  eq[onhand_metal1_factory3_18]: y_ppe2_factory3_17 + 2 y_ppe3_factory3_17
+   + z_metal1_factory3->hospital1_17 + z_metal1_factory3->hospital2_17
    - z_metal1_DUMMY_RESERVE->factory3_17 - M_metal1_factory3_17
    + M_metal1_factory3_18 = 0
  eq[onhand_metal1_factory3_19]: y_ppe2_factory3_18 + 2 y_ppe3_factory3_18
+   + z_metal1_factory3->hospital1_18 + z_metal1_factory3->hospital2_18
    - z_metal1_DUMMY_RESERVE->factory3_18 - M_metal1_factory3_18
    + M_metal1_factory3_19 = 0
  eq[onhand_metal1_factory4_1]: M_metal1_factory4_1 = 0
  eq[onhand_metal1_factory4_2]: 2 y_ppe3_factory4_1
-   - z_metal1_factory1->factory4_1 - z_metal1_DUMMY_RESERVE->factory4_1
-   - M_metal1_factory4_1 + M_metal1_factory4_2 = 0
+   + z_metal1_factory4->hospital3_1 + z_metal1_factory4->hospital4_1
+   - z_metal1_factory1->factory4_1 + z_metal1_factory4->factory2_1
+   - z_metal1_DUMMY_RESERVE->factory4_1 - M_metal1_factory4_1
+   + M_metal1_factory4_2 = 0
  eq[onhand_metal1_factory4_3]: 2 y_ppe3_factory4_2
-   - z_metal1_factory1->factory4_2 - z_metal1_DUMMY_RESERVE->factory4_2
-   - M_metal1_factory4_2 + M_metal1_factory4_3 = 0
+   + z_metal1_factory4->hospital3_2 + z_metal1_factory4->hospital4_2
+   - z_metal1_factory1->factory4_2 + z_metal1_factory4->factory2_2
+   - z_metal1_DUMMY_RESERVE->factory4_2 - M_metal1_factory4_2
+   + M_metal1_factory4_3 = 0
  eq[onhand_metal1_factory4_4]: 2 y_ppe3_factory4_3
-   - z_metal1_factory1->factory4_3 - z_metal1_DUMMY_RESERVE->factory4_3
-   - M_metal1_factory4_3 + M_metal1_factory4_4 = 0
+   + z_metal1_factory4->hospital3_3 + z_metal1_factory4->hospital4_3
+   - z_metal1_factory1->factory4_3 + z_metal1_factory4->factory2_3
+   - z_metal1_DUMMY_RESERVE->factory4_3 - M_metal1_factory4_3
+   + M_metal1_factory4_4 = 0
  eq[onhand_metal1_factory4_5]: 2 y_ppe3_factory4_4
-   - z_metal1_factory1->factory4_4 - z_metal1_DUMMY_RESERVE->factory4_4
-   - M_metal1_factory4_4 + M_metal1_factory4_5 = 0
+   + z_metal1_factory4->hospital3_4 + z_metal1_factory4->hospital4_4
+   - z_metal1_factory1->factory4_4 + z_metal1_factory4->factory2_4
+   - z_metal1_DUMMY_RESERVE->factory4_4 - M_metal1_factory4_4
+   + M_metal1_factory4_5 = 0
  eq[onhand_metal1_factory4_6]: 2 y_ppe3_factory4_5
-   - z_metal1_factory1->factory4_5 - z_metal1_DUMMY_RESERVE->factory4_5
-   - M_metal1_factory4_5 + M_metal1_factory4_6 = 0
+   + z_metal1_factory4->hospital3_5 + z_metal1_factory4->hospital4_5
+   - z_metal1_factory1->factory4_5 + z_metal1_factory4->factory2_5
+   - z_metal1_DUMMY_RESERVE->factory4_5 - M_metal1_factory4_5
+   + M_metal1_factory4_6 = 0
  eq[onhand_metal1_factory4_7]: 2 y_ppe3_factory4_6
-   - z_metal1_factory1->factory4_6 - z_metal1_DUMMY_RESERVE->factory4_6
-   - M_metal1_factory4_6 + M_metal1_factory4_7 = 0
+   + z_metal1_factory4->hospital3_6 + z_metal1_factory4->hospital4_6
+   - z_metal1_factory1->factory4_6 + z_metal1_factory4->factory2_6
+   - z_metal1_DUMMY_RESERVE->factory4_6 - M_metal1_factory4_6
+   + M_metal1_factory4_7 = 0
  eq[onhand_metal1_factory4_8]: 2 y_ppe3_factory4_7
-   - z_metal1_factory1->factory4_7 - z_metal1_DUMMY_RESERVE->factory4_7
-   - M_metal1_factory4_7 + M_metal1_factory4_8 = 0
+   + z_metal1_factory4->hospital3_7 + z_metal1_factory4->hospital4_7
+   - z_metal1_factory1->factory4_7 + z_metal1_factory4->factory2_7
+   - z_metal1_DUMMY_RESERVE->factory4_7 - M_metal1_factory4_7
+   + M_metal1_factory4_8 = 0
  eq[onhand_metal1_factory4_9]: 2 y_ppe3_factory4_8
-   - z_metal1_factory1->factory4_8 - z_metal1_DUMMY_RESERVE->factory4_8
-   - M_metal1_factory4_8 + M_metal1_factory4_9 = 0
+   + z_metal1_factory4->hospital3_8 + z_metal1_factory4->hospital4_8
+   - z_metal1_factory1->factory4_8 + z_metal1_factory4->factory2_8
+   - z_metal1_DUMMY_RESERVE->factory4_8 - M_metal1_factory4_8
+   + M_metal1_factory4_9 = 0
  eq[onhand_metal1_factory4_10]: 2 y_ppe3_factory4_9
-   - z_metal1_factory1->factory4_9 - z_metal1_DUMMY_RESERVE->factory4_9
-   - M_metal1_factory4_9 + M_metal1_factory4_10 = 0
+   + z_metal1_factory4->hospital3_9 + z_metal1_factory4->hospital4_9
+   - z_metal1_factory1->factory4_9 + z_metal1_factory4->factory2_9
+   - z_metal1_DUMMY_RESERVE->factory4_9 - M_metal1_factory4_9
+   + M_metal1_factory4_10 = 0
  eq[onhand_metal1_factory4_11]: 2 y_ppe3_factory4_10
-   - z_metal1_factory1->factory4_10 - z_metal1_DUMMY_RESERVE->factory4_10
-   - M_metal1_factory4_10 + M_metal1_factory4_11 = 0
+   + z_metal1_factory4->hospital3_10 + z_metal1_factory4->hospital4_10
+   - z_metal1_factory1->factory4_10 + z_metal1_factory4->factory2_10
+   - z_metal1_DUMMY_RESERVE->factory4_10 - M_metal1_factory4_10
+   + M_metal1_factory4_11 = 0
  eq[onhand_metal1_factory4_12]: 2 y_ppe3_factory4_11
-   - z_metal1_factory1->factory4_11 - z_metal1_DUMMY_RESERVE->factory4_11
-   - M_metal1_factory4_11 + M_metal1_factory4_12 = 0
+   + z_metal1_factory4->hospital3_11 + z_metal1_factory4->hospital4_11
+   - z_metal1_factory1->factory4_11 + z_metal1_factory4->factory2_11
+   - z_metal1_DUMMY_RESERVE->factory4_11 - M_metal1_factory4_11
+   + M_metal1_factory4_12 = 0
  eq[onhand_metal1_factory4_13]: 2 y_ppe3_factory4_12
-   - z_metal1_factory1->factory4_12 - z_metal1_DUMMY_RESERVE->factory4_12
-   - M_metal1_factory4_12 + M_metal1_factory4_13 = 0
+   + z_metal1_factory4->hospital3_12 + z_metal1_factory4->hospital4_12
+   - z_metal1_factory1->factory4_12 + z_metal1_factory4->factory2_12
+   - z_metal1_DUMMY_RESERVE->factory4_12 - M_metal1_factory4_12
+   + M_metal1_factory4_13 = 0
  eq[onhand_metal1_factory4_14]: 2 y_ppe3_factory4_13
-   - z_metal1_factory1->factory4_13 - z_metal1_DUMMY_RESERVE->factory4_13
-   - M_metal1_factory4_13 + M_metal1_factory4_14 = 0
+   + z_metal1_factory4->hospital3_13 + z_metal1_factory4->hospital4_13
+   - z_metal1_factory1->factory4_13 + z_metal1_factory4->factory2_13
+   - z_metal1_DUMMY_RESERVE->factory4_13 - M_metal1_factory4_13
+   + M_metal1_factory4_14 = 0
  eq[onhand_metal1_factory4_15]: 2 y_ppe3_factory4_14
-   - z_metal1_factory1->factory4_14 - z_metal1_DUMMY_RESERVE->factory4_14
-   - M_metal1_factory4_14 + M_metal1_factory4_15 = 0
+   + z_metal1_factory4->hospital3_14 + z_metal1_factory4->hospital4_14
+   - z_metal1_factory1->factory4_14 + z_metal1_factory4->factory2_14
+   - z_metal1_DUMMY_RESERVE->factory4_14 - M_metal1_factory4_14
+   + M_metal1_factory4_15 = 0
  eq[onhand_metal1_factory4_16]: 2 y_ppe3_factory4_15
-   - z_metal1_factory1->factory4_15 - z_metal1_DUMMY_RESERVE->factory4_15
-   - M_metal1_factory4_15 + M_metal1_factory4_16 = 0
+   + z_metal1_factory4->hospital3_15 + z_metal1_factory4->hospital4_15
+   - z_metal1_factory1->factory4_15 + z_metal1_factory4->factory2_15
+   - z_metal1_DUMMY_RESERVE->factory4_15 - M_metal1_factory4_15
+   + M_metal1_factory4_16 = 0
  eq[onhand_metal1_factory4_17]: 2 y_ppe3_factory4_16
-   - z_metal1_factory1->factory4_16 - z_metal1_DUMMY_RESERVE->factory4_16
-   - M_metal1_factory4_16 + M_metal1_factory4_17 = 0
+   + z_metal1_factory4->hospital3_16 + z_metal1_factory4->hospital4_16
+   - z_metal1_factory1->factory4_16 + z_metal1_factory4->factory2_16
+   - z_metal1_DUMMY_RESERVE->factory4_16 - M_metal1_factory4_16
+   + M_metal1_factory4_17 = 0
  eq[onhand_metal1_factory4_18]: 2 y_ppe3_factory4_17
-   - z_metal1_factory1->factory4_17 - z_metal1_DUMMY_RESERVE->factory4_17
-   - M_metal1_factory4_17 + M_metal1_factory4_18 = 0
+   + z_metal1_factory4->hospital3_17 + z_metal1_factory4->hospital4_17
+   - z_metal1_factory1->factory4_17 + z_metal1_factory4->factory2_17
+   - z_metal1_DUMMY_RESERVE->factory4_17 - M_metal1_factory4_17
+   + M_metal1_factory4_18 = 0
  eq[onhand_metal1_factory4_19]: 2 y_ppe3_factory4_18
-   - z_metal1_factory1->factory4_18 - z_metal1_DUMMY_RESERVE->factory4_18
-   - M_metal1_factory4_18 + M_metal1_factory4_19 = 0
+   + z_metal1_factory4->hospital3_18 + z_metal1_factory4->hospital4_18
+   - z_metal1_factory1->factory4_18 + z_metal1_factory4->factory2_18
+   - z_metal1_DUMMY_RESERVE->factory4_18 - M_metal1_factory4_18
+   + M_metal1_factory4_19 = 0
  eq[onhand_metal1_DUMMY_RESERVE_1]: M_metal1_DUMMY_RESERVE_1 = 0
  eq[onhand_metal1_DUMMY_RESERVE_2]: M_metal1_DUMMY_RESERVE_2 = 0
  eq[onhand_metal1_DUMMY_RESERVE_3]: M_metal1_DUMMY_RESERVE_3 = 0
@@ -10794,59 +10758,77 @@ Subject To
  eq[onhand_metal1_DUMMY_RESERVE_19]: M_metal1_DUMMY_RESERVE_19 = 0
  eq[onhand_metal1_hospital1_1]: M_metal1_hospital1_1 = 0
  eq[onhand_metal1_hospital1_2]: - z_metal1_factory1->hospital1_1
-   - z_metal1_factory3->hospital1_1 - z_metal1_DUMMY_RESERVE->hospital1_1
-   - M_metal1_hospital1_1 + M_metal1_hospital1_2 = 0
+   - z_metal1_factory3->hospital1_1 + z_metal1_hospital1->hospital2_1
+   - z_metal1_DUMMY_RESERVE->hospital1_1 - M_metal1_hospital1_1
+   + M_metal1_hospital1_2 = 0
  eq[onhand_metal1_hospital1_3]: - z_metal1_factory1->hospital1_2
-   - z_metal1_factory3->hospital1_2 - z_metal1_DUMMY_RESERVE->hospital1_2
-   - M_metal1_hospital1_2 + M_metal1_hospital1_3 = 0
+   - z_metal1_factory3->hospital1_2 + z_metal1_hospital1->hospital2_2
+   - z_metal1_DUMMY_RESERVE->hospital1_2 - M_metal1_hospital1_2
+   + M_metal1_hospital1_3 = 0
  eq[onhand_metal1_hospital1_4]: - z_metal1_factory1->hospital1_3
-   - z_metal1_factory3->hospital1_3 - z_metal1_DUMMY_RESERVE->hospital1_3
-   - M_metal1_hospital1_3 + M_metal1_hospital1_4 = 0
+   - z_metal1_factory3->hospital1_3 + z_metal1_hospital1->hospital2_3
+   - z_metal1_DUMMY_RESERVE->hospital1_3 - M_metal1_hospital1_3
+   + M_metal1_hospital1_4 = 0
  eq[onhand_metal1_hospital1_5]: - z_metal1_factory1->hospital1_4
-   - z_metal1_factory3->hospital1_4 - z_metal1_DUMMY_RESERVE->hospital1_4
-   - M_metal1_hospital1_4 + M_metal1_hospital1_5 = 0
+   - z_metal1_factory3->hospital1_4 + z_metal1_hospital1->hospital2_4
+   - z_metal1_DUMMY_RESERVE->hospital1_4 - M_metal1_hospital1_4
+   + M_metal1_hospital1_5 = 0
  eq[onhand_metal1_hospital1_6]: - z_metal1_factory1->hospital1_5
-   - z_metal1_factory3->hospital1_5 - z_metal1_DUMMY_RESERVE->hospital1_5
-   - M_metal1_hospital1_5 + M_metal1_hospital1_6 = 0
+   - z_metal1_factory3->hospital1_5 + z_metal1_hospital1->hospital2_5
+   - z_metal1_DUMMY_RESERVE->hospital1_5 - M_metal1_hospital1_5
+   + M_metal1_hospital1_6 = 0
  eq[onhand_metal1_hospital1_7]: - z_metal1_factory1->hospital1_6
-   - z_metal1_factory3->hospital1_6 - z_metal1_DUMMY_RESERVE->hospital1_6
-   - M_metal1_hospital1_6 + M_metal1_hospital1_7 = 0
+   - z_metal1_factory3->hospital1_6 + z_metal1_hospital1->hospital2_6
+   - z_metal1_DUMMY_RESERVE->hospital1_6 - M_metal1_hospital1_6
+   + M_metal1_hospital1_7 = 0
  eq[onhand_metal1_hospital1_8]: - z_metal1_factory1->hospital1_7
-   - z_metal1_factory3->hospital1_7 - z_metal1_DUMMY_RESERVE->hospital1_7
-   - M_metal1_hospital1_7 + M_metal1_hospital1_8 = 0
+   - z_metal1_factory3->hospital1_7 + z_metal1_hospital1->hospital2_7
+   - z_metal1_DUMMY_RESERVE->hospital1_7 - M_metal1_hospital1_7
+   + M_metal1_hospital1_8 = 0
  eq[onhand_metal1_hospital1_9]: - z_metal1_factory1->hospital1_8
-   - z_metal1_factory3->hospital1_8 - z_metal1_DUMMY_RESERVE->hospital1_8
-   - M_metal1_hospital1_8 + M_metal1_hospital1_9 = 0
+   - z_metal1_factory3->hospital1_8 + z_metal1_hospital1->hospital2_8
+   - z_metal1_DUMMY_RESERVE->hospital1_8 - M_metal1_hospital1_8
+   + M_metal1_hospital1_9 = 0
  eq[onhand_metal1_hospital1_10]: - z_metal1_factory1->hospital1_9
-   - z_metal1_factory3->hospital1_9 - z_metal1_DUMMY_RESERVE->hospital1_9
-   - M_metal1_hospital1_9 + M_metal1_hospital1_10 = 0
+   - z_metal1_factory3->hospital1_9 + z_metal1_hospital1->hospital2_9
+   - z_metal1_DUMMY_RESERVE->hospital1_9 - M_metal1_hospital1_9
+   + M_metal1_hospital1_10 = 0
  eq[onhand_metal1_hospital1_11]: - z_metal1_factory1->hospital1_10
-   - z_metal1_factory3->hospital1_10 - z_metal1_DUMMY_RESERVE->hospital1_10
-   - M_metal1_hospital1_10 + M_metal1_hospital1_11 = 0
+   - z_metal1_factory3->hospital1_10 + z_metal1_hospital1->hospital2_10
+   - z_metal1_DUMMY_RESERVE->hospital1_10 - M_metal1_hospital1_10
+   + M_metal1_hospital1_11 = 0
  eq[onhand_metal1_hospital1_12]: - z_metal1_factory1->hospital1_11
-   - z_metal1_factory3->hospital1_11 - z_metal1_DUMMY_RESERVE->hospital1_11
-   - M_metal1_hospital1_11 + M_metal1_hospital1_12 = 0
+   - z_metal1_factory3->hospital1_11 + z_metal1_hospital1->hospital2_11
+   - z_metal1_DUMMY_RESERVE->hospital1_11 - M_metal1_hospital1_11
+   + M_metal1_hospital1_12 = 0
  eq[onhand_metal1_hospital1_13]: - z_metal1_factory1->hospital1_12
-   - z_metal1_factory3->hospital1_12 - z_metal1_DUMMY_RESERVE->hospital1_12
-   - M_metal1_hospital1_12 + M_metal1_hospital1_13 = 0
+   - z_metal1_factory3->hospital1_12 + z_metal1_hospital1->hospital2_12
+   - z_metal1_DUMMY_RESERVE->hospital1_12 - M_metal1_hospital1_12
+   + M_metal1_hospital1_13 = 0
  eq[onhand_metal1_hospital1_14]: - z_metal1_factory1->hospital1_13
-   - z_metal1_factory3->hospital1_13 - z_metal1_DUMMY_RESERVE->hospital1_13
-   - M_metal1_hospital1_13 + M_metal1_hospital1_14 = 0
+   - z_metal1_factory3->hospital1_13 + z_metal1_hospital1->hospital2_13
+   - z_metal1_DUMMY_RESERVE->hospital1_13 - M_metal1_hospital1_13
+   + M_metal1_hospital1_14 = 0
  eq[onhand_metal1_hospital1_15]: - z_metal1_factory1->hospital1_14
-   - z_metal1_factory3->hospital1_14 - z_metal1_DUMMY_RESERVE->hospital1_14
-   - M_metal1_hospital1_14 + M_metal1_hospital1_15 = 0
+   - z_metal1_factory3->hospital1_14 + z_metal1_hospital1->hospital2_14
+   - z_metal1_DUMMY_RESERVE->hospital1_14 - M_metal1_hospital1_14
+   + M_metal1_hospital1_15 = 0
  eq[onhand_metal1_hospital1_16]: - z_metal1_factory1->hospital1_15
-   - z_metal1_factory3->hospital1_15 - z_metal1_DUMMY_RESERVE->hospital1_15
-   - M_metal1_hospital1_15 + M_metal1_hospital1_16 = 0
+   - z_metal1_factory3->hospital1_15 + z_metal1_hospital1->hospital2_15
+   - z_metal1_DUMMY_RESERVE->hospital1_15 - M_metal1_hospital1_15
+   + M_metal1_hospital1_16 = 0
  eq[onhand_metal1_hospital1_17]: - z_metal1_factory1->hospital1_16
-   - z_metal1_factory3->hospital1_16 - z_metal1_DUMMY_RESERVE->hospital1_16
-   - M_metal1_hospital1_16 + M_metal1_hospital1_17 = 0
+   - z_metal1_factory3->hospital1_16 + z_metal1_hospital1->hospital2_16
+   - z_metal1_DUMMY_RESERVE->hospital1_16 - M_metal1_hospital1_16
+   + M_metal1_hospital1_17 = 0
  eq[onhand_metal1_hospital1_18]: - z_metal1_factory1->hospital1_17
-   - z_metal1_factory3->hospital1_17 - z_metal1_DUMMY_RESERVE->hospital1_17
-   - M_metal1_hospital1_17 + M_metal1_hospital1_18 = 0
+   - z_metal1_factory3->hospital1_17 + z_metal1_hospital1->hospital2_17
+   - z_metal1_DUMMY_RESERVE->hospital1_17 - M_metal1_hospital1_17
+   + M_metal1_hospital1_18 = 0
  eq[onhand_metal1_hospital1_19]: - z_metal1_factory1->hospital1_18
-   - z_metal1_factory3->hospital1_18 - z_metal1_DUMMY_RESERVE->hospital1_18
-   - M_metal1_hospital1_18 + M_metal1_hospital1_19 = 0
+   - z_metal1_factory3->hospital1_18 + z_metal1_hospital1->hospital2_18
+   - z_metal1_DUMMY_RESERVE->hospital1_18 - M_metal1_hospital1_18
+   + M_metal1_hospital1_19 = 0
  eq[onhand_metal1_hospital2_1]: M_metal1_hospital2_1 = 0
  eq[onhand_metal1_hospital2_2]: - z_metal1_factory1->hospital2_1
    - z_metal1_factory3->hospital2_1 - z_metal1_hospital1->hospital2_1
@@ -11050,242 +11032,350 @@ Subject To
    - M_metal1_hospital4_18 + M_metal1_hospital4_19 = 0
  eq[onhand_metal2_factory1_1]: M_metal2_factory1_1 = 210
  eq[onhand_metal2_factory1_2]: 8 y_ppe1_factory1_1
+   + z_metal2_factory1->hospital1_1 + z_metal2_factory1->hospital2_1
+   + z_metal2_factory1->factory4_1 + z_metal2_factory1->factory2_1
    - z_metal2_DUMMY_RESERVE->factory1_1 - M_metal2_factory1_1
    + M_metal2_factory1_2 = 0
  eq[onhand_metal2_factory1_3]: 8 y_ppe1_factory1_2
+   + z_metal2_factory1->hospital1_2 + z_metal2_factory1->hospital2_2
+   + z_metal2_factory1->factory4_2 + z_metal2_factory1->factory2_2
    - z_metal2_DUMMY_RESERVE->factory1_2 - M_metal2_factory1_2
    + M_metal2_factory1_3 = 0
  eq[onhand_metal2_factory1_4]: 8 y_ppe1_factory1_3
+   + z_metal2_factory1->hospital1_3 + z_metal2_factory1->hospital2_3
+   + z_metal2_factory1->factory4_3 + z_metal2_factory1->factory2_3
    - z_metal2_DUMMY_RESERVE->factory1_3 - M_metal2_factory1_3
    + M_metal2_factory1_4 = 0
  eq[onhand_metal2_factory1_5]: 8 y_ppe1_factory1_4
+   + z_metal2_factory1->hospital1_4 + z_metal2_factory1->hospital2_4
+   + z_metal2_factory1->factory4_4 + z_metal2_factory1->factory2_4
    - z_metal2_DUMMY_RESERVE->factory1_4 - M_metal2_factory1_4
    + M_metal2_factory1_5 = 0
  eq[onhand_metal2_factory1_6]: 8 y_ppe1_factory1_5
+   + z_metal2_factory1->hospital1_5 + z_metal2_factory1->hospital2_5
+   + z_metal2_factory1->factory4_5 + z_metal2_factory1->factory2_5
    - z_metal2_DUMMY_RESERVE->factory1_5 - M_metal2_factory1_5
    + M_metal2_factory1_6 = 0
  eq[onhand_metal2_factory1_7]: 8 y_ppe1_factory1_6
+   + z_metal2_factory1->hospital1_6 + z_metal2_factory1->hospital2_6
+   + z_metal2_factory1->factory4_6 + z_metal2_factory1->factory2_6
    - z_metal2_DUMMY_RESERVE->factory1_6 - M_metal2_factory1_6
    + M_metal2_factory1_7 = 0
  eq[onhand_metal2_factory1_8]: 8 y_ppe1_factory1_7
+   + z_metal2_factory1->hospital1_7 + z_metal2_factory1->hospital2_7
+   + z_metal2_factory1->factory4_7 + z_metal2_factory1->factory2_7
    - z_metal2_DUMMY_RESERVE->factory1_7 - M_metal2_factory1_7
    + M_metal2_factory1_8 = 0
  eq[onhand_metal2_factory1_9]: 8 y_ppe1_factory1_8
+   + z_metal2_factory1->hospital1_8 + z_metal2_factory1->hospital2_8
+   + z_metal2_factory1->factory4_8 + z_metal2_factory1->factory2_8
    - z_metal2_DUMMY_RESERVE->factory1_8 - M_metal2_factory1_8
    + M_metal2_factory1_9 = 0
  eq[onhand_metal2_factory1_10]: 8 y_ppe1_factory1_9
+   + z_metal2_factory1->hospital1_9 + z_metal2_factory1->hospital2_9
+   + z_metal2_factory1->factory4_9 + z_metal2_factory1->factory2_9
    - z_metal2_DUMMY_RESERVE->factory1_9 - M_metal2_factory1_9
    + M_metal2_factory1_10 = 0
  eq[onhand_metal2_factory1_11]: 8 y_ppe1_factory1_10
+   + z_metal2_factory1->hospital1_10 + z_metal2_factory1->hospital2_10
+   + z_metal2_factory1->factory4_10 + z_metal2_factory1->factory2_10
    - z_metal2_DUMMY_RESERVE->factory1_10 - M_metal2_factory1_10
    + M_metal2_factory1_11 = 0
  eq[onhand_metal2_factory1_12]: 8 y_ppe1_factory1_11
+   + z_metal2_factory1->hospital1_11 + z_metal2_factory1->hospital2_11
+   + z_metal2_factory1->factory4_11 + z_metal2_factory1->factory2_11
    - z_metal2_DUMMY_RESERVE->factory1_11 - M_metal2_factory1_11
    + M_metal2_factory1_12 = 0
  eq[onhand_metal2_factory1_13]: 8 y_ppe1_factory1_12
+   + z_metal2_factory1->hospital1_12 + z_metal2_factory1->hospital2_12
+   + z_metal2_factory1->factory4_12 + z_metal2_factory1->factory2_12
    - z_metal2_DUMMY_RESERVE->factory1_12 - M_metal2_factory1_12
    + M_metal2_factory1_13 = 0
  eq[onhand_metal2_factory1_14]: 8 y_ppe1_factory1_13
+   + z_metal2_factory1->hospital1_13 + z_metal2_factory1->hospital2_13
+   + z_metal2_factory1->factory4_13 + z_metal2_factory1->factory2_13
    - z_metal2_DUMMY_RESERVE->factory1_13 - M_metal2_factory1_13
    + M_metal2_factory1_14 = 0
  eq[onhand_metal2_factory1_15]: 8 y_ppe1_factory1_14
+   + z_metal2_factory1->hospital1_14 + z_metal2_factory1->hospital2_14
+   + z_metal2_factory1->factory4_14 + z_metal2_factory1->factory2_14
    - z_metal2_DUMMY_RESERVE->factory1_14 - M_metal2_factory1_14
    + M_metal2_factory1_15 = 0
  eq[onhand_metal2_factory1_16]: 8 y_ppe1_factory1_15
+   + z_metal2_factory1->hospital1_15 + z_metal2_factory1->hospital2_15
+   + z_metal2_factory1->factory4_15 + z_metal2_factory1->factory2_15
    - z_metal2_DUMMY_RESERVE->factory1_15 - M_metal2_factory1_15
    + M_metal2_factory1_16 = 0
  eq[onhand_metal2_factory1_17]: 8 y_ppe1_factory1_16
+   + z_metal2_factory1->hospital1_16 + z_metal2_factory1->hospital2_16
+   + z_metal2_factory1->factory4_16 + z_metal2_factory1->factory2_16
    - z_metal2_DUMMY_RESERVE->factory1_16 - M_metal2_factory1_16
    + M_metal2_factory1_17 = 0
  eq[onhand_metal2_factory1_18]: 8 y_ppe1_factory1_17
+   + z_metal2_factory1->hospital1_17 + z_metal2_factory1->hospital2_17
+   + z_metal2_factory1->factory4_17 + z_metal2_factory1->factory2_17
    - z_metal2_DUMMY_RESERVE->factory1_17 - M_metal2_factory1_17
    + M_metal2_factory1_18 = 0
  eq[onhand_metal2_factory1_19]: 8 y_ppe1_factory1_18
+   + z_metal2_factory1->hospital1_18 + z_metal2_factory1->hospital2_18
+   + z_metal2_factory1->factory4_18 + z_metal2_factory1->factory2_18
    - z_metal2_DUMMY_RESERVE->factory1_18 - M_metal2_factory1_18
    + M_metal2_factory1_19 = 0
  eq[onhand_metal2_factory2_1]: M_metal2_factory2_1 = 220
  eq[onhand_metal2_factory2_2]: 8 y_ppe1_factory2_1
+   + z_metal2_factory2->hospital3_1 + z_metal2_factory2->hospital4_1
    - z_metal2_factory1->factory2_1 - z_metal2_factory4->factory2_1
    - z_metal2_DUMMY_RESERVE->factory2_1 - M_metal2_factory2_1
    + M_metal2_factory2_2 = 0
  eq[onhand_metal2_factory2_3]: 8 y_ppe1_factory2_2
+   + z_metal2_factory2->hospital3_2 + z_metal2_factory2->hospital4_2
    - z_metal2_factory1->factory2_2 - z_metal2_factory4->factory2_2
    - z_metal2_DUMMY_RESERVE->factory2_2 - M_metal2_factory2_2
    + M_metal2_factory2_3 = 0
  eq[onhand_metal2_factory2_4]: 8 y_ppe1_factory2_3
+   + z_metal2_factory2->hospital3_3 + z_metal2_factory2->hospital4_3
    - z_metal2_factory1->factory2_3 - z_metal2_factory4->factory2_3
    - z_metal2_DUMMY_RESERVE->factory2_3 - M_metal2_factory2_3
    + M_metal2_factory2_4 = 0
  eq[onhand_metal2_factory2_5]: 8 y_ppe1_factory2_4
+   + z_metal2_factory2->hospital3_4 + z_metal2_factory2->hospital4_4
    - z_metal2_factory1->factory2_4 - z_metal2_factory4->factory2_4
    - z_metal2_DUMMY_RESERVE->factory2_4 - M_metal2_factory2_4
    + M_metal2_factory2_5 = 0
  eq[onhand_metal2_factory2_6]: 8 y_ppe1_factory2_5
+   + z_metal2_factory2->hospital3_5 + z_metal2_factory2->hospital4_5
    - z_metal2_factory1->factory2_5 - z_metal2_factory4->factory2_5
    - z_metal2_DUMMY_RESERVE->factory2_5 - M_metal2_factory2_5
    + M_metal2_factory2_6 = 0
  eq[onhand_metal2_factory2_7]: 8 y_ppe1_factory2_6
+   + z_metal2_factory2->hospital3_6 + z_metal2_factory2->hospital4_6
    - z_metal2_factory1->factory2_6 - z_metal2_factory4->factory2_6
    - z_metal2_DUMMY_RESERVE->factory2_6 - M_metal2_factory2_6
    + M_metal2_factory2_7 = 0
  eq[onhand_metal2_factory2_8]: 8 y_ppe1_factory2_7
+   + z_metal2_factory2->hospital3_7 + z_metal2_factory2->hospital4_7
    - z_metal2_factory1->factory2_7 - z_metal2_factory4->factory2_7
    - z_metal2_DUMMY_RESERVE->factory2_7 - M_metal2_factory2_7
    + M_metal2_factory2_8 = 0
  eq[onhand_metal2_factory2_9]: 8 y_ppe1_factory2_8
+   + z_metal2_factory2->hospital3_8 + z_metal2_factory2->hospital4_8
    - z_metal2_factory1->factory2_8 - z_metal2_factory4->factory2_8
    - z_metal2_DUMMY_RESERVE->factory2_8 - M_metal2_factory2_8
    + M_metal2_factory2_9 = 0
  eq[onhand_metal2_factory2_10]: 8 y_ppe1_factory2_9
+   + z_metal2_factory2->hospital3_9 + z_metal2_factory2->hospital4_9
    - z_metal2_factory1->factory2_9 - z_metal2_factory4->factory2_9
    - z_metal2_DUMMY_RESERVE->factory2_9 - M_metal2_factory2_9
    + M_metal2_factory2_10 = 0
  eq[onhand_metal2_factory2_11]: 8 y_ppe1_factory2_10
+   + z_metal2_factory2->hospital3_10 + z_metal2_factory2->hospital4_10
    - z_metal2_factory1->factory2_10 - z_metal2_factory4->factory2_10
    - z_metal2_DUMMY_RESERVE->factory2_10 - M_metal2_factory2_10
    + M_metal2_factory2_11 = 0
  eq[onhand_metal2_factory2_12]: 8 y_ppe1_factory2_11
+   + z_metal2_factory2->hospital3_11 + z_metal2_factory2->hospital4_11
    - z_metal2_factory1->factory2_11 - z_metal2_factory4->factory2_11
    - z_metal2_DUMMY_RESERVE->factory2_11 - M_metal2_factory2_11
    + M_metal2_factory2_12 = 0
  eq[onhand_metal2_factory2_13]: 8 y_ppe1_factory2_12
+   + z_metal2_factory2->hospital3_12 + z_metal2_factory2->hospital4_12
    - z_metal2_factory1->factory2_12 - z_metal2_factory4->factory2_12
    - z_metal2_DUMMY_RESERVE->factory2_12 - M_metal2_factory2_12
    + M_metal2_factory2_13 = 0
  eq[onhand_metal2_factory2_14]: 8 y_ppe1_factory2_13
+   + z_metal2_factory2->hospital3_13 + z_metal2_factory2->hospital4_13
    - z_metal2_factory1->factory2_13 - z_metal2_factory4->factory2_13
    - z_metal2_DUMMY_RESERVE->factory2_13 - M_metal2_factory2_13
    + M_metal2_factory2_14 = 0
  eq[onhand_metal2_factory2_15]: 8 y_ppe1_factory2_14
+   + z_metal2_factory2->hospital3_14 + z_metal2_factory2->hospital4_14
    - z_metal2_factory1->factory2_14 - z_metal2_factory4->factory2_14
    - z_metal2_DUMMY_RESERVE->factory2_14 - M_metal2_factory2_14
    + M_metal2_factory2_15 = 0
  eq[onhand_metal2_factory2_16]: 8 y_ppe1_factory2_15
+   + z_metal2_factory2->hospital3_15 + z_metal2_factory2->hospital4_15
    - z_metal2_factory1->factory2_15 - z_metal2_factory4->factory2_15
    - z_metal2_DUMMY_RESERVE->factory2_15 - M_metal2_factory2_15
    + M_metal2_factory2_16 = 0
  eq[onhand_metal2_factory2_17]: 8 y_ppe1_factory2_16
+   + z_metal2_factory2->hospital3_16 + z_metal2_factory2->hospital4_16
    - z_metal2_factory1->factory2_16 - z_metal2_factory4->factory2_16
    - z_metal2_DUMMY_RESERVE->factory2_16 - M_metal2_factory2_16
    + M_metal2_factory2_17 = 0
  eq[onhand_metal2_factory2_18]: 8 y_ppe1_factory2_17
+   + z_metal2_factory2->hospital3_17 + z_metal2_factory2->hospital4_17
    - z_metal2_factory1->factory2_17 - z_metal2_factory4->factory2_17
    - z_metal2_DUMMY_RESERVE->factory2_17 - M_metal2_factory2_17
    + M_metal2_factory2_18 = 0
  eq[onhand_metal2_factory2_19]: 8 y_ppe1_factory2_18
+   + z_metal2_factory2->hospital3_18 + z_metal2_factory2->hospital4_18
    - z_metal2_factory1->factory2_18 - z_metal2_factory4->factory2_18
    - z_metal2_DUMMY_RESERVE->factory2_18 - M_metal2_factory2_18
    + M_metal2_factory2_19 = 0
  eq[onhand_metal2_factory3_1]: M_metal2_factory3_1 = 120
  eq[onhand_metal2_factory3_2]: 3 x_respirator2_factory3_1
-   + y_ppe3_factory3_1 - z_metal2_DUMMY_RESERVE->factory3_1
+   + y_ppe3_factory3_1 + z_metal2_factory3->hospital1_1
+   + z_metal2_factory3->hospital2_1 - z_metal2_DUMMY_RESERVE->factory3_1
    - M_metal2_factory3_1 + M_metal2_factory3_2 = 0
  eq[onhand_metal2_factory3_3]: 3 x_respirator2_factory3_2
-   + y_ppe3_factory3_2 - z_metal2_DUMMY_RESERVE->factory3_2
+   + y_ppe3_factory3_2 + z_metal2_factory3->hospital1_2
+   + z_metal2_factory3->hospital2_2 - z_metal2_DUMMY_RESERVE->factory3_2
    - M_metal2_factory3_2 + M_metal2_factory3_3 = 0
  eq[onhand_metal2_factory3_4]: 3 x_respirator2_factory3_3
-   + y_ppe3_factory3_3 - z_metal2_DUMMY_RESERVE->factory3_3
+   + y_ppe3_factory3_3 + z_metal2_factory3->hospital1_3
+   + z_metal2_factory3->hospital2_3 - z_metal2_DUMMY_RESERVE->factory3_3
    - M_metal2_factory3_3 + M_metal2_factory3_4 = 0
  eq[onhand_metal2_factory3_5]: 3 x_respirator2_factory3_4
-   + y_ppe3_factory3_4 - z_metal2_DUMMY_RESERVE->factory3_4
+   + y_ppe3_factory3_4 + z_metal2_factory3->hospital1_4
+   + z_metal2_factory3->hospital2_4 - z_metal2_DUMMY_RESERVE->factory3_4
    - M_metal2_factory3_4 + M_metal2_factory3_5 = 0
  eq[onhand_metal2_factory3_6]: 3 x_respirator2_factory3_5
-   + y_ppe3_factory3_5 - z_metal2_DUMMY_RESERVE->factory3_5
+   + y_ppe3_factory3_5 + z_metal2_factory3->hospital1_5
+   + z_metal2_factory3->hospital2_5 - z_metal2_DUMMY_RESERVE->factory3_5
    - M_metal2_factory3_5 + M_metal2_factory3_6 = 0
  eq[onhand_metal2_factory3_7]: 3 x_respirator2_factory3_6
-   + y_ppe3_factory3_6 - z_metal2_DUMMY_RESERVE->factory3_6
+   + y_ppe3_factory3_6 + z_metal2_factory3->hospital1_6
+   + z_metal2_factory3->hospital2_6 - z_metal2_DUMMY_RESERVE->factory3_6
    - M_metal2_factory3_6 + M_metal2_factory3_7 = 0
  eq[onhand_metal2_factory3_8]: 3 x_respirator2_factory3_7
-   + y_ppe3_factory3_7 - z_metal2_DUMMY_RESERVE->factory3_7
+   + y_ppe3_factory3_7 + z_metal2_factory3->hospital1_7
+   + z_metal2_factory3->hospital2_7 - z_metal2_DUMMY_RESERVE->factory3_7
    - M_metal2_factory3_7 + M_metal2_factory3_8 = 0
  eq[onhand_metal2_factory3_9]: 3 x_respirator2_factory3_8
-   + y_ppe3_factory3_8 - z_metal2_DUMMY_RESERVE->factory3_8
+   + y_ppe3_factory3_8 + z_metal2_factory3->hospital1_8
+   + z_metal2_factory3->hospital2_8 - z_metal2_DUMMY_RESERVE->factory3_8
    - M_metal2_factory3_8 + M_metal2_factory3_9 = 0
  eq[onhand_metal2_factory3_10]: 3 x_respirator2_factory3_9
-   + y_ppe3_factory3_9 - z_metal2_DUMMY_RESERVE->factory3_9
+   + y_ppe3_factory3_9 + z_metal2_factory3->hospital1_9
+   + z_metal2_factory3->hospital2_9 - z_metal2_DUMMY_RESERVE->factory3_9
    - M_metal2_factory3_9 + M_metal2_factory3_10 = 0
  eq[onhand_metal2_factory3_11]: 3 x_respirator2_factory3_10
-   + y_ppe3_factory3_10 - z_metal2_DUMMY_RESERVE->factory3_10
+   + y_ppe3_factory3_10 + z_metal2_factory3->hospital1_10
+   + z_metal2_factory3->hospital2_10 - z_metal2_DUMMY_RESERVE->factory3_10
    - M_metal2_factory3_10 + M_metal2_factory3_11 = 0
  eq[onhand_metal2_factory3_12]: 3 x_respirator2_factory3_11
-   + y_ppe3_factory3_11 - z_metal2_DUMMY_RESERVE->factory3_11
+   + y_ppe3_factory3_11 + z_metal2_factory3->hospital1_11
+   + z_metal2_factory3->hospital2_11 - z_metal2_DUMMY_RESERVE->factory3_11
    - M_metal2_factory3_11 + M_metal2_factory3_12 = 0
  eq[onhand_metal2_factory3_13]: 3 x_respirator2_factory3_12
-   + y_ppe3_factory3_12 - z_metal2_DUMMY_RESERVE->factory3_12
+   + y_ppe3_factory3_12 + z_metal2_factory3->hospital1_12
+   + z_metal2_factory3->hospital2_12 - z_metal2_DUMMY_RESERVE->factory3_12
    - M_metal2_factory3_12 + M_metal2_factory3_13 = 0
  eq[onhand_metal2_factory3_14]: 3 x_respirator2_factory3_13
-   + y_ppe3_factory3_13 - z_metal2_DUMMY_RESERVE->factory3_13
+   + y_ppe3_factory3_13 + z_metal2_factory3->hospital1_13
+   + z_metal2_factory3->hospital2_13 - z_metal2_DUMMY_RESERVE->factory3_13
    - M_metal2_factory3_13 + M_metal2_factory3_14 = 0
  eq[onhand_metal2_factory3_15]: 3 x_respirator2_factory3_14
-   + y_ppe3_factory3_14 - z_metal2_DUMMY_RESERVE->factory3_14
+   + y_ppe3_factory3_14 + z_metal2_factory3->hospital1_14
+   + z_metal2_factory3->hospital2_14 - z_metal2_DUMMY_RESERVE->factory3_14
    - M_metal2_factory3_14 + M_metal2_factory3_15 = 0
  eq[onhand_metal2_factory3_16]: 3 x_respirator2_factory3_15
-   + y_ppe3_factory3_15 - z_metal2_DUMMY_RESERVE->factory3_15
+   + y_ppe3_factory3_15 + z_metal2_factory3->hospital1_15
+   + z_metal2_factory3->hospital2_15 - z_metal2_DUMMY_RESERVE->factory3_15
    - M_metal2_factory3_15 + M_metal2_factory3_16 = 0
  eq[onhand_metal2_factory3_17]: 3 x_respirator2_factory3_16
-   + y_ppe3_factory3_16 - z_metal2_DUMMY_RESERVE->factory3_16
+   + y_ppe3_factory3_16 + z_metal2_factory3->hospital1_16
+   + z_metal2_factory3->hospital2_16 - z_metal2_DUMMY_RESERVE->factory3_16
    - M_metal2_factory3_16 + M_metal2_factory3_17 = 0
  eq[onhand_metal2_factory3_18]: 3 x_respirator2_factory3_17
-   + y_ppe3_factory3_17 - z_metal2_DUMMY_RESERVE->factory3_17
+   + y_ppe3_factory3_17 + z_metal2_factory3->hospital1_17
+   + z_metal2_factory3->hospital2_17 - z_metal2_DUMMY_RESERVE->factory3_17
    - M_metal2_factory3_17 + M_metal2_factory3_18 = 0
  eq[onhand_metal2_factory3_19]: 3 x_respirator2_factory3_18
-   + y_ppe3_factory3_18 - z_metal2_DUMMY_RESERVE->factory3_18
+   + y_ppe3_factory3_18 + z_metal2_factory3->hospital1_18
+   + z_metal2_factory3->hospital2_18 - z_metal2_DUMMY_RESERVE->factory3_18
    - M_metal2_factory3_18 + M_metal2_factory3_19 = 0
  eq[onhand_metal2_factory4_1]: M_metal2_factory4_1 = 300
  eq[onhand_metal2_factory4_2]: y_ppe3_factory4_1
-   - z_metal2_factory1->factory4_1 - z_metal2_DUMMY_RESERVE->factory4_1
-   - M_metal2_factory4_1 + M_metal2_factory4_2 = 0
+   + z_metal2_factory4->hospital3_1 + z_metal2_factory4->hospital4_1
+   - z_metal2_factory1->factory4_1 + z_metal2_factory4->factory2_1
+   - z_metal2_DUMMY_RESERVE->factory4_1 - M_metal2_factory4_1
+   + M_metal2_factory4_2 = 0
  eq[onhand_metal2_factory4_3]: y_ppe3_factory4_2
-   - z_metal2_factory1->factory4_2 - z_metal2_DUMMY_RESERVE->factory4_2
-   - M_metal2_factory4_2 + M_metal2_factory4_3 = 0
+   + z_metal2_factory4->hospital3_2 + z_metal2_factory4->hospital4_2
+   - z_metal2_factory1->factory4_2 + z_metal2_factory4->factory2_2
+   - z_metal2_DUMMY_RESERVE->factory4_2 - M_metal2_factory4_2
+   + M_metal2_factory4_3 = 0
  eq[onhand_metal2_factory4_4]: y_ppe3_factory4_3
-   - z_metal2_factory1->factory4_3 - z_metal2_DUMMY_RESERVE->factory4_3
-   - M_metal2_factory4_3 + M_metal2_factory4_4 = 0
+   + z_metal2_factory4->hospital3_3 + z_metal2_factory4->hospital4_3
+   - z_metal2_factory1->factory4_3 + z_metal2_factory4->factory2_3
+   - z_metal2_DUMMY_RESERVE->factory4_3 - M_metal2_factory4_3
+   + M_metal2_factory4_4 = 0
  eq[onhand_metal2_factory4_5]: y_ppe3_factory4_4
-   - z_metal2_factory1->factory4_4 - z_metal2_DUMMY_RESERVE->factory4_4
-   - M_metal2_factory4_4 + M_metal2_factory4_5 = 0
+   + z_metal2_factory4->hospital3_4 + z_metal2_factory4->hospital4_4
+   - z_metal2_factory1->factory4_4 + z_metal2_factory4->factory2_4
+   - z_metal2_DUMMY_RESERVE->factory4_4 - M_metal2_factory4_4
+   + M_metal2_factory4_5 = 0
  eq[onhand_metal2_factory4_6]: y_ppe3_factory4_5
-   - z_metal2_factory1->factory4_5 - z_metal2_DUMMY_RESERVE->factory4_5
-   - M_metal2_factory4_5 + M_metal2_factory4_6 = 0
+   + z_metal2_factory4->hospital3_5 + z_metal2_factory4->hospital4_5
+   - z_metal2_factory1->factory4_5 + z_metal2_factory4->factory2_5
+   - z_metal2_DUMMY_RESERVE->factory4_5 - M_metal2_factory4_5
+   + M_metal2_factory4_6 = 0
  eq[onhand_metal2_factory4_7]: y_ppe3_factory4_6
-   - z_metal2_factory1->factory4_6 - z_metal2_DUMMY_RESERVE->factory4_6
-   - M_metal2_factory4_6 + M_metal2_factory4_7 = 0
+   + z_metal2_factory4->hospital3_6 + z_metal2_factory4->hospital4_6
+   - z_metal2_factory1->factory4_6 + z_metal2_factory4->factory2_6
+   - z_metal2_DUMMY_RESERVE->factory4_6 - M_metal2_factory4_6
+   + M_metal2_factory4_7 = 0
  eq[onhand_metal2_factory4_8]: y_ppe3_factory4_7
-   - z_metal2_factory1->factory4_7 - z_metal2_DUMMY_RESERVE->factory4_7
-   - M_metal2_factory4_7 + M_metal2_factory4_8 = 0
+   + z_metal2_factory4->hospital3_7 + z_metal2_factory4->hospital4_7
+   - z_metal2_factory1->factory4_7 + z_metal2_factory4->factory2_7
+   - z_metal2_DUMMY_RESERVE->factory4_7 - M_metal2_factory4_7
+   + M_metal2_factory4_8 = 0
  eq[onhand_metal2_factory4_9]: y_ppe3_factory4_8
-   - z_metal2_factory1->factory4_8 - z_metal2_DUMMY_RESERVE->factory4_8
-   - M_metal2_factory4_8 + M_metal2_factory4_9 = 0
+   + z_metal2_factory4->hospital3_8 + z_metal2_factory4->hospital4_8
+   - z_metal2_factory1->factory4_8 + z_metal2_factory4->factory2_8
+   - z_metal2_DUMMY_RESERVE->factory4_8 - M_metal2_factory4_8
+   + M_metal2_factory4_9 = 0
  eq[onhand_metal2_factory4_10]: y_ppe3_factory4_9
-   - z_metal2_factory1->factory4_9 - z_metal2_DUMMY_RESERVE->factory4_9
-   - M_metal2_factory4_9 + M_metal2_factory4_10 = 0
+   + z_metal2_factory4->hospital3_9 + z_metal2_factory4->hospital4_9
+   - z_metal2_factory1->factory4_9 + z_metal2_factory4->factory2_9
+   - z_metal2_DUMMY_RESERVE->factory4_9 - M_metal2_factory4_9
+   + M_metal2_factory4_10 = 0
  eq[onhand_metal2_factory4_11]: y_ppe3_factory4_10
-   - z_metal2_factory1->factory4_10 - z_metal2_DUMMY_RESERVE->factory4_10
-   - M_metal2_factory4_10 + M_metal2_factory4_11 = 0
+   + z_metal2_factory4->hospital3_10 + z_metal2_factory4->hospital4_10
+   - z_metal2_factory1->factory4_10 + z_metal2_factory4->factory2_10
+   - z_metal2_DUMMY_RESERVE->factory4_10 - M_metal2_factory4_10
+   + M_metal2_factory4_11 = 0
  eq[onhand_metal2_factory4_12]: y_ppe3_factory4_11
-   - z_metal2_factory1->factory4_11 - z_metal2_DUMMY_RESERVE->factory4_11
-   - M_metal2_factory4_11 + M_metal2_factory4_12 = 0
+   + z_metal2_factory4->hospital3_11 + z_metal2_factory4->hospital4_11
+   - z_metal2_factory1->factory4_11 + z_metal2_factory4->factory2_11
+   - z_metal2_DUMMY_RESERVE->factory4_11 - M_metal2_factory4_11
+   + M_metal2_factory4_12 = 0
  eq[onhand_metal2_factory4_13]: y_ppe3_factory4_12
-   - z_metal2_factory1->factory4_12 - z_metal2_DUMMY_RESERVE->factory4_12
-   - M_metal2_factory4_12 + M_metal2_factory4_13 = 0
+   + z_metal2_factory4->hospital3_12 + z_metal2_factory4->hospital4_12
+   - z_metal2_factory1->factory4_12 + z_metal2_factory4->factory2_12
+   - z_metal2_DUMMY_RESERVE->factory4_12 - M_metal2_factory4_12
+   + M_metal2_factory4_13 = 0
  eq[onhand_metal2_factory4_14]: y_ppe3_factory4_13
-   - z_metal2_factory1->factory4_13 - z_metal2_DUMMY_RESERVE->factory4_13
-   - M_metal2_factory4_13 + M_metal2_factory4_14 = 0
+   + z_metal2_factory4->hospital3_13 + z_metal2_factory4->hospital4_13
+   - z_metal2_factory1->factory4_13 + z_metal2_factory4->factory2_13
+   - z_metal2_DUMMY_RESERVE->factory4_13 - M_metal2_factory4_13
+   + M_metal2_factory4_14 = 0
  eq[onhand_metal2_factory4_15]: y_ppe3_factory4_14
-   - z_metal2_factory1->factory4_14 - z_metal2_DUMMY_RESERVE->factory4_14
-   - M_metal2_factory4_14 + M_metal2_factory4_15 = 0
+   + z_metal2_factory4->hospital3_14 + z_metal2_factory4->hospital4_14
+   - z_metal2_factory1->factory4_14 + z_metal2_factory4->factory2_14
+   - z_metal2_DUMMY_RESERVE->factory4_14 - M_metal2_factory4_14
+   + M_metal2_factory4_15 = 0
  eq[onhand_metal2_factory4_16]: y_ppe3_factory4_15
-   - z_metal2_factory1->factory4_15 - z_metal2_DUMMY_RESERVE->factory4_15
-   - M_metal2_factory4_15 + M_metal2_factory4_16 = 0
+   + z_metal2_factory4->hospital3_15 + z_metal2_factory4->hospital4_15
+   - z_metal2_factory1->factory4_15 + z_metal2_factory4->factory2_15
+   - z_metal2_DUMMY_RESERVE->factory4_15 - M_metal2_factory4_15
+   + M_metal2_factory4_16 = 0
  eq[onhand_metal2_factory4_17]: y_ppe3_factory4_16
-   - z_metal2_factory1->factory4_16 - z_metal2_DUMMY_RESERVE->factory4_16
-   - M_metal2_factory4_16 + M_metal2_factory4_17 = 0
+   + z_metal2_factory4->hospital3_16 + z_metal2_factory4->hospital4_16
+   - z_metal2_factory1->factory4_16 + z_metal2_factory4->factory2_16
+   - z_metal2_DUMMY_RESERVE->factory4_16 - M_metal2_factory4_16
+   + M_metal2_factory4_17 = 0
  eq[onhand_metal2_factory4_18]: y_ppe3_factory4_17
-   - z_metal2_factory1->factory4_17 - z_metal2_DUMMY_RESERVE->factory4_17
-   - M_metal2_factory4_17 + M_metal2_factory4_18 = 0
+   + z_metal2_factory4->hospital3_17 + z_metal2_factory4->hospital4_17
+   - z_metal2_factory1->factory4_17 + z_metal2_factory4->factory2_17
+   - z_metal2_DUMMY_RESERVE->factory4_17 - M_metal2_factory4_17
+   + M_metal2_factory4_18 = 0
  eq[onhand_metal2_factory4_19]: y_ppe3_factory4_18
-   - z_metal2_factory1->factory4_18 - z_metal2_DUMMY_RESERVE->factory4_18
-   - M_metal2_factory4_18 + M_metal2_factory4_19 = 0
+   + z_metal2_factory4->hospital3_18 + z_metal2_factory4->hospital4_18
+   - z_metal2_factory1->factory4_18 + z_metal2_factory4->factory2_18
+   - z_metal2_DUMMY_RESERVE->factory4_18 - M_metal2_factory4_18
+   + M_metal2_factory4_19 = 0
  eq[onhand_metal2_DUMMY_RESERVE_1]: M_metal2_DUMMY_RESERVE_1 = 0
  eq[onhand_metal2_DUMMY_RESERVE_2]: M_metal2_DUMMY_RESERVE_2 = 0
  eq[onhand_metal2_DUMMY_RESERVE_3]: M_metal2_DUMMY_RESERVE_3 = 0
@@ -11307,59 +11397,77 @@ Subject To
  eq[onhand_metal2_DUMMY_RESERVE_19]: M_metal2_DUMMY_RESERVE_19 = 0
  eq[onhand_metal2_hospital1_1]: M_metal2_hospital1_1 = 0
  eq[onhand_metal2_hospital1_2]: - z_metal2_factory1->hospital1_1
-   - z_metal2_factory3->hospital1_1 - z_metal2_DUMMY_RESERVE->hospital1_1
-   - M_metal2_hospital1_1 + M_metal2_hospital1_2 = 0
+   - z_metal2_factory3->hospital1_1 + z_metal2_hospital1->hospital2_1
+   - z_metal2_DUMMY_RESERVE->hospital1_1 - M_metal2_hospital1_1
+   + M_metal2_hospital1_2 = 0
  eq[onhand_metal2_hospital1_3]: - z_metal2_factory1->hospital1_2
-   - z_metal2_factory3->hospital1_2 - z_metal2_DUMMY_RESERVE->hospital1_2
-   - M_metal2_hospital1_2 + M_metal2_hospital1_3 = 0
+   - z_metal2_factory3->hospital1_2 + z_metal2_hospital1->hospital2_2
+   - z_metal2_DUMMY_RESERVE->hospital1_2 - M_metal2_hospital1_2
+   + M_metal2_hospital1_3 = 0
  eq[onhand_metal2_hospital1_4]: - z_metal2_factory1->hospital1_3
-   - z_metal2_factory3->hospital1_3 - z_metal2_DUMMY_RESERVE->hospital1_3
-   - M_metal2_hospital1_3 + M_metal2_hospital1_4 = 0
+   - z_metal2_factory3->hospital1_3 + z_metal2_hospital1->hospital2_3
+   - z_metal2_DUMMY_RESERVE->hospital1_3 - M_metal2_hospital1_3
+   + M_metal2_hospital1_4 = 0
  eq[onhand_metal2_hospital1_5]: - z_metal2_factory1->hospital1_4
-   - z_metal2_factory3->hospital1_4 - z_metal2_DUMMY_RESERVE->hospital1_4
-   - M_metal2_hospital1_4 + M_metal2_hospital1_5 = 0
+   - z_metal2_factory3->hospital1_4 + z_metal2_hospital1->hospital2_4
+   - z_metal2_DUMMY_RESERVE->hospital1_4 - M_metal2_hospital1_4
+   + M_metal2_hospital1_5 = 0
  eq[onhand_metal2_hospital1_6]: - z_metal2_factory1->hospital1_5
-   - z_metal2_factory3->hospital1_5 - z_metal2_DUMMY_RESERVE->hospital1_5
-   - M_metal2_hospital1_5 + M_metal2_hospital1_6 = 0
+   - z_metal2_factory3->hospital1_5 + z_metal2_hospital1->hospital2_5
+   - z_metal2_DUMMY_RESERVE->hospital1_5 - M_metal2_hospital1_5
+   + M_metal2_hospital1_6 = 0
  eq[onhand_metal2_hospital1_7]: - z_metal2_factory1->hospital1_6
-   - z_metal2_factory3->hospital1_6 - z_metal2_DUMMY_RESERVE->hospital1_6
-   - M_metal2_hospital1_6 + M_metal2_hospital1_7 = 0
+   - z_metal2_factory3->hospital1_6 + z_metal2_hospital1->hospital2_6
+   - z_metal2_DUMMY_RESERVE->hospital1_6 - M_metal2_hospital1_6
+   + M_metal2_hospital1_7 = 0
  eq[onhand_metal2_hospital1_8]: - z_metal2_factory1->hospital1_7
-   - z_metal2_factory3->hospital1_7 - z_metal2_DUMMY_RESERVE->hospital1_7
-   - M_metal2_hospital1_7 + M_metal2_hospital1_8 = 0
+   - z_metal2_factory3->hospital1_7 + z_metal2_hospital1->hospital2_7
+   - z_metal2_DUMMY_RESERVE->hospital1_7 - M_metal2_hospital1_7
+   + M_metal2_hospital1_8 = 0
  eq[onhand_metal2_hospital1_9]: - z_metal2_factory1->hospital1_8
-   - z_metal2_factory3->hospital1_8 - z_metal2_DUMMY_RESERVE->hospital1_8
-   - M_metal2_hospital1_8 + M_metal2_hospital1_9 = 0
+   - z_metal2_factory3->hospital1_8 + z_metal2_hospital1->hospital2_8
+   - z_metal2_DUMMY_RESERVE->hospital1_8 - M_metal2_hospital1_8
+   + M_metal2_hospital1_9 = 0
  eq[onhand_metal2_hospital1_10]: - z_metal2_factory1->hospital1_9
-   - z_metal2_factory3->hospital1_9 - z_metal2_DUMMY_RESERVE->hospital1_9
-   - M_metal2_hospital1_9 + M_metal2_hospital1_10 = 0
+   - z_metal2_factory3->hospital1_9 + z_metal2_hospital1->hospital2_9
+   - z_metal2_DUMMY_RESERVE->hospital1_9 - M_metal2_hospital1_9
+   + M_metal2_hospital1_10 = 0
  eq[onhand_metal2_hospital1_11]: - z_metal2_factory1->hospital1_10
-   - z_metal2_factory3->hospital1_10 - z_metal2_DUMMY_RESERVE->hospital1_10
-   - M_metal2_hospital1_10 + M_metal2_hospital1_11 = 0
+   - z_metal2_factory3->hospital1_10 + z_metal2_hospital1->hospital2_10
+   - z_metal2_DUMMY_RESERVE->hospital1_10 - M_metal2_hospital1_10
+   + M_metal2_hospital1_11 = 0
  eq[onhand_metal2_hospital1_12]: - z_metal2_factory1->hospital1_11
-   - z_metal2_factory3->hospital1_11 - z_metal2_DUMMY_RESERVE->hospital1_11
-   - M_metal2_hospital1_11 + M_metal2_hospital1_12 = 0
+   - z_metal2_factory3->hospital1_11 + z_metal2_hospital1->hospital2_11
+   - z_metal2_DUMMY_RESERVE->hospital1_11 - M_metal2_hospital1_11
+   + M_metal2_hospital1_12 = 0
  eq[onhand_metal2_hospital1_13]: - z_metal2_factory1->hospital1_12
-   - z_metal2_factory3->hospital1_12 - z_metal2_DUMMY_RESERVE->hospital1_12
-   - M_metal2_hospital1_12 + M_metal2_hospital1_13 = 0
+   - z_metal2_factory3->hospital1_12 + z_metal2_hospital1->hospital2_12
+   - z_metal2_DUMMY_RESERVE->hospital1_12 - M_metal2_hospital1_12
+   + M_metal2_hospital1_13 = 0
  eq[onhand_metal2_hospital1_14]: - z_metal2_factory1->hospital1_13
-   - z_metal2_factory3->hospital1_13 - z_metal2_DUMMY_RESERVE->hospital1_13
-   - M_metal2_hospital1_13 + M_metal2_hospital1_14 = 0
+   - z_metal2_factory3->hospital1_13 + z_metal2_hospital1->hospital2_13
+   - z_metal2_DUMMY_RESERVE->hospital1_13 - M_metal2_hospital1_13
+   + M_metal2_hospital1_14 = 0
  eq[onhand_metal2_hospital1_15]: - z_metal2_factory1->hospital1_14
-   - z_metal2_factory3->hospital1_14 - z_metal2_DUMMY_RESERVE->hospital1_14
-   - M_metal2_hospital1_14 + M_metal2_hospital1_15 = 0
+   - z_metal2_factory3->hospital1_14 + z_metal2_hospital1->hospital2_14
+   - z_metal2_DUMMY_RESERVE->hospital1_14 - M_metal2_hospital1_14
+   + M_metal2_hospital1_15 = 0
  eq[onhand_metal2_hospital1_16]: - z_metal2_factory1->hospital1_15
-   - z_metal2_factory3->hospital1_15 - z_metal2_DUMMY_RESERVE->hospital1_15
-   - M_metal2_hospital1_15 + M_metal2_hospital1_16 = 0
+   - z_metal2_factory3->hospital1_15 + z_metal2_hospital1->hospital2_15
+   - z_metal2_DUMMY_RESERVE->hospital1_15 - M_metal2_hospital1_15
+   + M_metal2_hospital1_16 = 0
  eq[onhand_metal2_hospital1_17]: - z_metal2_factory1->hospital1_16
-   - z_metal2_factory3->hospital1_16 - z_metal2_DUMMY_RESERVE->hospital1_16
-   - M_metal2_hospital1_16 + M_metal2_hospital1_17 = 0
+   - z_metal2_factory3->hospital1_16 + z_metal2_hospital1->hospital2_16
+   - z_metal2_DUMMY_RESERVE->hospital1_16 - M_metal2_hospital1_16
+   + M_metal2_hospital1_17 = 0
  eq[onhand_metal2_hospital1_18]: - z_metal2_factory1->hospital1_17
-   - z_metal2_factory3->hospital1_17 - z_metal2_DUMMY_RESERVE->hospital1_17
-   - M_metal2_hospital1_17 + M_metal2_hospital1_18 = 0
+   - z_metal2_factory3->hospital1_17 + z_metal2_hospital1->hospital2_17
+   - z_metal2_DUMMY_RESERVE->hospital1_17 - M_metal2_hospital1_17
+   + M_metal2_hospital1_18 = 0
  eq[onhand_metal2_hospital1_19]: - z_metal2_factory1->hospital1_18
-   - z_metal2_factory3->hospital1_18 - z_metal2_DUMMY_RESERVE->hospital1_18
-   - M_metal2_hospital1_18 + M_metal2_hospital1_19 = 0
+   - z_metal2_factory3->hospital1_18 + z_metal2_hospital1->hospital2_18
+   - z_metal2_DUMMY_RESERVE->hospital1_18 - M_metal2_hospital1_18
+   + M_metal2_hospital1_19 = 0
  eq[onhand_metal2_hospital2_1]: M_metal2_hospital2_1 = 0
  eq[onhand_metal2_hospital2_2]: - z_metal2_factory1->hospital2_1
    - z_metal2_factory3->hospital2_1 - z_metal2_hospital1->hospital2_1
@@ -11563,258 +11671,366 @@ Subject To
    - M_metal2_hospital4_18 + M_metal2_hospital4_19 = 0
  eq[onhand_plastic1_factory1_1]: M_plastic1_factory1_1 = 100
  eq[onhand_plastic1_factory1_2]: 2 x_respirator1_factory1_1
-   + 6 y_ppe1_factory1_1 - z_plastic1_DUMMY_RESERVE->factory1_1
+   + 6 y_ppe1_factory1_1 + z_plastic1_factory1->hospital1_1
+   + z_plastic1_factory1->hospital2_1 + z_plastic1_factory1->factory4_1
+   + z_plastic1_factory1->factory2_1 - z_plastic1_DUMMY_RESERVE->factory1_1
    - M_plastic1_factory1_1 + M_plastic1_factory1_2 = 0
  eq[onhand_plastic1_factory1_3]: 2 x_respirator1_factory1_2
-   + 6 y_ppe1_factory1_2 - z_plastic1_DUMMY_RESERVE->factory1_2
+   + 6 y_ppe1_factory1_2 + z_plastic1_factory1->hospital1_2
+   + z_plastic1_factory1->hospital2_2 + z_plastic1_factory1->factory4_2
+   + z_plastic1_factory1->factory2_2 - z_plastic1_DUMMY_RESERVE->factory1_2
    - M_plastic1_factory1_2 + M_plastic1_factory1_3 = 0
  eq[onhand_plastic1_factory1_4]: 2 x_respirator1_factory1_3
-   + 6 y_ppe1_factory1_3 - z_plastic1_DUMMY_RESERVE->factory1_3
+   + 6 y_ppe1_factory1_3 + z_plastic1_factory1->hospital1_3
+   + z_plastic1_factory1->hospital2_3 + z_plastic1_factory1->factory4_3
+   + z_plastic1_factory1->factory2_3 - z_plastic1_DUMMY_RESERVE->factory1_3
    - M_plastic1_factory1_3 + M_plastic1_factory1_4 = 0
  eq[onhand_plastic1_factory1_5]: 2 x_respirator1_factory1_4
-   + 6 y_ppe1_factory1_4 - z_plastic1_DUMMY_RESERVE->factory1_4
+   + 6 y_ppe1_factory1_4 + z_plastic1_factory1->hospital1_4
+   + z_plastic1_factory1->hospital2_4 + z_plastic1_factory1->factory4_4
+   + z_plastic1_factory1->factory2_4 - z_plastic1_DUMMY_RESERVE->factory1_4
    - M_plastic1_factory1_4 + M_plastic1_factory1_5 = 0
  eq[onhand_plastic1_factory1_6]: 2 x_respirator1_factory1_5
-   + 6 y_ppe1_factory1_5 - z_plastic1_DUMMY_RESERVE->factory1_5
+   + 6 y_ppe1_factory1_5 + z_plastic1_factory1->hospital1_5
+   + z_plastic1_factory1->hospital2_5 + z_plastic1_factory1->factory4_5
+   + z_plastic1_factory1->factory2_5 - z_plastic1_DUMMY_RESERVE->factory1_5
    - M_plastic1_factory1_5 + M_plastic1_factory1_6 = 0
  eq[onhand_plastic1_factory1_7]: 2 x_respirator1_factory1_6
-   + 6 y_ppe1_factory1_6 - z_plastic1_DUMMY_RESERVE->factory1_6
+   + 6 y_ppe1_factory1_6 + z_plastic1_factory1->hospital1_6
+   + z_plastic1_factory1->hospital2_6 + z_plastic1_factory1->factory4_6
+   + z_plastic1_factory1->factory2_6 - z_plastic1_DUMMY_RESERVE->factory1_6
    - M_plastic1_factory1_6 + M_plastic1_factory1_7 = 0
  eq[onhand_plastic1_factory1_8]: 2 x_respirator1_factory1_7
-   + 6 y_ppe1_factory1_7 - z_plastic1_DUMMY_RESERVE->factory1_7
+   + 6 y_ppe1_factory1_7 + z_plastic1_factory1->hospital1_7
+   + z_plastic1_factory1->hospital2_7 + z_plastic1_factory1->factory4_7
+   + z_plastic1_factory1->factory2_7 - z_plastic1_DUMMY_RESERVE->factory1_7
    - M_plastic1_factory1_7 + M_plastic1_factory1_8 = 0
  eq[onhand_plastic1_factory1_9]: 2 x_respirator1_factory1_8
-   + 6 y_ppe1_factory1_8 - z_plastic1_DUMMY_RESERVE->factory1_8
+   + 6 y_ppe1_factory1_8 + z_plastic1_factory1->hospital1_8
+   + z_plastic1_factory1->hospital2_8 + z_plastic1_factory1->factory4_8
+   + z_plastic1_factory1->factory2_8 - z_plastic1_DUMMY_RESERVE->factory1_8
    - M_plastic1_factory1_8 + M_plastic1_factory1_9 = 0
  eq[onhand_plastic1_factory1_10]: 2 x_respirator1_factory1_9
-   + 6 y_ppe1_factory1_9 - z_plastic1_DUMMY_RESERVE->factory1_9
+   + 6 y_ppe1_factory1_9 + z_plastic1_factory1->hospital1_9
+   + z_plastic1_factory1->hospital2_9 + z_plastic1_factory1->factory4_9
+   + z_plastic1_factory1->factory2_9 - z_plastic1_DUMMY_RESERVE->factory1_9
    - M_plastic1_factory1_9 + M_plastic1_factory1_10 = 0
  eq[onhand_plastic1_factory1_11]: 2 x_respirator1_factory1_10
-   + 6 y_ppe1_factory1_10 - z_plastic1_DUMMY_RESERVE->factory1_10
-   - M_plastic1_factory1_10 + M_plastic1_factory1_11 = 0
+   + 6 y_ppe1_factory1_10 + z_plastic1_factory1->hospital1_10
+   + z_plastic1_factory1->hospital2_10 + z_plastic1_factory1->factory4_10
+   + z_plastic1_factory1->factory2_10
+   - z_plastic1_DUMMY_RESERVE->factory1_10 - M_plastic1_factory1_10
+   + M_plastic1_factory1_11 = 0
  eq[onhand_plastic1_factory1_12]: 2 x_respirator1_factory1_11
-   + 6 y_ppe1_factory1_11 - z_plastic1_DUMMY_RESERVE->factory1_11
-   - M_plastic1_factory1_11 + M_plastic1_factory1_12 = 0
+   + 6 y_ppe1_factory1_11 + z_plastic1_factory1->hospital1_11
+   + z_plastic1_factory1->hospital2_11 + z_plastic1_factory1->factory4_11
+   + z_plastic1_factory1->factory2_11
+   - z_plastic1_DUMMY_RESERVE->factory1_11 - M_plastic1_factory1_11
+   + M_plastic1_factory1_12 = 0
  eq[onhand_plastic1_factory1_13]: 2 x_respirator1_factory1_12
-   + 6 y_ppe1_factory1_12 - z_plastic1_DUMMY_RESERVE->factory1_12
-   - M_plastic1_factory1_12 + M_plastic1_factory1_13 = 0
+   + 6 y_ppe1_factory1_12 + z_plastic1_factory1->hospital1_12
+   + z_plastic1_factory1->hospital2_12 + z_plastic1_factory1->factory4_12
+   + z_plastic1_factory1->factory2_12
+   - z_plastic1_DUMMY_RESERVE->factory1_12 - M_plastic1_factory1_12
+   + M_plastic1_factory1_13 = 0
  eq[onhand_plastic1_factory1_14]: 2 x_respirator1_factory1_13
-   + 6 y_ppe1_factory1_13 - z_plastic1_DUMMY_RESERVE->factory1_13
-   - M_plastic1_factory1_13 + M_plastic1_factory1_14 = 0
+   + 6 y_ppe1_factory1_13 + z_plastic1_factory1->hospital1_13
+   + z_plastic1_factory1->hospital2_13 + z_plastic1_factory1->factory4_13
+   + z_plastic1_factory1->factory2_13
+   - z_plastic1_DUMMY_RESERVE->factory1_13 - M_plastic1_factory1_13
+   + M_plastic1_factory1_14 = 0
  eq[onhand_plastic1_factory1_15]: 2 x_respirator1_factory1_14
-   + 6 y_ppe1_factory1_14 - z_plastic1_DUMMY_RESERVE->factory1_14
-   - M_plastic1_factory1_14 + M_plastic1_factory1_15 = 0
+   + 6 y_ppe1_factory1_14 + z_plastic1_factory1->hospital1_14
+   + z_plastic1_factory1->hospital2_14 + z_plastic1_factory1->factory4_14
+   + z_plastic1_factory1->factory2_14
+   - z_plastic1_DUMMY_RESERVE->factory1_14 - M_plastic1_factory1_14
+   + M_plastic1_factory1_15 = 0
  eq[onhand_plastic1_factory1_16]: 2 x_respirator1_factory1_15
-   + 6 y_ppe1_factory1_15 - z_plastic1_DUMMY_RESERVE->factory1_15
-   - M_plastic1_factory1_15 + M_plastic1_factory1_16 = 0
+   + 6 y_ppe1_factory1_15 + z_plastic1_factory1->hospital1_15
+   + z_plastic1_factory1->hospital2_15 + z_plastic1_factory1->factory4_15
+   + z_plastic1_factory1->factory2_15
+   - z_plastic1_DUMMY_RESERVE->factory1_15 - M_plastic1_factory1_15
+   + M_plastic1_factory1_16 = 0
  eq[onhand_plastic1_factory1_17]: 2 x_respirator1_factory1_16
-   + 6 y_ppe1_factory1_16 - z_plastic1_DUMMY_RESERVE->factory1_16
-   - M_plastic1_factory1_16 + M_plastic1_factory1_17 = 0
+   + 6 y_ppe1_factory1_16 + z_plastic1_factory1->hospital1_16
+   + z_plastic1_factory1->hospital2_16 + z_plastic1_factory1->factory4_16
+   + z_plastic1_factory1->factory2_16
+   - z_plastic1_DUMMY_RESERVE->factory1_16 - M_plastic1_factory1_16
+   + M_plastic1_factory1_17 = 0
  eq[onhand_plastic1_factory1_18]: 2 x_respirator1_factory1_17
-   + 6 y_ppe1_factory1_17 - z_plastic1_DUMMY_RESERVE->factory1_17
-   - M_plastic1_factory1_17 + M_plastic1_factory1_18 = 0
+   + 6 y_ppe1_factory1_17 + z_plastic1_factory1->hospital1_17
+   + z_plastic1_factory1->hospital2_17 + z_plastic1_factory1->factory4_17
+   + z_plastic1_factory1->factory2_17
+   - z_plastic1_DUMMY_RESERVE->factory1_17 - M_plastic1_factory1_17
+   + M_plastic1_factory1_18 = 0
  eq[onhand_plastic1_factory1_19]: 2 x_respirator1_factory1_18
-   + 6 y_ppe1_factory1_18 - z_plastic1_DUMMY_RESERVE->factory1_18
-   - M_plastic1_factory1_18 + M_plastic1_factory1_19 = 0
+   + 6 y_ppe1_factory1_18 + z_plastic1_factory1->hospital1_18
+   + z_plastic1_factory1->hospital2_18 + z_plastic1_factory1->factory4_18
+   + z_plastic1_factory1->factory2_18
+   - z_plastic1_DUMMY_RESERVE->factory1_18 - M_plastic1_factory1_18
+   + M_plastic1_factory1_19 = 0
  eq[onhand_plastic1_factory2_1]: M_plastic1_factory2_1 = 190
  eq[onhand_plastic1_factory2_2]: 2 x_respirator1_factory2_1
-   + 6 y_ppe1_factory2_1 - z_plastic1_factory1->factory2_1
+   + 6 y_ppe1_factory2_1 + z_plastic1_factory2->hospital3_1
+   + z_plastic1_factory2->hospital4_1 - z_plastic1_factory1->factory2_1
    - z_plastic1_factory4->factory2_1 - z_plastic1_DUMMY_RESERVE->factory2_1
    - M_plastic1_factory2_1 + M_plastic1_factory2_2 = 0
  eq[onhand_plastic1_factory2_3]: 2 x_respirator1_factory2_2
-   + 6 y_ppe1_factory2_2 - z_plastic1_factory1->factory2_2
+   + 6 y_ppe1_factory2_2 + z_plastic1_factory2->hospital3_2
+   + z_plastic1_factory2->hospital4_2 - z_plastic1_factory1->factory2_2
    - z_plastic1_factory4->factory2_2 - z_plastic1_DUMMY_RESERVE->factory2_2
    - M_plastic1_factory2_2 + M_plastic1_factory2_3 = 0
  eq[onhand_plastic1_factory2_4]: 2 x_respirator1_factory2_3
-   + 6 y_ppe1_factory2_3 - z_plastic1_factory1->factory2_3
+   + 6 y_ppe1_factory2_3 + z_plastic1_factory2->hospital3_3
+   + z_plastic1_factory2->hospital4_3 - z_plastic1_factory1->factory2_3
    - z_plastic1_factory4->factory2_3 - z_plastic1_DUMMY_RESERVE->factory2_3
    - M_plastic1_factory2_3 + M_plastic1_factory2_4 = 0
  eq[onhand_plastic1_factory2_5]: 2 x_respirator1_factory2_4
-   + 6 y_ppe1_factory2_4 - z_plastic1_factory1->factory2_4
+   + 6 y_ppe1_factory2_4 + z_plastic1_factory2->hospital3_4
+   + z_plastic1_factory2->hospital4_4 - z_plastic1_factory1->factory2_4
    - z_plastic1_factory4->factory2_4 - z_plastic1_DUMMY_RESERVE->factory2_4
    - M_plastic1_factory2_4 + M_plastic1_factory2_5 = 0
  eq[onhand_plastic1_factory2_6]: 2 x_respirator1_factory2_5
-   + 6 y_ppe1_factory2_5 - z_plastic1_factory1->factory2_5
+   + 6 y_ppe1_factory2_5 + z_plastic1_factory2->hospital3_5
+   + z_plastic1_factory2->hospital4_5 - z_plastic1_factory1->factory2_5
    - z_plastic1_factory4->factory2_5 - z_plastic1_DUMMY_RESERVE->factory2_5
    - M_plastic1_factory2_5 + M_plastic1_factory2_6 = 0
  eq[onhand_plastic1_factory2_7]: 2 x_respirator1_factory2_6
-   + 6 y_ppe1_factory2_6 - z_plastic1_factory1->factory2_6
+   + 6 y_ppe1_factory2_6 + z_plastic1_factory2->hospital3_6
+   + z_plastic1_factory2->hospital4_6 - z_plastic1_factory1->factory2_6
    - z_plastic1_factory4->factory2_6 - z_plastic1_DUMMY_RESERVE->factory2_6
    - M_plastic1_factory2_6 + M_plastic1_factory2_7 = 0
  eq[onhand_plastic1_factory2_8]: 2 x_respirator1_factory2_7
-   + 6 y_ppe1_factory2_7 - z_plastic1_factory1->factory2_7
+   + 6 y_ppe1_factory2_7 + z_plastic1_factory2->hospital3_7
+   + z_plastic1_factory2->hospital4_7 - z_plastic1_factory1->factory2_7
    - z_plastic1_factory4->factory2_7 - z_plastic1_DUMMY_RESERVE->factory2_7
    - M_plastic1_factory2_7 + M_plastic1_factory2_8 = 0
  eq[onhand_plastic1_factory2_9]: 2 x_respirator1_factory2_8
-   + 6 y_ppe1_factory2_8 - z_plastic1_factory1->factory2_8
+   + 6 y_ppe1_factory2_8 + z_plastic1_factory2->hospital3_8
+   + z_plastic1_factory2->hospital4_8 - z_plastic1_factory1->factory2_8
    - z_plastic1_factory4->factory2_8 - z_plastic1_DUMMY_RESERVE->factory2_8
    - M_plastic1_factory2_8 + M_plastic1_factory2_9 = 0
  eq[onhand_plastic1_factory2_10]: 2 x_respirator1_factory2_9
-   + 6 y_ppe1_factory2_9 - z_plastic1_factory1->factory2_9
+   + 6 y_ppe1_factory2_9 + z_plastic1_factory2->hospital3_9
+   + z_plastic1_factory2->hospital4_9 - z_plastic1_factory1->factory2_9
    - z_plastic1_factory4->factory2_9 - z_plastic1_DUMMY_RESERVE->factory2_9
    - M_plastic1_factory2_9 + M_plastic1_factory2_10 = 0
  eq[onhand_plastic1_factory2_11]: 2 x_respirator1_factory2_10
-   + 6 y_ppe1_factory2_10 - z_plastic1_factory1->factory2_10
+   + 6 y_ppe1_factory2_10 + z_plastic1_factory2->hospital3_10
+   + z_plastic1_factory2->hospital4_10 - z_plastic1_factory1->factory2_10
    - z_plastic1_factory4->factory2_10
    - z_plastic1_DUMMY_RESERVE->factory2_10 - M_plastic1_factory2_10
    + M_plastic1_factory2_11 = 0
  eq[onhand_plastic1_factory2_12]: 2 x_respirator1_factory2_11
-   + 6 y_ppe1_factory2_11 - z_plastic1_factory1->factory2_11
+   + 6 y_ppe1_factory2_11 + z_plastic1_factory2->hospital3_11
+   + z_plastic1_factory2->hospital4_11 - z_plastic1_factory1->factory2_11
    - z_plastic1_factory4->factory2_11
    - z_plastic1_DUMMY_RESERVE->factory2_11 - M_plastic1_factory2_11
    + M_plastic1_factory2_12 = 0
  eq[onhand_plastic1_factory2_13]: 2 x_respirator1_factory2_12
-   + 6 y_ppe1_factory2_12 - z_plastic1_factory1->factory2_12
+   + 6 y_ppe1_factory2_12 + z_plastic1_factory2->hospital3_12
+   + z_plastic1_factory2->hospital4_12 - z_plastic1_factory1->factory2_12
    - z_plastic1_factory4->factory2_12
    - z_plastic1_DUMMY_RESERVE->factory2_12 - M_plastic1_factory2_12
    + M_plastic1_factory2_13 = 0
  eq[onhand_plastic1_factory2_14]: 2 x_respirator1_factory2_13
-   + 6 y_ppe1_factory2_13 - z_plastic1_factory1->factory2_13
+   + 6 y_ppe1_factory2_13 + z_plastic1_factory2->hospital3_13
+   + z_plastic1_factory2->hospital4_13 - z_plastic1_factory1->factory2_13
    - z_plastic1_factory4->factory2_13
    - z_plastic1_DUMMY_RESERVE->factory2_13 - M_plastic1_factory2_13
    + M_plastic1_factory2_14 = 0
  eq[onhand_plastic1_factory2_15]: 2 x_respirator1_factory2_14
-   + 6 y_ppe1_factory2_14 - z_plastic1_factory1->factory2_14
+   + 6 y_ppe1_factory2_14 + z_plastic1_factory2->hospital3_14
+   + z_plastic1_factory2->hospital4_14 - z_plastic1_factory1->factory2_14
    - z_plastic1_factory4->factory2_14
    - z_plastic1_DUMMY_RESERVE->factory2_14 - M_plastic1_factory2_14
    + M_plastic1_factory2_15 = 0
  eq[onhand_plastic1_factory2_16]: 2 x_respirator1_factory2_15
-   + 6 y_ppe1_factory2_15 - z_plastic1_factory1->factory2_15
+   + 6 y_ppe1_factory2_15 + z_plastic1_factory2->hospital3_15
+   + z_plastic1_factory2->hospital4_15 - z_plastic1_factory1->factory2_15
    - z_plastic1_factory4->factory2_15
    - z_plastic1_DUMMY_RESERVE->factory2_15 - M_plastic1_factory2_15
    + M_plastic1_factory2_16 = 0
  eq[onhand_plastic1_factory2_17]: 2 x_respirator1_factory2_16
-   + 6 y_ppe1_factory2_16 - z_plastic1_factory1->factory2_16
+   + 6 y_ppe1_factory2_16 + z_plastic1_factory2->hospital3_16
+   + z_plastic1_factory2->hospital4_16 - z_plastic1_factory1->factory2_16
    - z_plastic1_factory4->factory2_16
    - z_plastic1_DUMMY_RESERVE->factory2_16 - M_plastic1_factory2_16
    + M_plastic1_factory2_17 = 0
  eq[onhand_plastic1_factory2_18]: 2 x_respirator1_factory2_17
-   + 6 y_ppe1_factory2_17 - z_plastic1_factory1->factory2_17
+   + 6 y_ppe1_factory2_17 + z_plastic1_factory2->hospital3_17
+   + z_plastic1_factory2->hospital4_17 - z_plastic1_factory1->factory2_17
    - z_plastic1_factory4->factory2_17
    - z_plastic1_DUMMY_RESERVE->factory2_17 - M_plastic1_factory2_17
    + M_plastic1_factory2_18 = 0
  eq[onhand_plastic1_factory2_19]: 2 x_respirator1_factory2_18
-   + 6 y_ppe1_factory2_18 - z_plastic1_factory1->factory2_18
+   + 6 y_ppe1_factory2_18 + z_plastic1_factory2->hospital3_18
+   + z_plastic1_factory2->hospital4_18 - z_plastic1_factory1->factory2_18
    - z_plastic1_factory4->factory2_18
    - z_plastic1_DUMMY_RESERVE->factory2_18 - M_plastic1_factory2_18
    + M_plastic1_factory2_19 = 0
  eq[onhand_plastic1_factory3_1]: M_plastic1_factory3_1 = 190
  eq[onhand_plastic1_factory3_2]: 8 y_ppe3_factory3_1
+   + z_plastic1_factory3->hospital1_1 + z_plastic1_factory3->hospital2_1
    - z_plastic1_DUMMY_RESERVE->factory3_1 - M_plastic1_factory3_1
    + M_plastic1_factory3_2 = 0
  eq[onhand_plastic1_factory3_3]: 8 y_ppe3_factory3_2
+   + z_plastic1_factory3->hospital1_2 + z_plastic1_factory3->hospital2_2
    - z_plastic1_DUMMY_RESERVE->factory3_2 - M_plastic1_factory3_2
    + M_plastic1_factory3_3 = 0
  eq[onhand_plastic1_factory3_4]: 8 y_ppe3_factory3_3
+   + z_plastic1_factory3->hospital1_3 + z_plastic1_factory3->hospital2_3
    - z_plastic1_DUMMY_RESERVE->factory3_3 - M_plastic1_factory3_3
    + M_plastic1_factory3_4 = 0
  eq[onhand_plastic1_factory3_5]: 8 y_ppe3_factory3_4
+   + z_plastic1_factory3->hospital1_4 + z_plastic1_factory3->hospital2_4
    - z_plastic1_DUMMY_RESERVE->factory3_4 - M_plastic1_factory3_4
    + M_plastic1_factory3_5 = 0
  eq[onhand_plastic1_factory3_6]: 8 y_ppe3_factory3_5
+   + z_plastic1_factory3->hospital1_5 + z_plastic1_factory3->hospital2_5
    - z_plastic1_DUMMY_RESERVE->factory3_5 - M_plastic1_factory3_5
    + M_plastic1_factory3_6 = 0
  eq[onhand_plastic1_factory3_7]: 8 y_ppe3_factory3_6
+   + z_plastic1_factory3->hospital1_6 + z_plastic1_factory3->hospital2_6
    - z_plastic1_DUMMY_RESERVE->factory3_6 - M_plastic1_factory3_6
    + M_plastic1_factory3_7 = 0
  eq[onhand_plastic1_factory3_8]: 8 y_ppe3_factory3_7
+   + z_plastic1_factory3->hospital1_7 + z_plastic1_factory3->hospital2_7
    - z_plastic1_DUMMY_RESERVE->factory3_7 - M_plastic1_factory3_7
    + M_plastic1_factory3_8 = 0
  eq[onhand_plastic1_factory3_9]: 8 y_ppe3_factory3_8
+   + z_plastic1_factory3->hospital1_8 + z_plastic1_factory3->hospital2_8
    - z_plastic1_DUMMY_RESERVE->factory3_8 - M_plastic1_factory3_8
    + M_plastic1_factory3_9 = 0
  eq[onhand_plastic1_factory3_10]: 8 y_ppe3_factory3_9
+   + z_plastic1_factory3->hospital1_9 + z_plastic1_factory3->hospital2_9
    - z_plastic1_DUMMY_RESERVE->factory3_9 - M_plastic1_factory3_9
    + M_plastic1_factory3_10 = 0
  eq[onhand_plastic1_factory3_11]: 8 y_ppe3_factory3_10
+   + z_plastic1_factory3->hospital1_10 + z_plastic1_factory3->hospital2_10
    - z_plastic1_DUMMY_RESERVE->factory3_10 - M_plastic1_factory3_10
    + M_plastic1_factory3_11 = 0
  eq[onhand_plastic1_factory3_12]: 8 y_ppe3_factory3_11
+   + z_plastic1_factory3->hospital1_11 + z_plastic1_factory3->hospital2_11
    - z_plastic1_DUMMY_RESERVE->factory3_11 - M_plastic1_factory3_11
    + M_plastic1_factory3_12 = 0
  eq[onhand_plastic1_factory3_13]: 8 y_ppe3_factory3_12
+   + z_plastic1_factory3->hospital1_12 + z_plastic1_factory3->hospital2_12
    - z_plastic1_DUMMY_RESERVE->factory3_12 - M_plastic1_factory3_12
    + M_plastic1_factory3_13 = 0
  eq[onhand_plastic1_factory3_14]: 8 y_ppe3_factory3_13
+   + z_plastic1_factory3->hospital1_13 + z_plastic1_factory3->hospital2_13
    - z_plastic1_DUMMY_RESERVE->factory3_13 - M_plastic1_factory3_13
    + M_plastic1_factory3_14 = 0
  eq[onhand_plastic1_factory3_15]: 8 y_ppe3_factory3_14
+   + z_plastic1_factory3->hospital1_14 + z_plastic1_factory3->hospital2_14
    - z_plastic1_DUMMY_RESERVE->factory3_14 - M_plastic1_factory3_14
    + M_plastic1_factory3_15 = 0
  eq[onhand_plastic1_factory3_16]: 8 y_ppe3_factory3_15
+   + z_plastic1_factory3->hospital1_15 + z_plastic1_factory3->hospital2_15
    - z_plastic1_DUMMY_RESERVE->factory3_15 - M_plastic1_factory3_15
    + M_plastic1_factory3_16 = 0
  eq[onhand_plastic1_factory3_17]: 8 y_ppe3_factory3_16
+   + z_plastic1_factory3->hospital1_16 + z_plastic1_factory3->hospital2_16
    - z_plastic1_DUMMY_RESERVE->factory3_16 - M_plastic1_factory3_16
    + M_plastic1_factory3_17 = 0
  eq[onhand_plastic1_factory3_18]: 8 y_ppe3_factory3_17
+   + z_plastic1_factory3->hospital1_17 + z_plastic1_factory3->hospital2_17
    - z_plastic1_DUMMY_RESERVE->factory3_17 - M_plastic1_factory3_17
    + M_plastic1_factory3_18 = 0
  eq[onhand_plastic1_factory3_19]: 8 y_ppe3_factory3_18
+   + z_plastic1_factory3->hospital1_18 + z_plastic1_factory3->hospital2_18
    - z_plastic1_DUMMY_RESERVE->factory3_18 - M_plastic1_factory3_18
    + M_plastic1_factory3_19 = 0
  eq[onhand_plastic1_factory4_1]: M_plastic1_factory4_1 = 0
  eq[onhand_plastic1_factory4_2]: 8 y_ppe3_factory4_1
-   - z_plastic1_factory1->factory4_1 - z_plastic1_DUMMY_RESERVE->factory4_1
-   - M_plastic1_factory4_1 + M_plastic1_factory4_2 = 0
+   + z_plastic1_factory4->hospital3_1 + z_plastic1_factory4->hospital4_1
+   - z_plastic1_factory1->factory4_1 + z_plastic1_factory4->factory2_1
+   - z_plastic1_DUMMY_RESERVE->factory4_1 - M_plastic1_factory4_1
+   + M_plastic1_factory4_2 = 0
  eq[onhand_plastic1_factory4_3]: 8 y_ppe3_factory4_2
-   - z_plastic1_factory1->factory4_2 - z_plastic1_DUMMY_RESERVE->factory4_2
-   - M_plastic1_factory4_2 + M_plastic1_factory4_3 = 0
+   + z_plastic1_factory4->hospital3_2 + z_plastic1_factory4->hospital4_2
+   - z_plastic1_factory1->factory4_2 + z_plastic1_factory4->factory2_2
+   - z_plastic1_DUMMY_RESERVE->factory4_2 - M_plastic1_factory4_2
+   + M_plastic1_factory4_3 = 0
  eq[onhand_plastic1_factory4_4]: 8 y_ppe3_factory4_3
-   - z_plastic1_factory1->factory4_3 - z_plastic1_DUMMY_RESERVE->factory4_3
-   - M_plastic1_factory4_3 + M_plastic1_factory4_4 = 0
+   + z_plastic1_factory4->hospital3_3 + z_plastic1_factory4->hospital4_3
+   - z_plastic1_factory1->factory4_3 + z_plastic1_factory4->factory2_3
+   - z_plastic1_DUMMY_RESERVE->factory4_3 - M_plastic1_factory4_3
+   + M_plastic1_factory4_4 = 0
  eq[onhand_plastic1_factory4_5]: 8 y_ppe3_factory4_4
-   - z_plastic1_factory1->factory4_4 - z_plastic1_DUMMY_RESERVE->factory4_4
-   - M_plastic1_factory4_4 + M_plastic1_factory4_5 = 0
+   + z_plastic1_factory4->hospital3_4 + z_plastic1_factory4->hospital4_4
+   - z_plastic1_factory1->factory4_4 + z_plastic1_factory4->factory2_4
+   - z_plastic1_DUMMY_RESERVE->factory4_4 - M_plastic1_factory4_4
+   + M_plastic1_factory4_5 = 0
  eq[onhand_plastic1_factory4_6]: 8 y_ppe3_factory4_5
-   - z_plastic1_factory1->factory4_5 - z_plastic1_DUMMY_RESERVE->factory4_5
-   - M_plastic1_factory4_5 + M_plastic1_factory4_6 = 0
+   + z_plastic1_factory4->hospital3_5 + z_plastic1_factory4->hospital4_5
+   - z_plastic1_factory1->factory4_5 + z_plastic1_factory4->factory2_5
+   - z_plastic1_DUMMY_RESERVE->factory4_5 - M_plastic1_factory4_5
+   + M_plastic1_factory4_6 = 0
  eq[onhand_plastic1_factory4_7]: 8 y_ppe3_factory4_6
-   - z_plastic1_factory1->factory4_6 - z_plastic1_DUMMY_RESERVE->factory4_6
-   - M_plastic1_factory4_6 + M_plastic1_factory4_7 = 0
+   + z_plastic1_factory4->hospital3_6 + z_plastic1_factory4->hospital4_6
+   - z_plastic1_factory1->factory4_6 + z_plastic1_factory4->factory2_6
+   - z_plastic1_DUMMY_RESERVE->factory4_6 - M_plastic1_factory4_6
+   + M_plastic1_factory4_7 = 0
  eq[onhand_plastic1_factory4_8]: 8 y_ppe3_factory4_7
-   - z_plastic1_factory1->factory4_7 - z_plastic1_DUMMY_RESERVE->factory4_7
-   - M_plastic1_factory4_7 + M_plastic1_factory4_8 = 0
+   + z_plastic1_factory4->hospital3_7 + z_plastic1_factory4->hospital4_7
+   - z_plastic1_factory1->factory4_7 + z_plastic1_factory4->factory2_7
+   - z_plastic1_DUMMY_RESERVE->factory4_7 - M_plastic1_factory4_7
+   + M_plastic1_factory4_8 = 0
  eq[onhand_plastic1_factory4_9]: 8 y_ppe3_factory4_8
-   - z_plastic1_factory1->factory4_8 - z_plastic1_DUMMY_RESERVE->factory4_8
-   - M_plastic1_factory4_8 + M_plastic1_factory4_9 = 0
+   + z_plastic1_factory4->hospital3_8 + z_plastic1_factory4->hospital4_8
+   - z_plastic1_factory1->factory4_8 + z_plastic1_factory4->factory2_8
+   - z_plastic1_DUMMY_RESERVE->factory4_8 - M_plastic1_factory4_8
+   + M_plastic1_factory4_9 = 0
  eq[onhand_plastic1_factory4_10]: 8 y_ppe3_factory4_9
-   - z_plastic1_factory1->factory4_9 - z_plastic1_DUMMY_RESERVE->factory4_9
-   - M_plastic1_factory4_9 + M_plastic1_factory4_10 = 0
+   + z_plastic1_factory4->hospital3_9 + z_plastic1_factory4->hospital4_9
+   - z_plastic1_factory1->factory4_9 + z_plastic1_factory4->factory2_9
+   - z_plastic1_DUMMY_RESERVE->factory4_9 - M_plastic1_factory4_9
+   + M_plastic1_factory4_10 = 0
  eq[onhand_plastic1_factory4_11]: 8 y_ppe3_factory4_10
-   - z_plastic1_factory1->factory4_10
+   + z_plastic1_factory4->hospital3_10 + z_plastic1_factory4->hospital4_10
+   - z_plastic1_factory1->factory4_10 + z_plastic1_factory4->factory2_10
    - z_plastic1_DUMMY_RESERVE->factory4_10 - M_plastic1_factory4_10
    + M_plastic1_factory4_11 = 0
  eq[onhand_plastic1_factory4_12]: 8 y_ppe3_factory4_11
-   - z_plastic1_factory1->factory4_11
+   + z_plastic1_factory4->hospital3_11 + z_plastic1_factory4->hospital4_11
+   - z_plastic1_factory1->factory4_11 + z_plastic1_factory4->factory2_11
    - z_plastic1_DUMMY_RESERVE->factory4_11 - M_plastic1_factory4_11
    + M_plastic1_factory4_12 = 0
  eq[onhand_plastic1_factory4_13]: 8 y_ppe3_factory4_12
-   - z_plastic1_factory1->factory4_12
+   + z_plastic1_factory4->hospital3_12 + z_plastic1_factory4->hospital4_12
+   - z_plastic1_factory1->factory4_12 + z_plastic1_factory4->factory2_12
    - z_plastic1_DUMMY_RESERVE->factory4_12 - M_plastic1_factory4_12
    + M_plastic1_factory4_13 = 0
  eq[onhand_plastic1_factory4_14]: 8 y_ppe3_factory4_13
-   - z_plastic1_factory1->factory4_13
+   + z_plastic1_factory4->hospital3_13 + z_plastic1_factory4->hospital4_13
+   - z_plastic1_factory1->factory4_13 + z_plastic1_factory4->factory2_13
    - z_plastic1_DUMMY_RESERVE->factory4_13 - M_plastic1_factory4_13
    + M_plastic1_factory4_14 = 0
  eq[onhand_plastic1_factory4_15]: 8 y_ppe3_factory4_14
-   - z_plastic1_factory1->factory4_14
+   + z_plastic1_factory4->hospital3_14 + z_plastic1_factory4->hospital4_14
+   - z_plastic1_factory1->factory4_14 + z_plastic1_factory4->factory2_14
    - z_plastic1_DUMMY_RESERVE->factory4_14 - M_plastic1_factory4_14
    + M_plastic1_factory4_15 = 0
  eq[onhand_plastic1_factory4_16]: 8 y_ppe3_factory4_15
-   - z_plastic1_factory1->factory4_15
+   + z_plastic1_factory4->hospital3_15 + z_plastic1_factory4->hospital4_15
+   - z_plastic1_factory1->factory4_15 + z_plastic1_factory4->factory2_15
    - z_plastic1_DUMMY_RESERVE->factory4_15 - M_plastic1_factory4_15
    + M_plastic1_factory4_16 = 0
  eq[onhand_plastic1_factory4_17]: 8 y_ppe3_factory4_16
-   - z_plastic1_factory1->factory4_16
+   + z_plastic1_factory4->hospital3_16 + z_plastic1_factory4->hospital4_16
+   - z_plastic1_factory1->factory4_16 + z_plastic1_factory4->factory2_16
    - z_plastic1_DUMMY_RESERVE->factory4_16 - M_plastic1_factory4_16
    + M_plastic1_factory4_17 = 0
  eq[onhand_plastic1_factory4_18]: 8 y_ppe3_factory4_17
-   - z_plastic1_factory1->factory4_17
+   + z_plastic1_factory4->hospital3_17 + z_plastic1_factory4->hospital4_17
+   - z_plastic1_factory1->factory4_17 + z_plastic1_factory4->factory2_17
    - z_plastic1_DUMMY_RESERVE->factory4_17 - M_plastic1_factory4_17
    + M_plastic1_factory4_18 = 0
  eq[onhand_plastic1_factory4_19]: 8 y_ppe3_factory4_18
-   - z_plastic1_factory1->factory4_18
+   + z_plastic1_factory4->hospital3_18 + z_plastic1_factory4->hospital4_18
+   - z_plastic1_factory1->factory4_18 + z_plastic1_factory4->factory2_18
    - z_plastic1_DUMMY_RESERVE->factory4_18 - M_plastic1_factory4_18
    + M_plastic1_factory4_19 = 0
  eq[onhand_plastic1_DUMMY_RESERVE_1]: M_plastic1_DUMMY_RESERVE_1 = 0
@@ -11838,75 +12054,75 @@ Subject To
  eq[onhand_plastic1_DUMMY_RESERVE_19]: M_plastic1_DUMMY_RESERVE_19 = 0
  eq[onhand_plastic1_hospital1_1]: M_plastic1_hospital1_1 = 0
  eq[onhand_plastic1_hospital1_2]: - z_plastic1_factory1->hospital1_1
-   - z_plastic1_factory3->hospital1_1
+   - z_plastic1_factory3->hospital1_1 + z_plastic1_hospital1->hospital2_1
    - z_plastic1_DUMMY_RESERVE->hospital1_1 - M_plastic1_hospital1_1
    + M_plastic1_hospital1_2 = 0
  eq[onhand_plastic1_hospital1_3]: - z_plastic1_factory1->hospital1_2
-   - z_plastic1_factory3->hospital1_2
+   - z_plastic1_factory3->hospital1_2 + z_plastic1_hospital1->hospital2_2
    - z_plastic1_DUMMY_RESERVE->hospital1_2 - M_plastic1_hospital1_2
    + M_plastic1_hospital1_3 = 0
  eq[onhand_plastic1_hospital1_4]: - z_plastic1_factory1->hospital1_3
-   - z_plastic1_factory3->hospital1_3
+   - z_plastic1_factory3->hospital1_3 + z_plastic1_hospital1->hospital2_3
    - z_plastic1_DUMMY_RESERVE->hospital1_3 - M_plastic1_hospital1_3
    + M_plastic1_hospital1_4 = 0
  eq[onhand_plastic1_hospital1_5]: - z_plastic1_factory1->hospital1_4
-   - z_plastic1_factory3->hospital1_4
+   - z_plastic1_factory3->hospital1_4 + z_plastic1_hospital1->hospital2_4
    - z_plastic1_DUMMY_RESERVE->hospital1_4 - M_plastic1_hospital1_4
    + M_plastic1_hospital1_5 = 0
  eq[onhand_plastic1_hospital1_6]: - z_plastic1_factory1->hospital1_5
-   - z_plastic1_factory3->hospital1_5
+   - z_plastic1_factory3->hospital1_5 + z_plastic1_hospital1->hospital2_5
    - z_plastic1_DUMMY_RESERVE->hospital1_5 - M_plastic1_hospital1_5
    + M_plastic1_hospital1_6 = 0
  eq[onhand_plastic1_hospital1_7]: - z_plastic1_factory1->hospital1_6
-   - z_plastic1_factory3->hospital1_6
+   - z_plastic1_factory3->hospital1_6 + z_plastic1_hospital1->hospital2_6
    - z_plastic1_DUMMY_RESERVE->hospital1_6 - M_plastic1_hospital1_6
    + M_plastic1_hospital1_7 = 0
  eq[onhand_plastic1_hospital1_8]: - z_plastic1_factory1->hospital1_7
-   - z_plastic1_factory3->hospital1_7
+   - z_plastic1_factory3->hospital1_7 + z_plastic1_hospital1->hospital2_7
    - z_plastic1_DUMMY_RESERVE->hospital1_7 - M_plastic1_hospital1_7
    + M_plastic1_hospital1_8 = 0
  eq[onhand_plastic1_hospital1_9]: - z_plastic1_factory1->hospital1_8
-   - z_plastic1_factory3->hospital1_8
+   - z_plastic1_factory3->hospital1_8 + z_plastic1_hospital1->hospital2_8
    - z_plastic1_DUMMY_RESERVE->hospital1_8 - M_plastic1_hospital1_8
    + M_plastic1_hospital1_9 = 0
  eq[onhand_plastic1_hospital1_10]: - z_plastic1_factory1->hospital1_9
-   - z_plastic1_factory3->hospital1_9
+   - z_plastic1_factory3->hospital1_9 + z_plastic1_hospital1->hospital2_9
    - z_plastic1_DUMMY_RESERVE->hospital1_9 - M_plastic1_hospital1_9
    + M_plastic1_hospital1_10 = 0
  eq[onhand_plastic1_hospital1_11]: - z_plastic1_factory1->hospital1_10
-   - z_plastic1_factory3->hospital1_10
+   - z_plastic1_factory3->hospital1_10 + z_plastic1_hospital1->hospital2_10
    - z_plastic1_DUMMY_RESERVE->hospital1_10 - M_plastic1_hospital1_10
    + M_plastic1_hospital1_11 = 0
  eq[onhand_plastic1_hospital1_12]: - z_plastic1_factory1->hospital1_11
-   - z_plastic1_factory3->hospital1_11
+   - z_plastic1_factory3->hospital1_11 + z_plastic1_hospital1->hospital2_11
    - z_plastic1_DUMMY_RESERVE->hospital1_11 - M_plastic1_hospital1_11
    + M_plastic1_hospital1_12 = 0
  eq[onhand_plastic1_hospital1_13]: - z_plastic1_factory1->hospital1_12
-   - z_plastic1_factory3->hospital1_12
+   - z_plastic1_factory3->hospital1_12 + z_plastic1_hospital1->hospital2_12
    - z_plastic1_DUMMY_RESERVE->hospital1_12 - M_plastic1_hospital1_12
    + M_plastic1_hospital1_13 = 0
  eq[onhand_plastic1_hospital1_14]: - z_plastic1_factory1->hospital1_13
-   - z_plastic1_factory3->hospital1_13
+   - z_plastic1_factory3->hospital1_13 + z_plastic1_hospital1->hospital2_13
    - z_plastic1_DUMMY_RESERVE->hospital1_13 - M_plastic1_hospital1_13
    + M_plastic1_hospital1_14 = 0
  eq[onhand_plastic1_hospital1_15]: - z_plastic1_factory1->hospital1_14
-   - z_plastic1_factory3->hospital1_14
+   - z_plastic1_factory3->hospital1_14 + z_plastic1_hospital1->hospital2_14
    - z_plastic1_DUMMY_RESERVE->hospital1_14 - M_plastic1_hospital1_14
    + M_plastic1_hospital1_15 = 0
  eq[onhand_plastic1_hospital1_16]: - z_plastic1_factory1->hospital1_15
-   - z_plastic1_factory3->hospital1_15
+   - z_plastic1_factory3->hospital1_15 + z_plastic1_hospital1->hospital2_15
    - z_plastic1_DUMMY_RESERVE->hospital1_15 - M_plastic1_hospital1_15
    + M_plastic1_hospital1_16 = 0
  eq[onhand_plastic1_hospital1_17]: - z_plastic1_factory1->hospital1_16
-   - z_plastic1_factory3->hospital1_16
+   - z_plastic1_factory3->hospital1_16 + z_plastic1_hospital1->hospital2_16
    - z_plastic1_DUMMY_RESERVE->hospital1_16 - M_plastic1_hospital1_16
    + M_plastic1_hospital1_17 = 0
  eq[onhand_plastic1_hospital1_18]: - z_plastic1_factory1->hospital1_17
-   - z_plastic1_factory3->hospital1_17
+   - z_plastic1_factory3->hospital1_17 + z_plastic1_hospital1->hospital2_17
    - z_plastic1_DUMMY_RESERVE->hospital1_17 - M_plastic1_hospital1_17
    + M_plastic1_hospital1_18 = 0
  eq[onhand_plastic1_hospital1_19]: - z_plastic1_factory1->hospital1_18
-   - z_plastic1_factory3->hospital1_18
+   - z_plastic1_factory3->hospital1_18 + z_plastic1_hospital1->hospital2_18
    - z_plastic1_DUMMY_RESERVE->hospital1_18 - M_plastic1_hospital1_18
    + M_plastic1_hospital1_19 = 0
  eq[onhand_plastic1_hospital2_1]: M_plastic1_hospital2_1 = 0
@@ -12130,276 +12346,375 @@ Subject To
    + M_plastic1_hospital4_19 = 0
  eq[onhand_plastic2_factory1_1]: M_plastic2_factory1_1 = 120
  eq[onhand_plastic2_factory1_2]: 5 y_ppe1_factory1_1
+   + z_plastic2_factory1->hospital1_1 + z_plastic2_factory1->hospital2_1
+   + z_plastic2_factory1->factory4_1 + z_plastic2_factory1->factory2_1
    - z_plastic2_DUMMY_RESERVE->factory1_1 - M_plastic2_factory1_1
    + M_plastic2_factory1_2 = 0
  eq[onhand_plastic2_factory1_3]: 5 y_ppe1_factory1_2
+   + z_plastic2_factory1->hospital1_2 + z_plastic2_factory1->hospital2_2
+   + z_plastic2_factory1->factory4_2 + z_plastic2_factory1->factory2_2
    - z_plastic2_DUMMY_RESERVE->factory1_2 - M_plastic2_factory1_2
    + M_plastic2_factory1_3 = 0
  eq[onhand_plastic2_factory1_4]: 5 y_ppe1_factory1_3
+   + z_plastic2_factory1->hospital1_3 + z_plastic2_factory1->hospital2_3
+   + z_plastic2_factory1->factory4_3 + z_plastic2_factory1->factory2_3
    - z_plastic2_DUMMY_RESERVE->factory1_3 - M_plastic2_factory1_3
    + M_plastic2_factory1_4 = 0
  eq[onhand_plastic2_factory1_5]: 5 y_ppe1_factory1_4
+   + z_plastic2_factory1->hospital1_4 + z_plastic2_factory1->hospital2_4
+   + z_plastic2_factory1->factory4_4 + z_plastic2_factory1->factory2_4
    - z_plastic2_DUMMY_RESERVE->factory1_4 - M_plastic2_factory1_4
    + M_plastic2_factory1_5 = 0
  eq[onhand_plastic2_factory1_6]: 5 y_ppe1_factory1_5
+   + z_plastic2_factory1->hospital1_5 + z_plastic2_factory1->hospital2_5
+   + z_plastic2_factory1->factory4_5 + z_plastic2_factory1->factory2_5
    - z_plastic2_DUMMY_RESERVE->factory1_5 - M_plastic2_factory1_5
    + M_plastic2_factory1_6 = 0
  eq[onhand_plastic2_factory1_7]: 5 y_ppe1_factory1_6
+   + z_plastic2_factory1->hospital1_6 + z_plastic2_factory1->hospital2_6
+   + z_plastic2_factory1->factory4_6 + z_plastic2_factory1->factory2_6
    - z_plastic2_DUMMY_RESERVE->factory1_6 - M_plastic2_factory1_6
    + M_plastic2_factory1_7 = 0
  eq[onhand_plastic2_factory1_8]: 5 y_ppe1_factory1_7
+   + z_plastic2_factory1->hospital1_7 + z_plastic2_factory1->hospital2_7
+   + z_plastic2_factory1->factory4_7 + z_plastic2_factory1->factory2_7
    - z_plastic2_DUMMY_RESERVE->factory1_7 - M_plastic2_factory1_7
    + M_plastic2_factory1_8 = 0
  eq[onhand_plastic2_factory1_9]: 5 y_ppe1_factory1_8
+   + z_plastic2_factory1->hospital1_8 + z_plastic2_factory1->hospital2_8
+   + z_plastic2_factory1->factory4_8 + z_plastic2_factory1->factory2_8
    - z_plastic2_DUMMY_RESERVE->factory1_8 - M_plastic2_factory1_8
    + M_plastic2_factory1_9 = 0
  eq[onhand_plastic2_factory1_10]: 5 y_ppe1_factory1_9
+   + z_plastic2_factory1->hospital1_9 + z_plastic2_factory1->hospital2_9
+   + z_plastic2_factory1->factory4_9 + z_plastic2_factory1->factory2_9
    - z_plastic2_DUMMY_RESERVE->factory1_9 - M_plastic2_factory1_9
    + M_plastic2_factory1_10 = 0
  eq[onhand_plastic2_factory1_11]: 5 y_ppe1_factory1_10
+   + z_plastic2_factory1->hospital1_10 + z_plastic2_factory1->hospital2_10
+   + z_plastic2_factory1->factory4_10 + z_plastic2_factory1->factory2_10
    - z_plastic2_DUMMY_RESERVE->factory1_10 - M_plastic2_factory1_10
    + M_plastic2_factory1_11 = 0
  eq[onhand_plastic2_factory1_12]: 5 y_ppe1_factory1_11
+   + z_plastic2_factory1->hospital1_11 + z_plastic2_factory1->hospital2_11
+   + z_plastic2_factory1->factory4_11 + z_plastic2_factory1->factory2_11
    - z_plastic2_DUMMY_RESERVE->factory1_11 - M_plastic2_factory1_11
    + M_plastic2_factory1_12 = 0
  eq[onhand_plastic2_factory1_13]: 5 y_ppe1_factory1_12
+   + z_plastic2_factory1->hospital1_12 + z_plastic2_factory1->hospital2_12
+   + z_plastic2_factory1->factory4_12 + z_plastic2_factory1->factory2_12
    - z_plastic2_DUMMY_RESERVE->factory1_12 - M_plastic2_factory1_12
    + M_plastic2_factory1_13 = 0
  eq[onhand_plastic2_factory1_14]: 5 y_ppe1_factory1_13
+   + z_plastic2_factory1->hospital1_13 + z_plastic2_factory1->hospital2_13
+   + z_plastic2_factory1->factory4_13 + z_plastic2_factory1->factory2_13
    - z_plastic2_DUMMY_RESERVE->factory1_13 - M_plastic2_factory1_13
    + M_plastic2_factory1_14 = 0
  eq[onhand_plastic2_factory1_15]: 5 y_ppe1_factory1_14
+   + z_plastic2_factory1->hospital1_14 + z_plastic2_factory1->hospital2_14
+   + z_plastic2_factory1->factory4_14 + z_plastic2_factory1->factory2_14
    - z_plastic2_DUMMY_RESERVE->factory1_14 - M_plastic2_factory1_14
    + M_plastic2_factory1_15 = 0
  eq[onhand_plastic2_factory1_16]: 5 y_ppe1_factory1_15
+   + z_plastic2_factory1->hospital1_15 + z_plastic2_factory1->hospital2_15
+   + z_plastic2_factory1->factory4_15 + z_plastic2_factory1->factory2_15
    - z_plastic2_DUMMY_RESERVE->factory1_15 - M_plastic2_factory1_15
    + M_plastic2_factory1_16 = 0
  eq[onhand_plastic2_factory1_17]: 5 y_ppe1_factory1_16
+   + z_plastic2_factory1->hospital1_16 + z_plastic2_factory1->hospital2_16
+   + z_plastic2_factory1->factory4_16 + z_plastic2_factory1->factory2_16
    - z_plastic2_DUMMY_RESERVE->factory1_16 - M_plastic2_factory1_16
    + M_plastic2_factory1_17 = 0
  eq[onhand_plastic2_factory1_18]: 5 y_ppe1_factory1_17
+   + z_plastic2_factory1->hospital1_17 + z_plastic2_factory1->hospital2_17
+   + z_plastic2_factory1->factory4_17 + z_plastic2_factory1->factory2_17
    - z_plastic2_DUMMY_RESERVE->factory1_17 - M_plastic2_factory1_17
    + M_plastic2_factory1_18 = 0
  eq[onhand_plastic2_factory1_19]: 5 y_ppe1_factory1_18
+   + z_plastic2_factory1->hospital1_18 + z_plastic2_factory1->hospital2_18
+   + z_plastic2_factory1->factory4_18 + z_plastic2_factory1->factory2_18
    - z_plastic2_DUMMY_RESERVE->factory1_18 - M_plastic2_factory1_18
    + M_plastic2_factory1_19 = 0
  eq[onhand_plastic2_factory2_1]: M_plastic2_factory2_1 = 220
  eq[onhand_plastic2_factory2_2]: 5 y_ppe1_factory2_1 + 2 y_ppe2_factory2_1
+   + z_plastic2_factory2->hospital3_1 + z_plastic2_factory2->hospital4_1
    - z_plastic2_factory1->factory2_1 - z_plastic2_factory4->factory2_1
    - z_plastic2_DUMMY_RESERVE->factory2_1 - M_plastic2_factory2_1
    + M_plastic2_factory2_2 = 0
  eq[onhand_plastic2_factory2_3]: 5 y_ppe1_factory2_2 + 2 y_ppe2_factory2_2
+   + z_plastic2_factory2->hospital3_2 + z_plastic2_factory2->hospital4_2
    - z_plastic2_factory1->factory2_2 - z_plastic2_factory4->factory2_2
    - z_plastic2_DUMMY_RESERVE->factory2_2 - M_plastic2_factory2_2
    + M_plastic2_factory2_3 = 0
  eq[onhand_plastic2_factory2_4]: 5 y_ppe1_factory2_3 + 2 y_ppe2_factory2_3
+   + z_plastic2_factory2->hospital3_3 + z_plastic2_factory2->hospital4_3
    - z_plastic2_factory1->factory2_3 - z_plastic2_factory4->factory2_3
    - z_plastic2_DUMMY_RESERVE->factory2_3 - M_plastic2_factory2_3
    + M_plastic2_factory2_4 = 0
  eq[onhand_plastic2_factory2_5]: 5 y_ppe1_factory2_4 + 2 y_ppe2_factory2_4
+   + z_plastic2_factory2->hospital3_4 + z_plastic2_factory2->hospital4_4
    - z_plastic2_factory1->factory2_4 - z_plastic2_factory4->factory2_4
    - z_plastic2_DUMMY_RESERVE->factory2_4 - M_plastic2_factory2_4
    + M_plastic2_factory2_5 = 0
  eq[onhand_plastic2_factory2_6]: 5 y_ppe1_factory2_5 + 2 y_ppe2_factory2_5
+   + z_plastic2_factory2->hospital3_5 + z_plastic2_factory2->hospital4_5
    - z_plastic2_factory1->factory2_5 - z_plastic2_factory4->factory2_5
    - z_plastic2_DUMMY_RESERVE->factory2_5 - M_plastic2_factory2_5
    + M_plastic2_factory2_6 = 0
  eq[onhand_plastic2_factory2_7]: 5 y_ppe1_factory2_6 + 2 y_ppe2_factory2_6
+   + z_plastic2_factory2->hospital3_6 + z_plastic2_factory2->hospital4_6
    - z_plastic2_factory1->factory2_6 - z_plastic2_factory4->factory2_6
    - z_plastic2_DUMMY_RESERVE->factory2_6 - M_plastic2_factory2_6
    + M_plastic2_factory2_7 = 0
  eq[onhand_plastic2_factory2_8]: 5 y_ppe1_factory2_7 + 2 y_ppe2_factory2_7
+   + z_plastic2_factory2->hospital3_7 + z_plastic2_factory2->hospital4_7
    - z_plastic2_factory1->factory2_7 - z_plastic2_factory4->factory2_7
    - z_plastic2_DUMMY_RESERVE->factory2_7 - M_plastic2_factory2_7
    + M_plastic2_factory2_8 = 0
  eq[onhand_plastic2_factory2_9]: 5 y_ppe1_factory2_8 + 2 y_ppe2_factory2_8
+   + z_plastic2_factory2->hospital3_8 + z_plastic2_factory2->hospital4_8
    - z_plastic2_factory1->factory2_8 - z_plastic2_factory4->factory2_8
    - z_plastic2_DUMMY_RESERVE->factory2_8 - M_plastic2_factory2_8
    + M_plastic2_factory2_9 = 0
  eq[onhand_plastic2_factory2_10]: 5 y_ppe1_factory2_9 + 2 y_ppe2_factory2_9
+   + z_plastic2_factory2->hospital3_9 + z_plastic2_factory2->hospital4_9
    - z_plastic2_factory1->factory2_9 - z_plastic2_factory4->factory2_9
    - z_plastic2_DUMMY_RESERVE->factory2_9 - M_plastic2_factory2_9
    + M_plastic2_factory2_10 = 0
  eq[onhand_plastic2_factory2_11]: 5 y_ppe1_factory2_10
-   + 2 y_ppe2_factory2_10 - z_plastic2_factory1->factory2_10
+   + 2 y_ppe2_factory2_10 + z_plastic2_factory2->hospital3_10
+   + z_plastic2_factory2->hospital4_10 - z_plastic2_factory1->factory2_10
    - z_plastic2_factory4->factory2_10
    - z_plastic2_DUMMY_RESERVE->factory2_10 - M_plastic2_factory2_10
    + M_plastic2_factory2_11 = 0
  eq[onhand_plastic2_factory2_12]: 5 y_ppe1_factory2_11
-   + 2 y_ppe2_factory2_11 - z_plastic2_factory1->factory2_11
+   + 2 y_ppe2_factory2_11 + z_plastic2_factory2->hospital3_11
+   + z_plastic2_factory2->hospital4_11 - z_plastic2_factory1->factory2_11
    - z_plastic2_factory4->factory2_11
    - z_plastic2_DUMMY_RESERVE->factory2_11 - M_plastic2_factory2_11
    + M_plastic2_factory2_12 = 0
  eq[onhand_plastic2_factory2_13]: 5 y_ppe1_factory2_12
-   + 2 y_ppe2_factory2_12 - z_plastic2_factory1->factory2_12
+   + 2 y_ppe2_factory2_12 + z_plastic2_factory2->hospital3_12
+   + z_plastic2_factory2->hospital4_12 - z_plastic2_factory1->factory2_12
    - z_plastic2_factory4->factory2_12
    - z_plastic2_DUMMY_RESERVE->factory2_12 - M_plastic2_factory2_12
    + M_plastic2_factory2_13 = 0
  eq[onhand_plastic2_factory2_14]: 5 y_ppe1_factory2_13
-   + 2 y_ppe2_factory2_13 - z_plastic2_factory1->factory2_13
+   + 2 y_ppe2_factory2_13 + z_plastic2_factory2->hospital3_13
+   + z_plastic2_factory2->hospital4_13 - z_plastic2_factory1->factory2_13
    - z_plastic2_factory4->factory2_13
    - z_plastic2_DUMMY_RESERVE->factory2_13 - M_plastic2_factory2_13
    + M_plastic2_factory2_14 = 0
  eq[onhand_plastic2_factory2_15]: 5 y_ppe1_factory2_14
-   + 2 y_ppe2_factory2_14 - z_plastic2_factory1->factory2_14
+   + 2 y_ppe2_factory2_14 + z_plastic2_factory2->hospital3_14
+   + z_plastic2_factory2->hospital4_14 - z_plastic2_factory1->factory2_14
    - z_plastic2_factory4->factory2_14
    - z_plastic2_DUMMY_RESERVE->factory2_14 - M_plastic2_factory2_14
    + M_plastic2_factory2_15 = 0
  eq[onhand_plastic2_factory2_16]: 5 y_ppe1_factory2_15
-   + 2 y_ppe2_factory2_15 - z_plastic2_factory1->factory2_15
+   + 2 y_ppe2_factory2_15 + z_plastic2_factory2->hospital3_15
+   + z_plastic2_factory2->hospital4_15 - z_plastic2_factory1->factory2_15
    - z_plastic2_factory4->factory2_15
    - z_plastic2_DUMMY_RESERVE->factory2_15 - M_plastic2_factory2_15
    + M_plastic2_factory2_16 = 0
  eq[onhand_plastic2_factory2_17]: 5 y_ppe1_factory2_16
-   + 2 y_ppe2_factory2_16 - z_plastic2_factory1->factory2_16
+   + 2 y_ppe2_factory2_16 + z_plastic2_factory2->hospital3_16
+   + z_plastic2_factory2->hospital4_16 - z_plastic2_factory1->factory2_16
    - z_plastic2_factory4->factory2_16
    - z_plastic2_DUMMY_RESERVE->factory2_16 - M_plastic2_factory2_16
    + M_plastic2_factory2_17 = 0
  eq[onhand_plastic2_factory2_18]: 5 y_ppe1_factory2_17
-   + 2 y_ppe2_factory2_17 - z_plastic2_factory1->factory2_17
+   + 2 y_ppe2_factory2_17 + z_plastic2_factory2->hospital3_17
+   + z_plastic2_factory2->hospital4_17 - z_plastic2_factory1->factory2_17
    - z_plastic2_factory4->factory2_17
    - z_plastic2_DUMMY_RESERVE->factory2_17 - M_plastic2_factory2_17
    + M_plastic2_factory2_18 = 0
  eq[onhand_plastic2_factory2_19]: 5 y_ppe1_factory2_18
-   + 2 y_ppe2_factory2_18 - z_plastic2_factory1->factory2_18
+   + 2 y_ppe2_factory2_18 + z_plastic2_factory2->hospital3_18
+   + z_plastic2_factory2->hospital4_18 - z_plastic2_factory1->factory2_18
    - z_plastic2_factory4->factory2_18
    - z_plastic2_DUMMY_RESERVE->factory2_18 - M_plastic2_factory2_18
    + M_plastic2_factory2_19 = 0
  eq[onhand_plastic2_factory3_1]: M_plastic2_factory3_1 = 0
  eq[onhand_plastic2_factory3_2]: 7 x_respirator2_factory3_1
    + 2 y_ppe2_factory3_1 + 2 y_ppe3_factory3_1
+   + z_plastic2_factory3->hospital1_1 + z_plastic2_factory3->hospital2_1
    - z_plastic2_DUMMY_RESERVE->factory3_1 - M_plastic2_factory3_1
    + M_plastic2_factory3_2 = 0
  eq[onhand_plastic2_factory3_3]: 7 x_respirator2_factory3_2
    + 2 y_ppe2_factory3_2 + 2 y_ppe3_factory3_2
+   + z_plastic2_factory3->hospital1_2 + z_plastic2_factory3->hospital2_2
    - z_plastic2_DUMMY_RESERVE->factory3_2 - M_plastic2_factory3_2
    + M_plastic2_factory3_3 = 0
  eq[onhand_plastic2_factory3_4]: 7 x_respirator2_factory3_3
    + 2 y_ppe2_factory3_3 + 2 y_ppe3_factory3_3
+   + z_plastic2_factory3->hospital1_3 + z_plastic2_factory3->hospital2_3
    - z_plastic2_DUMMY_RESERVE->factory3_3 - M_plastic2_factory3_3
    + M_plastic2_factory3_4 = 0
  eq[onhand_plastic2_factory3_5]: 7 x_respirator2_factory3_4
    + 2 y_ppe2_factory3_4 + 2 y_ppe3_factory3_4
+   + z_plastic2_factory3->hospital1_4 + z_plastic2_factory3->hospital2_4
    - z_plastic2_DUMMY_RESERVE->factory3_4 - M_plastic2_factory3_4
    + M_plastic2_factory3_5 = 0
  eq[onhand_plastic2_factory3_6]: 7 x_respirator2_factory3_5
    + 2 y_ppe2_factory3_5 + 2 y_ppe3_factory3_5
+   + z_plastic2_factory3->hospital1_5 + z_plastic2_factory3->hospital2_5
    - z_plastic2_DUMMY_RESERVE->factory3_5 - M_plastic2_factory3_5
    + M_plastic2_factory3_6 = 0
  eq[onhand_plastic2_factory3_7]: 7 x_respirator2_factory3_6
    + 2 y_ppe2_factory3_6 + 2 y_ppe3_factory3_6
+   + z_plastic2_factory3->hospital1_6 + z_plastic2_factory3->hospital2_6
    - z_plastic2_DUMMY_RESERVE->factory3_6 - M_plastic2_factory3_6
    + M_plastic2_factory3_7 = 0
  eq[onhand_plastic2_factory3_8]: 7 x_respirator2_factory3_7
    + 2 y_ppe2_factory3_7 + 2 y_ppe3_factory3_7
+   + z_plastic2_factory3->hospital1_7 + z_plastic2_factory3->hospital2_7
    - z_plastic2_DUMMY_RESERVE->factory3_7 - M_plastic2_factory3_7
    + M_plastic2_factory3_8 = 0
  eq[onhand_plastic2_factory3_9]: 7 x_respirator2_factory3_8
    + 2 y_ppe2_factory3_8 + 2 y_ppe3_factory3_8
+   + z_plastic2_factory3->hospital1_8 + z_plastic2_factory3->hospital2_8
    - z_plastic2_DUMMY_RESERVE->factory3_8 - M_plastic2_factory3_8
    + M_plastic2_factory3_9 = 0
  eq[onhand_plastic2_factory3_10]: 7 x_respirator2_factory3_9
    + 2 y_ppe2_factory3_9 + 2 y_ppe3_factory3_9
+   + z_plastic2_factory3->hospital1_9 + z_plastic2_factory3->hospital2_9
    - z_plastic2_DUMMY_RESERVE->factory3_9 - M_plastic2_factory3_9
    + M_plastic2_factory3_10 = 0
  eq[onhand_plastic2_factory3_11]: 7 x_respirator2_factory3_10
    + 2 y_ppe2_factory3_10 + 2 y_ppe3_factory3_10
+   + z_plastic2_factory3->hospital1_10 + z_plastic2_factory3->hospital2_10
    - z_plastic2_DUMMY_RESERVE->factory3_10 - M_plastic2_factory3_10
    + M_plastic2_factory3_11 = 0
  eq[onhand_plastic2_factory3_12]: 7 x_respirator2_factory3_11
    + 2 y_ppe2_factory3_11 + 2 y_ppe3_factory3_11
+   + z_plastic2_factory3->hospital1_11 + z_plastic2_factory3->hospital2_11
    - z_plastic2_DUMMY_RESERVE->factory3_11 - M_plastic2_factory3_11
    + M_plastic2_factory3_12 = 0
  eq[onhand_plastic2_factory3_13]: 7 x_respirator2_factory3_12
    + 2 y_ppe2_factory3_12 + 2 y_ppe3_factory3_12
+   + z_plastic2_factory3->hospital1_12 + z_plastic2_factory3->hospital2_12
    - z_plastic2_DUMMY_RESERVE->factory3_12 - M_plastic2_factory3_12
    + M_plastic2_factory3_13 = 0
  eq[onhand_plastic2_factory3_14]: 7 x_respirator2_factory3_13
    + 2 y_ppe2_factory3_13 + 2 y_ppe3_factory3_13
+   + z_plastic2_factory3->hospital1_13 + z_plastic2_factory3->hospital2_13
    - z_plastic2_DUMMY_RESERVE->factory3_13 - M_plastic2_factory3_13
    + M_plastic2_factory3_14 = 0
  eq[onhand_plastic2_factory3_15]: 7 x_respirator2_factory3_14
    + 2 y_ppe2_factory3_14 + 2 y_ppe3_factory3_14
+   + z_plastic2_factory3->hospital1_14 + z_plastic2_factory3->hospital2_14
    - z_plastic2_DUMMY_RESERVE->factory3_14 - M_plastic2_factory3_14
    + M_plastic2_factory3_15 = 0
  eq[onhand_plastic2_factory3_16]: 7 x_respirator2_factory3_15
    + 2 y_ppe2_factory3_15 + 2 y_ppe3_factory3_15
+   + z_plastic2_factory3->hospital1_15 + z_plastic2_factory3->hospital2_15
    - z_plastic2_DUMMY_RESERVE->factory3_15 - M_plastic2_factory3_15
    + M_plastic2_factory3_16 = 0
  eq[onhand_plastic2_factory3_17]: 7 x_respirator2_factory3_16
    + 2 y_ppe2_factory3_16 + 2 y_ppe3_factory3_16
+   + z_plastic2_factory3->hospital1_16 + z_plastic2_factory3->hospital2_16
    - z_plastic2_DUMMY_RESERVE->factory3_16 - M_plastic2_factory3_16
    + M_plastic2_factory3_17 = 0
  eq[onhand_plastic2_factory3_18]: 7 x_respirator2_factory3_17
    + 2 y_ppe2_factory3_17 + 2 y_ppe3_factory3_17
+   + z_plastic2_factory3->hospital1_17 + z_plastic2_factory3->hospital2_17
    - z_plastic2_DUMMY_RESERVE->factory3_17 - M_plastic2_factory3_17
    + M_plastic2_factory3_18 = 0
  eq[onhand_plastic2_factory3_19]: 7 x_respirator2_factory3_18
    + 2 y_ppe2_factory3_18 + 2 y_ppe3_factory3_18
+   + z_plastic2_factory3->hospital1_18 + z_plastic2_factory3->hospital2_18
    - z_plastic2_DUMMY_RESERVE->factory3_18 - M_plastic2_factory3_18
    + M_plastic2_factory3_19 = 0
  eq[onhand_plastic2_factory4_1]: M_plastic2_factory4_1 = 300
  eq[onhand_plastic2_factory4_2]: 2 y_ppe3_factory4_1
-   - z_plastic2_factory1->factory4_1 - z_plastic2_DUMMY_RESERVE->factory4_1
-   - M_plastic2_factory4_1 + M_plastic2_factory4_2 = 0
+   + z_plastic2_factory4->hospital3_1 + z_plastic2_factory4->hospital4_1
+   - z_plastic2_factory1->factory4_1 + z_plastic2_factory4->factory2_1
+   - z_plastic2_DUMMY_RESERVE->factory4_1 - M_plastic2_factory4_1
+   + M_plastic2_factory4_2 = 0
  eq[onhand_plastic2_factory4_3]: 2 y_ppe3_factory4_2
-   - z_plastic2_factory1->factory4_2 - z_plastic2_DUMMY_RESERVE->factory4_2
-   - M_plastic2_factory4_2 + M_plastic2_factory4_3 = 0
+   + z_plastic2_factory4->hospital3_2 + z_plastic2_factory4->hospital4_2
+   - z_plastic2_factory1->factory4_2 + z_plastic2_factory4->factory2_2
+   - z_plastic2_DUMMY_RESERVE->factory4_2 - M_plastic2_factory4_2
+   + M_plastic2_factory4_3 = 0
  eq[onhand_plastic2_factory4_4]: 2 y_ppe3_factory4_3
-   - z_plastic2_factory1->factory4_3 - z_plastic2_DUMMY_RESERVE->factory4_3
-   - M_plastic2_factory4_3 + M_plastic2_factory4_4 = 0
+   + z_plastic2_factory4->hospital3_3 + z_plastic2_factory4->hospital4_3
+   - z_plastic2_factory1->factory4_3 + z_plastic2_factory4->factory2_3
+   - z_plastic2_DUMMY_RESERVE->factory4_3 - M_plastic2_factory4_3
+   + M_plastic2_factory4_4 = 0
  eq[onhand_plastic2_factory4_5]: 2 y_ppe3_factory4_4
-   - z_plastic2_factory1->factory4_4 - z_plastic2_DUMMY_RESERVE->factory4_4
-   - M_plastic2_factory4_4 + M_plastic2_factory4_5 = 0
+   + z_plastic2_factory4->hospital3_4 + z_plastic2_factory4->hospital4_4
+   - z_plastic2_factory1->factory4_4 + z_plastic2_factory4->factory2_4
+   - z_plastic2_DUMMY_RESERVE->factory4_4 - M_plastic2_factory4_4
+   + M_plastic2_factory4_5 = 0
  eq[onhand_plastic2_factory4_6]: 2 y_ppe3_factory4_5
-   - z_plastic2_factory1->factory4_5 - z_plastic2_DUMMY_RESERVE->factory4_5
-   - M_plastic2_factory4_5 + M_plastic2_factory4_6 = 0
+   + z_plastic2_factory4->hospital3_5 + z_plastic2_factory4->hospital4_5
+   - z_plastic2_factory1->factory4_5 + z_plastic2_factory4->factory2_5
+   - z_plastic2_DUMMY_RESERVE->factory4_5 - M_plastic2_factory4_5
+   + M_plastic2_factory4_6 = 0
  eq[onhand_plastic2_factory4_7]: 2 y_ppe3_factory4_6
-   - z_plastic2_factory1->factory4_6 - z_plastic2_DUMMY_RESERVE->factory4_6
-   - M_plastic2_factory4_6 + M_plastic2_factory4_7 = 0
+   + z_plastic2_factory4->hospital3_6 + z_plastic2_factory4->hospital4_6
+   - z_plastic2_factory1->factory4_6 + z_plastic2_factory4->factory2_6
+   - z_plastic2_DUMMY_RESERVE->factory4_6 - M_plastic2_factory4_6
+   + M_plastic2_factory4_7 = 0
  eq[onhand_plastic2_factory4_8]: 2 y_ppe3_factory4_7
-   - z_plastic2_factory1->factory4_7 - z_plastic2_DUMMY_RESERVE->factory4_7
-   - M_plastic2_factory4_7 + M_plastic2_factory4_8 = 0
+   + z_plastic2_factory4->hospital3_7 + z_plastic2_factory4->hospital4_7
+   - z_plastic2_factory1->factory4_7 + z_plastic2_factory4->factory2_7
+   - z_plastic2_DUMMY_RESERVE->factory4_7 - M_plastic2_factory4_7
+   + M_plastic2_factory4_8 = 0
  eq[onhand_plastic2_factory4_9]: 2 y_ppe3_factory4_8
-   - z_plastic2_factory1->factory4_8 - z_plastic2_DUMMY_RESERVE->factory4_8
-   - M_plastic2_factory4_8 + M_plastic2_factory4_9 = 0
+   + z_plastic2_factory4->hospital3_8 + z_plastic2_factory4->hospital4_8
+   - z_plastic2_factory1->factory4_8 + z_plastic2_factory4->factory2_8
+   - z_plastic2_DUMMY_RESERVE->factory4_8 - M_plastic2_factory4_8
+   + M_plastic2_factory4_9 = 0
  eq[onhand_plastic2_factory4_10]: 2 y_ppe3_factory4_9
-   - z_plastic2_factory1->factory4_9 - z_plastic2_DUMMY_RESERVE->factory4_9
-   - M_plastic2_factory4_9 + M_plastic2_factory4_10 = 0
+   + z_plastic2_factory4->hospital3_9 + z_plastic2_factory4->hospital4_9
+   - z_plastic2_factory1->factory4_9 + z_plastic2_factory4->factory2_9
+   - z_plastic2_DUMMY_RESERVE->factory4_9 - M_plastic2_factory4_9
+   + M_plastic2_factory4_10 = 0
  eq[onhand_plastic2_factory4_11]: 2 y_ppe3_factory4_10
-   - z_plastic2_factory1->factory4_10
+   + z_plastic2_factory4->hospital3_10 + z_plastic2_factory4->hospital4_10
+   - z_plastic2_factory1->factory4_10 + z_plastic2_factory4->factory2_10
    - z_plastic2_DUMMY_RESERVE->factory4_10 - M_plastic2_factory4_10
    + M_plastic2_factory4_11 = 0
  eq[onhand_plastic2_factory4_12]: 2 y_ppe3_factory4_11
-   - z_plastic2_factory1->factory4_11
+   + z_plastic2_factory4->hospital3_11 + z_plastic2_factory4->hospital4_11
+   - z_plastic2_factory1->factory4_11 + z_plastic2_factory4->factory2_11
    - z_plastic2_DUMMY_RESERVE->factory4_11 - M_plastic2_factory4_11
    + M_plastic2_factory4_12 = 0
  eq[onhand_plastic2_factory4_13]: 2 y_ppe3_factory4_12
-   - z_plastic2_factory1->factory4_12
+   + z_plastic2_factory4->hospital3_12 + z_plastic2_factory4->hospital4_12
+   - z_plastic2_factory1->factory4_12 + z_plastic2_factory4->factory2_12
    - z_plastic2_DUMMY_RESERVE->factory4_12 - M_plastic2_factory4_12
    + M_plastic2_factory4_13 = 0
  eq[onhand_plastic2_factory4_14]: 2 y_ppe3_factory4_13
-   - z_plastic2_factory1->factory4_13
+   + z_plastic2_factory4->hospital3_13 + z_plastic2_factory4->hospital4_13
+   - z_plastic2_factory1->factory4_13 + z_plastic2_factory4->factory2_13
    - z_plastic2_DUMMY_RESERVE->factory4_13 - M_plastic2_factory4_13
    + M_plastic2_factory4_14 = 0
  eq[onhand_plastic2_factory4_15]: 2 y_ppe3_factory4_14
-   - z_plastic2_factory1->factory4_14
+   + z_plastic2_factory4->hospital3_14 + z_plastic2_factory4->hospital4_14
+   - z_plastic2_factory1->factory4_14 + z_plastic2_factory4->factory2_14
    - z_plastic2_DUMMY_RESERVE->factory4_14 - M_plastic2_factory4_14
    + M_plastic2_factory4_15 = 0
  eq[onhand_plastic2_factory4_16]: 2 y_ppe3_factory4_15
-   - z_plastic2_factory1->factory4_15
+   + z_plastic2_factory4->hospital3_15 + z_plastic2_factory4->hospital4_15
+   - z_plastic2_factory1->factory4_15 + z_plastic2_factory4->factory2_15
    - z_plastic2_DUMMY_RESERVE->factory4_15 - M_plastic2_factory4_15
    + M_plastic2_factory4_16 = 0
  eq[onhand_plastic2_factory4_17]: 2 y_ppe3_factory4_16
-   - z_plastic2_factory1->factory4_16
+   + z_plastic2_factory4->hospital3_16 + z_plastic2_factory4->hospital4_16
+   - z_plastic2_factory1->factory4_16 + z_plastic2_factory4->factory2_16
    - z_plastic2_DUMMY_RESERVE->factory4_16 - M_plastic2_factory4_16
    + M_plastic2_factory4_17 = 0
  eq[onhand_plastic2_factory4_18]: 2 y_ppe3_factory4_17
-   - z_plastic2_factory1->factory4_17
+   + z_plastic2_factory4->hospital3_17 + z_plastic2_factory4->hospital4_17
+   - z_plastic2_factory1->factory4_17 + z_plastic2_factory4->factory2_17
    - z_plastic2_DUMMY_RESERVE->factory4_17 - M_plastic2_factory4_17
    + M_plastic2_factory4_18 = 0
  eq[onhand_plastic2_factory4_19]: 2 y_ppe3_factory4_18
-   - z_plastic2_factory1->factory4_18
+   + z_plastic2_factory4->hospital3_18 + z_plastic2_factory4->hospital4_18
+   - z_plastic2_factory1->factory4_18 + z_plastic2_factory4->factory2_18
    - z_plastic2_DUMMY_RESERVE->factory4_18 - M_plastic2_factory4_18
    + M_plastic2_factory4_19 = 0
  eq[onhand_plastic2_DUMMY_RESERVE_1]: M_plastic2_DUMMY_RESERVE_1 = 0
@@ -12423,75 +12738,75 @@ Subject To
  eq[onhand_plastic2_DUMMY_RESERVE_19]: M_plastic2_DUMMY_RESERVE_19 = 0
  eq[onhand_plastic2_hospital1_1]: M_plastic2_hospital1_1 = 0
  eq[onhand_plastic2_hospital1_2]: - z_plastic2_factory1->hospital1_1
-   - z_plastic2_factory3->hospital1_1
+   - z_plastic2_factory3->hospital1_1 + z_plastic2_hospital1->hospital2_1
    - z_plastic2_DUMMY_RESERVE->hospital1_1 - M_plastic2_hospital1_1
    + M_plastic2_hospital1_2 = 0
  eq[onhand_plastic2_hospital1_3]: - z_plastic2_factory1->hospital1_2
-   - z_plastic2_factory3->hospital1_2
+   - z_plastic2_factory3->hospital1_2 + z_plastic2_hospital1->hospital2_2
    - z_plastic2_DUMMY_RESERVE->hospital1_2 - M_plastic2_hospital1_2
    + M_plastic2_hospital1_3 = 0
  eq[onhand_plastic2_hospital1_4]: - z_plastic2_factory1->hospital1_3
-   - z_plastic2_factory3->hospital1_3
+   - z_plastic2_factory3->hospital1_3 + z_plastic2_hospital1->hospital2_3
    - z_plastic2_DUMMY_RESERVE->hospital1_3 - M_plastic2_hospital1_3
    + M_plastic2_hospital1_4 = 0
  eq[onhand_plastic2_hospital1_5]: - z_plastic2_factory1->hospital1_4
-   - z_plastic2_factory3->hospital1_4
+   - z_plastic2_factory3->hospital1_4 + z_plastic2_hospital1->hospital2_4
    - z_plastic2_DUMMY_RESERVE->hospital1_4 - M_plastic2_hospital1_4
    + M_plastic2_hospital1_5 = 0
  eq[onhand_plastic2_hospital1_6]: - z_plastic2_factory1->hospital1_5
-   - z_plastic2_factory3->hospital1_5
+   - z_plastic2_factory3->hospital1_5 + z_plastic2_hospital1->hospital2_5
    - z_plastic2_DUMMY_RESERVE->hospital1_5 - M_plastic2_hospital1_5
    + M_plastic2_hospital1_6 = 0
  eq[onhand_plastic2_hospital1_7]: - z_plastic2_factory1->hospital1_6
-   - z_plastic2_factory3->hospital1_6
+   - z_plastic2_factory3->hospital1_6 + z_plastic2_hospital1->hospital2_6
    - z_plastic2_DUMMY_RESERVE->hospital1_6 - M_plastic2_hospital1_6
    + M_plastic2_hospital1_7 = 0
  eq[onhand_plastic2_hospital1_8]: - z_plastic2_factory1->hospital1_7
-   - z_plastic2_factory3->hospital1_7
+   - z_plastic2_factory3->hospital1_7 + z_plastic2_hospital1->hospital2_7
    - z_plastic2_DUMMY_RESERVE->hospital1_7 - M_plastic2_hospital1_7
    + M_plastic2_hospital1_8 = 0
  eq[onhand_plastic2_hospital1_9]: - z_plastic2_factory1->hospital1_8
-   - z_plastic2_factory3->hospital1_8
+   - z_plastic2_factory3->hospital1_8 + z_plastic2_hospital1->hospital2_8
    - z_plastic2_DUMMY_RESERVE->hospital1_8 - M_plastic2_hospital1_8
    + M_plastic2_hospital1_9 = 0
  eq[onhand_plastic2_hospital1_10]: - z_plastic2_factory1->hospital1_9
-   - z_plastic2_factory3->hospital1_9
+   - z_plastic2_factory3->hospital1_9 + z_plastic2_hospital1->hospital2_9
    - z_plastic2_DUMMY_RESERVE->hospital1_9 - M_plastic2_hospital1_9
    + M_plastic2_hospital1_10 = 0
  eq[onhand_plastic2_hospital1_11]: - z_plastic2_factory1->hospital1_10
-   - z_plastic2_factory3->hospital1_10
+   - z_plastic2_factory3->hospital1_10 + z_plastic2_hospital1->hospital2_10
    - z_plastic2_DUMMY_RESERVE->hospital1_10 - M_plastic2_hospital1_10
    + M_plastic2_hospital1_11 = 0
  eq[onhand_plastic2_hospital1_12]: - z_plastic2_factory1->hospital1_11
-   - z_plastic2_factory3->hospital1_11
+   - z_plastic2_factory3->hospital1_11 + z_plastic2_hospital1->hospital2_11
    - z_plastic2_DUMMY_RESERVE->hospital1_11 - M_plastic2_hospital1_11
    + M_plastic2_hospital1_12 = 0
  eq[onhand_plastic2_hospital1_13]: - z_plastic2_factory1->hospital1_12
-   - z_plastic2_factory3->hospital1_12
+   - z_plastic2_factory3->hospital1_12 + z_plastic2_hospital1->hospital2_12
    - z_plastic2_DUMMY_RESERVE->hospital1_12 - M_plastic2_hospital1_12
    + M_plastic2_hospital1_13 = 0
  eq[onhand_plastic2_hospital1_14]: - z_plastic2_factory1->hospital1_13
-   - z_plastic2_factory3->hospital1_13
+   - z_plastic2_factory3->hospital1_13 + z_plastic2_hospital1->hospital2_13
    - z_plastic2_DUMMY_RESERVE->hospital1_13 - M_plastic2_hospital1_13
    + M_plastic2_hospital1_14 = 0
  eq[onhand_plastic2_hospital1_15]: - z_plastic2_factory1->hospital1_14
-   - z_plastic2_factory3->hospital1_14
+   - z_plastic2_factory3->hospital1_14 + z_plastic2_hospital1->hospital2_14
    - z_plastic2_DUMMY_RESERVE->hospital1_14 - M_plastic2_hospital1_14
    + M_plastic2_hospital1_15 = 0
  eq[onhand_plastic2_hospital1_16]: - z_plastic2_factory1->hospital1_15
-   - z_plastic2_factory3->hospital1_15
+   - z_plastic2_factory3->hospital1_15 + z_plastic2_hospital1->hospital2_15
    - z_plastic2_DUMMY_RESERVE->hospital1_15 - M_plastic2_hospital1_15
    + M_plastic2_hospital1_16 = 0
  eq[onhand_plastic2_hospital1_17]: - z_plastic2_factory1->hospital1_16
-   - z_plastic2_factory3->hospital1_16
+   - z_plastic2_factory3->hospital1_16 + z_plastic2_hospital1->hospital2_16
    - z_plastic2_DUMMY_RESERVE->hospital1_16 - M_plastic2_hospital1_16
    + M_plastic2_hospital1_17 = 0
  eq[onhand_plastic2_hospital1_18]: - z_plastic2_factory1->hospital1_17
-   - z_plastic2_factory3->hospital1_17
+   - z_plastic2_factory3->hospital1_17 + z_plastic2_hospital1->hospital2_17
    - z_plastic2_DUMMY_RESERVE->hospital1_17 - M_plastic2_hospital1_17
    + M_plastic2_hospital1_18 = 0
  eq[onhand_plastic2_hospital1_19]: - z_plastic2_factory1->hospital1_18
-   - z_plastic2_factory3->hospital1_18
+   - z_plastic2_factory3->hospital1_18 + z_plastic2_hospital1->hospital2_18
    - z_plastic2_DUMMY_RESERVE->hospital1_18 - M_plastic2_hospital1_18
    + M_plastic2_hospital1_19 = 0
  eq[onhand_plastic2_hospital2_1]: M_plastic2_hospital2_1 = 0
@@ -12715,258 +13030,366 @@ Subject To
    + M_plastic2_hospital4_19 = 0
  eq[onhand_plastic3_factory1_1]: M_plastic3_factory1_1 = 300
  eq[onhand_plastic3_factory1_2]: 4 x_respirator1_factory1_1
+   + z_plastic3_factory1->hospital1_1 + z_plastic3_factory1->hospital2_1
+   + z_plastic3_factory1->factory4_1 + z_plastic3_factory1->factory2_1
    - z_plastic3_DUMMY_RESERVE->factory1_1 - M_plastic3_factory1_1
    + M_plastic3_factory1_2 = 0
  eq[onhand_plastic3_factory1_3]: 4 x_respirator1_factory1_2
+   + z_plastic3_factory1->hospital1_2 + z_plastic3_factory1->hospital2_2
+   + z_plastic3_factory1->factory4_2 + z_plastic3_factory1->factory2_2
    - z_plastic3_DUMMY_RESERVE->factory1_2 - M_plastic3_factory1_2
    + M_plastic3_factory1_3 = 0
  eq[onhand_plastic3_factory1_4]: 4 x_respirator1_factory1_3
+   + z_plastic3_factory1->hospital1_3 + z_plastic3_factory1->hospital2_3
+   + z_plastic3_factory1->factory4_3 + z_plastic3_factory1->factory2_3
    - z_plastic3_DUMMY_RESERVE->factory1_3 - M_plastic3_factory1_3
    + M_plastic3_factory1_4 = 0
  eq[onhand_plastic3_factory1_5]: 4 x_respirator1_factory1_4
+   + z_plastic3_factory1->hospital1_4 + z_plastic3_factory1->hospital2_4
+   + z_plastic3_factory1->factory4_4 + z_plastic3_factory1->factory2_4
    - z_plastic3_DUMMY_RESERVE->factory1_4 - M_plastic3_factory1_4
    + M_plastic3_factory1_5 = 0
  eq[onhand_plastic3_factory1_6]: 4 x_respirator1_factory1_5
+   + z_plastic3_factory1->hospital1_5 + z_plastic3_factory1->hospital2_5
+   + z_plastic3_factory1->factory4_5 + z_plastic3_factory1->factory2_5
    - z_plastic3_DUMMY_RESERVE->factory1_5 - M_plastic3_factory1_5
    + M_plastic3_factory1_6 = 0
  eq[onhand_plastic3_factory1_7]: 4 x_respirator1_factory1_6
+   + z_plastic3_factory1->hospital1_6 + z_plastic3_factory1->hospital2_6
+   + z_plastic3_factory1->factory4_6 + z_plastic3_factory1->factory2_6
    - z_plastic3_DUMMY_RESERVE->factory1_6 - M_plastic3_factory1_6
    + M_plastic3_factory1_7 = 0
  eq[onhand_plastic3_factory1_8]: 4 x_respirator1_factory1_7
+   + z_plastic3_factory1->hospital1_7 + z_plastic3_factory1->hospital2_7
+   + z_plastic3_factory1->factory4_7 + z_plastic3_factory1->factory2_7
    - z_plastic3_DUMMY_RESERVE->factory1_7 - M_plastic3_factory1_7
    + M_plastic3_factory1_8 = 0
  eq[onhand_plastic3_factory1_9]: 4 x_respirator1_factory1_8
+   + z_plastic3_factory1->hospital1_8 + z_plastic3_factory1->hospital2_8
+   + z_plastic3_factory1->factory4_8 + z_plastic3_factory1->factory2_8
    - z_plastic3_DUMMY_RESERVE->factory1_8 - M_plastic3_factory1_8
    + M_plastic3_factory1_9 = 0
  eq[onhand_plastic3_factory1_10]: 4 x_respirator1_factory1_9
+   + z_plastic3_factory1->hospital1_9 + z_plastic3_factory1->hospital2_9
+   + z_plastic3_factory1->factory4_9 + z_plastic3_factory1->factory2_9
    - z_plastic3_DUMMY_RESERVE->factory1_9 - M_plastic3_factory1_9
    + M_plastic3_factory1_10 = 0
  eq[onhand_plastic3_factory1_11]: 4 x_respirator1_factory1_10
+   + z_plastic3_factory1->hospital1_10 + z_plastic3_factory1->hospital2_10
+   + z_plastic3_factory1->factory4_10 + z_plastic3_factory1->factory2_10
    - z_plastic3_DUMMY_RESERVE->factory1_10 - M_plastic3_factory1_10
    + M_plastic3_factory1_11 = 0
  eq[onhand_plastic3_factory1_12]: 4 x_respirator1_factory1_11
+   + z_plastic3_factory1->hospital1_11 + z_plastic3_factory1->hospital2_11
+   + z_plastic3_factory1->factory4_11 + z_plastic3_factory1->factory2_11
    - z_plastic3_DUMMY_RESERVE->factory1_11 - M_plastic3_factory1_11
    + M_plastic3_factory1_12 = 0
  eq[onhand_plastic3_factory1_13]: 4 x_respirator1_factory1_12
+   + z_plastic3_factory1->hospital1_12 + z_plastic3_factory1->hospital2_12
+   + z_plastic3_factory1->factory4_12 + z_plastic3_factory1->factory2_12
    - z_plastic3_DUMMY_RESERVE->factory1_12 - M_plastic3_factory1_12
    + M_plastic3_factory1_13 = 0
  eq[onhand_plastic3_factory1_14]: 4 x_respirator1_factory1_13
+   + z_plastic3_factory1->hospital1_13 + z_plastic3_factory1->hospital2_13
+   + z_plastic3_factory1->factory4_13 + z_plastic3_factory1->factory2_13
    - z_plastic3_DUMMY_RESERVE->factory1_13 - M_plastic3_factory1_13
    + M_plastic3_factory1_14 = 0
  eq[onhand_plastic3_factory1_15]: 4 x_respirator1_factory1_14
+   + z_plastic3_factory1->hospital1_14 + z_plastic3_factory1->hospital2_14
+   + z_plastic3_factory1->factory4_14 + z_plastic3_factory1->factory2_14
    - z_plastic3_DUMMY_RESERVE->factory1_14 - M_plastic3_factory1_14
    + M_plastic3_factory1_15 = 0
  eq[onhand_plastic3_factory1_16]: 4 x_respirator1_factory1_15
+   + z_plastic3_factory1->hospital1_15 + z_plastic3_factory1->hospital2_15
+   + z_plastic3_factory1->factory4_15 + z_plastic3_factory1->factory2_15
    - z_plastic3_DUMMY_RESERVE->factory1_15 - M_plastic3_factory1_15
    + M_plastic3_factory1_16 = 0
  eq[onhand_plastic3_factory1_17]: 4 x_respirator1_factory1_16
+   + z_plastic3_factory1->hospital1_16 + z_plastic3_factory1->hospital2_16
+   + z_plastic3_factory1->factory4_16 + z_plastic3_factory1->factory2_16
    - z_plastic3_DUMMY_RESERVE->factory1_16 - M_plastic3_factory1_16
    + M_plastic3_factory1_17 = 0
  eq[onhand_plastic3_factory1_18]: 4 x_respirator1_factory1_17
+   + z_plastic3_factory1->hospital1_17 + z_plastic3_factory1->hospital2_17
+   + z_plastic3_factory1->factory4_17 + z_plastic3_factory1->factory2_17
    - z_plastic3_DUMMY_RESERVE->factory1_17 - M_plastic3_factory1_17
    + M_plastic3_factory1_18 = 0
  eq[onhand_plastic3_factory1_19]: 4 x_respirator1_factory1_18
+   + z_plastic3_factory1->hospital1_18 + z_plastic3_factory1->hospital2_18
+   + z_plastic3_factory1->factory4_18 + z_plastic3_factory1->factory2_18
    - z_plastic3_DUMMY_RESERVE->factory1_18 - M_plastic3_factory1_18
    + M_plastic3_factory1_19 = 0
  eq[onhand_plastic3_factory2_1]: M_plastic3_factory2_1 = 0
  eq[onhand_plastic3_factory2_2]: 4 x_respirator1_factory2_1
-   + 9 y_ppe2_factory2_1 - z_plastic3_factory1->factory2_1
+   + 9 y_ppe2_factory2_1 + z_plastic3_factory2->hospital3_1
+   + z_plastic3_factory2->hospital4_1 - z_plastic3_factory1->factory2_1
    - z_plastic3_factory4->factory2_1 - z_plastic3_DUMMY_RESERVE->factory2_1
    - M_plastic3_factory2_1 + M_plastic3_factory2_2 = 0
  eq[onhand_plastic3_factory2_3]: 4 x_respirator1_factory2_2
-   + 9 y_ppe2_factory2_2 - z_plastic3_factory1->factory2_2
+   + 9 y_ppe2_factory2_2 + z_plastic3_factory2->hospital3_2
+   + z_plastic3_factory2->hospital4_2 - z_plastic3_factory1->factory2_2
    - z_plastic3_factory4->factory2_2 - z_plastic3_DUMMY_RESERVE->factory2_2
    - M_plastic3_factory2_2 + M_plastic3_factory2_3 = 0
  eq[onhand_plastic3_factory2_4]: 4 x_respirator1_factory2_3
-   + 9 y_ppe2_factory2_3 - z_plastic3_factory1->factory2_3
+   + 9 y_ppe2_factory2_3 + z_plastic3_factory2->hospital3_3
+   + z_plastic3_factory2->hospital4_3 - z_plastic3_factory1->factory2_3
    - z_plastic3_factory4->factory2_3 - z_plastic3_DUMMY_RESERVE->factory2_3
    - M_plastic3_factory2_3 + M_plastic3_factory2_4 = 0
  eq[onhand_plastic3_factory2_5]: 4 x_respirator1_factory2_4
-   + 9 y_ppe2_factory2_4 - z_plastic3_factory1->factory2_4
+   + 9 y_ppe2_factory2_4 + z_plastic3_factory2->hospital3_4
+   + z_plastic3_factory2->hospital4_4 - z_plastic3_factory1->factory2_4
    - z_plastic3_factory4->factory2_4 - z_plastic3_DUMMY_RESERVE->factory2_4
    - M_plastic3_factory2_4 + M_plastic3_factory2_5 = 0
  eq[onhand_plastic3_factory2_6]: 4 x_respirator1_factory2_5
-   + 9 y_ppe2_factory2_5 - z_plastic3_factory1->factory2_5
+   + 9 y_ppe2_factory2_5 + z_plastic3_factory2->hospital3_5
+   + z_plastic3_factory2->hospital4_5 - z_plastic3_factory1->factory2_5
    - z_plastic3_factory4->factory2_5 - z_plastic3_DUMMY_RESERVE->factory2_5
    - M_plastic3_factory2_5 + M_plastic3_factory2_6 = 0
  eq[onhand_plastic3_factory2_7]: 4 x_respirator1_factory2_6
-   + 9 y_ppe2_factory2_6 - z_plastic3_factory1->factory2_6
+   + 9 y_ppe2_factory2_6 + z_plastic3_factory2->hospital3_6
+   + z_plastic3_factory2->hospital4_6 - z_plastic3_factory1->factory2_6
    - z_plastic3_factory4->factory2_6 - z_plastic3_DUMMY_RESERVE->factory2_6
    - M_plastic3_factory2_6 + M_plastic3_factory2_7 = 0
  eq[onhand_plastic3_factory2_8]: 4 x_respirator1_factory2_7
-   + 9 y_ppe2_factory2_7 - z_plastic3_factory1->factory2_7
+   + 9 y_ppe2_factory2_7 + z_plastic3_factory2->hospital3_7
+   + z_plastic3_factory2->hospital4_7 - z_plastic3_factory1->factory2_7
    - z_plastic3_factory4->factory2_7 - z_plastic3_DUMMY_RESERVE->factory2_7
    - M_plastic3_factory2_7 + M_plastic3_factory2_8 = 0
  eq[onhand_plastic3_factory2_9]: 4 x_respirator1_factory2_8
-   + 9 y_ppe2_factory2_8 - z_plastic3_factory1->factory2_8
+   + 9 y_ppe2_factory2_8 + z_plastic3_factory2->hospital3_8
+   + z_plastic3_factory2->hospital4_8 - z_plastic3_factory1->factory2_8
    - z_plastic3_factory4->factory2_8 - z_plastic3_DUMMY_RESERVE->factory2_8
    - M_plastic3_factory2_8 + M_plastic3_factory2_9 = 0
  eq[onhand_plastic3_factory2_10]: 4 x_respirator1_factory2_9
-   + 9 y_ppe2_factory2_9 - z_plastic3_factory1->factory2_9
+   + 9 y_ppe2_factory2_9 + z_plastic3_factory2->hospital3_9
+   + z_plastic3_factory2->hospital4_9 - z_plastic3_factory1->factory2_9
    - z_plastic3_factory4->factory2_9 - z_plastic3_DUMMY_RESERVE->factory2_9
    - M_plastic3_factory2_9 + M_plastic3_factory2_10 = 0
  eq[onhand_plastic3_factory2_11]: 4 x_respirator1_factory2_10
-   + 9 y_ppe2_factory2_10 - z_plastic3_factory1->factory2_10
+   + 9 y_ppe2_factory2_10 + z_plastic3_factory2->hospital3_10
+   + z_plastic3_factory2->hospital4_10 - z_plastic3_factory1->factory2_10
    - z_plastic3_factory4->factory2_10
    - z_plastic3_DUMMY_RESERVE->factory2_10 - M_plastic3_factory2_10
    + M_plastic3_factory2_11 = 0
  eq[onhand_plastic3_factory2_12]: 4 x_respirator1_factory2_11
-   + 9 y_ppe2_factory2_11 - z_plastic3_factory1->factory2_11
+   + 9 y_ppe2_factory2_11 + z_plastic3_factory2->hospital3_11
+   + z_plastic3_factory2->hospital4_11 - z_plastic3_factory1->factory2_11
    - z_plastic3_factory4->factory2_11
    - z_plastic3_DUMMY_RESERVE->factory2_11 - M_plastic3_factory2_11
    + M_plastic3_factory2_12 = 0
  eq[onhand_plastic3_factory2_13]: 4 x_respirator1_factory2_12
-   + 9 y_ppe2_factory2_12 - z_plastic3_factory1->factory2_12
+   + 9 y_ppe2_factory2_12 + z_plastic3_factory2->hospital3_12
+   + z_plastic3_factory2->hospital4_12 - z_plastic3_factory1->factory2_12
    - z_plastic3_factory4->factory2_12
    - z_plastic3_DUMMY_RESERVE->factory2_12 - M_plastic3_factory2_12
    + M_plastic3_factory2_13 = 0
  eq[onhand_plastic3_factory2_14]: 4 x_respirator1_factory2_13
-   + 9 y_ppe2_factory2_13 - z_plastic3_factory1->factory2_13
+   + 9 y_ppe2_factory2_13 + z_plastic3_factory2->hospital3_13
+   + z_plastic3_factory2->hospital4_13 - z_plastic3_factory1->factory2_13
    - z_plastic3_factory4->factory2_13
    - z_plastic3_DUMMY_RESERVE->factory2_13 - M_plastic3_factory2_13
    + M_plastic3_factory2_14 = 0
  eq[onhand_plastic3_factory2_15]: 4 x_respirator1_factory2_14
-   + 9 y_ppe2_factory2_14 - z_plastic3_factory1->factory2_14
+   + 9 y_ppe2_factory2_14 + z_plastic3_factory2->hospital3_14
+   + z_plastic3_factory2->hospital4_14 - z_plastic3_factory1->factory2_14
    - z_plastic3_factory4->factory2_14
    - z_plastic3_DUMMY_RESERVE->factory2_14 - M_plastic3_factory2_14
    + M_plastic3_factory2_15 = 0
  eq[onhand_plastic3_factory2_16]: 4 x_respirator1_factory2_15
-   + 9 y_ppe2_factory2_15 - z_plastic3_factory1->factory2_15
+   + 9 y_ppe2_factory2_15 + z_plastic3_factory2->hospital3_15
+   + z_plastic3_factory2->hospital4_15 - z_plastic3_factory1->factory2_15
    - z_plastic3_factory4->factory2_15
    - z_plastic3_DUMMY_RESERVE->factory2_15 - M_plastic3_factory2_15
    + M_plastic3_factory2_16 = 0
  eq[onhand_plastic3_factory2_17]: 4 x_respirator1_factory2_16
-   + 9 y_ppe2_factory2_16 - z_plastic3_factory1->factory2_16
+   + 9 y_ppe2_factory2_16 + z_plastic3_factory2->hospital3_16
+   + z_plastic3_factory2->hospital4_16 - z_plastic3_factory1->factory2_16
    - z_plastic3_factory4->factory2_16
    - z_plastic3_DUMMY_RESERVE->factory2_16 - M_plastic3_factory2_16
    + M_plastic3_factory2_17 = 0
  eq[onhand_plastic3_factory2_18]: 4 x_respirator1_factory2_17
-   + 9 y_ppe2_factory2_17 - z_plastic3_factory1->factory2_17
+   + 9 y_ppe2_factory2_17 + z_plastic3_factory2->hospital3_17
+   + z_plastic3_factory2->hospital4_17 - z_plastic3_factory1->factory2_17
    - z_plastic3_factory4->factory2_17
    - z_plastic3_DUMMY_RESERVE->factory2_17 - M_plastic3_factory2_17
    + M_plastic3_factory2_18 = 0
  eq[onhand_plastic3_factory2_19]: 4 x_respirator1_factory2_18
-   + 9 y_ppe2_factory2_18 - z_plastic3_factory1->factory2_18
+   + 9 y_ppe2_factory2_18 + z_plastic3_factory2->hospital3_18
+   + z_plastic3_factory2->hospital4_18 - z_plastic3_factory1->factory2_18
    - z_plastic3_factory4->factory2_18
    - z_plastic3_DUMMY_RESERVE->factory2_18 - M_plastic3_factory2_18
    + M_plastic3_factory2_19 = 0
  eq[onhand_plastic3_factory3_1]: M_plastic3_factory3_1 = 520
  eq[onhand_plastic3_factory3_2]: 9 y_ppe2_factory3_1 + 9 y_ppe3_factory3_1
+   + z_plastic3_factory3->hospital1_1 + z_plastic3_factory3->hospital2_1
    - z_plastic3_DUMMY_RESERVE->factory3_1 - M_plastic3_factory3_1
    + M_plastic3_factory3_2 = 0
  eq[onhand_plastic3_factory3_3]: 9 y_ppe2_factory3_2 + 9 y_ppe3_factory3_2
+   + z_plastic3_factory3->hospital1_2 + z_plastic3_factory3->hospital2_2
    - z_plastic3_DUMMY_RESERVE->factory3_2 - M_plastic3_factory3_2
    + M_plastic3_factory3_3 = 0
  eq[onhand_plastic3_factory3_4]: 9 y_ppe2_factory3_3 + 9 y_ppe3_factory3_3
+   + z_plastic3_factory3->hospital1_3 + z_plastic3_factory3->hospital2_3
    - z_plastic3_DUMMY_RESERVE->factory3_3 - M_plastic3_factory3_3
    + M_plastic3_factory3_4 = 0
  eq[onhand_plastic3_factory3_5]: 9 y_ppe2_factory3_4 + 9 y_ppe3_factory3_4
+   + z_plastic3_factory3->hospital1_4 + z_plastic3_factory3->hospital2_4
    - z_plastic3_DUMMY_RESERVE->factory3_4 - M_plastic3_factory3_4
    + M_plastic3_factory3_5 = 0
  eq[onhand_plastic3_factory3_6]: 9 y_ppe2_factory3_5 + 9 y_ppe3_factory3_5
+   + z_plastic3_factory3->hospital1_5 + z_plastic3_factory3->hospital2_5
    - z_plastic3_DUMMY_RESERVE->factory3_5 - M_plastic3_factory3_5
    + M_plastic3_factory3_6 = 0
  eq[onhand_plastic3_factory3_7]: 9 y_ppe2_factory3_6 + 9 y_ppe3_factory3_6
+   + z_plastic3_factory3->hospital1_6 + z_plastic3_factory3->hospital2_6
    - z_plastic3_DUMMY_RESERVE->factory3_6 - M_plastic3_factory3_6
    + M_plastic3_factory3_7 = 0
  eq[onhand_plastic3_factory3_8]: 9 y_ppe2_factory3_7 + 9 y_ppe3_factory3_7
+   + z_plastic3_factory3->hospital1_7 + z_plastic3_factory3->hospital2_7
    - z_plastic3_DUMMY_RESERVE->factory3_7 - M_plastic3_factory3_7
    + M_plastic3_factory3_8 = 0
  eq[onhand_plastic3_factory3_9]: 9 y_ppe2_factory3_8 + 9 y_ppe3_factory3_8
+   + z_plastic3_factory3->hospital1_8 + z_plastic3_factory3->hospital2_8
    - z_plastic3_DUMMY_RESERVE->factory3_8 - M_plastic3_factory3_8
    + M_plastic3_factory3_9 = 0
  eq[onhand_plastic3_factory3_10]: 9 y_ppe2_factory3_9 + 9 y_ppe3_factory3_9
+   + z_plastic3_factory3->hospital1_9 + z_plastic3_factory3->hospital2_9
    - z_plastic3_DUMMY_RESERVE->factory3_9 - M_plastic3_factory3_9
    + M_plastic3_factory3_10 = 0
  eq[onhand_plastic3_factory3_11]: 9 y_ppe2_factory3_10
-   + 9 y_ppe3_factory3_10 - z_plastic3_DUMMY_RESERVE->factory3_10
-   - M_plastic3_factory3_10 + M_plastic3_factory3_11 = 0
+   + 9 y_ppe3_factory3_10 + z_plastic3_factory3->hospital1_10
+   + z_plastic3_factory3->hospital2_10
+   - z_plastic3_DUMMY_RESERVE->factory3_10 - M_plastic3_factory3_10
+   + M_plastic3_factory3_11 = 0
  eq[onhand_plastic3_factory3_12]: 9 y_ppe2_factory3_11
-   + 9 y_ppe3_factory3_11 - z_plastic3_DUMMY_RESERVE->factory3_11
-   - M_plastic3_factory3_11 + M_plastic3_factory3_12 = 0
+   + 9 y_ppe3_factory3_11 + z_plastic3_factory3->hospital1_11
+   + z_plastic3_factory3->hospital2_11
+   - z_plastic3_DUMMY_RESERVE->factory3_11 - M_plastic3_factory3_11
+   + M_plastic3_factory3_12 = 0
  eq[onhand_plastic3_factory3_13]: 9 y_ppe2_factory3_12
-   + 9 y_ppe3_factory3_12 - z_plastic3_DUMMY_RESERVE->factory3_12
-   - M_plastic3_factory3_12 + M_plastic3_factory3_13 = 0
+   + 9 y_ppe3_factory3_12 + z_plastic3_factory3->hospital1_12
+   + z_plastic3_factory3->hospital2_12
+   - z_plastic3_DUMMY_RESERVE->factory3_12 - M_plastic3_factory3_12
+   + M_plastic3_factory3_13 = 0
  eq[onhand_plastic3_factory3_14]: 9 y_ppe2_factory3_13
-   + 9 y_ppe3_factory3_13 - z_plastic3_DUMMY_RESERVE->factory3_13
-   - M_plastic3_factory3_13 + M_plastic3_factory3_14 = 0
+   + 9 y_ppe3_factory3_13 + z_plastic3_factory3->hospital1_13
+   + z_plastic3_factory3->hospital2_13
+   - z_plastic3_DUMMY_RESERVE->factory3_13 - M_plastic3_factory3_13
+   + M_plastic3_factory3_14 = 0
  eq[onhand_plastic3_factory3_15]: 9 y_ppe2_factory3_14
-   + 9 y_ppe3_factory3_14 - z_plastic3_DUMMY_RESERVE->factory3_14
-   - M_plastic3_factory3_14 + M_plastic3_factory3_15 = 0
+   + 9 y_ppe3_factory3_14 + z_plastic3_factory3->hospital1_14
+   + z_plastic3_factory3->hospital2_14
+   - z_plastic3_DUMMY_RESERVE->factory3_14 - M_plastic3_factory3_14
+   + M_plastic3_factory3_15 = 0
  eq[onhand_plastic3_factory3_16]: 9 y_ppe2_factory3_15
-   + 9 y_ppe3_factory3_15 - z_plastic3_DUMMY_RESERVE->factory3_15
-   - M_plastic3_factory3_15 + M_plastic3_factory3_16 = 0
+   + 9 y_ppe3_factory3_15 + z_plastic3_factory3->hospital1_15
+   + z_plastic3_factory3->hospital2_15
+   - z_plastic3_DUMMY_RESERVE->factory3_15 - M_plastic3_factory3_15
+   + M_plastic3_factory3_16 = 0
  eq[onhand_plastic3_factory3_17]: 9 y_ppe2_factory3_16
-   + 9 y_ppe3_factory3_16 - z_plastic3_DUMMY_RESERVE->factory3_16
-   - M_plastic3_factory3_16 + M_plastic3_factory3_17 = 0
+   + 9 y_ppe3_factory3_16 + z_plastic3_factory3->hospital1_16
+   + z_plastic3_factory3->hospital2_16
+   - z_plastic3_DUMMY_RESERVE->factory3_16 - M_plastic3_factory3_16
+   + M_plastic3_factory3_17 = 0
  eq[onhand_plastic3_factory3_18]: 9 y_ppe2_factory3_17
-   + 9 y_ppe3_factory3_17 - z_plastic3_DUMMY_RESERVE->factory3_17
-   - M_plastic3_factory3_17 + M_plastic3_factory3_18 = 0
+   + 9 y_ppe3_factory3_17 + z_plastic3_factory3->hospital1_17
+   + z_plastic3_factory3->hospital2_17
+   - z_plastic3_DUMMY_RESERVE->factory3_17 - M_plastic3_factory3_17
+   + M_plastic3_factory3_18 = 0
  eq[onhand_plastic3_factory3_19]: 9 y_ppe2_factory3_18
-   + 9 y_ppe3_factory3_18 - z_plastic3_DUMMY_RESERVE->factory3_18
-   - M_plastic3_factory3_18 + M_plastic3_factory3_19 = 0
+   + 9 y_ppe3_factory3_18 + z_plastic3_factory3->hospital1_18
+   + z_plastic3_factory3->hospital2_18
+   - z_plastic3_DUMMY_RESERVE->factory3_18 - M_plastic3_factory3_18
+   + M_plastic3_factory3_19 = 0
  eq[onhand_plastic3_factory4_1]: M_plastic3_factory4_1 = 0
  eq[onhand_plastic3_factory4_2]: 9 y_ppe3_factory4_1
-   - z_plastic3_factory1->factory4_1 - z_plastic3_DUMMY_RESERVE->factory4_1
-   - M_plastic3_factory4_1 + M_plastic3_factory4_2 = 0
+   + z_plastic3_factory4->hospital3_1 + z_plastic3_factory4->hospital4_1
+   - z_plastic3_factory1->factory4_1 + z_plastic3_factory4->factory2_1
+   - z_plastic3_DUMMY_RESERVE->factory4_1 - M_plastic3_factory4_1
+   + M_plastic3_factory4_2 = 0
  eq[onhand_plastic3_factory4_3]: 9 y_ppe3_factory4_2
-   - z_plastic3_factory1->factory4_2 - z_plastic3_DUMMY_RESERVE->factory4_2
-   - M_plastic3_factory4_2 + M_plastic3_factory4_3 = 0
+   + z_plastic3_factory4->hospital3_2 + z_plastic3_factory4->hospital4_2
+   - z_plastic3_factory1->factory4_2 + z_plastic3_factory4->factory2_2
+   - z_plastic3_DUMMY_RESERVE->factory4_2 - M_plastic3_factory4_2
+   + M_plastic3_factory4_3 = 0
  eq[onhand_plastic3_factory4_4]: 9 y_ppe3_factory4_3
-   - z_plastic3_factory1->factory4_3 - z_plastic3_DUMMY_RESERVE->factory4_3
-   - M_plastic3_factory4_3 + M_plastic3_factory4_4 = 0
+   + z_plastic3_factory4->hospital3_3 + z_plastic3_factory4->hospital4_3
+   - z_plastic3_factory1->factory4_3 + z_plastic3_factory4->factory2_3
+   - z_plastic3_DUMMY_RESERVE->factory4_3 - M_plastic3_factory4_3
+   + M_plastic3_factory4_4 = 0
  eq[onhand_plastic3_factory4_5]: 9 y_ppe3_factory4_4
-   - z_plastic3_factory1->factory4_4 - z_plastic3_DUMMY_RESERVE->factory4_4
-   - M_plastic3_factory4_4 + M_plastic3_factory4_5 = 0
+   + z_plastic3_factory4->hospital3_4 + z_plastic3_factory4->hospital4_4
+   - z_plastic3_factory1->factory4_4 + z_plastic3_factory4->factory2_4
+   - z_plastic3_DUMMY_RESERVE->factory4_4 - M_plastic3_factory4_4
+   + M_plastic3_factory4_5 = 0
  eq[onhand_plastic3_factory4_6]: 9 y_ppe3_factory4_5
-   - z_plastic3_factory1->factory4_5 - z_plastic3_DUMMY_RESERVE->factory4_5
-   - M_plastic3_factory4_5 + M_plastic3_factory4_6 = 0
+   + z_plastic3_factory4->hospital3_5 + z_plastic3_factory4->hospital4_5
+   - z_plastic3_factory1->factory4_5 + z_plastic3_factory4->factory2_5
+   - z_plastic3_DUMMY_RESERVE->factory4_5 - M_plastic3_factory4_5
+   + M_plastic3_factory4_6 = 0
  eq[onhand_plastic3_factory4_7]: 9 y_ppe3_factory4_6
-   - z_plastic3_factory1->factory4_6 - z_plastic3_DUMMY_RESERVE->factory4_6
-   - M_plastic3_factory4_6 + M_plastic3_factory4_7 = 0
+   + z_plastic3_factory4->hospital3_6 + z_plastic3_factory4->hospital4_6
+   - z_plastic3_factory1->factory4_6 + z_plastic3_factory4->factory2_6
+   - z_plastic3_DUMMY_RESERVE->factory4_6 - M_plastic3_factory4_6
+   + M_plastic3_factory4_7 = 0
  eq[onhand_plastic3_factory4_8]: 9 y_ppe3_factory4_7
-   - z_plastic3_factory1->factory4_7 - z_plastic3_DUMMY_RESERVE->factory4_7
-   - M_plastic3_factory4_7 + M_plastic3_factory4_8 = 0
+   + z_plastic3_factory4->hospital3_7 + z_plastic3_factory4->hospital4_7
+   - z_plastic3_factory1->factory4_7 + z_plastic3_factory4->factory2_7
+   - z_plastic3_DUMMY_RESERVE->factory4_7 - M_plastic3_factory4_7
+   + M_plastic3_factory4_8 = 0
  eq[onhand_plastic3_factory4_9]: 9 y_ppe3_factory4_8
-   - z_plastic3_factory1->factory4_8 - z_plastic3_DUMMY_RESERVE->factory4_8
-   - M_plastic3_factory4_8 + M_plastic3_factory4_9 = 0
+   + z_plastic3_factory4->hospital3_8 + z_plastic3_factory4->hospital4_8
+   - z_plastic3_factory1->factory4_8 + z_plastic3_factory4->factory2_8
+   - z_plastic3_DUMMY_RESERVE->factory4_8 - M_plastic3_factory4_8
+   + M_plastic3_factory4_9 = 0
  eq[onhand_plastic3_factory4_10]: 9 y_ppe3_factory4_9
-   - z_plastic3_factory1->factory4_9 - z_plastic3_DUMMY_RESERVE->factory4_9
-   - M_plastic3_factory4_9 + M_plastic3_factory4_10 = 0
+   + z_plastic3_factory4->hospital3_9 + z_plastic3_factory4->hospital4_9
+   - z_plastic3_factory1->factory4_9 + z_plastic3_factory4->factory2_9
+   - z_plastic3_DUMMY_RESERVE->factory4_9 - M_plastic3_factory4_9
+   + M_plastic3_factory4_10 = 0
  eq[onhand_plastic3_factory4_11]: 9 y_ppe3_factory4_10
-   - z_plastic3_factory1->factory4_10
+   + z_plastic3_factory4->hospital3_10 + z_plastic3_factory4->hospital4_10
+   - z_plastic3_factory1->factory4_10 + z_plastic3_factory4->factory2_10
    - z_plastic3_DUMMY_RESERVE->factory4_10 - M_plastic3_factory4_10
    + M_plastic3_factory4_11 = 0
  eq[onhand_plastic3_factory4_12]: 9 y_ppe3_factory4_11
-   - z_plastic3_factory1->factory4_11
+   + z_plastic3_factory4->hospital3_11 + z_plastic3_factory4->hospital4_11
+   - z_plastic3_factory1->factory4_11 + z_plastic3_factory4->factory2_11
    - z_plastic3_DUMMY_RESERVE->factory4_11 - M_plastic3_factory4_11
    + M_plastic3_factory4_12 = 0
  eq[onhand_plastic3_factory4_13]: 9 y_ppe3_factory4_12
-   - z_plastic3_factory1->factory4_12
+   + z_plastic3_factory4->hospital3_12 + z_plastic3_factory4->hospital4_12
+   - z_plastic3_factory1->factory4_12 + z_plastic3_factory4->factory2_12
    - z_plastic3_DUMMY_RESERVE->factory4_12 - M_plastic3_factory4_12
    + M_plastic3_factory4_13 = 0
  eq[onhand_plastic3_factory4_14]: 9 y_ppe3_factory4_13
-   - z_plastic3_factory1->factory4_13
+   + z_plastic3_factory4->hospital3_13 + z_plastic3_factory4->hospital4_13
+   - z_plastic3_factory1->factory4_13 + z_plastic3_factory4->factory2_13
    - z_plastic3_DUMMY_RESERVE->factory4_13 - M_plastic3_factory4_13
    + M_plastic3_factory4_14 = 0
  eq[onhand_plastic3_factory4_15]: 9 y_ppe3_factory4_14
-   - z_plastic3_factory1->factory4_14
+   + z_plastic3_factory4->hospital3_14 + z_plastic3_factory4->hospital4_14
+   - z_plastic3_factory1->factory4_14 + z_plastic3_factory4->factory2_14
    - z_plastic3_DUMMY_RESERVE->factory4_14 - M_plastic3_factory4_14
    + M_plastic3_factory4_15 = 0
  eq[onhand_plastic3_factory4_16]: 9 y_ppe3_factory4_15
-   - z_plastic3_factory1->factory4_15
+   + z_plastic3_factory4->hospital3_15 + z_plastic3_factory4->hospital4_15
+   - z_plastic3_factory1->factory4_15 + z_plastic3_factory4->factory2_15
    - z_plastic3_DUMMY_RESERVE->factory4_15 - M_plastic3_factory4_15
    + M_plastic3_factory4_16 = 0
  eq[onhand_plastic3_factory4_17]: 9 y_ppe3_factory4_16
-   - z_plastic3_factory1->factory4_16
+   + z_plastic3_factory4->hospital3_16 + z_plastic3_factory4->hospital4_16
+   - z_plastic3_factory1->factory4_16 + z_plastic3_factory4->factory2_16
    - z_plastic3_DUMMY_RESERVE->factory4_16 - M_plastic3_factory4_16
    + M_plastic3_factory4_17 = 0
  eq[onhand_plastic3_factory4_18]: 9 y_ppe3_factory4_17
-   - z_plastic3_factory1->factory4_17
+   + z_plastic3_factory4->hospital3_17 + z_plastic3_factory4->hospital4_17
+   - z_plastic3_factory1->factory4_17 + z_plastic3_factory4->factory2_17
    - z_plastic3_DUMMY_RESERVE->factory4_17 - M_plastic3_factory4_17
    + M_plastic3_factory4_18 = 0
  eq[onhand_plastic3_factory4_19]: 9 y_ppe3_factory4_18
-   - z_plastic3_factory1->factory4_18
+   + z_plastic3_factory4->hospital3_18 + z_plastic3_factory4->hospital4_18
+   - z_plastic3_factory1->factory4_18 + z_plastic3_factory4->factory2_18
    - z_plastic3_DUMMY_RESERVE->factory4_18 - M_plastic3_factory4_18
    + M_plastic3_factory4_19 = 0
  eq[onhand_plastic3_DUMMY_RESERVE_1]: M_plastic3_DUMMY_RESERVE_1 = 0
@@ -12990,75 +13413,75 @@ Subject To
  eq[onhand_plastic3_DUMMY_RESERVE_19]: M_plastic3_DUMMY_RESERVE_19 = 0
  eq[onhand_plastic3_hospital1_1]: M_plastic3_hospital1_1 = 0
  eq[onhand_plastic3_hospital1_2]: - z_plastic3_factory1->hospital1_1
-   - z_plastic3_factory3->hospital1_1
+   - z_plastic3_factory3->hospital1_1 + z_plastic3_hospital1->hospital2_1
    - z_plastic3_DUMMY_RESERVE->hospital1_1 - M_plastic3_hospital1_1
    + M_plastic3_hospital1_2 = 0
  eq[onhand_plastic3_hospital1_3]: - z_plastic3_factory1->hospital1_2
-   - z_plastic3_factory3->hospital1_2
+   - z_plastic3_factory3->hospital1_2 + z_plastic3_hospital1->hospital2_2
    - z_plastic3_DUMMY_RESERVE->hospital1_2 - M_plastic3_hospital1_2
    + M_plastic3_hospital1_3 = 0
  eq[onhand_plastic3_hospital1_4]: - z_plastic3_factory1->hospital1_3
-   - z_plastic3_factory3->hospital1_3
+   - z_plastic3_factory3->hospital1_3 + z_plastic3_hospital1->hospital2_3
    - z_plastic3_DUMMY_RESERVE->hospital1_3 - M_plastic3_hospital1_3
    + M_plastic3_hospital1_4 = 0
  eq[onhand_plastic3_hospital1_5]: - z_plastic3_factory1->hospital1_4
-   - z_plastic3_factory3->hospital1_4
+   - z_plastic3_factory3->hospital1_4 + z_plastic3_hospital1->hospital2_4
    - z_plastic3_DUMMY_RESERVE->hospital1_4 - M_plastic3_hospital1_4
    + M_plastic3_hospital1_5 = 0
  eq[onhand_plastic3_hospital1_6]: - z_plastic3_factory1->hospital1_5
-   - z_plastic3_factory3->hospital1_5
+   - z_plastic3_factory3->hospital1_5 + z_plastic3_hospital1->hospital2_5
    - z_plastic3_DUMMY_RESERVE->hospital1_5 - M_plastic3_hospital1_5
    + M_plastic3_hospital1_6 = 0
  eq[onhand_plastic3_hospital1_7]: - z_plastic3_factory1->hospital1_6
-   - z_plastic3_factory3->hospital1_6
+   - z_plastic3_factory3->hospital1_6 + z_plastic3_hospital1->hospital2_6
    - z_plastic3_DUMMY_RESERVE->hospital1_6 - M_plastic3_hospital1_6
    + M_plastic3_hospital1_7 = 0
  eq[onhand_plastic3_hospital1_8]: - z_plastic3_factory1->hospital1_7
-   - z_plastic3_factory3->hospital1_7
+   - z_plastic3_factory3->hospital1_7 + z_plastic3_hospital1->hospital2_7
    - z_plastic3_DUMMY_RESERVE->hospital1_7 - M_plastic3_hospital1_7
    + M_plastic3_hospital1_8 = 0
  eq[onhand_plastic3_hospital1_9]: - z_plastic3_factory1->hospital1_8
-   - z_plastic3_factory3->hospital1_8
+   - z_plastic3_factory3->hospital1_8 + z_plastic3_hospital1->hospital2_8
    - z_plastic3_DUMMY_RESERVE->hospital1_8 - M_plastic3_hospital1_8
    + M_plastic3_hospital1_9 = 0
  eq[onhand_plastic3_hospital1_10]: - z_plastic3_factory1->hospital1_9
-   - z_plastic3_factory3->hospital1_9
+   - z_plastic3_factory3->hospital1_9 + z_plastic3_hospital1->hospital2_9
    - z_plastic3_DUMMY_RESERVE->hospital1_9 - M_plastic3_hospital1_9
    + M_plastic3_hospital1_10 = 0
  eq[onhand_plastic3_hospital1_11]: - z_plastic3_factory1->hospital1_10
-   - z_plastic3_factory3->hospital1_10
+   - z_plastic3_factory3->hospital1_10 + z_plastic3_hospital1->hospital2_10
    - z_plastic3_DUMMY_RESERVE->hospital1_10 - M_plastic3_hospital1_10
    + M_plastic3_hospital1_11 = 0
  eq[onhand_plastic3_hospital1_12]: - z_plastic3_factory1->hospital1_11
-   - z_plastic3_factory3->hospital1_11
+   - z_plastic3_factory3->hospital1_11 + z_plastic3_hospital1->hospital2_11
    - z_plastic3_DUMMY_RESERVE->hospital1_11 - M_plastic3_hospital1_11
    + M_plastic3_hospital1_12 = 0
  eq[onhand_plastic3_hospital1_13]: - z_plastic3_factory1->hospital1_12
-   - z_plastic3_factory3->hospital1_12
+   - z_plastic3_factory3->hospital1_12 + z_plastic3_hospital1->hospital2_12
    - z_plastic3_DUMMY_RESERVE->hospital1_12 - M_plastic3_hospital1_12
    + M_plastic3_hospital1_13 = 0
  eq[onhand_plastic3_hospital1_14]: - z_plastic3_factory1->hospital1_13
-   - z_plastic3_factory3->hospital1_13
+   - z_plastic3_factory3->hospital1_13 + z_plastic3_hospital1->hospital2_13
    - z_plastic3_DUMMY_RESERVE->hospital1_13 - M_plastic3_hospital1_13
    + M_plastic3_hospital1_14 = 0
  eq[onhand_plastic3_hospital1_15]: - z_plastic3_factory1->hospital1_14
-   - z_plastic3_factory3->hospital1_14
+   - z_plastic3_factory3->hospital1_14 + z_plastic3_hospital1->hospital2_14
    - z_plastic3_DUMMY_RESERVE->hospital1_14 - M_plastic3_hospital1_14
    + M_plastic3_hospital1_15 = 0
  eq[onhand_plastic3_hospital1_16]: - z_plastic3_factory1->hospital1_15
-   - z_plastic3_factory3->hospital1_15
+   - z_plastic3_factory3->hospital1_15 + z_plastic3_hospital1->hospital2_15
    - z_plastic3_DUMMY_RESERVE->hospital1_15 - M_plastic3_hospital1_15
    + M_plastic3_hospital1_16 = 0
  eq[onhand_plastic3_hospital1_17]: - z_plastic3_factory1->hospital1_16
-   - z_plastic3_factory3->hospital1_16
+   - z_plastic3_factory3->hospital1_16 + z_plastic3_hospital1->hospital2_16
    - z_plastic3_DUMMY_RESERVE->hospital1_16 - M_plastic3_hospital1_16
    + M_plastic3_hospital1_17 = 0
  eq[onhand_plastic3_hospital1_18]: - z_plastic3_factory1->hospital1_17
-   - z_plastic3_factory3->hospital1_17
+   - z_plastic3_factory3->hospital1_17 + z_plastic3_hospital1->hospital2_17
    - z_plastic3_DUMMY_RESERVE->hospital1_17 - M_plastic3_hospital1_17
    + M_plastic3_hospital1_18 = 0
  eq[onhand_plastic3_hospital1_19]: - z_plastic3_factory1->hospital1_18
-   - z_plastic3_factory3->hospital1_18
+   - z_plastic3_factory3->hospital1_18 + z_plastic3_hospital1->hospital2_18
    - z_plastic3_DUMMY_RESERVE->hospital1_18 - M_plastic3_hospital1_18
    + M_plastic3_hospital1_19 = 0
  eq[onhand_plastic3_hospital2_1]: M_plastic3_hospital2_1 = 0
@@ -13280,226 +13703,280 @@ Subject To
    - z_plastic3_factory4->hospital4_18
    - z_plastic3_DUMMY_RESERVE->hospital4_18 - M_plastic3_hospital4_18
    + M_plastic3_hospital4_19 = 0
- eq[onhand_ppe1_factory1_1]: - y_ppe1_factory1_1 + M_ppe1_factory1_1 = 0
- eq[onhand_ppe1_factory1_2]: - y_ppe1_factory1_2
-   - z_ppe1_DUMMY_RESERVE->factory1_1 - M_ppe1_factory1_1
-   + M_ppe1_factory1_2 = 0
- eq[onhand_ppe1_factory1_3]: - y_ppe1_factory1_3
-   - z_ppe1_DUMMY_RESERVE->factory1_2 - M_ppe1_factory1_2
-   + M_ppe1_factory1_3 = 0
- eq[onhand_ppe1_factory1_4]: - y_ppe1_factory1_4
-   - z_ppe1_DUMMY_RESERVE->factory1_3 - M_ppe1_factory1_3
-   + M_ppe1_factory1_4 = 0
- eq[onhand_ppe1_factory1_5]: - y_ppe1_factory1_5
-   - z_ppe1_DUMMY_RESERVE->factory1_4 - M_ppe1_factory1_4
-   + M_ppe1_factory1_5 = 0
- eq[onhand_ppe1_factory1_6]: - y_ppe1_factory1_6
-   - z_ppe1_DUMMY_RESERVE->factory1_5 - M_ppe1_factory1_5
-   + M_ppe1_factory1_6 = 0
- eq[onhand_ppe1_factory1_7]: - y_ppe1_factory1_7
-   - z_ppe1_DUMMY_RESERVE->factory1_6 - M_ppe1_factory1_6
-   + M_ppe1_factory1_7 = 0
- eq[onhand_ppe1_factory1_8]: - y_ppe1_factory1_8
-   - z_ppe1_DUMMY_RESERVE->factory1_7 - M_ppe1_factory1_7
-   + M_ppe1_factory1_8 = 0
- eq[onhand_ppe1_factory1_9]: - y_ppe1_factory1_9
-   - z_ppe1_DUMMY_RESERVE->factory1_8 - M_ppe1_factory1_8
-   + M_ppe1_factory1_9 = 0
- eq[onhand_ppe1_factory1_10]: - y_ppe1_factory1_10
-   - z_ppe1_DUMMY_RESERVE->factory1_9 - M_ppe1_factory1_9
-   + M_ppe1_factory1_10 = 0
- eq[onhand_ppe1_factory1_11]: - y_ppe1_factory1_11
-   - z_ppe1_DUMMY_RESERVE->factory1_10 - M_ppe1_factory1_10
-   + M_ppe1_factory1_11 = 0
- eq[onhand_ppe1_factory1_12]: - y_ppe1_factory1_12
-   - z_ppe1_DUMMY_RESERVE->factory1_11 - M_ppe1_factory1_11
-   + M_ppe1_factory1_12 = 0
- eq[onhand_ppe1_factory1_13]: - y_ppe1_factory1_13
-   - z_ppe1_DUMMY_RESERVE->factory1_12 - M_ppe1_factory1_12
-   + M_ppe1_factory1_13 = 0
- eq[onhand_ppe1_factory1_14]: - y_ppe1_factory1_14
-   - z_ppe1_DUMMY_RESERVE->factory1_13 - M_ppe1_factory1_13
-   + M_ppe1_factory1_14 = 0
- eq[onhand_ppe1_factory1_15]: - y_ppe1_factory1_15
-   - z_ppe1_DUMMY_RESERVE->factory1_14 - M_ppe1_factory1_14
-   + M_ppe1_factory1_15 = 0
- eq[onhand_ppe1_factory1_16]: - y_ppe1_factory1_16
-   - z_ppe1_DUMMY_RESERVE->factory1_15 - M_ppe1_factory1_15
-   + M_ppe1_factory1_16 = 0
- eq[onhand_ppe1_factory1_17]: - y_ppe1_factory1_17
-   - z_ppe1_DUMMY_RESERVE->factory1_16 - M_ppe1_factory1_16
-   + M_ppe1_factory1_17 = 0
- eq[onhand_ppe1_factory1_18]: - y_ppe1_factory1_18
-   - z_ppe1_DUMMY_RESERVE->factory1_17 - M_ppe1_factory1_17
-   + M_ppe1_factory1_18 = 0
- eq[onhand_ppe1_factory1_19]: - y_ppe1_factory1_19
-   - z_ppe1_DUMMY_RESERVE->factory1_18 - M_ppe1_factory1_18
-   + M_ppe1_factory1_19 = 0
- eq[onhand_ppe1_factory2_1]: - y_ppe1_factory2_1 + M_ppe1_factory2_1 = 0
- eq[onhand_ppe1_factory2_2]: - y_ppe1_factory2_2
-   - z_ppe1_factory1->factory2_1 - z_ppe1_factory4->factory2_1
-   - z_ppe1_DUMMY_RESERVE->factory2_1 - M_ppe1_factory2_1
-   + M_ppe1_factory2_2 = 0
- eq[onhand_ppe1_factory2_3]: - y_ppe1_factory2_3
-   - z_ppe1_factory1->factory2_2 - z_ppe1_factory4->factory2_2
-   - z_ppe1_DUMMY_RESERVE->factory2_2 - M_ppe1_factory2_2
-   + M_ppe1_factory2_3 = 0
- eq[onhand_ppe1_factory2_4]: - y_ppe1_factory2_4
-   - z_ppe1_factory1->factory2_3 - z_ppe1_factory4->factory2_3
-   - z_ppe1_DUMMY_RESERVE->factory2_3 - M_ppe1_factory2_3
-   + M_ppe1_factory2_4 = 0
- eq[onhand_ppe1_factory2_5]: - y_ppe1_factory2_5
-   - z_ppe1_factory1->factory2_4 - z_ppe1_factory4->factory2_4
-   - z_ppe1_DUMMY_RESERVE->factory2_4 - M_ppe1_factory2_4
-   + M_ppe1_factory2_5 = 0
- eq[onhand_ppe1_factory2_6]: - y_ppe1_factory2_6
-   - z_ppe1_factory1->factory2_5 - z_ppe1_factory4->factory2_5
-   - z_ppe1_DUMMY_RESERVE->factory2_5 - M_ppe1_factory2_5
-   + M_ppe1_factory2_6 = 0
- eq[onhand_ppe1_factory2_7]: - y_ppe1_factory2_7
-   - z_ppe1_factory1->factory2_6 - z_ppe1_factory4->factory2_6
-   - z_ppe1_DUMMY_RESERVE->factory2_6 - M_ppe1_factory2_6
-   + M_ppe1_factory2_7 = 0
- eq[onhand_ppe1_factory2_8]: - y_ppe1_factory2_8
-   - z_ppe1_factory1->factory2_7 - z_ppe1_factory4->factory2_7
-   - z_ppe1_DUMMY_RESERVE->factory2_7 - M_ppe1_factory2_7
-   + M_ppe1_factory2_8 = 0
- eq[onhand_ppe1_factory2_9]: - y_ppe1_factory2_9
-   - z_ppe1_factory1->factory2_8 - z_ppe1_factory4->factory2_8
-   - z_ppe1_DUMMY_RESERVE->factory2_8 - M_ppe1_factory2_8
-   + M_ppe1_factory2_9 = 0
- eq[onhand_ppe1_factory2_10]: - y_ppe1_factory2_10
-   - z_ppe1_factory1->factory2_9 - z_ppe1_factory4->factory2_9
-   - z_ppe1_DUMMY_RESERVE->factory2_9 - M_ppe1_factory2_9
-   + M_ppe1_factory2_10 = 0
- eq[onhand_ppe1_factory2_11]: - y_ppe1_factory2_11
-   - z_ppe1_factory1->factory2_10 - z_ppe1_factory4->factory2_10
-   - z_ppe1_DUMMY_RESERVE->factory2_10 - M_ppe1_factory2_10
-   + M_ppe1_factory2_11 = 0
- eq[onhand_ppe1_factory2_12]: - y_ppe1_factory2_12
-   - z_ppe1_factory1->factory2_11 - z_ppe1_factory4->factory2_11
-   - z_ppe1_DUMMY_RESERVE->factory2_11 - M_ppe1_factory2_11
-   + M_ppe1_factory2_12 = 0
- eq[onhand_ppe1_factory2_13]: - y_ppe1_factory2_13
-   - z_ppe1_factory1->factory2_12 - z_ppe1_factory4->factory2_12
-   - z_ppe1_DUMMY_RESERVE->factory2_12 - M_ppe1_factory2_12
-   + M_ppe1_factory2_13 = 0
- eq[onhand_ppe1_factory2_14]: - y_ppe1_factory2_14
-   - z_ppe1_factory1->factory2_13 - z_ppe1_factory4->factory2_13
-   - z_ppe1_DUMMY_RESERVE->factory2_13 - M_ppe1_factory2_13
-   + M_ppe1_factory2_14 = 0
- eq[onhand_ppe1_factory2_15]: - y_ppe1_factory2_15
-   - z_ppe1_factory1->factory2_14 - z_ppe1_factory4->factory2_14
-   - z_ppe1_DUMMY_RESERVE->factory2_14 - M_ppe1_factory2_14
-   + M_ppe1_factory2_15 = 0
- eq[onhand_ppe1_factory2_16]: - y_ppe1_factory2_16
-   - z_ppe1_factory1->factory2_15 - z_ppe1_factory4->factory2_15
-   - z_ppe1_DUMMY_RESERVE->factory2_15 - M_ppe1_factory2_15
-   + M_ppe1_factory2_16 = 0
- eq[onhand_ppe1_factory2_17]: - y_ppe1_factory2_17
-   - z_ppe1_factory1->factory2_16 - z_ppe1_factory4->factory2_16
-   - z_ppe1_DUMMY_RESERVE->factory2_16 - M_ppe1_factory2_16
-   + M_ppe1_factory2_17 = 0
- eq[onhand_ppe1_factory2_18]: - y_ppe1_factory2_18
-   - z_ppe1_factory1->factory2_17 - z_ppe1_factory4->factory2_17
-   - z_ppe1_DUMMY_RESERVE->factory2_17 - M_ppe1_factory2_17
-   + M_ppe1_factory2_18 = 0
- eq[onhand_ppe1_factory2_19]: - y_ppe1_factory2_19
-   - z_ppe1_factory1->factory2_18 - z_ppe1_factory4->factory2_18
-   - z_ppe1_DUMMY_RESERVE->factory2_18 - M_ppe1_factory2_18
-   + M_ppe1_factory2_19 = 0
+ eq[onhand_ppe1_factory1_1]: M_ppe1_factory1_1 = 0
+ eq[onhand_ppe1_factory1_2]: z_ppe1_factory1->hospital1_1
+   + z_ppe1_factory1->hospital2_1 + z_ppe1_factory1->factory4_1
+   + z_ppe1_factory1->factory2_1 - z_ppe1_DUMMY_RESERVE->factory1_1
+   - M_ppe1_factory1_1 + M_ppe1_factory1_2 = 0
+ eq[onhand_ppe1_factory1_3]: z_ppe1_factory1->hospital1_2
+   + z_ppe1_factory1->hospital2_2 + z_ppe1_factory1->factory4_2
+   + z_ppe1_factory1->factory2_2 - z_ppe1_DUMMY_RESERVE->factory1_2
+   - M_ppe1_factory1_2 + M_ppe1_factory1_3 = 0
+ eq[onhand_ppe1_factory1_4]: z_ppe1_factory1->hospital1_3
+   + z_ppe1_factory1->hospital2_3 + z_ppe1_factory1->factory4_3
+   + z_ppe1_factory1->factory2_3 - z_ppe1_DUMMY_RESERVE->factory1_3
+   - M_ppe1_factory1_3 + M_ppe1_factory1_4 = 0
+ eq[onhand_ppe1_factory1_5]: z_ppe1_factory1->hospital1_4
+   + z_ppe1_factory1->hospital2_4 + z_ppe1_factory1->factory4_4
+   + z_ppe1_factory1->factory2_4 - z_ppe1_DUMMY_RESERVE->factory1_4
+   - M_ppe1_factory1_4 + M_ppe1_factory1_5 = 0
+ eq[onhand_ppe1_factory1_6]: z_ppe1_factory1->hospital1_5
+   + z_ppe1_factory1->hospital2_5 + z_ppe1_factory1->factory4_5
+   + z_ppe1_factory1->factory2_5 - z_ppe1_DUMMY_RESERVE->factory1_5
+   - M_ppe1_factory1_5 + M_ppe1_factory1_6 = 0
+ eq[onhand_ppe1_factory1_7]: z_ppe1_factory1->hospital1_6
+   + z_ppe1_factory1->hospital2_6 + z_ppe1_factory1->factory4_6
+   + z_ppe1_factory1->factory2_6 - z_ppe1_DUMMY_RESERVE->factory1_6
+   - M_ppe1_factory1_6 + M_ppe1_factory1_7 = 0
+ eq[onhand_ppe1_factory1_8]: z_ppe1_factory1->hospital1_7
+   + z_ppe1_factory1->hospital2_7 + z_ppe1_factory1->factory4_7
+   + z_ppe1_factory1->factory2_7 - z_ppe1_DUMMY_RESERVE->factory1_7
+   - M_ppe1_factory1_7 + M_ppe1_factory1_8 = 0
+ eq[onhand_ppe1_factory1_9]: z_ppe1_factory1->hospital1_8
+   + z_ppe1_factory1->hospital2_8 + z_ppe1_factory1->factory4_8
+   + z_ppe1_factory1->factory2_8 - z_ppe1_DUMMY_RESERVE->factory1_8
+   - M_ppe1_factory1_8 + M_ppe1_factory1_9 = 0
+ eq[onhand_ppe1_factory1_10]: z_ppe1_factory1->hospital1_9
+   + z_ppe1_factory1->hospital2_9 + z_ppe1_factory1->factory4_9
+   + z_ppe1_factory1->factory2_9 - z_ppe1_DUMMY_RESERVE->factory1_9
+   - M_ppe1_factory1_9 + M_ppe1_factory1_10 = 0
+ eq[onhand_ppe1_factory1_11]: z_ppe1_factory1->hospital1_10
+   + z_ppe1_factory1->hospital2_10 + z_ppe1_factory1->factory4_10
+   + z_ppe1_factory1->factory2_10 - z_ppe1_DUMMY_RESERVE->factory1_10
+   - M_ppe1_factory1_10 + M_ppe1_factory1_11 = 0
+ eq[onhand_ppe1_factory1_12]: z_ppe1_factory1->hospital1_11
+   + z_ppe1_factory1->hospital2_11 + z_ppe1_factory1->factory4_11
+   + z_ppe1_factory1->factory2_11 - z_ppe1_DUMMY_RESERVE->factory1_11
+   - M_ppe1_factory1_11 + M_ppe1_factory1_12 = 0
+ eq[onhand_ppe1_factory1_13]: z_ppe1_factory1->hospital1_12
+   + z_ppe1_factory1->hospital2_12 + z_ppe1_factory1->factory4_12
+   + z_ppe1_factory1->factory2_12 - z_ppe1_DUMMY_RESERVE->factory1_12
+   - M_ppe1_factory1_12 + M_ppe1_factory1_13 = 0
+ eq[onhand_ppe1_factory1_14]: z_ppe1_factory1->hospital1_13
+   + z_ppe1_factory1->hospital2_13 + z_ppe1_factory1->factory4_13
+   + z_ppe1_factory1->factory2_13 - z_ppe1_DUMMY_RESERVE->factory1_13
+   - M_ppe1_factory1_13 + M_ppe1_factory1_14 = 0
+ eq[onhand_ppe1_factory1_15]: z_ppe1_factory1->hospital1_14
+   + z_ppe1_factory1->hospital2_14 + z_ppe1_factory1->factory4_14
+   + z_ppe1_factory1->factory2_14 - z_ppe1_DUMMY_RESERVE->factory1_14
+   - M_ppe1_factory1_14 + M_ppe1_factory1_15 = 0
+ eq[onhand_ppe1_factory1_16]: z_ppe1_factory1->hospital1_15
+   + z_ppe1_factory1->hospital2_15 + z_ppe1_factory1->factory4_15
+   + z_ppe1_factory1->factory2_15 - z_ppe1_DUMMY_RESERVE->factory1_15
+   - M_ppe1_factory1_15 + M_ppe1_factory1_16 = 0
+ eq[onhand_ppe1_factory1_17]: z_ppe1_factory1->hospital1_16
+   + z_ppe1_factory1->hospital2_16 + z_ppe1_factory1->factory4_16
+   + z_ppe1_factory1->factory2_16 - z_ppe1_DUMMY_RESERVE->factory1_16
+   - M_ppe1_factory1_16 + M_ppe1_factory1_17 = 0
+ eq[onhand_ppe1_factory1_18]: z_ppe1_factory1->hospital1_17
+   + z_ppe1_factory1->hospital2_17 + z_ppe1_factory1->factory4_17
+   + z_ppe1_factory1->factory2_17 - z_ppe1_DUMMY_RESERVE->factory1_17
+   - M_ppe1_factory1_17 + M_ppe1_factory1_18 = 0
+ eq[onhand_ppe1_factory1_19]: z_ppe1_factory1->hospital1_18
+   + z_ppe1_factory1->hospital2_18 + z_ppe1_factory1->factory4_18
+   + z_ppe1_factory1->factory2_18 - z_ppe1_DUMMY_RESERVE->factory1_18
+   - M_ppe1_factory1_18 + M_ppe1_factory1_19 = 0
+ eq[onhand_ppe1_factory2_1]: M_ppe1_factory2_1 = 0
+ eq[onhand_ppe1_factory2_2]: z_ppe1_factory2->hospital3_1
+   + z_ppe1_factory2->hospital4_1 - z_ppe1_factory1->factory2_1
+   - z_ppe1_factory4->factory2_1 - z_ppe1_DUMMY_RESERVE->factory2_1
+   - M_ppe1_factory2_1 + M_ppe1_factory2_2 = 0
+ eq[onhand_ppe1_factory2_3]: z_ppe1_factory2->hospital3_2
+   + z_ppe1_factory2->hospital4_2 - z_ppe1_factory1->factory2_2
+   - z_ppe1_factory4->factory2_2 - z_ppe1_DUMMY_RESERVE->factory2_2
+   - M_ppe1_factory2_2 + M_ppe1_factory2_3 = 0
+ eq[onhand_ppe1_factory2_4]: z_ppe1_factory2->hospital3_3
+   + z_ppe1_factory2->hospital4_3 - z_ppe1_factory1->factory2_3
+   - z_ppe1_factory4->factory2_3 - z_ppe1_DUMMY_RESERVE->factory2_3
+   - M_ppe1_factory2_3 + M_ppe1_factory2_4 = 0
+ eq[onhand_ppe1_factory2_5]: z_ppe1_factory2->hospital3_4
+   + z_ppe1_factory2->hospital4_4 - z_ppe1_factory1->factory2_4
+   - z_ppe1_factory4->factory2_4 - z_ppe1_DUMMY_RESERVE->factory2_4
+   - M_ppe1_factory2_4 + M_ppe1_factory2_5 = 0
+ eq[onhand_ppe1_factory2_6]: z_ppe1_factory2->hospital3_5
+   + z_ppe1_factory2->hospital4_5 - z_ppe1_factory1->factory2_5
+   - z_ppe1_factory4->factory2_5 - z_ppe1_DUMMY_RESERVE->factory2_5
+   - M_ppe1_factory2_5 + M_ppe1_factory2_6 = 0
+ eq[onhand_ppe1_factory2_7]: z_ppe1_factory2->hospital3_6
+   + z_ppe1_factory2->hospital4_6 - z_ppe1_factory1->factory2_6
+   - z_ppe1_factory4->factory2_6 - z_ppe1_DUMMY_RESERVE->factory2_6
+   - M_ppe1_factory2_6 + M_ppe1_factory2_7 = 0
+ eq[onhand_ppe1_factory2_8]: z_ppe1_factory2->hospital3_7
+   + z_ppe1_factory2->hospital4_7 - z_ppe1_factory1->factory2_7
+   - z_ppe1_factory4->factory2_7 - z_ppe1_DUMMY_RESERVE->factory2_7
+   - M_ppe1_factory2_7 + M_ppe1_factory2_8 = 0
+ eq[onhand_ppe1_factory2_9]: z_ppe1_factory2->hospital3_8
+   + z_ppe1_factory2->hospital4_8 - z_ppe1_factory1->factory2_8
+   - z_ppe1_factory4->factory2_8 - z_ppe1_DUMMY_RESERVE->factory2_8
+   - M_ppe1_factory2_8 + M_ppe1_factory2_9 = 0
+ eq[onhand_ppe1_factory2_10]: z_ppe1_factory2->hospital3_9
+   + z_ppe1_factory2->hospital4_9 - z_ppe1_factory1->factory2_9
+   - z_ppe1_factory4->factory2_9 - z_ppe1_DUMMY_RESERVE->factory2_9
+   - M_ppe1_factory2_9 + M_ppe1_factory2_10 = 0
+ eq[onhand_ppe1_factory2_11]: z_ppe1_factory2->hospital3_10
+   + z_ppe1_factory2->hospital4_10 - z_ppe1_factory1->factory2_10
+   - z_ppe1_factory4->factory2_10 - z_ppe1_DUMMY_RESERVE->factory2_10
+   - M_ppe1_factory2_10 + M_ppe1_factory2_11 = 0
+ eq[onhand_ppe1_factory2_12]: z_ppe1_factory2->hospital3_11
+   + z_ppe1_factory2->hospital4_11 - z_ppe1_factory1->factory2_11
+   - z_ppe1_factory4->factory2_11 - z_ppe1_DUMMY_RESERVE->factory2_11
+   - M_ppe1_factory2_11 + M_ppe1_factory2_12 = 0
+ eq[onhand_ppe1_factory2_13]: z_ppe1_factory2->hospital3_12
+   + z_ppe1_factory2->hospital4_12 - z_ppe1_factory1->factory2_12
+   - z_ppe1_factory4->factory2_12 - z_ppe1_DUMMY_RESERVE->factory2_12
+   - M_ppe1_factory2_12 + M_ppe1_factory2_13 = 0
+ eq[onhand_ppe1_factory2_14]: z_ppe1_factory2->hospital3_13
+   + z_ppe1_factory2->hospital4_13 - z_ppe1_factory1->factory2_13
+   - z_ppe1_factory4->factory2_13 - z_ppe1_DUMMY_RESERVE->factory2_13
+   - M_ppe1_factory2_13 + M_ppe1_factory2_14 = 0
+ eq[onhand_ppe1_factory2_15]: z_ppe1_factory2->hospital3_14
+   + z_ppe1_factory2->hospital4_14 - z_ppe1_factory1->factory2_14
+   - z_ppe1_factory4->factory2_14 - z_ppe1_DUMMY_RESERVE->factory2_14
+   - M_ppe1_factory2_14 + M_ppe1_factory2_15 = 0
+ eq[onhand_ppe1_factory2_16]: z_ppe1_factory2->hospital3_15
+   + z_ppe1_factory2->hospital4_15 - z_ppe1_factory1->factory2_15
+   - z_ppe1_factory4->factory2_15 - z_ppe1_DUMMY_RESERVE->factory2_15
+   - M_ppe1_factory2_15 + M_ppe1_factory2_16 = 0
+ eq[onhand_ppe1_factory2_17]: z_ppe1_factory2->hospital3_16
+   + z_ppe1_factory2->hospital4_16 - z_ppe1_factory1->factory2_16
+   - z_ppe1_factory4->factory2_16 - z_ppe1_DUMMY_RESERVE->factory2_16
+   - M_ppe1_factory2_16 + M_ppe1_factory2_17 = 0
+ eq[onhand_ppe1_factory2_18]: z_ppe1_factory2->hospital3_17
+   + z_ppe1_factory2->hospital4_17 - z_ppe1_factory1->factory2_17
+   - z_ppe1_factory4->factory2_17 - z_ppe1_DUMMY_RESERVE->factory2_17
+   - M_ppe1_factory2_17 + M_ppe1_factory2_18 = 0
+ eq[onhand_ppe1_factory2_19]: z_ppe1_factory2->hospital3_18
+   + z_ppe1_factory2->hospital4_18 - z_ppe1_factory1->factory2_18
+   - z_ppe1_factory4->factory2_18 - z_ppe1_DUMMY_RESERVE->factory2_18
+   - M_ppe1_factory2_18 + M_ppe1_factory2_19 = 0
  eq[onhand_ppe1_factory3_1]: M_ppe1_factory3_1 = 0
- eq[onhand_ppe1_factory3_2]: - z_ppe1_DUMMY_RESERVE->factory3_1
+ eq[onhand_ppe1_factory3_2]: z_ppe1_factory3->hospital1_1
+   + z_ppe1_factory3->hospital2_1 - z_ppe1_DUMMY_RESERVE->factory3_1
    - M_ppe1_factory3_1 + M_ppe1_factory3_2 = 0
- eq[onhand_ppe1_factory3_3]: - z_ppe1_DUMMY_RESERVE->factory3_2
+ eq[onhand_ppe1_factory3_3]: z_ppe1_factory3->hospital1_2
+   + z_ppe1_factory3->hospital2_2 - z_ppe1_DUMMY_RESERVE->factory3_2
    - M_ppe1_factory3_2 + M_ppe1_factory3_3 = 0
- eq[onhand_ppe1_factory3_4]: - z_ppe1_DUMMY_RESERVE->factory3_3
+ eq[onhand_ppe1_factory3_4]: z_ppe1_factory3->hospital1_3
+   + z_ppe1_factory3->hospital2_3 - z_ppe1_DUMMY_RESERVE->factory3_3
    - M_ppe1_factory3_3 + M_ppe1_factory3_4 = 0
- eq[onhand_ppe1_factory3_5]: - z_ppe1_DUMMY_RESERVE->factory3_4
+ eq[onhand_ppe1_factory3_5]: z_ppe1_factory3->hospital1_4
+   + z_ppe1_factory3->hospital2_4 - z_ppe1_DUMMY_RESERVE->factory3_4
    - M_ppe1_factory3_4 + M_ppe1_factory3_5 = 0
- eq[onhand_ppe1_factory3_6]: - z_ppe1_DUMMY_RESERVE->factory3_5
+ eq[onhand_ppe1_factory3_6]: z_ppe1_factory3->hospital1_5
+   + z_ppe1_factory3->hospital2_5 - z_ppe1_DUMMY_RESERVE->factory3_5
    - M_ppe1_factory3_5 + M_ppe1_factory3_6 = 0
- eq[onhand_ppe1_factory3_7]: - z_ppe1_DUMMY_RESERVE->factory3_6
+ eq[onhand_ppe1_factory3_7]: z_ppe1_factory3->hospital1_6
+   + z_ppe1_factory3->hospital2_6 - z_ppe1_DUMMY_RESERVE->factory3_6
    - M_ppe1_factory3_6 + M_ppe1_factory3_7 = 0
- eq[onhand_ppe1_factory3_8]: - z_ppe1_DUMMY_RESERVE->factory3_7
+ eq[onhand_ppe1_factory3_8]: z_ppe1_factory3->hospital1_7
+   + z_ppe1_factory3->hospital2_7 - z_ppe1_DUMMY_RESERVE->factory3_7
    - M_ppe1_factory3_7 + M_ppe1_factory3_8 = 0
- eq[onhand_ppe1_factory3_9]: - z_ppe1_DUMMY_RESERVE->factory3_8
+ eq[onhand_ppe1_factory3_9]: z_ppe1_factory3->hospital1_8
+   + z_ppe1_factory3->hospital2_8 - z_ppe1_DUMMY_RESERVE->factory3_8
    - M_ppe1_factory3_8 + M_ppe1_factory3_9 = 0
- eq[onhand_ppe1_factory3_10]: - z_ppe1_DUMMY_RESERVE->factory3_9
+ eq[onhand_ppe1_factory3_10]: z_ppe1_factory3->hospital1_9
+   + z_ppe1_factory3->hospital2_9 - z_ppe1_DUMMY_RESERVE->factory3_9
    - M_ppe1_factory3_9 + M_ppe1_factory3_10 = 0
- eq[onhand_ppe1_factory3_11]: - z_ppe1_DUMMY_RESERVE->factory3_10
+ eq[onhand_ppe1_factory3_11]: z_ppe1_factory3->hospital1_10
+   + z_ppe1_factory3->hospital2_10 - z_ppe1_DUMMY_RESERVE->factory3_10
    - M_ppe1_factory3_10 + M_ppe1_factory3_11 = 0
- eq[onhand_ppe1_factory3_12]: - z_ppe1_DUMMY_RESERVE->factory3_11
+ eq[onhand_ppe1_factory3_12]: z_ppe1_factory3->hospital1_11
+   + z_ppe1_factory3->hospital2_11 - z_ppe1_DUMMY_RESERVE->factory3_11
    - M_ppe1_factory3_11 + M_ppe1_factory3_12 = 0
- eq[onhand_ppe1_factory3_13]: - z_ppe1_DUMMY_RESERVE->factory3_12
+ eq[onhand_ppe1_factory3_13]: z_ppe1_factory3->hospital1_12
+   + z_ppe1_factory3->hospital2_12 - z_ppe1_DUMMY_RESERVE->factory3_12
    - M_ppe1_factory3_12 + M_ppe1_factory3_13 = 0
- eq[onhand_ppe1_factory3_14]: - z_ppe1_DUMMY_RESERVE->factory3_13
-   - M_ppe1_factory3_13 + M_ppe1_factory3_14 = 0
- eq[onhand_ppe1_factory3_15]: - z_ppe1_DUMMY_RESERVE->factory3_14
+ eq[onhand_ppe1_factory3_14]: z_ppe1_factory3->hospital1_13
+   + z_ppe1_factory3->hospital2_13 - z_ppe1_DUMMY_RESERVE->factory3_13
+   - M_ppe1_factory3_13 + M_ppe1_factory3_14 = 0 
+ eq[onhand_ppe1_factory3_15]: z_ppe1_factory3->hospital1_14
+   + z_ppe1_factory3->hospital2_14 - z_ppe1_DUMMY_RESERVE->factory3_14
    - M_ppe1_factory3_14 + M_ppe1_factory3_15 = 0
- eq[onhand_ppe1_factory3_16]: - z_ppe1_DUMMY_RESERVE->factory3_15
+ eq[onhand_ppe1_factory3_16]: z_ppe1_factory3->hospital1_15
+   + z_ppe1_factory3->hospital2_15 - z_ppe1_DUMMY_RESERVE->factory3_15
    - M_ppe1_factory3_15 + M_ppe1_factory3_16 = 0
- eq[onhand_ppe1_factory3_17]: - z_ppe1_DUMMY_RESERVE->factory3_16
+ eq[onhand_ppe1_factory3_17]: z_ppe1_factory3->hospital1_16
+   + z_ppe1_factory3->hospital2_16 - z_ppe1_DUMMY_RESERVE->factory3_16
    - M_ppe1_factory3_16 + M_ppe1_factory3_17 = 0
- eq[onhand_ppe1_factory3_18]: - z_ppe1_DUMMY_RESERVE->factory3_17
+ eq[onhand_ppe1_factory3_18]: z_ppe1_factory3->hospital1_17
+   + z_ppe1_factory3->hospital2_17 - z_ppe1_DUMMY_RESERVE->factory3_17
    - M_ppe1_factory3_17 + M_ppe1_factory3_18 = 0
- eq[onhand_ppe1_factory3_19]: - z_ppe1_DUMMY_RESERVE->factory3_18
+ eq[onhand_ppe1_factory3_19]: z_ppe1_factory3->hospital1_18
+   + z_ppe1_factory3->hospital2_18 - z_ppe1_DUMMY_RESERVE->factory3_18
    - M_ppe1_factory3_18 + M_ppe1_factory3_19 = 0
  eq[onhand_ppe1_factory4_1]: M_ppe1_factory4_1 = 0
- eq[onhand_ppe1_factory4_2]: - z_ppe1_factory1->factory4_1
-   - z_ppe1_DUMMY_RESERVE->factory4_1 - M_ppe1_factory4_1
-   + M_ppe1_factory4_2 = 0
- eq[onhand_ppe1_factory4_3]: - z_ppe1_factory1->factory4_2
-   - z_ppe1_DUMMY_RESERVE->factory4_2 - M_ppe1_factory4_2
-   + M_ppe1_factory4_3 = 0
- eq[onhand_ppe1_factory4_4]: - z_ppe1_factory1->factory4_3
-   - z_ppe1_DUMMY_RESERVE->factory4_3 - M_ppe1_factory4_3
-   + M_ppe1_factory4_4 = 0
- eq[onhand_ppe1_factory4_5]: - z_ppe1_factory1->factory4_4
-   - z_ppe1_DUMMY_RESERVE->factory4_4 - M_ppe1_factory4_4
-   + M_ppe1_factory4_5 = 0
- eq[onhand_ppe1_factory4_6]: - z_ppe1_factory1->factory4_5
-   - z_ppe1_DUMMY_RESERVE->factory4_5 - M_ppe1_factory4_5
-   + M_ppe1_factory4_6 = 0
- eq[onhand_ppe1_factory4_7]: - z_ppe1_factory1->factory4_6
-   - z_ppe1_DUMMY_RESERVE->factory4_6 - M_ppe1_factory4_6
-   + M_ppe1_factory4_7 = 0
- eq[onhand_ppe1_factory4_8]: - z_ppe1_factory1->factory4_7
-   - z_ppe1_DUMMY_RESERVE->factory4_7 - M_ppe1_factory4_7
-   + M_ppe1_factory4_8 = 0
- eq[onhand_ppe1_factory4_9]: - z_ppe1_factory1->factory4_8
-   - z_ppe1_DUMMY_RESERVE->factory4_8 - M_ppe1_factory4_8
-   + M_ppe1_factory4_9 = 0
- eq[onhand_ppe1_factory4_10]: - z_ppe1_factory1->factory4_9
-   - z_ppe1_DUMMY_RESERVE->factory4_9 - M_ppe1_factory4_9
-   + M_ppe1_factory4_10 = 0
- eq[onhand_ppe1_factory4_11]: - z_ppe1_factory1->factory4_10
-   - z_ppe1_DUMMY_RESERVE->factory4_10 - M_ppe1_factory4_10
-   + M_ppe1_factory4_11 = 0
- eq[onhand_ppe1_factory4_12]: - z_ppe1_factory1->factory4_11
-   - z_ppe1_DUMMY_RESERVE->factory4_11 - M_ppe1_factory4_11
-   + M_ppe1_factory4_12 = 0
- eq[onhand_ppe1_factory4_13]: - z_ppe1_factory1->factory4_12
-   - z_ppe1_DUMMY_RESERVE->factory4_12 - M_ppe1_factory4_12
-   + M_ppe1_factory4_13 = 0
- eq[onhand_ppe1_factory4_14]: - z_ppe1_factory1->factory4_13
-   - z_ppe1_DUMMY_RESERVE->factory4_13 - M_ppe1_factory4_13
-   + M_ppe1_factory4_14 = 0
- eq[onhand_ppe1_factory4_15]: - z_ppe1_factory1->factory4_14
-   - z_ppe1_DUMMY_RESERVE->factory4_14 - M_ppe1_factory4_14
-   + M_ppe1_factory4_15 = 0
- eq[onhand_ppe1_factory4_16]: - z_ppe1_factory1->factory4_15
-   - z_ppe1_DUMMY_RESERVE->factory4_15 - M_ppe1_factory4_15
-   + M_ppe1_factory4_16 = 0
- eq[onhand_ppe1_factory4_17]: - z_ppe1_factory1->factory4_16
-   - z_ppe1_DUMMY_RESERVE->factory4_16 - M_ppe1_factory4_16
-   + M_ppe1_factory4_17 = 0
- eq[onhand_ppe1_factory4_18]: - z_ppe1_factory1->factory4_17
-   - z_ppe1_DUMMY_RESERVE->factory4_17 - M_ppe1_factory4_17
-   + M_ppe1_factory4_18 = 0
- eq[onhand_ppe1_factory4_19]: - z_ppe1_factory1->factory4_18
-   - z_ppe1_DUMMY_RESERVE->factory4_18 - M_ppe1_factory4_18
-   + M_ppe1_factory4_19 = 0
+ eq[onhand_ppe1_factory4_2]: z_ppe1_factory4->hospital3_1
+   + z_ppe1_factory4->hospital4_1 - z_ppe1_factory1->factory4_1
+   + z_ppe1_factory4->factory2_1 - z_ppe1_DUMMY_RESERVE->factory4_1
+   - M_ppe1_factory4_1 + M_ppe1_factory4_2 = 0
+ eq[onhand_ppe1_factory4_3]: z_ppe1_factory4->hospital3_2
+   + z_ppe1_factory4->hospital4_2 - z_ppe1_factory1->factory4_2
+   + z_ppe1_factory4->factory2_2 - z_ppe1_DUMMY_RESERVE->factory4_2
+   - M_ppe1_factory4_2 + M_ppe1_factory4_3 = 0
+ eq[onhand_ppe1_factory4_4]: z_ppe1_factory4->hospital3_3
+   + z_ppe1_factory4->hospital4_3 - z_ppe1_factory1->factory4_3
+   + z_ppe1_factory4->factory2_3 - z_ppe1_DUMMY_RESERVE->factory4_3
+   - M_ppe1_factory4_3 + M_ppe1_factory4_4 = 0
+ eq[onhand_ppe1_factory4_5]: z_ppe1_factory4->hospital3_4
+   + z_ppe1_factory4->hospital4_4 - z_ppe1_factory1->factory4_4
+   + z_ppe1_factory4->factory2_4 - z_ppe1_DUMMY_RESERVE->factory4_4
+   - M_ppe1_factory4_4 + M_ppe1_factory4_5 = 0
+ eq[onhand_ppe1_factory4_6]: z_ppe1_factory4->hospital3_5
+   + z_ppe1_factory4->hospital4_5 - z_ppe1_factory1->factory4_5
+   + z_ppe1_factory4->factory2_5 - z_ppe1_DUMMY_RESERVE->factory4_5
+   - M_ppe1_factory4_5 + M_ppe1_factory4_6 = 0
+ eq[onhand_ppe1_factory4_7]: z_ppe1_factory4->hospital3_6
+   + z_ppe1_factory4->hospital4_6 - z_ppe1_factory1->factory4_6
+   + z_ppe1_factory4->factory2_6 - z_ppe1_DUMMY_RESERVE->factory4_6
+   - M_ppe1_factory4_6 + M_ppe1_factory4_7 = 0
+ eq[onhand_ppe1_factory4_8]: z_ppe1_factory4->hospital3_7
+   + z_ppe1_factory4->hospital4_7 - z_ppe1_factory1->factory4_7
+   + z_ppe1_factory4->factory2_7 - z_ppe1_DUMMY_RESERVE->factory4_7
+   - M_ppe1_factory4_7 + M_ppe1_factory4_8 = 0
+ eq[onhand_ppe1_factory4_9]: z_ppe1_factory4->hospital3_8
+   + z_ppe1_factory4->hospital4_8 - z_ppe1_factory1->factory4_8
+   + z_ppe1_factory4->factory2_8 - z_ppe1_DUMMY_RESERVE->factory4_8
+   - M_ppe1_factory4_8 + M_ppe1_factory4_9 = 0
+ eq[onhand_ppe1_factory4_10]: z_ppe1_factory4->hospital3_9
+   + z_ppe1_factory4->hospital4_9 - z_ppe1_factory1->factory4_9
+   + z_ppe1_factory4->factory2_9 - z_ppe1_DUMMY_RESERVE->factory4_9
+   - M_ppe1_factory4_9 + M_ppe1_factory4_10 = 0
+ eq[onhand_ppe1_factory4_11]: z_ppe1_factory4->hospital3_10
+   + z_ppe1_factory4->hospital4_10 - z_ppe1_factory1->factory4_10
+   + z_ppe1_factory4->factory2_10 - z_ppe1_DUMMY_RESERVE->factory4_10
+   - M_ppe1_factory4_10 + M_ppe1_factory4_11 = 0
+ eq[onhand_ppe1_factory4_12]: z_ppe1_factory4->hospital3_11
+   + z_ppe1_factory4->hospital4_11 - z_ppe1_factory1->factory4_11
+   + z_ppe1_factory4->factory2_11 - z_ppe1_DUMMY_RESERVE->factory4_11
+   - M_ppe1_factory4_11 + M_ppe1_factory4_12 = 0
+ eq[onhand_ppe1_factory4_13]: z_ppe1_factory4->hospital3_12
+   + z_ppe1_factory4->hospital4_12 - z_ppe1_factory1->factory4_12
+   + z_ppe1_factory4->factory2_12 - z_ppe1_DUMMY_RESERVE->factory4_12
+   - M_ppe1_factory4_12 + M_ppe1_factory4_13 = 0
+ eq[onhand_ppe1_factory4_14]: z_ppe1_factory4->hospital3_13
+   + z_ppe1_factory4->hospital4_13 - z_ppe1_factory1->factory4_13
+   + z_ppe1_factory4->factory2_13 - z_ppe1_DUMMY_RESERVE->factory4_13
+   - M_ppe1_factory4_13 + M_ppe1_factory4_14 = 0
+ eq[onhand_ppe1_factory4_15]: z_ppe1_factory4->hospital3_14
+   + z_ppe1_factory4->hospital4_14 - z_ppe1_factory1->factory4_14
+   + z_ppe1_factory4->factory2_14 - z_ppe1_DUMMY_RESERVE->factory4_14
+   - M_ppe1_factory4_14 + M_ppe1_factory4_15 = 0
+ eq[onhand_ppe1_factory4_16]: z_ppe1_factory4->hospital3_15
+   + z_ppe1_factory4->hospital4_15 - z_ppe1_factory1->factory4_15
+   + z_ppe1_factory4->factory2_15 - z_ppe1_DUMMY_RESERVE->factory4_15
+   - M_ppe1_factory4_15 + M_ppe1_factory4_16 = 0
+ eq[onhand_ppe1_factory4_17]: z_ppe1_factory4->hospital3_16
+   + z_ppe1_factory4->hospital4_16 - z_ppe1_factory1->factory4_16
+   + z_ppe1_factory4->factory2_16 - z_ppe1_DUMMY_RESERVE->factory4_16
+   - M_ppe1_factory4_16 + M_ppe1_factory4_17 = 0
+ eq[onhand_ppe1_factory4_18]: z_ppe1_factory4->hospital3_17
+   + z_ppe1_factory4->hospital4_17 - z_ppe1_factory1->factory4_17
+   + z_ppe1_factory4->factory2_17 - z_ppe1_DUMMY_RESERVE->factory4_17
+   - M_ppe1_factory4_17 + M_ppe1_factory4_18 = 0
+ eq[onhand_ppe1_factory4_19]: z_ppe1_factory4->hospital3_18
+   + z_ppe1_factory4->hospital4_18 - z_ppe1_factory1->factory4_18
+   + z_ppe1_factory4->factory2_18 - z_ppe1_DUMMY_RESERVE->factory4_18
+   - M_ppe1_factory4_18 + M_ppe1_factory4_19 = 0
  eq[onhand_ppe1_DUMMY_RESERVE_1]: M_ppe1_DUMMY_RESERVE_1 = 1e+06
  eq[onhand_ppe1_DUMMY_RESERVE_2]: M_ppe1_DUMMY_RESERVE_2 = 1e+06
  eq[onhand_ppe1_DUMMY_RESERVE_3]: M_ppe1_DUMMY_RESERVE_3 = 1e+06
@@ -13521,59 +13998,77 @@ Subject To
  eq[onhand_ppe1_DUMMY_RESERVE_19]: M_ppe1_DUMMY_RESERVE_19 = 1e+06
  eq[onhand_ppe1_hospital1_1]: M_ppe1_hospital1_1 = 0
  eq[onhand_ppe1_hospital1_2]: - z_ppe1_factory1->hospital1_1
-   - z_ppe1_factory3->hospital1_1 - z_ppe1_DUMMY_RESERVE->hospital1_1
-   - M_ppe1_hospital1_1 + M_ppe1_hospital1_2 = 0
+   - z_ppe1_factory3->hospital1_1 + z_ppe1_hospital1->hospital2_1
+   - z_ppe1_DUMMY_RESERVE->hospital1_1 - M_ppe1_hospital1_1
+   + M_ppe1_hospital1_2 = 0
  eq[onhand_ppe1_hospital1_3]: - z_ppe1_factory1->hospital1_2
-   - z_ppe1_factory3->hospital1_2 - z_ppe1_DUMMY_RESERVE->hospital1_2
-   - M_ppe1_hospital1_2 + M_ppe1_hospital1_3 = 0
+   - z_ppe1_factory3->hospital1_2 + z_ppe1_hospital1->hospital2_2
+   - z_ppe1_DUMMY_RESERVE->hospital1_2 - M_ppe1_hospital1_2
+   + M_ppe1_hospital1_3 = 0
  eq[onhand_ppe1_hospital1_4]: - z_ppe1_factory1->hospital1_3
-   - z_ppe1_factory3->hospital1_3 - z_ppe1_DUMMY_RESERVE->hospital1_3
-   - M_ppe1_hospital1_3 + M_ppe1_hospital1_4 = 0
+   - z_ppe1_factory3->hospital1_3 + z_ppe1_hospital1->hospital2_3
+   - z_ppe1_DUMMY_RESERVE->hospital1_3 - M_ppe1_hospital1_3
+   + M_ppe1_hospital1_4 = 0
  eq[onhand_ppe1_hospital1_5]: - z_ppe1_factory1->hospital1_4
-   - z_ppe1_factory3->hospital1_4 - z_ppe1_DUMMY_RESERVE->hospital1_4
-   - M_ppe1_hospital1_4 + M_ppe1_hospital1_5 = 0
+   - z_ppe1_factory3->hospital1_4 + z_ppe1_hospital1->hospital2_4
+   - z_ppe1_DUMMY_RESERVE->hospital1_4 - M_ppe1_hospital1_4
+   + M_ppe1_hospital1_5 = 0
  eq[onhand_ppe1_hospital1_6]: - z_ppe1_factory1->hospital1_5
-   - z_ppe1_factory3->hospital1_5 - z_ppe1_DUMMY_RESERVE->hospital1_5
-   - M_ppe1_hospital1_5 + M_ppe1_hospital1_6 = 0
+   - z_ppe1_factory3->hospital1_5 + z_ppe1_hospital1->hospital2_5
+   - z_ppe1_DUMMY_RESERVE->hospital1_5 - M_ppe1_hospital1_5
+   + M_ppe1_hospital1_6 = 0
  eq[onhand_ppe1_hospital1_7]: - z_ppe1_factory1->hospital1_6
-   - z_ppe1_factory3->hospital1_6 - z_ppe1_DUMMY_RESERVE->hospital1_6
-   - M_ppe1_hospital1_6 + M_ppe1_hospital1_7 = 0
+   - z_ppe1_factory3->hospital1_6 + z_ppe1_hospital1->hospital2_6
+   - z_ppe1_DUMMY_RESERVE->hospital1_6 - M_ppe1_hospital1_6
+   + M_ppe1_hospital1_7 = 0
  eq[onhand_ppe1_hospital1_8]: - z_ppe1_factory1->hospital1_7
-   - z_ppe1_factory3->hospital1_7 - z_ppe1_DUMMY_RESERVE->hospital1_7
-   - M_ppe1_hospital1_7 + M_ppe1_hospital1_8 = 0
+   - z_ppe1_factory3->hospital1_7 + z_ppe1_hospital1->hospital2_7
+   - z_ppe1_DUMMY_RESERVE->hospital1_7 - M_ppe1_hospital1_7
+   + M_ppe1_hospital1_8 = 0
  eq[onhand_ppe1_hospital1_9]: - z_ppe1_factory1->hospital1_8
-   - z_ppe1_factory3->hospital1_8 - z_ppe1_DUMMY_RESERVE->hospital1_8
-   - M_ppe1_hospital1_8 + M_ppe1_hospital1_9 = 0
+   - z_ppe1_factory3->hospital1_8 + z_ppe1_hospital1->hospital2_8
+   - z_ppe1_DUMMY_RESERVE->hospital1_8 - M_ppe1_hospital1_8
+   + M_ppe1_hospital1_9 = 0
  eq[onhand_ppe1_hospital1_10]: - z_ppe1_factory1->hospital1_9
-   - z_ppe1_factory3->hospital1_9 - z_ppe1_DUMMY_RESERVE->hospital1_9
-   - M_ppe1_hospital1_9 + M_ppe1_hospital1_10 = 0
+   - z_ppe1_factory3->hospital1_9 + z_ppe1_hospital1->hospital2_9
+   - z_ppe1_DUMMY_RESERVE->hospital1_9 - M_ppe1_hospital1_9
+   + M_ppe1_hospital1_10 = 0
  eq[onhand_ppe1_hospital1_11]: - z_ppe1_factory1->hospital1_10
-   - z_ppe1_factory3->hospital1_10 - z_ppe1_DUMMY_RESERVE->hospital1_10
-   - M_ppe1_hospital1_10 + M_ppe1_hospital1_11 = 0
+   - z_ppe1_factory3->hospital1_10 + z_ppe1_hospital1->hospital2_10
+   - z_ppe1_DUMMY_RESERVE->hospital1_10 - M_ppe1_hospital1_10
+   + M_ppe1_hospital1_11 = 0
  eq[onhand_ppe1_hospital1_12]: - z_ppe1_factory1->hospital1_11
-   - z_ppe1_factory3->hospital1_11 - z_ppe1_DUMMY_RESERVE->hospital1_11
-   - M_ppe1_hospital1_11 + M_ppe1_hospital1_12 = 0
+   - z_ppe1_factory3->hospital1_11 + z_ppe1_hospital1->hospital2_11
+   - z_ppe1_DUMMY_RESERVE->hospital1_11 - M_ppe1_hospital1_11
+   + M_ppe1_hospital1_12 = 0
  eq[onhand_ppe1_hospital1_13]: - z_ppe1_factory1->hospital1_12
-   - z_ppe1_factory3->hospital1_12 - z_ppe1_DUMMY_RESERVE->hospital1_12
-   - M_ppe1_hospital1_12 + M_ppe1_hospital1_13 = 0
+   - z_ppe1_factory3->hospital1_12 + z_ppe1_hospital1->hospital2_12
+   - z_ppe1_DUMMY_RESERVE->hospital1_12 - M_ppe1_hospital1_12
+   + M_ppe1_hospital1_13 = 0
  eq[onhand_ppe1_hospital1_14]: - z_ppe1_factory1->hospital1_13
-   - z_ppe1_factory3->hospital1_13 - z_ppe1_DUMMY_RESERVE->hospital1_13
-   - M_ppe1_hospital1_13 + M_ppe1_hospital1_14 = 0
+   - z_ppe1_factory3->hospital1_13 + z_ppe1_hospital1->hospital2_13
+   - z_ppe1_DUMMY_RESERVE->hospital1_13 - M_ppe1_hospital1_13
+   + M_ppe1_hospital1_14 = 0
  eq[onhand_ppe1_hospital1_15]: - z_ppe1_factory1->hospital1_14
-   - z_ppe1_factory3->hospital1_14 - z_ppe1_DUMMY_RESERVE->hospital1_14
-   - M_ppe1_hospital1_14 + M_ppe1_hospital1_15 = 0
+   - z_ppe1_factory3->hospital1_14 + z_ppe1_hospital1->hospital2_14
+   - z_ppe1_DUMMY_RESERVE->hospital1_14 - M_ppe1_hospital1_14
+   + M_ppe1_hospital1_15 = 0
  eq[onhand_ppe1_hospital1_16]: - z_ppe1_factory1->hospital1_15
-   - z_ppe1_factory3->hospital1_15 - z_ppe1_DUMMY_RESERVE->hospital1_15
-   - M_ppe1_hospital1_15 + M_ppe1_hospital1_16 = 0
+   - z_ppe1_factory3->hospital1_15 + z_ppe1_hospital1->hospital2_15
+   - z_ppe1_DUMMY_RESERVE->hospital1_15 - M_ppe1_hospital1_15
+   + M_ppe1_hospital1_16 = 0
  eq[onhand_ppe1_hospital1_17]: - z_ppe1_factory1->hospital1_16
-   - z_ppe1_factory3->hospital1_16 - z_ppe1_DUMMY_RESERVE->hospital1_16
-   - M_ppe1_hospital1_16 + M_ppe1_hospital1_17 = 0
+   - z_ppe1_factory3->hospital1_16 + z_ppe1_hospital1->hospital2_16
+   - z_ppe1_DUMMY_RESERVE->hospital1_16 - M_ppe1_hospital1_16
+   + M_ppe1_hospital1_17 = 0
  eq[onhand_ppe1_hospital1_18]: - z_ppe1_factory1->hospital1_17
-   - z_ppe1_factory3->hospital1_17 - z_ppe1_DUMMY_RESERVE->hospital1_17
-   - M_ppe1_hospital1_17 + M_ppe1_hospital1_18 = 0
+   - z_ppe1_factory3->hospital1_17 + z_ppe1_hospital1->hospital2_17
+   - z_ppe1_DUMMY_RESERVE->hospital1_17 - M_ppe1_hospital1_17
+   + M_ppe1_hospital1_18 = 0
  eq[onhand_ppe1_hospital1_19]: - z_ppe1_factory1->hospital1_18
-   - z_ppe1_factory3->hospital1_18 - z_ppe1_DUMMY_RESERVE->hospital1_18
-   - M_ppe1_hospital1_18 + M_ppe1_hospital1_19 = 0
+   - z_ppe1_factory3->hospital1_18 + z_ppe1_hospital1->hospital2_18
+   - z_ppe1_DUMMY_RESERVE->hospital1_18 - M_ppe1_hospital1_18
+   + M_ppe1_hospital1_19 = 0
  eq[onhand_ppe1_hospital2_1]: M_ppe1_hospital2_1 = 0
  eq[onhand_ppe1_hospital2_2]: - z_ppe1_factory1->hospital2_1
    - z_ppe1_factory3->hospital2_1 - z_ppe1_hospital1->hospital2_1
@@ -13776,225 +14271,279 @@ Subject To
    - z_ppe1_factory4->hospital4_18 - z_ppe1_DUMMY_RESERVE->hospital4_18
    - M_ppe1_hospital4_18 + M_ppe1_hospital4_19 = 0
  eq[onhand_ppe2_factory1_1]: M_ppe2_factory1_1 = 0
- eq[onhand_ppe2_factory1_2]: - z_ppe2_DUMMY_RESERVE->factory1_1
+ eq[onhand_ppe2_factory1_2]: z_ppe2_factory1->hospital1_1
+   + z_ppe2_factory1->hospital2_1 + z_ppe2_factory1->factory4_1
+   + z_ppe2_factory1->factory2_1 - z_ppe2_DUMMY_RESERVE->factory1_1
    - M_ppe2_factory1_1 + M_ppe2_factory1_2 = 0
- eq[onhand_ppe2_factory1_3]: - z_ppe2_DUMMY_RESERVE->factory1_2
+ eq[onhand_ppe2_factory1_3]: z_ppe2_factory1->hospital1_2
+   + z_ppe2_factory1->hospital2_2 + z_ppe2_factory1->factory4_2
+   + z_ppe2_factory1->factory2_2 - z_ppe2_DUMMY_RESERVE->factory1_2
    - M_ppe2_factory1_2 + M_ppe2_factory1_3 = 0
- eq[onhand_ppe2_factory1_4]: - z_ppe2_DUMMY_RESERVE->factory1_3
+ eq[onhand_ppe2_factory1_4]: z_ppe2_factory1->hospital1_3
+   + z_ppe2_factory1->hospital2_3 + z_ppe2_factory1->factory4_3
+   + z_ppe2_factory1->factory2_3 - z_ppe2_DUMMY_RESERVE->factory1_3
    - M_ppe2_factory1_3 + M_ppe2_factory1_4 = 0
- eq[onhand_ppe2_factory1_5]: - z_ppe2_DUMMY_RESERVE->factory1_4
+ eq[onhand_ppe2_factory1_5]: z_ppe2_factory1->hospital1_4
+   + z_ppe2_factory1->hospital2_4 + z_ppe2_factory1->factory4_4
+   + z_ppe2_factory1->factory2_4 - z_ppe2_DUMMY_RESERVE->factory1_4
    - M_ppe2_factory1_4 + M_ppe2_factory1_5 = 0
- eq[onhand_ppe2_factory1_6]: - z_ppe2_DUMMY_RESERVE->factory1_5
+ eq[onhand_ppe2_factory1_6]: z_ppe2_factory1->hospital1_5
+   + z_ppe2_factory1->hospital2_5 + z_ppe2_factory1->factory4_5
+   + z_ppe2_factory1->factory2_5 - z_ppe2_DUMMY_RESERVE->factory1_5
    - M_ppe2_factory1_5 + M_ppe2_factory1_6 = 0
- eq[onhand_ppe2_factory1_7]: - z_ppe2_DUMMY_RESERVE->factory1_6
+ eq[onhand_ppe2_factory1_7]: z_ppe2_factory1->hospital1_6
+   + z_ppe2_factory1->hospital2_6 + z_ppe2_factory1->factory4_6
+   + z_ppe2_factory1->factory2_6 - z_ppe2_DUMMY_RESERVE->factory1_6
    - M_ppe2_factory1_6 + M_ppe2_factory1_7 = 0
- eq[onhand_ppe2_factory1_8]: - z_ppe2_DUMMY_RESERVE->factory1_7
+ eq[onhand_ppe2_factory1_8]: z_ppe2_factory1->hospital1_7
+   + z_ppe2_factory1->hospital2_7 + z_ppe2_factory1->factory4_7
+   + z_ppe2_factory1->factory2_7 - z_ppe2_DUMMY_RESERVE->factory1_7
    - M_ppe2_factory1_7 + M_ppe2_factory1_8 = 0
- eq[onhand_ppe2_factory1_9]: - z_ppe2_DUMMY_RESERVE->factory1_8
+ eq[onhand_ppe2_factory1_9]: z_ppe2_factory1->hospital1_8
+   + z_ppe2_factory1->hospital2_8 + z_ppe2_factory1->factory4_8
+   + z_ppe2_factory1->factory2_8 - z_ppe2_DUMMY_RESERVE->factory1_8
    - M_ppe2_factory1_8 + M_ppe2_factory1_9 = 0
- eq[onhand_ppe2_factory1_10]: - z_ppe2_DUMMY_RESERVE->factory1_9
+ eq[onhand_ppe2_factory1_10]: z_ppe2_factory1->hospital1_9
+   + z_ppe2_factory1->hospital2_9 + z_ppe2_factory1->factory4_9
+   + z_ppe2_factory1->factory2_9 - z_ppe2_DUMMY_RESERVE->factory1_9
    - M_ppe2_factory1_9 + M_ppe2_factory1_10 = 0
- eq[onhand_ppe2_factory1_11]: - z_ppe2_DUMMY_RESERVE->factory1_10
+ eq[onhand_ppe2_factory1_11]: z_ppe2_factory1->hospital1_10
+   + z_ppe2_factory1->hospital2_10 + z_ppe2_factory1->factory4_10
+   + z_ppe2_factory1->factory2_10 - z_ppe2_DUMMY_RESERVE->factory1_10
    - M_ppe2_factory1_10 + M_ppe2_factory1_11 = 0
- eq[onhand_ppe2_factory1_12]: - z_ppe2_DUMMY_RESERVE->factory1_11
+ eq[onhand_ppe2_factory1_12]: z_ppe2_factory1->hospital1_11
+   + z_ppe2_factory1->hospital2_11 + z_ppe2_factory1->factory4_11
+   + z_ppe2_factory1->factory2_11 - z_ppe2_DUMMY_RESERVE->factory1_11
    - M_ppe2_factory1_11 + M_ppe2_factory1_12 = 0
- eq[onhand_ppe2_factory1_13]: - z_ppe2_DUMMY_RESERVE->factory1_12
+ eq[onhand_ppe2_factory1_13]: z_ppe2_factory1->hospital1_12
+   + z_ppe2_factory1->hospital2_12 + z_ppe2_factory1->factory4_12
+   + z_ppe2_factory1->factory2_12 - z_ppe2_DUMMY_RESERVE->factory1_12
    - M_ppe2_factory1_12 + M_ppe2_factory1_13 = 0
- eq[onhand_ppe2_factory1_14]: - z_ppe2_DUMMY_RESERVE->factory1_13
+ eq[onhand_ppe2_factory1_14]: z_ppe2_factory1->hospital1_13
+   + z_ppe2_factory1->hospital2_13 + z_ppe2_factory1->factory4_13
+   + z_ppe2_factory1->factory2_13 - z_ppe2_DUMMY_RESERVE->factory1_13
    - M_ppe2_factory1_13 + M_ppe2_factory1_14 = 0
- eq[onhand_ppe2_factory1_15]: - z_ppe2_DUMMY_RESERVE->factory1_14
+ eq[onhand_ppe2_factory1_15]: z_ppe2_factory1->hospital1_14
+   + z_ppe2_factory1->hospital2_14 + z_ppe2_factory1->factory4_14
+   + z_ppe2_factory1->factory2_14 - z_ppe2_DUMMY_RESERVE->factory1_14
    - M_ppe2_factory1_14 + M_ppe2_factory1_15 = 0
- eq[onhand_ppe2_factory1_16]: - z_ppe2_DUMMY_RESERVE->factory1_15
+ eq[onhand_ppe2_factory1_16]: z_ppe2_factory1->hospital1_15
+   + z_ppe2_factory1->hospital2_15 + z_ppe2_factory1->factory4_15
+   + z_ppe2_factory1->factory2_15 - z_ppe2_DUMMY_RESERVE->factory1_15
    - M_ppe2_factory1_15 + M_ppe2_factory1_16 = 0
- eq[onhand_ppe2_factory1_17]: - z_ppe2_DUMMY_RESERVE->factory1_16
+ eq[onhand_ppe2_factory1_17]: z_ppe2_factory1->hospital1_16
+   + z_ppe2_factory1->hospital2_16 + z_ppe2_factory1->factory4_16
+   + z_ppe2_factory1->factory2_16 - z_ppe2_DUMMY_RESERVE->factory1_16
    - M_ppe2_factory1_16 + M_ppe2_factory1_17 = 0
- eq[onhand_ppe2_factory1_18]: - z_ppe2_DUMMY_RESERVE->factory1_17
+ eq[onhand_ppe2_factory1_18]: z_ppe2_factory1->hospital1_17
+   + z_ppe2_factory1->hospital2_17 + z_ppe2_factory1->factory4_17
+   + z_ppe2_factory1->factory2_17 - z_ppe2_DUMMY_RESERVE->factory1_17
    - M_ppe2_factory1_17 + M_ppe2_factory1_18 = 0
- eq[onhand_ppe2_factory1_19]: - z_ppe2_DUMMY_RESERVE->factory1_18
+ eq[onhand_ppe2_factory1_19]: z_ppe2_factory1->hospital1_18
+   + z_ppe2_factory1->hospital2_18 + z_ppe2_factory1->factory4_18
+   + z_ppe2_factory1->factory2_18 - z_ppe2_DUMMY_RESERVE->factory1_18
    - M_ppe2_factory1_18 + M_ppe2_factory1_19 = 0
- eq[onhand_ppe2_factory2_1]: - y_ppe2_factory2_1 + M_ppe2_factory2_1 = 0
- eq[onhand_ppe2_factory2_2]: - y_ppe2_factory2_2
-   - z_ppe2_factory1->factory2_1 - z_ppe2_factory4->factory2_1
-   - z_ppe2_DUMMY_RESERVE->factory2_1 - M_ppe2_factory2_1
-   + M_ppe2_factory2_2 = 0
- eq[onhand_ppe2_factory2_3]: - y_ppe2_factory2_3
-   - z_ppe2_factory1->factory2_2 - z_ppe2_factory4->factory2_2
-   - z_ppe2_DUMMY_RESERVE->factory2_2 - M_ppe2_factory2_2
-   + M_ppe2_factory2_3 = 0
- eq[onhand_ppe2_factory2_4]: - y_ppe2_factory2_4
-   - z_ppe2_factory1->factory2_3 - z_ppe2_factory4->factory2_3
-   - z_ppe2_DUMMY_RESERVE->factory2_3 - M_ppe2_factory2_3
-   + M_ppe2_factory2_4 = 0
- eq[onhand_ppe2_factory2_5]: - y_ppe2_factory2_5
-   - z_ppe2_factory1->factory2_4 - z_ppe2_factory4->factory2_4
-   - z_ppe2_DUMMY_RESERVE->factory2_4 - M_ppe2_factory2_4
-   + M_ppe2_factory2_5 = 0
- eq[onhand_ppe2_factory2_6]: - y_ppe2_factory2_6
-   - z_ppe2_factory1->factory2_5 - z_ppe2_factory4->factory2_5
-   - z_ppe2_DUMMY_RESERVE->factory2_5 - M_ppe2_factory2_5
-   + M_ppe2_factory2_6 = 0
- eq[onhand_ppe2_factory2_7]: - y_ppe2_factory2_7
-   - z_ppe2_factory1->factory2_6 - z_ppe2_factory4->factory2_6
-   - z_ppe2_DUMMY_RESERVE->factory2_6 - M_ppe2_factory2_6
-   + M_ppe2_factory2_7 = 0
- eq[onhand_ppe2_factory2_8]: - y_ppe2_factory2_8
-   - z_ppe2_factory1->factory2_7 - z_ppe2_factory4->factory2_7
-   - z_ppe2_DUMMY_RESERVE->factory2_7 - M_ppe2_factory2_7
-   + M_ppe2_factory2_8 = 0
- eq[onhand_ppe2_factory2_9]: - y_ppe2_factory2_9
-   - z_ppe2_factory1->factory2_8 - z_ppe2_factory4->factory2_8
-   - z_ppe2_DUMMY_RESERVE->factory2_8 - M_ppe2_factory2_8
-   + M_ppe2_factory2_9 = 0
- eq[onhand_ppe2_factory2_10]: - y_ppe2_factory2_10
-   - z_ppe2_factory1->factory2_9 - z_ppe2_factory4->factory2_9
-   - z_ppe2_DUMMY_RESERVE->factory2_9 - M_ppe2_factory2_9
-   + M_ppe2_factory2_10 = 0
- eq[onhand_ppe2_factory2_11]: - y_ppe2_factory2_11
-   - z_ppe2_factory1->factory2_10 - z_ppe2_factory4->factory2_10
-   - z_ppe2_DUMMY_RESERVE->factory2_10 - M_ppe2_factory2_10
-   + M_ppe2_factory2_11 = 0
- eq[onhand_ppe2_factory2_12]: - y_ppe2_factory2_12
-   - z_ppe2_factory1->factory2_11 - z_ppe2_factory4->factory2_11
-   - z_ppe2_DUMMY_RESERVE->factory2_11 - M_ppe2_factory2_11
-   + M_ppe2_factory2_12 = 0
- eq[onhand_ppe2_factory2_13]: - y_ppe2_factory2_13
-   - z_ppe2_factory1->factory2_12 - z_ppe2_factory4->factory2_12
-   - z_ppe2_DUMMY_RESERVE->factory2_12 - M_ppe2_factory2_12
-   + M_ppe2_factory2_13 = 0
- eq[onhand_ppe2_factory2_14]: - y_ppe2_factory2_14
-   - z_ppe2_factory1->factory2_13 - z_ppe2_factory4->factory2_13
-   - z_ppe2_DUMMY_RESERVE->factory2_13 - M_ppe2_factory2_13
-   + M_ppe2_factory2_14 = 0
- eq[onhand_ppe2_factory2_15]: - y_ppe2_factory2_15
-   - z_ppe2_factory1->factory2_14 - z_ppe2_factory4->factory2_14
-   - z_ppe2_DUMMY_RESERVE->factory2_14 - M_ppe2_factory2_14
-   + M_ppe2_factory2_15 = 0
- eq[onhand_ppe2_factory2_16]: - y_ppe2_factory2_16
-   - z_ppe2_factory1->factory2_15 - z_ppe2_factory4->factory2_15
-   - z_ppe2_DUMMY_RESERVE->factory2_15 - M_ppe2_factory2_15
-   + M_ppe2_factory2_16 = 0
- eq[onhand_ppe2_factory2_17]: - y_ppe2_factory2_17
-   - z_ppe2_factory1->factory2_16 - z_ppe2_factory4->factory2_16
-   - z_ppe2_DUMMY_RESERVE->factory2_16 - M_ppe2_factory2_16
-   + M_ppe2_factory2_17 = 0
- eq[onhand_ppe2_factory2_18]: - y_ppe2_factory2_18
-   - z_ppe2_factory1->factory2_17 - z_ppe2_factory4->factory2_17
-   - z_ppe2_DUMMY_RESERVE->factory2_17 - M_ppe2_factory2_17
-   + M_ppe2_factory2_18 = 0
- eq[onhand_ppe2_factory2_19]: - y_ppe2_factory2_19
-   - z_ppe2_factory1->factory2_18 - z_ppe2_factory4->factory2_18
-   - z_ppe2_DUMMY_RESERVE->factory2_18 - M_ppe2_factory2_18
-   + M_ppe2_factory2_19 = 0
- eq[onhand_ppe2_factory3_1]: - y_ppe2_factory3_1 + M_ppe2_factory3_1 = 0
- eq[onhand_ppe2_factory3_2]: - y_ppe2_factory3_2
-   - z_ppe2_DUMMY_RESERVE->factory3_1 - M_ppe2_factory3_1
-   + M_ppe2_factory3_2 = 0
- eq[onhand_ppe2_factory3_3]: - y_ppe2_factory3_3
-   - z_ppe2_DUMMY_RESERVE->factory3_2 - M_ppe2_factory3_2
-   + M_ppe2_factory3_3 = 0
- eq[onhand_ppe2_factory3_4]: - y_ppe2_factory3_4
-   - z_ppe2_DUMMY_RESERVE->factory3_3 - M_ppe2_factory3_3
-   + M_ppe2_factory3_4 = 0
- eq[onhand_ppe2_factory3_5]: - y_ppe2_factory3_5
-   - z_ppe2_DUMMY_RESERVE->factory3_4 - M_ppe2_factory3_4
-   + M_ppe2_factory3_5 = 0
- eq[onhand_ppe2_factory3_6]: - y_ppe2_factory3_6
-   - z_ppe2_DUMMY_RESERVE->factory3_5 - M_ppe2_factory3_5
-   + M_ppe2_factory3_6 = 0
- eq[onhand_ppe2_factory3_7]: - y_ppe2_factory3_7
-   - z_ppe2_DUMMY_RESERVE->factory3_6 - M_ppe2_factory3_6
-   + M_ppe2_factory3_7 = 0
- eq[onhand_ppe2_factory3_8]: - y_ppe2_factory3_8
-   - z_ppe2_DUMMY_RESERVE->factory3_7 - M_ppe2_factory3_7
-   + M_ppe2_factory3_8 = 0
- eq[onhand_ppe2_factory3_9]: - y_ppe2_factory3_9
-   - z_ppe2_DUMMY_RESERVE->factory3_8 - M_ppe2_factory3_8
-   + M_ppe2_factory3_9 = 0
- eq[onhand_ppe2_factory3_10]: - y_ppe2_factory3_10
-   - z_ppe2_DUMMY_RESERVE->factory3_9 - M_ppe2_factory3_9
-   + M_ppe2_factory3_10 = 0
- eq[onhand_ppe2_factory3_11]: - y_ppe2_factory3_11
-   - z_ppe2_DUMMY_RESERVE->factory3_10 - M_ppe2_factory3_10
-   + M_ppe2_factory3_11 = 0
- eq[onhand_ppe2_factory3_12]: - y_ppe2_factory3_12
-   - z_ppe2_DUMMY_RESERVE->factory3_11 - M_ppe2_factory3_11
-   + M_ppe2_factory3_12 = 0
- eq[onhand_ppe2_factory3_13]: - y_ppe2_factory3_13
-   - z_ppe2_DUMMY_RESERVE->factory3_12 - M_ppe2_factory3_12
-   + M_ppe2_factory3_13 = 0
- eq[onhand_ppe2_factory3_14]: - y_ppe2_factory3_14
-   - z_ppe2_DUMMY_RESERVE->factory3_13 - M_ppe2_factory3_13
-   + M_ppe2_factory3_14 = 0
- eq[onhand_ppe2_factory3_15]: - y_ppe2_factory3_15
-   - z_ppe2_DUMMY_RESERVE->factory3_14 - M_ppe2_factory3_14
-   + M_ppe2_factory3_15 = 0
- eq[onhand_ppe2_factory3_16]: - y_ppe2_factory3_16
-   - z_ppe2_DUMMY_RESERVE->factory3_15 - M_ppe2_factory3_15
-   + M_ppe2_factory3_16 = 0
- eq[onhand_ppe2_factory3_17]: - y_ppe2_factory3_17
-   - z_ppe2_DUMMY_RESERVE->factory3_16 - M_ppe2_factory3_16
-   + M_ppe2_factory3_17 = 0
- eq[onhand_ppe2_factory3_18]: - y_ppe2_factory3_18
-   - z_ppe2_DUMMY_RESERVE->factory3_17 - M_ppe2_factory3_17
-   + M_ppe2_factory3_18 = 0
- eq[onhand_ppe2_factory3_19]: - y_ppe2_factory3_19
-   - z_ppe2_DUMMY_RESERVE->factory3_18 - M_ppe2_factory3_18
-   + M_ppe2_factory3_19 = 0
+ eq[onhand_ppe2_factory2_1]: M_ppe2_factory2_1 = 0
+ eq[onhand_ppe2_factory2_2]: z_ppe2_factory2->hospital3_1
+   + z_ppe2_factory2->hospital4_1 - z_ppe2_factory1->factory2_1
+   - z_ppe2_factory4->factory2_1 - z_ppe2_DUMMY_RESERVE->factory2_1
+   - M_ppe2_factory2_1 + M_ppe2_factory2_2 = 0
+ eq[onhand_ppe2_factory2_3]: z_ppe2_factory2->hospital3_2
+   + z_ppe2_factory2->hospital4_2 - z_ppe2_factory1->factory2_2
+   - z_ppe2_factory4->factory2_2 - z_ppe2_DUMMY_RESERVE->factory2_2
+   - M_ppe2_factory2_2 + M_ppe2_factory2_3 = 0
+ eq[onhand_ppe2_factory2_4]: z_ppe2_factory2->hospital3_3
+   + z_ppe2_factory2->hospital4_3 - z_ppe2_factory1->factory2_3
+   - z_ppe2_factory4->factory2_3 - z_ppe2_DUMMY_RESERVE->factory2_3
+   - M_ppe2_factory2_3 + M_ppe2_factory2_4 = 0
+ eq[onhand_ppe2_factory2_5]: z_ppe2_factory2->hospital3_4
+   + z_ppe2_factory2->hospital4_4 - z_ppe2_factory1->factory2_4
+   - z_ppe2_factory4->factory2_4 - z_ppe2_DUMMY_RESERVE->factory2_4
+   - M_ppe2_factory2_4 + M_ppe2_factory2_5 = 0
+ eq[onhand_ppe2_factory2_6]: z_ppe2_factory2->hospital3_5
+   + z_ppe2_factory2->hospital4_5 - z_ppe2_factory1->factory2_5
+   - z_ppe2_factory4->factory2_5 - z_ppe2_DUMMY_RESERVE->factory2_5
+   - M_ppe2_factory2_5 + M_ppe2_factory2_6 = 0
+ eq[onhand_ppe2_factory2_7]: z_ppe2_factory2->hospital3_6
+   + z_ppe2_factory2->hospital4_6 - z_ppe2_factory1->factory2_6
+   - z_ppe2_factory4->factory2_6 - z_ppe2_DUMMY_RESERVE->factory2_6
+   - M_ppe2_factory2_6 + M_ppe2_factory2_7 = 0
+ eq[onhand_ppe2_factory2_8]: z_ppe2_factory2->hospital3_7
+   + z_ppe2_factory2->hospital4_7 - z_ppe2_factory1->factory2_7
+   - z_ppe2_factory4->factory2_7 - z_ppe2_DUMMY_RESERVE->factory2_7
+   - M_ppe2_factory2_7 + M_ppe2_factory2_8 = 0
+ eq[onhand_ppe2_factory2_9]: z_ppe2_factory2->hospital3_8
+   + z_ppe2_factory2->hospital4_8 - z_ppe2_factory1->factory2_8
+   - z_ppe2_factory4->factory2_8 - z_ppe2_DUMMY_RESERVE->factory2_8
+   - M_ppe2_factory2_8 + M_ppe2_factory2_9 = 0
+ eq[onhand_ppe2_factory2_10]: z_ppe2_factory2->hospital3_9
+   + z_ppe2_factory2->hospital4_9 - z_ppe2_factory1->factory2_9
+   - z_ppe2_factory4->factory2_9 - z_ppe2_DUMMY_RESERVE->factory2_9
+   - M_ppe2_factory2_9 + M_ppe2_factory2_10 = 0
+ eq[onhand_ppe2_factory2_11]: z_ppe2_factory2->hospital3_10
+   + z_ppe2_factory2->hospital4_10 - z_ppe2_factory1->factory2_10
+   - z_ppe2_factory4->factory2_10 - z_ppe2_DUMMY_RESERVE->factory2_10
+   - M_ppe2_factory2_10 + M_ppe2_factory2_11 = 0
+ eq[onhand_ppe2_factory2_12]: z_ppe2_factory2->hospital3_11
+   + z_ppe2_factory2->hospital4_11 - z_ppe2_factory1->factory2_11
+   - z_ppe2_factory4->factory2_11 - z_ppe2_DUMMY_RESERVE->factory2_11
+   - M_ppe2_factory2_11 + M_ppe2_factory2_12 = 0
+ eq[onhand_ppe2_factory2_13]: z_ppe2_factory2->hospital3_12
+   + z_ppe2_factory2->hospital4_12 - z_ppe2_factory1->factory2_12
+   - z_ppe2_factory4->factory2_12 - z_ppe2_DUMMY_RESERVE->factory2_12
+   - M_ppe2_factory2_12 + M_ppe2_factory2_13 = 0
+ eq[onhand_ppe2_factory2_14]: z_ppe2_factory2->hospital3_13
+   + z_ppe2_factory2->hospital4_13 - z_ppe2_factory1->factory2_13
+   - z_ppe2_factory4->factory2_13 - z_ppe2_DUMMY_RESERVE->factory2_13
+   - M_ppe2_factory2_13 + M_ppe2_factory2_14 = 0
+ eq[onhand_ppe2_factory2_15]: z_ppe2_factory2->hospital3_14
+   + z_ppe2_factory2->hospital4_14 - z_ppe2_factory1->factory2_14
+   - z_ppe2_factory4->factory2_14 - z_ppe2_DUMMY_RESERVE->factory2_14
+   - M_ppe2_factory2_14 + M_ppe2_factory2_15 = 0
+ eq[onhand_ppe2_factory2_16]: z_ppe2_factory2->hospital3_15
+   + z_ppe2_factory2->hospital4_15 - z_ppe2_factory1->factory2_15
+   - z_ppe2_factory4->factory2_15 - z_ppe2_DUMMY_RESERVE->factory2_15
+   - M_ppe2_factory2_15 + M_ppe2_factory2_16 = 0
+ eq[onhand_ppe2_factory2_17]: z_ppe2_factory2->hospital3_16
+   + z_ppe2_factory2->hospital4_16 - z_ppe2_factory1->factory2_16
+   - z_ppe2_factory4->factory2_16 - z_ppe2_DUMMY_RESERVE->factory2_16
+   - M_ppe2_factory2_16 + M_ppe2_factory2_17 = 0
+ eq[onhand_ppe2_factory2_18]: z_ppe2_factory2->hospital3_17
+   + z_ppe2_factory2->hospital4_17 - z_ppe2_factory1->factory2_17
+   - z_ppe2_factory4->factory2_17 - z_ppe2_DUMMY_RESERVE->factory2_17
+   - M_ppe2_factory2_17 + M_ppe2_factory2_18 = 0
+ eq[onhand_ppe2_factory2_19]: z_ppe2_factory2->hospital3_18
+   + z_ppe2_factory2->hospital4_18 - z_ppe2_factory1->factory2_18
+   - z_ppe2_factory4->factory2_18 - z_ppe2_DUMMY_RESERVE->factory2_18
+   - M_ppe2_factory2_18 + M_ppe2_factory2_19 = 0
+ eq[onhand_ppe2_factory3_1]: M_ppe2_factory3_1 = 0
+ eq[onhand_ppe2_factory3_2]: z_ppe2_factory3->hospital1_1
+   + z_ppe2_factory3->hospital2_1 - z_ppe2_DUMMY_RESERVE->factory3_1
+   - M_ppe2_factory3_1 + M_ppe2_factory3_2 = 0
+ eq[onhand_ppe2_factory3_3]: z_ppe2_factory3->hospital1_2
+   + z_ppe2_factory3->hospital2_2 - z_ppe2_DUMMY_RESERVE->factory3_2
+   - M_ppe2_factory3_2 + M_ppe2_factory3_3 = 0
+ eq[onhand_ppe2_factory3_4]: z_ppe2_factory3->hospital1_3
+   + z_ppe2_factory3->hospital2_3 - z_ppe2_DUMMY_RESERVE->factory3_3
+   - M_ppe2_factory3_3 + M_ppe2_factory3_4 = 0
+ eq[onhand_ppe2_factory3_5]: z_ppe2_factory3->hospital1_4
+   + z_ppe2_factory3->hospital2_4 - z_ppe2_DUMMY_RESERVE->factory3_4
+   - M_ppe2_factory3_4 + M_ppe2_factory3_5 = 0
+ eq[onhand_ppe2_factory3_6]: z_ppe2_factory3->hospital1_5
+   + z_ppe2_factory3->hospital2_5 - z_ppe2_DUMMY_RESERVE->factory3_5
+   - M_ppe2_factory3_5 + M_ppe2_factory3_6 = 0
+ eq[onhand_ppe2_factory3_7]: z_ppe2_factory3->hospital1_6
+   + z_ppe2_factory3->hospital2_6 - z_ppe2_DUMMY_RESERVE->factory3_6
+   - M_ppe2_factory3_6 + M_ppe2_factory3_7 = 0
+ eq[onhand_ppe2_factory3_8]: z_ppe2_factory3->hospital1_7
+   + z_ppe2_factory3->hospital2_7 - z_ppe2_DUMMY_RESERVE->factory3_7
+   - M_ppe2_factory3_7 + M_ppe2_factory3_8 = 0
+ eq[onhand_ppe2_factory3_9]: z_ppe2_factory3->hospital1_8
+   + z_ppe2_factory3->hospital2_8 - z_ppe2_DUMMY_RESERVE->factory3_8
+   - M_ppe2_factory3_8 + M_ppe2_factory3_9 = 0
+ eq[onhand_ppe2_factory3_10]: z_ppe2_factory3->hospital1_9
+   + z_ppe2_factory3->hospital2_9 - z_ppe2_DUMMY_RESERVE->factory3_9
+   - M_ppe2_factory3_9 + M_ppe2_factory3_10 = 0
+ eq[onhand_ppe2_factory3_11]: z_ppe2_factory3->hospital1_10
+   + z_ppe2_factory3->hospital2_10 - z_ppe2_DUMMY_RESERVE->factory3_10
+   - M_ppe2_factory3_10 + M_ppe2_factory3_11 = 0
+ eq[onhand_ppe2_factory3_12]: z_ppe2_factory3->hospital1_11
+   + z_ppe2_factory3->hospital2_11 - z_ppe2_DUMMY_RESERVE->factory3_11
+   - M_ppe2_factory3_11 + M_ppe2_factory3_12 = 0
+ eq[onhand_ppe2_factory3_13]: z_ppe2_factory3->hospital1_12
+   + z_ppe2_factory3->hospital2_12 - z_ppe2_DUMMY_RESERVE->factory3_12
+   - M_ppe2_factory3_12 + M_ppe2_factory3_13 = 0
+ eq[onhand_ppe2_factory3_14]: z_ppe2_factory3->hospital1_13
+   + z_ppe2_factory3->hospital2_13 - z_ppe2_DUMMY_RESERVE->factory3_13
+   - M_ppe2_factory3_13 + M_ppe2_factory3_14 = 0
+ eq[onhand_ppe2_factory3_15]: z_ppe2_factory3->hospital1_14
+   + z_ppe2_factory3->hospital2_14 - z_ppe2_DUMMY_RESERVE->factory3_14
+   - M_ppe2_factory3_14 + M_ppe2_factory3_15 = 0
+ eq[onhand_ppe2_factory3_16]: z_ppe2_factory3->hospital1_15
+   + z_ppe2_factory3->hospital2_15 - z_ppe2_DUMMY_RESERVE->factory3_15
+   - M_ppe2_factory3_15 + M_ppe2_factory3_16 = 0
+ eq[onhand_ppe2_factory3_17]: z_ppe2_factory3->hospital1_16
+   + z_ppe2_factory3->hospital2_16 - z_ppe2_DUMMY_RESERVE->factory3_16
+   - M_ppe2_factory3_16 + M_ppe2_factory3_17 = 0
+ eq[onhand_ppe2_factory3_18]: z_ppe2_factory3->hospital1_17
+   + z_ppe2_factory3->hospital2_17 - z_ppe2_DUMMY_RESERVE->factory3_17
+   - M_ppe2_factory3_17 + M_ppe2_factory3_18 = 0
+ eq[onhand_ppe2_factory3_19]: z_ppe2_factory3->hospital1_18
+   + z_ppe2_factory3->hospital2_18 - z_ppe2_DUMMY_RESERVE->factory3_18
+   - M_ppe2_factory3_18 + M_ppe2_factory3_19 = 0
  eq[onhand_ppe2_factory4_1]: M_ppe2_factory4_1 = 0
- eq[onhand_ppe2_factory4_2]: - z_ppe2_factory1->factory4_1
-   - z_ppe2_DUMMY_RESERVE->factory4_1 - M_ppe2_factory4_1
-   + M_ppe2_factory4_2 = 0
- eq[onhand_ppe2_factory4_3]: - z_ppe2_factory1->factory4_2
-   - z_ppe2_DUMMY_RESERVE->factory4_2 - M_ppe2_factory4_2
-   + M_ppe2_factory4_3 = 0
- eq[onhand_ppe2_factory4_4]: - z_ppe2_factory1->factory4_3
-   - z_ppe2_DUMMY_RESERVE->factory4_3 - M_ppe2_factory4_3
-   + M_ppe2_factory4_4 = 0
- eq[onhand_ppe2_factory4_5]: - z_ppe2_factory1->factory4_4
-   - z_ppe2_DUMMY_RESERVE->factory4_4 - M_ppe2_factory4_4
-   + M_ppe2_factory4_5 = 0
- eq[onhand_ppe2_factory4_6]: - z_ppe2_factory1->factory4_5
-   - z_ppe2_DUMMY_RESERVE->factory4_5 - M_ppe2_factory4_5
-   + M_ppe2_factory4_6 = 0
- eq[onhand_ppe2_factory4_7]: - z_ppe2_factory1->factory4_6
-   - z_ppe2_DUMMY_RESERVE->factory4_6 - M_ppe2_factory4_6
-   + M_ppe2_factory4_7 = 0
- eq[onhand_ppe2_factory4_8]: - z_ppe2_factory1->factory4_7
-   - z_ppe2_DUMMY_RESERVE->factory4_7 - M_ppe2_factory4_7
-   + M_ppe2_factory4_8 = 0
- eq[onhand_ppe2_factory4_9]: - z_ppe2_factory1->factory4_8
-   - z_ppe2_DUMMY_RESERVE->factory4_8 - M_ppe2_factory4_8
-   + M_ppe2_factory4_9 = 0
- eq[onhand_ppe2_factory4_10]: - z_ppe2_factory1->factory4_9
-   - z_ppe2_DUMMY_RESERVE->factory4_9 - M_ppe2_factory4_9
-   + M_ppe2_factory4_10 = 0
- eq[onhand_ppe2_factory4_11]: - z_ppe2_factory1->factory4_10
-   - z_ppe2_DUMMY_RESERVE->factory4_10 - M_ppe2_factory4_10
-   + M_ppe2_factory4_11 = 0
- eq[onhand_ppe2_factory4_12]: - z_ppe2_factory1->factory4_11
-   - z_ppe2_DUMMY_RESERVE->factory4_11 - M_ppe2_factory4_11
-   + M_ppe2_factory4_12 = 0
- eq[onhand_ppe2_factory4_13]: - z_ppe2_factory1->factory4_12
-   - z_ppe2_DUMMY_RESERVE->factory4_12 - M_ppe2_factory4_12
-   + M_ppe2_factory4_13 = 0
- eq[onhand_ppe2_factory4_14]: - z_ppe2_factory1->factory4_13
-   - z_ppe2_DUMMY_RESERVE->factory4_13 - M_ppe2_factory4_13
-   + M_ppe2_factory4_14 = 0
- eq[onhand_ppe2_factory4_15]: - z_ppe2_factory1->factory4_14
-   - z_ppe2_DUMMY_RESERVE->factory4_14 - M_ppe2_factory4_14
-   + M_ppe2_factory4_15 = 0
- eq[onhand_ppe2_factory4_16]: - z_ppe2_factory1->factory4_15
-   - z_ppe2_DUMMY_RESERVE->factory4_15 - M_ppe2_factory4_15
-   + M_ppe2_factory4_16 = 0
- eq[onhand_ppe2_factory4_17]: - z_ppe2_factory1->factory4_16
-   - z_ppe2_DUMMY_RESERVE->factory4_16 - M_ppe2_factory4_16
-   + M_ppe2_factory4_17 = 0
- eq[onhand_ppe2_factory4_18]: - z_ppe2_factory1->factory4_17
-   - z_ppe2_DUMMY_RESERVE->factory4_17 - M_ppe2_factory4_17
-   + M_ppe2_factory4_18 = 0
- eq[onhand_ppe2_factory4_19]: - z_ppe2_factory1->factory4_18
-   - z_ppe2_DUMMY_RESERVE->factory4_18 - M_ppe2_factory4_18
-   + M_ppe2_factory4_19 = 0
+ eq[onhand_ppe2_factory4_2]: z_ppe2_factory4->hospital3_1
+   + z_ppe2_factory4->hospital4_1 - z_ppe2_factory1->factory4_1
+   + z_ppe2_factory4->factory2_1 - z_ppe2_DUMMY_RESERVE->factory4_1
+   - M_ppe2_factory4_1 + M_ppe2_factory4_2 = 0
+ eq[onhand_ppe2_factory4_3]: z_ppe2_factory4->hospital3_2
+   + z_ppe2_factory4->hospital4_2 - z_ppe2_factory1->factory4_2
+   + z_ppe2_factory4->factory2_2 - z_ppe2_DUMMY_RESERVE->factory4_2
+   - M_ppe2_factory4_2 + M_ppe2_factory4_3 = 0
+ eq[onhand_ppe2_factory4_4]: z_ppe2_factory4->hospital3_3
+   + z_ppe2_factory4->hospital4_3 - z_ppe2_factory1->factory4_3
+   + z_ppe2_factory4->factory2_3 - z_ppe2_DUMMY_RESERVE->factory4_3
+   - M_ppe2_factory4_3 + M_ppe2_factory4_4 = 0
+ eq[onhand_ppe2_factory4_5]: z_ppe2_factory4->hospital3_4
+   + z_ppe2_factory4->hospital4_4 - z_ppe2_factory1->factory4_4
+   + z_ppe2_factory4->factory2_4 - z_ppe2_DUMMY_RESERVE->factory4_4
+   - M_ppe2_factory4_4 + M_ppe2_factory4_5 = 0
+ eq[onhand_ppe2_factory4_6]: z_ppe2_factory4->hospital3_5
+   + z_ppe2_factory4->hospital4_5 - z_ppe2_factory1->factory4_5
+   + z_ppe2_factory4->factory2_5 - z_ppe2_DUMMY_RESERVE->factory4_5
+   - M_ppe2_factory4_5 + M_ppe2_factory4_6 = 0
+ eq[onhand_ppe2_factory4_7]: z_ppe2_factory4->hospital3_6
+   + z_ppe2_factory4->hospital4_6 - z_ppe2_factory1->factory4_6
+   + z_ppe2_factory4->factory2_6 - z_ppe2_DUMMY_RESERVE->factory4_6
+   - M_ppe2_factory4_6 + M_ppe2_factory4_7 = 0
+ eq[onhand_ppe2_factory4_8]: z_ppe2_factory4->hospital3_7
+   + z_ppe2_factory4->hospital4_7 - z_ppe2_factory1->factory4_7
+   + z_ppe2_factory4->factory2_7 - z_ppe2_DUMMY_RESERVE->factory4_7
+   - M_ppe2_factory4_7 + M_ppe2_factory4_8 = 0
+ eq[onhand_ppe2_factory4_9]: z_ppe2_factory4->hospital3_8
+   + z_ppe2_factory4->hospital4_8 - z_ppe2_factory1->factory4_8
+   + z_ppe2_factory4->factory2_8 - z_ppe2_DUMMY_RESERVE->factory4_8
+   - M_ppe2_factory4_8 + M_ppe2_factory4_9 = 0
+ eq[onhand_ppe2_factory4_10]: z_ppe2_factory4->hospital3_9
+   + z_ppe2_factory4->hospital4_9 - z_ppe2_factory1->factory4_9
+   + z_ppe2_factory4->factory2_9 - z_ppe2_DUMMY_RESERVE->factory4_9
+   - M_ppe2_factory4_9 + M_ppe2_factory4_10 = 0
+ eq[onhand_ppe2_factory4_11]: z_ppe2_factory4->hospital3_10
+   + z_ppe2_factory4->hospital4_10 - z_ppe2_factory1->factory4_10
+   + z_ppe2_factory4->factory2_10 - z_ppe2_DUMMY_RESERVE->factory4_10
+   - M_ppe2_factory4_10 + M_ppe2_factory4_11 = 0
+ eq[onhand_ppe2_factory4_12]: z_ppe2_factory4->hospital3_11
+   + z_ppe2_factory4->hospital4_11 - z_ppe2_factory1->factory4_11
+   + z_ppe2_factory4->factory2_11 - z_ppe2_DUMMY_RESERVE->factory4_11
+   - M_ppe2_factory4_11 + M_ppe2_factory4_12 = 0
+ eq[onhand_ppe2_factory4_13]: z_ppe2_factory4->hospital3_12
+   + z_ppe2_factory4->hospital4_12 - z_ppe2_factory1->factory4_12
+   + z_ppe2_factory4->factory2_12 - z_ppe2_DUMMY_RESERVE->factory4_12
+   - M_ppe2_factory4_12 + M_ppe2_factory4_13 = 0
+ eq[onhand_ppe2_factory4_14]: z_ppe2_factory4->hospital3_13
+   + z_ppe2_factory4->hospital4_13 - z_ppe2_factory1->factory4_13
+   + z_ppe2_factory4->factory2_13 - z_ppe2_DUMMY_RESERVE->factory4_13
+   - M_ppe2_factory4_13 + M_ppe2_factory4_14 = 0
+ eq[onhand_ppe2_factory4_15]: z_ppe2_factory4->hospital3_14
+   + z_ppe2_factory4->hospital4_14 - z_ppe2_factory1->factory4_14
+   + z_ppe2_factory4->factory2_14 - z_ppe2_DUMMY_RESERVE->factory4_14
+   - M_ppe2_factory4_14 + M_ppe2_factory4_15 = 0
+ eq[onhand_ppe2_factory4_16]: z_ppe2_factory4->hospital3_15
+   + z_ppe2_factory4->hospital4_15 - z_ppe2_factory1->factory4_15
+   + z_ppe2_factory4->factory2_15 - z_ppe2_DUMMY_RESERVE->factory4_15
+   - M_ppe2_factory4_15 + M_ppe2_factory4_16 = 0
+ eq[onhand_ppe2_factory4_17]: z_ppe2_factory4->hospital3_16
+   + z_ppe2_factory4->hospital4_16 - z_ppe2_factory1->factory4_16
+   + z_ppe2_factory4->factory2_16 - z_ppe2_DUMMY_RESERVE->factory4_16
+   - M_ppe2_factory4_16 + M_ppe2_factory4_17 = 0
+ eq[onhand_ppe2_factory4_18]: z_ppe2_factory4->hospital3_17
+   + z_ppe2_factory4->hospital4_17 - z_ppe2_factory1->factory4_17
+   + z_ppe2_factory4->factory2_17 - z_ppe2_DUMMY_RESERVE->factory4_17
+   - M_ppe2_factory4_17 + M_ppe2_factory4_18 = 0
+ eq[onhand_ppe2_factory4_19]: z_ppe2_factory4->hospital3_18
+   + z_ppe2_factory4->hospital4_18 - z_ppe2_factory1->factory4_18
+   + z_ppe2_factory4->factory2_18 - z_ppe2_DUMMY_RESERVE->factory4_18
+   - M_ppe2_factory4_18 + M_ppe2_factory4_19 = 0
  eq[onhand_ppe2_DUMMY_RESERVE_1]: M_ppe2_DUMMY_RESERVE_1 = 1e+06
  eq[onhand_ppe2_DUMMY_RESERVE_2]: M_ppe2_DUMMY_RESERVE_2 = 1e+06
  eq[onhand_ppe2_DUMMY_RESERVE_3]: M_ppe2_DUMMY_RESERVE_3 = 1e+06
@@ -14016,59 +14565,77 @@ Subject To
  eq[onhand_ppe2_DUMMY_RESERVE_19]: M_ppe2_DUMMY_RESERVE_19 = 1e+06
  eq[onhand_ppe2_hospital1_1]: M_ppe2_hospital1_1 = 0
  eq[onhand_ppe2_hospital1_2]: - z_ppe2_factory1->hospital1_1
-   - z_ppe2_factory3->hospital1_1 - z_ppe2_DUMMY_RESERVE->hospital1_1
-   - M_ppe2_hospital1_1 + M_ppe2_hospital1_2 = 0
+   - z_ppe2_factory3->hospital1_1 + z_ppe2_hospital1->hospital2_1
+   - z_ppe2_DUMMY_RESERVE->hospital1_1 - M_ppe2_hospital1_1
+   + M_ppe2_hospital1_2 = 0
  eq[onhand_ppe2_hospital1_3]: - z_ppe2_factory1->hospital1_2
-   - z_ppe2_factory3->hospital1_2 - z_ppe2_DUMMY_RESERVE->hospital1_2
-   - M_ppe2_hospital1_2 + M_ppe2_hospital1_3 = 0
+   - z_ppe2_factory3->hospital1_2 + z_ppe2_hospital1->hospital2_2
+   - z_ppe2_DUMMY_RESERVE->hospital1_2 - M_ppe2_hospital1_2
+   + M_ppe2_hospital1_3 = 0
  eq[onhand_ppe2_hospital1_4]: - z_ppe2_factory1->hospital1_3
-   - z_ppe2_factory3->hospital1_3 - z_ppe2_DUMMY_RESERVE->hospital1_3
-   - M_ppe2_hospital1_3 + M_ppe2_hospital1_4 = 0
+   - z_ppe2_factory3->hospital1_3 + z_ppe2_hospital1->hospital2_3
+   - z_ppe2_DUMMY_RESERVE->hospital1_3 - M_ppe2_hospital1_3
+   + M_ppe2_hospital1_4 = 0
  eq[onhand_ppe2_hospital1_5]: - z_ppe2_factory1->hospital1_4
-   - z_ppe2_factory3->hospital1_4 - z_ppe2_DUMMY_RESERVE->hospital1_4
-   - M_ppe2_hospital1_4 + M_ppe2_hospital1_5 = 0
+   - z_ppe2_factory3->hospital1_4 + z_ppe2_hospital1->hospital2_4
+   - z_ppe2_DUMMY_RESERVE->hospital1_4 - M_ppe2_hospital1_4
+   + M_ppe2_hospital1_5 = 0
  eq[onhand_ppe2_hospital1_6]: - z_ppe2_factory1->hospital1_5
-   - z_ppe2_factory3->hospital1_5 - z_ppe2_DUMMY_RESERVE->hospital1_5
-   - M_ppe2_hospital1_5 + M_ppe2_hospital1_6 = 0
+   - z_ppe2_factory3->hospital1_5 + z_ppe2_hospital1->hospital2_5
+   - z_ppe2_DUMMY_RESERVE->hospital1_5 - M_ppe2_hospital1_5
+   + M_ppe2_hospital1_6 = 0
  eq[onhand_ppe2_hospital1_7]: - z_ppe2_factory1->hospital1_6
-   - z_ppe2_factory3->hospital1_6 - z_ppe2_DUMMY_RESERVE->hospital1_6
-   - M_ppe2_hospital1_6 + M_ppe2_hospital1_7 = 0
+   - z_ppe2_factory3->hospital1_6 + z_ppe2_hospital1->hospital2_6
+   - z_ppe2_DUMMY_RESERVE->hospital1_6 - M_ppe2_hospital1_6
+   + M_ppe2_hospital1_7 = 0
  eq[onhand_ppe2_hospital1_8]: - z_ppe2_factory1->hospital1_7
-   - z_ppe2_factory3->hospital1_7 - z_ppe2_DUMMY_RESERVE->hospital1_7
-   - M_ppe2_hospital1_7 + M_ppe2_hospital1_8 = 0
+   - z_ppe2_factory3->hospital1_7 + z_ppe2_hospital1->hospital2_7
+   - z_ppe2_DUMMY_RESERVE->hospital1_7 - M_ppe2_hospital1_7
+   + M_ppe2_hospital1_8 = 0
  eq[onhand_ppe2_hospital1_9]: - z_ppe2_factory1->hospital1_8
-   - z_ppe2_factory3->hospital1_8 - z_ppe2_DUMMY_RESERVE->hospital1_8
-   - M_ppe2_hospital1_8 + M_ppe2_hospital1_9 = 0
+   - z_ppe2_factory3->hospital1_8 + z_ppe2_hospital1->hospital2_8
+   - z_ppe2_DUMMY_RESERVE->hospital1_8 - M_ppe2_hospital1_8
+   + M_ppe2_hospital1_9 = 0
  eq[onhand_ppe2_hospital1_10]: - z_ppe2_factory1->hospital1_9
-   - z_ppe2_factory3->hospital1_9 - z_ppe2_DUMMY_RESERVE->hospital1_9
-   - M_ppe2_hospital1_9 + M_ppe2_hospital1_10 = 0
+   - z_ppe2_factory3->hospital1_9 + z_ppe2_hospital1->hospital2_9
+   - z_ppe2_DUMMY_RESERVE->hospital1_9 - M_ppe2_hospital1_9
+   + M_ppe2_hospital1_10 = 0
  eq[onhand_ppe2_hospital1_11]: - z_ppe2_factory1->hospital1_10
-   - z_ppe2_factory3->hospital1_10 - z_ppe2_DUMMY_RESERVE->hospital1_10
-   - M_ppe2_hospital1_10 + M_ppe2_hospital1_11 = 0
+   - z_ppe2_factory3->hospital1_10 + z_ppe2_hospital1->hospital2_10
+   - z_ppe2_DUMMY_RESERVE->hospital1_10 - M_ppe2_hospital1_10
+   + M_ppe2_hospital1_11 = 0
  eq[onhand_ppe2_hospital1_12]: - z_ppe2_factory1->hospital1_11
-   - z_ppe2_factory3->hospital1_11 - z_ppe2_DUMMY_RESERVE->hospital1_11
-   - M_ppe2_hospital1_11 + M_ppe2_hospital1_12 = 0
+   - z_ppe2_factory3->hospital1_11 + z_ppe2_hospital1->hospital2_11
+   - z_ppe2_DUMMY_RESERVE->hospital1_11 - M_ppe2_hospital1_11
+   + M_ppe2_hospital1_12 = 0
  eq[onhand_ppe2_hospital1_13]: - z_ppe2_factory1->hospital1_12
-   - z_ppe2_factory3->hospital1_12 - z_ppe2_DUMMY_RESERVE->hospital1_12
-   - M_ppe2_hospital1_12 + M_ppe2_hospital1_13 = 0
+   - z_ppe2_factory3->hospital1_12 + z_ppe2_hospital1->hospital2_12
+   - z_ppe2_DUMMY_RESERVE->hospital1_12 - M_ppe2_hospital1_12
+   + M_ppe2_hospital1_13 = 0
  eq[onhand_ppe2_hospital1_14]: - z_ppe2_factory1->hospital1_13
-   - z_ppe2_factory3->hospital1_13 - z_ppe2_DUMMY_RESERVE->hospital1_13
-   - M_ppe2_hospital1_13 + M_ppe2_hospital1_14 = 0
+   - z_ppe2_factory3->hospital1_13 + z_ppe2_hospital1->hospital2_13
+   - z_ppe2_DUMMY_RESERVE->hospital1_13 - M_ppe2_hospital1_13
+   + M_ppe2_hospital1_14 = 0
  eq[onhand_ppe2_hospital1_15]: - z_ppe2_factory1->hospital1_14
-   - z_ppe2_factory3->hospital1_14 - z_ppe2_DUMMY_RESERVE->hospital1_14
-   - M_ppe2_hospital1_14 + M_ppe2_hospital1_15 = 0
+   - z_ppe2_factory3->hospital1_14 + z_ppe2_hospital1->hospital2_14
+   - z_ppe2_DUMMY_RESERVE->hospital1_14 - M_ppe2_hospital1_14
+   + M_ppe2_hospital1_15 = 0
  eq[onhand_ppe2_hospital1_16]: - z_ppe2_factory1->hospital1_15
-   - z_ppe2_factory3->hospital1_15 - z_ppe2_DUMMY_RESERVE->hospital1_15
-   - M_ppe2_hospital1_15 + M_ppe2_hospital1_16 = 0
+   - z_ppe2_factory3->hospital1_15 + z_ppe2_hospital1->hospital2_15
+   - z_ppe2_DUMMY_RESERVE->hospital1_15 - M_ppe2_hospital1_15
+   + M_ppe2_hospital1_16 = 0
  eq[onhand_ppe2_hospital1_17]: - z_ppe2_factory1->hospital1_16
-   - z_ppe2_factory3->hospital1_16 - z_ppe2_DUMMY_RESERVE->hospital1_16
-   - M_ppe2_hospital1_16 + M_ppe2_hospital1_17 = 0
+   - z_ppe2_factory3->hospital1_16 + z_ppe2_hospital1->hospital2_16
+   - z_ppe2_DUMMY_RESERVE->hospital1_16 - M_ppe2_hospital1_16
+   + M_ppe2_hospital1_17 = 0
  eq[onhand_ppe2_hospital1_18]: - z_ppe2_factory1->hospital1_17
-   - z_ppe2_factory3->hospital1_17 - z_ppe2_DUMMY_RESERVE->hospital1_17
-   - M_ppe2_hospital1_17 + M_ppe2_hospital1_18 = 0
+   - z_ppe2_factory3->hospital1_17 + z_ppe2_hospital1->hospital2_17
+   - z_ppe2_DUMMY_RESERVE->hospital1_17 - M_ppe2_hospital1_17
+   + M_ppe2_hospital1_18 = 0
  eq[onhand_ppe2_hospital1_19]: - z_ppe2_factory1->hospital1_18
-   - z_ppe2_factory3->hospital1_18 - z_ppe2_DUMMY_RESERVE->hospital1_18
-   - M_ppe2_hospital1_18 + M_ppe2_hospital1_19 = 0
+   - z_ppe2_factory3->hospital1_18 + z_ppe2_hospital1->hospital2_18
+   - z_ppe2_DUMMY_RESERVE->hospital1_18 - M_ppe2_hospital1_18
+   + M_ppe2_hospital1_19 = 0
  eq[onhand_ppe2_hospital2_1]: M_ppe2_hospital2_1 = 0
  eq[onhand_ppe2_hospital2_2]: - z_ppe2_factory1->hospital2_1
    - z_ppe2_factory3->hospital2_1 - z_ppe2_hospital1->hospital2_1
@@ -14271,206 +14838,278 @@ Subject To
    - z_ppe2_factory4->hospital4_18 - z_ppe2_DUMMY_RESERVE->hospital4_18
    - M_ppe2_hospital4_18 + M_ppe2_hospital4_19 = 0
  eq[onhand_ppe3_factory1_1]: M_ppe3_factory1_1 = 0
- eq[onhand_ppe3_factory1_2]: - z_ppe3_DUMMY_RESERVE->factory1_1
+ eq[onhand_ppe3_factory1_2]: z_ppe3_factory1->hospital1_1
+   + z_ppe3_factory1->hospital2_1 + z_ppe3_factory1->factory4_1
+   + z_ppe3_factory1->factory2_1 - z_ppe3_DUMMY_RESERVE->factory1_1
    - M_ppe3_factory1_1 + M_ppe3_factory1_2 = 0
- eq[onhand_ppe3_factory1_3]: - z_ppe3_DUMMY_RESERVE->factory1_2
+ eq[onhand_ppe3_factory1_3]: z_ppe3_factory1->hospital1_2
+   + z_ppe3_factory1->hospital2_2 + z_ppe3_factory1->factory4_2
+   + z_ppe3_factory1->factory2_2 - z_ppe3_DUMMY_RESERVE->factory1_2
    - M_ppe3_factory1_2 + M_ppe3_factory1_3 = 0
- eq[onhand_ppe3_factory1_4]: - z_ppe3_DUMMY_RESERVE->factory1_3
+ eq[onhand_ppe3_factory1_4]: z_ppe3_factory1->hospital1_3
+   + z_ppe3_factory1->hospital2_3 + z_ppe3_factory1->factory4_3
+   + z_ppe3_factory1->factory2_3 - z_ppe3_DUMMY_RESERVE->factory1_3
    - M_ppe3_factory1_3 + M_ppe3_factory1_4 = 0
- eq[onhand_ppe3_factory1_5]: - z_ppe3_DUMMY_RESERVE->factory1_4
+ eq[onhand_ppe3_factory1_5]: z_ppe3_factory1->hospital1_4
+   + z_ppe3_factory1->hospital2_4 + z_ppe3_factory1->factory4_4
+   + z_ppe3_factory1->factory2_4 - z_ppe3_DUMMY_RESERVE->factory1_4
    - M_ppe3_factory1_4 + M_ppe3_factory1_5 = 0
- eq[onhand_ppe3_factory1_6]: - z_ppe3_DUMMY_RESERVE->factory1_5
+ eq[onhand_ppe3_factory1_6]: z_ppe3_factory1->hospital1_5
+   + z_ppe3_factory1->hospital2_5 + z_ppe3_factory1->factory4_5
+   + z_ppe3_factory1->factory2_5 - z_ppe3_DUMMY_RESERVE->factory1_5
    - M_ppe3_factory1_5 + M_ppe3_factory1_6 = 0
- eq[onhand_ppe3_factory1_7]: - z_ppe3_DUMMY_RESERVE->factory1_6
+ eq[onhand_ppe3_factory1_7]: z_ppe3_factory1->hospital1_6
+   + z_ppe3_factory1->hospital2_6 + z_ppe3_factory1->factory4_6
+   + z_ppe3_factory1->factory2_6 - z_ppe3_DUMMY_RESERVE->factory1_6
    - M_ppe3_factory1_6 + M_ppe3_factory1_7 = 0
- eq[onhand_ppe3_factory1_8]: - z_ppe3_DUMMY_RESERVE->factory1_7
+ eq[onhand_ppe3_factory1_8]: z_ppe3_factory1->hospital1_7
+   + z_ppe3_factory1->hospital2_7 + z_ppe3_factory1->factory4_7
+   + z_ppe3_factory1->factory2_7 - z_ppe3_DUMMY_RESERVE->factory1_7
    - M_ppe3_factory1_7 + M_ppe3_factory1_8 = 0
- eq[onhand_ppe3_factory1_9]: - z_ppe3_DUMMY_RESERVE->factory1_8
+ eq[onhand_ppe3_factory1_9]: z_ppe3_factory1->hospital1_8
+   + z_ppe3_factory1->hospital2_8 + z_ppe3_factory1->factory4_8
+   + z_ppe3_factory1->factory2_8 - z_ppe3_DUMMY_RESERVE->factory1_8
    - M_ppe3_factory1_8 + M_ppe3_factory1_9 = 0
- eq[onhand_ppe3_factory1_10]: - z_ppe3_DUMMY_RESERVE->factory1_9
+ eq[onhand_ppe3_factory1_10]: z_ppe3_factory1->hospital1_9
+   + z_ppe3_factory1->hospital2_9 + z_ppe3_factory1->factory4_9
+   + z_ppe3_factory1->factory2_9 - z_ppe3_DUMMY_RESERVE->factory1_9
    - M_ppe3_factory1_9 + M_ppe3_factory1_10 = 0
- eq[onhand_ppe3_factory1_11]: - z_ppe3_DUMMY_RESERVE->factory1_10
+ eq[onhand_ppe3_factory1_11]: z_ppe3_factory1->hospital1_10
+   + z_ppe3_factory1->hospital2_10 + z_ppe3_factory1->factory4_10
+   + z_ppe3_factory1->factory2_10 - z_ppe3_DUMMY_RESERVE->factory1_10
    - M_ppe3_factory1_10 + M_ppe3_factory1_11 = 0
- eq[onhand_ppe3_factory1_12]: - z_ppe3_DUMMY_RESERVE->factory1_11
+ eq[onhand_ppe3_factory1_12]: z_ppe3_factory1->hospital1_11
+   + z_ppe3_factory1->hospital2_11 + z_ppe3_factory1->factory4_11
+   + z_ppe3_factory1->factory2_11 - z_ppe3_DUMMY_RESERVE->factory1_11
    - M_ppe3_factory1_11 + M_ppe3_factory1_12 = 0
- eq[onhand_ppe3_factory1_13]: - z_ppe3_DUMMY_RESERVE->factory1_12
+ eq[onhand_ppe3_factory1_13]: z_ppe3_factory1->hospital1_12
+   + z_ppe3_factory1->hospital2_12 + z_ppe3_factory1->factory4_12
+   + z_ppe3_factory1->factory2_12 - z_ppe3_DUMMY_RESERVE->factory1_12
    - M_ppe3_factory1_12 + M_ppe3_factory1_13 = 0
- eq[onhand_ppe3_factory1_14]: - z_ppe3_DUMMY_RESERVE->factory1_13
+ eq[onhand_ppe3_factory1_14]: z_ppe3_factory1->hospital1_13
+   + z_ppe3_factory1->hospital2_13 + z_ppe3_factory1->factory4_13
+   + z_ppe3_factory1->factory2_13 - z_ppe3_DUMMY_RESERVE->factory1_13
    - M_ppe3_factory1_13 + M_ppe3_factory1_14 = 0
- eq[onhand_ppe3_factory1_15]: - z_ppe3_DUMMY_RESERVE->factory1_14
+ eq[onhand_ppe3_factory1_15]: z_ppe3_factory1->hospital1_14
+   + z_ppe3_factory1->hospital2_14 + z_ppe3_factory1->factory4_14
+   + z_ppe3_factory1->factory2_14 - z_ppe3_DUMMY_RESERVE->factory1_14
    - M_ppe3_factory1_14 + M_ppe3_factory1_15 = 0
- eq[onhand_ppe3_factory1_16]: - z_ppe3_DUMMY_RESERVE->factory1_15
+ eq[onhand_ppe3_factory1_16]: z_ppe3_factory1->hospital1_15
+   + z_ppe3_factory1->hospital2_15 + z_ppe3_factory1->factory4_15
+   + z_ppe3_factory1->factory2_15 - z_ppe3_DUMMY_RESERVE->factory1_15
    - M_ppe3_factory1_15 + M_ppe3_factory1_16 = 0
- eq[onhand_ppe3_factory1_17]: - z_ppe3_DUMMY_RESERVE->factory1_16
+ eq[onhand_ppe3_factory1_17]: z_ppe3_factory1->hospital1_16
+   + z_ppe3_factory1->hospital2_16 + z_ppe3_factory1->factory4_16
+   + z_ppe3_factory1->factory2_16 - z_ppe3_DUMMY_RESERVE->factory1_16
    - M_ppe3_factory1_16 + M_ppe3_factory1_17 = 0
- eq[onhand_ppe3_factory1_18]: - z_ppe3_DUMMY_RESERVE->factory1_17
+ eq[onhand_ppe3_factory1_18]: z_ppe3_factory1->hospital1_17
+   + z_ppe3_factory1->hospital2_17 + z_ppe3_factory1->factory4_17
+   + z_ppe3_factory1->factory2_17 - z_ppe3_DUMMY_RESERVE->factory1_17
    - M_ppe3_factory1_17 + M_ppe3_factory1_18 = 0
- eq[onhand_ppe3_factory1_19]: - z_ppe3_DUMMY_RESERVE->factory1_18
+ eq[onhand_ppe3_factory1_19]: z_ppe3_factory1->hospital1_18
+   + z_ppe3_factory1->hospital2_18 + z_ppe3_factory1->factory4_18
+   + z_ppe3_factory1->factory2_18 - z_ppe3_DUMMY_RESERVE->factory1_18
    - M_ppe3_factory1_18 + M_ppe3_factory1_19 = 0
  eq[onhand_ppe3_factory2_1]: M_ppe3_factory2_1 = 0
- eq[onhand_ppe3_factory2_2]: - z_ppe3_factory1->factory2_1
+ eq[onhand_ppe3_factory2_2]: z_ppe3_factory2->hospital3_1
+   + z_ppe3_factory2->hospital4_1 - z_ppe3_factory1->factory2_1
    - z_ppe3_factory4->factory2_1 - z_ppe3_DUMMY_RESERVE->factory2_1
    - M_ppe3_factory2_1 + M_ppe3_factory2_2 = 0
- eq[onhand_ppe3_factory2_3]: - z_ppe3_factory1->factory2_2
+ eq[onhand_ppe3_factory2_3]: z_ppe3_factory2->hospital3_2
+   + z_ppe3_factory2->hospital4_2 - z_ppe3_factory1->factory2_2
    - z_ppe3_factory4->factory2_2 - z_ppe3_DUMMY_RESERVE->factory2_2
    - M_ppe3_factory2_2 + M_ppe3_factory2_3 = 0
- eq[onhand_ppe3_factory2_4]: - z_ppe3_factory1->factory2_3
+ eq[onhand_ppe3_factory2_4]: z_ppe3_factory2->hospital3_3
+   + z_ppe3_factory2->hospital4_3 - z_ppe3_factory1->factory2_3
    - z_ppe3_factory4->factory2_3 - z_ppe3_DUMMY_RESERVE->factory2_3
    - M_ppe3_factory2_3 + M_ppe3_factory2_4 = 0
- eq[onhand_ppe3_factory2_5]: - z_ppe3_factory1->factory2_4
+ eq[onhand_ppe3_factory2_5]: z_ppe3_factory2->hospital3_4
+   + z_ppe3_factory2->hospital4_4 - z_ppe3_factory1->factory2_4
    - z_ppe3_factory4->factory2_4 - z_ppe3_DUMMY_RESERVE->factory2_4
    - M_ppe3_factory2_4 + M_ppe3_factory2_5 = 0
- eq[onhand_ppe3_factory2_6]: - z_ppe3_factory1->factory2_5
+ eq[onhand_ppe3_factory2_6]: z_ppe3_factory2->hospital3_5
+   + z_ppe3_factory2->hospital4_5 - z_ppe3_factory1->factory2_5
    - z_ppe3_factory4->factory2_5 - z_ppe3_DUMMY_RESERVE->factory2_5
    - M_ppe3_factory2_5 + M_ppe3_factory2_6 = 0
- eq[onhand_ppe3_factory2_7]: - z_ppe3_factory1->factory2_6
+ eq[onhand_ppe3_factory2_7]: z_ppe3_factory2->hospital3_6
+   + z_ppe3_factory2->hospital4_6 - z_ppe3_factory1->factory2_6
    - z_ppe3_factory4->factory2_6 - z_ppe3_DUMMY_RESERVE->factory2_6
    - M_ppe3_factory2_6 + M_ppe3_factory2_7 = 0
- eq[onhand_ppe3_factory2_8]: - z_ppe3_factory1->factory2_7
+ eq[onhand_ppe3_factory2_8]: z_ppe3_factory2->hospital3_7
+   + z_ppe3_factory2->hospital4_7 - z_ppe3_factory1->factory2_7
    - z_ppe3_factory4->factory2_7 - z_ppe3_DUMMY_RESERVE->factory2_7
    - M_ppe3_factory2_7 + M_ppe3_factory2_8 = 0
- eq[onhand_ppe3_factory2_9]: - z_ppe3_factory1->factory2_8
+ eq[onhand_ppe3_factory2_9]: z_ppe3_factory2->hospital3_8
+   + z_ppe3_factory2->hospital4_8 - z_ppe3_factory1->factory2_8
    - z_ppe3_factory4->factory2_8 - z_ppe3_DUMMY_RESERVE->factory2_8
    - M_ppe3_factory2_8 + M_ppe3_factory2_9 = 0
- eq[onhand_ppe3_factory2_10]: - z_ppe3_factory1->factory2_9
+ eq[onhand_ppe3_factory2_10]: z_ppe3_factory2->hospital3_9
+   + z_ppe3_factory2->hospital4_9 - z_ppe3_factory1->factory2_9
    - z_ppe3_factory4->factory2_9 - z_ppe3_DUMMY_RESERVE->factory2_9
    - M_ppe3_factory2_9 + M_ppe3_factory2_10 = 0
- eq[onhand_ppe3_factory2_11]: - z_ppe3_factory1->factory2_10
+ eq[onhand_ppe3_factory2_11]: z_ppe3_factory2->hospital3_10
+   + z_ppe3_factory2->hospital4_10 - z_ppe3_factory1->factory2_10
    - z_ppe3_factory4->factory2_10 - z_ppe3_DUMMY_RESERVE->factory2_10
    - M_ppe3_factory2_10 + M_ppe3_factory2_11 = 0
- eq[onhand_ppe3_factory2_12]: - z_ppe3_factory1->factory2_11
+ eq[onhand_ppe3_factory2_12]: z_ppe3_factory2->hospital3_11
+   + z_ppe3_factory2->hospital4_11 - z_ppe3_factory1->factory2_11
    - z_ppe3_factory4->factory2_11 - z_ppe3_DUMMY_RESERVE->factory2_11
    - M_ppe3_factory2_11 + M_ppe3_factory2_12 = 0
- eq[onhand_ppe3_factory2_13]: - z_ppe3_factory1->factory2_12
+ eq[onhand_ppe3_factory2_13]: z_ppe3_factory2->hospital3_12
+   + z_ppe3_factory2->hospital4_12 - z_ppe3_factory1->factory2_12
    - z_ppe3_factory4->factory2_12 - z_ppe3_DUMMY_RESERVE->factory2_12
    - M_ppe3_factory2_12 + M_ppe3_factory2_13 = 0
- eq[onhand_ppe3_factory2_14]: - z_ppe3_factory1->factory2_13
+ eq[onhand_ppe3_factory2_14]: z_ppe3_factory2->hospital3_13
+   + z_ppe3_factory2->hospital4_13 - z_ppe3_factory1->factory2_13
    - z_ppe3_factory4->factory2_13 - z_ppe3_DUMMY_RESERVE->factory2_13
    - M_ppe3_factory2_13 + M_ppe3_factory2_14 = 0
- eq[onhand_ppe3_factory2_15]: - z_ppe3_factory1->factory2_14
+ eq[onhand_ppe3_factory2_15]: z_ppe3_factory2->hospital3_14
+   + z_ppe3_factory2->hospital4_14 - z_ppe3_factory1->factory2_14
    - z_ppe3_factory4->factory2_14 - z_ppe3_DUMMY_RESERVE->factory2_14
    - M_ppe3_factory2_14 + M_ppe3_factory2_15 = 0
- eq[onhand_ppe3_factory2_16]: - z_ppe3_factory1->factory2_15
+ eq[onhand_ppe3_factory2_16]: z_ppe3_factory2->hospital3_15
+   + z_ppe3_factory2->hospital4_15 - z_ppe3_factory1->factory2_15
    - z_ppe3_factory4->factory2_15 - z_ppe3_DUMMY_RESERVE->factory2_15
    - M_ppe3_factory2_15 + M_ppe3_factory2_16 = 0
- eq[onhand_ppe3_factory2_17]: - z_ppe3_factory1->factory2_16
+ eq[onhand_ppe3_factory2_17]: z_ppe3_factory2->hospital3_16
+   + z_ppe3_factory2->hospital4_16 - z_ppe3_factory1->factory2_16
    - z_ppe3_factory4->factory2_16 - z_ppe3_DUMMY_RESERVE->factory2_16
    - M_ppe3_factory2_16 + M_ppe3_factory2_17 = 0
- eq[onhand_ppe3_factory2_18]: - z_ppe3_factory1->factory2_17
+ eq[onhand_ppe3_factory2_18]: z_ppe3_factory2->hospital3_17
+   + z_ppe3_factory2->hospital4_17 - z_ppe3_factory1->factory2_17
    - z_ppe3_factory4->factory2_17 - z_ppe3_DUMMY_RESERVE->factory2_17
    - M_ppe3_factory2_17 + M_ppe3_factory2_18 = 0
- eq[onhand_ppe3_factory2_19]: - z_ppe3_factory1->factory2_18
+ eq[onhand_ppe3_factory2_19]: z_ppe3_factory2->hospital3_18
+   + z_ppe3_factory2->hospital4_18 - z_ppe3_factory1->factory2_18
    - z_ppe3_factory4->factory2_18 - z_ppe3_DUMMY_RESERVE->factory2_18
    - M_ppe3_factory2_18 + M_ppe3_factory2_19 = 0
- eq[onhand_ppe3_factory3_1]: - y_ppe3_factory3_1 + M_ppe3_factory3_1 = 0
- eq[onhand_ppe3_factory3_2]: - y_ppe3_factory3_2
-   - z_ppe3_DUMMY_RESERVE->factory3_1 - M_ppe3_factory3_1
-   + M_ppe3_factory3_2 = 0
- eq[onhand_ppe3_factory3_3]: - y_ppe3_factory3_3
-   - z_ppe3_DUMMY_RESERVE->factory3_2 - M_ppe3_factory3_2
-   + M_ppe3_factory3_3 = 0
- eq[onhand_ppe3_factory3_4]: - y_ppe3_factory3_4
-   - z_ppe3_DUMMY_RESERVE->factory3_3 - M_ppe3_factory3_3
-   + M_ppe3_factory3_4 = 0
- eq[onhand_ppe3_factory3_5]: - y_ppe3_factory3_5
-   - z_ppe3_DUMMY_RESERVE->factory3_4 - M_ppe3_factory3_4
-   + M_ppe3_factory3_5 = 0
- eq[onhand_ppe3_factory3_6]: - y_ppe3_factory3_6
-   - z_ppe3_DUMMY_RESERVE->factory3_5 - M_ppe3_factory3_5
-   + M_ppe3_factory3_6 = 0
- eq[onhand_ppe3_factory3_7]: - y_ppe3_factory3_7
-   - z_ppe3_DUMMY_RESERVE->factory3_6 - M_ppe3_factory3_6
-   + M_ppe3_factory3_7 = 0
- eq[onhand_ppe3_factory3_8]: - y_ppe3_factory3_8
-   - z_ppe3_DUMMY_RESERVE->factory3_7 - M_ppe3_factory3_7
-   + M_ppe3_factory3_8 = 0
- eq[onhand_ppe3_factory3_9]: - y_ppe3_factory3_9
-   - z_ppe3_DUMMY_RESERVE->factory3_8 - M_ppe3_factory3_8
-   + M_ppe3_factory3_9 = 0
- eq[onhand_ppe3_factory3_10]: - y_ppe3_factory3_10
-   - z_ppe3_DUMMY_RESERVE->factory3_9 - M_ppe3_factory3_9
-   + M_ppe3_factory3_10 = 0
- eq[onhand_ppe3_factory3_11]: - y_ppe3_factory3_11
-   - z_ppe3_DUMMY_RESERVE->factory3_10 - M_ppe3_factory3_10
-   + M_ppe3_factory3_11 = 0
- eq[onhand_ppe3_factory3_12]: - y_ppe3_factory3_12
-   - z_ppe3_DUMMY_RESERVE->factory3_11 - M_ppe3_factory3_11
-   + M_ppe3_factory3_12 = 0
- eq[onhand_ppe3_factory3_13]: - y_ppe3_factory3_13
-   - z_ppe3_DUMMY_RESERVE->factory3_12 - M_ppe3_factory3_12
-   + M_ppe3_factory3_13 = 0
- eq[onhand_ppe3_factory3_14]: - y_ppe3_factory3_14
-   - z_ppe3_DUMMY_RESERVE->factory3_13 - M_ppe3_factory3_13
-   + M_ppe3_factory3_14 = 0
- eq[onhand_ppe3_factory3_15]: - y_ppe3_factory3_15
-   - z_ppe3_DUMMY_RESERVE->factory3_14 - M_ppe3_factory3_14
-   + M_ppe3_factory3_15 = 0
- eq[onhand_ppe3_factory3_16]: - y_ppe3_factory3_16
-   - z_ppe3_DUMMY_RESERVE->factory3_15 - M_ppe3_factory3_15
-   + M_ppe3_factory3_16 = 0
- eq[onhand_ppe3_factory3_17]: - y_ppe3_factory3_17
-   - z_ppe3_DUMMY_RESERVE->factory3_16 - M_ppe3_factory3_16
-   + M_ppe3_factory3_17 = 0
- eq[onhand_ppe3_factory3_18]: - y_ppe3_factory3_18
-   - z_ppe3_DUMMY_RESERVE->factory3_17 - M_ppe3_factory3_17
-   + M_ppe3_factory3_18 = 0
- eq[onhand_ppe3_factory3_19]: - y_ppe3_factory3_19
-   - z_ppe3_DUMMY_RESERVE->factory3_18 - M_ppe3_factory3_18
-   + M_ppe3_factory3_19 = 0
- eq[onhand_ppe3_factory4_1]: - y_ppe3_factory4_1 + M_ppe3_factory4_1 = 0
- eq[onhand_ppe3_factory4_2]: - y_ppe3_factory4_2
-   - z_ppe3_factory1->factory4_1 - z_ppe3_DUMMY_RESERVE->factory4_1
+ eq[onhand_ppe3_factory3_1]: M_ppe3_factory3_1 = 0
+ eq[onhand_ppe3_factory3_2]: z_ppe3_factory3->hospital1_1
+   + z_ppe3_factory3->hospital2_1 - z_ppe3_DUMMY_RESERVE->factory3_1
+   - M_ppe3_factory3_1 + M_ppe3_factory3_2 = 0
+ eq[onhand_ppe3_factory3_3]: z_ppe3_factory3->hospital1_2
+   + z_ppe3_factory3->hospital2_2 - z_ppe3_DUMMY_RESERVE->factory3_2
+   - M_ppe3_factory3_2 + M_ppe3_factory3_3 = 0
+ eq[onhand_ppe3_factory3_4]: z_ppe3_factory3->hospital1_3
+   + z_ppe3_factory3->hospital2_3 - z_ppe3_DUMMY_RESERVE->factory3_3
+   - M_ppe3_factory3_3 + M_ppe3_factory3_4 = 0
+ eq[onhand_ppe3_factory3_5]: z_ppe3_factory3->hospital1_4
+   + z_ppe3_factory3->hospital2_4 - z_ppe3_DUMMY_RESERVE->factory3_4
+   - M_ppe3_factory3_4 + M_ppe3_factory3_5 = 0
+ eq[onhand_ppe3_factory3_6]: z_ppe3_factory3->hospital1_5
+   + z_ppe3_factory3->hospital2_5 - z_ppe3_DUMMY_RESERVE->factory3_5
+   - M_ppe3_factory3_5 + M_ppe3_factory3_6 = 0
+ eq[onhand_ppe3_factory3_7]: z_ppe3_factory3->hospital1_6
+   + z_ppe3_factory3->hospital2_6 - z_ppe3_DUMMY_RESERVE->factory3_6
+   - M_ppe3_factory3_6 + M_ppe3_factory3_7 = 0
+ eq[onhand_ppe3_factory3_8]: z_ppe3_factory3->hospital1_7
+   + z_ppe3_factory3->hospital2_7 - z_ppe3_DUMMY_RESERVE->factory3_7
+   - M_ppe3_factory3_7 + M_ppe3_factory3_8 = 0
+ eq[onhand_ppe3_factory3_9]: z_ppe3_factory3->hospital1_8
+   + z_ppe3_factory3->hospital2_8 - z_ppe3_DUMMY_RESERVE->factory3_8
+   - M_ppe3_factory3_8 + M_ppe3_factory3_9 = 0
+ eq[onhand_ppe3_factory3_10]: z_ppe3_factory3->hospital1_9
+   + z_ppe3_factory3->hospital2_9 - z_ppe3_DUMMY_RESERVE->factory3_9
+   - M_ppe3_factory3_9 + M_ppe3_factory3_10 = 0
+ eq[onhand_ppe3_factory3_11]: z_ppe3_factory3->hospital1_10
+   + z_ppe3_factory3->hospital2_10 - z_ppe3_DUMMY_RESERVE->factory3_10
+   - M_ppe3_factory3_10 + M_ppe3_factory3_11 = 0
+ eq[onhand_ppe3_factory3_12]: z_ppe3_factory3->hospital1_11
+   + z_ppe3_factory3->hospital2_11 - z_ppe3_DUMMY_RESERVE->factory3_11
+   - M_ppe3_factory3_11 + M_ppe3_factory3_12 = 0
+ eq[onhand_ppe3_factory3_13]: z_ppe3_factory3->hospital1_12
+   + z_ppe3_factory3->hospital2_12 - z_ppe3_DUMMY_RESERVE->factory3_12
+   - M_ppe3_factory3_12 + M_ppe3_factory3_13 = 0
+ eq[onhand_ppe3_factory3_14]: z_ppe3_factory3->hospital1_13
+   + z_ppe3_factory3->hospital2_13 - z_ppe3_DUMMY_RESERVE->factory3_13
+   - M_ppe3_factory3_13 + M_ppe3_factory3_14 = 0
+ eq[onhand_ppe3_factory3_15]: z_ppe3_factory3->hospital1_14
+   + z_ppe3_factory3->hospital2_14 - z_ppe3_DUMMY_RESERVE->factory3_14
+   - M_ppe3_factory3_14 + M_ppe3_factory3_15 = 0
+ eq[onhand_ppe3_factory3_16]: z_ppe3_factory3->hospital1_15
+   + z_ppe3_factory3->hospital2_15 - z_ppe3_DUMMY_RESERVE->factory3_15
+   - M_ppe3_factory3_15 + M_ppe3_factory3_16 = 0
+ eq[onhand_ppe3_factory3_17]: z_ppe3_factory3->hospital1_16
+   + z_ppe3_factory3->hospital2_16 - z_ppe3_DUMMY_RESERVE->factory3_16
+   - M_ppe3_factory3_16 + M_ppe3_factory3_17 = 0
+ eq[onhand_ppe3_factory3_18]: z_ppe3_factory3->hospital1_17
+   + z_ppe3_factory3->hospital2_17 - z_ppe3_DUMMY_RESERVE->factory3_17
+   - M_ppe3_factory3_17 + M_ppe3_factory3_18 = 0
+ eq[onhand_ppe3_factory3_19]: z_ppe3_factory3->hospital1_18
+   + z_ppe3_factory3->hospital2_18 - z_ppe3_DUMMY_RESERVE->factory3_18
+   - M_ppe3_factory3_18 + M_ppe3_factory3_19 = 0
+ eq[onhand_ppe3_factory4_1]: M_ppe3_factory4_1 = 0
+ eq[onhand_ppe3_factory4_2]: z_ppe3_factory4->hospital3_1
+   + z_ppe3_factory4->hospital4_1 - z_ppe3_factory1->factory4_1
+   + z_ppe3_factory4->factory2_1 - z_ppe3_DUMMY_RESERVE->factory4_1
    - M_ppe3_factory4_1 + M_ppe3_factory4_2 = 0
- eq[onhand_ppe3_factory4_3]: - y_ppe3_factory4_3
-   - z_ppe3_factory1->factory4_2 - z_ppe3_DUMMY_RESERVE->factory4_2
+ eq[onhand_ppe3_factory4_3]: z_ppe3_factory4->hospital3_2
+   + z_ppe3_factory4->hospital4_2 - z_ppe3_factory1->factory4_2
+   + z_ppe3_factory4->factory2_2 - z_ppe3_DUMMY_RESERVE->factory4_2
    - M_ppe3_factory4_2 + M_ppe3_factory4_3 = 0
- eq[onhand_ppe3_factory4_4]: - y_ppe3_factory4_4
-   - z_ppe3_factory1->factory4_3 - z_ppe3_DUMMY_RESERVE->factory4_3
+ eq[onhand_ppe3_factory4_4]: z_ppe3_factory4->hospital3_3
+   + z_ppe3_factory4->hospital4_3 - z_ppe3_factory1->factory4_3
+   + z_ppe3_factory4->factory2_3 - z_ppe3_DUMMY_RESERVE->factory4_3
    - M_ppe3_factory4_3 + M_ppe3_factory4_4 = 0
- eq[onhand_ppe3_factory4_5]: - y_ppe3_factory4_5
-   - z_ppe3_factory1->factory4_4 - z_ppe3_DUMMY_RESERVE->factory4_4
+ eq[onhand_ppe3_factory4_5]: z_ppe3_factory4->hospital3_4
+   + z_ppe3_factory4->hospital4_4 - z_ppe3_factory1->factory4_4
+   + z_ppe3_factory4->factory2_4 - z_ppe3_DUMMY_RESERVE->factory4_4
    - M_ppe3_factory4_4 + M_ppe3_factory4_5 = 0
- eq[onhand_ppe3_factory4_6]: - y_ppe3_factory4_6
-   - z_ppe3_factory1->factory4_5 - z_ppe3_DUMMY_RESERVE->factory4_5
+ eq[onhand_ppe3_factory4_6]: z_ppe3_factory4->hospital3_5
+   + z_ppe3_factory4->hospital4_5 - z_ppe3_factory1->factory4_5
+   + z_ppe3_factory4->factory2_5 - z_ppe3_DUMMY_RESERVE->factory4_5
    - M_ppe3_factory4_5 + M_ppe3_factory4_6 = 0
- eq[onhand_ppe3_factory4_7]: - y_ppe3_factory4_7
-   - z_ppe3_factory1->factory4_6 - z_ppe3_DUMMY_RESERVE->factory4_6
+ eq[onhand_ppe3_factory4_7]: z_ppe3_factory4->hospital3_6
+   + z_ppe3_factory4->hospital4_6 - z_ppe3_factory1->factory4_6
+   + z_ppe3_factory4->factory2_6 - z_ppe3_DUMMY_RESERVE->factory4_6
    - M_ppe3_factory4_6 + M_ppe3_factory4_7 = 0
- eq[onhand_ppe3_factory4_8]: - y_ppe3_factory4_8
-   - z_ppe3_factory1->factory4_7 - z_ppe3_DUMMY_RESERVE->factory4_7
+ eq[onhand_ppe3_factory4_8]: z_ppe3_factory4->hospital3_7
+   + z_ppe3_factory4->hospital4_7 - z_ppe3_factory1->factory4_7
+   + z_ppe3_factory4->factory2_7 - z_ppe3_DUMMY_RESERVE->factory4_7
    - M_ppe3_factory4_7 + M_ppe3_factory4_8 = 0
- eq[onhand_ppe3_factory4_9]: - y_ppe3_factory4_9
-   - z_ppe3_factory1->factory4_8 - z_ppe3_DUMMY_RESERVE->factory4_8
+ eq[onhand_ppe3_factory4_9]: z_ppe3_factory4->hospital3_8
+   + z_ppe3_factory4->hospital4_8 - z_ppe3_factory1->factory4_8
+   + z_ppe3_factory4->factory2_8 - z_ppe3_DUMMY_RESERVE->factory4_8
    - M_ppe3_factory4_8 + M_ppe3_factory4_9 = 0
- eq[onhand_ppe3_factory4_10]: - y_ppe3_factory4_10
-   - z_ppe3_factory1->factory4_9 - z_ppe3_DUMMY_RESERVE->factory4_9
+ eq[onhand_ppe3_factory4_10]: z_ppe3_factory4->hospital3_9
+   + z_ppe3_factory4->hospital4_9 - z_ppe3_factory1->factory4_9
+   + z_ppe3_factory4->factory2_9 - z_ppe3_DUMMY_RESERVE->factory4_9
    - M_ppe3_factory4_9 + M_ppe3_factory4_10 = 0
- eq[onhand_ppe3_factory4_11]: - y_ppe3_factory4_11
-   - z_ppe3_factory1->factory4_10 - z_ppe3_DUMMY_RESERVE->factory4_10
+ eq[onhand_ppe3_factory4_11]: z_ppe3_factory4->hospital3_10
+   + z_ppe3_factory4->hospital4_10 - z_ppe3_factory1->factory4_10
+   + z_ppe3_factory4->factory2_10 - z_ppe3_DUMMY_RESERVE->factory4_10
    - M_ppe3_factory4_10 + M_ppe3_factory4_11 = 0
- eq[onhand_ppe3_factory4_12]: - y_ppe3_factory4_12
-   - z_ppe3_factory1->factory4_11 - z_ppe3_DUMMY_RESERVE->factory4_11
+ eq[onhand_ppe3_factory4_12]: z_ppe3_factory4->hospital3_11
+   + z_ppe3_factory4->hospital4_11 - z_ppe3_factory1->factory4_11
+   + z_ppe3_factory4->factory2_11 - z_ppe3_DUMMY_RESERVE->factory4_11
    - M_ppe3_factory4_11 + M_ppe3_factory4_12 = 0
- eq[onhand_ppe3_factory4_13]: - y_ppe3_factory4_13
-   - z_ppe3_factory1->factory4_12 - z_ppe3_DUMMY_RESERVE->factory4_12
+ eq[onhand_ppe3_factory4_13]: z_ppe3_factory4->hospital3_12
+   + z_ppe3_factory4->hospital4_12 - z_ppe3_factory1->factory4_12
+   + z_ppe3_factory4->factory2_12 - z_ppe3_DUMMY_RESERVE->factory4_12
    - M_ppe3_factory4_12 + M_ppe3_factory4_13 = 0
- eq[onhand_ppe3_factory4_14]: - y_ppe3_factory4_14
-   - z_ppe3_factory1->factory4_13 - z_ppe3_DUMMY_RESERVE->factory4_13
+ eq[onhand_ppe3_factory4_14]: z_ppe3_factory4->hospital3_13
+   + z_ppe3_factory4->hospital4_13 - z_ppe3_factory1->factory4_13
+   + z_ppe3_factory4->factory2_13 - z_ppe3_DUMMY_RESERVE->factory4_13
    - M_ppe3_factory4_13 + M_ppe3_factory4_14 = 0
- eq[onhand_ppe3_factory4_15]: - y_ppe3_factory4_15
-   - z_ppe3_factory1->factory4_14 - z_ppe3_DUMMY_RESERVE->factory4_14
+ eq[onhand_ppe3_factory4_15]: z_ppe3_factory4->hospital3_14
+   + z_ppe3_factory4->hospital4_14 - z_ppe3_factory1->factory4_14
+   + z_ppe3_factory4->factory2_14 - z_ppe3_DUMMY_RESERVE->factory4_14
    - M_ppe3_factory4_14 + M_ppe3_factory4_15 = 0
- eq[onhand_ppe3_factory4_16]: - y_ppe3_factory4_16
-   - z_ppe3_factory1->factory4_15 - z_ppe3_DUMMY_RESERVE->factory4_15
+ eq[onhand_ppe3_factory4_16]: z_ppe3_factory4->hospital3_15
+   + z_ppe3_factory4->hospital4_15 - z_ppe3_factory1->factory4_15
+   + z_ppe3_factory4->factory2_15 - z_ppe3_DUMMY_RESERVE->factory4_15
    - M_ppe3_factory4_15 + M_ppe3_factory4_16 = 0
- eq[onhand_ppe3_factory4_17]: - y_ppe3_factory4_17
-   - z_ppe3_factory1->factory4_16 - z_ppe3_DUMMY_RESERVE->factory4_16
+ eq[onhand_ppe3_factory4_17]: z_ppe3_factory4->hospital3_16
+   + z_ppe3_factory4->hospital4_16 - z_ppe3_factory1->factory4_16
+   + z_ppe3_factory4->factory2_16 - z_ppe3_DUMMY_RESERVE->factory4_16
    - M_ppe3_factory4_16 + M_ppe3_factory4_17 = 0
- eq[onhand_ppe3_factory4_18]: - y_ppe3_factory4_18
-   - z_ppe3_factory1->factory4_17 - z_ppe3_DUMMY_RESERVE->factory4_17
+ eq[onhand_ppe3_factory4_18]: z_ppe3_factory4->hospital3_17
+   + z_ppe3_factory4->hospital4_17 - z_ppe3_factory1->factory4_17
+   + z_ppe3_factory4->factory2_17 - z_ppe3_DUMMY_RESERVE->factory4_17
    - M_ppe3_factory4_17 + M_ppe3_factory4_18 = 0
- eq[onhand_ppe3_factory4_19]: - y_ppe3_factory4_19
-   - z_ppe3_factory1->factory4_18 - z_ppe3_DUMMY_RESERVE->factory4_18
+ eq[onhand_ppe3_factory4_19]: z_ppe3_factory4->hospital3_18
+   + z_ppe3_factory4->hospital4_18 - z_ppe3_factory1->factory4_18
+   + z_ppe3_factory4->factory2_18 - z_ppe3_DUMMY_RESERVE->factory4_18
    - M_ppe3_factory4_18 + M_ppe3_factory4_19 = 0
  eq[onhand_ppe3_DUMMY_RESERVE_1]: M_ppe3_DUMMY_RESERVE_1 = 1e+06
  eq[onhand_ppe3_DUMMY_RESERVE_2]: M_ppe3_DUMMY_RESERVE_2 = 1e+06
@@ -14493,59 +15132,77 @@ Subject To
  eq[onhand_ppe3_DUMMY_RESERVE_19]: M_ppe3_DUMMY_RESERVE_19 = 1e+06
  eq[onhand_ppe3_hospital1_1]: M_ppe3_hospital1_1 = 0
  eq[onhand_ppe3_hospital1_2]: - z_ppe3_factory1->hospital1_1
-   - z_ppe3_factory3->hospital1_1 - z_ppe3_DUMMY_RESERVE->hospital1_1
-   - M_ppe3_hospital1_1 + M_ppe3_hospital1_2 = 0
+   - z_ppe3_factory3->hospital1_1 + z_ppe3_hospital1->hospital2_1
+   - z_ppe3_DUMMY_RESERVE->hospital1_1 - M_ppe3_hospital1_1
+   + M_ppe3_hospital1_2 = 0
  eq[onhand_ppe3_hospital1_3]: - z_ppe3_factory1->hospital1_2
-   - z_ppe3_factory3->hospital1_2 - z_ppe3_DUMMY_RESERVE->hospital1_2
-   - M_ppe3_hospital1_2 + M_ppe3_hospital1_3 = 0
+   - z_ppe3_factory3->hospital1_2 + z_ppe3_hospital1->hospital2_2
+   - z_ppe3_DUMMY_RESERVE->hospital1_2 - M_ppe3_hospital1_2
+   + M_ppe3_hospital1_3 = 0
  eq[onhand_ppe3_hospital1_4]: - z_ppe3_factory1->hospital1_3
-   - z_ppe3_factory3->hospital1_3 - z_ppe3_DUMMY_RESERVE->hospital1_3
-   - M_ppe3_hospital1_3 + M_ppe3_hospital1_4 = 0
+   - z_ppe3_factory3->hospital1_3 + z_ppe3_hospital1->hospital2_3
+   - z_ppe3_DUMMY_RESERVE->hospital1_3 - M_ppe3_hospital1_3
+   + M_ppe3_hospital1_4 = 0
  eq[onhand_ppe3_hospital1_5]: - z_ppe3_factory1->hospital1_4
-   - z_ppe3_factory3->hospital1_4 - z_ppe3_DUMMY_RESERVE->hospital1_4
-   - M_ppe3_hospital1_4 + M_ppe3_hospital1_5 = 0
+   - z_ppe3_factory3->hospital1_4 + z_ppe3_hospital1->hospital2_4
+   - z_ppe3_DUMMY_RESERVE->hospital1_4 - M_ppe3_hospital1_4
+   + M_ppe3_hospital1_5 = 0
  eq[onhand_ppe3_hospital1_6]: - z_ppe3_factory1->hospital1_5
-   - z_ppe3_factory3->hospital1_5 - z_ppe3_DUMMY_RESERVE->hospital1_5
-   - M_ppe3_hospital1_5 + M_ppe3_hospital1_6 = 0
+   - z_ppe3_factory3->hospital1_5 + z_ppe3_hospital1->hospital2_5
+   - z_ppe3_DUMMY_RESERVE->hospital1_5 - M_ppe3_hospital1_5
+   + M_ppe3_hospital1_6 = 0
  eq[onhand_ppe3_hospital1_7]: - z_ppe3_factory1->hospital1_6
-   - z_ppe3_factory3->hospital1_6 - z_ppe3_DUMMY_RESERVE->hospital1_6
-   - M_ppe3_hospital1_6 + M_ppe3_hospital1_7 = 0
+   - z_ppe3_factory3->hospital1_6 + z_ppe3_hospital1->hospital2_6
+   - z_ppe3_DUMMY_RESERVE->hospital1_6 - M_ppe3_hospital1_6
+   + M_ppe3_hospital1_7 = 0
  eq[onhand_ppe3_hospital1_8]: - z_ppe3_factory1->hospital1_7
-   - z_ppe3_factory3->hospital1_7 - z_ppe3_DUMMY_RESERVE->hospital1_7
-   - M_ppe3_hospital1_7 + M_ppe3_hospital1_8 = 0
+   - z_ppe3_factory3->hospital1_7 + z_ppe3_hospital1->hospital2_7
+   - z_ppe3_DUMMY_RESERVE->hospital1_7 - M_ppe3_hospital1_7
+   + M_ppe3_hospital1_8 = 0
  eq[onhand_ppe3_hospital1_9]: - z_ppe3_factory1->hospital1_8
-   - z_ppe3_factory3->hospital1_8 - z_ppe3_DUMMY_RESERVE->hospital1_8
-   - M_ppe3_hospital1_8 + M_ppe3_hospital1_9 = 0
+   - z_ppe3_factory3->hospital1_8 + z_ppe3_hospital1->hospital2_8
+   - z_ppe3_DUMMY_RESERVE->hospital1_8 - M_ppe3_hospital1_8
+   + M_ppe3_hospital1_9 = 0
  eq[onhand_ppe3_hospital1_10]: - z_ppe3_factory1->hospital1_9
-   - z_ppe3_factory3->hospital1_9 - z_ppe3_DUMMY_RESERVE->hospital1_9
-   - M_ppe3_hospital1_9 + M_ppe3_hospital1_10 = 0
+   - z_ppe3_factory3->hospital1_9 + z_ppe3_hospital1->hospital2_9
+   - z_ppe3_DUMMY_RESERVE->hospital1_9 - M_ppe3_hospital1_9
+   + M_ppe3_hospital1_10 = 0
  eq[onhand_ppe3_hospital1_11]: - z_ppe3_factory1->hospital1_10
-   - z_ppe3_factory3->hospital1_10 - z_ppe3_DUMMY_RESERVE->hospital1_10
-   - M_ppe3_hospital1_10 + M_ppe3_hospital1_11 = 0
+   - z_ppe3_factory3->hospital1_10 + z_ppe3_hospital1->hospital2_10
+   - z_ppe3_DUMMY_RESERVE->hospital1_10 - M_ppe3_hospital1_10
+   + M_ppe3_hospital1_11 = 0
  eq[onhand_ppe3_hospital1_12]: - z_ppe3_factory1->hospital1_11
-   - z_ppe3_factory3->hospital1_11 - z_ppe3_DUMMY_RESERVE->hospital1_11
-   - M_ppe3_hospital1_11 + M_ppe3_hospital1_12 = 0
+   - z_ppe3_factory3->hospital1_11 + z_ppe3_hospital1->hospital2_11
+   - z_ppe3_DUMMY_RESERVE->hospital1_11 - M_ppe3_hospital1_11
+   + M_ppe3_hospital1_12 = 0
  eq[onhand_ppe3_hospital1_13]: - z_ppe3_factory1->hospital1_12
-   - z_ppe3_factory3->hospital1_12 - z_ppe3_DUMMY_RESERVE->hospital1_12
-   - M_ppe3_hospital1_12 + M_ppe3_hospital1_13 = 0
+   - z_ppe3_factory3->hospital1_12 + z_ppe3_hospital1->hospital2_12
+   - z_ppe3_DUMMY_RESERVE->hospital1_12 - M_ppe3_hospital1_12
+   + M_ppe3_hospital1_13 = 0
  eq[onhand_ppe3_hospital1_14]: - z_ppe3_factory1->hospital1_13
-   - z_ppe3_factory3->hospital1_13 - z_ppe3_DUMMY_RESERVE->hospital1_13
-   - M_ppe3_hospital1_13 + M_ppe3_hospital1_14 = 0
+   - z_ppe3_factory3->hospital1_13 + z_ppe3_hospital1->hospital2_13
+   - z_ppe3_DUMMY_RESERVE->hospital1_13 - M_ppe3_hospital1_13
+   + M_ppe3_hospital1_14 = 0
  eq[onhand_ppe3_hospital1_15]: - z_ppe3_factory1->hospital1_14
-   - z_ppe3_factory3->hospital1_14 - z_ppe3_DUMMY_RESERVE->hospital1_14
-   - M_ppe3_hospital1_14 + M_ppe3_hospital1_15 = 0
+   - z_ppe3_factory3->hospital1_14 + z_ppe3_hospital1->hospital2_14
+   - z_ppe3_DUMMY_RESERVE->hospital1_14 - M_ppe3_hospital1_14
+   + M_ppe3_hospital1_15 = 0
  eq[onhand_ppe3_hospital1_16]: - z_ppe3_factory1->hospital1_15
-   - z_ppe3_factory3->hospital1_15 - z_ppe3_DUMMY_RESERVE->hospital1_15
-   - M_ppe3_hospital1_15 + M_ppe3_hospital1_16 = 0
+   - z_ppe3_factory3->hospital1_15 + z_ppe3_hospital1->hospital2_15
+   - z_ppe3_DUMMY_RESERVE->hospital1_15 - M_ppe3_hospital1_15
+   + M_ppe3_hospital1_16 = 0
  eq[onhand_ppe3_hospital1_17]: - z_ppe3_factory1->hospital1_16
-   - z_ppe3_factory3->hospital1_16 - z_ppe3_DUMMY_RESERVE->hospital1_16
-   - M_ppe3_hospital1_16 + M_ppe3_hospital1_17 = 0
+   - z_ppe3_factory3->hospital1_16 + z_ppe3_hospital1->hospital2_16
+   - z_ppe3_DUMMY_RESERVE->hospital1_16 - M_ppe3_hospital1_16
+   + M_ppe3_hospital1_17 = 0
  eq[onhand_ppe3_hospital1_18]: - z_ppe3_factory1->hospital1_17
-   - z_ppe3_factory3->hospital1_17 - z_ppe3_DUMMY_RESERVE->hospital1_17
-   - M_ppe3_hospital1_17 + M_ppe3_hospital1_18 = 0
+   - z_ppe3_factory3->hospital1_17 + z_ppe3_hospital1->hospital2_17
+   - z_ppe3_DUMMY_RESERVE->hospital1_17 - M_ppe3_hospital1_17
+   + M_ppe3_hospital1_18 = 0
  eq[onhand_ppe3_hospital1_19]: - z_ppe3_factory1->hospital1_18
-   - z_ppe3_factory3->hospital1_18 - z_ppe3_DUMMY_RESERVE->hospital1_18
-   - M_ppe3_hospital1_18 + M_ppe3_hospital1_19 = 0
+   - z_ppe3_factory3->hospital1_18 + z_ppe3_hospital1->hospital2_18
+   - z_ppe3_DUMMY_RESERVE->hospital1_18 - M_ppe3_hospital1_18
+   + M_ppe3_hospital1_19 = 0
  eq[onhand_ppe3_hospital2_1]: M_ppe3_hospital2_1 = 0
  eq[onhand_ppe3_hospital2_2]: - z_ppe3_factory1->hospital2_1
    - z_ppe3_factory3->hospital2_1 - z_ppe3_hospital1->hospital2_1
@@ -14747,262 +15404,404 @@ Subject To
  eq[onhand_ppe3_hospital4_19]: - z_ppe3_factory2->hospital4_18
    - z_ppe3_factory4->hospital4_18 - z_ppe3_DUMMY_RESERVE->hospital4_18
    - M_ppe3_hospital4_18 + M_ppe3_hospital4_19 = 0
- eq[onhand_respirator1_factory1_1]: - x_respirator1_factory1_1
-   + M_respirator1_factory1_1 = 0
- eq[onhand_respirator1_factory1_2]: - x_respirator1_factory1_2
+ eq[onhand_respirator1_factory1_1]: M_respirator1_factory1_1 = 0
+ eq[onhand_respirator1_factory1_2]: z_respirator1_factory1->hospital1_1
+   + z_respirator1_factory1->hospital2_1
+   + z_respirator1_factory1->factory4_1
+   + z_respirator1_factory1->factory2_1
    - z_respirator1_DUMMY_RESERVE->factory1_1 - M_respirator1_factory1_1
    + M_respirator1_factory1_2 = 0
- eq[onhand_respirator1_factory1_3]: - x_respirator1_factory1_3
+ eq[onhand_respirator1_factory1_3]: z_respirator1_factory1->hospital1_2
+   + z_respirator1_factory1->hospital2_2
+   + z_respirator1_factory1->factory4_2
+   + z_respirator1_factory1->factory2_2
    - z_respirator1_DUMMY_RESERVE->factory1_2 - M_respirator1_factory1_2
    + M_respirator1_factory1_3 = 0
- eq[onhand_respirator1_factory1_4]: - x_respirator1_factory1_4
+ eq[onhand_respirator1_factory1_4]: z_respirator1_factory1->hospital1_3
+   + z_respirator1_factory1->hospital2_3
+   + z_respirator1_factory1->factory4_3
+   + z_respirator1_factory1->factory2_3
    - z_respirator1_DUMMY_RESERVE->factory1_3 - M_respirator1_factory1_3
    + M_respirator1_factory1_4 = 0
- eq[onhand_respirator1_factory1_5]: - x_respirator1_factory1_5
+ eq[onhand_respirator1_factory1_5]: z_respirator1_factory1->hospital1_4
+   + z_respirator1_factory1->hospital2_4
+   + z_respirator1_factory1->factory4_4
+   + z_respirator1_factory1->factory2_4
    - z_respirator1_DUMMY_RESERVE->factory1_4 - M_respirator1_factory1_4
    + M_respirator1_factory1_5 = 0
- eq[onhand_respirator1_factory1_6]: - x_respirator1_factory1_6
+ eq[onhand_respirator1_factory1_6]: z_respirator1_factory1->hospital1_5
+   + z_respirator1_factory1->hospital2_5
+   + z_respirator1_factory1->factory4_5
+   + z_respirator1_factory1->factory2_5
    - z_respirator1_DUMMY_RESERVE->factory1_5 - M_respirator1_factory1_5
    + M_respirator1_factory1_6 = 0
- eq[onhand_respirator1_factory1_7]: - x_respirator1_factory1_7
+ eq[onhand_respirator1_factory1_7]: z_respirator1_factory1->hospital1_6
+   + z_respirator1_factory1->hospital2_6
+   + z_respirator1_factory1->factory4_6
+   + z_respirator1_factory1->factory2_6
    - z_respirator1_DUMMY_RESERVE->factory1_6 - M_respirator1_factory1_6
    + M_respirator1_factory1_7 = 0
- eq[onhand_respirator1_factory1_8]: - x_respirator1_factory1_8
+ eq[onhand_respirator1_factory1_8]: z_respirator1_factory1->hospital1_7
+   + z_respirator1_factory1->hospital2_7
+   + z_respirator1_factory1->factory4_7
+   + z_respirator1_factory1->factory2_7
    - z_respirator1_DUMMY_RESERVE->factory1_7 - M_respirator1_factory1_7
    + M_respirator1_factory1_8 = 0
- eq[onhand_respirator1_factory1_9]: - x_respirator1_factory1_9
+ eq[onhand_respirator1_factory1_9]: z_respirator1_factory1->hospital1_8
+   + z_respirator1_factory1->hospital2_8
+   + z_respirator1_factory1->factory4_8
+   + z_respirator1_factory1->factory2_8
    - z_respirator1_DUMMY_RESERVE->factory1_8 - M_respirator1_factory1_8
    + M_respirator1_factory1_9 = 0
- eq[onhand_respirator1_factory1_10]: - x_respirator1_factory1_10
+ eq[onhand_respirator1_factory1_10]: z_respirator1_factory1->hospital1_9
+   + z_respirator1_factory1->hospital2_9
+   + z_respirator1_factory1->factory4_9
+   + z_respirator1_factory1->factory2_9
    - z_respirator1_DUMMY_RESERVE->factory1_9 - M_respirator1_factory1_9
    + M_respirator1_factory1_10 = 0
- eq[onhand_respirator1_factory1_11]: - x_respirator1_factory1_11
+ eq[onhand_respirator1_factory1_11]: z_respirator1_factory1->hospital1_10
+   + z_respirator1_factory1->hospital2_10
+   + z_respirator1_factory1->factory4_10
+   + z_respirator1_factory1->factory2_10
    - z_respirator1_DUMMY_RESERVE->factory1_10 - M_respirator1_factory1_10
    + M_respirator1_factory1_11 = 0
- eq[onhand_respirator1_factory1_12]: - x_respirator1_factory1_12
+ eq[onhand_respirator1_factory1_12]: z_respirator1_factory1->hospital1_11
+   + z_respirator1_factory1->hospital2_11
+   + z_respirator1_factory1->factory4_11
+   + z_respirator1_factory1->factory2_11
    - z_respirator1_DUMMY_RESERVE->factory1_11 - M_respirator1_factory1_11
    + M_respirator1_factory1_12 = 0
- eq[onhand_respirator1_factory1_13]: - x_respirator1_factory1_13
+ eq[onhand_respirator1_factory1_13]: z_respirator1_factory1->hospital1_12
+   + z_respirator1_factory1->hospital2_12
+   + z_respirator1_factory1->factory4_12
+   + z_respirator1_factory1->factory2_12
    - z_respirator1_DUMMY_RESERVE->factory1_12 - M_respirator1_factory1_12
    + M_respirator1_factory1_13 = 0
- eq[onhand_respirator1_factory1_14]: - x_respirator1_factory1_14
+ eq[onhand_respirator1_factory1_14]: z_respirator1_factory1->hospital1_13
+   + z_respirator1_factory1->hospital2_13
+   + z_respirator1_factory1->factory4_13
+   + z_respirator1_factory1->factory2_13
    - z_respirator1_DUMMY_RESERVE->factory1_13 - M_respirator1_factory1_13
    + M_respirator1_factory1_14 = 0
- eq[onhand_respirator1_factory1_15]: - x_respirator1_factory1_15
+ eq[onhand_respirator1_factory1_15]: z_respirator1_factory1->hospital1_14
+   + z_respirator1_factory1->hospital2_14
+   + z_respirator1_factory1->factory4_14
+   + z_respirator1_factory1->factory2_14
    - z_respirator1_DUMMY_RESERVE->factory1_14 - M_respirator1_factory1_14
    + M_respirator1_factory1_15 = 0
- eq[onhand_respirator1_factory1_16]: - x_respirator1_factory1_16
+ eq[onhand_respirator1_factory1_16]: z_respirator1_factory1->hospital1_15
+   + z_respirator1_factory1->hospital2_15
+   + z_respirator1_factory1->factory4_15
+   + z_respirator1_factory1->factory2_15
    - z_respirator1_DUMMY_RESERVE->factory1_15 - M_respirator1_factory1_15
    + M_respirator1_factory1_16 = 0
- eq[onhand_respirator1_factory1_17]: - x_respirator1_factory1_17
+ eq[onhand_respirator1_factory1_17]: z_respirator1_factory1->hospital1_16
+   + z_respirator1_factory1->hospital2_16
+   + z_respirator1_factory1->factory4_16
+   + z_respirator1_factory1->factory2_16
    - z_respirator1_DUMMY_RESERVE->factory1_16 - M_respirator1_factory1_16
    + M_respirator1_factory1_17 = 0
- eq[onhand_respirator1_factory1_18]: - x_respirator1_factory1_18
+ eq[onhand_respirator1_factory1_18]: z_respirator1_factory1->hospital1_17
+   + z_respirator1_factory1->hospital2_17
+   + z_respirator1_factory1->factory4_17
+   + z_respirator1_factory1->factory2_17
    - z_respirator1_DUMMY_RESERVE->factory1_17 - M_respirator1_factory1_17
    + M_respirator1_factory1_18 = 0
- eq[onhand_respirator1_factory1_19]: - x_respirator1_factory1_19
+ eq[onhand_respirator1_factory1_19]: z_respirator1_factory1->hospital1_18
+   + z_respirator1_factory1->hospital2_18
+   + z_respirator1_factory1->factory4_18
+   + z_respirator1_factory1->factory2_18
    - z_respirator1_DUMMY_RESERVE->factory1_18 - M_respirator1_factory1_18
    + M_respirator1_factory1_19 = 0
- eq[onhand_respirator1_factory2_1]: - x_respirator1_factory2_1
-   + M_respirator1_factory2_1 = 0
- eq[onhand_respirator1_factory2_2]: - x_respirator1_factory2_2
+ eq[onhand_respirator1_factory2_1]: M_respirator1_factory2_1 = 0
+ eq[onhand_respirator1_factory2_2]: z_respirator1_factory2->hospital3_1
+   + z_respirator1_factory2->hospital4_1
    - z_respirator1_factory1->factory2_1
    - z_respirator1_factory4->factory2_1
    - z_respirator1_DUMMY_RESERVE->factory2_1 - M_respirator1_factory2_1
    + M_respirator1_factory2_2 = 0
- eq[onhand_respirator1_factory2_3]: - x_respirator1_factory2_3
+ eq[onhand_respirator1_factory2_3]: z_respirator1_factory2->hospital3_2
+   + z_respirator1_factory2->hospital4_2
    - z_respirator1_factory1->factory2_2
    - z_respirator1_factory4->factory2_2
    - z_respirator1_DUMMY_RESERVE->factory2_2 - M_respirator1_factory2_2
    + M_respirator1_factory2_3 = 0
- eq[onhand_respirator1_factory2_4]: - x_respirator1_factory2_4
+ eq[onhand_respirator1_factory2_4]: z_respirator1_factory2->hospital3_3
+   + z_respirator1_factory2->hospital4_3
    - z_respirator1_factory1->factory2_3
    - z_respirator1_factory4->factory2_3
    - z_respirator1_DUMMY_RESERVE->factory2_3 - M_respirator1_factory2_3
    + M_respirator1_factory2_4 = 0
- eq[onhand_respirator1_factory2_5]: - x_respirator1_factory2_5
+ eq[onhand_respirator1_factory2_5]: z_respirator1_factory2->hospital3_4
+   + z_respirator1_factory2->hospital4_4
    - z_respirator1_factory1->factory2_4
    - z_respirator1_factory4->factory2_4
    - z_respirator1_DUMMY_RESERVE->factory2_4 - M_respirator1_factory2_4
    + M_respirator1_factory2_5 = 0
- eq[onhand_respirator1_factory2_6]: - x_respirator1_factory2_6
+ eq[onhand_respirator1_factory2_6]: z_respirator1_factory2->hospital3_5
+   + z_respirator1_factory2->hospital4_5
    - z_respirator1_factory1->factory2_5
    - z_respirator1_factory4->factory2_5
    - z_respirator1_DUMMY_RESERVE->factory2_5 - M_respirator1_factory2_5
    + M_respirator1_factory2_6 = 0
- eq[onhand_respirator1_factory2_7]: - x_respirator1_factory2_7
+ eq[onhand_respirator1_factory2_7]: z_respirator1_factory2->hospital3_6
+   + z_respirator1_factory2->hospital4_6
    - z_respirator1_factory1->factory2_6
    - z_respirator1_factory4->factory2_6
    - z_respirator1_DUMMY_RESERVE->factory2_6 - M_respirator1_factory2_6
    + M_respirator1_factory2_7 = 0
- eq[onhand_respirator1_factory2_8]: - x_respirator1_factory2_8
+ eq[onhand_respirator1_factory2_8]: z_respirator1_factory2->hospital3_7
+   + z_respirator1_factory2->hospital4_7
    - z_respirator1_factory1->factory2_7
    - z_respirator1_factory4->factory2_7
    - z_respirator1_DUMMY_RESERVE->factory2_7 - M_respirator1_factory2_7
    + M_respirator1_factory2_8 = 0
- eq[onhand_respirator1_factory2_9]: - x_respirator1_factory2_9
+ eq[onhand_respirator1_factory2_9]: z_respirator1_factory2->hospital3_8
+   + z_respirator1_factory2->hospital4_8
    - z_respirator1_factory1->factory2_8
    - z_respirator1_factory4->factory2_8
    - z_respirator1_DUMMY_RESERVE->factory2_8 - M_respirator1_factory2_8
    + M_respirator1_factory2_9 = 0
- eq[onhand_respirator1_factory2_10]: - x_respirator1_factory2_10
+ eq[onhand_respirator1_factory2_10]: z_respirator1_factory2->hospital3_9
+   + z_respirator1_factory2->hospital4_9
    - z_respirator1_factory1->factory2_9
    - z_respirator1_factory4->factory2_9
    - z_respirator1_DUMMY_RESERVE->factory2_9 - M_respirator1_factory2_9
    + M_respirator1_factory2_10 = 0
- eq[onhand_respirator1_factory2_11]: - x_respirator1_factory2_11
+ eq[onhand_respirator1_factory2_11]: z_respirator1_factory2->hospital3_10
+   + z_respirator1_factory2->hospital4_10
    - z_respirator1_factory1->factory2_10
    - z_respirator1_factory4->factory2_10
    - z_respirator1_DUMMY_RESERVE->factory2_10 - M_respirator1_factory2_10
    + M_respirator1_factory2_11 = 0
- eq[onhand_respirator1_factory2_12]: - x_respirator1_factory2_12
+ eq[onhand_respirator1_factory2_12]: z_respirator1_factory2->hospital3_11
+   + z_respirator1_factory2->hospital4_11
    - z_respirator1_factory1->factory2_11
    - z_respirator1_factory4->factory2_11
    - z_respirator1_DUMMY_RESERVE->factory2_11 - M_respirator1_factory2_11
    + M_respirator1_factory2_12 = 0
- eq[onhand_respirator1_factory2_13]: - x_respirator1_factory2_13
+ eq[onhand_respirator1_factory2_13]: z_respirator1_factory2->hospital3_12
+   + z_respirator1_factory2->hospital4_12
    - z_respirator1_factory1->factory2_12
    - z_respirator1_factory4->factory2_12
    - z_respirator1_DUMMY_RESERVE->factory2_12 - M_respirator1_factory2_12
    + M_respirator1_factory2_13 = 0
- eq[onhand_respirator1_factory2_14]: - x_respirator1_factory2_14
+ eq[onhand_respirator1_factory2_14]: z_respirator1_factory2->hospital3_13
+   + z_respirator1_factory2->hospital4_13
    - z_respirator1_factory1->factory2_13
    - z_respirator1_factory4->factory2_13
    - z_respirator1_DUMMY_RESERVE->factory2_13 - M_respirator1_factory2_13
    + M_respirator1_factory2_14 = 0
- eq[onhand_respirator1_factory2_15]: - x_respirator1_factory2_15
+ eq[onhand_respirator1_factory2_15]: z_respirator1_factory2->hospital3_14
+   + z_respirator1_factory2->hospital4_14
    - z_respirator1_factory1->factory2_14
    - z_respirator1_factory4->factory2_14
    - z_respirator1_DUMMY_RESERVE->factory2_14 - M_respirator1_factory2_14
    + M_respirator1_factory2_15 = 0
- eq[onhand_respirator1_factory2_16]: - x_respirator1_factory2_16
+ eq[onhand_respirator1_factory2_16]: z_respirator1_factory2->hospital3_15
+   + z_respirator1_factory2->hospital4_15
    - z_respirator1_factory1->factory2_15
    - z_respirator1_factory4->factory2_15
    - z_respirator1_DUMMY_RESERVE->factory2_15 - M_respirator1_factory2_15
    + M_respirator1_factory2_16 = 0
- eq[onhand_respirator1_factory2_17]: - x_respirator1_factory2_17
+ eq[onhand_respirator1_factory2_17]: z_respirator1_factory2->hospital3_16
+   + z_respirator1_factory2->hospital4_16
    - z_respirator1_factory1->factory2_16
    - z_respirator1_factory4->factory2_16
    - z_respirator1_DUMMY_RESERVE->factory2_16 - M_respirator1_factory2_16
    + M_respirator1_factory2_17 = 0
- eq[onhand_respirator1_factory2_18]: - x_respirator1_factory2_18
+ eq[onhand_respirator1_factory2_18]: z_respirator1_factory2->hospital3_17
+   + z_respirator1_factory2->hospital4_17
    - z_respirator1_factory1->factory2_17
    - z_respirator1_factory4->factory2_17
    - z_respirator1_DUMMY_RESERVE->factory2_17 - M_respirator1_factory2_17
    + M_respirator1_factory2_18 = 0
- eq[onhand_respirator1_factory2_19]: - x_respirator1_factory2_19
+ eq[onhand_respirator1_factory2_19]: z_respirator1_factory2->hospital3_18
+   + z_respirator1_factory2->hospital4_18
    - z_respirator1_factory1->factory2_18
    - z_respirator1_factory4->factory2_18
    - z_respirator1_DUMMY_RESERVE->factory2_18 - M_respirator1_factory2_18
    + M_respirator1_factory2_19 = 0
  eq[onhand_respirator1_factory3_1]: M_respirator1_factory3_1 = 0
- eq[onhand_respirator1_factory3_2]:
+ eq[onhand_respirator1_factory3_2]: z_respirator1_factory3->hospital1_1
+   + z_respirator1_factory3->hospital2_1
    - z_respirator1_DUMMY_RESERVE->factory3_1 - M_respirator1_factory3_1
    + M_respirator1_factory3_2 = 0
- eq[onhand_respirator1_factory3_3]:
+ eq[onhand_respirator1_factory3_3]: z_respirator1_factory3->hospital1_2
+   + z_respirator1_factory3->hospital2_2
    - z_respirator1_DUMMY_RESERVE->factory3_2 - M_respirator1_factory3_2
    + M_respirator1_factory3_3 = 0
- eq[onhand_respirator1_factory3_4]:
+ eq[onhand_respirator1_factory3_4]: z_respirator1_factory3->hospital1_3
+   + z_respirator1_factory3->hospital2_3
    - z_respirator1_DUMMY_RESERVE->factory3_3 - M_respirator1_factory3_3
    + M_respirator1_factory3_4 = 0
- eq[onhand_respirator1_factory3_5]:
+ eq[onhand_respirator1_factory3_5]: z_respirator1_factory3->hospital1_4
+   + z_respirator1_factory3->hospital2_4
    - z_respirator1_DUMMY_RESERVE->factory3_4 - M_respirator1_factory3_4
    + M_respirator1_factory3_5 = 0
- eq[onhand_respirator1_factory3_6]:
+ eq[onhand_respirator1_factory3_6]: z_respirator1_factory3->hospital1_5
+   + z_respirator1_factory3->hospital2_5
    - z_respirator1_DUMMY_RESERVE->factory3_5 - M_respirator1_factory3_5
    + M_respirator1_factory3_6 = 0
- eq[onhand_respirator1_factory3_7]:
+ eq[onhand_respirator1_factory3_7]: z_respirator1_factory3->hospital1_6
+   + z_respirator1_factory3->hospital2_6
    - z_respirator1_DUMMY_RESERVE->factory3_6 - M_respirator1_factory3_6
    + M_respirator1_factory3_7 = 0
- eq[onhand_respirator1_factory3_8]:
+ eq[onhand_respirator1_factory3_8]: z_respirator1_factory3->hospital1_7
+   + z_respirator1_factory3->hospital2_7
    - z_respirator1_DUMMY_RESERVE->factory3_7 - M_respirator1_factory3_7
    + M_respirator1_factory3_8 = 0
- eq[onhand_respirator1_factory3_9]:
+ eq[onhand_respirator1_factory3_9]: z_respirator1_factory3->hospital1_8
+   + z_respirator1_factory3->hospital2_8
    - z_respirator1_DUMMY_RESERVE->factory3_8 - M_respirator1_factory3_8
    + M_respirator1_factory3_9 = 0
- eq[onhand_respirator1_factory3_10]:
+ eq[onhand_respirator1_factory3_10]: z_respirator1_factory3->hospital1_9
+   + z_respirator1_factory3->hospital2_9
    - z_respirator1_DUMMY_RESERVE->factory3_9 - M_respirator1_factory3_9
    + M_respirator1_factory3_10 = 0
- eq[onhand_respirator1_factory3_11]:
+ eq[onhand_respirator1_factory3_11]: z_respirator1_factory3->hospital1_10
+   + z_respirator1_factory3->hospital2_10
    - z_respirator1_DUMMY_RESERVE->factory3_10 - M_respirator1_factory3_10
    + M_respirator1_factory3_11 = 0
- eq[onhand_respirator1_factory3_12]:
+ eq[onhand_respirator1_factory3_12]: z_respirator1_factory3->hospital1_11
+   + z_respirator1_factory3->hospital2_11
    - z_respirator1_DUMMY_RESERVE->factory3_11 - M_respirator1_factory3_11
    + M_respirator1_factory3_12 = 0
- eq[onhand_respirator1_factory3_13]:
+ eq[onhand_respirator1_factory3_13]: z_respirator1_factory3->hospital1_12
+   + z_respirator1_factory3->hospital2_12
    - z_respirator1_DUMMY_RESERVE->factory3_12 - M_respirator1_factory3_12
    + M_respirator1_factory3_13 = 0
- eq[onhand_respirator1_factory3_14]:
+ eq[onhand_respirator1_factory3_14]: z_respirator1_factory3->hospital1_13
+   + z_respirator1_factory3->hospital2_13
    - z_respirator1_DUMMY_RESERVE->factory3_13 - M_respirator1_factory3_13
    + M_respirator1_factory3_14 = 0
- eq[onhand_respirator1_factory3_15]:
+ eq[onhand_respirator1_factory3_15]: z_respirator1_factory3->hospital1_14
+   + z_respirator1_factory3->hospital2_14
    - z_respirator1_DUMMY_RESERVE->factory3_14 - M_respirator1_factory3_14
    + M_respirator1_factory3_15 = 0
- eq[onhand_respirator1_factory3_16]:
+ eq[onhand_respirator1_factory3_16]: z_respirator1_factory3->hospital1_15
+   + z_respirator1_factory3->hospital2_15
    - z_respirator1_DUMMY_RESERVE->factory3_15 - M_respirator1_factory3_15
    + M_respirator1_factory3_16 = 0
- eq[onhand_respirator1_factory3_17]:
+ eq[onhand_respirator1_factory3_17]: z_respirator1_factory3->hospital1_16
+   + z_respirator1_factory3->hospital2_16
    - z_respirator1_DUMMY_RESERVE->factory3_16 - M_respirator1_factory3_16
    + M_respirator1_factory3_17 = 0
- eq[onhand_respirator1_factory3_18]:
+ eq[onhand_respirator1_factory3_18]: z_respirator1_factory3->hospital1_17
+   + z_respirator1_factory3->hospital2_17
    - z_respirator1_DUMMY_RESERVE->factory3_17 - M_respirator1_factory3_17
    + M_respirator1_factory3_18 = 0
- eq[onhand_respirator1_factory3_19]:
+ eq[onhand_respirator1_factory3_19]: z_respirator1_factory3->hospital1_18
+   + z_respirator1_factory3->hospital2_18
    - z_respirator1_DUMMY_RESERVE->factory3_18 - M_respirator1_factory3_18
    + M_respirator1_factory3_19 = 0
  eq[onhand_respirator1_factory4_1]: M_respirator1_factory4_1 = 0
- eq[onhand_respirator1_factory4_2]: - z_respirator1_factory1->factory4_1
+ eq[onhand_respirator1_factory4_2]: z_respirator1_factory4->hospital3_1
+   + z_respirator1_factory4->hospital4_1
+   - z_respirator1_factory1->factory4_1
+   + z_respirator1_factory4->factory2_1
    - z_respirator1_DUMMY_RESERVE->factory4_1 - M_respirator1_factory4_1
    + M_respirator1_factory4_2 = 0
- eq[onhand_respirator1_factory4_3]: - z_respirator1_factory1->factory4_2
+ eq[onhand_respirator1_factory4_3]: z_respirator1_factory4->hospital3_2
+   + z_respirator1_factory4->hospital4_2
+   - z_respirator1_factory1->factory4_2
+   + z_respirator1_factory4->factory2_2
    - z_respirator1_DUMMY_RESERVE->factory4_2 - M_respirator1_factory4_2
    + M_respirator1_factory4_3 = 0
- eq[onhand_respirator1_factory4_4]: - z_respirator1_factory1->factory4_3
+ eq[onhand_respirator1_factory4_4]: z_respirator1_factory4->hospital3_3
+   + z_respirator1_factory4->hospital4_3
+   - z_respirator1_factory1->factory4_3
+   + z_respirator1_factory4->factory2_3
    - z_respirator1_DUMMY_RESERVE->factory4_3 - M_respirator1_factory4_3
    + M_respirator1_factory4_4 = 0
- eq[onhand_respirator1_factory4_5]: - z_respirator1_factory1->factory4_4
+ eq[onhand_respirator1_factory4_5]: z_respirator1_factory4->hospital3_4
+   + z_respirator1_factory4->hospital4_4
+   - z_respirator1_factory1->factory4_4
+   + z_respirator1_factory4->factory2_4
    - z_respirator1_DUMMY_RESERVE->factory4_4 - M_respirator1_factory4_4
    + M_respirator1_factory4_5 = 0
- eq[onhand_respirator1_factory4_6]: - z_respirator1_factory1->factory4_5
+ eq[onhand_respirator1_factory4_6]: z_respirator1_factory4->hospital3_5
+   + z_respirator1_factory4->hospital4_5
+   - z_respirator1_factory1->factory4_5
+   + z_respirator1_factory4->factory2_5
    - z_respirator1_DUMMY_RESERVE->factory4_5 - M_respirator1_factory4_5
    + M_respirator1_factory4_6 = 0
- eq[onhand_respirator1_factory4_7]: - z_respirator1_factory1->factory4_6
+ eq[onhand_respirator1_factory4_7]: z_respirator1_factory4->hospital3_6
+   + z_respirator1_factory4->hospital4_6
+   - z_respirator1_factory1->factory4_6
+   + z_respirator1_factory4->factory2_6
    - z_respirator1_DUMMY_RESERVE->factory4_6 - M_respirator1_factory4_6
    + M_respirator1_factory4_7 = 0
- eq[onhand_respirator1_factory4_8]: - z_respirator1_factory1->factory4_7
+ eq[onhand_respirator1_factory4_8]: z_respirator1_factory4->hospital3_7
+   + z_respirator1_factory4->hospital4_7
+   - z_respirator1_factory1->factory4_7
+   + z_respirator1_factory4->factory2_7
    - z_respirator1_DUMMY_RESERVE->factory4_7 - M_respirator1_factory4_7
    + M_respirator1_factory4_8 = 0
- eq[onhand_respirator1_factory4_9]: - z_respirator1_factory1->factory4_8
+ eq[onhand_respirator1_factory4_9]: z_respirator1_factory4->hospital3_8
+   + z_respirator1_factory4->hospital4_8
+   - z_respirator1_factory1->factory4_8
+   + z_respirator1_factory4->factory2_8
    - z_respirator1_DUMMY_RESERVE->factory4_8 - M_respirator1_factory4_8
    + M_respirator1_factory4_9 = 0
- eq[onhand_respirator1_factory4_10]: - z_respirator1_factory1->factory4_9
+ eq[onhand_respirator1_factory4_10]: z_respirator1_factory4->hospital3_9
+   + z_respirator1_factory4->hospital4_9
+   - z_respirator1_factory1->factory4_9
+   + z_respirator1_factory4->factory2_9
    - z_respirator1_DUMMY_RESERVE->factory4_9 - M_respirator1_factory4_9
    + M_respirator1_factory4_10 = 0
- eq[onhand_respirator1_factory4_11]: - z_respirator1_factory1->factory4_10
+ eq[onhand_respirator1_factory4_11]: z_respirator1_factory4->hospital3_10
+   + z_respirator1_factory4->hospital4_10
+   - z_respirator1_factory1->factory4_10
+   + z_respirator1_factory4->factory2_10
    - z_respirator1_DUMMY_RESERVE->factory4_10 - M_respirator1_factory4_10
    + M_respirator1_factory4_11 = 0
- eq[onhand_respirator1_factory4_12]: - z_respirator1_factory1->factory4_11
+ eq[onhand_respirator1_factory4_12]: z_respirator1_factory4->hospital3_11
+   + z_respirator1_factory4->hospital4_11
+   - z_respirator1_factory1->factory4_11
+   + z_respirator1_factory4->factory2_11
    - z_respirator1_DUMMY_RESERVE->factory4_11 - M_respirator1_factory4_11
    + M_respirator1_factory4_12 = 0
- eq[onhand_respirator1_factory4_13]: - z_respirator1_factory1->factory4_12
+ eq[onhand_respirator1_factory4_13]: z_respirator1_factory4->hospital3_12
+   + z_respirator1_factory4->hospital4_12
+   - z_respirator1_factory1->factory4_12
+   + z_respirator1_factory4->factory2_12
    - z_respirator1_DUMMY_RESERVE->factory4_12 - M_respirator1_factory4_12
    + M_respirator1_factory4_13 = 0
- eq[onhand_respirator1_factory4_14]: - z_respirator1_factory1->factory4_13
+ eq[onhand_respirator1_factory4_14]: z_respirator1_factory4->hospital3_13
+   + z_respirator1_factory4->hospital4_13
+   - z_respirator1_factory1->factory4_13
+   + z_respirator1_factory4->factory2_13
    - z_respirator1_DUMMY_RESERVE->factory4_13 - M_respirator1_factory4_13
    + M_respirator1_factory4_14 = 0
- eq[onhand_respirator1_factory4_15]: - z_respirator1_factory1->factory4_14
+ eq[onhand_respirator1_factory4_15]: z_respirator1_factory4->hospital3_14
+   + z_respirator1_factory4->hospital4_14
+   - z_respirator1_factory1->factory4_14
+   + z_respirator1_factory4->factory2_14
    - z_respirator1_DUMMY_RESERVE->factory4_14 - M_respirator1_factory4_14
    + M_respirator1_factory4_15 = 0
- eq[onhand_respirator1_factory4_16]: - z_respirator1_factory1->factory4_15
+ eq[onhand_respirator1_factory4_16]: z_respirator1_factory4->hospital3_15
+   + z_respirator1_factory4->hospital4_15
+   - z_respirator1_factory1->factory4_15
+   + z_respirator1_factory4->factory2_15
    - z_respirator1_DUMMY_RESERVE->factory4_15 - M_respirator1_factory4_15
    + M_respirator1_factory4_16 = 0
- eq[onhand_respirator1_factory4_17]: - z_respirator1_factory1->factory4_16
+ eq[onhand_respirator1_factory4_17]: z_respirator1_factory4->hospital3_16
+   + z_respirator1_factory4->hospital4_16
+   - z_respirator1_factory1->factory4_16
+   + z_respirator1_factory4->factory2_16
    - z_respirator1_DUMMY_RESERVE->factory4_16 - M_respirator1_factory4_16
    + M_respirator1_factory4_17 = 0
- eq[onhand_respirator1_factory4_18]: - z_respirator1_factory1->factory4_17
+ eq[onhand_respirator1_factory4_18]: z_respirator1_factory4->hospital3_17
+   + z_respirator1_factory4->hospital4_17
+   - z_respirator1_factory1->factory4_17
+   + z_respirator1_factory4->factory2_17
    - z_respirator1_DUMMY_RESERVE->factory4_17 - M_respirator1_factory4_17
    + M_respirator1_factory4_18 = 0
- eq[onhand_respirator1_factory4_19]: - z_respirator1_factory1->factory4_18
+ eq[onhand_respirator1_factory4_19]: z_respirator1_factory4->hospital3_18
+   + z_respirator1_factory4->hospital4_18
+   - z_respirator1_factory1->factory4_18
+   + z_respirator1_factory4->factory2_18
    - z_respirator1_DUMMY_RESERVE->factory4_18 - M_respirator1_factory4_18
    + M_respirator1_factory4_19 = 0
  eq[onhand_respirator1_DUMMY_RESERVE_1]: M_respirator1_DUMMY_RESERVE_1
@@ -15046,83 +15845,101 @@ Subject To
  eq[onhand_respirator1_hospital1_1]: M_respirator1_hospital1_1 = 0
  eq[onhand_respirator1_hospital1_2]: - z_respirator1_factory1->hospital1_1
    - z_respirator1_factory3->hospital1_1
+   + z_respirator1_hospital1->hospital2_1
    - z_respirator1_DUMMY_RESERVE->hospital1_1 - M_respirator1_hospital1_1
    + M_respirator1_hospital1_2 = 0
  eq[onhand_respirator1_hospital1_3]: - z_respirator1_factory1->hospital1_2
    - z_respirator1_factory3->hospital1_2
+   + z_respirator1_hospital1->hospital2_2
    - z_respirator1_DUMMY_RESERVE->hospital1_2 - M_respirator1_hospital1_2
    + M_respirator1_hospital1_3 = 0
  eq[onhand_respirator1_hospital1_4]: - z_respirator1_factory1->hospital1_3
    - z_respirator1_factory3->hospital1_3
+   + z_respirator1_hospital1->hospital2_3
    - z_respirator1_DUMMY_RESERVE->hospital1_3 - M_respirator1_hospital1_3
    + M_respirator1_hospital1_4 = 0
  eq[onhand_respirator1_hospital1_5]: - z_respirator1_factory1->hospital1_4
    - z_respirator1_factory3->hospital1_4
+   + z_respirator1_hospital1->hospital2_4
    - z_respirator1_DUMMY_RESERVE->hospital1_4 - M_respirator1_hospital1_4
    + M_respirator1_hospital1_5 = 0
  eq[onhand_respirator1_hospital1_6]: - z_respirator1_factory1->hospital1_5
    - z_respirator1_factory3->hospital1_5
+   + z_respirator1_hospital1->hospital2_5
    - z_respirator1_DUMMY_RESERVE->hospital1_5 - M_respirator1_hospital1_5
    + M_respirator1_hospital1_6 = 0
  eq[onhand_respirator1_hospital1_7]: - z_respirator1_factory1->hospital1_6
    - z_respirator1_factory3->hospital1_6
+   + z_respirator1_hospital1->hospital2_6
    - z_respirator1_DUMMY_RESERVE->hospital1_6 - M_respirator1_hospital1_6
    + M_respirator1_hospital1_7 = 0
  eq[onhand_respirator1_hospital1_8]: - z_respirator1_factory1->hospital1_7
    - z_respirator1_factory3->hospital1_7
+   + z_respirator1_hospital1->hospital2_7
    - z_respirator1_DUMMY_RESERVE->hospital1_7 - M_respirator1_hospital1_7
    + M_respirator1_hospital1_8 = 0
  eq[onhand_respirator1_hospital1_9]: - z_respirator1_factory1->hospital1_8
    - z_respirator1_factory3->hospital1_8
+   + z_respirator1_hospital1->hospital2_8
    - z_respirator1_DUMMY_RESERVE->hospital1_8 - M_respirator1_hospital1_8
    + M_respirator1_hospital1_9 = 0
  eq[onhand_respirator1_hospital1_10]: - z_respirator1_factory1->hospital1_9
    - z_respirator1_factory3->hospital1_9
+   + z_respirator1_hospital1->hospital2_9
    - z_respirator1_DUMMY_RESERVE->hospital1_9 - M_respirator1_hospital1_9
    + M_respirator1_hospital1_10 = 0
  eq[onhand_respirator1_hospital1_11]:
    - z_respirator1_factory1->hospital1_10
    - z_respirator1_factory3->hospital1_10
+   + z_respirator1_hospital1->hospital2_10
    - z_respirator1_DUMMY_RESERVE->hospital1_10 - M_respirator1_hospital1_10
    + M_respirator1_hospital1_11 = 0
  eq[onhand_respirator1_hospital1_12]:
    - z_respirator1_factory1->hospital1_11
    - z_respirator1_factory3->hospital1_11
+   + z_respirator1_hospital1->hospital2_11
    - z_respirator1_DUMMY_RESERVE->hospital1_11 - M_respirator1_hospital1_11
    + M_respirator1_hospital1_12 = 0
  eq[onhand_respirator1_hospital1_13]:
    - z_respirator1_factory1->hospital1_12
    - z_respirator1_factory3->hospital1_12
+   + z_respirator1_hospital1->hospital2_12
    - z_respirator1_DUMMY_RESERVE->hospital1_12 - M_respirator1_hospital1_12
    + M_respirator1_hospital1_13 = 0
  eq[onhand_respirator1_hospital1_14]:
    - z_respirator1_factory1->hospital1_13
    - z_respirator1_factory3->hospital1_13
+   + z_respirator1_hospital1->hospital2_13
    - z_respirator1_DUMMY_RESERVE->hospital1_13 - M_respirator1_hospital1_13
    + M_respirator1_hospital1_14 = 0
  eq[onhand_respirator1_hospital1_15]:
    - z_respirator1_factory1->hospital1_14
    - z_respirator1_factory3->hospital1_14
+   + z_respirator1_hospital1->hospital2_14
    - z_respirator1_DUMMY_RESERVE->hospital1_14 - M_respirator1_hospital1_14
    + M_respirator1_hospital1_15 = 0
  eq[onhand_respirator1_hospital1_16]:
    - z_respirator1_factory1->hospital1_15
    - z_respirator1_factory3->hospital1_15
+   + z_respirator1_hospital1->hospital2_15
    - z_respirator1_DUMMY_RESERVE->hospital1_15 - M_respirator1_hospital1_15
    + M_respirator1_hospital1_16 = 0
  eq[onhand_respirator1_hospital1_17]:
    - z_respirator1_factory1->hospital1_16
    - z_respirator1_factory3->hospital1_16
+   + z_respirator1_hospital1->hospital2_16
    - z_respirator1_DUMMY_RESERVE->hospital1_16 - M_respirator1_hospital1_16
    + M_respirator1_hospital1_17 = 0
  eq[onhand_respirator1_hospital1_18]:
    - z_respirator1_factory1->hospital1_17
    - z_respirator1_factory3->hospital1_17
+   + z_respirator1_hospital1->hospital2_17
    - z_respirator1_DUMMY_RESERVE->hospital1_17 - M_respirator1_hospital1_17
    + M_respirator1_hospital1_18 = 0
  eq[onhand_respirator1_hospital1_19]:
    - z_respirator1_factory1->hospital1_18
    - z_respirator1_factory3->hospital1_18
+   + z_respirator1_hospital1->hospital2_18
    - z_respirator1_DUMMY_RESERVE->hospital1_18 - M_respirator1_hospital1_18
    + M_respirator1_hospital1_19 = 0
  eq[onhand_respirator1_hospital2_1]: M_respirator1_hospital2_1 = 0
@@ -15408,242 +16225,403 @@ Subject To
    - z_respirator1_DUMMY_RESERVE->hospital4_18 - M_respirator1_hospital4_18
    + M_respirator1_hospital4_19 = 0
  eq[onhand_respirator2_factory1_1]: M_respirator2_factory1_1 = 0
- eq[onhand_respirator2_factory1_2]:
+ eq[onhand_respirator2_factory1_2]: z_respirator2_factory1->hospital1_1
+   + z_respirator2_factory1->hospital2_1
+   + z_respirator2_factory1->factory4_1
+   + z_respirator2_factory1->factory2_1
    - z_respirator2_DUMMY_RESERVE->factory1_1 - M_respirator2_factory1_1
    + M_respirator2_factory1_2 = 0
- eq[onhand_respirator2_factory1_3]:
+ eq[onhand_respirator2_factory1_3]: z_respirator2_factory1->hospital1_2
+   + z_respirator2_factory1->hospital2_2
+   + z_respirator2_factory1->factory4_2
+   + z_respirator2_factory1->factory2_2
    - z_respirator2_DUMMY_RESERVE->factory1_2 - M_respirator2_factory1_2
    + M_respirator2_factory1_3 = 0
- eq[onhand_respirator2_factory1_4]:
+ eq[onhand_respirator2_factory1_4]: z_respirator2_factory1->hospital1_3
+   + z_respirator2_factory1->hospital2_3
+   + z_respirator2_factory1->factory4_3
+   + z_respirator2_factory1->factory2_3
    - z_respirator2_DUMMY_RESERVE->factory1_3 - M_respirator2_factory1_3
    + M_respirator2_factory1_4 = 0
- eq[onhand_respirator2_factory1_5]:
+ eq[onhand_respirator2_factory1_5]: z_respirator2_factory1->hospital1_4
+   + z_respirator2_factory1->hospital2_4
+   + z_respirator2_factory1->factory4_4
+   + z_respirator2_factory1->factory2_4
    - z_respirator2_DUMMY_RESERVE->factory1_4 - M_respirator2_factory1_4
    + M_respirator2_factory1_5 = 0
- eq[onhand_respirator2_factory1_6]:
+ eq[onhand_respirator2_factory1_6]: z_respirator2_factory1->hospital1_5
+   + z_respirator2_factory1->hospital2_5
+   + z_respirator2_factory1->factory4_5
+   + z_respirator2_factory1->factory2_5
    - z_respirator2_DUMMY_RESERVE->factory1_5 - M_respirator2_factory1_5
    + M_respirator2_factory1_6 = 0
- eq[onhand_respirator2_factory1_7]:
+ eq[onhand_respirator2_factory1_7]: z_respirator2_factory1->hospital1_6
+   + z_respirator2_factory1->hospital2_6
+   + z_respirator2_factory1->factory4_6
+   + z_respirator2_factory1->factory2_6
    - z_respirator2_DUMMY_RESERVE->factory1_6 - M_respirator2_factory1_6
    + M_respirator2_factory1_7 = 0
- eq[onhand_respirator2_factory1_8]:
+ eq[onhand_respirator2_factory1_8]: z_respirator2_factory1->hospital1_7
+   + z_respirator2_factory1->hospital2_7
+   + z_respirator2_factory1->factory4_7
+   + z_respirator2_factory1->factory2_7
    - z_respirator2_DUMMY_RESERVE->factory1_7 - M_respirator2_factory1_7
    + M_respirator2_factory1_8 = 0
- eq[onhand_respirator2_factory1_9]:
+ eq[onhand_respirator2_factory1_9]: z_respirator2_factory1->hospital1_8
+   + z_respirator2_factory1->hospital2_8
+   + z_respirator2_factory1->factory4_8
+   + z_respirator2_factory1->factory2_8
    - z_respirator2_DUMMY_RESERVE->factory1_8 - M_respirator2_factory1_8
    + M_respirator2_factory1_9 = 0
- eq[onhand_respirator2_factory1_10]:
+ eq[onhand_respirator2_factory1_10]: z_respirator2_factory1->hospital1_9
+   + z_respirator2_factory1->hospital2_9
+   + z_respirator2_factory1->factory4_9
+   + z_respirator2_factory1->factory2_9
    - z_respirator2_DUMMY_RESERVE->factory1_9 - M_respirator2_factory1_9
    + M_respirator2_factory1_10 = 0
- eq[onhand_respirator2_factory1_11]:
+ eq[onhand_respirator2_factory1_11]: z_respirator2_factory1->hospital1_10
+   + z_respirator2_factory1->hospital2_10
+   + z_respirator2_factory1->factory4_10
+   + z_respirator2_factory1->factory2_10
    - z_respirator2_DUMMY_RESERVE->factory1_10 - M_respirator2_factory1_10
    + M_respirator2_factory1_11 = 0
- eq[onhand_respirator2_factory1_12]:
+ eq[onhand_respirator2_factory1_12]: z_respirator2_factory1->hospital1_11
+   + z_respirator2_factory1->hospital2_11
+   + z_respirator2_factory1->factory4_11
+   + z_respirator2_factory1->factory2_11
    - z_respirator2_DUMMY_RESERVE->factory1_11 - M_respirator2_factory1_11
    + M_respirator2_factory1_12 = 0
- eq[onhand_respirator2_factory1_13]:
+ eq[onhand_respirator2_factory1_13]: z_respirator2_factory1->hospital1_12
+   + z_respirator2_factory1->hospital2_12
+   + z_respirator2_factory1->factory4_12
+   + z_respirator2_factory1->factory2_12
    - z_respirator2_DUMMY_RESERVE->factory1_12 - M_respirator2_factory1_12
    + M_respirator2_factory1_13 = 0
- eq[onhand_respirator2_factory1_14]:
+ eq[onhand_respirator2_factory1_14]: z_respirator2_factory1->hospital1_13
+   + z_respirator2_factory1->hospital2_13
+   + z_respirator2_factory1->factory4_13
+   + z_respirator2_factory1->factory2_13
    - z_respirator2_DUMMY_RESERVE->factory1_13 - M_respirator2_factory1_13
    + M_respirator2_factory1_14 = 0
- eq[onhand_respirator2_factory1_15]:
+ eq[onhand_respirator2_factory1_15]: z_respirator2_factory1->hospital1_14
+   + z_respirator2_factory1->hospital2_14
+   + z_respirator2_factory1->factory4_14
+   + z_respirator2_factory1->factory2_14
    - z_respirator2_DUMMY_RESERVE->factory1_14 - M_respirator2_factory1_14
    + M_respirator2_factory1_15 = 0
- eq[onhand_respirator2_factory1_16]:
+ eq[onhand_respirator2_factory1_16]: z_respirator2_factory1->hospital1_15
+   + z_respirator2_factory1->hospital2_15
+   + z_respirator2_factory1->factory4_15
+   + z_respirator2_factory1->factory2_15
    - z_respirator2_DUMMY_RESERVE->factory1_15 - M_respirator2_factory1_15
    + M_respirator2_factory1_16 = 0
- eq[onhand_respirator2_factory1_17]:
+ eq[onhand_respirator2_factory1_17]: z_respirator2_factory1->hospital1_16
+   + z_respirator2_factory1->hospital2_16
+   + z_respirator2_factory1->factory4_16
+   + z_respirator2_factory1->factory2_16
    - z_respirator2_DUMMY_RESERVE->factory1_16 - M_respirator2_factory1_16
    + M_respirator2_factory1_17 = 0
- eq[onhand_respirator2_factory1_18]:
+ eq[onhand_respirator2_factory1_18]: z_respirator2_factory1->hospital1_17
+   + z_respirator2_factory1->hospital2_17
+   + z_respirator2_factory1->factory4_17
+   + z_respirator2_factory1->factory2_17
    - z_respirator2_DUMMY_RESERVE->factory1_17 - M_respirator2_factory1_17
    + M_respirator2_factory1_18 = 0
- eq[onhand_respirator2_factory1_19]:
+ eq[onhand_respirator2_factory1_19]: z_respirator2_factory1->hospital1_18
+   + z_respirator2_factory1->hospital2_18
+   + z_respirator2_factory1->factory4_18
+   + z_respirator2_factory1->factory2_18
    - z_respirator2_DUMMY_RESERVE->factory1_18 - M_respirator2_factory1_18
    + M_respirator2_factory1_19 = 0
  eq[onhand_respirator2_factory2_1]: M_respirator2_factory2_1 = 0
- eq[onhand_respirator2_factory2_2]: - z_respirator2_factory1->factory2_1
+ eq[onhand_respirator2_factory2_2]: z_respirator2_factory2->hospital3_1
+   + z_respirator2_factory2->hospital4_1
+   - z_respirator2_factory1->factory2_1
    - z_respirator2_factory4->factory2_1
    - z_respirator2_DUMMY_RESERVE->factory2_1 - M_respirator2_factory2_1
    + M_respirator2_factory2_2 = 0
- eq[onhand_respirator2_factory2_3]: - z_respirator2_factory1->factory2_2
+ eq[onhand_respirator2_factory2_3]: z_respirator2_factory2->hospital3_2
+   + z_respirator2_factory2->hospital4_2
+   - z_respirator2_factory1->factory2_2
    - z_respirator2_factory4->factory2_2
    - z_respirator2_DUMMY_RESERVE->factory2_2 - M_respirator2_factory2_2
    + M_respirator2_factory2_3 = 0
- eq[onhand_respirator2_factory2_4]: - z_respirator2_factory1->factory2_3
+ eq[onhand_respirator2_factory2_4]: z_respirator2_factory2->hospital3_3
+   + z_respirator2_factory2->hospital4_3
+   - z_respirator2_factory1->factory2_3
    - z_respirator2_factory4->factory2_3
    - z_respirator2_DUMMY_RESERVE->factory2_3 - M_respirator2_factory2_3
    + M_respirator2_factory2_4 = 0
- eq[onhand_respirator2_factory2_5]: - z_respirator2_factory1->factory2_4
+ eq[onhand_respirator2_factory2_5]: z_respirator2_factory2->hospital3_4
+   + z_respirator2_factory2->hospital4_4
+   - z_respirator2_factory1->factory2_4
    - z_respirator2_factory4->factory2_4
    - z_respirator2_DUMMY_RESERVE->factory2_4 - M_respirator2_factory2_4
    + M_respirator2_factory2_5 = 0
- eq[onhand_respirator2_factory2_6]: - z_respirator2_factory1->factory2_5
+ eq[onhand_respirator2_factory2_6]: z_respirator2_factory2->hospital3_5
+   + z_respirator2_factory2->hospital4_5
+   - z_respirator2_factory1->factory2_5
    - z_respirator2_factory4->factory2_5
    - z_respirator2_DUMMY_RESERVE->factory2_5 - M_respirator2_factory2_5
    + M_respirator2_factory2_6 = 0
- eq[onhand_respirator2_factory2_7]: - z_respirator2_factory1->factory2_6
+ eq[onhand_respirator2_factory2_7]: z_respirator2_factory2->hospital3_6
+   + z_respirator2_factory2->hospital4_6
+   - z_respirator2_factory1->factory2_6
    - z_respirator2_factory4->factory2_6
    - z_respirator2_DUMMY_RESERVE->factory2_6 - M_respirator2_factory2_6
    + M_respirator2_factory2_7 = 0
- eq[onhand_respirator2_factory2_8]: - z_respirator2_factory1->factory2_7
+ eq[onhand_respirator2_factory2_8]: z_respirator2_factory2->hospital3_7
+   + z_respirator2_factory2->hospital4_7
+   - z_respirator2_factory1->factory2_7
    - z_respirator2_factory4->factory2_7
    - z_respirator2_DUMMY_RESERVE->factory2_7 - M_respirator2_factory2_7
    + M_respirator2_factory2_8 = 0
- eq[onhand_respirator2_factory2_9]: - z_respirator2_factory1->factory2_8
+ eq[onhand_respirator2_factory2_9]: z_respirator2_factory2->hospital3_8
+   + z_respirator2_factory2->hospital4_8
+   - z_respirator2_factory1->factory2_8
    - z_respirator2_factory4->factory2_8
    - z_respirator2_DUMMY_RESERVE->factory2_8 - M_respirator2_factory2_8
    + M_respirator2_factory2_9 = 0
- eq[onhand_respirator2_factory2_10]: - z_respirator2_factory1->factory2_9
+ eq[onhand_respirator2_factory2_10]: z_respirator2_factory2->hospital3_9
+   + z_respirator2_factory2->hospital4_9
+   - z_respirator2_factory1->factory2_9
    - z_respirator2_factory4->factory2_9
    - z_respirator2_DUMMY_RESERVE->factory2_9 - M_respirator2_factory2_9
    + M_respirator2_factory2_10 = 0
- eq[onhand_respirator2_factory2_11]: - z_respirator2_factory1->factory2_10
+ eq[onhand_respirator2_factory2_11]: z_respirator2_factory2->hospital3_10
+   + z_respirator2_factory2->hospital4_10
+   - z_respirator2_factory1->factory2_10
    - z_respirator2_factory4->factory2_10
    - z_respirator2_DUMMY_RESERVE->factory2_10 - M_respirator2_factory2_10
    + M_respirator2_factory2_11 = 0
- eq[onhand_respirator2_factory2_12]: - z_respirator2_factory1->factory2_11
+ eq[onhand_respirator2_factory2_12]: z_respirator2_factory2->hospital3_11
+   + z_respirator2_factory2->hospital4_11
+   - z_respirator2_factory1->factory2_11
    - z_respirator2_factory4->factory2_11
    - z_respirator2_DUMMY_RESERVE->factory2_11 - M_respirator2_factory2_11
    + M_respirator2_factory2_12 = 0
- eq[onhand_respirator2_factory2_13]: - z_respirator2_factory1->factory2_12
+ eq[onhand_respirator2_factory2_13]: z_respirator2_factory2->hospital3_12
+   + z_respirator2_factory2->hospital4_12
+   - z_respirator2_factory1->factory2_12
    - z_respirator2_factory4->factory2_12
    - z_respirator2_DUMMY_RESERVE->factory2_12 - M_respirator2_factory2_12
    + M_respirator2_factory2_13 = 0
- eq[onhand_respirator2_factory2_14]: - z_respirator2_factory1->factory2_13
+ eq[onhand_respirator2_factory2_14]: z_respirator2_factory2->hospital3_13
+   + z_respirator2_factory2->hospital4_13
+   - z_respirator2_factory1->factory2_13
    - z_respirator2_factory4->factory2_13
    - z_respirator2_DUMMY_RESERVE->factory2_13 - M_respirator2_factory2_13
    + M_respirator2_factory2_14 = 0
- eq[onhand_respirator2_factory2_15]: - z_respirator2_factory1->factory2_14
+ eq[onhand_respirator2_factory2_15]: z_respirator2_factory2->hospital3_14
+   + z_respirator2_factory2->hospital4_14
+   - z_respirator2_factory1->factory2_14
    - z_respirator2_factory4->factory2_14
    - z_respirator2_DUMMY_RESERVE->factory2_14 - M_respirator2_factory2_14
    + M_respirator2_factory2_15 = 0
- eq[onhand_respirator2_factory2_16]: - z_respirator2_factory1->factory2_15
+ eq[onhand_respirator2_factory2_16]: z_respirator2_factory2->hospital3_15
+   + z_respirator2_factory2->hospital4_15
+   - z_respirator2_factory1->factory2_15
    - z_respirator2_factory4->factory2_15
    - z_respirator2_DUMMY_RESERVE->factory2_15 - M_respirator2_factory2_15
    + M_respirator2_factory2_16 = 0
- eq[onhand_respirator2_factory2_17]: - z_respirator2_factory1->factory2_16
+ eq[onhand_respirator2_factory2_17]: z_respirator2_factory2->hospital3_16
+   + z_respirator2_factory2->hospital4_16
+   - z_respirator2_factory1->factory2_16
    - z_respirator2_factory4->factory2_16
    - z_respirator2_DUMMY_RESERVE->factory2_16 - M_respirator2_factory2_16
    + M_respirator2_factory2_17 = 0
- eq[onhand_respirator2_factory2_18]: - z_respirator2_factory1->factory2_17
+ eq[onhand_respirator2_factory2_18]: z_respirator2_factory2->hospital3_17
+   + z_respirator2_factory2->hospital4_17
+   - z_respirator2_factory1->factory2_17
    - z_respirator2_factory4->factory2_17
    - z_respirator2_DUMMY_RESERVE->factory2_17 - M_respirator2_factory2_17
    + M_respirator2_factory2_18 = 0
- eq[onhand_respirator2_factory2_19]: - z_respirator2_factory1->factory2_18
+ eq[onhand_respirator2_factory2_19]: z_respirator2_factory2->hospital3_18
+   + z_respirator2_factory2->hospital4_18
+   - z_respirator2_factory1->factory2_18
    - z_respirator2_factory4->factory2_18
    - z_respirator2_DUMMY_RESERVE->factory2_18 - M_respirator2_factory2_18
    + M_respirator2_factory2_19 = 0
- eq[onhand_respirator2_factory3_1]: - x_respirator2_factory3_1
-   + M_respirator2_factory3_1 = 0
- eq[onhand_respirator2_factory3_2]: - x_respirator2_factory3_2
+ eq[onhand_respirator2_factory3_1]: M_respirator2_factory3_1 = 0
+ eq[onhand_respirator2_factory3_2]: z_respirator2_factory3->hospital1_1
+   + z_respirator2_factory3->hospital2_1
    - z_respirator2_DUMMY_RESERVE->factory3_1 - M_respirator2_factory3_1
    + M_respirator2_factory3_2 = 0
- eq[onhand_respirator2_factory3_3]: - x_respirator2_factory3_3
+ eq[onhand_respirator2_factory3_3]: z_respirator2_factory3->hospital1_2
+   + z_respirator2_factory3->hospital2_2
    - z_respirator2_DUMMY_RESERVE->factory3_2 - M_respirator2_factory3_2
    + M_respirator2_factory3_3 = 0
- eq[onhand_respirator2_factory3_4]: - x_respirator2_factory3_4
+ eq[onhand_respirator2_factory3_4]: z_respirator2_factory3->hospital1_3
+   + z_respirator2_factory3->hospital2_3
    - z_respirator2_DUMMY_RESERVE->factory3_3 - M_respirator2_factory3_3
    + M_respirator2_factory3_4 = 0
- eq[onhand_respirator2_factory3_5]: - x_respirator2_factory3_5
+ eq[onhand_respirator2_factory3_5]: z_respirator2_factory3->hospital1_4
+   + z_respirator2_factory3->hospital2_4
    - z_respirator2_DUMMY_RESERVE->factory3_4 - M_respirator2_factory3_4
    + M_respirator2_factory3_5 = 0
- eq[onhand_respirator2_factory3_6]: - x_respirator2_factory3_6
+ eq[onhand_respirator2_factory3_6]: z_respirator2_factory3->hospital1_5
+   + z_respirator2_factory3->hospital2_5
    - z_respirator2_DUMMY_RESERVE->factory3_5 - M_respirator2_factory3_5
    + M_respirator2_factory3_6 = 0
- eq[onhand_respirator2_factory3_7]: - x_respirator2_factory3_7
+ eq[onhand_respirator2_factory3_7]: z_respirator2_factory3->hospital1_6
+   + z_respirator2_factory3->hospital2_6
    - z_respirator2_DUMMY_RESERVE->factory3_6 - M_respirator2_factory3_6
    + M_respirator2_factory3_7 = 0
- eq[onhand_respirator2_factory3_8]: - x_respirator2_factory3_8
+ eq[onhand_respirator2_factory3_8]: z_respirator2_factory3->hospital1_7
+   + z_respirator2_factory3->hospital2_7
    - z_respirator2_DUMMY_RESERVE->factory3_7 - M_respirator2_factory3_7
    + M_respirator2_factory3_8 = 0
- eq[onhand_respirator2_factory3_9]: - x_respirator2_factory3_9
+ eq[onhand_respirator2_factory3_9]: z_respirator2_factory3->hospital1_8
+   + z_respirator2_factory3->hospital2_8
    - z_respirator2_DUMMY_RESERVE->factory3_8 - M_respirator2_factory3_8
    + M_respirator2_factory3_9 = 0
- eq[onhand_respirator2_factory3_10]: - x_respirator2_factory3_10
+ eq[onhand_respirator2_factory3_10]: z_respirator2_factory3->hospital1_9
+   + z_respirator2_factory3->hospital2_9
    - z_respirator2_DUMMY_RESERVE->factory3_9 - M_respirator2_factory3_9
    + M_respirator2_factory3_10 = 0
- eq[onhand_respirator2_factory3_11]: - x_respirator2_factory3_11
+ eq[onhand_respirator2_factory3_11]: z_respirator2_factory3->hospital1_10
+   + z_respirator2_factory3->hospital2_10
    - z_respirator2_DUMMY_RESERVE->factory3_10 - M_respirator2_factory3_10
    + M_respirator2_factory3_11 = 0
- eq[onhand_respirator2_factory3_12]: - x_respirator2_factory3_12
+ eq[onhand_respirator2_factory3_12]: z_respirator2_factory3->hospital1_11
+   + z_respirator2_factory3->hospital2_11
    - z_respirator2_DUMMY_RESERVE->factory3_11 - M_respirator2_factory3_11
    + M_respirator2_factory3_12 = 0
- eq[onhand_respirator2_factory3_13]: - x_respirator2_factory3_13
+ eq[onhand_respirator2_factory3_13]: z_respirator2_factory3->hospital1_12
+   + z_respirator2_factory3->hospital2_12
    - z_respirator2_DUMMY_RESERVE->factory3_12 - M_respirator2_factory3_12
    + M_respirator2_factory3_13 = 0
- eq[onhand_respirator2_factory3_14]: - x_respirator2_factory3_14
+ eq[onhand_respirator2_factory3_14]: z_respirator2_factory3->hospital1_13
+   + z_respirator2_factory3->hospital2_13
    - z_respirator2_DUMMY_RESERVE->factory3_13 - M_respirator2_factory3_13
    + M_respirator2_factory3_14 = 0
- eq[onhand_respirator2_factory3_15]: - x_respirator2_factory3_15
+ eq[onhand_respirator2_factory3_15]: z_respirator2_factory3->hospital1_14
+   + z_respirator2_factory3->hospital2_14
    - z_respirator2_DUMMY_RESERVE->factory3_14 - M_respirator2_factory3_14
    + M_respirator2_factory3_15 = 0
- eq[onhand_respirator2_factory3_16]: - x_respirator2_factory3_16
+ eq[onhand_respirator2_factory3_16]: z_respirator2_factory3->hospital1_15
+   + z_respirator2_factory3->hospital2_15
    - z_respirator2_DUMMY_RESERVE->factory3_15 - M_respirator2_factory3_15
    + M_respirator2_factory3_16 = 0
- eq[onhand_respirator2_factory3_17]: - x_respirator2_factory3_17
+ eq[onhand_respirator2_factory3_17]: z_respirator2_factory3->hospital1_16
+   + z_respirator2_factory3->hospital2_16
    - z_respirator2_DUMMY_RESERVE->factory3_16 - M_respirator2_factory3_16
    + M_respirator2_factory3_17 = 0
- eq[onhand_respirator2_factory3_18]: - x_respirator2_factory3_18
+ eq[onhand_respirator2_factory3_18]: z_respirator2_factory3->hospital1_17
+   + z_respirator2_factory3->hospital2_17
    - z_respirator2_DUMMY_RESERVE->factory3_17 - M_respirator2_factory3_17
    + M_respirator2_factory3_18 = 0
- eq[onhand_respirator2_factory3_19]: - x_respirator2_factory3_19
+ eq[onhand_respirator2_factory3_19]: z_respirator2_factory3->hospital1_18
+   + z_respirator2_factory3->hospital2_18
    - z_respirator2_DUMMY_RESERVE->factory3_18 - M_respirator2_factory3_18
    + M_respirator2_factory3_19 = 0
  eq[onhand_respirator2_factory4_1]: M_respirator2_factory4_1 = 0
- eq[onhand_respirator2_factory4_2]: - z_respirator2_factory1->factory4_1
+ eq[onhand_respirator2_factory4_2]: z_respirator2_factory4->hospital3_1
+   + z_respirator2_factory4->hospital4_1
+   - z_respirator2_factory1->factory4_1
+   + z_respirator2_factory4->factory2_1
    - z_respirator2_DUMMY_RESERVE->factory4_1 - M_respirator2_factory4_1
    + M_respirator2_factory4_2 = 0
- eq[onhand_respirator2_factory4_3]: - z_respirator2_factory1->factory4_2
+ eq[onhand_respirator2_factory4_3]: z_respirator2_factory4->hospital3_2
+   + z_respirator2_factory4->hospital4_2
+   - z_respirator2_factory1->factory4_2
+   + z_respirator2_factory4->factory2_2
    - z_respirator2_DUMMY_RESERVE->factory4_2 - M_respirator2_factory4_2
    + M_respirator2_factory4_3 = 0
- eq[onhand_respirator2_factory4_4]: - z_respirator2_factory1->factory4_3
+ eq[onhand_respirator2_factory4_4]: z_respirator2_factory4->hospital3_3
+   + z_respirator2_factory4->hospital4_3
+   - z_respirator2_factory1->factory4_3
+   + z_respirator2_factory4->factory2_3
    - z_respirator2_DUMMY_RESERVE->factory4_3 - M_respirator2_factory4_3
    + M_respirator2_factory4_4 = 0
- eq[onhand_respirator2_factory4_5]: - z_respirator2_factory1->factory4_4
+ eq[onhand_respirator2_factory4_5]: z_respirator2_factory4->hospital3_4
+   + z_respirator2_factory4->hospital4_4
+   - z_respirator2_factory1->factory4_4
+   + z_respirator2_factory4->factory2_4
    - z_respirator2_DUMMY_RESERVE->factory4_4 - M_respirator2_factory4_4
    + M_respirator2_factory4_5 = 0
- eq[onhand_respirator2_factory4_6]: - z_respirator2_factory1->factory4_5
+ eq[onhand_respirator2_factory4_6]: z_respirator2_factory4->hospital3_5
+   + z_respirator2_factory4->hospital4_5
+   - z_respirator2_factory1->factory4_5
+   + z_respirator2_factory4->factory2_5
    - z_respirator2_DUMMY_RESERVE->factory4_5 - M_respirator2_factory4_5
    + M_respirator2_factory4_6 = 0
- eq[onhand_respirator2_factory4_7]: - z_respirator2_factory1->factory4_6
+ eq[onhand_respirator2_factory4_7]: z_respirator2_factory4->hospital3_6
+   + z_respirator2_factory4->hospital4_6
+   - z_respirator2_factory1->factory4_6
+   + z_respirator2_factory4->factory2_6
    - z_respirator2_DUMMY_RESERVE->factory4_6 - M_respirator2_factory4_6
    + M_respirator2_factory4_7 = 0
- eq[onhand_respirator2_factory4_8]: - z_respirator2_factory1->factory4_7
+ eq[onhand_respirator2_factory4_8]: z_respirator2_factory4->hospital3_7
+   + z_respirator2_factory4->hospital4_7
+   - z_respirator2_factory1->factory4_7
+   + z_respirator2_factory4->factory2_7
    - z_respirator2_DUMMY_RESERVE->factory4_7 - M_respirator2_factory4_7
    + M_respirator2_factory4_8 = 0
- eq[onhand_respirator2_factory4_9]: - z_respirator2_factory1->factory4_8
+ eq[onhand_respirator2_factory4_9]: z_respirator2_factory4->hospital3_8
+   + z_respirator2_factory4->hospital4_8
+   - z_respirator2_factory1->factory4_8
+   + z_respirator2_factory4->factory2_8
    - z_respirator2_DUMMY_RESERVE->factory4_8 - M_respirator2_factory4_8
    + M_respirator2_factory4_9 = 0
- eq[onhand_respirator2_factory4_10]: - z_respirator2_factory1->factory4_9
+ eq[onhand_respirator2_factory4_10]: z_respirator2_factory4->hospital3_9
+   + z_respirator2_factory4->hospital4_9
+   - z_respirator2_factory1->factory4_9
+   + z_respirator2_factory4->factory2_9
    - z_respirator2_DUMMY_RESERVE->factory4_9 - M_respirator2_factory4_9
    + M_respirator2_factory4_10 = 0
- eq[onhand_respirator2_factory4_11]: - z_respirator2_factory1->factory4_10
+ eq[onhand_respirator2_factory4_11]: z_respirator2_factory4->hospital3_10
+   + z_respirator2_factory4->hospital4_10
+   - z_respirator2_factory1->factory4_10
+   + z_respirator2_factory4->factory2_10
    - z_respirator2_DUMMY_RESERVE->factory4_10 - M_respirator2_factory4_10
    + M_respirator2_factory4_11 = 0
- eq[onhand_respirator2_factory4_12]: - z_respirator2_factory1->factory4_11
+ eq[onhand_respirator2_factory4_12]: z_respirator2_factory4->hospital3_11
+   + z_respirator2_factory4->hospital4_11
+   - z_respirator2_factory1->factory4_11
+   + z_respirator2_factory4->factory2_11
    - z_respirator2_DUMMY_RESERVE->factory4_11 - M_respirator2_factory4_11
    + M_respirator2_factory4_12 = 0
- eq[onhand_respirator2_factory4_13]: - z_respirator2_factory1->factory4_12
+ eq[onhand_respirator2_factory4_13]: z_respirator2_factory4->hospital3_12
+   + z_respirator2_factory4->hospital4_12
+   - z_respirator2_factory1->factory4_12
+   + z_respirator2_factory4->factory2_12
    - z_respirator2_DUMMY_RESERVE->factory4_12 - M_respirator2_factory4_12
    + M_respirator2_factory4_13 = 0
- eq[onhand_respirator2_factory4_14]: - z_respirator2_factory1->factory4_13
+ eq[onhand_respirator2_factory4_14]: z_respirator2_factory4->hospital3_13
+   + z_respirator2_factory4->hospital4_13
+   - z_respirator2_factory1->factory4_13
+   + z_respirator2_factory4->factory2_13
    - z_respirator2_DUMMY_RESERVE->factory4_13 - M_respirator2_factory4_13
    + M_respirator2_factory4_14 = 0
- eq[onhand_respirator2_factory4_15]: - z_respirator2_factory1->factory4_14
+ eq[onhand_respirator2_factory4_15]: z_respirator2_factory4->hospital3_14
+   + z_respirator2_factory4->hospital4_14
+   - z_respirator2_factory1->factory4_14
+   + z_respirator2_factory4->factory2_14
    - z_respirator2_DUMMY_RESERVE->factory4_14 - M_respirator2_factory4_14
    + M_respirator2_factory4_15 = 0
- eq[onhand_respirator2_factory4_16]: - z_respirator2_factory1->factory4_15
+ eq[onhand_respirator2_factory4_16]: z_respirator2_factory4->hospital3_15
+   + z_respirator2_factory4->hospital4_15
+   - z_respirator2_factory1->factory4_15
+   + z_respirator2_factory4->factory2_15
    - z_respirator2_DUMMY_RESERVE->factory4_15 - M_respirator2_factory4_15
    + M_respirator2_factory4_16 = 0
- eq[onhand_respirator2_factory4_17]: - z_respirator2_factory1->factory4_16
+ eq[onhand_respirator2_factory4_17]: z_respirator2_factory4->hospital3_16
+   + z_respirator2_factory4->hospital4_16
+   - z_respirator2_factory1->factory4_16
+   + z_respirator2_factory4->factory2_16
    - z_respirator2_DUMMY_RESERVE->factory4_16 - M_respirator2_factory4_16
    + M_respirator2_factory4_17 = 0
- eq[onhand_respirator2_factory4_18]: - z_respirator2_factory1->factory4_17
+ eq[onhand_respirator2_factory4_18]: z_respirator2_factory4->hospital3_17
+   + z_respirator2_factory4->hospital4_17
+   - z_respirator2_factory1->factory4_17
+   + z_respirator2_factory4->factory2_17
    - z_respirator2_DUMMY_RESERVE->factory4_17 - M_respirator2_factory4_17
    + M_respirator2_factory4_18 = 0
- eq[onhand_respirator2_factory4_19]: - z_respirator2_factory1->factory4_18
+ eq[onhand_respirator2_factory4_19]: z_respirator2_factory4->hospital3_18
+   + z_respirator2_factory4->hospital4_18
+   - z_respirator2_factory1->factory4_18
+   + z_respirator2_factory4->factory2_18
    - z_respirator2_DUMMY_RESERVE->factory4_18 - M_respirator2_factory4_18
    + M_respirator2_factory4_19 = 0
  eq[onhand_respirator2_DUMMY_RESERVE_1]: M_respirator2_DUMMY_RESERVE_1
@@ -15687,83 +16665,101 @@ Subject To
  eq[onhand_respirator2_hospital1_1]: M_respirator2_hospital1_1 = 0
  eq[onhand_respirator2_hospital1_2]: - z_respirator2_factory1->hospital1_1
    - z_respirator2_factory3->hospital1_1
+   + z_respirator2_hospital1->hospital2_1
    - z_respirator2_DUMMY_RESERVE->hospital1_1 - M_respirator2_hospital1_1
    + M_respirator2_hospital1_2 = 0
  eq[onhand_respirator2_hospital1_3]: - z_respirator2_factory1->hospital1_2
    - z_respirator2_factory3->hospital1_2
+   + z_respirator2_hospital1->hospital2_2
    - z_respirator2_DUMMY_RESERVE->hospital1_2 - M_respirator2_hospital1_2
    + M_respirator2_hospital1_3 = 0
  eq[onhand_respirator2_hospital1_4]: - z_respirator2_factory1->hospital1_3
    - z_respirator2_factory3->hospital1_3
+   + z_respirator2_hospital1->hospital2_3
    - z_respirator2_DUMMY_RESERVE->hospital1_3 - M_respirator2_hospital1_3
    + M_respirator2_hospital1_4 = 0
  eq[onhand_respirator2_hospital1_5]: - z_respirator2_factory1->hospital1_4
    - z_respirator2_factory3->hospital1_4
+   + z_respirator2_hospital1->hospital2_4
    - z_respirator2_DUMMY_RESERVE->hospital1_4 - M_respirator2_hospital1_4
    + M_respirator2_hospital1_5 = 0
  eq[onhand_respirator2_hospital1_6]: - z_respirator2_factory1->hospital1_5
    - z_respirator2_factory3->hospital1_5
+   + z_respirator2_hospital1->hospital2_5
    - z_respirator2_DUMMY_RESERVE->hospital1_5 - M_respirator2_hospital1_5
    + M_respirator2_hospital1_6 = 0
  eq[onhand_respirator2_hospital1_7]: - z_respirator2_factory1->hospital1_6
    - z_respirator2_factory3->hospital1_6
+   + z_respirator2_hospital1->hospital2_6
    - z_respirator2_DUMMY_RESERVE->hospital1_6 - M_respirator2_hospital1_6
    + M_respirator2_hospital1_7 = 0
  eq[onhand_respirator2_hospital1_8]: - z_respirator2_factory1->hospital1_7
    - z_respirator2_factory3->hospital1_7
+   + z_respirator2_hospital1->hospital2_7
    - z_respirator2_DUMMY_RESERVE->hospital1_7 - M_respirator2_hospital1_7
    + M_respirator2_hospital1_8 = 0
  eq[onhand_respirator2_hospital1_9]: - z_respirator2_factory1->hospital1_8
    - z_respirator2_factory3->hospital1_8
+   + z_respirator2_hospital1->hospital2_8
    - z_respirator2_DUMMY_RESERVE->hospital1_8 - M_respirator2_hospital1_8
    + M_respirator2_hospital1_9 = 0
  eq[onhand_respirator2_hospital1_10]: - z_respirator2_factory1->hospital1_9
    - z_respirator2_factory3->hospital1_9
+   + z_respirator2_hospital1->hospital2_9
    - z_respirator2_DUMMY_RESERVE->hospital1_9 - M_respirator2_hospital1_9
    + M_respirator2_hospital1_10 = 0
  eq[onhand_respirator2_hospital1_11]:
    - z_respirator2_factory1->hospital1_10
    - z_respirator2_factory3->hospital1_10
+   + z_respirator2_hospital1->hospital2_10
    - z_respirator2_DUMMY_RESERVE->hospital1_10 - M_respirator2_hospital1_10
    + M_respirator2_hospital1_11 = 0
  eq[onhand_respirator2_hospital1_12]:
    - z_respirator2_factory1->hospital1_11
    - z_respirator2_factory3->hospital1_11
+   + z_respirator2_hospital1->hospital2_11
    - z_respirator2_DUMMY_RESERVE->hospital1_11 - M_respirator2_hospital1_11
    + M_respirator2_hospital1_12 = 0
  eq[onhand_respirator2_hospital1_13]:
    - z_respirator2_factory1->hospital1_12
    - z_respirator2_factory3->hospital1_12
+   + z_respirator2_hospital1->hospital2_12
    - z_respirator2_DUMMY_RESERVE->hospital1_12 - M_respirator2_hospital1_12
    + M_respirator2_hospital1_13 = 0
  eq[onhand_respirator2_hospital1_14]:
    - z_respirator2_factory1->hospital1_13
    - z_respirator2_factory3->hospital1_13
+   + z_respirator2_hospital1->hospital2_13
    - z_respirator2_DUMMY_RESERVE->hospital1_13 - M_respirator2_hospital1_13
    + M_respirator2_hospital1_14 = 0
  eq[onhand_respirator2_hospital1_15]:
    - z_respirator2_factory1->hospital1_14
    - z_respirator2_factory3->hospital1_14
+   + z_respirator2_hospital1->hospital2_14
    - z_respirator2_DUMMY_RESERVE->hospital1_14 - M_respirator2_hospital1_14
    + M_respirator2_hospital1_15 = 0
  eq[onhand_respirator2_hospital1_16]:
    - z_respirator2_factory1->hospital1_15
    - z_respirator2_factory3->hospital1_15
+   + z_respirator2_hospital1->hospital2_15
    - z_respirator2_DUMMY_RESERVE->hospital1_15 - M_respirator2_hospital1_15
    + M_respirator2_hospital1_16 = 0
  eq[onhand_respirator2_hospital1_17]:
    - z_respirator2_factory1->hospital1_16
    - z_respirator2_factory3->hospital1_16
+   + z_respirator2_hospital1->hospital2_16
    - z_respirator2_DUMMY_RESERVE->hospital1_16 - M_respirator2_hospital1_16
    + M_respirator2_hospital1_17 = 0
  eq[onhand_respirator2_hospital1_18]:
    - z_respirator2_factory1->hospital1_17
    - z_respirator2_factory3->hospital1_17
+   + z_respirator2_hospital1->hospital2_17
    - z_respirator2_DUMMY_RESERVE->hospital1_17 - M_respirator2_hospital1_17
    + M_respirator2_hospital1_18 = 0
  eq[onhand_respirator2_hospital1_19]:
    - z_respirator2_factory1->hospital1_18
    - z_respirator2_factory3->hospital1_18
+   + z_respirator2_hospital1->hospital2_18
    - z_respirator2_DUMMY_RESERVE->hospital1_18 - M_respirator2_hospital1_18
    + M_respirator2_hospital1_19 = 0
  eq[onhand_respirator2_hospital2_1]: M_respirator2_hospital2_1 = 0

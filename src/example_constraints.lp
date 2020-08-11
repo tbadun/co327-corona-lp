@@ -199,64 +199,8 @@ Subject To
 
 
  upper[capacities_factory1->hospital1_1]: s_factory1->hospital1_1 <= 25
- upper[capacities_factory1->hospital1_2]: s_factory1->hospital1_2 <= 25
- upper[capacities_factory1->hospital1_3]: s_factory1->hospital1_3 <= 25
- upper[capacities_factory1->hospital1_4]: s_factory1->hospital1_4 <= 25
- upper[capacities_factory1->hospital1_5]: s_factory1->hospital1_5 <= 25
- upper[capacities_factory1->hospital1_6]: s_factory1->hospital1_6 <= 25
- upper[capacities_factory1->hospital1_7]: s_factory1->hospital1_7 <= 25
- upper[capacities_factory1->hospital1_8]: s_factory1->hospital1_8 <= 25
- upper[capacities_factory1->hospital1_9]: s_factory1->hospital1_9 <= 25
- upper[capacities_factory1->hospital1_10]: s_factory1->hospital1_10 <= 25
- upper[capacities_factory1->hospital1_11]: s_factory1->hospital1_11 <= 25
- upper[capacities_factory1->hospital1_12]: s_factory1->hospital1_12 <= 25
- upper[capacities_factory1->hospital1_13]: s_factory1->hospital1_13 <= 25
- upper[capacities_factory1->hospital1_14]: s_factory1->hospital1_14 <= 25
- upper[capacities_factory1->hospital1_15]: s_factory1->hospital1_15 <= 25
- upper[capacities_factory1->hospital1_16]: s_factory1->hospital1_16 <= 25
- upper[capacities_factory1->hospital1_17]: s_factory1->hospital1_17 <= 25
- upper[capacities_factory1->hospital1_18]: s_factory1->hospital1_18 <= 25
- upper[capacities_factory1->hospital1_19]: s_factory1->hospital1_19 <= 25
  upper[capacities_DUMMY_RESERVE->factory1_1]: s_DUMMY_RESERVE->factory1_1
    <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_2]: s_DUMMY_RESERVE->factory1_2
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_3]: s_DUMMY_RESERVE->factory1_3
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_4]: s_DUMMY_RESERVE->factory1_4
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_5]: s_DUMMY_RESERVE->factory1_5
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_6]: s_DUMMY_RESERVE->factory1_6
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_7]: s_DUMMY_RESERVE->factory1_7
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_8]: s_DUMMY_RESERVE->factory1_8
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_9]: s_DUMMY_RESERVE->factory1_9
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_10]: s_DUMMY_RESERVE->factory1_10
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_11]: s_DUMMY_RESERVE->factory1_11
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_12]: s_DUMMY_RESERVE->factory1_12
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_13]: s_DUMMY_RESERVE->factory1_13
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_14]: s_DUMMY_RESERVE->factory1_14
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_15]: s_DUMMY_RESERVE->factory1_15
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_16]: s_DUMMY_RESERVE->factory1_16
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_17]: s_DUMMY_RESERVE->factory1_17
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_18]: s_DUMMY_RESERVE->factory1_18
-   <= 1e+09
- upper[capacities_DUMMY_RESERVE->factory1_19]: s_DUMMY_RESERVE->factory1_19
-   <= 1e+09
- 
-
 
 
 
