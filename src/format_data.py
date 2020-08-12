@@ -167,13 +167,13 @@ def demand_recipes(hospitals,ppe):
     hospital_names = [h[0] for h in hospitals]
 
     # hospital total in/outflow
-    shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == start}
+    shipped_from_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): 1 for day in range(2,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == start}
     shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in equipment for place in hospital_names if place == end}
     dummy_day0 = {("z_{}_{}->{}_0".format(material,start,end),"demand_{}_{}_1".format("ppe" if material in ppe.keys() else "respirators",place)): -1 for start,end,cap,cost in shipping if start == "DUMMY_RESERVE" for material in equipment for place in hospital_names if place == end}
 
     # from yesterday
     onhand_yest = {("M_{}_{}_{}".format(material,place,day-1),"demand_{}_{}_{}".format("ppe" if material in ppe.keys() else "respirators",place,day)): -1 for material in equipment for place in hospital_names for day in range(2,days)}
-    return {**shipped_from,**shipped_to_yest,**onhand_yest,**dummy_day0}
+    return {**shipped_from_yest,**shipped_to_yest,**onhand_yest,**dummy_day0}
 
 # available to ship
 def availability_recipes(shipping):
@@ -182,12 +182,12 @@ def availability_recipes(shipping):
     materials = get_all_materials()
 
     # all in/outflow
-    shipped_from_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): 1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == start}
-    shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == end}
+    shipped_from = {("z_{}_{}->{}_{}".format(material,start,end,day),"availability_{}_{}_{}".format(material,place,day)): 1 for day in range(1,days) for start,end,cap,cost in shipping for material in materials for place in places if place == start}
+    # shipped_to_yest = {("z_{}_{}->{}_{}".format(material,start,end,day-1),"availability_{}_{}_{}".format(material,place,day)): -1 for day in range(2,days) for start,end,cap,cost in shipping for material in materials for place in places if place == end}
     
     # available to ship
     onhand = {("M_{}_{}_{}".format(material,place,day),"availability_{}_{}_{}".format(material,place,day)): -1 for material in materials for place in places for day in range(1,days)}
-    return {**shipped_from_yest,**shipped_to_yest,**onhand}
+    return {**shipped_from,**onhand}#**shipped_to_yest,**onhand}
 
 # shipping over edge coefficients/recipes
 def total_shipped_recipes(shipping):
