@@ -2,7 +2,7 @@
 # UNCOMMENT ON FIRST RUN OF FILE IF YOU DON'T HAVE THESE PACKAGES
 # !pip install csv
 # !pip install json
-
+#%%
 import csv
 import json 
 
@@ -34,6 +34,7 @@ def traverse_cast(list_of_lists: list):
     return cleaned
 
 # reads in data from csv, strips strings, and casts all numbers to float
+# empty rows are removed
 def clean_read(fname:str):
     with open(fname,encoding="utf-8-sig") as csvfile:
         data = list(csv.reader(csvfile))
@@ -55,6 +56,7 @@ def read_list(csv_name: str):
     return sorted(combined)
 
 # reads csv and returns pandas df (for now) 
+# replace blanks with 0s
 # use for: hospitals
 def read_demand(csv_name: str):
     cleaned = clean_read(csv_name)
@@ -65,10 +67,23 @@ def read_demand(csv_name: str):
     # {row[0]: row[1:] + ([0] * (n_days-len(row)+1)) for row in cleaned}
     return cleaned
 
-# reads csv and returns pandas df (for now)
-# user for: shipping
+
+#%%
+# reads csv and returns list of lists
+# takes cheapest path, if same cost, takes largest capacity
+# use for: shipping
 def read_shipping(csv_name:str):
-    return clean_read(csv_name)
+    data = clean_read(csv_name)
+    dct = {}
+    for r in data:
+        newkey = r[0]+r[1]
+        if newkey not in list(dct.keys()):
+            dct[newkey] = r
+        elif dct[newkey][3] > r[3]:
+            dct[newkey] = r
+        elif dct[newkey][3] == r[3] and dct[newkey][2] < r[2]:
+            dct[newkey] = r
+    return list(dct.values())
 
 # # %%
 # # EXAMPLES:
@@ -79,3 +94,6 @@ def read_shipping(csv_name:str):
 # hospitals = read_demand("../data/hospitals.csv")
 # shipping = read_shipping("../data/shipping.csv")
 
+
+
+# %%

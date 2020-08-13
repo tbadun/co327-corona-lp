@@ -27,6 +27,12 @@ shipping = add_dummy_shipping(shipping,factories,hospitals)
 
 
 # General helper functions
+def get_ppe_names(ppe=ppe):
+    return [k for k in ppe.keys()]
+
+def get_respirator_names(respirators=respirators):
+    return [k for k in respirators.keys()]
+
 def get_list_equipment(ppe=ppe,respirators=respirators):
     return [k for k in ppe.keys()] + [k for k in respirators.keys()]
 
@@ -46,8 +52,8 @@ def gen_decision_variables(factories,materials,hospitals,shipping):
     days = get_n_days()
     places = get_all_places()
 
-    resp_made = ["x_{}_{}_{}".format(r,f,day) for day in range(1,days) for f,mats in factories.items() for r in mats.keys() if "resp" in r]
-    ppe_made = ["y_{}_{}_{}".format(r,f,day) for day in range(1,days) for f,mats in factories.items() for r in mats.keys() if "ppe" in r]
+    resp_made = ["x_{}_{}_{}".format(r,f,day) for day in range(1,days) for f,mats in factories.items() for r in mats.keys() if r in get_respirator_names()]
+    ppe_made = ["y_{}_{}_{}".format(r,f,day) for day in range(1,days) for f,mats in factories.items() for r in mats.keys() if r in get_ppe_names()]
     mat_onhand = ["M_{}_{}_{}".format(mat,place,day) for mat in materials for place in places for day in range(1,days)]
     total_shipped = ["s_{}->{}_{}".format(start,end,day) for day in range(1,days) for start,end,cap,cost in shipping]
     shipped = ["z_{}_{}->{}_{}".format(m,start,end,day) for day in range(1,days) for start,end,cap,cost in shipping for m in materials]

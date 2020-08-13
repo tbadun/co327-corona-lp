@@ -57,15 +57,15 @@ s.t. 2 x_1 +         6 y_1  +         8 y_3 <= p1
 """
 #%%
 import gurobipy as gp 
-from gurobipy import GRB 
+from gurobipy import GRB
 
 def print_solution(model):
     print()
     print('###### Results ######')
     
-    model.write('test.lp')
+    model.write('../out/linear_program.lp')
     try:
-        with open("results.txt","w+") as f:
+        with open("../out/results.txt","w+") as f:
             for v in model.getVars():
                 f.write('{}: {:,.0f}\n'.format(v.varName, v.x))
             print('Obj: {:,.0f}'.format(model.objVal))
