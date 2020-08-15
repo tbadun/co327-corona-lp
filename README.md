@@ -6,19 +6,19 @@ This project will involve optimizing the Canadian government's Covid-19 response
 
 ## Data 
 `\co327-corona-lp\data\`
-#### Resources -- "resouces.csv"
+### Resources -- "resouces.csv"
 Types of resources that goes into manufacture of respirators and PPE
 
-#### Respirators and PPE -- "respirators.csv"
+### Respirators and PPE -- "respirators.csv"
 Types of medical equipments produced 
 
-#### Hospital Demands -- "hospitals.csv"
+### Hospital Demands -- "hospitals.csv"
 Anticipated demand for ICU beds in each hospital on each day as the pandemic goes
 
-#### Factories -- "factories.csv"
+### Factories -- "factories.csv"
 Factories to produce medical equipment
 
-#### Shipping -- "shipping.csv"
+### Shipping -- "shipping.csv"
 Shipping capacity and cost between factories and hospitals
 
 ## Assumptions
