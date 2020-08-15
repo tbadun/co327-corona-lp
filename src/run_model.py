@@ -2,58 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 CO 327 Final Project
-Tech Demo 1
-""" 
 
-"""
-This is our first tech demo draft using Python + Gurobi to model and solve a
-small chunk of the optimization problem. 
-
-Note: 
-    Some data input are hard coded into the model as of the first draft, the
-    rest calls read_data.py to process the csv files into usable data types.
-
-
-Assumptions:
-    All factories are able to move supply to factory instantaneously
-    All factories share the amount of all materials with each other
-    All factories can create each type of respirator and PPE
-
-Variables:
-    x1 - number of units of respirator 1
-    x2 - number of units of respirator 2
-    y1 - number of units of PPE 1
-    y2 - number of units of PPE 2
-    y3 - number of units of PPE 3
-    p1 - number of total pastic 1
-    p2 - number of total pastic 2
-    p3 - number of total pastic 3
-    m1 - number of total metal 1
-    m2 - number of total metal 2
-    
-Objective:
-    Maximize the production of PPE and Respirators based on each type of
-    materials that 4 factories have.
-    
-Constraints:
-    Total of 480 p1 available across all factories 
-    Total of 640 p2 available across all factories 
-    Total of 820 p3 available  across all factories
-    Total of 520 m1 available across all factories
-    Total of 850 m2 available across all factories
-
-Linear program:
-
-max  x1 + x2 + y1 + y2 + y3
-
-s.t. 2 x_1 +         6 y_1  +         8 y_3 <= p1
-             7 x_2 + 5 y_1  + 2 y_2 + 2 y_3 <= p2
-     4 x_1 +                  9 y_2 + 9 y_3 <= p3
-     3 x_1 +                    y_2 + 2 y_3 <= m1
-             3 x_2 + 8 y_1 +            y_3 <= m2
-             
-     x_1, x_2, y_1, y_2, y_3 >= 0
-
+This is our Final model using Python + Gurobi to model and solve the medical supply optimization problem
 """
 #%%
 import gurobipy as gp 
